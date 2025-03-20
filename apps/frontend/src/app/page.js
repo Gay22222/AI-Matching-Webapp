@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-3xl font-bold">🚀 AI Matching WebApp</h1>
+      <h1 className="text-3xl font-bold"> AI Matching WebApp</h1>
       <p className="text-lg mt-4">{message || "Loading..."}</p>
     </div>
   );
