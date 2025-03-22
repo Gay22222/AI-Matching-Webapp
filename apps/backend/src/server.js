@@ -2,6 +2,7 @@ import app from "./app.js";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import setupMessageSocket from "./sockets/messages.socket.js";
+import prisma from "./prisma/client.js";
 
 const PORT = process.env.PORT || 5000;
 

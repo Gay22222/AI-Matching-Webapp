@@ -1,17 +1,27 @@
-const messages = [];
+import prisma from "../prisma/client.js";
 
 /**
- * Lưu tin nhắn vào in-memory storage
+ * Gửi tin nhắn giữa hai người dùng.
  */
-export const sendMessageService = async (sender, receiver, content) => {
-    const message = { id: messages.length + 1, sender, receiver, content, timestamp: new Date() };
-    messages.push(message);
+export const sendMessageService = async (sender_id, receiver_id, match_id, content) => {
+    const message = await prisma.message.create({
+        data: {
+            sender_id,
+            receiver_id,
+            match_id,
+            content
+        }
+    });
     return message;
 };
 
 /**
- * Lấy tin nhắn theo user
+ * Lấy danh sách tin nhắn giữa hai người dùng dựa vào match_id
  */
-export const getMessagesService = async (user) => {
-    return messages.filter(msg => msg.sender === user || msg.receiver === user);
+export const getMessagesService = async (match_id) => {
+    const messages = await prisma.message.findMany({
+        where: { match_id },
+        orderBy: { timestamp: "asc" }
+    });
+    return messages;
 };
