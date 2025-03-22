@@ -1,30 +1,35 @@
-
-
 import { sendMessageService, getMessagesService } from "../services/messages.service.js";
 
 /**
  * API gửi tin nhắn
  */
 export const sendMessage = async (req, res) => {
-    const { sender, receiver, content } = req.body;
-    if (!sender || !receiver || !content) {
+    const { sender_id, receiver_id, match_id, content } = req.body;
+    if (!sender_id || !receiver_id || !match_id || !content) {
         return res.status(400).json({ error: "Missing required fields" });
     }
-    
-    const message = await sendMessageService(sender, receiver, content);
-    res.status(201).json({ message: "Message sent", data: message });
+
+    try {
+        const message = await sendMessageService(sender_id, receiver_id, match_id, content);
+        res.status(201).json({ message: "Message sent", data: message });
+    } catch (error) {
+        res.status(500).json({ error: "Failed to send message" });
+    }
 };
 
 /**
- * API lấy danh sách tin nhắn theo user
+ * API lấy danh sách tin nhắn dựa trên match_id
  */
 export const getMessages = async (req, res) => {
-    const { user } = req.query;
-    if (!user) {
-        return res.status(400).json({ error: "User parameter is required" });
+    const { match_id } = req.query;
+    if (!match_id) {
+        return res.status(400).json({ error: "Match ID is required" });
     }
 
-    const messages = await getMessagesService(user);
-    res.json(messages);
+    try {
+        const messages = await getMessagesService(parseInt(match_id));
+        res.json(messages);
+    } catch (error) {
+        res.status(500).json({ error: "Failed to retrieve messages" });
+    }
 };
-

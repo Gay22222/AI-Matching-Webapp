@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model match {
+  id                         Int       @id @default(autoincrement())
+  user_1_id                  Int
+  user_2_id                  Int
+  user_match_user_1_idTouser user      @relation("match_user_1_idTouser", fields: [user_1_id], references: [id], map: "Match_user_1_id_fkey")
+  user_match_user_2_idTouser user      @relation("match_user_2_idTouser", fields: [user_2_id], references: [id], map: "Match_user_2_id_fkey")
+  message                    message[]
+
+  @@index([user_1_id], map: "Match_user_1_id_fkey")
+  @@index([user_2_id], map: "Match_user_2_id_fkey")
+}
+
+model message {
+  id                             Int      @id @default(autoincrement())
+  sender_id                      Int
+  receiver_id                    Int
+  match_id                       Int?
+  content                        String
+  timestamp                      DateTime @default(now())
+  match                          match?   @relation(fields: [match_id], references: [id], map: "Message_match_id_fkey")
+  user_message_receiver_idTouser user     @relation("message_receiver_idTouser", fields: [receiver_id], references: [id], map: "Message_receiver_id_fkey")
+  user_message_sender_idTouser   user     @relation("message_sender_idTouser", fields: [sender_id], references: [id], map: "Message_sender_id_fkey")
+
+  @@index([match_id], map: "Message_match_id_fkey")
+  @@index([receiver_id], map: "Message_receiver_id_fkey")
+  @@index([sender_id], map: "Message_sender_id_fkey")
+}
+
+model user {
+  id                                Int                   @id @default(autoincrement())
+  display_name                      String
+  username                          String                @unique(map: "User_username_key")
+  password                          String
+  email                             String                @unique(map: "User_email_key")
+  phone_number                      String?
+  birthday                          DateTime
+  gender                            user_gender
+  preferred_gender                  user_preferred_gender
+  status                            user_status           @default(active)
+  time_register                     DateTime              @default(now())
+  match_match_user_1_idTouser       match[]               @relation("match_user_1_idTouser")
+  match_match_user_2_idTouser       match[]               @relation("match_user_2_idTouser")
+  message_message_receiver_idTouser message[]             @relation("message_receiver_idTouser")
+  message_message_sender_idTouser   message[]             @relation("message_sender_idTouser")
+}
+
+enum user_gender {
+  male
+  female
+  other
+}
+
+enum user_preferred_gender {
+  male
+  female
+  both
+}
+
+enum user_status {
+  active
+  inactive
+}
