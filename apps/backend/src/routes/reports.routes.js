@@ -1,9 +1,26 @@
-import { Router } from "express";
-import { submitReport, getReports } from "../controllers/reports.controller.js";
+/*----------------------------------------*/
+	/*Gay22222 begin-section*/
+/*----------------------------------------*/
 
-const router = Router();
+// src/routes/reports.routes.js
 
-router.post("/", submitReport);
-router.get("/", getReports);
+import express from "express";
+import {
+  createReportHandler,
+  getAllReportsHandler,
+} from "../controllers/reports.controller.js";
+
+const router = express.Router();
+
+// Gửi báo cáo
+router.post("/", createReportHandler);
+
+// Lấy tất cả báo cáo
+router.get("/", getAllReportsHandler);
 
 export default router;
+
+
+/*----------------------------------------*/
+	/*Gay22222 end-section*/
+/*----------------------------------------*/

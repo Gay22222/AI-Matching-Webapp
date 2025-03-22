@@ -2,7 +2,8 @@ import app from "./app.js";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import setupMessageSocket from "./sockets/messages.socket.js";
-import prisma from "./prisma/client.js";
+import setupNotificationSocket from "./sockets/notifications.socket.js";
+import { setIO } from "./utils/socket.js";
 
 const PORT = process.env.PORT || 5000;
 
@@ -16,9 +17,14 @@ const io = new Server(server, {
         methods: ["GET", "POST"]
     }
 });
-
-// Kết nối WebSocket cho hệ thống tin nhắn
-setupMessageSocket(io);
+setIO(io);
+// WebSocket
+io.on("connection", (socket) => {
+    console.log(" Client connected:", socket.id);
+  
+    setupMessageSocket(io, socket);
+    setupNotificationSocket(io, socket);
+  });
 
 // Chạy server
 server.listen(PORT, () => {

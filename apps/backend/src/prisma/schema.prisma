@@ -51,6 +51,10 @@ model user {
   match_match_user_2_idTouser       match[]               @relation("match_user_2_idTouser")
   message_message_receiver_idTouser message[]             @relation("message_receiver_idTouser")
   message_message_sender_idTouser   message[]             @relation("message_sender_idTouser")
+  reportsFiled                      Report[]              @relation("Reporter") // Quan hệ ngược lại với `reporter`
+  reportsReceived                   Report[]              @relation("ReportedUser") // Quan hệ ngược lại với `reportedUser`
+  notificationsReceived             Notification[]        @relation("NotificationRecipient") // Quan hệ ngược lại với `recipient`
+  notificationsSent                 Notification[]        @relation("NotificationSender") // Quan hệ ngược lại với `sender`
 }
 
 enum user_gender {
@@ -68,4 +72,44 @@ enum user_preferred_gender {
 enum user_status {
   active
   inactive
+}
+
+
+model Report {
+  id            Int      @id @default(autoincrement())
+  reason        ReportReason
+  details       String? // optional nếu reason là 'other'
+  reported_by   Int
+  reported_user Int
+  time_report   DateTime @default(now())
+
+  // Foreign key
+  reporter      user     @relation("Reporter", fields: [reported_by], references: [id], onDelete: Cascade)
+  reportedUser  user     @relation("ReportedUser", fields: [reported_user], references: [id], onDelete: Cascade)
+}
+
+enum ReportReason {
+  spam
+  abuse
+  fake_profile
+  inappropriate
+  other
+}
+model Notification {
+  id           Int           @id @default(autoincrement())
+  recipient_id Int
+  sender_id    Int?
+  type         NotificationType
+  content      String
+  is_read      Boolean       @default(false)
+  created_at   DateTime      @default(now())
+
+  recipient    user          @relation("NotificationRecipient", fields: [recipient_id], references: [id], onDelete: Cascade)
+  sender       user?         @relation("NotificationSender", fields: [sender_id], references: [id], onDelete: SetNull)
+}
+
+enum NotificationType {
+  like
+  match
+  message
 }

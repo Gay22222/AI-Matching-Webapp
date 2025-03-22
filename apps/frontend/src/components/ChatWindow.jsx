@@ -3,15 +3,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import io from "socket.io-client";
 import axios from "axios";
-
-const socket = io("http://localhost:5000"); // socket server backend
+import { getSocket } from "@/lib/socket"; // dùng socket singleton
 
 export default function ChatWindow({ matchId, userId }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const messagesEndRef = useRef(null);
+  const socket = getSocket(); // 🔁 luôn chỉ dùng 1 socket duy nhất
 
   useEffect(() => {
     // Fetch message history
@@ -27,13 +26,17 @@ export default function ChatWindow({ matchId, userId }) {
   }, [matchId]);
 
   useEffect(() => {
-    socket.on("receiveMessage", (message) => {
+    const handleReceive = (message) => {
       if (message.match_id === matchId) {
         setMessages((prev) => [...prev, message]);
       }
-    });
-    return () => socket.off("receiveMessage");
-  }, [matchId]);
+    };
+
+    socket.on("receiveMessage", handleReceive);
+    return () => {
+      socket.off("receiveMessage", handleReceive);
+    };
+  }, [matchId, socket]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -43,7 +46,7 @@ export default function ChatWindow({ matchId, userId }) {
     if (!input.trim()) return;
     const message = {
       sender_id: userId,
-      receiver_id: 2, // giả định receiver là user 2, bạn có thể dynamic sau
+      receiver_id: 2, // giả định
       match_id: matchId,
       content: input,
     };

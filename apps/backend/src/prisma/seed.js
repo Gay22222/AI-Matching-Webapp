@@ -1,4 +1,10 @@
-// prisma/seed.js
+/*----------------------------------------*/
+	/*Gay22222 begin-section*/
+/*----------------------------------------*/
+
+// Tạo dữ liệu mẫu để chạy thử ứng dụng
+// Tạo người dùng Alice và Bob, sau đó tạo match giữa họ
+
 import prisma from "./client.js";
 
 async function main() {
@@ -35,7 +41,7 @@ async function main() {
     },
   });
 
-  console.log("✅ Seed data inserted successfully!");
+  console.log(" Seed data inserted successfully!");
 }
 
 main()
@@ -46,3 +52,8 @@ main()
   .finally(() => {
     prisma.$disconnect();
   });
+
+
+/*----------------------------------------*/
+	/*Gay22222 end-section*/
+/*----------------------------------------*/
