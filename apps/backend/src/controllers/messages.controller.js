@@ -1,3 +1,8 @@
+
+/*----------------------------------------*/
+	/*Gay22222 begin-section*/
+/*----------------------------------------*/
+
 import { sendMessageService, getMessagesService } from "../services/messages.service.js";
 
 /**
@@ -33,3 +38,7 @@ export const getMessages = async (req, res) => {
         res.status(500).json({ error: "Failed to retrieve messages" });
     }
 };
+
+/*----------------------------------------*/
+	/*Gay22222 end-section*/
+/*----------------------------------------*/

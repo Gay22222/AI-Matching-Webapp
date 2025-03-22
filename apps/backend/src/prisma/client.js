@@ -1,3 +1,7 @@
+/*----------------------------------------*/
+	/*Gay22222 begin-section*/
+/*----------------------------------------*/
+
 import { PrismaClient } from "@prisma/client";
 import dotenv from "dotenv";
 import path from "path";
@@ -7,3 +11,7 @@ dotenv.config({ path: path.resolve("src/config/.env") });
 
 const prisma = new PrismaClient();
 export default prisma;
+
+/*----------------------------------------*/
+	/*Gay22222 end-section*/
+/*----------------------------------------*/
