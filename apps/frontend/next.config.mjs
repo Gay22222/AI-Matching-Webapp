@@ -2,16 +2,16 @@
 const nextConfig = {
     reactStrictMode: true,
     experimental: {
-      //appDir: true,
+        //appDir: true,
     },
     async rewrites() {
-      return [
-        {
-          source: "/api/:path*",
-          destination: "http://localhost:5000/api/:path*", // Chuyển hướng API về backend
-        },
-      ];
+        return [
+            {
+                source: "/api/:path*",
+                destination: "http://localhost:3001/api/:path*", // Chuyển hướng API về backend
+            },
+        ];
     },
-  };
-  
-  export default nextConfig;
+};
+
+export default nextConfig;

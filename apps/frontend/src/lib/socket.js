@@ -22,8 +22,8 @@ let socket;
  * @returns {Object} - Instance của Socket.IO client.
  */
 export const getSocket = () => {
-  if (!socket) {
-    socket = io("http://localhost:5000"); // Địa chỉ server WebSocket
-  }
-  return socket;
+    if (!socket) {
+        socket = io("http://localhost:3001"); // Địa chỉ server WebSocket
+    }
+    return socket;
 };
