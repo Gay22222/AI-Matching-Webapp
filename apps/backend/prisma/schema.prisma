@@ -1,0 +1,234 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  user
+  admin
+}
+
+enum BioStatus {
+  active
+  inactive
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  display_name  String?
+  username      String    @unique
+  password_hash String
+  phone_number  String?   @unique
+  birthday      DateTime?
+  email         String    @unique
+  is_verified   Boolean   @default(false)
+  role          Role      @default(user)
+  created_at    DateTime  @default(now())
+  updated_at    DateTime  @updatedAt
+
+  bio              Bio?
+  messagesSent     Message[] @relation("SentMessages")
+  messagesReceived Message[] @relation("ReceivedMessages")
+  reportsFiled     Report[]  @relation("FiledReports")
+  reportsReceived  Report[]  @relation("ReceivedReports")
+}
+
+model Message {
+  id          Int      @id @default(autoincrement())
+  sender_id   Int
+  receiver_id Int
+  content     String
+  sent_at     DateTime @default(now())
+
+  sender   User @relation("SentMessages", fields: [sender_id], references: [id])
+  receiver User @relation("ReceivedMessages", fields: [receiver_id], references: [id])
+}
+
+model Report {
+  id            Int      @id @default(autoincrement())
+  reason        String
+  reported_by   Int
+  reported_user Int
+  time_report   DateTime @default(now())
+
+  reporter User @relation("FiledReports", fields: [reported_by], references: [id])
+  reported User @relation("ReceivedReports", fields: [reported_user], references: [id])
+}
+
+model Bio {
+  bio_id                Int       @id @default(autoincrement())
+  user_id               Int       @unique
+  status                BioStatus @default(active)
+  name                  String?
+  age                   Int?
+  about_me              String?
+  searching_for_id      Int?      @unique
+  main_inf_id           Int?      @unique
+  base_inf_id           Int?      @unique
+  lifestyle_id          Int?      @unique
+  favorite_id           Int?      @unique
+  sexual_orientation_id Int?      @unique
+
+  user              User               @relation(fields: [user_id], references: [id])
+  searchingFor      SearchingFor?      @relation(fields: [searching_for_id], references: [id])
+  mainInfo          MainInf?
+  baseInfo          BaseInf?
+  lifestyle         Lifestyle?
+  favorite          Favorite?          @relation(fields: [favorite_id], references: [id])
+  sexualOrientation SexualOrientation? @relation(fields: [sexual_orientation_id], references: [id])
+  Photo             Photo[]
+}
+
+model SearchingFor {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+
+  bios Bio[]
+}
+
+model Photo {
+  id             Int      @id @default(autoincrement())
+  bio_id         Int
+  photo_url      String
+  is_profile_pic Boolean? @default(false)
+  uploaded_at    DateTime @default(now())
+
+  bio Bio @relation(fields: [bio_id], references: [bio_id])
+}
+
+model MainInf {
+  id           Int     @id @default(autoincrement())
+  bio_id       Int     @unique
+  height       String?
+  location     String?
+  language_id  Int?
+  religion_id  Int?
+  career_id    Int?
+  education_id Int?
+
+  bio Bio @relation(fields: [bio_id], references: [bio_id])
+}
+
+model BaseInf {
+  id                   Int  @id @default(autoincrement())
+  bio_id               Int  @unique
+  zodiac_id            Int?
+  character_id         Int?
+  communicate_style_id Int?
+  love_language_id     Int?
+  future_family_id     Int?
+
+  bio Bio @relation(fields: [bio_id], references: [bio_id])
+}
+
+model Lifestyle {
+  id       Int      @id @default(autoincrement())
+  bio_id   Int      @unique
+  drink    Boolean?
+  smoke    Boolean?
+  train    Boolean?
+  pet_id   Int?
+  diet_id  Int?
+  sleep_id Int?
+  snu_id   Int?
+
+  bio Bio @relation(fields: [bio_id], references: [bio_id])
+}
+
+model Favorite {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+
+  bios Bio[]
+}
+
+model SexualOrientation {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+
+  bios Bio[]
+}
+
+model Zodiac {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Character {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Pet {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Diet {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Sleep {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model SNU {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model FutureFamily {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Career {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model LoveLanguage {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Religion {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model Language {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model Education {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
+
+model CommunicateStyle {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+}
