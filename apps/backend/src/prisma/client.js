@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-	/*Gay22222 begin-section*/
+/*Gay22222 begin-section*/
 /*----------------------------------------*/
 
 /**
@@ -19,8 +19,6 @@
  * - `prisma`: Một instance của Prisma Client, được sử dụng để thực hiện các truy vấn cơ sở dữ liệu.
  */
 
-
-
 import { PrismaClient } from "@prisma/client";
 import dotenv from "dotenv";
 import path from "path";
@@ -32,5 +30,5 @@ const prisma = new PrismaClient();
 export default prisma;
 
 /*----------------------------------------*/
-	/*Gay22222 end-section*/
+/*Gay22222 end-section*/
 /*----------------------------------------*/
