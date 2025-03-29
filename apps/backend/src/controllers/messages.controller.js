@@ -59,6 +59,7 @@ export const sendMessage = async (req, res) => {
  */
 export const getMessages = async (req, res) => {
     const { match_id } = req.query;
+
     if (!match_id) {
         return res.status(400).json({ error: "Match ID is required" });
     }
