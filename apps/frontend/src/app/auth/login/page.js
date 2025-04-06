@@ -1,6 +1,13 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import {
+    UserIcon,
+    LockIcon,
+    FacebookIcon,
+    MailIcon,
+    PhoneIcon,
+} from "lucide-react";
 
 export default function Login() {
     const router = useRouter();
@@ -39,51 +46,82 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center">
-            <form
-                onSubmit={handleSubmit}
-                className=" p-8 rounded-lg shadow-md w-96"
-            >
-                <h2 className="text-2xl font-bold mb-6">Login</h2>
-
-                {error && <p className="text-red-500 mb-4">{error}</p>}
-
-                <div className="mb-4">
-                    <label className="block text-gray-700 mb-2">Email</label>
-                    <input
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) =>
-                            setFormData({ ...formData, email: e.target.value })
-                        }
-                        className="w-full p-2 border rounded"
-                        required
-                    />
+        <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gradient-to-b from-[#FF5864] to-[#FF655B]">
+            <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-xl shadow-lg">
+                <div className="text-center">
+                    <h1 className="text-4xl font-bold text-gray-800">
+                        Welcome Back
+                    </h1>
+                    <p className="mt-2 text-gray-600">
+                        Sign in to continue finding your match
+                    </p>
                 </div>
-
-                <div className="mb-6">
-                    <label className="block text-gray-700 mb-2">Password</label>
-                    <input
-                        type="password"
-                        value={formData.password}
-                        onChange={(e) =>
-                            setFormData({
-                                ...formData,
-                                password: e.target.value,
-                            })
-                        }
-                        className="w-full p-2 border rounded"
-                        required
-                    />
+                <div className="flex flex-col space-y-4">
+                    <button className="flex items-center justify-center w-full p-3 space-x-3 border border-gray-300 rounded-lg hover:bg-gray-50">
+                        <FacebookIcon size={20} className="text-blue-600" />
+                        <span>Continue with Facebook</span>
+                    </button>
+                    <button className="flex items-center justify-center w-full p-3 space-x-3 border border-gray-300 rounded-lg hover:bg-gray-50">
+                        <MailIcon size={20} className="text-red-500" />
+                        <span>Continue with Google</span>
+                    </button>
+                    <div className="flex items-center">
+                        <div className="flex-1 h-px bg-gray-300"></div>
+                        <p className="px-3 text-sm text-gray-500">OR</p>
+                        <div className="flex-1 h-px bg-gray-300"></div>
+                    </div>
                 </div>
-
-                <button
-                    type="submit"
-                    className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
-                >
-                    Login
-                </button>
-            </form>
+                <form className="mt-6 space-y-6" onSubmit={handleSubmit}>
+                    <div className="rounded-md">
+                        <label htmlFor="email" className="sr-only">
+                            Email
+                        </label>
+                        <div className="flex items-center">
+                            <UserIcon className="w-5 h-5 text-gray-400 absolute ml-3" />
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                required
+                                className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
+                                placeholder="Email address"
+                            />
+                        </div>
+                    </div>
+                    <div className="rounded-md">
+                        <label htmlFor="password" className="sr-only">
+                            Password
+                        </label>
+                        <div className="flex items-center">
+                            <LockIcon className="w-5 h-5 text-gray-400 absolute ml-3" />
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                required
+                                className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
+                                placeholder="Password"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            type="submit"
+                            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-white bg-gradient-to-r from-[#FF5864] to-[#FF655B] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF5864]"
+                        >
+                            Sign In
+                        </button>
+                    </div>
+                </form>
+                <div className="text-center">
+                    <button
+                        className="text-[#FF5864] hover:underline"
+                        onClick={() => router.push("/auth/register")}
+                    >
+                        Need an account? Sign up
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }
