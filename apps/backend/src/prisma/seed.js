@@ -9,7 +9,7 @@ import prisma from "./client.js";
 
 async function main() {
     // 1. Tạo người dùng
-    const alice = await prisma.user.create({
+    const alice = await prisma.users.create({
         data: {
             display_name: "Alice",
             username: "alice123",
@@ -21,7 +21,7 @@ async function main() {
         },
     });
 
-    const bob = await prisma.user.create({
+    const bob = await prisma.users.create({
         data: {
             display_name: "Bob",
             username: "bob123",
@@ -34,7 +34,7 @@ async function main() {
     });
 
     // 2. Tạo match giữa Alice và Bob
-    await prisma.match.create({
+    await prisma.matches.create({
         data: {
             user_1_id: alice.id,
             user_2_id: bob.id,

@@ -14,14 +14,14 @@ import notificationRoutes from "./notifications.routes.js";
 import reportRoutes from "./reports.routes.js";
 import authRoutes from "./auth.routes.js";
 import userRoutes from "./user.routes.js";
-// import roomRoutes from "./room.routes.js";
+import roomRoutes from "./room.routes.js";
 
 // Tập hợp các route con
 router.use("/messages", messageRoutes);
 router.use("/notifications", notificationRoutes);
 router.use("/reports", reportRoutes);
 router.use("/auth", authRoutes);
-// router.use("/room", roomRoutes);
+router.use("/rooms", roomRoutes);
 router.use("/", userRoutes);
 
 /*----------------------------------------*/

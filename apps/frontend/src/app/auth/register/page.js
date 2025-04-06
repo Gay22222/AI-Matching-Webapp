@@ -139,6 +139,7 @@ export default function Register() {
                         </button>
                     </div>
                 </form>
+<<<<<<< HEAD
                 <div className="text-center">
                     <button
                         className="text-[#FF5864] hover:underline"
@@ -147,6 +148,8 @@ export default function Register() {
                         Already have an account? Sign in
                     </button>
                 </div>
+=======
+>>>>>>> chat-temp
             </div>
         </div>
     );

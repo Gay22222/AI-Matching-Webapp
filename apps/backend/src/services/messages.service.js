@@ -1,6 +1,5 @@
-
 /*----------------------------------------*/
-	/*Gay22222 begin-section*/
+/*Gay22222 begin-section*/
 /*----------------------------------------*/
 
 import prisma from "../prisma/client.js";
@@ -18,16 +17,49 @@ import prisma from "../prisma/client.js";
  *
  * @returns {Object} - Trả về đối tượng tin nhắn đã được tạo.
  */
-export const sendMessageService = async (sender_id, receiver_id, match_id, content) => {
+export const sendMessageService = async ({
+    sender_id,
+    receiver_id,
+    match_id,
+    content,
+}) => {
     const message = await prisma.message.create({
         data: {
-            sender_id,
-            receiver_id,
-            match_id,
-            content
-        }
+            sender_id: parseInt(sender_id),
+            receiver_id: parseInt(receiver_id),
+            match_id: parseInt(match_id),
+            content,
+        },
+        include: {
+            sender_message_id: {
+                select: {
+                    id: true,
+                    display_name: true,
+                },
+            },
+            receiver_message_id: {
+                select: {
+                    id: true,
+                    display_name: true,
+                },
+            },
+        },
     });
-    return message;
+    const formattedMessage = {
+        id: message.id,
+        content: message.content,
+        timestamp: message.timestamp,
+        match_id: message.match_id,
+        sender: {
+            id: message.sender_message_id.id,
+            display_name: message.sender_message_id.display_name,
+        },
+        receiver: {
+            id: message.receiver_message_id.id,
+            display_name: message.receiver_message_id.display_name,
+        },
+    };
+    return formattedMessage;
 };
 
 /**
@@ -43,10 +75,40 @@ export const sendMessageService = async (sender_id, receiver_id, match_id, conte
 export const getMessagesService = async (match_id) => {
     const messages = await prisma.message.findMany({
         where: { match_id },
-        orderBy: { timestamp: "asc" }
+        orderBy: { timestamp: "asc" },
+        include: {
+            sender_message_id: {
+                select: {
+                    id: true,
+                    display_name: true,
+                },
+            },
+            receiver_message_id: {
+                select: {
+                    id: true,
+                    display_name: true,
+                },
+            },
+        },
     });
-    return messages;
+    const messagesFormatted = messages.map((message) => ({
+        id: message.id,
+        content: message.content,
+        timestamp: message.timestamp,
+        match_id: message.match_id,
+        sender: {
+            id: message.sender_message_id.id,
+            display_name: message.sender_message_id.display_name,
+        },
+        receiver: {
+            id: message.receiver_message_id.id,
+            display_name: message.receiver_message_id.display_name,
+        },
+    }));
+
+    return messagesFormatted;
 };
+
 /*----------------------------------------*/
-	/*Gay22222 end-section*/
+/*Gay22222 end-section*/
 /*----------------------------------------*/

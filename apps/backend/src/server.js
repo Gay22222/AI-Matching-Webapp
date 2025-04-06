@@ -20,12 +20,53 @@ const io = new Server(server, {
     },
 });
 setIO(io);
+
+let users = [];
+
+const handleUserConnection = (socket, data, users) => {
+    console.log(data, "data");
+
+    const isExistUserById = users.find((u) => u.id === data.id);
+    const isExistUserBySocketId = users.find((u) => u.socket_id === socket.id);
+    const user = {
+        socket_id: socket.id,
+        id: data.id,
+        name: data.name,
+    };
+    if (isExistUserById) {
+        console.log("User already connected:", data.id);
+        return user;
+    }
+    if (isExistUserBySocketId) {
+        Object.assign(isExistUserBySocketId, {
+            id: data.id,
+            name: data.name,
+        });
+        return user;
+    }
+    users.push(user);
+    return user;
+};
+
 // WebSocket
 io.on("connection", (socket) => {
-    console.log(" Client connected:", socket.id);
+    // console.log(" Client connected:", socket.id);
+    socket.on("me", (data) => {
+        socket.removeAllListeners("send-message");
 
-    setupMessageSocket(io, socket);
-    setupNotificationSocket(io, socket);
+        const user = handleUserConnection(socket, data, users);
+        setupMessageSocket(io, socket, user, () => users);
+        setupNotificationSocket(io, socket, user, () => users);
+    });
+
+    socket.on("disconnect", () => {
+        users = users.filter((user) => user.socket_id !== socket.id);
+        // console.log("Users joined (disconnect):", users);
+    });
+    socket.on("logout", () => {
+        users = users.filter((user) => user.socket_id !== socket.id);
+        // console.log("Users joined (logout):", users);
+    });
 });
 
 // Chạy server

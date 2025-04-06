@@ -23,7 +23,17 @@ let socket;
  */
 export const getSocket = () => {
     if (!socket) {
-        socket = io("http://localhost:3001"); // Địa chỉ server WebSocket
+        socket = io("http://localhost:3001", {
+            autoConnect: true,
+            reconnection: true,
+        }); // Địa chỉ server WebSocket
     }
     return socket;
+};
+
+export const disconnectSocket = () => {
+    if (socket) {
+        socket.disconnect();
+        socket = null;
+    }
 };
