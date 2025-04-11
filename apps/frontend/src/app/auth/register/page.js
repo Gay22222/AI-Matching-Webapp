@@ -8,14 +8,27 @@ import {
     MailIcon,
     PhoneIcon,
 } from "lucide-react";
+import Link from "next/link";
+import { FlameIcon, ArrowLeftIcon } from "lucide-react";
+
 export default function Register() {
     const router = useRouter();
+    const [loading, setLoading] = useState(false);
+
     const [formData, setFormData] = useState({
         name: "ken",
         email: "ken@gmail.com",
         password: "123",
         confirmPassword: "123",
     });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
     const [error, setError] = useState("");
 
     const handleSubmit = async (e) => {
@@ -56,96 +69,148 @@ export default function Register() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gradient-to-b from-[#FF5864] to-[#FF655B]">
-            <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-xl shadow-lg">
-                <div className="text-center">
-                    <h1 className="text-4xl font-bold text-gray-800">
-                        Create Account
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-white via-pink-50 to-rose-50 p-4 relative overflow-hidden">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-0 -right-40 w-80 h-80 bg-gradient-to-br from-[#FF5864]/30 to-[#FF655B]/30 rounded-full blur-3xl" />
+                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-[#FF5864]/30 to-[#FF655B]/30 rounded-full blur-3xl" />
+            </div>
+            <div className="w-full max-w-md relative">
+                <div className="mb-12 text-center">
+                    <div className="flex justify-center mb-4">
+                        <div className="relative">
+                            <FlameIcon className="h-16 w-16 text-transparent bg-gradient-to-r from-[#FF5864] to-[#FF655B] bg-clip-text animate-pulse" />
+                            <div className="absolute inset-0 h-16 w-16 bg-[#FF5864]/20 rounded-full blur-xl animate-pulse" />
+                        </div>
+                    </div>
+                    <h1 className="text-4xl font-bold text-transparent bg-gradient-to-r from-[#FF5864] to-[#FF655B] bg-clip-text">
+                        DateViet
                     </h1>
-                    <p className="mt-2 text-gray-600">
-                        Sign up and start meeting new people
+                    <p className="mt-3 text-gray-600 text-lg">
+                        Tạo tài khoản mới
                     </p>
                 </div>
-                <div className="flex flex-col space-y-4">
-                    <button className="flex items-center justify-center w-full p-3 space-x-3 border border-gray-300 rounded-lg hover:bg-gray-50">
-                        <FacebookIcon size={20} className="text-blue-600" />
-                        <span>Continue with Facebook</span>
-                    </button>
-                    <button className="flex items-center justify-center w-full p-3 space-x-3 border border-gray-300 rounded-lg hover:bg-gray-50">
-                        <MailIcon size={20} className="text-red-500" />
-                        <span>Continue with Google</span>
-                    </button>
-                    <div className="flex items-center">
-                        <div className="flex-1 h-px bg-gray-300"></div>
-                        <p className="px-3 text-sm text-gray-500">OR</p>
-                        <div className="flex-1 h-px bg-gray-300"></div>
-                    </div>
-                </div>
-                <form className="mt-6 space-y-6" onSubmit={handleSubmit}>
-                    <div className="rounded-md">
-                        <label htmlFor="phone" className="sr-only">
-                            Phone Number
-                        </label>
-                        <div className="flex items-center">
-                            <PhoneIcon className="w-5 h-5 text-gray-400 absolute ml-3" />
+                <div className="space-y-6">
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Email
+                            </label>
                             <input
-                                id="phone"
-                                name="phone"
-                                type="tel"
-                                required
-                                className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
-                                placeholder="Phone Number"
-                            />
-                        </div>
-                    </div>
-                    <div className="rounded-md">
-                        <label htmlFor="email" className="sr-only">
-                            Email
-                        </label>
-                        <div className="flex items-center">
-                            <UserIcon className="w-5 h-5 text-gray-400 absolute ml-3" />
-                            <input
-                                id="email"
-                                name="email"
                                 type="email"
+                                name="email"
                                 required
-                                className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
-                                placeholder="Email address"
+                                value={formData.email}
+                                onChange={handleChange}
+                                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
+                                placeholder="Nhập email của bạn"
                             />
                         </div>
-                    </div>
-                    <div className="rounded-md">
-                        <label htmlFor="password" className="sr-only">
-                            Password
-                        </label>
-                        <div className="flex items-center">
-                            <LockIcon className="w-5 h-5 text-gray-400 absolute ml-3" />
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Mật khẩu
+                            </label>
                             <input
-                                id="password"
-                                name="password"
                                 type="password"
+                                name="password"
                                 required
-                                className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
-                                placeholder="Password"
+                                value={formData.password}
+                                onChange={handleChange}
+                                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
+                                placeholder="Tạo mật khẩu"
                             />
                         </div>
-                    </div>
-                    <div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Xác nhận mật khẩu
+                            </label>
+                            <input
+                                type="password"
+                                name="confirmPassword"
+                                required
+                                value={formData.confirmPassword}
+                                onChange={handleChange}
+                                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#FF5864] focus:border-transparent"
+                                placeholder="Nhập lại mật khẩu"
+                            />
+                        </div>
                         <button
                             type="submit"
-                            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-white bg-gradient-to-r from-[#FF5864] to-[#FF655B] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF5864]"
+                            disabled={loading}
+                            className="w-full bg-gradient-to-r from-[#FF5864] to-[#FF655B] text-white py-3 px-6 rounded-xl
+                   font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70"
                         >
-                            Create Account
+                            {loading ? (
+                                <Loader2Icon className="h-5 w-5 animate-spin mx-auto" />
+                            ) : (
+                                "Đăng ký"
+                            )}
+                        </button>
+                    </form>
+                    <div className="relative">
+                        <div className="absolute inset-0 flex items-center">
+                            <div className="w-full border-t border-gray-300"></div>
+                        </div>
+                        <div className="relative flex justify-center text-sm">
+                            <span className="px-2 bg-gradient-to-br from-white via-pink-50 to-rose-50 text-gray-500">
+                                Hoặc đăng ký với
+                            </span>
+                        </div>
+                    </div>
+                    <div className="space-y-3">
+                        <button
+                            onClick={() => {}}
+                            className="w-full flex items-center justify-center gap-3 bg-white py-3 px-6 rounded-xl 
+                   border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300
+                   hover:border-gray-300 hover:-translate-y-0.5"
+                        >
+                            <img
+                                src="https://www.google.com/favicon.ico"
+                                alt="Google"
+                                className="w-5 h-5"
+                            />
+                            <span className="text-gray-700 font-medium">
+                                Đăng ký với Google
+                            </span>
+                        </button>
+                        <button
+                            onClick={() => {}}
+                            className="w-full flex items-center justify-center gap-3 bg-[#1877F2] py-3 px-6 rounded-xl 
+                   shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+                        >
+                            <FacebookIcon className="h-5 w-5 text-white" />
+                            <span className="text-white font-medium">
+                                Đăng ký với Facebook
+                            </span>
+                        </button>
+                        <button
+                            onClick={() => {}}
+                            className="w-full flex items-center justify-center gap-3 bg-white py-3 px-6 rounded-xl 
+                   border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300
+                   hover:border-gray-300 hover:-translate-y-0.5"
+                        >
+                            <PhoneIcon className="h-5 w-5 text-gray-600" />
+                            <span className="text-gray-700 font-medium">
+                                Đăng ký với số điện thoại
+                            </span>
                         </button>
                     </div>
-                </form>
-                <div className="text-center">
-                    <button
-                        className="text-[#FF5864] hover:underline"
-                        onClick={() => router.push("/auth/login")}
+                </div>
+                <div className="mt-8 text-center">
+                    <p className="text-gray-600">
+                        Đã có tài khoản?
+                        <button className="ml-2 text-[#FF5864] font-medium hover:text-[#FF655B] transition-colors duration-300">
+                            Đăng nhập
+                        </button>
+                    </p>
+                </div>
+                <div className="mt-10 text-center">
+                    <Link
+                        href="/"
+                        className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-300"
                     >
-                        Already have an account? Sign in
-                    </button>
+                        <ArrowLeftIcon className="h-4 w-4 mr-2" />
+                        <span>Quay lại ứng dụng</span>
+                    </Link>
                 </div>
             </div>
         </div>
