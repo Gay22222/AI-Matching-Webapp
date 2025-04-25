@@ -1,35 +1,36 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon src/server.js",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "migrate": "pnpm exec cross-env DOTENV_CONFIG_PATH=./src/config/.env prisma migrate dev --schema ./src/prisma/schema.prisma"
-  },
-  "prisma": {
-    "schema": "src/prisma/schema.prisma",
-    "seed": "node src/prisma/seed.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.6.3",
-  "dependencies": {
-    "@prisma/client": "^6.5.0",
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "socket.io": "^4.8.1"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "nodemon": "^3.1.9",
-    "prisma": "^6.5.0"
-  }
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "build": "tsc",
+        "start": "node dist/server.js",
+        "seed": "node src/prisma/seeds/index.js",
+        "migrate": "pnpm exec cross-env DOTENV_CONFIG_PATH=./src/config/.env prisma migrate dev --schema ./src/prisma/schema.prisma"
+    },
+    "prisma": {
+        "schema": "src/prisma/schema.prisma",
+        "seed": "node src/prisma/seed.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.6.3",
+    "dependencies": {
+        "@prisma/client": "^6.5.0",
+        "bcryptjs": "^3.0.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "socket.io": "^4.8.1"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "nodemon": "^3.1.9",
+        "prisma": "^6.5.0"
+    }
 }
