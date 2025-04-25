@@ -1,7 +1,7 @@
 import React from "react";
 import { XIcon, SlidersIcon, CheckIcon } from "lucide-react";
 
-const FilterModal = ({ isOpen, onClose, filters, onFilterChange }) => {
+const FilterModal = ({ data, isOpen, onClose, filters, onFilterChange }) => {
     const singleSelectSections = [
         {
             id: "searchingfor",
@@ -24,56 +24,7 @@ const FilterModal = ({ isOpen, onClose, filters, onFilterChange }) => {
         {
             id: "zodiac",
             label: "Cung hoàng đạo",
-            options: [
-                {
-                    label: "Bạch Dương",
-                    value: "aries",
-                },
-                {
-                    label: "Kim Ngưu",
-                    value: "taurus",
-                },
-                {
-                    label: "Song Tử",
-                    value: "gemini",
-                },
-                {
-                    label: "Cự Giải",
-                    value: "cancer",
-                },
-                {
-                    label: "Sư Tử",
-                    value: "leo",
-                },
-                {
-                    label: "Xử Nữ",
-                    value: "virgo",
-                },
-                {
-                    label: "Thiên Bình",
-                    value: "libra",
-                },
-                {
-                    label: "Bọ Cạp",
-                    value: "scorpio",
-                },
-                {
-                    label: "Nhân Mã",
-                    value: "sagittarius",
-                },
-                {
-                    label: "Ma Kết",
-                    value: "capricorn",
-                },
-                {
-                    label: "Bảo Bình",
-                    value: "aquarius",
-                },
-                {
-                    label: "Song Ngư",
-                    value: "pisces",
-                },
-            ],
+            options: data?.zodiacs,
         },
         {
             id: "education",

@@ -38,7 +38,7 @@ const Settings = () => {
     };
 
     const handleLogout = () => {
-        router.push("/login");
+        router.push("/auth/login");
     };
     const settingSections = [
         {

@@ -1,11 +1,13 @@
 "use client";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import MatchModal from "@/ui/MatchModal";
 import ProfileCard from "@/components/cards/ProfileCard";
 import { SlidersIcon } from "lucide-react";
 import FilterModal from "@/ui/FilterModal";
+import axios from "axios";
 
 const Home = () => {
+    const [profileSetupData, setProfileSetupData] = useState();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showMatch, setShowMatch] = useState(false);
     const [matchedProfile, setMatchedProfile] = useState({});
@@ -51,6 +53,25 @@ const Home = () => {
             tags: ["#Leo núi", "#Cắm trại", "#Yoga"],
         },
     ];
+
+    console.log(profileSetupData);
+
+    useEffect(() => {
+        const fetchProfileSetupData = async () => {
+            axios
+                .get("http://localhost:3001/api/profile-setup")
+                .then((response) => {
+                    console.log(response);
+
+                    setProfileSetupData(response.data.data);
+                })
+                .catch((error) => {
+                    console.error("Error fetching profile setup data:", error);
+                });
+        };
+        fetchProfileSetupData();
+    }, []);
+
     const handleSwipeLeft = useCallback(() => {
         if (currentIndex < profiles.length - 1) {
             setCurrentIndex((prev) => prev + 1);
@@ -152,6 +173,7 @@ const Home = () => {
                 />
             )}
             <FilterModal
+                data={profileSetupData}
                 isOpen={showFilters}
                 onClose={() => setShowFilters(false)}
                 filters={filters}
