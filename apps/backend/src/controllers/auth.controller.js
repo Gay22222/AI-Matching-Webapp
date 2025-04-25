@@ -1,20 +1,23 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import prisma from "../prisma/client.js";
+
 import { findUserByEmail, createUser } from "../models/user.models.js";
 
 export const login = async (req, res) => {
     try {
         const { email, password } = req.body;
-        // find user
+
         const user = await findUserByEmail(email);
+
         if (!user) {
-            return res.status(401).json({ message: "Invalid credentials" });
+            return res.status(401).json({ message: "User not found" });
         }
+
         // verify password
         const isValidPassword = await bcrypt.compare(password, user.password);
+
         if (!isValidPassword) {
-            return res.status(401).json({ message: "Invalid credentials" });
+            return res.status(401).json({ message: "Password is not correct" });
         }
 
         // generate jwt token
@@ -36,7 +39,7 @@ export const login = async (req, res) => {
 
 export const register = async (req, res) => {
     try {
-        const { name, email, password } = req.body;
+        const { email, password } = req.body;
 
         // Check if user already exists
         const existingUser = await findUserByEmail(email);
@@ -54,20 +57,14 @@ export const register = async (req, res) => {
         const user = await createUser({
             email,
             password: hashedPassword,
-            display_name: name,
-            username: name,
+            display_name: email,
+            username: email,
             gender: "male",
             preferred_gender: "female",
         });
 
-        // Generate JWT
-        const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
-            expiresIn: "24h",
-        });
-
         // Return user data (excluding password) and token
         res.status(201).json({
-            token,
             user: {
                 id: user.id,
                 name: user.name,
