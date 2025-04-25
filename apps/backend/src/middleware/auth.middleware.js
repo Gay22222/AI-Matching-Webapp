@@ -1,52 +1,28 @@
-import jwt from "jsonwebtoken";
-import { findUserByEmail } from "../models/user.models.js";
+import { extractToken, verifyToken, attachUser } from "../utils/auth.js";
 
 // authentication
 export const authenticationMiddleware = async (req, res, next) => {
     try {
-        const authHeaders = req.headers.authorization;
-
-        if (!authHeaders || !authHeaders.startsWith("Bearer ")) {
-            return res.status(401).json({
-                statusCode: 401,
-                message: "Authentication required",
-            });
-        }
-
-        const token = authHeaders.split(" ")[1];
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-
-        const user = await findUserByEmail(decoded.email);
-
-        console.log(user);
-
-        if (!user) {
-            return res.status(401).json({
-                statusCode: 401,
-                message: "Authentication required",
-            });
-        }
-
-        req.user = user;
-
+        const token = extractToken(req.headers.authorization);
+        const decoded = verifyToken(token);
+        await attachUser(decoded, req);
         next();
     } catch (error) {
         console.error("Error verifying token:", error);
         if (
-            error.name === "JsonWebTokenError" ||
-            error.name === "TokenExpiredError"
+            error.message === "Authentication required" ||
+            error.message === "Invalid or expired token" ||
+            error.message === "Token has expired"
         ) {
-            res.status(401).json({
+            return res.status(401).json({
                 statusCode: 401,
-                message: "Invalid or expired token",
-            });
-        } else {
-            // Lỗi khác (ví dụ: lỗi database khi tìm user)
-            res.status(500).json({
-                statusCode: 500,
-                message: "Internal server error during authentication",
+                message: error.message,
             });
         }
+        return res.status(500).json({
+            statusCode: 500,
+            message: "Internal server error during authentication",
+        });
     }
 };
 

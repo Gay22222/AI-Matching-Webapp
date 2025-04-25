@@ -1,7 +1,7 @@
-import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 
-import { findUserByEmail, createUser } from "../models/user.models.js";
+import { createUser, findUserByEmail } from "../models/user.models.js";
+import { createToken } from "../utils/auth.js";
 
 export const login = async (req, res) => {
     try {
@@ -21,13 +21,8 @@ export const login = async (req, res) => {
         }
 
         // generate jwt token
-        const token = jwt.sign(
-            { userId: user.id, email: user.email },
-            process.env.JWT_SECRET,
-            {
-                expiresIn: "24h",
-            }
-        );
+        const token = createToken(user);
+
         res.json({
             token,
         });
