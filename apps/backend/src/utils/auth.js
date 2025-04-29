@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { findUserByEmail } from "../models/user.models.js";
+import { userRepository } from "../repository/user.repository.js";
 
 export const createToken = (user) => {
     if (!process.env.JWT_SECRET) {
@@ -17,7 +17,7 @@ export const createToken = (user) => {
 
 export const extractToken = (authHeaders) => {
     if (!authHeaders || !authHeaders.startsWith("Bearer ")) {
-        throw new Error("Missing or invalid Authorization header");
+        throw new Error("Authentication required");
     }
     return authHeaders.split(" ")[1];
 };
@@ -41,7 +41,9 @@ export const verifyToken = (token) => {
 };
 
 export const attachUser = async (decoded, req) => {
-    const user = await findUserByEmail(decoded.email);
+    const user = await userRepository.findUserByEmail(decoded.email);
+    console.log(user);
+
     if (!user) {
         throw new Error("User not found");
     }

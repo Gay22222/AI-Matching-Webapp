@@ -1,26 +1,10 @@
-/*----------------------------------------*/
-	/*Gay22222 begin-section*/
-/*----------------------------------------*/
-
-// src/routes/reports.routes.js
-
 import express from "express";
-import {
-  createReportHandler,
-  getAllReportsHandler,
-} from "../controllers/reports.controller.js";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+import { reportController } from "../controllers/reports.controller.js";
 
 const router = express.Router();
 
-// Gửi báo cáo
-router.post("/", createReportHandler);
-
-// Lấy tất cả báo cáo
-router.get("/", getAllReportsHandler);
+// router.post("/", authenticationMiddleware, reportController.create);
+// router.get("/", authenticationMiddleware, reportController.getAll);
 
 export default router;
-
-
-/*----------------------------------------*/
-	/*Gay22222 end-section*/
-/*----------------------------------------*/

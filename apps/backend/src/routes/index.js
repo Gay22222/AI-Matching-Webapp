@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 const router = Router();
+
 router.get("/hello", (req, res) => {
     res.json({ message: "Hello from Express Backend!" });
 });
@@ -11,10 +12,10 @@ import reportRoutes from "./reports.routes.js";
 import authRoutes from "./auth.routes.js";
 import userRoutes from "./user.routes.js";
 import roomRoutes from "./room.routes.js";
-import profileSetupRoutes from "./profileSetup.routes.js";
+import metadataRoutes from "./metadata.routes.js";
 
 router.use("/messages", messageRoutes);
-router.use("/profile-setup", profileSetupRoutes);
+router.use("/metadata", metadataRoutes);
 router.use("/notifications", notificationRoutes);
 router.use("/reports", reportRoutes);
 router.use("/auth", authRoutes);

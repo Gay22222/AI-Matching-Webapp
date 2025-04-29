@@ -3,7 +3,7 @@
 /*----------------------------------------*/
 
 // messages.socket.js
-import { createRoom } from "../models/room.models.js";
+import { createRoom } from "../repository/room.repository.js";
 import { sendMessageService } from "../services/messages.service.js";
 import { findSocketId } from "../utils/socketHelpers.js";
 

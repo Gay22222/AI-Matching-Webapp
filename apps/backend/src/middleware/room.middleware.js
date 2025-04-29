@@ -1,4 +1,4 @@
-import { findRoomById } from "../models/room.models.js";
+import { findRoomById } from "../repository/room.repository.js";
 
 export const roomMiddleware = async (req, res, next) => {
     try {

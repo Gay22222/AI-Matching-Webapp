@@ -1,73 +1,97 @@
-import bcrypt from "bcryptjs";
+import { authService } from "../services/auth.service.js";
 
-import { createUser, findUserByEmail } from "../models/user.models.js";
-import { createToken } from "../utils/auth.js";
-
-export const login = async (req, res) => {
-    try {
-        const { email, password } = req.body;
-
-        const user = await findUserByEmail(email);
-
-        if (!user) {
-            return res.status(401).json({ message: "User not found" });
+export const authController = {
+    // [POST] /login
+    login: async (req, res) => {
+        try {
+            const { email, password } = req.body;
+            const token = await authService.loginUser(email, password);
+            res.json({
+                token,
+            });
+        } catch (error) {
+            if (
+                error.message === "User not found" ||
+                error.message === "Password is not correct"
+            ) {
+                console.error("Error logging in:", error);
+                return res.status(401).json({
+                    statusCode: 401,
+                    message: error.message,
+                });
+            }
+            console.error("Error logging in:", error);
+            res.status(500).json({ message: "Internal server error" });
         }
-
-        // verify password
-        const isValidPassword = await bcrypt.compare(password, user.password);
-
-        if (!isValidPassword) {
-            return res.status(401).json({ message: "Password is not correct" });
+    },
+    // [POST] /register
+    register: async (req, res) => {
+        try {
+            const { email, password } = req.body;
+            const userNew = await authService.registerUserNew(email, password);
+            res.status(201).json({
+                user_new: userNew,
+            });
+        } catch (error) {
+            if (error.message === "Email already registered") {
+                console.error("Error logging in:", error);
+                return res.status(409).json({
+                    statusCode: 409,
+                    message: "Email already registered",
+                });
+                return;
+            }
+            console.log(error);
+            res.status(500).json({ message: "Internal server error" });
         }
-
-        // generate jwt token
-        const token = createToken(user);
-
-        res.json({
-            token,
-        });
-    } catch (error) {
-        console.error("Error logging in:", error);
-        res.status(500).json({ message: "Internal server error" });
-    }
-};
-
-export const register = async (req, res) => {
-    try {
-        const { email, password } = req.body;
-
-        // Check if user already exists
-        const existingUser = await findUserByEmail(email);
-
-        if (existingUser) {
-            return res
-                .status(400)
-                .json({ message: "Email already registered" });
+    },
+    // [POST] /send-verification-otp
+    requestVerificationCode: async (req, res, next) => {
+        try {
+            const { email } = req.body;
+            await authService.sendOtpForVerification(email);
+            res.status(200).json({
+                statusCode: 200,
+                message: "Verification code sent successfully",
+            });
+        } catch (error) {
+            console.error("Error requesting verification code:", error);
+            next(error);
         }
+    },
+    // [POST] /verify-otp
+    verifyEmailWithOtp: async (req, res, next) => {
+        try {
+            const { email, otp } = req.body;
+            console.log(email, otp);
 
-        // Hash password
-        const hashedPassword = await bcrypt.hash(password, 10);
+            if (!email || !otp) {
+                return res.status(400).json({
+                    statusCode: 400,
+                    message: "Email and OTP are required",
+                });
+            }
+            const isVerified = await authService.verifyEmailOtp(email, otp);
 
-        // Create new user
-        const user = await createUser({
-            email,
-            password: hashedPassword,
-            display_name: email,
-            username: email,
-            gender: "male",
-            preferred_gender: "female",
-        });
-
-        // Return user data (excluding password) and token
-        res.status(201).json({
-            user: {
-                id: user.id,
-                name: user.name,
-                email: user.email,
-            },
-        });
-    } catch (error) {
-        console.error("Registration error:", error);
-        res.status(500).json({ message: "Internal server error" });
-    }
+            if (isVerified) {
+                res.status(200).json({
+                    statusCode: 200,
+                    message: "Email verified successfully",
+                });
+            } else {
+                res.status(400).json({
+                    statusCode: 400,
+                    message: "OTP verification failed",
+                });
+            }
+        } catch (error) {
+            console.error("Error verifying OTP:", error);
+            if (error.message.includes("Mã OTP")) {
+                return res
+                    .status(400)
+                    .json({ statusCode: 400, message: error.message });
+            }
+            next(error);
+        }
+    },
 };

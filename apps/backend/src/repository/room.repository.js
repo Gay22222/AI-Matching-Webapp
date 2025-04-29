@@ -33,7 +33,7 @@ export const findRoomById = async (match_id) => {
     return room;
 };
 
-const findRoom = async (senderId, receiverId) => {
+export const findRoom = async (senderId, receiverId) => {
     const existingRoom = await prisma.matches.findFirst({
         where: {
             OR: [
