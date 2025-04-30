@@ -3,8 +3,8 @@
 /*----------------------------------------*/
 
 // messages.socket.js
-import { createRoom } from "../repository/room.repository.js";
-import { sendMessageService } from "../services/messages.service.js";
+import { matchRepository } from "../repository/match.repository.js";
+import { messageService } from "../services/message.service.js";
 import { findSocketId } from "../utils/socketHelpers.js";
 
 /**
@@ -48,7 +48,7 @@ const setupMessageSocket = (io, socket, user, getUsers) => {
         }
         try {
             // Lưu tin nhắn vào cơ sở dữ liệu
-            const message = await sendMessageService({
+            const message = await messageService.sendMessageService({
                 sender_id,
                 receiver_id,
                 match_id,
@@ -86,7 +86,7 @@ const setupMessageSocket = (io, socket, user, getUsers) => {
         const senderSocketId = findSocketId(users, senderId);
 
         // create a room
-        const room = await createRoom({ senderId, receiverId });
+        const room = await matchRepository.createRoom({ senderId, receiverId });
 
         socket
             .to(senderSocketId)

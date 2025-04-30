@@ -248,8 +248,8 @@ model messages {
   content                           String    @db.Text
   sent_at                           DateTime? @default(now()) @db.Timestamp(0)
   matches                           matches   @relation(fields: [match_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_1")
-  users_messages_sender_idTousers   users     @relation("messages_sender_idTousers", fields: [sender_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_2")
-  users_messages_receiver_idTousers users     @relation("messages_receiver_idTousers", fields: [receiver_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_3")
+  sender   users     @relation("messages_sender_idTousers", fields: [sender_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_2")
+  receiver users     @relation("messages_receiver_idTousers", fields: [receiver_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_3")
 
   @@index([match_id], map: "match_id")
   @@index([receiver_id], map: "receiver_id")

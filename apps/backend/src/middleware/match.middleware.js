@@ -1,12 +1,12 @@
-import { findRoomById } from "../repository/room.repository.js";
+import { matchRepository } from "../repository/match.repository.js";
 
-export const roomMiddleware = async (req, res, next) => {
+export const matchMiddleware = async (req, res, next) => {
     try {
         const { roomId } = req.params;
         const userId = req.user.id;
 
-        if (!roomId) return;
-        const room = await findRoomById(roomId);
+        if (!roomId) return res.status(404).json({ message: "Room not found" });
+        const room = await matchRepository.findRoomById(roomId);
         if (!room) {
             return res.status(404).json({ message: "Room not found" });
         }

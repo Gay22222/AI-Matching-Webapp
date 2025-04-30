@@ -23,7 +23,7 @@ export const userController = {
         }
     },
     // [GET] /user/list-match
-    getUsers: async (req, res) => {
+    getAll: async (req, res) => {
         try {
             const users = await userService.getAllUsersFormatted();
             res.status(200).json({

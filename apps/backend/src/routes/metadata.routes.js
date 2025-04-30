@@ -1,8 +1,8 @@
 import express from "express";
-import { getMetadata } from "../controllers/metadata.controller.js";
+import { metadataController } from "../controllers/metadata.controller.js";
 
 const router = express.Router();
 
-router.get("/", getMetadata);
+router.get("/", metadataController.get);
 
 export default router;
