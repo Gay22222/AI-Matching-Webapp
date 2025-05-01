@@ -18,7 +18,12 @@ model match {
   @@index([user_1_id], map: "Match_user_1_id_fkey")
   @@index([user_2_id], map: "Match_user_2_id_fkey")
 }
+model user_favorite {
+  id         Int     @id @default(autoincrement())
+  user_id    Int
+  favorite_id Int
 
+<<<<<<< Updated upstream
 model message {
   id                             Int      @id @default(autoincrement())
   sender_id                      Int
@@ -33,6 +38,37 @@ model message {
   @@index([match_id], map: "Message_match_id_fkey")
   @@index([receiver_id], map: "Message_receiver_id_fkey")
   @@index([sender_id], map: "Message_sender_id_fkey")
+=======
+  user      users    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  favorite  Favorite @relation(fields: [favorite_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, favorite_id])
+  @@index([user_id])
+  @@index([favorite_id])
+}
+model users {
+  id                                   Int                    @id @default(autoincrement())
+  display_name                         String                 @db.VarChar(255)
+  username                             String                 @db.VarChar(255)
+  password                             String                 @db.VarChar(255)
+  is_verified                          Boolean                @default(false)
+  verify_token                         String?
+  email                                String                 @unique(map: "email") @db.VarChar(255)
+  phone_number                         String?                @db.VarChar(20)
+  birthday                             DateTime?              @db.Date
+  gender                               users_gender
+  preferred_gender                     users_preferred_gender
+  status                               users_status?          @default(offline)
+  time_register                        DateTime?              @default(now()) @db.Timestamp(0)
+  Bio                                  Bio?
+  user_match_1                         matches[]              @relation("user_match_1")
+  user_match_2                         matches[]              @relation("user_match_2")
+  messages_messages_sender_idTousers   messages[]             @relation("messages_sender_idTousers")
+  messages_messages_receiver_idTousers messages[]             @relation("messages_receiver_idTousers")
+  reports_reports_reported_byTousers   reports[]              @relation("reports_reported_byTousers")
+  reports_reports_reported_userTousers reports[]              @relation("reports_reported_userTousers")
+  user_favorites user_favorite[]
+>>>>>>> Stashed changes
 }
 
 model user {
@@ -57,7 +93,225 @@ model user {
   notificationsSent                 Notification[]        @relation("NotificationSender") // Quan hệ ngược lại với `sender`
 }
 
+<<<<<<< Updated upstream
 enum user_gender {
+=======
+model Bio {
+  id               Int           @id @default(autoincrement())
+  user_id          Int?          @unique(map: "user_id")
+  status           Bio_status?   @default(active)
+  name             String?       @db.VarChar(255)
+  age              Int?
+  address          String?  @db.VarChar(255) // Địa chỉ
+  min_radius       Int?     // Bán kính tối thiểu (km)
+  max_radius       Int?     // Bán kính tối đa (km)
+  searching_for_id Int?
+  about_me         String?       @db.Text
+  Base_inf         Base_inf?
+  users            users?        @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "Bio_ibfk_1")
+  Searchingfor     Searchingfor? @relation(fields: [searching_for_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Bio_ibfk_2")
+  Lifestyle        Lifestyle?
+  Photo            Photo[]
+  main_inf         main_inf?
+
+  @@index([searching_for_id], map: "searching_for_id")
+}
+
+model Career {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  main_inf    main_inf[]
+}
+
+model Character {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  Base_inf    Base_inf[]
+}
+
+model Communicate_style {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  Base_inf    Base_inf[]
+}
+
+model Diet {
+  id          Int         @id @default(autoincrement())
+  name        String      @db.VarChar(255)
+  description String?     @db.Text
+  Lifestyle   Lifestyle[]
+}
+
+model Education {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  main_inf    main_inf[]
+}
+
+model Favorite {
+  id          Int     @id @default(autoincrement())
+  name        String  @db.VarChar(255)
+  description String? @db.Text
+  user_favorites user_favorite[]
+}
+
+model FutureFamily {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  Base_inf    Base_inf[]
+}
+
+model Language {
+  id       Int        @id @default(autoincrement())
+  name     String     @db.VarChar(255)
+  main_inf main_inf[]
+}
+
+model Lifestyle {
+  id       Int      @id @default(autoincrement())
+  bio_id   Int?     @unique(map: "bio_id")
+  drink    Boolean? @default(false)
+  smoke    Boolean? @default(false)
+  train    Boolean? @default(false)
+  pet_id   Int?
+  diet_id  Int?
+  sleep_id Int?
+  snu_id   Int?
+  Bio      Bio?     @relation(fields: [bio_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "Lifestyle_ibfk_1")
+  Pet      Pet?     @relation(fields: [pet_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Lifestyle_ibfk_2")
+  Diet     Diet?    @relation(fields: [diet_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Lifestyle_ibfk_3")
+  Sleep    Sleep?   @relation(fields: [sleep_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Lifestyle_ibfk_4")
+  SNU      SNU?     @relation(fields: [snu_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Lifestyle_ibfk_5")
+
+  @@index([diet_id], map: "diet_id")
+  @@index([pet_id], map: "pet_id")
+  @@index([sleep_id], map: "sleep_id")
+  @@index([snu_id], map: "snu_id")
+}
+
+model Love_language {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  Base_inf    Base_inf[]
+}
+
+model Pet {
+  id          Int         @id @default(autoincrement())
+  name        String      @db.VarChar(255)
+  description String?     @db.Text
+  Lifestyle   Lifestyle[]
+}
+
+model Photo {
+  id             Int       @id @default(autoincrement())
+  bio_id         Int?
+  url            String    @db.Text
+  is_profile_pic Boolean?  @default(false)
+  uploaded_at    DateTime? @default(now()) @db.DateTime(0)
+  Bio            Bio?      @relation(fields: [bio_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "Photo_ibfk_1")
+
+  @@index([bio_id], map: "bio_id")
+}
+
+model Religion {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  main_inf    main_inf[]
+}
+
+model SNU {
+  id          Int         @id @default(autoincrement())
+  name        String      @db.VarChar(255)
+  description String?     @db.Text
+  Lifestyle   Lifestyle[]
+}
+
+model Searchingfor {
+  id          Int     @id @default(autoincrement())
+  name        String  @db.VarChar(255)
+  description String? @db.Text
+  Bio         Bio[]
+}
+
+model Sleep {
+  id          Int         @id @default(autoincrement())
+  name        String      @db.VarChar(255)
+  description String?     @db.Text
+  Lifestyle   Lifestyle[]
+}
+
+model Zodiac {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(255)
+  description String?    @db.Text
+  Base_inf    Base_inf[]
+}
+
+model main_inf {
+  id           Int        @id @default(autoincrement())
+  bio_id       Int?       @unique(map: "bio_id")
+  height       String?    @db.VarChar(10)
+  location     String?    @db.VarChar(255)
+  language_id  Int?
+  religion_id  Int?
+  career_id    Int?
+  education_id Int?
+  Bio          Bio?       @relation(fields: [bio_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "main_inf_ibfk_1")
+  Language     Language?  @relation(fields: [language_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "main_inf_ibfk_2")
+  Religion     Religion?  @relation(fields: [religion_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "main_inf_ibfk_3")
+  Career       Career?    @relation(fields: [career_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "main_inf_ibfk_4")
+  Education    Education? @relation(fields: [education_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "main_inf_ibfk_5")
+
+  @@index([career_id], map: "career_id")
+  @@index([education_id], map: "education_id")
+  @@index([language_id], map: "language_id")
+  @@index([religion_id], map: "religion_id")
+}
+
+model messages {
+  id                                Int       @id @default(autoincrement())
+  match_id                          Int
+  sender_id                         Int
+  receiver_id                       Int
+  content                           String    @db.Text
+  sent_at                           DateTime? @default(now()) @db.Timestamp(0)
+  matches                           matches   @relation(fields: [match_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_1")
+  sender   users     @relation("messages_sender_idTousers", fields: [sender_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_2")
+  receiver users     @relation("messages_receiver_idTousers", fields: [receiver_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_3")
+
+  @@index([match_id], map: "match_id")
+  @@index([receiver_id], map: "receiver_id")
+  @@index([sender_id], map: "sender_id")
+}
+
+model reports {
+  id                                 Int       @id @default(autoincrement())
+  reason                             String?   @db.Text
+  reported_by                        Int?
+  reported_user                      Int?
+  time_report                        DateTime? @default(now()) @db.DateTime(0)
+  users_reports_reported_byTousers   users?    @relation("reports_reported_byTousers", fields: [reported_by], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reports_ibfk_1")
+  users_reports_reported_userTousers users?    @relation("reports_reported_userTousers", fields: [reported_user], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reports_ibfk_2")
+
+  @@index([reported_by], map: "reported_by")
+  @@index([reported_user], map: "reported_user")
+}
+
+model sexual_orientation {
+  id          Int     @id @default(autoincrement())
+  name        String  @db.VarChar(255)
+  description String? @db.Text
+}
+
+enum users_gender {
+>>>>>>> Stashed changes
   male
   female
   other
