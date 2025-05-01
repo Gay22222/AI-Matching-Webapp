@@ -10,8 +10,8 @@ import Link from "next/link";
 export default function Login() {
     const router = useRouter();
     const [formData, setFormData] = useState({
-        email: "ken@gmail.com",
-        password: "123123",
+        email: "john@example.com",
+        password: "123123123",
     });
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
@@ -43,7 +43,7 @@ export default function Login() {
             localStorage.setItem("token", data.token);
 
             // Redirect to dashboard
-            router.push("/dashboard");
+            router.push("/");
         } catch (error) {
             setError(error.message || "Login failed");
         } finally {
@@ -177,7 +177,7 @@ export default function Login() {
                         Chưa có tài khoản?
                         <button
                             className="ml-2 text-[#FF5864] font-medium hover:text-[#FF655B] transition-colors duration-300"
-                            onClick={() => setIsLogin(!isLogin)}
+                            onClick={() => router.push("/auth/register")}
                         >
                             Đăng ký
                         </button>

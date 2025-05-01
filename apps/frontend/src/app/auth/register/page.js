@@ -1,20 +1,23 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+
 import {
     UserIcon,
     LockIcon,
     FacebookIcon,
+    Loader2Icon,
     MailIcon,
     PhoneIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { FlameIcon, ArrowLeftIcon } from "lucide-react";
+import OTPVerification from "../otp/OTPVerification.jsx";
 
 export default function Register() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
-
+    const [showOTP, setShowOTP] = useState(false);
     const [formData, setFormData] = useState({
         name: "ken",
         email: "ken@gmail.com",
@@ -38,6 +41,7 @@ export default function Register() {
             setError("Passwords do not match");
             return;
         }
+        setLoading(true);
 
         try {
             const res = await fetch("http://localhost:3001/api/auth/register", {
@@ -54,19 +58,55 @@ export default function Register() {
 
             const data = await res.json();
 
-            if (!res.ok) {
-                throw new Error(data.message || "Registration failed");
+            if (data?.statusCode === 409) {
+                console.log(data?.message);
+                return;
             }
 
-            // Store token
-            localStorage.setItem("token", data.token);
-
-            // Redirect to dashboard
-            router.push("/dashboard");
+            setShowOTP(true);
         } catch (err) {
             setError(err.message);
+        } finally {
+            setLoading(false);
         }
     };
+
+    const handleVerifyOTP = async (otp) => {
+        console.log(otp);
+
+        const res = await fetch("http://localhost:3001/api/auth/verify-otp", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email: formData.email,
+                otp,
+            }),
+        });
+
+        const data = await res.json();
+        if (data.statusCode === 400) {
+            throw new Error(data.message);
+        }
+
+        console.log(data);
+        router.push("/profile-setup");
+    };
+    const handleResendOTP = async () => {
+        // Simulate API call to resend OTP
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+    };
+    if (showOTP) {
+        return (
+            <OTPVerification
+                email={formData.email}
+                onVerify={handleVerifyOTP}
+                onResend={handleResendOTP}
+                onBack={() => setShowOTP(false)}
+            />
+        );
+    }
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-white via-pink-50 to-rose-50 p-4 relative overflow-hidden">
