@@ -2,12 +2,21 @@ export default async function seedCareer(prisma) {
     await prisma.career.createMany({
         data: [
             {
-                name: "Software Engineer",
-                description: "Designs and develops software systems.",
+                name: "Kỹ sư phần mềm",
+                description: "Thiết kế và phát triển hệ thống phần mềm.",
             },
-            { name: "Teacher", description: "Educates students." },
-            { name: "Doctor", description: "Practices medicine." },
-            { name: "Entrepreneur", description: "Runs their own business." },
-        ],
+            {
+                name: "Giáo viên",
+                description: "Giáo dục và giảng dạy học sinh.",
+            },
+            {
+                name: "Bác sĩ",
+                description: "Khám và điều trị bệnh.",
+            },
+            {
+                name: "Doanh nhân",
+                description: "Tự điều hành công việc kinh doanh của mình.",
+            },
+        ]ư,
     });
 }

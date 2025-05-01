@@ -2,18 +2,21 @@ export default async function seedEducation(prisma) {
     await prisma.education.createMany({
         data: [
             {
-                name: "High School",
-                description: "Completed secondary education.",
+                name: "Trung học phổ thông",
+                description: "Hoàn thành chương trình giáo dục phổ thông.",
             },
             {
-                name: "Bachelor's Degree",
-                description: "Undergraduate academic degree.",
+                name: "Cử nhân",
+                description: "Bằng đại học hệ chính quy.",
             },
             {
-                name: "Master's Degree",
-                description: "Postgraduate academic degree.",
+                name: "Thạc sĩ",
+                description: "Bằng sau đại học (cao học).",
             },
-            { name: "PhD", description: "Doctor of Philosophy." },
+            {
+                name: "Tiến sĩ",
+                description: "Học vị Tiến sĩ chuyên ngành.",
+            },
         ],
     });
 }

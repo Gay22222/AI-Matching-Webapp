@@ -2,24 +2,24 @@ export default async function seedReligions(prisma) {
     await prisma.religion.createMany({
         data: [
             {
-                name: "Buddhism",
+                name: "Phật giáo",
                 description:
-                    "A spiritual tradition focused on personal spiritual development.",
+                    "Một truyền thống tâm linh tập trung vào sự phát triển tinh thần cá nhân.",
             },
             {
-                name: "Christianity",
+                name: "Cơ đốc giáo",
                 description:
-                    "A monotheistic religion based on the life and teachings of Jesus Christ.",
+                    "Tôn giáo độc thần dựa trên cuộc đời và lời dạy của Chúa Giê-su Ki-tô.",
             },
             {
-                name: "Islam",
+                name: "Hồi giáo",
                 description:
-                    "A monotheistic faith revealed through Prophet Muhammad.",
+                    "Tôn giáo độc thần được khải thị qua Nhà tiên tri Muhammad.",
             },
             {
-                name: "Hinduism",
+                name: "Ấn Độ giáo",
                 description:
-                    "A major religious and cultural tradition of South Asia.",
+                    "Một truyền thống tôn giáo và văn hóa lớn của Nam Á.",
             },
         ],
     });

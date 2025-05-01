@@ -2,13 +2,11 @@ import prisma from "../prisma/client.js";
 
 export const metadataRepository = {
     get: async () => {
-        // Hàm helper để biến đổi name -> value
         const transformOption = (item) => ({
             id: item.id,
             value: item.name,
         });
 
-        // Sử dụng đúng tên model từ schema.prisma
         const [
             careersData,
             petsData,
@@ -16,13 +14,14 @@ export const metadataRepository = {
             religionsData,
             zodiacsData,
             charactersData,
-            communicateStylesData, // Đã sửa tên model
+            communicateStylesData,
             educationsData,
             dietsData,
             sleepsData,
-            loveLanguagesData, // Đã sửa tên model và thêm vào
+            loveLanguagesData,
             futureFamiliesData,
             snusData,
+            favoriteData,
         ] = await Promise.all([
             prisma.career.findMany({
                 select: { id: true, name: true },
@@ -51,7 +50,7 @@ export const metadataRepository = {
             prisma.communicate_style.findMany({
                 select: { id: true, name: true },
                 orderBy: { name: "asc" },
-            }), // <<< Sửa ở đây
+            }),
             prisma.education.findMany({
                 select: { id: true, name: true },
                 orderBy: { name: "asc" },
@@ -67,12 +66,16 @@ export const metadataRepository = {
             prisma.love_language.findMany({
                 select: { id: true, name: true },
                 orderBy: { name: "asc" },
-            }), // <<< Sửa ở đây và đã thêm
+            }),
             prisma.futureFamily.findMany({
                 select: { id: true, name: true },
                 orderBy: { name: "asc" },
             }),
             prisma.SNU.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.favorite.findMany({
                 select: { id: true, name: true },
                 orderBy: { name: "asc" },
             }),
@@ -93,6 +96,7 @@ export const metadataRepository = {
             diets: dietsData.map(transformOption),
             sleeps: sleepsData.map(transformOption),
             snus: snusData.map(transformOption),
+            favorites: favoriteData.map(transformOption),
         };
     },
 };

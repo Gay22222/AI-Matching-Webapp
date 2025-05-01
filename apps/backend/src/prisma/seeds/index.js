@@ -14,6 +14,7 @@ import seedLoveLanguage from "./seedLoveLanguage.js";
 import seedFutureFamily from "./seedFutureFamily.js";
 import seedDiet from "./seedDiet.js";
 import seedSNU from "./seedSNU.js";
+import seedFavorite from "./seedFavorite.js";
 
 async function resetTable(tableName) {
     await prisma.$executeRawUnsafe(`DELETE FROM \`${tableName}\``);
@@ -41,6 +42,7 @@ async function main() {
         await resetTable("FutureFamily");
         await resetTable("Diet");
         await resetTable("SNU");
+        await resetTable("Favorite");
 
         // Seed lại
         await seedLanguages(prisma);
@@ -57,6 +59,7 @@ async function main() {
         await seedDiet(prisma);
         await seedSNU(prisma);
         await seedUser(prisma);
+        await seedFavorite(prisma);
 
         console.log("✅ Done seeding!");
     } catch (err) {

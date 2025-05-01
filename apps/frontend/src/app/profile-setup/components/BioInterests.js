@@ -1,19 +1,17 @@
-import React from "react";
-const BioInterests = ({ formData, setFormData }) => {
-    const popularInterests = [
-        "Cà phê",
-        "Du lịch",
-        "Âm nhạc",
-        "Đọc sách",
-        "Nấu ăn",
-        "Thể thao",
-        "Nhiếp ảnh",
-        "Yoga",
-        "Phim ảnh",
-        "Mua sắm",
-        "Chơi game",
-        "Nghệ thuật",
-    ];
+import React, { useEffect, useState } from "react";
+const BioInterests = ({ metadata, formData, setFormData }) => {
+    console.log(metadata);
+
+    const [popularInterests, setPopularInterests] = useState([]);
+    console.log(popularInterests);
+
+    useEffect(() => {
+        const data = metadata.favorites.map((favorite) => ({
+            value: favorite.id,
+            name: favorite.value,
+        }));
+        setPopularInterests(data);
+    }, [metadata]);
     const handleBioChange = (e) => {
         setFormData((prev) => ({
             ...prev,
@@ -55,18 +53,18 @@ const BioInterests = ({ formData, setFormData }) => {
                     Chọn các sở thích để tìm người phù hợp với bạn
                 </p>
                 <div className="flex flex-wrap gap-2">
-                    {popularInterests.map((interest) => (
+                    {popularInterests.map(({ value, name }) => (
                         <button
-                            key={interest}
-                            onClick={() => toggleInterest(interest)}
+                            key={value}
+                            onClick={() => toggleInterest(value)}
                             className={`px-4 py-2 rounded-full text-sm transition-all duration-300
                        ${
-                           formData.interests.includes(interest)
+                           formData.interests.includes(value)
                                ? "bg-[#FF5864] text-white"
                                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                        }`}
                         >
-                            {interest}
+                            {name}
                         </button>
                     ))}
                 </div>

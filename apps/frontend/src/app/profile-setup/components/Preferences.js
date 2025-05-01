@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     MoonIcon,
     GraduationCapIcon,
@@ -16,100 +16,44 @@ import {
     CheckIcon,
 } from "lucide-react";
 const preferenceOptions = {
-    "Cung Hoàng Đạo": [
-        "Bạch Dương",
-        "Kim Ngưu",
-        "Song Tử",
-        "Cự Giải",
-        "Sư Tử",
-        "Xử Nữ",
-        "Thiên Bình",
-        "Bọ Cạp",
-        "Nhân Mã",
-        "Ma Kết",
-        "Bảo Bình",
-        "Song Ngư",
-    ],
-    "Giáo dục": [
-        "Trung học",
-        "Cao đẳng",
-        "Đại học",
-        "Thạc sĩ",
-        "Tiến sĩ",
-        "Đang học",
-    ],
-    "Gia đình tương lai": [
-        "Muốn có con",
-        "Không muốn có con",
-        "Chưa quyết định",
-        "Đã có con",
-    ],
-    "Kiểu Tính Cách": [
-        "INTJ",
-        "INTP",
-        "ENTJ",
-        "ENTP",
-        "INFJ",
-        "INFP",
-        "ENFJ",
-        "ENFP",
-        "ISTJ",
-        "ISFJ",
-        "ESTJ",
-        "ESFJ",
-        "ISTP",
-        "ISFP",
-        "ESTP",
-        "ESFP",
-    ],
+    "Cung hoàng đạo": [],
+    "Giáo dục": [],
+    "Gia đình tương lai": [],
+    "Kiểu tính cách": [],
     "Về việc uống bia rượu": [
-        "Không bao giờ",
-        "Hiếm khi",
-        "Thỉnh thoảng",
-        "Thường xuyên",
+        {
+            value: 1,
+            name: "Có",
+        },
+        {
+            value: 2,
+            name: "Không",
+        },
     ],
     "Bạn có hay hút thuốc không?": [
-        "Không bao giờ",
-        "Thỉnh thoảng",
-        "Thường xuyên",
-        "Đang cố bỏ thuốc",
+        {
+            value: 1,
+            name: "Có",
+        },
+        {
+            value: 2,
+            name: "Không",
+        },
     ],
     "Tập luyện": [
-        "Hàng ngày",
-        "3-4 lần/tuần",
-        "1-2 lần/tuần",
-        "Hiếm khi",
-        "Không bao giờ",
+        {
+            value: 1,
+            name: "Có",
+        },
+        {
+            value: 2,
+            name: "Không",
+        },
     ],
-    "Chế độ ăn uống": [
-        "Tất cả",
-        "Chay",
-        "Thuần chay",
-        "Kosher",
-        "Halal",
-        "Keto",
-        "Ăn kiêng",
-    ],
-    "Truyền thông xã hội": [
-        "Rất tích cực",
-        "Thỉnh thoảng",
-        "Hiếm khi",
-        "Không sử dụng",
-    ],
-    "Thói quen ngủ": [
-        "Chim sớm",
-        "Cú đêm",
-        "Ngủ sớm dậy sớm",
-        "Không có thói quen cụ thể",
-    ],
-    "Thú cưng": [
-        "Có chó",
-        "Có mèo",
-        "Cả chó và mèo",
-        "Thú cưng khác",
-        "Không có thú cưng",
-        "Dị ứng với thú cưng",
-    ],
+    "Chế độ ăn uống": [],
+    "Truyền thông xã hội": [],
+    "Thói quen ngủ": [],
+    "Thú cưng": [],
 };
 const PreferenceItem = ({
     icon: Icon,
@@ -119,74 +63,95 @@ const PreferenceItem = ({
     expanded,
     selectedOption,
     onToggleExpand,
-}) => (
-    <div className="space-y-2">
-        <button
-            onClick={onToggleExpand}
-            className={`flex items-center justify-between w-full p-4 rounded-xl border 
-                ${
-                    selected
-                        ? "border-[#FF5864] bg-[#FF5864]/5"
-                        : "border-gray-300"
-                } 
-                hover:border-gray-400 transition-colors`}
-        >
-            <div className="flex items-center gap-3">
-                <Icon className="w-5 h-5 text-gray-600" />
-                <div className="text-left">
-                    <span className="text-gray-900">{label}</span>
-                    {selectedOption && (
-                        <p className="text-sm text-gray-500">
-                            {selectedOption}
-                        </p>
-                    )}
-                </div>
-            </div>
-            {expanded ? (
-                <ChevronUpIcon className="w-5 h-5 text-gray-400" />
-            ) : (
-                <ChevronDownIcon className="w-5 h-5 text-gray-400" />
-            )}
-        </button>
-        {expanded && (
-            <div className="p-3 ml-12 space-y-2 bg-gray-50 rounded-xl animate-scale-up">
-                {preferenceOptions[label].map((option) => (
-                    <button
-                        key={option}
-                        onClick={() => onClick(option)}
-                        className={`flex items-center justify-between w-full p-3 rounded-lg
-                     ${
-                         selectedOption === option
-                             ? "bg-[#FF5864] text-white"
-                             : "hover:bg-gray-100"
-                     }
-                     transition-colors duration-200`}
-                    >
-                        <span>{option}</span>
-                        {selectedOption === option && (
-                            <CheckIcon className="w-4 h-4 text-white" />
+}) => {
+    const currentSelectedOptionName = preferenceOptions[label].find(
+        ({ value }) => value === selectedOption
+    );
+    return (
+        <div className="space-y-2">
+            <button
+                onClick={onToggleExpand}
+                className={`flex items-center justify-between w-full p-4 rounded-xl border 
+            ${selected ? "border-[#FF5864] bg-[#FF5864]/5" : "border-gray-300"} 
+            hover:border-gray-400 transition-colors`}
+            >
+                <div className="flex items-center gap-3">
+                    <Icon className="w-5 h-5 text-gray-600" />
+                    <div className="text-left">
+                        <span className="text-gray-900">{label}</span>
+                        {selectedOption && (
+                            <p className="text-sm text-gray-500">
+                                {currentSelectedOptionName?.name}
+                            </p>
                         )}
-                    </button>
-                ))}
-            </div>
-        )}
-    </div>
-);
-const Preferences = ({ formData, setFormData }) => {
+                    </div>
+                </div>
+                {expanded ? (
+                    <ChevronUpIcon className="w-5 h-5 text-gray-400" />
+                ) : (
+                    <ChevronDownIcon className="w-5 h-5 text-gray-400" />
+                )}
+            </button>
+            {expanded && (
+                <div className="p-3 ml-1 space-y-2 bg-gray-50 rounded-xl animate-scale-up">
+                    {preferenceOptions[label].map(({ value, name }) => (
+                        <button
+                            key={value}
+                            onClick={() => onClick(value)}
+                            className={`flex items-center justify-between w-full p-3 rounded-lg
+                 ${
+                     selectedOption === value
+                         ? "bg-[#FF5864] text-white"
+                         : "hover:bg-gray-100"
+                 }
+                 transition-colors duration-200`}
+                        >
+                            <span>{name}</span>
+                            {selectedOption === value && (
+                                <CheckIcon className="w-4 h-4 text-white" />
+                            )}
+                        </button>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+const Preferences = ({ metadata, formData, setFormData }) => {
+    useEffect(() => {
+        const mappping = [
+            { label: "Cung hoàng đạo", key: "zodiacs" },
+            { label: "Giáo dục", key: "educations" },
+            { label: "Gia đình tương lai", key: "futureFamilies" },
+            {
+                label: "Kiểu tính cách",
+                key: "characters",
+            },
+            { label: "Chế độ ăn uống", key: "diets" },
+            { label: "Truyền thông xã hội", key: "snus" },
+            { label: "Thói quen ngủ", key: "sleeps" },
+            { label: "Thú cưng", key: "pets" },
+        ];
+        mappping.forEach((item) => {
+            preferenceOptions[item?.label] = metadata[item?.key].map(
+                (item) => ({ value: item.id, name: item.value })
+            );
+        });
+    }, [metadata]);
     const [expandedItem, setExpandedItem] = useState(null);
-    const handleOptionSelect = (preference, option) => {
+    const handleOptionSelect = (preference, value) => {
         setFormData((prev) => ({
             ...prev,
             preferences: {
                 ...prev.preferences,
-                [preference]: option,
+                [preference]: value,
             },
         }));
     };
     const preferences = [
         {
             icon: MoonIcon,
-            label: "Cung Hoàng Đạo",
+            label: "Cung hoàng đạo",
         },
         {
             icon: GraduationCapIcon,
@@ -198,7 +163,7 @@ const Preferences = ({ formData, setFormData }) => {
         },
         {
             icon: HeartIcon,
-            label: "Kiểu Tính Cách",
+            label: "Kiểu tính cách",
         },
         {
             icon: WineIcon,
@@ -229,27 +194,35 @@ const Preferences = ({ formData, setFormData }) => {
             label: "Thú cưng",
         },
     ];
+
     return (
         <div className="space-y-4">
             <p className="mb-4 text-sm text-gray-500">
                 Thêm chi tiết để tìm kiếm người phù hợp hơn
             </p>
-            {preferences.map((pref) => (
-                <PreferenceItem
-                    key={pref.label}
-                    icon={pref.icon}
-                    label={pref.label}
-                    selected={formData.preferences?.[pref.label]}
-                    expanded={expandedItem === pref.label}
-                    selectedOption={formData.preferences?.[pref.label]}
-                    onToggleExpand={() =>
-                        setExpandedItem(
-                            expandedItem === pref.label ? null : pref.label
-                        )
-                    }
-                    onClick={(option) => handleOptionSelect(pref.label, option)}
-                />
-            ))}
+            {preferences.map((pref) => {
+                console.log(pref, "pref");
+                console.log(formData.preferences?.[pref.label]);
+
+                return (
+                    <PreferenceItem
+                        key={pref.label}
+                        icon={pref.icon}
+                        label={pref.label}
+                        selected={formData.preferences?.[pref.label]}
+                        expanded={expandedItem === pref.label}
+                        selectedOption={formData.preferences?.[pref.label]}
+                        onToggleExpand={() =>
+                            setExpandedItem(
+                                expandedItem === pref.label ? null : pref.label
+                            )
+                        }
+                        onClick={(value) =>
+                            handleOptionSelect(pref.label, value)
+                        }
+                    />
+                );
+            })}
         </div>
     );
 };

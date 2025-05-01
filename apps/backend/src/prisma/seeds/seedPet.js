@@ -1,10 +1,22 @@
 export default async function seedPet(prisma) {
     await prisma.pet.createMany({
         data: [
-            { name: "Dog", description: "Friendly and loyal." },
-            { name: "Cat", description: "Independent and curious." },
-            { name: "Fish", description: "Peaceful and easy to care for." },
-            { name: "Bird", description: "Can sing and fly." },
+            {
+                name: "Chó",
+                description: "Thân thiện và trung thành.",
+            },
+            {
+                name: "Mèo",
+                description: "Độc lập và tò mò.",
+            },
+            {
+                name: "Cá",
+                description: "Yên bình và dễ chăm sóc.",
+            },
+            {
+                name: "Chim",
+                description: "Biết hót và có thể bay.",
+            },
         ],
     });
 }

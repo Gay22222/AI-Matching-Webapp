@@ -19,50 +19,25 @@ model matches {
   @@index([user_1_id], map: "user_1_id")
   @@index([user_2_id], map: "user_2_id")
 }
+model user_favorite {
+  id         Int     @id @default(autoincrement())
+  user_id    Int
+  favorite_id Int
 
-model users {
-  id                                   Int                    @id @default(autoincrement())
-  display_name                         String                 @db.VarChar(255)
-  username                             String                 @db.VarChar(255)
-  password                             String                 @db.VarChar(255)
-  is_verified                          Boolean                @default(false)
-  verify_token                         String?
-  email                                String                 @unique(map: "email") @db.VarChar(255)
-  phone_number                         String?                @db.VarChar(20)
-  birthday                             DateTime?              @db.Date
-  gender                               users_gender
-  preferred_gender                     users_preferred_gender
-  status                               users_status?          @default(offline)
-  time_register                        DateTime?              @default(now()) @db.Timestamp(0)
-  Bio                                  Bio?
-  user_match_1                         matches[]              @relation("user_match_1")
-  user_match_2                         matches[]              @relation("user_match_2")
-  messages_messages_sender_idTousers   messages[]             @relation("messages_sender_idTousers")
-  messages_messages_receiver_idTousers messages[]             @relation("messages_receiver_idTousers")
-  reports_reports_reported_byTousers   reports[]              @relation("reports_reported_byTousers")
-  reports_reports_reported_userTousers reports[]              @relation("reports_reported_userTousers")
-}
+model message {
+  id                             Int      @id @default(autoincrement())
+  sender_id                      Int
+  receiver_id                    Int
+  match_id                       Int?
+  content                        String
+  timestamp                      DateTime @default(now())
+  match                          match?   @relation(fields: [match_id], references: [id], map: "Message_match_id_fkey")
+  user_message_receiver_idTouser user     @relation("message_receiver_idTouser", fields: [receiver_id], references: [id], map: "Message_receiver_id_fkey")
+  user_message_sender_idTouser   user     @relation("message_sender_idTouser", fields: [sender_id], references: [id], map: "Message_sender_id_fkey")
 
-model Base_inf {
-  id                   Int                @id @default(autoincrement())
-  bio_id               Int?               @unique(map: "bio_id")
-  zodiac_id            Int?
-  character_id         Int?
-  communicate_style_id Int?
-  love_language_id     Int?
-  future_family_id     Int?
-  Bio                  Bio?               @relation(fields: [bio_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "Base_inf_ibfk_1")
-  Zodiac               Zodiac?            @relation(fields: [zodiac_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_2")
-  Character            Character?         @relation(fields: [character_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_3")
-  Communicate_style    Communicate_style? @relation(fields: [communicate_style_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_4")
-  Love_language        Love_language?     @relation(fields: [love_language_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_5")
-  FutureFamily         FutureFamily?      @relation(fields: [future_family_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_6")
-
-  @@index([character_id], map: "character_id")
-  @@index([communicate_style_id], map: "communicate_style_id")
-  @@index([future_family_id], map: "future_family_id")
-  @@index([love_language_id], map: "love_language_id")
-  @@index([zodiac_id], map: "zodiac_id")
+  @@index([match_id], map: "Message_match_id_fkey")
+  @@index([receiver_id], map: "Message_receiver_id_fkey")
+  @@index([sender_id], map: "Message_sender_id_fkey")
 }
 
 model Bio {
@@ -275,7 +250,7 @@ model sexual_orientation {
   description String? @db.Text
 }
 
-enum users_gender {
+enum user_gender {
   male
   female
   other

@@ -2,12 +2,12 @@ export default async function seedSleep(prisma) {
     await prisma.sleep.createMany({
         data: [
             {
-                name: "Early Bird",
-                description: "Wakes up early and active in the morning.",
+                name: "Người dậy sớm",
+                description: "Thức dậy sớm và năng động vào buổi sáng.",
             },
             {
-                name: "Night Owl",
-                description: "Stays up late and active at night.",
+                name: "Cú đêm",
+                description: "Thường thức khuya và hoạt động vào ban đêm.",
             },
         ],
     });
