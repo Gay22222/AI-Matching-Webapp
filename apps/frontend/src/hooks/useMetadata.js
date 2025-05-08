@@ -2,7 +2,10 @@
 
 import axios from "axios";
 import { createContext, useState, useContext, useEffect, useMemo } from "react";
+import { setupAxios } from "@/app/auth/_helpers";
+import { getData } from "@/utils/LocalStorage";
 
+setupAxios(axios);
 const MetadataContext = createContext(null);
 
 export function MetadataProvider({ children }) {
@@ -18,15 +21,12 @@ export function MetadataProvider({ children }) {
             setError(null);
             try {
                 const fetchData = async () => {
-                    axios
-                        .get("http://localhost:3001/api/metadata")
-                        .then((response) => {
-                            console.log(response);
-                            setMetadata(response.data.metadata);
-                        })
-                        .catch((error) => {
-                            console.error("Error fetching metadata:", error);
-                        });
+                    const token = getData("token");
+
+                    const res = await axios.get(
+                        "http://localhost:3001/api/metadata"
+                    );
+                    setMetadata(res.data.metadata);
                 };
                 fetchData();
             } catch (err) {

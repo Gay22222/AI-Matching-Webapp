@@ -9,7 +9,15 @@ import BioInterests from "./BioInterests";
 import Location from "./Location";
 import Preferences from "./Preferences";
 import { useMetadata } from "@/hooks/useMetadata";
+import { useRouter } from "next/navigation";
+
+import { setupAxios } from "@/app/auth/_helpers";
+import axios from "axios";
+setupAxios(axios);
+import { getData } from "@/utils/LocalStorage";
 const ProfileSetup = () => {
+    const router = useRouter();
+
     const metadata = useMetadata();
 
     const [currentStep, setCurrentStep] = useState(0);
@@ -59,9 +67,63 @@ const ProfileSetup = () => {
             setCurrentStep(currentStep - 1);
         }
     };
-    const handleComplete = () => {
-        console.log("Profile setup complete:", formData);
-        // Navigate to main app
+    const handleComplete = async () => {
+        function transformUserData(input) {
+            const genderMap = { Nam: "male", Nữ: "female", Khác: "other" };
+
+            return {
+                user: {
+                    id: 1, // hoặc null nếu là user mới
+                    displayName: input.name,
+                    email: "john@example.com", // nên lấy từ input nếu có
+                    gender: genderMap[input.gender] || "other",
+                    preferredGender: "female", // hardcoded or from another field
+                    name: input.name,
+                    age: parseInt(input.ageRange),
+                    aboutMe: input.bio,
+                    height: "170", // hardcoded or dynamic
+                    location: input.location,
+                    languageId: 1, // mặc định nếu chưa có
+                    religionId: input.preferences["Tôn giáo"] || 2,
+                    careerId: 1,
+                    educationId: input.preferences["Giáo dục"],
+                    zodiacId: input.preferences["Cung hoàng đạo"],
+                    characterId: input.preferences["Kiểu tính cách"],
+                    communicateStyleId: 1,
+                    loveLanguageId: 1,
+                    futureFamilyId: input.preferences["Gia đình tương lai"],
+                    drink: input.preferences["Về việc uống bia rượu"] === 2,
+                    smoke:
+                        input.preferences["Bạn có hay hút thuốc không?"] === 2,
+                    train: input.preferences["Tập luyện"] === 2,
+                    petId: input.preferences["Thú cưng"],
+                    dietId: input.preferences["Chế độ ăn uống"],
+                    sleepId: input.preferences["Thói quen ngủ"],
+                    snuId: input.preferences["Truyền thông xã hội"],
+                    photos: input.photos || [],
+                    favorites: input.interests || [],
+                    maxRadius: input.searchRadius,
+                },
+            };
+        }
+        const result = transformUserData(formData);
+        console.log(result);
+        const token = getData("token");
+        const res = await axios.put(
+            "http://localhost:3001/api/update-profile",
+            result,
+            {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            }
+        );
+        const me = await axios.get("http://localhost:3001/api/me", {
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        });
+        router.push("/");
     };
     const CurrentStepComponent = steps[currentStep].component;
     return (

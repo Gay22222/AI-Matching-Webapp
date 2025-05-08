@@ -68,7 +68,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                     }}
                 >
                     <img
-                        src={profile.photos[currentPhoto]}
+                        src={profile?.photos?.[currentPhoto]?.url}
                         alt={`${profile.name}'s photo`}
                         className="w-full h-full object-cover"
                         loading="eager"
@@ -79,7 +79,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                 </div>
                 <div className="absolute top-4 left-0 right-0 flex justify-center gap-2 px-4 z-20">
                     <div className="glass px-3 py-1.5 rounded-full flex gap-2">
-                        {profile.photos.map((_, index) => (
+                        {profile?.photos?.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => setCurrentPhoto(index)}
@@ -97,7 +97,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                     <div className="glass px-3 py-1.5 rounded-full flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#FF5864] to-[#FF655B] animate-pulse" />
                         <span className="text-sm font-semibold text-gray-800">
-                            {profile.matchPercentage}% Match
+                            {/* {profile.matchPercentage}% Match */}
                         </span>
                     </div>
                 </div>
@@ -109,11 +109,11 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                             </h2>
                         </div>
                         <p className="text-sm text-white/90 flex items-center">
-                            <span className="inline-block w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse" />
-                            {profile.distance} km away
+                            {/* <span className="inline-block w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse" /> */}
+                            {/* {profile.distance} km away */}
                         </p>
                         <div className="flex flex-wrap gap-2">
-                            {profile.tags.map((tag, index) => (
+                            {/* {profile.tags.map((tag, index) => (
                                 <span
                                     key={index}
                                     className="glass px-3 py-1 rounded-full text-white text-sm
@@ -123,7 +123,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                                 >
                                     {tag}
                                 </span>
-                            ))}
+                            ))} */}
                         </div>
                     </div>
                 </div>

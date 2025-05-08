@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 
 import { FacebookIcon, PhoneIcon, Loader2Icon } from "lucide-react";
 import Link from "next/link";
+import { setData } from "@/utils/LocalStorage";
 
 export default function Login() {
     const router = useRouter();
@@ -35,12 +36,15 @@ export default function Login() {
             });
             const data = await res.json();
 
-            if (!res.ok) {
+            console.log(data);
+
+            if (data.statusCode !== 200) {
                 throw new Error(data.message || "Login failed");
             }
 
             // Store token
-            localStorage.setItem("token", data.token);
+            const access_token = data.token;
+            setData("token", access_token);
 
             // Redirect to dashboard
             router.push("/");

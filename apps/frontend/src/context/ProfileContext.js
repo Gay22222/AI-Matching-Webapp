@@ -20,6 +20,8 @@ export function ProfileProvider({ children }) {
                 .catch((error) => {
                     console.error("Error fetching profile setup data:", error);
                 });
+
+            const res = await axios.get("/api/some-protected-route");
         };
         // fetchProfileSetupData();
     }, []);

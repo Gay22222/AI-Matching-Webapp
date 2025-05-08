@@ -1,162 +1,77 @@
 import React from "react";
 import { XIcon, SlidersIcon, CheckIcon } from "lucide-react";
 
-const FilterModal = ({ data, isOpen, onClose, filters, onFilterChange }) => {
+const FilterModal = ({
+    metadata,
+    isOpen,
+    onClose,
+    filters,
+    onFilterChange,
+}) => {
     const singleSelectSections = [
         {
             id: "searchingfor",
             label: "Đang tìm kiếm",
-            options: [
-                {
-                    label: "Người yêu",
-                    value: "relationship",
-                },
-                {
-                    label: "Bạn bè",
-                    value: "friendship",
-                },
-                {
-                    label: "Networking",
-                    value: "networking",
-                },
-            ],
+            options: metadata?.searchingFor?.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "zodiac",
             label: "Cung hoàng đạo",
-            options: data?.zodiacs,
+            options: metadata?.zodiacs.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "education",
             label: "Trình độ học vấn",
-            options: [
-                {
-                    label: "Trung học",
-                    value: "highschool",
-                },
-                {
-                    label: "Cao đẳng",
-                    value: "college",
-                },
-                {
-                    label: "Đại học",
-                    value: "university",
-                },
-                {
-                    label: "Sau đại học",
-                    value: "postgraduate",
-                },
-            ],
+            options: metadata?.educations.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "diet",
             label: "Chế độ ăn",
-            options: [
-                {
-                    label: "Ăn tất cả",
-                    value: "all",
-                },
-                {
-                    label: "Ăn chay",
-                    value: "vegetarian",
-                },
-                {
-                    label: "Ăn thuần chay",
-                    value: "vegan",
-                },
-                {
-                    label: "Ăn kiêng",
-                    value: "diet",
-                },
-            ],
+            options: metadata?.diets.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "sleep",
             label: "Thói quen ngủ",
-            options: [
-                {
-                    label: "Chim sớm",
-                    value: "early_bird",
-                },
-                {
-                    label: "Cú đêm",
-                    value: "night_owl",
-                },
-                {
-                    label: "Ngủ sớm dậy sớm",
-                    value: "early_sleep_early_wake",
-                },
-                {
-                    label: "Không có thói quen cụ thể",
-                    value: "no_pattern",
-                },
-            ],
+            options: metadata?.sleeps.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "sns",
             label: "Thói quen MXH",
-            options: [
-                {
-                    label: "Lướt dạo ẩn thầm",
-                    value: "lurker",
-                },
-                {
-                    label: "Đăng bài thường xuyên",
-                    value: "active_poster",
-                },
-                {
-                    label: "Sử dụng vừa phải",
-                    value: "moderate",
-                },
-                {
-                    label: "Ít khi dùng",
-                    value: "rare",
-                },
-            ],
+            options: metadata?.snus.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "futurefamily",
             label: "Gia đình tương lai",
-            options: [
-                {
-                    label: "Muốn có con",
-                    value: "want_children",
-                },
-                {
-                    label: "Không muốn có con",
-                    value: "no_children",
-                },
-                {
-                    label: "Chưa quyết định",
-                    value: "undecided",
-                },
-                {
-                    label: "Đã có con",
-                    value: "have_children",
-                },
-            ],
+            options: metadata?.futureFamilies.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
-            id: "orientation",
+            id: "sexOrientation",
             label: "Xu hướng tính dục",
-            options: [
-                {
-                    label: "Dị tính",
-                    value: "straight",
-                },
-                {
-                    label: "Đồng tính",
-                    value: "gay",
-                },
-                {
-                    label: "Song tính",
-                    value: "bisexual",
-                },
-                {
-                    label: "Vô tính",
-                    value: "asexual",
-                },
-            ],
+            options: metadata?.sexualOrientations.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
     ];
     const multiSelectSections = [
@@ -164,175 +79,55 @@ const FilterModal = ({ data, isOpen, onClose, filters, onFilterChange }) => {
             id: "favorite",
             label: "Sở thích",
             multiSelect: true,
-            options: [
-                {
-                    label: "Thể thao",
-                    value: "sports",
-                },
-                {
-                    label: "Du lịch",
-                    value: "travel",
-                },
-                {
-                    label: "Âm nhạc",
-                    value: "music",
-                },
-                {
-                    label: "Nấu ăn",
-                    value: "cooking",
-                },
-                {
-                    label: "Đọc sách",
-                    value: "reading",
-                },
-                {
-                    label: "Chơi game",
-                    value: "gaming",
-                },
-                {
-                    label: "Xem phim",
-                    value: "movies",
-                },
-                {
-                    label: "Nhiếp ảnh",
-                    value: "photography",
-                },
-            ],
+            options: metadata?.favorites.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "character",
             label: "Tính cách",
             multiSelect: true,
-            options: [
-                {
-                    label: "Hướng ngoại",
-                    value: "extrovert",
-                },
-                {
-                    label: "Hướng nội",
-                    value: "introvert",
-                },
-                {
-                    label: "Năng động",
-                    value: "active",
-                },
-                {
-                    label: "Trầm tính",
-                    value: "calm",
-                },
-                {
-                    label: "Lạc quan",
-                    value: "optimistic",
-                },
-                {
-                    label: "Thực tế",
-                    value: "realistic",
-                },
-            ],
+            options: metadata?.characters.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "communicate",
             label: "Phong cách giao tiếp",
             multiSelect: true,
-            options: [
-                {
-                    label: "Nghiện nhắn tin",
-                    value: "text_addict",
-                },
-                {
-                    label: "Thích gặp trực tiếp",
-                    value: "face_to_face",
-                },
-                {
-                    label: "Thích gọi điện",
-                    value: "phone_call",
-                },
-                {
-                    label: "Chat video",
-                    value: "video_call",
-                },
-            ],
+            options: metadata?.communicateStyles.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "lovelanguage",
             label: "Ngôn ngữ tình yêu",
             multiSelect: true,
-            options: [
-                {
-                    label: "Lời khen",
-                    value: "words",
-                },
-                {
-                    label: "Chạm tay",
-                    value: "touch",
-                },
-                {
-                    label: "Thời gian bên nhau",
-                    value: "time",
-                },
-                {
-                    label: "Quà tặng",
-                    value: "gifts",
-                },
-                {
-                    label: "Hành động",
-                    value: "acts",
-                },
-            ],
+            options: metadata?.loveLanguages.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "pet",
             label: "Thú cưng",
             multiSelect: true,
-            options: [
-                {
-                    label: "Chó",
-                    value: "dog",
-                },
-                {
-                    label: "Mèo",
-                    value: "cat",
-                },
-                {
-                    label: "Cá",
-                    value: "fish",
-                },
-                {
-                    label: "Chim",
-                    value: "bird",
-                },
-                {
-                    label: "Bò sát",
-                    value: "reptile",
-                },
-            ],
+            options: metadata?.pets.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
         {
             id: "language",
             label: "Ngôn ngữ",
             multiSelect: true,
-            options: [
-                {
-                    label: "Tiếng Việt",
-                    value: "vietnamese",
-                },
-                {
-                    label: "Tiếng Anh",
-                    value: "english",
-                },
-                {
-                    label: "Tiếng Trung",
-                    value: "chinese",
-                },
-                {
-                    label: "Tiếng Nhật",
-                    value: "japanese",
-                },
-                {
-                    label: "Tiếng Hàn",
-                    value: "korean",
-                },
-            ],
+            options: metadata?.languages.map((item) => ({
+                value: item.id,
+                label: item.value,
+            })),
         },
     ];
     if (!isOpen) return null;
@@ -387,7 +182,7 @@ const FilterModal = ({ data, isOpen, onClose, filters, onFilterChange }) => {
                                         {section.label}
                                     </h4>
                                     <div className="flex flex-wrap gap-2">
-                                        {section.options.map((option) => (
+                                        {section.options?.map((option) => (
                                             <button
                                                 key={option.value}
                                                 onClick={() =>
