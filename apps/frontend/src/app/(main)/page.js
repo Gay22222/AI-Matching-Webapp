@@ -17,56 +17,58 @@ const Home = () => {
     const [showMatch, setShowMatch] = useState(false);
     const [matchedProfile, setMatchedProfile] = useState({});
     const [showFilters, setShowFilters] = useState(false);
-    const [filters, setFilters] = useState({});
+    const initialFilters = {};
+    for (const [key, value] of searchParams.entries()) {
+        initialFilters[key] = value;
+    }
+    const [filters, setFilters] = useState(initialFilters);
     const [profiles, setProfiles] = useState([]);
 
-    useEffect(() => {
-        // fetchProfileSetupData();
-    }, []);
-
-    useEffect(() => {
-        handleApplyFilters();
-    }, [filters]);
     useEffect(() => {
         const fetchProfileSetupData = async () => {
             try {
                 const params = new URLSearchParams();
                 Object.entries(filters).forEach(([key, value]) => {
-                    console.log(key, value);
-
                     if (value !== null && value !== undefined && value !== "") {
                         params.append(key, value);
                     }
                 });
                 const queryString = params.toString();
-                const newUrl = `${queryString ? `?${queryString}` : ""}`;
-                const profiles = await axios.get(
-                    `http://localhost:3001/api/user/list-match${newUrl}`
-                );
+                const url = queryString
+                    ? `http://localhost:3001/api/user/list-match?${queryString}`
+                    : `http://localhost:3001/api/user/list-match`;
 
-                setProfiles(profiles.data.users);
-            } catch (error) {}
-        };
-        fetchProfileSetupData(filters);
-    }, [filters]);
-    const handleApplyFilters = useCallback(() => {
-        const currentPathname = window.location.pathname;
-        const params = new URLSearchParams();
-        Object.entries(filters).forEach(([key, value]) => {
-            console.log(key, value);
+                console.log("Fetching profiles with URL:", url);
+                const response = await axios.get(url);
+                console.log("Response data:", response.data.users);
 
-            if (value !== null && value !== undefined && value !== "") {
-                params.append(key, value);
+                setProfiles(response.data.users);
+            } catch (error) {
+                console.error("Error fetching profiles:", error);
             }
-        });
-        const queryString = params.toString();
-        const newUrl = `${currentPathname}${
-            queryString ? `?${queryString}` : ""
-        }`;
+        };
 
-        router.push(newUrl, { scroll: false });
-        setShowFilters(false);
-    }, [router, filters]);
+        fetchProfileSetupData();
+    }, [filters]);
+
+    // Update URL when filters are applied
+    const handleApplyFilters = useCallback(
+        (newFilters = filters) => {
+            const params = new URLSearchParams();
+            Object.entries(newFilters).forEach(([key, value]) => {
+                if (value !== null && value !== undefined && value !== "") {
+                    params.append(key, value);
+                }
+            });
+            const queryString = params.toString();
+            const newUrl = queryString ? `/?${queryString}` : "/";
+
+            console.log("Updating URL to:", newUrl);
+            router.push(newUrl, { scroll: false });
+            setShowFilters(false);
+        },
+        [router]
+    );
 
     const handleSwipeLeft = useCallback(() => {
         if (currentIndex < profiles.length - 1) {
@@ -96,12 +98,7 @@ const Home = () => {
     const handleCloseMatch = () => {
         setShowMatch(false);
     };
-    const handleFilterChange = (filterId, value) => {
-        setFilters((prev) => ({
-            ...prev,
-            [filterId]: value,
-        }));
-    };
+
     if (currentIndex >= profiles.length) {
         return (
             <div className="w-full max-w-md mx-auto flex flex-col items-center justify-center py-4 text-center px-4">
@@ -113,7 +110,12 @@ const Home = () => {
                         Hãy thử mở rộng bán kính tìm kiếm hoặc quay lại sau nhé!
                     </p>
                     <button
-                        onClick={() => setCurrentIndex(0)}
+                        onClick={() => {
+                            setCurrentIndex(0);
+                            setProfiles([]);
+                            setFilters({});
+                            handleApplyFilters({});
+                        }}
                         className="bg-gradient-to-r from-[#FF5864] to-[#FF655B] text-white px-6 py-3 rounded-xl
                      font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
                     >
@@ -159,8 +161,12 @@ const Home = () => {
                 metadata={metadata?.metadata}
                 isOpen={showFilters}
                 onClose={() => setShowFilters(false)}
-                filters={filters}
-                onFilterChange={handleFilterChange}
+                filtersData={filters}
+                onHandleFilter={(filters) => {
+                    setFilters({ ...filters });
+                    handleApplyFilters(filters);
+                    setShowFilters(false);
+                }}
             />
         </div>
     );

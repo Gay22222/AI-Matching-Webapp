@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { XIcon, SlidersIcon, CheckIcon } from "lucide-react";
 
 const FilterModal = ({
     metadata,
+    filtersData,
     isOpen,
+    onHandleFilter,
     onClose,
-    filters,
-    onFilterChange,
 }) => {
+    const [filters, setFilters] = useState(filtersData || {});
+
+    console.log(filters);
+
     const singleSelectSections = [
         {
             id: "searchingfor",
@@ -20,7 +24,7 @@ const FilterModal = ({
         {
             id: "zodiac",
             label: "Cung hoàng đạo",
-            options: metadata?.zodiacs.map((item) => ({
+            options: metadata?.zodiacs?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -28,7 +32,7 @@ const FilterModal = ({
         {
             id: "education",
             label: "Trình độ học vấn",
-            options: metadata?.educations.map((item) => ({
+            options: metadata?.educations?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -36,7 +40,7 @@ const FilterModal = ({
         {
             id: "diet",
             label: "Chế độ ăn",
-            options: metadata?.diets.map((item) => ({
+            options: metadata?.diets?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -44,7 +48,7 @@ const FilterModal = ({
         {
             id: "sleep",
             label: "Thói quen ngủ",
-            options: metadata?.sleeps.map((item) => ({
+            options: metadata?.sleeps?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -52,7 +56,7 @@ const FilterModal = ({
         {
             id: "sns",
             label: "Thói quen MXH",
-            options: metadata?.snus.map((item) => ({
+            options: metadata?.snus?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -60,7 +64,7 @@ const FilterModal = ({
         {
             id: "futurefamily",
             label: "Gia đình tương lai",
-            options: metadata?.futureFamilies.map((item) => ({
+            options: metadata?.futureFamilies?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -68,7 +72,7 @@ const FilterModal = ({
         {
             id: "sexOrientation",
             label: "Xu hướng tính dục",
-            options: metadata?.sexualOrientations.map((item) => ({
+            options: metadata?.sexualOrientations?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -79,7 +83,7 @@ const FilterModal = ({
             id: "favorite",
             label: "Sở thích",
             multiSelect: true,
-            options: metadata?.favorites.map((item) => ({
+            options: metadata?.favorites?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -88,7 +92,7 @@ const FilterModal = ({
             id: "character",
             label: "Tính cách",
             multiSelect: true,
-            options: metadata?.characters.map((item) => ({
+            options: metadata?.characters?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -97,7 +101,7 @@ const FilterModal = ({
             id: "communicate",
             label: "Phong cách giao tiếp",
             multiSelect: true,
-            options: metadata?.communicateStyles.map((item) => ({
+            options: metadata?.communicateStyles?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -106,7 +110,7 @@ const FilterModal = ({
             id: "lovelanguage",
             label: "Ngôn ngữ tình yêu",
             multiSelect: true,
-            options: metadata?.loveLanguages.map((item) => ({
+            options: metadata?.loveLanguages?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -115,7 +119,7 @@ const FilterModal = ({
             id: "pet",
             label: "Thú cưng",
             multiSelect: true,
-            options: metadata?.pets.map((item) => ({
+            options: metadata?.pets?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
@@ -124,22 +128,28 @@ const FilterModal = ({
             id: "language",
             label: "Ngôn ngữ",
             multiSelect: true,
-            options: metadata?.languages.map((item) => ({
+            options: metadata?.languages?.map((item) => ({
                 value: item.id,
                 label: item.value,
             })),
         },
     ];
     if (!isOpen) return null;
+    const handleFilterChange = (filterId, value) => {
+        setFilters((prev) => ({
+            ...prev,
+            [filterId]: value,
+        }));
+    };
     const handleOptionClick = (sectionId, value, multiSelect) => {
         if (multiSelect) {
             const currentValues = filters[sectionId] || [];
             const newValues = currentValues.includes(value)
                 ? currentValues.filter((v) => v !== value)
                 : [...currentValues, value];
-            onFilterChange(sectionId, newValues);
+            handleFilterChange(sectionId, newValues);
         } else {
-            onFilterChange(sectionId, value);
+            handleFilterChange(sectionId, value);
         }
     };
     const isSelected = (sectionId, value) => {
@@ -260,7 +270,7 @@ const FilterModal = ({
                 </div>
                 <div className="sticky bottom-0 bg-white px-6 py-4 border-t border-gray-200">
                     <button
-                        onClick={onClose}
+                        onClick={() => onHandleFilter(filters)}
                         className="w-full bg-gradient-to-r from-[#FF5864] to-[#FF655B] text-white py-3 px-6 rounded-xl
                      font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
                     >
