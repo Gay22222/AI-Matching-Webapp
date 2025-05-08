@@ -19,25 +19,63 @@ model matches {
   @@index([user_1_id], map: "user_1_id")
   @@index([user_2_id], map: "user_2_id")
 }
+
+
 model user_favorite {
   id         Int     @id @default(autoincrement())
   user_id    Int
   favorite_id Int
+  user      users    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  favorite  Favorite @relation(fields: [favorite_id], references: [id], onDelete: Cascade)
+}
 
-model message {
-  id                             Int      @id @default(autoincrement())
-  sender_id                      Int
-  receiver_id                    Int
-  match_id                       Int?
-  content                        String
-  timestamp                      DateTime @default(now())
-  match                          match?   @relation(fields: [match_id], references: [id], map: "Message_match_id_fkey")
-  user_message_receiver_idTouser user     @relation("message_receiver_idTouser", fields: [receiver_id], references: [id], map: "Message_receiver_id_fkey")
-  user_message_sender_idTouser   user     @relation("message_sender_idTouser", fields: [sender_id], references: [id], map: "Message_sender_id_fkey")
+model users {
+  id                                   Int                    @id @default(autoincrement())
+  display_name                         String                 @db.VarChar(255)
+  username                             String                 @db.VarChar(255)
+  password                             String                 @db.VarChar(255)
+  is_verified                          Boolean                @default(false)
+  verify_token                         String?
+  email                                String                 @unique(map: "email") @db.VarChar(255)
+  phone_number                         String?                @db.VarChar(20)
+  birthday                             DateTime?              @db.Date
+  gender                               user_gender
+  preferred_gender                     users_preferred_gender
+  status                               users_status?          @default(offline)
+  time_register                        DateTime?              @default(now()) @db.Timestamp(0)
+  Bio                                  Bio?
+  user_match_1                         matches[]              @relation("user_match_1")
+  user_match_2                         matches[]              @relation("user_match_2")
+  sentMessages                         messages[]             @relation("SentMessages")
+  receiveMessages                      messages[]             @relation("ReceiveMessages")
+  reportUser                           reports[]              @relation("reportUser")
+  reportedByUser                       reports[]              @relation("reportedByUser")
+  user_favorites                       user_favorite[]
+}
 
-  @@index([match_id], map: "Message_match_id_fkey")
-  @@index([receiver_id], map: "Message_receiver_id_fkey")
-  @@index([sender_id], map: "Message_sender_id_fkey")
+model Base_inf {
+  id                   Int                @id @default(autoincrement())
+  bio_id               Int?               @unique(map: "bio_id")
+  zodiac_id            Int?
+  character_id         Int?
+  communicate_style_id Int?
+  love_language_id     Int?
+  future_family_id     Int?
+  sexual_orientation_id Int?
+  Bio                  Bio?               @relation(fields: [bio_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "Base_inf_ibfk_1")
+  Zodiac               Zodiac?            @relation(fields: [zodiac_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_2")
+  Character            Character?         @relation(fields: [character_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_3")
+  Communicate_style    Communicate_style? @relation(fields: [communicate_style_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_4")
+  Love_language        Love_language?     @relation(fields: [love_language_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_5")
+  FutureFamily         FutureFamily?      @relation(fields: [future_family_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Base_inf_ibfk_6")
+  Sexual_orientation  sexual_orientation? @relation(fields: [sexual_orientation_id], references: [id], onDelete: SetNull, onUpdate: NoAction)
+  
+  @@index([character_id], map: "character_id")
+  @@index([communicate_style_id], map: "communicate_style_id")
+  @@index([future_family_id], map: "future_family_id")
+  @@index([love_language_id], map: "love_language_id")
+  @@index([zodiac_id], map: "zodiac_id")
+  @@index([sexual_orientation_id])
 }
 
 model Bio {
@@ -46,6 +84,9 @@ model Bio {
   status           Bio_status?   @default(active)
   name             String?       @db.VarChar(255)
   age              Int?
+  address          String?       
+  min_radius       Int?          
+  max_radius       Int?          
   searching_for_id Int?
   about_me         String?       @db.Text
   Base_inf         Base_inf?
@@ -97,6 +138,7 @@ model Favorite {
   id          Int     @id @default(autoincrement())
   name        String  @db.VarChar(255)
   description String? @db.Text
+  user_favorites user_favorite[]
 }
 
 model FutureFamily {
@@ -223,8 +265,8 @@ model messages {
   content                           String    @db.Text
   sent_at                           DateTime? @default(now()) @db.Timestamp(0)
   matches                           matches   @relation(fields: [match_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_1")
-  sender   users     @relation("messages_sender_idTousers", fields: [sender_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_2")
-  receiver users     @relation("messages_receiver_idTousers", fields: [receiver_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_3")
+  sender                            users     @relation("SentMessages", fields: [sender_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_2")
+  receiver                          users     @relation("ReceiveMessages", fields: [receiver_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "messages_ibfk_3")
 
   @@index([match_id], map: "match_id")
   @@index([receiver_id], map: "receiver_id")
@@ -237,8 +279,8 @@ model reports {
   reported_by                        Int?
   reported_user                      Int?
   time_report                        DateTime? @default(now()) @db.DateTime(0)
-  users_reports_reported_byTousers   users?    @relation("reports_reported_byTousers", fields: [reported_by], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reports_ibfk_1")
-  users_reports_reported_userTousers users?    @relation("reports_reported_userTousers", fields: [reported_user], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reports_ibfk_2")
+  reportedByUser                     users?    @relation("reportedByUser", fields: [reported_by], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reports_ibfk_1")
+  reportUser                         users?    @relation("reportUser", fields: [reported_user], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "reports_ibfk_2")
 
   @@index([reported_by], map: "reported_by")
   @@index([reported_user], map: "reported_user")
@@ -248,6 +290,7 @@ model sexual_orientation {
   id          Int     @id @default(autoincrement())
   name        String  @db.VarChar(255)
   description String? @db.Text
+  Base_inf    Base_inf[]
 }
 
 enum user_gender {

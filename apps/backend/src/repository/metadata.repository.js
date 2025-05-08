@@ -22,6 +22,8 @@ export const metadataRepository = {
             futureFamiliesData,
             snusData,
             favoriteData,
+            sexualOrientationData,
+            searchingForData,
         ] = await Promise.all([
             prisma.career.findMany({
                 select: { id: true, name: true },
@@ -79,6 +81,14 @@ export const metadataRepository = {
                 select: { id: true, name: true },
                 orderBy: { name: "asc" },
             }),
+            prisma.sexual_orientation.findMany({
+                select: { id: true, name: true, description: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.searchingfor.findMany({
+                select: { id: true, name: true, description: true },
+                orderBy: { name: "asc" },
+            }),
         ]);
 
         // Trả về dữ liệu đã biến đổi
@@ -97,6 +107,8 @@ export const metadataRepository = {
             sleeps: sleepsData.map(transformOption),
             snus: snusData.map(transformOption),
             favorites: favoriteData.map(transformOption),
+            sexualOrientations: sexualOrientationData.map(transformOption),
+            searchingFor: searchingForData.map(transformOption),
         };
     },
 };

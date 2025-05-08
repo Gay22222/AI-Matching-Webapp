@@ -30,13 +30,10 @@ export const matchRepository = {
             },
         });
     },
-    get: (senderId, receiverId) => {
+    get: (id) => {
         return prisma.matches.findFirst({
             where: {
-                OR: [
-                    { user_1_id: senderId, user_2_id: receiverId },
-                    { user_2_id: receiverId, user_2_id: senderId },
-                ],
+                id,
             },
             include: {
                 user_match_1: {
@@ -49,6 +46,26 @@ export const matchRepository = {
                     select: {
                         id: true,
                         display_name: true,
+                    },
+                },
+                messages: {
+                    orderBy: { sent_at: "desc" },
+                    select: {
+                        id: true,
+                        content: true,
+                        sent_at: true,
+                        sender: {
+                            select: {
+                                id: true,
+                                display_name: true,
+                            },
+                        },
+                        receiver: {
+                            select: {
+                                id: true,
+                                display_name: true,
+                            },
+                        },
                     },
                 },
             },

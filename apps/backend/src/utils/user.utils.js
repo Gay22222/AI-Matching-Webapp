@@ -33,6 +33,9 @@ export function formatUser(user) {
         dietId: lifestyle?.diet_id,
         sleepId: lifestyle?.sleep_id,
         snuId: lifestyle?.snu_id,
-        photoId: user?.Bio?.Photo?.map((item) => item?.id),
+        photos: user?.Bio?.Photo,
+        favorites: user?.user_favorites.map((item) => item?.id),
+        sexualOrientation: baseInf?.sexual_orientation_id,
+        searchingFor: user?.Bio?.Searchingfor?.id,
     };
 }

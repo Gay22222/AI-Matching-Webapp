@@ -5,9 +5,14 @@ export const authController = {
     login: async (req, res) => {
         try {
             const { email, password } = req.body;
-            const token = await authService.loginUser(email, password);
-            res.json({
+            const { token, user } = await authService.loginUser(
+                email,
+                password
+            );
+            res.status(200).json({
                 token,
+                user,
+                statusCode: 200,
             });
         } catch (error) {
             if (

@@ -17,6 +17,6 @@ export default async function seedCareer(prisma) {
                 name: "Doanh nhân",
                 description: "Tự điều hành công việc kinh doanh của mình.",
             },
-        ]ư,
+        ],
     });
 }

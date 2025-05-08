@@ -20,7 +20,7 @@ export const authService = {
 
         // if (!isValidPassword) throw new Error("Password is not correct");
         const token = createToken(user);
-        return token;
+        return { token, user };
     },
     registerUserNew: async (email, password) => {
         const existingUser = await userService.getProfileByEmail(email);

@@ -6,6 +6,8 @@ export const userService = {
         return await userRepository.createUser(userData);
     },
     getProfileByEmail: async (email) => {
+        console.log(email);
+
         const userRaw = await userRepository.findUserByEmail(email);
         const userFormatted = formatUser(userRaw);
         if (userFormatted) {
@@ -21,9 +23,28 @@ export const userService = {
         }
         return userFormatted;
     },
-    getAllUsersFormatted: async () => {
-        const usersRaw = await userRepository.getUsers();
-        console.log(usersRaw);
+    getAllUsersFormatted: async (filters) => {
+        const filtersFormatted = {
+            languageIds: filters?.["language"]?.split(",")?.map(Number),
+            educationIds: filters?.["education"]?.split(",")?.map(Number),
+            zodiacIds: filters?.["zodiac"]?.split(",")?.map(Number),
+            characterIds: filters?.["character"]?.split(",")?.map(Number),
+            comunicateStyleIds: filters?.["communicate"]
+                ?.split(",")
+                ?.map(Number),
+            loveLanguageIds: filters?.["lovelanguage"]?.split(",")?.map(Number),
+            futureFamilyIds: filters?.["futurefamily"]?.split(",")?.map(Number),
+            sexualOrientationIds: filters?.["sexOrientation"]
+                ?.split(",")
+                ?.map(Number),
+            petIds: filters?.["pet"]?.split(",")?.map(Number),
+            dietIds: filters?.["diet"]?.split(",")?.map(Number),
+            sleepIds: filters?.["sleep"]?.split(",")?.map(Number),
+            snuIds: filters?.["sns"]?.split(",")?.map(Number),
+            searchingForIds: filters?.["searchingfor"]?.split(",")?.map(Number),
+        };
+
+        const usersRaw = await userRepository.getUsers(filtersFormatted);
 
         const usersFormatted = usersRaw.map((user) => {
             const formatted = formatUser(user);
@@ -38,7 +59,6 @@ export const userService = {
         const {
             displayName,
             password,
-            email,
             gender,
             preferredGender,
             name,
@@ -63,7 +83,10 @@ export const userService = {
             sleepId,
             snuId,
             photos,
+            favorites,
+            maxRadius,
         } = user;
+
         const photoUpdate =
             photos?.length > 0
                 ? {
@@ -80,8 +103,6 @@ export const userService = {
                 : {};
         const data = {
             display_name: displayName,
-            password,
-            email,
             gender,
             preferred_gender: preferredGender,
             Bio: {
@@ -89,42 +110,45 @@ export const userService = {
                     name,
                     age,
                     about_me: aboutMe,
+                    address: location,
+                    min_radius: 1,
+                    max_radius: maxRadius,
                     main_inf: {
                         update: {
                             height,
                             location,
                             Language: {
-                                connect: { id: parseInt(languageId) }, // Vietnamese
+                                connect: { id: parseInt(languageId) },
                             },
                             Religion: {
-                                connect: { id: parseInt(religionId) }, // Buddhism
+                                connect: { id: parseInt(religionId) },
                             },
                             Career: {
-                                connect: { id: parseInt(careerId) }, // Software Engineer
+                                connect: { id: parseInt(careerId) },
                             },
                             Education: {
-                                connect: { id: parseInt(educationId) }, // Bachelor
+                                connect: { id: parseInt(educationId) },
                             },
                         },
                     },
                     Base_inf: {
                         update: {
                             Zodiac: {
-                                connect: { id: parseInt(zodiacId) }, // Aries
+                                connect: { id: parseInt(zodiacId) },
                             },
                             Character: {
-                                connect: { id: parseInt(characterId) }, // Extrovert
+                                connect: { id: parseInt(characterId) },
                             },
                             Communicate_style: {
                                 connect: {
                                     id: parseInt(communicateStyleId),
-                                }, // Direct
+                                },
                             },
                             Love_language: {
-                                connect: { id: parseInt(loveLanguageId) }, // Quality Time
+                                connect: { id: parseInt(loveLanguageId) },
                             },
                             FutureFamily: {
-                                connect: { id: parseInt(futureFamilyId) }, // Want kids
+                                connect: { id: parseInt(futureFamilyId) },
                             },
                         },
                     },
@@ -132,18 +156,18 @@ export const userService = {
                         update: {
                             drink,
                             smoke,
-                            train, // ????
+                            train,
                             Pet: {
-                                connect: { id: parseInt(petId) }, // Dog lover
+                                connect: { id: parseInt(petId) },
                             },
                             Diet: {
-                                connect: { id: parseInt(dietId) }, // Vegetarian
+                                connect: { id: parseInt(dietId) },
                             },
                             Sleep: {
-                                connect: { id: parseInt(sleepId) }, // Early bird
+                                connect: { id: parseInt(sleepId) },
                             },
                             SNU: {
-                                connect: { id: parseInt(snuId) }, // Non-smoker
+                                connect: { id: parseInt(snuId) },
                             },
                         },
                     },
@@ -151,7 +175,8 @@ export const userService = {
                 },
             },
         };
-        await userRepository.updateUserById(userId, data);
+
+        return await userRepository.updateUserById(userId, data, favorites);
     },
     updateUserEmailVerifiedStatus: async (userId, isVerified) => {
         return await userRepository.updateUserEmailVerifiedStatus(

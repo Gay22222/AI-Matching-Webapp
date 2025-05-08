@@ -1,8 +1,10 @@
 import { matchRepository } from "../repository/match.repository.js";
 
 export const matchService = {
-    get: (senderId, receiverId) => {
-        return matchRepository.get(senderId, receiverId);
+    get: (id) => {
+        console.log("match service", id);
+
+        return matchRepository.get(parseInt(id));
     },
     getAll: (userId) => {
         return matchRepository.getAll(userId);

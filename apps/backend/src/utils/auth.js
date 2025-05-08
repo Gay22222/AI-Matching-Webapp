@@ -41,8 +41,11 @@ export const verifyToken = (token) => {
 };
 
 export const attachUser = async (decoded, req) => {
-    const user = await userRepository.findUserByEmail(decoded.email);
-    console.log(user);
+    console.log("attachUser", decoded.email.toLowerCase());
+
+    const user = await userRepository.findUserByEmail(
+        decoded.email.toLowerCase()
+    );
 
     if (!user) {
         throw new Error("User not found");

@@ -4,10 +4,12 @@ export const matchController = {
     // [GET] /matches/:id
     get: async (req, res) => {
         try {
-            const match = req.match;
+            const match = req?.match;
+            console.log(match);
+
             res.status(200).json({
                 statusCode: 200,
-                match,
+                data: match,
             });
         } catch (error) {
             console.error("Error getting match:", error);
@@ -25,10 +27,10 @@ export const matchController = {
             const matches = await matchService.getAll(userId?.id);
             res.status(200).json({
                 statusCode: 200,
-                matches,
+                data: matches,
             });
         } catch (error) {
-            console.error("Error getting room:", error);
+            console.error("Error getting match:", error);
             res.status(500).json({
                 statusCode: 500,
                 message: "Internal server error",

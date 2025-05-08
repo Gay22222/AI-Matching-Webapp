@@ -4,7 +4,8 @@ export const userController = {
     // [GET] /me
     getProfile: async (req, res) => {
         try {
-            const user = await userService.getProfileByEmail(req.user.email);
+            const user = req?.user;
+            console.log(user, "controller");
 
             if (!user) {
                 return res.status(404).json({ message: "User not found" });
@@ -25,7 +26,9 @@ export const userController = {
     // [GET] /user/list-match
     getAll: async (req, res) => {
         try {
-            const users = await userService.getAllUsersFormatted();
+            console.log(req.query);
+            const filters = req.query;
+            const users = await userService.getAllUsersFormatted(filters);
             res.status(200).json({
                 statusCode: 200,
                 users,

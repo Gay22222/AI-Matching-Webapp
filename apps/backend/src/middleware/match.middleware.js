@@ -1,33 +1,37 @@
 import { matchRepository } from "../repository/match.repository.js";
+import { matchService } from "../services/match.service.js";
 
 export const matchMiddleware = async (req, res, next) => {
     try {
-        const { roomId } = req.params;
+        const { matchId } = req.params;
+        console.log("matchMiddleware", matchId);
+
         const userId = req.user.id;
 
-        if (!roomId) return res.status(404).json({ message: "Room not found" });
-        const room = await matchRepository.findRoomById(roomId);
-        if (!room) {
-            return res.status(404).json({ message: "Room not found" });
+        if (!matchId)
+            return res.status(404).json({ message: "Match not found" });
+        const match = await matchService.get(matchId);
+        if (!match) {
+            return res.status(404).json({ message: "Match not found" });
         }
 
         const isParticipant =
-            room.user_1_id === userId || room.user_2_id === userId;
+            match.user_1_id === userId || match.user_2_id === userId;
         if (!isParticipant) {
             console.log(
                 "Participant: ",
-                room.user_1_id,
-                room.user_2_id,
+                match.user_1_id,
+                match.user_2_id,
                 "not:",
                 userId
             );
             return res.status(403).json({ message: "Access denied" });
         }
-        req.room = room;
+        req.match = match;
 
         next();
     } catch (error) {
-        console.error("Error in room middleware:", error);
+        console.error("Error in match middleware:", error);
         res.status(500).json({
             statusCode: 500,
             message: "Internal server error",
