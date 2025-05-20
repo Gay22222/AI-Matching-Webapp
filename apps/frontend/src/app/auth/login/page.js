@@ -3,16 +3,19 @@ import { useState } from "react";
 import { FlameIcon, ArrowLeftIcon } from "lucide-react";
 
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/hooks/useAuth";
 
 import { FacebookIcon, PhoneIcon, Loader2Icon } from "lucide-react";
 import Link from "next/link";
 import { setData } from "@/utils/LocalStorage";
 
 export default function Login() {
+    const { login } = useAuth();
+
     const router = useRouter();
     const [formData, setFormData] = useState({
-        email: "john@example.com",
-        password: "123123123",
+        email: "Jessika.Murray74@hotmail.com",
+        password: "123123",
     });
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
@@ -25,29 +28,12 @@ export default function Login() {
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
+        setError("");
         try {
-            const res = await fetch("http://localhost:3001/api/auth/login", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
-            });
-            const data = await res.json();
-
-            console.log(data);
-
-            if (data.statusCode !== 200) {
-                throw new Error(data.message || "Login failed");
-            }
-
-            // Store token
-            const access_token = data.token;
-            setData("token", access_token);
-
-            // Redirect to dashboard
-            router.push("/");
+            login(formData.email, formData.password);
         } catch (error) {
             setError(error.message || "Login failed");
         } finally {

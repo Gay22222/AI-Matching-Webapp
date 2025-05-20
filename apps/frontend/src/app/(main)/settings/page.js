@@ -16,12 +16,16 @@ import {
 import { useRouter } from "next/navigation";
 
 import Link from "next/link";
+import { useAuth } from "@/hooks/useAuth";
 const Settings = () => {
+    const auth = useAuth();
+    console.log(auth);
+
     const router = useRouter();
     const [showPhotoModal, setShowPhotoModal] = useState(false);
     const [profileData, setProfileData] = useState({
-        name: "Linh Nguyễn",
-        username: "@linh.nguyen",
+        name: auth?.currentUser?.display_name,
+        username: auth?.currentUser?.username,
         photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
     });
     const handlePhotoChange = (newPhoto) => {

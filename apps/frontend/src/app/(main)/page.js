@@ -7,8 +7,12 @@ import FilterModal from "@/ui/FilterModal";
 import axios from "axios";
 import { useMetadata } from "@/hooks/useMetadata";
 import { useRouter, useSearchParams } from "next/navigation"; // <<< Import hooks
+import { useAuth } from "@/hooks/useAuth";
 
 const Home = () => {
+    const auth = useAuth();
+    console.log(auth);
+
     const router = useRouter();
     const searchParams = useSearchParams();
     const metadata = useMetadata();
