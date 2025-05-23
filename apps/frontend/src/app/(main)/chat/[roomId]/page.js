@@ -2,6 +2,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { ArrowLeftIcon, SendIcon, ImageIcon, SmileIcon } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
+
 // Mock data for the chat
 const mockChatData = {
     1: {
@@ -94,6 +96,8 @@ const icebreakers = [
     "Hoạt động cuối tuần lý tưởng của bạn là gì?",
 ];
 const ChatPage = () => {
+    const auth = useAuth();
+
     const params = useParams();
     const id = params.roomId; // Next.js dynamic route parameter
     const router = useRouter();
@@ -102,11 +106,27 @@ const ChatPage = () => {
     const [showIcebreakers, setShowIcebreakers] = useState(false);
     const messagesEndRef = useRef(null);
     useEffect(() => {
-        // In a real app, we would fetch the chat data from an API
+        const fetchChatData = async () => {
+            if (!id) return;
+            const response = await fetch(
+                `http://localhost:3001/api/messages/${id}`,
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${auth?.auth?.access_token}`,
+                    },
+                }
+            );
+            if (!response.ok) {
+                throw new Error("Failed to fetch chat data");
+            }
+            const data = await response.json();
+            setChat(data);
+        };
+        fetchChatData();
         setChat(mockChatData[id]);
     }, [id]);
     useEffect(() => {
-        // Scroll to bottom when messages change
         messagesEndRef.current?.scrollIntoView({
             behavior: "smooth",
         });

@@ -14,12 +14,9 @@ import {
     XIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
-
-import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 const Settings = () => {
     const auth = useAuth();
-    console.log(auth);
 
     const router = useRouter();
     const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -42,7 +39,7 @@ const Settings = () => {
     };
 
     const handleLogout = () => {
-        router.push("/auth/login");
+        auth.logout();
     };
     const settingSections = [
         {

@@ -23,7 +23,6 @@ export function AuthProvider({ children }) {
         if (auth) {
             try {
                 const { data: user } = await getUser(auth);
-                console.log("USER", user);
                 setCurrentUser(user.user);
                 router.push("/");
             } catch {
@@ -91,8 +90,11 @@ export function AuthProvider({ children }) {
         });
     };
     const logout = () => {
+        console.log("removeAuth");
+
         saveAuth(undefined);
         setCurrentUser(undefined);
+        router.push("/auth/login");
     };
 
     return (

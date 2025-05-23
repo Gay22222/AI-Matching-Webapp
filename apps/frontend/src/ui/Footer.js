@@ -18,11 +18,6 @@ const Footer = () => {
             label: "Matches",
         },
         {
-            icon: MessageCircleIcon,
-            path: "/chat",
-            label: "Messages",
-        },
-        {
             icon: UserIcon,
             path: "/profile",
             label: "Profile",

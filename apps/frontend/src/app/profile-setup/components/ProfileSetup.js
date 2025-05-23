@@ -10,6 +10,7 @@ import Location from "./Location";
 import Preferences from "./Preferences";
 import { useMetadata } from "@/hooks/useMetadata";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/hooks/useAuth";
 
 import { setupAxios } from "@/app/auth/_helpers";
 import axios from "axios";
@@ -17,6 +18,7 @@ setupAxios(axios);
 import { getData } from "@/utils/LocalStorage";
 const ProfileSetup = () => {
     const router = useRouter();
+    const auth = useAuth();
 
     const metadata = useMetadata();
 
@@ -107,14 +109,14 @@ const ProfileSetup = () => {
             };
         }
         const result = transformUserData(formData);
-        console.log(result);
-        const token = getData("token");
+        console.log(auth);
+
         const res = await axios.put(
             "http://localhost:3001/api/update-profile",
             result,
             {
                 headers: {
-                    Authorization: `Bearer ${token}`,
+                    Authorization: `Bearer ${auth?.access_token}`,
                 },
             }
         );

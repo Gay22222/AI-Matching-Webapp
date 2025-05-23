@@ -1,12 +1,15 @@
 import { MetadataProvider } from "@/hooks/useMetadata";
-import ProfileSetup from "./components/ProfileSetup"; // if you have a component
+import ProfileSetup from "./components/ProfileSetup";
 import { setupAxios } from "@/app/auth/_helpers";
 import axios from "axios";
+import { AuthProvider } from "@/hooks/useAuth";
 setupAxios(axios);
 export default function ProfileSetupPage() {
     return (
-        <MetadataProvider>
-            <ProfileSetup />
-        </MetadataProvider>
+        <AuthProvider>
+            <MetadataProvider>
+                <ProfileSetup />
+            </MetadataProvider>
+        </AuthProvider>
     );
 }

@@ -11,8 +11,6 @@ import { useAuth } from "@/hooks/useAuth";
 
 const Home = () => {
     const auth = useAuth();
-    console.log(auth);
-
     const router = useRouter();
     const searchParams = useSearchParams();
     const metadata = useMetadata();
@@ -74,31 +72,43 @@ const Home = () => {
         [router]
     );
 
+    const handleMatch = async (userId) => {
+        try {
+            const response = await axios.post('http://localhost:3001/api/user/match', {
+                targetUserId: userId,
+                currentUserId: auth.user.id
+            });
+
+            if (response.data.isMatch) {
+                setMatchedProfile(profiles[currentIndex]);
+                setShowMatch(true);
+            }
+
+            // Chuyển sang profile tiếp theo
+            if (currentIndex < profiles.length - 1) {
+                setCurrentIndex((prev) => prev + 1);
+            }
+        } catch (error) {
+            console.error('Error matching with user:', error);
+            // Xử lý lỗi ở đây nếu cần
+        }
+    };
+
     const handleSwipeLeft = useCallback(() => {
         if (currentIndex < profiles.length - 1) {
             setCurrentIndex((prev) => prev + 1);
         }
     }, [currentIndex, profiles.length]);
+
     const handleSwipeRight = useCallback(() => {
-        const isMatch = Math.random() < 0.7;
-        if (isMatch) {
-            setMatchedProfile(profiles[currentIndex]);
-            setShowMatch(true);
-        }
-        if (currentIndex < profiles.length - 1) {
-            setCurrentIndex((prev) => prev + 1);
-        }
-    }, [currentIndex, profiles]);
+        handleMatch(profiles[currentIndex].id);
+    }, [currentIndex, profiles, handleMatch]);
+
     const handleSuperLike = useCallback(() => {
-        const isMatch = Math.random() < 0.9;
-        if (isMatch) {
-            setMatchedProfile(profiles[currentIndex]);
-            setShowMatch(true);
-        }
-        if (currentIndex < profiles.length - 1) {
-            setCurrentIndex((prev) => prev + 1);
-        }
-    }, [currentIndex, profiles]);
+        // Super like sẽ có tỷ lệ match cao hơn
+        handleMatch(profiles[currentIndex].id);
+    }, [currentIndex, profiles, handleMatch]);
+
     const handleCloseMatch = () => {
         setShowMatch(false);
     };

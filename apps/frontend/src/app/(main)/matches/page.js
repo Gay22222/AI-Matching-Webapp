@@ -1,31 +1,36 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/hooks/useAuth";
 
 const Matches = () => {
     const router = useRouter();
+    const [matches, setMatches] = useState([]);
+    const auth = useAuth();
 
-    // Mock data - in a real app, this would come from an API
-    const matches = [
-        {
-            id: "1",
-            name: "Linh",
-            age: 25,
-            matchTime: "Hôm nay",
-            photo: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-            unread: true,
-        },
-        {
-            id: "2",
-            name: "Hương",
-            age: 23,
-            matchTime: "Hôm qua",
-            photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
-            unread: false,
-        },
-    ];
+    useEffect(() => {
+        const fetchMatches = async () => {
+            try {
+                const response = await fetch("/api/matches", {
+                    method: "GET",
+                    headers: {
+                        Authorization: `Bearer ${auth?.auth?.access_token}`,
+                    },
+                });
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                const data = await response.json();
+                setMatches(data?.data);
+            } catch (error) {
+                console.error("Error fetching matches:", error);
+            }
+        };
+        fetchMatches();
+    }, []);
+
     const handleMatchClick = (matchId) => {
         router.push(`/chat/${matchId}`);
     };
@@ -38,7 +43,7 @@ const Matches = () => {
                     </h1>
                 </div>
                 <div className="divide-y divide-gray-100">
-                    {matches.map((match) => (
+                    {matches?.map?.((match) => (
                         <button
                             key={match.id}
                             onClick={() => handleMatchClick(match.id)}
