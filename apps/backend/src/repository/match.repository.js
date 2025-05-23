@@ -6,6 +6,7 @@ export const matchRepository = {
             data: {
                 user_1_id: parseInt(senderId),
                 user_2_id: parseInt(receiverId),
+                matched_at: new Date(),
             },
         });
     },
@@ -16,12 +17,24 @@ export const matchRepository = {
                     select: {
                         id: true,
                         display_name: true,
+                        Bio: {
+                            select: {
+                                Photo: true,
+                                age: true,
+                            },
+                        },
                     },
                 },
                 user_match_2: {
                     select: {
                         id: true,
                         display_name: true,
+                        Bio: {
+                            select: {
+                                Photo: true,
+                                age: true,
+                            },
+                        },
                     },
                 },
             },

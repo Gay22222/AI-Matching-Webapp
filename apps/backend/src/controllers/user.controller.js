@@ -13,7 +13,7 @@ export const userController = {
             const { password, ...userWithoutPassword } = user;
             res.status(200).json({
                 statusCode: 200,
-                userWithoutPassword,
+                user: userWithoutPassword,
             });
         } catch (error) {
             console.error("Error getting user:", error);

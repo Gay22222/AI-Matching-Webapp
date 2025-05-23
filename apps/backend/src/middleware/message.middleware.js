@@ -8,7 +8,7 @@ export const messageMiddleware = async (req, res, next) => {
         const userId = req.user.id;
 
         if (!roomId) return res.status(404).json({ message: "Room not found" });
-        const room = await matchRepository.findRoomById(roomId);
+        const room = await matchRepository.get(roomId);
         if (!room) {
             return res.status(404).json({ message: "Room not found" });
         }

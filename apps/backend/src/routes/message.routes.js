@@ -11,7 +11,7 @@ router.get("/test", (req, res) => {
 router.get(
     "/:matchId",
     authenticationMiddleware,
-    messageMiddleware,
+    // messageMiddleware,
     messageController.getAll
 );
 
