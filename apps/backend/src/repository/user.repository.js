@@ -2,8 +2,6 @@ import prisma from "../prisma/client.js";
 
 export const userRepository = {
     findUserByEmail: (email) => {
-        console.log(email);
-
         return prisma.users.findUnique({
             where: { email },
             include: {
@@ -42,7 +40,6 @@ export const userRepository = {
         });
     },
     findUserById: (id) => {
-        console.log("findUserById - Searching for user with ID:", id);
         return prisma.users.findUnique({
             where: { id: parseInt(id) },
             include: {
@@ -81,8 +78,6 @@ export const userRepository = {
         });
     },
     getUsers: (filters = {}) => {
-        console.log(filters);
-
         const {
             languageIds,
             educationIds,
@@ -239,8 +234,6 @@ export const userRepository = {
         });
     },
     updateUserById: async (userId, user, favorites) => {
-        console.log(user);
-
         await prisma.user_favorite.deleteMany({
             where: { user_id: userId },
         });

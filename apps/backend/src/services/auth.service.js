@@ -13,7 +13,6 @@ export const authService = {
     loginUser: async (email, password) => {
         const user = await userService.getProfileByEmail(email);
         if (!user) throw new Error("User not found");
-        console.log(user);
 
         // const isValidPassword = await bcrypt.compare(password, user.password);
         // console.log(isValidPassword);

@@ -40,7 +40,18 @@ export const matchController = {
     // [POST] /matches
     create: async (req, res) => {
         try {
-            const { senderId, receiverId } = req.body;
+            const { receiverId } = req.body;
+            const user = req.user;
+
+            const senderId = user?.id;
+
+            if (!senderId || !receiverId) {
+                return res.status(400).json({
+                    message: "Missing required fields",
+                    statusCode: 400,
+                });
+            }
+
             const match = await matchService.create(senderId, receiverId);
             res.status(201).json({
                 statusCode: 201,

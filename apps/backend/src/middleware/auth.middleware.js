@@ -52,8 +52,6 @@ export const authorizationMiddleware = (requiredRoles) => {
 
 // validate credential
 export const validate = (email, password) => {
-    console.log(email, password);
-
     if (!email || !password) {
         return {
             status: false,
@@ -84,13 +82,10 @@ export const validate = (email, password) => {
 
 export const validateCredentialsMiddleware = (req, res, next) => {
     const { email, password } = req.body;
-    console.log(email, password);
 
     const validationResult = validate(email, password);
 
     if (validationResult.status !== true) {
-        console.log("asdasdavk;sạvksajfskladfjl");
-
         return res.status(400).json({
             statusCode: 400,
             message: validationResult.message,

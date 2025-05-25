@@ -6,8 +6,6 @@ export const userService = {
         return await userRepository.createUser(userData);
     },
     getProfileByEmail: async (email) => {
-        console.log(email);
-
         const userRaw = await userRepository.findUserByEmail(email);
         const userFormatted = formatUser(userRaw);
         if (userFormatted) {
@@ -66,6 +64,7 @@ export const userService = {
             aboutMe,
             height,
             location,
+            birthday,
             languageId,
             religionId,
             careerId,
@@ -105,6 +104,8 @@ export const userService = {
             display_name: displayName,
             gender,
             preferred_gender: preferredGender,
+            is_full_information: true,
+            birthday,
             Bio: {
                 update: {
                     name,

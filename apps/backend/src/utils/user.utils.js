@@ -11,6 +11,7 @@ export function formatUser(user) {
         password: user?.password,
         email: user?.email,
         gender: user?.gender,
+        birthday: user?.birthday,
         preferredGender: user?.preferred_gender,
         name: user?.Bio?.name,
         age: user?.Bio?.age,
@@ -34,8 +35,10 @@ export function formatUser(user) {
         sleepId: lifestyle?.sleep_id,
         snuId: lifestyle?.snu_id,
         photos: user?.Bio?.Photo,
-        favorites: user?.user_favorites.map((item) => item?.id),
+        bioId: user?.Bio?.id,
+        favorites: user?.user_favorites.map((item) => item?.favorite_id),
         sexualOrientation: baseInf?.sexual_orientation_id,
         searchingFor: user?.Bio?.Searchingfor?.id,
+        isFullInformation: user?.is_full_information,
     };
 }

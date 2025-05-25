@@ -43,6 +43,7 @@ model users {
   preferred_gender                     users_preferred_gender
   status                               users_status?          @default(offline)
   time_register                        DateTime?              @default(now()) @db.Timestamp(0)
+  is_full_information                  Boolean                @default(false)
   Bio                                  Bio?
   user_match_1                         matches[]              @relation("user_match_1")
   user_match_2                         matches[]              @relation("user_match_2")

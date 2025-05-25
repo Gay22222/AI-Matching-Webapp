@@ -4,7 +4,6 @@ import { matchService } from "../services/match.service.js";
 export const matchMiddleware = async (req, res, next) => {
     try {
         const { matchId } = req.params;
-        console.log("matchMiddleware", matchId);
 
         const userId = req.user.id;
 

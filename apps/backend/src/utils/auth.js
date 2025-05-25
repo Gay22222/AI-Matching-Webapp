@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 import { userRepository } from "../repository/user.repository.js";
+import { formatUser } from "../utils/user.utils.js";
 
 export const createToken = (user) => {
     if (!process.env.JWT_SECRET) {
@@ -41,8 +42,6 @@ export const verifyToken = (token) => {
 };
 
 export const attachUser = async (decoded, req) => {
-    console.log("attachUser", decoded.email.toLowerCase());
-
     const user = await userRepository.findUserByEmail(
         decoded.email.toLowerCase()
     );
@@ -50,5 +49,8 @@ export const attachUser = async (decoded, req) => {
     if (!user) {
         throw new Error("User not found");
     }
-    req.user = user;
+
+    const userFormatted = formatUser(user);
+    console.log("Attaching user to request: ", userFormatted);
+    req.user = userFormatted;
 };

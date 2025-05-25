@@ -84,4 +84,20 @@ export const matchRepository = {
             },
         });
     },
+    find: async (senderId, receiverId) => {
+        return prisma.matches.findFirst({
+            where: {
+                OR: [
+                    {
+                        user_1_id: parseInt(senderId),
+                        user_2_id: parseInt(receiverId),
+                    },
+                    {
+                        user_1_id: parseInt(receiverId),
+                        user_2_id: parseInt(senderId),
+                    },
+                ],
+            },
+        });
+    },
 };

@@ -33,7 +33,9 @@ export const matchService = {
         });
     },
     create: async (senderId, receiverId) => {
-        const isExistMatch = await matchRepository.get(senderId, receiverId);
+        console.log("service create", senderId, receiverId);
+
+        const isExistMatch = await matchRepository.find(senderId, receiverId);
 
         if (isExistMatch) {
             throw new Error("The match has already been created");

@@ -13,6 +13,7 @@ import authRoutes from "./auth.routes.js";
 import userRoutes from "./user.routes.js";
 import matchRoutes from "./match.routes.js";
 import metadataRoutes from "./metadata.routes.js";
+import uploadRoutes from "./upload.routes.js";
 
 router.use("/messages", messageRoutes);
 router.use("/metadata", metadataRoutes);
@@ -21,5 +22,6 @@ router.use("/reports", reportRoutes);
 router.use("/auth", authRoutes);
 router.use("/matches", matchRoutes);
 router.use("/", userRoutes);
+router.use("/upload", uploadRoutes);
 
 export default router;
