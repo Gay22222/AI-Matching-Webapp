@@ -3,38 +3,32 @@
 import React, { useState } from "react";
 import { HeartIcon, XIcon, StarIcon } from "lucide-react";
 
-const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
+const ProfileCard = ({ profile, onHandleMatch, onHandleNext }) => {
     const [currentPhoto, setCurrentPhoto] = useState(0);
     const [isLiked, setIsLiked] = useState(false);
     const [isNoped, setIsNoped] = useState(false);
     const [isSuperLiked, setIsSuperLiked] = useState(false);
     const [exitDirection, setExitDirection] = useState(null);
 
+    const resetCardState = () => {
+        setIsLiked(false);
+        setIsNoped(false);
+        setExitDirection(null);
+    };
+
     const handleLike = () => {
+        console.log("like", "user_id", profile.id);
+
         setIsLiked(true);
-        setExitDirection("right");
-        setTimeout(() => {
-            onSwipeRight();
-            setIsLiked(false);
-            setExitDirection(null);
-        }, 500);
+
+        onHandleMatch(profile.id, resetCardState);
     };
     const handleNope = () => {
         setIsNoped(true);
-        setExitDirection("left");
         setTimeout(() => {
-            onSwipeLeft();
             setIsNoped(false);
             setExitDirection(null);
-        }, 500);
-    };
-    const handleSuperLike = () => {
-        setIsSuperLiked(true);
-        setExitDirection("up");
-        setTimeout(() => {
-            onSuperLike();
-            setIsSuperLiked(false);
-            setExitDirection(null);
+            onHandleNext();
         }, 500);
     };
     return (
@@ -43,22 +37,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                         will-change-[transform]
                     transform-gpu duration-500 ease-out
                     hover:shadow-[0_20px_50px_rgba(255,88,100,0.2)]
-                    ${
-                        exitDirection === "left"
-                            ? "-translate-x-full rotate-[-20deg] opacity-0"
-                            : ""
-                    }
-                    ${
-                        exitDirection === "right"
-                            ? "translate-x-full rotate-[20deg] opacity-0"
-                            : ""
-                    }
-                    ${
-                        exitDirection === "up"
-                            ? "-translate-y-full opacity-0"
-                            : ""
-                    }
-                    ${!exitDirection ? "hover:translate-y-[-8px]" : ""}`}
+                    ${!exitDirection ? "hover:translate-y-[8px]" : ""}`}
         >
             <div className="relative aspect-[3/4] bg-gray-200 group">
                 <div
@@ -144,7 +123,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                 >
                     <XIcon className="h-8 w-8 text-gray-400 group-hover:text-red-400 transition-colors duration-200" />
                 </button>
-                <button
+                {/* <button
                     onClick={handleSuperLike}
                     className="w-12 h-12 flex items-center justify-center rounded-full
                        will-change-transform
@@ -154,7 +133,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                 >
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 transition-opacity duration-200 opacity-0 hover:opacity-100" />
                     <StarIcon className="h-6 w-6 text-white relative z-10" />
-                </button>
+                </button> */}
                 <button
                     onClick={handleLike}
                     className="w-14 h-14 flex items-center justify-center rounded-full
@@ -172,7 +151,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                     <HeartIcon className="w-32 h-32 text-[#FF5864] animate-bounce" />
                     <div className="absolute top-8 right-8 glass px-6 py-2 rounded-full">
                         <span className="text-xl font-bold bg-gradient-to-r from-[#FF5864] to-[#FF655B] bg-clip-text text-transparent">
-                            LIKE!
+                            Loading...
                         </span>
                     </div>
                 </div>
@@ -182,17 +161,7 @@ const ProfileCard = ({ profile, onSwipeLeft, onSwipeRight, onSuperLike }) => {
                     <XIcon className="w-32 h-32 text-red-500 animate-bounce" />
                     <div className="absolute top-8 left-8 glass px-6 py-2 rounded-full">
                         <span className="text-xl font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
-                            NOPE
-                        </span>
-                    </div>
-                </div>
-            )}
-            {isSuperLiked && (
-                <div className="absolute inset-0 z-50 glass-dark flex items-center justify-center">
-                    <StarIcon className="w-32 h-32 text-blue-500 animate-bounce" />
-                    <div className="absolute top-8 right-8 glass px-6 py-2 rounded-full">
-                        <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
-                            SUPER LIKE!
+                            Loading...
                         </span>
                     </div>
                 </div>

@@ -19,12 +19,19 @@ export function AuthProvider({ children }) {
     const [auth, setAuth] = useState(authHelper.getAuth());
     const [currentUser, setCurrentUser] = useState();
 
-    const verify = async (auth) => {
+    const verify = async (auth, shouldRedirect = false) => {
         if (auth) {
             try {
                 const { data: user } = await getUser(auth);
+
                 setCurrentUser(user.user);
-                router.push("/");
+                if (!user?.user?.isFullInformation) {
+                    router.push("/profile-setup");
+                    return;
+                }
+                if (shouldRedirect) {
+                    router.push("/");
+                }
             } catch {
                 saveAuth(undefined);
                 setCurrentUser(undefined);
@@ -36,7 +43,7 @@ export function AuthProvider({ children }) {
         if (auth) {
             console.log("auth", auth);
 
-            verify(auth.access_token);
+            verify(auth.access_token, false);
         }
     }, [auth]);
     const saveAuth = (auth) => {
@@ -58,7 +65,7 @@ export function AuthProvider({ children }) {
                 token_type: "Token",
             };
             saveAuth(authData);
-            verify(auth.token);
+            verify(auth.token, true);
             return true;
         } catch (error) {
             saveAuth(undefined);

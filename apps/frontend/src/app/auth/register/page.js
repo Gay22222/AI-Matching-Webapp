@@ -20,9 +20,9 @@ export default function Register() {
     const [showOTP, setShowOTP] = useState(false);
     const [formData, setFormData] = useState({
         name: "ken",
-        email: "ken@gmail.com",
-        password: "123",
-        confirmPassword: "123",
+        email: "khanhace6222@gmail.com",
+        password: "123123123",
+        confirmPassword: "123123123",
     });
 
     const handleChange = (e) => {
@@ -89,9 +89,7 @@ export default function Register() {
         if (data.statusCode === 400) {
             throw new Error(data.message);
         }
-
-        console.log(data);
-        router.push("/profile-setup");
+        router.push("/auth/login");
     };
     const handleResendOTP = async () => {
         // Simulate API call to resend OTP

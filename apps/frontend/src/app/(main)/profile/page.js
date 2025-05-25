@@ -1,50 +1,76 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CameraIcon, EditIcon, Loader2Icon, XIcon } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
+import { useMetadata } from "@/hooks/useMetadata";
+
 const Profile = () => {
+    const { auth, currentUser } = useAuth();
+    const { metadata } = useMetadata();
+    console.log(currentUser);
+
     const [showBioModal, setShowBioModal] = useState(false);
     const [showInterestsModal, setShowInterestsModal] = useState(false);
     const [showPhotoModal, setShowPhotoModal] = useState(false);
     const [showProfilePhotoModal, setShowProfilePhotoModal] = useState(false);
     const [profile, setProfile] = useState({
-        name: "Linh",
-        age: 25,
-        location: "Hà Nội, Việt Nam",
-        bio: "Yêu du lịch, đam mê nhiếp ảnh và thích thưởng thức cà phê vào buổi sáng. Đang tìm người có thể cùng khám phá những quán cafe mới.",
-        interests: ["#CafeTối", "#DuLịchBụi", "#Nhiếp ảnh", "#Đọc sách"],
-        photos: [
-            "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3",
-            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
-        ],
-        profilePhoto:
-            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
+        name: currentUser?.displayName,
+        age: currentUser?.age,
+        location: currentUser?.location,
+        bio: currentUser?.aboutMe,
+        interests:
+            currentUser?.favorites?.map(
+                (favorite) =>
+                    metadata?.favorites.find((f) => f.id === favorite)?.value
+            ) || [],
+        photos: [],
+        profilePhoto: "",
     });
+
+    useEffect(() => {
+        if (currentUser) {
+            setProfile((prev) => ({
+                ...prev,
+                name: currentUser?.displayName,
+                age: currentUser?.age,
+                location: currentUser?.location,
+                bio: currentUser?.aboutMe,
+                interests:
+                    currentUser?.favorites?.map(
+                        (favorite) =>
+                            metadata?.favorites.find((f) => f.id === favorite)
+                                ?.value
+                    ) || [],
+                photos: currentUser?.photos || [],
+                profilePhoto:
+                    currentUser?.profilePhoto ||
+                    "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg",
+            }));
+        }
+    }, [currentUser]);
+
     return (
-        <div className="w-full max-w-md mx-auto py-4">
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div className="w-full max-w-md py-4 mx-auto">
+            <div className="overflow-hidden bg-white rounded-lg shadow-sm">
                 {/* Profile header */}
                 <div className="relative">
                     <div className="h-32 bg-gradient-to-r from-[#FF5864] to-[#FF655B]"></div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16">
+                    <div className="absolute transform -translate-x-1/2 left-1/2 -bottom-16">
                         <div className="relative group">
                             <img
                                 src={profile.profilePhoto}
                                 alt="Profile"
-                                className="w-32 h-32 rounded-full border-4 border-white object-cover
-                         transition-transform duration-300 group-hover:scale-105"
+                                className="object-cover w-32 h-32 transition-transform duration-300 border-4 border-white rounded-full group-hover:scale-105"
                             />
                             <button
                                 onClick={() => setShowProfilePhotoModal(true)}
                                 className="absolute bottom-0 right-0 bg-[#FF5864] p-2 rounded-full text-white
                          shadow-lg transition-transform duration-300 hover:scale-110"
                             >
-                                <CameraIcon className="h-4 w-4" />
+                                <CameraIcon className="w-4 h-4" />
                             </button>
-                            <div
-                                className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100
-                           transition-opacity duration-300 rounded-full flex items-center justify-center"
-                            >
-                                <span className="text-white text-sm font-medium">
+                            <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 rounded-full opacity-0 bg-black/50 group-hover:opacity-100">
+                                <span className="text-sm font-medium text-white">
                                     Thay đổi ảnh
                                 </span>
                             </div>
@@ -52,7 +78,7 @@ const Profile = () => {
                     </div>
                 </div>
                 {/* Profile info */}
-                <div className="pt-20 px-4 pb-4">
+                <div className="px-4 pt-20 pb-4">
                     <div className="text-center">
                         <h1 className="text-2xl font-bold text-gray-800">
                             {profile.name}, {profile.age}
@@ -61,7 +87,7 @@ const Profile = () => {
                     </div>
                     {/* Bio */}
                     <div className="mt-6">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex items-center justify-between mb-2">
                             <h2 className="text-lg font-semibold text-gray-800">
                                 Giới thiệu
                             </h2>
@@ -69,14 +95,14 @@ const Profile = () => {
                                 onClick={() => setShowBioModal(true)}
                                 className="text-[#FF5864] hover:scale-110 transition-transform duration-300"
                             >
-                                <EditIcon className="h-4 w-4" />
+                                <EditIcon className="w-4 h-4" />
                             </button>
                         </div>
                         <p className="text-gray-600">{profile.bio}</p>
                     </div>
                     {/* Tags */}
                     <div className="mt-6">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex items-center justify-between mb-2">
                             <h2 className="text-lg font-semibold text-gray-800">
                                 Sở thích
                             </h2>
@@ -84,15 +110,14 @@ const Profile = () => {
                                 onClick={() => setShowInterestsModal(true)}
                                 className="text-[#FF5864] hover:scale-110 transition-transform duration-300"
                             >
-                                <EditIcon className="h-4 w-4" />
+                                <EditIcon className="w-4 h-4" />
                             </button>
                         </div>
                         <div className="flex flex-wrap gap-2">
                             {profile.interests.map((interest, index) => (
                                 <span
                                     key={index}
-                                    className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm
-                           hover:bg-gray-200 transition-colors duration-300"
+                                    className="px-3 py-1 text-sm text-gray-700 transition-colors duration-300 bg-gray-100 rounded-full hover:bg-gray-200"
                                 >
                                     {interest}
                                 </span>
@@ -101,7 +126,7 @@ const Profile = () => {
                     </div>
                     {/* Photos */}
                     <div className="mt-6">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex items-center justify-between mb-2">
                             <h2 className="text-lg font-semibold text-gray-800">
                                 Ảnh ({profile.photos.length}/6)
                             </h2>
@@ -109,19 +134,19 @@ const Profile = () => {
                                 onClick={() => setShowPhotoModal(true)}
                                 className="text-[#FF5864] hover:scale-110 transition-transform duration-300"
                             >
-                                <EditIcon className="h-4 w-4" />
+                                <EditIcon className="w-4 h-4" />
                             </button>
                         </div>
                         <div className="grid grid-cols-3 gap-2">
                             {profile.photos.map((photo, index) => (
                                 <div
                                     key={index}
-                                    className="aspect-square bg-gray-200 rounded-lg overflow-hidden group relative"
+                                    className="relative overflow-hidden bg-gray-200 rounded-lg aspect-square group"
                                 >
                                     <img
                                         src={photo}
                                         alt={`Photo ${index + 1}`}
-                                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                                     />
                                 </div>
                             ))}
@@ -129,11 +154,10 @@ const Profile = () => {
                                 (_, index) => (
                                     <div
                                         key={`empty-${index}`}
-                                        className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center
-                           hover:bg-gray-200 transition-colors duration-300 cursor-pointer"
+                                        className="flex items-center justify-center transition-colors duration-300 bg-gray-100 rounded-lg cursor-pointer aspect-square hover:bg-gray-200"
                                         onClick={() => setShowPhotoModal(true)}
                                     >
-                                        <CameraIcon className="h-6 w-6 text-gray-400" />
+                                        <CameraIcon className="w-6 h-6 text-gray-400" />
                                     </div>
                                 )
                             )}
@@ -141,7 +165,6 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            {/* Modals */}
             {showBioModal && (
                 <EditBioModal
                     bio={profile.bio}
@@ -222,15 +245,14 @@ const EditBioModal = ({ bio, onSave, onClose }) => {
                     maxLength={500}
                     placeholder="Viết gì đó về bản thân..."
                 />
-                <p className="text-sm text-gray-500 text-right">
+                <p className="text-sm text-right text-gray-500">
                     {newBio.length}/500
                 </p>
                 <div className="flex gap-3">
                     <button
                         type="button"
                         onClick={onClose}
-                        className="flex-1 px-4 py-2 border border-gray-300 rounded-xl text-gray-700
-                     hover:bg-gray-50 transition-colors duration-300"
+                        className="flex-1 px-4 py-2 text-gray-700 transition-colors duration-300 border border-gray-300 rounded-xl hover:bg-gray-50"
                     >
                         Hủy
                     </button>
@@ -242,7 +264,7 @@ const EditBioModal = ({ bio, onSave, onClose }) => {
                      disabled:opacity-70 flex items-center justify-center"
                     >
                         {loading ? (
-                            <Loader2Icon className="h-5 w-5 animate-spin" />
+                            <Loader2Icon className="w-5 h-5 animate-spin" />
                         ) : (
                             "Lưu"
                         )}
@@ -310,8 +332,7 @@ const EditInterestsModal = ({ interests, onSave, onClose }) => {
                     <button
                         type="button"
                         onClick={onClose}
-                        className="flex-1 px-4 py-2 border border-gray-300 rounded-xl text-gray-700
-                     hover:bg-gray-50 transition-colors duration-300"
+                        className="flex-1 px-4 py-2 text-gray-700 transition-colors duration-300 border border-gray-300 rounded-xl hover:bg-gray-50"
                     >
                         Hủy
                     </button>
@@ -323,7 +344,7 @@ const EditInterestsModal = ({ interests, onSave, onClose }) => {
                      disabled:opacity-70 flex items-center justify-center"
                     >
                         {loading ? (
-                            <Loader2Icon className="h-5 w-5 animate-spin" />
+                            <Loader2Icon className="w-5 h-5 animate-spin" />
                         ) : (
                             "Lưu"
                         )}
@@ -366,36 +387,32 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                     {currentPhotos.map((photo, index) => (
                         <div
                             key={index}
-                            className="aspect-square relative group"
+                            className="relative aspect-square group"
                         >
                             <img
                                 src={photo}
                                 alt={`Photo ${index + 1}`}
-                                className="w-full h-full object-cover rounded-lg"
+                                className="object-cover w-full h-full rounded-lg"
                             />
                             <button
                                 type="button"
                                 onClick={() => removePhoto(index)}
-                                className="absolute top-1 right-1 p-1 bg-red-500 rounded-full text-white opacity-0
-                         group-hover:opacity-100 transition-opacity duration-300"
+                                className="absolute p-1 text-white transition-opacity duration-300 bg-red-500 rounded-full opacity-0 top-1 right-1 group-hover:opacity-100"
                             >
-                                <XIcon className="h-4 w-4" />
+                                <XIcon className="w-4 h-4" />
                             </button>
                         </div>
                     ))}
                     {currentPhotos.length < 6 && (
-                        <label
-                            className="aspect-square flex flex-col items-center justify-center border-2 border-dashed
-                          border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors"
-                        >
+                        <label className="flex flex-col items-center justify-center transition-colors border-2 border-gray-300 border-dashed rounded-lg cursor-pointer aspect-square hover:bg-gray-50">
                             <input
                                 type="file"
                                 accept="image/*"
                                 onChange={handlePhotoUpload}
                                 className="hidden"
                             />
-                            <CameraIcon className="h-8 w-8 text-gray-400" />
-                            <span className="text-sm text-gray-500 mt-2">
+                            <CameraIcon className="w-8 h-8 text-gray-400" />
+                            <span className="mt-2 text-sm text-gray-500">
                                 Thêm ảnh
                             </span>
                         </label>
@@ -405,8 +422,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                     <button
                         type="button"
                         onClick={onClose}
-                        className="flex-1 px-4 py-2 border border-gray-300 rounded-xl text-gray-700
-                     hover:bg-gray-50 transition-colors duration-300"
+                        className="flex-1 px-4 py-2 text-gray-700 transition-colors duration-300 border border-gray-300 rounded-xl hover:bg-gray-50"
                     >
                         Hủy
                     </button>
@@ -418,7 +434,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                      disabled:opacity-70 flex items-center justify-center"
                     >
                         {loading ? (
-                            <Loader2Icon className="h-5 w-5 animate-spin" />
+                            <Loader2Icon className="w-5 h-5 animate-spin" />
                         ) : (
                             "Lưu"
                         )}
@@ -449,11 +465,11 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                 <h3 className="text-xl font-bold text-gray-900">
                     Cập nhật ảnh đại diện
                 </h3>
-                <div className="aspect-square relative">
+                <div className="relative aspect-square">
                     <img
                         src={currentPhoto}
                         alt="Current profile photo"
-                        className="w-full h-full object-cover rounded-lg"
+                        className="object-cover w-full h-full rounded-lg"
                     />
                 </div>
                 <label className="block w-full">
@@ -469,10 +485,10 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                        hover:-translate-y-0.5 flex items-center justify-center"
                     >
                         {loading ? (
-                            <Loader2Icon className="h-5 w-5 animate-spin" />
+                            <Loader2Icon className="w-5 h-5 animate-spin" />
                         ) : (
                             <>
-                                <CameraIcon className="h-5 w-5 mr-2" />
+                                <CameraIcon className="w-5 h-5 mr-2" />
                                 Chọn ảnh mới
                             </>
                         )}
@@ -480,8 +496,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                 </label>
                 <button
                     onClick={onClose}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-700
-                   hover:bg-gray-50 transition-colors duration-300"
+                    className="w-full px-4 py-3 text-gray-700 transition-colors duration-300 border border-gray-300 rounded-xl hover:bg-gray-50"
                 >
                     Hủy
                 </button>
@@ -496,7 +511,7 @@ const ModalWrapper = ({ children, onClose }) => {
                 className="absolute inset-0 bg-black/60 backdrop-blur-sm"
                 onClick={onClose}
             />
-            <div className="relative bg-white rounded-2xl w-full max-w-md p-6 animate-scale-up">
+            <div className="relative w-full max-w-md p-6 bg-white rounded-2xl animate-scale-up">
                 {children}
             </div>
         </div>

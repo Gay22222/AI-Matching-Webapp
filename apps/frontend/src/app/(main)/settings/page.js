@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
     BellIcon,
     CompassIcon,
@@ -16,15 +16,27 @@ import {
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/hooks/useAuth";
 const Settings = () => {
-    const auth = useAuth();
+    const { auth, currentUser, logout } = useAuth();
+    console.log("auth", auth);
 
     const router = useRouter();
     const [showPhotoModal, setShowPhotoModal] = useState(false);
     const [profileData, setProfileData] = useState({
-        name: auth?.currentUser?.display_name,
-        username: auth?.currentUser?.username,
+        name: currentUser?.display_name,
+        username: currentUser?.username,
         photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
     });
+    useEffect(() => {
+        if (currentUser) {
+            setProfileData({
+                name: currentUser?.displayName,
+                username: currentUser?.username,
+                photo:
+                    currentUser?.photo ||
+                    "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg",
+            });
+        }
+    }, [currentUser]);
     const handlePhotoChange = (newPhoto) => {
         setProfileData((prev) => ({
             ...prev,
@@ -39,7 +51,7 @@ const Settings = () => {
     };
 
     const handleLogout = () => {
-        auth.logout();
+        logout();
     };
     const settingSections = [
         {
@@ -100,9 +112,9 @@ const Settings = () => {
         },
     ];
     return (
-        <div className="w-full max-w-md mx-auto p-4">
+        <div className="w-full max-w-md p-4 mx-auto">
             <div className="space-y-6">
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="overflow-hidden bg-white shadow-lg rounded-2xl">
                     <div className="relative h-32 bg-gradient-to-r from-[#FF5864] to-[#FF655B]">
                         <div className="absolute inset-0 bg-black/20" />
                     </div>
@@ -112,26 +124,22 @@ const Settings = () => {
                                 <img
                                     src={profileData.photo}
                                     alt="Profile"
-                                    className="w-24 h-24 rounded-2xl border-4 border-white shadow-lg object-cover
-                           transition-transform duration-300 group-hover:scale-105"
+                                    className="object-cover w-24 h-24 transition-transform duration-300 border-4 border-white shadow-lg rounded-2xl group-hover:scale-105"
                                 />
                                 <button
                                     onClick={handlePhotoClick}
                                     className="absolute bottom-0 right-0 bg-[#FF5864] p-2 rounded-full text-white
                            shadow-lg transition-transform duration-300 hover:scale-110"
                                 >
-                                    <CameraIcon className="h-4 w-4" />
+                                    <CameraIcon className="w-4 h-4" />
                                 </button>
-                                <div
-                                    className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100
-                              transition-opacity duration-300 rounded-2xl flex items-center justify-center"
-                                >
-                                    <span className="text-white text-sm font-medium">
+                                <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/50 group-hover:opacity-100 rounded-2xl">
+                                    <span className="text-sm font-medium text-white">
                                         Thay đổi ảnh
                                     </span>
                                 </div>
                             </div>
-                            <div className="ml-4 mt-12">
+                            <div className="mt-12 ml-4">
                                 <h2 className="text-xl font-bold text-gray-900">
                                     {profileData.name}
                                 </h2>
@@ -145,10 +153,10 @@ const Settings = () => {
                 {settingSections.map((section, idx) => (
                     <div
                         key={idx}
-                        className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                        className="overflow-hidden bg-white shadow-lg rounded-2xl"
                     >
                         <div className="p-6">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                            <h3 className="mb-4 text-lg font-semibold text-gray-900">
                                 {section.title}
                             </h3>
                             <div className="space-y-3">
@@ -178,7 +186,7 @@ const Settings = () => {
                                                 }`}
                                             />
                                         </div>
-                                        <div className="ml-4 flex-1 text-left">
+                                        <div className="flex-1 ml-4 text-left">
                                             <p
                                                 className={`font-medium ${
                                                     item.gradient
@@ -218,13 +226,12 @@ const Settings = () => {
                 ))}
                 <button
                     onClick={handleLogout}
-                    className="w-full bg-white text-gray-600 rounded-2xl shadow-lg p-4 flex items-center justify-center font-medium 
-                   hover:bg-gray-50 transition-colors duration-300"
+                    className="flex items-center justify-center w-full p-4 font-medium text-gray-600 transition-colors duration-300 bg-white shadow-lg rounded-2xl hover:bg-gray-50"
                 >
-                    <LogOutIcon className="h-5 w-5 mr-2" />
+                    <LogOutIcon className="w-5 h-5 mr-2" />
                     Đăng xuất
                 </button>
-                <div className="text-center text-sm text-gray-500">
+                <div className="text-sm text-center text-gray-500">
                     <p>DateViet v1.0.0</p>
                 </div>
             </div>
@@ -296,24 +303,23 @@ const PhotoUploadModal = ({ currentPhoto, onSave, onClose }) => {
                 className="absolute inset-0 bg-black/60 backdrop-blur-sm"
                 onClick={onClose}
             />
-            <div className="relative bg-white rounded-2xl w-full max-w-md p-6 animate-scale-up">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <div className="relative w-full max-w-md p-6 bg-white rounded-2xl animate-scale-up">
+                <h3 className="mb-4 text-xl font-bold text-gray-900">
                     Cập nhật ảnh đại diện
                 </h3>
                 {preview && (
-                    <div className="relative mb-4 aspect-square rounded-xl overflow-hidden">
+                    <div className="relative mb-4 overflow-hidden aspect-square rounded-xl">
                         <img
                             src={preview}
                             alt="Preview"
-                            className="w-full h-full object-cover"
+                            className="object-cover w-full h-full"
                         />
                         {!loading && (
                             <button
                                 onClick={() => setPreview(null)}
-                                className="absolute top-2 right-2 p-1 bg-red-500 rounded-full text-white
-                         hover:bg-red-600 transition-colors duration-300"
+                                className="absolute p-1 text-white transition-colors duration-300 bg-red-500 rounded-full top-2 right-2 hover:bg-red-600"
                             >
-                                <XIcon className="h-4 w-4" />
+                                <XIcon className="w-4 h-4" />
                             </button>
                         )}
                     </div>
@@ -337,23 +343,22 @@ const PhotoUploadModal = ({ currentPhoto, onSave, onClose }) => {
                             onChange={handleFileInput}
                             className="hidden"
                         />
-                        <div className="h-full flex flex-col items-center justify-center p-6">
-                            <CameraIcon className="h-12 w-12 text-gray-400 mb-4" />
-                            <p className="text-sm text-gray-600 text-center">
+                        <div className="flex flex-col items-center justify-center h-full p-6">
+                            <CameraIcon className="w-12 h-12 mb-4 text-gray-400" />
+                            <p className="text-sm text-center text-gray-600">
                                 Kéo thả ảnh vào đây hoặc click để chọn
                             </p>
-                            <p className="text-xs text-gray-500 mt-2">
+                            <p className="mt-2 text-xs text-gray-500">
                                 Hỗ trợ: JPG, PNG (Tối đa: 5MB)
                             </p>
                         </div>
                     </label>
                 )}
                 {error && <p className="mt-2 text-sm text-red-500">{error}</p>}
-                <div className="mt-6 flex gap-3">
+                <div className="flex gap-3 mt-6">
                     <button
                         onClick={onClose}
-                        className="flex-1 px-4 py-2 border border-gray-300 rounded-xl text-gray-700
-                     hover:bg-gray-50 transition-colors duration-300"
+                        className="flex-1 px-4 py-2 text-gray-700 transition-colors duration-300 border border-gray-300 rounded-xl hover:bg-gray-50"
                     >
                         Hủy
                     </button>
@@ -365,7 +370,7 @@ const PhotoUploadModal = ({ currentPhoto, onSave, onClose }) => {
                      disabled:opacity-70 flex items-center justify-center gap-2"
                     >
                         {loading ? (
-                            <Loader2Icon className="h-5 w-5 animate-spin" />
+                            <Loader2Icon className="w-5 h-5 animate-spin" />
                         ) : (
                             "Lưu thay đổi"
                         )}

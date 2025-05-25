@@ -3,12 +3,24 @@ import { ImageIcon, PlusIcon } from "lucide-react";
 const PhotoUpload = ({ formData, setFormData }) => {
     const handlePhotoUpload = (e) => {
         const file = e.target.files[0];
+
+        if (!file.type.match("image.*")) {
+            alert("Vui lòng chỉ chọn file hình ảnh");
+            return;
+        }
+
+        if (file.size > 5 * 1024 * 1024) {
+            alert("Kích thước file không được vượt quá 5MB");
+            return;
+        }
+
         if (file) {
             const reader = new FileReader();
             reader.onloadend = () => {
                 setFormData((prev) => ({
                     ...prev,
                     photos: [...prev.photos, reader.result],
+                    photoFiles: [...prev.photoFiles, file],
                 }));
             };
             reader.readAsDataURL(file);
@@ -18,31 +30,39 @@ const PhotoUpload = ({ formData, setFormData }) => {
         setFormData((prev) => ({
             ...prev,
             photos: prev.photos.filter((_, i) => i !== index),
+            photoFiles: prev.photoFiles.filter((photo, i) => photo !== index),
         }));
     };
+
+    console.log(formData.photoFiles);
+
     return (
         <div className="space-y-6">
             <div>
                 <p className="mb-4 text-sm text-gray-600">
                     Thêm ít nhất 2 ảnh để tiếp tục. Chọn ảnh đẹp nhất của bạn!
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid  lg:grid-cols-3 gap-4">
                     {[...Array(6)].map((_, index) => {
-                        const photo = formData.photos[index];
+                        const photo = formData.photoFiles[index];
+                        const photoBase64 = formData.photos[index];
                         return (
                             <div
-                                key={index}
+                                key={photo || index + 1}
                                 className="relative overflow-hidden aspect-square rounded-xl"
                             >
                                 {photo ? (
                                     <div className="relative h-full group">
                                         <img
-                                            src={photo}
+                                            src={
+                                                photoBase64 ||
+                                                `http://localhost:3001${photo}`
+                                            }
                                             alt={`Photo ${index + 1}`}
-                                            className="object-cover w-full h-full"
+                                            className="object-cover w-full h-full order-2"
                                         />
                                         <button
-                                            onClick={() => removePhoto(index)}
+                                            onClick={() => removePhoto(photo)}
                                             className="absolute inset-0 flex items-center justify-center text-white transition-opacity opacity-0 bg-black/50 group-hover:opacity-100"
                                         >
                                             Xóa ảnh
@@ -56,16 +76,7 @@ const PhotoUpload = ({ formData, setFormData }) => {
                                             onChange={handlePhotoUpload}
                                             className="hidden"
                                         />
-                                        {index === 0 ? (
-                                            <div className="text-center">
-                                                <ImageIcon className="w-8 h-8 mx-auto text-gray-400" />
-                                                <span className="block mt-2 text-sm text-gray-500">
-                                                    Ảnh chính
-                                                </span>
-                                            </div>
-                                        ) : (
-                                            <PlusIcon className="w-8 h-8 text-gray-400" />
-                                        )}
+                                        <PlusIcon className="w-8 h-8 text-gray-400" />
                                     </label>
                                 )}
                             </div>

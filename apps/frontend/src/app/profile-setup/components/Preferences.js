@@ -201,9 +201,6 @@ const Preferences = ({ metadata, formData, setFormData }) => {
                 Thêm chi tiết để tìm kiếm người phù hợp hơn
             </p>
             {preferences.map((pref) => {
-                console.log(pref, "pref");
-                console.log(formData.preferences?.[pref.label]);
-
                 return (
                     <PreferenceItem
                         key={pref.label}

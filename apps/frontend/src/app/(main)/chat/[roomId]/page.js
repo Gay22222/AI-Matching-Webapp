@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { ArrowLeftIcon, SendIcon, ImageIcon, SmileIcon } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
+import Loading from "@/components/Loading";
 
 // Mock data for the chat
 const mockChatData = {
@@ -105,25 +106,31 @@ const ChatPage = () => {
     const [chat, setChat] = useState(null);
     const [showIcebreakers, setShowIcebreakers] = useState(false);
     const messagesEndRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
+        setIsLoading(true);
+
         const fetchChatData = async () => {
             if (!id) return;
-            const response = await fetch(
-                `http://localhost:3001/api/messages/${id}`,
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                        Authorization: `Bearer ${auth?.auth?.access_token}`,
-                    },
-                }
-            );
-            if (!response.ok) {
-                throw new Error("Failed to fetch chat data");
-            }
-            const data = await response.json();
+            try {
+                const response = await fetch(
+                    `http://localhost:3001/api/messages/${id}`,
+                    {
+                        headers: {
+                            "Content-Type": "application/json",
+                            Authorization: `Bearer ${auth?.auth?.access_token}`,
+                        },
+                    }
+                );
+                const data = await response.json();
+            } catch (error) {}
+
             setChat(data);
         };
-        fetchChatData();
+        // fetchChatData();
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 500);
         setChat(mockChatData[id]);
     }, [id]);
     useEffect(() => {
@@ -154,13 +161,13 @@ const ChatPage = () => {
     };
     if (!chat) {
         return (
-            <div className="flex items-center justify-center h-screen">
-                Loading...
+            <div className="flex items-center justify-center">
+                <Loading />
             </div>
         );
     }
     return (
-        <div className="flex flex-col h-screen bg-gray-50">
+        <div className="flex flex-col h-[70vh] w-[50vh] bg-gray-50">
             <header className="bg-white p-4 shadow-sm flex items-center">
                 <button onClick={() => navigate("/chats")} className="mr-3">
                     <ArrowLeftIcon size={24} className="text-gray-500" />

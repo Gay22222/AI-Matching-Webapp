@@ -9,8 +9,13 @@ import { useMetadata } from "@/hooks/useMetadata";
 import { useRouter, useSearchParams } from "next/navigation"; // <<< Import hooks
 import { useAuth } from "@/hooks/useAuth";
 
+import { getSocket } from "@/lib/socket";
+import { showToast } from "@/lib/toast";
+
+const socket = getSocket();
+
 const Home = () => {
-    const auth = useAuth();
+    const { auth, currentUser } = useAuth();
     const router = useRouter();
     const searchParams = useSearchParams();
     const metadata = useMetadata();
@@ -72,42 +77,45 @@ const Home = () => {
         [router]
     );
 
-    const handleMatch = async (userId) => {
-        try {
-            const response = await axios.post('http://localhost:3001/api/user/match', {
-                targetUserId: userId,
-                currentUserId: auth.user.id
-            });
-
-            if (response.data.isMatch) {
-                setMatchedProfile(profiles[currentIndex]);
-                setShowMatch(true);
-            }
-
-            // Chuyển sang profile tiếp theo
-            if (currentIndex < profiles.length - 1) {
-                setCurrentIndex((prev) => prev + 1);
-            }
-        } catch (error) {
-            console.error('Error matching with user:', error);
-            // Xử lý lỗi ở đây nếu cần
-        }
-    };
-
-    const handleSwipeLeft = useCallback(() => {
+    const handleNext = useCallback(() => {
         if (currentIndex < profiles.length - 1) {
             setCurrentIndex((prev) => prev + 1);
         }
     }, [currentIndex, profiles.length]);
 
-    const handleSwipeRight = useCallback(() => {
-        handleMatch(profiles[currentIndex].id);
-    }, [currentIndex, profiles, handleMatch]);
+    const handleMatch = async (userId, callback) => {
+        try {
+            const response = await axios.post(
+                "http://localhost:3001/api/matches",
+                {
+                    receiverId: userId,
+                },
+                {
+                    headers: {
+                        Authorization: `Bearer ${auth?.access_token}`,
+                    },
+                }
+            );
+            if (response.data.isMatch) {
+                setMatchedProfile(profiles[currentIndex]);
+                setShowMatch(true);
+            }
 
-    const handleSuperLike = useCallback(() => {
-        // Super like sẽ có tỷ lệ match cao hơn
-        handleMatch(profiles[currentIndex].id);
-    }, [currentIndex, profiles, handleMatch]);
+            if (currentIndex < profiles.length - 1) {
+                setCurrentIndex((prev) => prev + 1);
+            }
+            callback && callback();
+        } catch (error) {
+            console.error(error?.response?.data?.message || "Lỗi khi matching");
+            setTimeout(() => {
+                callback && callback();
+                showToast.error(
+                    error?.response?.data?.message || "Lỗi khi matching"
+                );
+            }, 500);
+        } finally {
+        }
+    };
 
     const handleCloseMatch = () => {
         setShowMatch(false);
@@ -160,9 +168,8 @@ const Home = () => {
             <ProfileCard
                 key={profiles[currentIndex].id}
                 profile={profiles[currentIndex]}
-                onSwipeLeft={handleSwipeLeft}
-                onSwipeRight={handleSwipeRight}
-                onSuperLike={handleSuperLike}
+                onHandleMatch={handleMatch}
+                onHandleNext={handleNext}
             />
 
             {showMatch && matchedProfile && (

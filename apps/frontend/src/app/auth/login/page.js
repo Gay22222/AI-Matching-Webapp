@@ -14,8 +14,8 @@ export default function Login() {
 
     const router = useRouter();
     const [formData, setFormData] = useState({
-        email: "Jessika.Murray74@hotmail.com",
-        password: "123123",
+        email: "khanhace6222@gmail.com",
+        password: "123123123",
     });
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
@@ -42,12 +42,12 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-white via-pink-50 to-rose-50 p-4 relative overflow-hidden">
+        <div className="relative flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden bg-gradient-to-br from-white via-pink-50 to-rose-50">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 -right-40 w-80 h-80 bg-gradient-to-br from-[#FF5864]/30 to-[#FF655B]/30 rounded-full blur-3xl" />
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-[#FF5864]/30 to-[#FF655B]/30 rounded-full blur-3xl" />
             </div>
-            <div className="w-full max-w-md relative">
+            <div className="relative w-full max-w-md">
                 <div className="mb-12 text-center">
                     <div className="flex justify-center mb-4">
                         <div className="relative">
@@ -58,14 +58,14 @@ export default function Login() {
                     <h1 className="text-4xl font-bold text-transparent bg-gradient-to-r from-[#FF5864] to-[#FF655B] bg-clip-text">
                         DateViet
                     </h1>
-                    <p className="mt-3 text-gray-600 text-lg">
+                    <p className="mt-3 text-lg text-gray-600">
                         Đăng nhập để tiếp tục
                     </p>
                 </div>
                 <div className="space-y-6">
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block mb-1 text-sm font-medium text-gray-700">
                                 Email
                             </label>
                             <input
@@ -79,7 +79,7 @@ export default function Login() {
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="block mb-1 text-sm font-medium text-gray-700">
                                 Mật khẩu
                             </label>
                             <input
@@ -99,7 +99,7 @@ export default function Login() {
                    font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70"
                         >
                             {loading ? (
-                                <Loader2Icon className="h-5 w-5 animate-spin mx-auto" />
+                                <Loader2Icon className="w-5 h-5 mx-auto animate-spin" />
                             ) : (
                                 "Đăng nhập"
                             )}
@@ -110,7 +110,7 @@ export default function Login() {
                             <div className="w-full border-t border-gray-300"></div>
                         </div>
                         <div className="relative flex justify-center text-sm">
-                            <span className="px-2 bg-gradient-to-br from-white via-pink-50 to-rose-50 text-gray-500">
+                            <span className="px-2 text-gray-500 bg-gradient-to-br from-white via-pink-50 to-rose-50">
                                 Hoặc đăng nhập với
                             </span>
                         </div>
@@ -127,7 +127,7 @@ export default function Login() {
                                 alt="Google"
                                 className="w-5 h-5"
                             />
-                            <span className="text-gray-700 font-medium">
+                            <span className="font-medium text-gray-700">
                                 Tiếp tục với Google
                             </span>
                         </button>
@@ -136,8 +136,8 @@ export default function Login() {
                             className="w-full flex items-center justify-center gap-3 bg-[#1877F2] py-3 px-6 rounded-xl 
                    shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
                         >
-                            <FacebookIcon className="h-5 w-5 text-white" />
-                            <span className="text-white font-medium">
+                            <FacebookIcon className="w-5 h-5 text-white" />
+                            <span className="font-medium text-white">
                                 Tiếp tục với Facebook
                             </span>
                         </button>
@@ -147,8 +147,8 @@ export default function Login() {
                    border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300
                    hover:border-gray-300 hover:-translate-y-0.5"
                         >
-                            <PhoneIcon className="h-5 w-5 text-gray-600" />
-                            <span className="text-gray-700 font-medium">
+                            <PhoneIcon className="w-5 h-5 text-gray-600" />
+                            <span className="font-medium text-gray-700">
                                 Tiếp tục với số điện thoại
                             </span>
                         </button>
@@ -176,9 +176,9 @@ export default function Login() {
                 <div className="mt-10 text-center">
                     <Link
                         href="/"
-                        className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-300"
+                        className="inline-flex items-center text-gray-600 transition-colors duration-300 hover:text-gray-800"
                     >
-                        <ArrowLeftIcon className="h-4 w-4 mr-2" />
+                        <ArrowLeftIcon className="w-4 h-4 mr-2" />
                         <span>Quay lại ứng dụng</span>
                     </Link>
                 </div>
