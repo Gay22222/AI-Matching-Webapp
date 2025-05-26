@@ -58,7 +58,7 @@ const Profile = () => {
                     <div className="absolute transform -translate-x-1/2 left-1/2 -bottom-16">
                         <div className="relative group">
                             <img
-                                src={profile.profilePhoto}
+                                src={profile?.profilePhoto || ""}
                                 alt="Profile"
                                 className="object-cover w-32 h-32 transition-transform duration-300 border-4 border-white rounded-full group-hover:scale-105"
                             />

@@ -13,6 +13,8 @@ const Matches = () => {
     const auth = useAuth();
     const [isLoading, setIsLoading] = useState(true);
 
+    console.log(matches);
+
     useEffect(() => {
         const fetchMatches = async () => {
             setIsLoading(true);
@@ -40,7 +42,7 @@ const Matches = () => {
     }, []);
 
     const handleMatchClick = (matchId) => {
-        router.push(`/chat/${matchId}`);
+        router.push(`/message/${matchId}`);
     };
     return (
         <div className="w-full max-w-md mx-auto py-4">

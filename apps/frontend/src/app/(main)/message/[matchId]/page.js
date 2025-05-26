@@ -4,91 +4,9 @@ import { useRouter, useParams } from "next/navigation";
 import { ArrowLeftIcon, SendIcon, ImageIcon, SmileIcon } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import Loading from "@/components/Loading";
+import { showToast } from "@/lib/toast";
+import { getRelativeTime } from "@/utils/Time";
 
-// Mock data for the chat
-const mockChatData = {
-    1: {
-        id: 1,
-        name: "Mai Anh",
-        photo: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        messages: [
-            {
-                id: 1,
-                text: "Chào bạn! Rất vui được kết nối với bạn.",
-                sender: "them",
-                time: "10:30 AM",
-            },
-            {
-                id: 2,
-                text: "Chào bạn! Mình cũng vậy. Bạn thích đi cà phê không?",
-                sender: "me",
-                time: "10:32 AM",
-            },
-            {
-                id: 3,
-                text: "Có chứ, mình rất thích cà phê. Bạn có đề xuất quán nào không?",
-                sender: "them",
-                time: "10:35 AM",
-            },
-            {
-                id: 4,
-                text: "Mình biết một quán cà phê nhỏ ở quận 1, view rất đẹp.",
-                sender: "me",
-                time: "10:36 AM",
-            },
-            {
-                id: 5,
-                text: "Nghe hay đấy! Tối nay đi cà phê không?",
-                sender: "them",
-                time: "10:40 AM",
-            },
-        ],
-    },
-    2: {
-        id: 2,
-        name: "Hoàng Minh",
-        photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        messages: [
-            {
-                id: 1,
-                text: "Rất vui được gặp bạn hôm qua!",
-                sender: "them",
-                time: "4:15 PM",
-            },
-            {
-                id: 2,
-                text: "Mình cũng vậy! Buổi gặp mặt rất thú vị.",
-                sender: "me",
-                time: "4:20 PM",
-            },
-        ],
-    },
-    3: {
-        id: 3,
-        name: "Thu Hà",
-        photo: "https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        messages: [
-            {
-                id: 1,
-                text: "Chào bạn, profile của bạn rất thú vị!",
-                sender: "me",
-                time: "Yesterday",
-            },
-            {
-                id: 2,
-                text: "Cảm ơn bạn! Mình thấy bạn cũng thích đọc sách.",
-                sender: "them",
-                time: "Yesterday",
-            },
-            {
-                id: 3,
-                text: "Bạn thích đọc sách gì?",
-                sender: "them",
-                time: "Yesterday",
-            },
-        ],
-    },
-};
 // AI-generated icebreaker questions
 const icebreakers = [
     "Nếu có thể đi du lịch bất cứ đâu, bạn sẽ chọn nơi nào?",
@@ -96,63 +14,79 @@ const icebreakers = [
     "Bữa ăn ngon nhất bạn từng có là gì?",
     "Hoạt động cuối tuần lý tưởng của bạn là gì?",
 ];
-const ChatPage = () => {
+const MessagePage = () => {
     const auth = useAuth();
 
     const params = useParams();
-    const id = params.roomId; // Next.js dynamic route parameter
+    const id = params.matchId;
+
     const router = useRouter();
     const [message, setMessage] = useState("");
     const [chat, setChat] = useState(null);
     const [showIcebreakers, setShowIcebreakers] = useState(false);
     const messagesEndRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
+    const fetchChatData = async () => {
+        if (!id) {
+            showToast.error("Có lỗi xảy ra");
+            return;
+        }
+        try {
+            const response = await fetch(
+                `http://localhost:3001/api/messages/${id}`,
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${auth?.auth?.access_token}`,
+                    },
+                }
+            );
+            const data = await response.json();
+            console.log(data);
+
+            setChat(data?.data);
+        } catch (error) {}
+    };
     useEffect(() => {
         setIsLoading(true);
 
-        const fetchChatData = async () => {
-            if (!id) return;
-            try {
-                const response = await fetch(
-                    `http://localhost:3001/api/messages/${id}`,
-                    {
-                        headers: {
-                            "Content-Type": "application/json",
-                            Authorization: `Bearer ${auth?.auth?.access_token}`,
-                        },
-                    }
-                );
-                const data = await response.json();
-            } catch (error) {}
-
-            setChat(data);
-        };
-        // fetchChatData();
+        fetchChatData();
         setTimeout(() => {
             setIsLoading(false);
         }, 500);
-        setChat(mockChatData[id]);
     }, [id]);
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({
             behavior: "smooth",
         });
     }, [chat?.messages]);
-    const handleSend = () => {
+    const handleSend = async () => {
         if (message.trim() === "") return;
         const newMessage = {
-            id: chat.messages.length + 1,
-            text: message,
-            sender: "me",
-            time: new Date().toLocaleTimeString([], {
+            content: message,
+            senderId: auth?.auth?.user?.id,
+            receiverId: chat?.id,
+            sent_at: new Date().toLocaleTimeString([], {
                 hour: "2-digit",
                 minute: "2-digit",
             }),
+            matchId: parseInt(id),
         };
-        setChat({
-            ...chat,
-            messages: [...chat.messages, newMessage],
-        });
+        try {
+            const response = await fetch(`http://localhost:3001/api/messages`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${auth?.auth?.access_token}`,
+                },
+                body: JSON.stringify(newMessage),
+            });
+            const data = await response.json();
+            fetchChatData();
+        } catch (error) {
+            showToast.error("Có lỗi xảy ra");
+        }
+
         setMessage("");
     };
     const handleIcebreakerSelect = (question) => {
@@ -169,22 +103,27 @@ const ChatPage = () => {
     return (
         <div className="flex flex-col h-[70vh] w-[50vh] bg-gray-50">
             <header className="bg-white p-4 shadow-sm flex items-center">
-                <button onClick={() => navigate("/chats")} className="mr-3">
+                <button
+                    onClick={() => router.push("/matches")}
+                    className="mr-3"
+                >
                     <ArrowLeftIcon size={24} className="text-gray-500" />
                 </button>
                 <img
-                    src={chat.photo}
-                    alt={chat.name}
+                    src={chat?.photo}
+                    alt={chat?.name}
                     className="w-10 h-10 rounded-full object-cover"
                 />
                 <div className="ml-3">
-                    <h1 className="font-semibold text-gray-800">{chat.name}</h1>
-                    <p className="text-xs text-gray-500">Online</p>
+                    <h1 className="font-semibold text-gray-800">
+                        {chat?.name}
+                    </h1>
+                    {/* <p className="text-xs text-gray-500">Online</p> */}
                 </div>
             </header>
             <main className="flex-1 overflow-y-auto p-4">
                 <div className="space-y-4">
-                    {chat.messages.map((msg) => (
+                    {chat?.messages?.map((msg) => (
                         <div
                             key={msg.id}
                             className={`flex ${
@@ -209,7 +148,7 @@ const ChatPage = () => {
                                             : "text-gray-500"
                                     } text-right mt-1`}
                                 >
-                                    {msg.time}
+                                    {getRelativeTime(msg.time)}
                                 </p>
                             </div>
                         </div>
@@ -272,4 +211,4 @@ const ChatPage = () => {
         </div>
     );
 };
-export default ChatPage;
+export default MessagePage;
