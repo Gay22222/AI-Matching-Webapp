@@ -1,14 +1,6 @@
-export const messageFormatted = (message) => ({
+export const messageFormatted = (message, userId) => ({
     id: message?.id,
-    content: message?.content,
-    timestamp: message?.timestamp,
-    match_id: message?.match_id,
-    sender: {
-        id: message?.sender?.id,
-        display_name: message?.sender?.display_name,
-    },
-    receiver: {
-        id: message?.receiver?.id,
-        display_name: message?.receiver?.display_name,
-    },
+    text: message?.content,
+    time: message?.sent_at,
+    sender: userId === message?.sender_id ? "me" : "them",
 });

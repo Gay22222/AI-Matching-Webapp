@@ -28,6 +28,8 @@ export const messageRepository = {
     },
     // create new message
     create: (matchId, senderId, receiverId, content) => {
+        console.log(matchId, senderId, receiverId, content);
+
         return prisma.messages.create({
             data: {
                 sender_id: senderId,

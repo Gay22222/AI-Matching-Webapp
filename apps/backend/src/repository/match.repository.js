@@ -53,12 +53,38 @@ export const matchRepository = {
                     select: {
                         id: true,
                         display_name: true,
+                        Bio: {
+                            select: {
+                                Photo: {
+                                    where: {
+                                        is_profile_pic: true,
+                                    },
+                                    select: {
+                                        url: true,
+                                    },
+                                    take: 1,
+                                },
+                            },
+                        },
                     },
                 },
                 user_match_2: {
                     select: {
                         id: true,
                         display_name: true,
+                        Bio: {
+                            select: {
+                                Photo: {
+                                    where: {
+                                        is_profile_pic: true,
+                                    },
+                                    select: {
+                                        url: true,
+                                    },
+                                    take: 1,
+                                },
+                            },
+                        },
                     },
                 },
                 messages: {

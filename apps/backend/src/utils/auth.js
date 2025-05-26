@@ -51,6 +51,5 @@ export const attachUser = async (decoded, req) => {
     }
 
     const userFormatted = formatUser(user);
-    console.log("Attaching user to request: ", userFormatted);
     req.user = userFormatted;
 };

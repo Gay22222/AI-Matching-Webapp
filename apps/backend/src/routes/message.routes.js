@@ -5,9 +5,6 @@ import { messageMiddleware } from "../middleware/message.middleware.js";
 
 const router = Router();
 
-router.get("/test", (req, res) => {
-    res.json({ message: "Message routes are working!" });
-});
 router.get(
     "/:matchId",
     authenticationMiddleware,
