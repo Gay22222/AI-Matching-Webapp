@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HomeIcon, UserIcon, HeartIcon, MessageCircleIcon } from "lucide-react";
+import { HomeIcon, UserIcon, HeartIcon, BellIcon } from "lucide-react";
 const Footer = () => {
     const pathname = usePathname();
     const isActive = (path) => pathname === path;
@@ -21,6 +21,11 @@ const Footer = () => {
             icon: UserIcon,
             path: "/profile",
             label: "Profile",
+        },
+        {
+            icon: BellIcon,
+            path: "/notifications",
+            label: "Thông báo",
         },
     ];
     return (

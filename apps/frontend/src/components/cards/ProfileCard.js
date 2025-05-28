@@ -17,10 +17,7 @@ const ProfileCard = ({ profile, onHandleMatch, onHandleNext }) => {
     };
 
     const handleLike = () => {
-        console.log("like", "user_id", profile.id);
-
         setIsLiked(true);
-
         onHandleMatch(profile.id, resetCardState);
     };
     const handleNope = () => {

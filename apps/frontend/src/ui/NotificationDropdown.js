@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { HeartIcon, MessageCircleIcon, StarIcon } from "lucide-react";
 import Link from "next/link";
+import { useAuth } from "@/hooks/useAuth";
+import { getRelativeTime } from "@/utils/Time";
 
 const notifications = [
     {
@@ -36,29 +39,46 @@ const notifications = [
 ];
 const getNotificationContent = (notification) => {
     switch (notification.type) {
-        case "match":
+        case "NEW_MATCH":
             return {
                 icon: <HeartIcon className="h-5 w-5 text-[#FF5864]" />,
                 text: `Bạn và ${notification.user.name} đã ghép đôi!`,
                 link: "/matches",
             };
-        case "like":
+        case "LIKED":
             return {
                 icon: <HeartIcon className="h-5 w-5 text-[#FF5864]" />,
                 text: `${notification.user.name} đã thích bạn`,
                 link: "/matches",
-            };
-        case "superlike":
-            return {
-                icon: <StarIcon className="w-5 h-5 text-blue-500" />,
-                text: `${notification.user.name} đã siêu thích bạn!`,
-                link: "/matches",
+                type: "like",
             };
         default:
             return null;
     }
 };
 const NotificationDropdown = ({ onClose }) => {
+    const auth = useAuth();
+    console.log(auth);
+
+    const [notifications, setNotifications] = useState([]);
+
+    const fetchNotifications = async () => {
+        try {
+            const res = await fetch("http://localhost:3001/api/notifications", {
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${auth?.auth?.access_token}`,
+                },
+            });
+            const data = await res.json();
+            console.log(data);
+
+            setNotifications(data?.data || []);
+        } catch (error) {}
+    };
+    useEffect(() => {
+        fetchNotifications();
+    }, []);
     return (
         <div className="absolute right-0 mt-2 overflow-hidden bg-white shadow-lg w-80 rounded-2xl animate-scale-up">
             <div className="p-4 border-b border-gray-100">
@@ -73,42 +93,42 @@ const NotificationDropdown = ({ onClose }) => {
                 </div>
             </div>
             <div className="divide-y divide-gray-100 max-h-[400px] overflow-y-auto">
-                {notifications.map((notification) => {
+                {notifications?.map((notification) => {
                     const content = getNotificationContent(notification);
                     return (
                         <Link
-                            key={notification.id}
-                            href={content.link}
+                            key={notification?.id}
+                            href={content?.link}
                             onClick={onClose}
                             className={`flex items-center gap-4 p-4 hover:bg-gray-50 transition-colors
-                       ${!notification.read ? "bg-pink-50/50" : ""}`}
+                       ${!notification?.read ? "bg-pink-50/50" : ""}`}
                         >
                             <div className="relative">
                                 <img
-                                    src={notification.user.photo}
-                                    alt={notification.user.name}
+                                    src={notification?.user?.photo}
+                                    alt={notification?.user?.name}
                                     className="object-cover w-10 h-10 rounded-full"
                                 />
                                 <div className="absolute p-1 bg-white rounded-full -bottom-1 -right-1">
-                                    {content.icon}
+                                    {content?.icon}
                                 </div>
                             </div>
                             <div className="flex-1 min-w-0">
                                 <p className="text-sm text-gray-900">
-                                    {content.text}
+                                    {content?.text}
                                 </p>
                                 <p className="text-xs text-gray-500 mt-0.5">
-                                    {notification.time}
+                                    {getRelativeTime(notification?.time)}
                                 </p>
                             </div>
-                            {!notification.read && (
+                            {!notification?.read && (
                                 <div className="w-2 h-2 bg-[#FF5864] rounded-full" />
                             )}
                         </Link>
                     );
                 })}
             </div>
-            {notifications.length === 0 && (
+            {notifications?.length === 0 && (
                 <div className="py-8 text-center text-gray-500">
                     <p>Không có thông báo mới</p>
                 </div>

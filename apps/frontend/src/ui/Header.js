@@ -44,14 +44,14 @@ const Header = () => {
                      hover:shadow-md active:scale-95 relative"
                         >
                             <BellIcon className="w-6 h-6 text-gray-600" />
-                            {unreadCount > 0 && (
+                            {/* {unreadCount > 0 && (
                                 <span
                                     className="absolute -top-1 -right-1 w-5 h-5 bg-[#FF5864] text-white text-xs
                              rounded-full flex items-center justify-center animate-pulse"
                                 >
                                     {unreadCount}
                                 </span>
-                            )}
+                            )} */}
                         </button>
                         {showNotifications && (
                             <NotificationDropdown

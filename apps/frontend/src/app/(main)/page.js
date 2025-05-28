@@ -96,15 +96,14 @@ const Home = () => {
                     },
                 }
             );
-            if (response.data.isMatch) {
-                setMatchedProfile(profiles[currentIndex]);
-                setShowMatch(true);
-            }
 
-            if (currentIndex < profiles.length - 1) {
-                setCurrentIndex((prev) => prev + 1);
-            }
-            callback && callback();
+            setTimeout(() => {
+                showToast.success("Đã thích!");
+                callback && callback();
+                if (currentIndex < profiles.length - 1) {
+                    setCurrentIndex((prev) => prev + 1);
+                }
+            }, 1000);
         } catch (error) {
             console.error(error?.response?.data?.message || "Lỗi khi matching");
             setTimeout(() => {
@@ -112,6 +111,9 @@ const Home = () => {
                 showToast.error(
                     error?.response?.data?.message || "Lỗi khi matching"
                 );
+                if (currentIndex < profiles.length - 1) {
+                    setCurrentIndex((prev) => prev + 1);
+                }
             }, 500);
         } finally {
         }

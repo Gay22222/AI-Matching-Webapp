@@ -51,7 +51,7 @@ const Profile = () => {
 
     return (
         <div className="w-full max-w-md py-4 mx-auto">
-            <div className="overflow-hidden bg-white rounded-lg shadow-sm">
+            <div className="overflow-hidden bg-white rounded-lg shadow-sm max-h-[76vh] overflow-y-auto">
                 {/* Profile header */}
                 <div className="relative">
                     <div className="h-32 bg-gradient-to-r from-[#FF5864] to-[#FF655B]"></div>
