@@ -1,45 +1,13 @@
-// notifications.socket.js
 import prisma from "../prisma/client.js";
+import { userService } from "../services/user.service.js";
+import { findSocketId } from "../utils/socketHelpers.js";
 
-/**
- * Thiết lập các sự kiện WebSocket liên quan đến thông báo.
- *
- * @function setupNotificationSocket
- * @description Xử lý các sự kiện WebSocket liên quan đến việc gửi và nhận thông báo giữa các người dùng.
- *
- * @param {Object} io - Đối tượng Socket.IO server.
- * @param {Object} socket - Đối tượng Socket.IO client kết nối.
- */
-const setupNotificationSocket = (io, socket, user) => {
-    /**
-     * Sự kiện tham gia phòng người dùng.
-     *
-     * @event joinUser
-     * @description Lắng nghe sự kiện "joinUser" từ client và thêm người dùng vào phòng WebSocket tương ứng với ID của họ.
-     *
-     * @param {number} userId - ID của người dùng muốn tham gia phòng.
-     *
-     * @returns {void}
-     */
+const setupNotificationSocket = (io, socket, user, getUsers) => {
     socket.on("joinUser", (userId) => {
         const room = `user:${userId}`;
         socket.join(room);
     });
 
-    /**
-     * Sự kiện gửi thông báo.
-     *
-     * @event sendNotification
-     * @description Lắng nghe sự kiện "sendNotification" từ client, lưu thông báo vào cơ sở dữ liệu và phát lại thông báo cho người nhận.
-     *
-     * @param {Object} data - Dữ liệu thông báo từ client.
-     * @param {number} data.recipient_id - ID của người nhận thông báo.
-     * @param {number} [data.sender_id] - ID của người gửi thông báo (có thể null).
-     * @param {string} data.type - Loại thông báo (ví dụ: "like", "match").
-     * @param {string} data.content - Nội dung thông báo.
-     *
-     * @returns {void} - Phát sự kiện "receiveNotification" với thông báo đã lưu hoặc phát sự kiện "errorNotification" nếu có lỗi.
-     */
     socket.on("sendNotification", async (data) => {
         const { recipient_id, sender_id, type, content } = data;
 
@@ -67,6 +35,42 @@ const setupNotificationSocket = (io, socket, user) => {
                 error: "Failed to save notification",
             });
         }
+    });
+
+    socket.on("accept-match", async (match) => {
+        const users = getUsers();
+
+        const receiverId = user?.id;
+        const senderId =
+            match?.user_1_id === receiverId
+                ? match?.user_2_id
+                : match?.user_1_id;
+
+        const receiverSocketId = findSocketId(users, receiverId);
+        const senderSocketId = findSocketId(users, senderId);
+
+        let sender;
+        let receiver;
+
+        if (receiverId) receiver = await userService.getProfileById(receiverId);
+
+        if (senderId) sender = await userService.getProfileById(senderId);
+
+        console.log(sender, receiver);
+
+        const senderProfile = {
+            id: sender?.id,
+            name: sender?.displayName,
+            photos: sender?.photos,
+        };
+        const receiverProfile = {
+            id: receiver?.id,
+            name: receiver?.displayName,
+            photos: receiver?.photos,
+        };
+
+        socket.to(receiverSocketId).emit("new-match", senderProfile);
+        socket.to(senderSocketId).emit("new-match", receiverProfile);
     });
 };
 

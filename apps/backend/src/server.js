@@ -15,7 +15,7 @@ const server = createServer(app);
 // Khởi tạo WebSocket server
 const io = new Server(server, {
     cors: {
-        origin: "*", // Chỉnh origin theo domain nếu deploy
+        origin: "*",
         methods: ["GET", "POST"],
     },
 });
@@ -26,21 +26,21 @@ let users = [];
 const handleUserConnection = (socket, data, users) => {
     console.log(data, "data");
 
-    const isExistUserById = users.find((u) => u.id === data.id);
+    const isExistUserById = users.find((u) => u.id === data?.id);
     const isExistUserBySocketId = users.find((u) => u.socket_id === socket.id);
     const user = {
         socket_id: socket.id,
-        id: data.id,
-        name: data.name,
+        id: data?.id,
+        name: data?.name,
     };
     if (isExistUserById) {
-        console.log("User already connected:", data.id);
+        console.log("User already connected:", data?.id);
         return user;
     }
     if (isExistUserBySocketId) {
         Object.assign(isExistUserBySocketId, {
-            id: data.id,
-            name: data.name,
+            id: data?.id,
+            name: data?.name,
         });
         return user;
     }
@@ -50,7 +50,7 @@ const handleUserConnection = (socket, data, users) => {
 
 // WebSocket
 io.on("connection", (socket) => {
-    // console.log(" Client connected:", socket.id);
+    console.log("User connected:", socket.id);
     socket.on("me", (data) => {
         socket.removeAllListeners("send-message");
 
@@ -61,11 +61,9 @@ io.on("connection", (socket) => {
 
     socket.on("disconnect", () => {
         users = users.filter((user) => user.socket_id !== socket.id);
-        // console.log("Users joined (disconnect):", users);
     });
     socket.on("logout", () => {
         users = users.filter((user) => user.socket_id !== socket.id);
-        // console.log("Users joined (logout):", users);
     });
 });
 
