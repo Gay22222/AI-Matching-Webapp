@@ -1,4 +1,5 @@
 import { matchRepository } from "../repository/match.repository.js";
+import { notificationService } from "../services/notification.service.js";
 
 export const matchService = {
     get: (id) => {
@@ -33,8 +34,6 @@ export const matchService = {
         });
     },
     create: async (senderId, receiverId) => {
-        console.log("service create", senderId, receiverId);
-
         const isExistMatch = await matchRepository.find(senderId, receiverId);
 
         if (isExistMatch) {
@@ -42,9 +41,58 @@ export const matchService = {
         }
 
         try {
-            return await matchRepository.create(senderId, receiverId);
+            const match = await matchRepository.create(senderId, receiverId);
+
+            const notification = await notificationService.create(
+                senderId,
+                receiverId,
+                match.id,
+                "LIKED"
+            );
+
+            if (!notification) {
+                throw new Error("Cannot create notification");
+            }
+
+            return match;
         } catch (error) {
             throw new Error("Cannot create match");
+        }
+    },
+    update: async (id, isAccept, receiverId, notificationId) => {
+        try {
+            const match = await matchRepository.update(parseInt(id), isAccept);
+
+            const senderId =
+                match.user_1_id === receiverId
+                    ? match.user_2_id
+                    : match.user_1_id;
+
+            if (isAccept) {
+                const notificationForReceiver =
+                    await notificationService.create(
+                        senderId,
+                        receiverId,
+                        match.id,
+                        "NEW_MATCH"
+                    );
+
+                const notificationForSender = await notificationService.create(
+                    receiverId,
+                    senderId,
+                    match.id,
+                    "NEW_MATCH"
+                );
+
+                const notification = await notificationService.update(
+                    notificationId
+                );
+
+                return match;
+            }
+            console.log("update match", id, isAccept);
+        } catch (error) {
+            console.log("Error updating match:", error);
         }
     },
 };

@@ -75,4 +75,41 @@ export const matchController = {
             });
         }
     },
+    // [PUT] /matches/:id
+    update: async (req, res) => {
+        const { matchId } = req.params;
+        const { isAccept, notificationId } = req.body;
+
+        const user = req.user;
+        const receiverId = user?.id;
+
+        console.log("Update match:", matchId, isAccept);
+
+        if (!matchId || isAccept === undefined || !notificationId) {
+            return res.status(400).json({
+                statusCode: 400,
+                message: "Missing required fields",
+            });
+        }
+
+        const matchUpdate = await matchService.update(
+            matchId,
+            isAccept,
+            receiverId,
+            notificationId
+        );
+
+        try {
+            res.status(200).json({
+                statusCode: 200,
+                match: matchUpdate,
+            });
+        } catch (error) {
+            console.error("Error updating match:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
 };

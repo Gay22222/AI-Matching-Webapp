@@ -15,6 +15,7 @@ model matches {
   user_match_1 users      @relation("user_match_1", fields: [user_1_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "matches_ibfk_1")
   user_match_2 users      @relation("user_match_2", fields: [user_2_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "matches_ibfk_2")
   messages     messages[]
+  is_accept     Boolean    @default(false)
 
   @@index([user_1_id], map: "user_1_id")
   @@index([user_2_id], map: "user_2_id")
@@ -52,6 +53,9 @@ model users {
   reportUser                           reports[]              @relation("reportUser")
   reportedByUser                       reports[]              @relation("reportedByUser")
   user_favorites                       user_favorite[]
+  receivedNotifications notifications[] @relation("ReceiverNotifications")
+  sentNotifications     notifications[] @relation("SenderNotifications")
+
 }
 
 model Base_inf {
@@ -292,6 +296,33 @@ model sexual_orientation {
   name        String  @db.VarChar(255)
   description String? @db.Text
   Base_inf    Base_inf[]
+}
+
+model notifications {
+  id               Int       @id @default(autoincrement())
+  receiver_id      Int
+  sender_id        Int?
+  type             NotificationType
+  entity_id        Int?
+  is_read          Boolean   @default(false)
+  created_at       DateTime  @default(now()) @db.Timestamp(0)
+  is_hidden        Boolean   @default(false)
+  
+  receiver         users     @relation("ReceiverNotifications", fields: [receiver_id], references: [id], onDelete: Cascade)
+  sender           users?    @relation("SenderNotifications", fields: [sender_id], references: [id], onDelete: SetNull)
+
+  @@index([receiver_id])
+  @@index([sender_id])
+  @@index([type])
+  @@index([entity_id])
+}
+
+enum NotificationType {
+  NEW_MATCH
+  NEW_MESSAGE
+  REPORT_RECEIVED
+  PROFILE_VIEW
+  LIKED
 }
 
 enum user_gender {

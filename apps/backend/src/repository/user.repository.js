@@ -228,7 +228,7 @@ export const userRepository = {
                                 },
                             ],
                         },
-                    }, // Tạo một Bio trống
+                    },
                 },
             },
         });

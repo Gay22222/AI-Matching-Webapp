@@ -39,7 +39,10 @@ export const matchRepository = {
                 },
             },
             where: {
-                OR: [{ user_1_id: userId }, { user_2_id: userId }],
+                AND: [
+                    { OR: [{ user_1_id: userId }, { user_2_id: userId }] },
+                    { is_accept: true },
+                ],
             },
         });
     },
@@ -110,7 +113,7 @@ export const matchRepository = {
             },
         });
     },
-    find: async (senderId, receiverId) => {
+    find: (senderId, receiverId) => {
         return prisma.matches.findFirst({
             where: {
                 OR: [
@@ -124,6 +127,12 @@ export const matchRepository = {
                     },
                 ],
             },
+        });
+    },
+    update: (id, isAccept) => {
+        return prisma.matches.update({
+            where: { id },
+            data: { is_accept: isAccept },
         });
     },
 };

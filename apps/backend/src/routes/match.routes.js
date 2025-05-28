@@ -12,5 +12,6 @@ router.get(
 );
 router.get("/", authenticationMiddleware, matchController.getAll);
 router.post("/", authenticationMiddleware, matchController.create);
+router.put("/:matchId", authenticationMiddleware, matchController.update);
 
 export default router;
