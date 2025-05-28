@@ -112,8 +112,6 @@ const ProfileSetup = () => {
         }
     }, [currentUser]);
 
-    console.log(formData);
-
     const steps = [
         {
             title: "Thông tin cơ bản",

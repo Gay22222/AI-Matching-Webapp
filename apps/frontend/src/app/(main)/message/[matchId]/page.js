@@ -6,6 +6,7 @@ import { useAuth } from "@/hooks/useAuth";
 import Loading from "@/components/Loading";
 import { showToast } from "@/lib/toast";
 import { getRelativeTime } from "@/utils/Time";
+import { useSocket } from "@/hooks/useSocket";
 
 // AI-generated icebreaker questions
 const icebreakers = [
@@ -16,6 +17,7 @@ const icebreakers = [
 ];
 const MessagePage = () => {
     const auth = useAuth();
+    const socket = useSocket();
 
     const params = useParams();
     const id = params.matchId;
@@ -42,24 +44,27 @@ const MessagePage = () => {
                 }
             );
             const data = await response.json();
-            console.log(data);
 
             setChat(data?.data);
         } catch (error) {}
     };
     useEffect(() => {
-        setIsLoading(true);
-
         fetchChatData();
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 500);
     }, [id]);
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({
             behavior: "smooth",
         });
     }, [chat?.messages]);
+    useEffect(() => {
+        if (!socket) return;
+        socket.on("receive-new-message", () => {
+            fetchChatData();
+        });
+        return () => {
+            socket.off("reveive-new-message", (message) => {});
+        };
+    }, [socket]);
     const handleSend = async () => {
         if (message.trim() === "") return;
         const newMessage = {
@@ -82,6 +87,7 @@ const MessagePage = () => {
                 body: JSON.stringify(newMessage),
             });
             const data = await response.json();
+            socket.emit("new-message", newMessage);
             fetchChatData();
         } catch (error) {
             showToast.error("Có lỗi xảy ra");

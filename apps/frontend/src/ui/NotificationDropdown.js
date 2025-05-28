@@ -5,38 +5,6 @@ import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import { getRelativeTime } from "@/utils/Time";
 
-const notifications = [
-    {
-        id: "1",
-        type: "match",
-        user: {
-            name: "Linh",
-            photo: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3",
-        },
-        time: "Vừa xong",
-        read: false,
-    },
-    {
-        id: "2",
-        type: "like",
-        user: {
-            name: "Hương",
-            photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
-        },
-        time: "5 phút trước",
-        read: false,
-    },
-    {
-        id: "3",
-        type: "superlike",
-        user: {
-            name: "Mai",
-            photo: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3",
-        },
-        time: "10 phút trước",
-        read: false,
-    },
-];
 const getNotificationContent = (notification) => {
     switch (notification.type) {
         case "NEW_MATCH":
@@ -58,7 +26,6 @@ const getNotificationContent = (notification) => {
 };
 const NotificationDropdown = ({ onClose }) => {
     const auth = useAuth();
-    console.log(auth);
 
     const [notifications, setNotifications] = useState([]);
 

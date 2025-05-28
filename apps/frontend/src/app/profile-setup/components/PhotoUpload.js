@@ -46,17 +46,22 @@ const PhotoUpload = ({ formData, setFormData }) => {
                     {[...Array(6)].map((_, index) => {
                         const photo = formData.photoFiles[index];
                         const photoBase64 = formData.photos[index];
+                        console.log(photo, "photo", index);
+
                         return (
                             <div
-                                key={photo || index + 1}
+                                key={index + 1}
                                 className="relative overflow-hidden aspect-square rounded-xl"
                             >
                                 {photo ? (
                                     <div className="relative h-full group">
                                         <img
                                             src={
-                                                photoBase64 ||
-                                                `http://localhost:3001${photo}`
+                                                photo instanceof File
+                                                    ? URL.createObjectURL(photo)
+                                                    : typeof photo === "string"
+                                                    ? `http://localhost:3001${photo}`
+                                                    : photoBase64
                                             }
                                             alt={`Photo ${index + 1}`}
                                             className="object-cover w-full h-full order-2"

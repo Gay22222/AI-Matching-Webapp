@@ -27,6 +27,8 @@ const Profile = () => {
         profilePhoto: "",
     });
 
+    console.log(profile);
+
     useEffect(() => {
         if (currentUser) {
             setProfile((prev) => ({
@@ -138,29 +140,36 @@ const Profile = () => {
                             </button>
                         </div>
                         <div className="grid grid-cols-3 gap-2">
-                            {profile.photos.map((photo, index) => (
+                            {profile.photos
+                                .filter((photo) => photo?.url)
+                                .map((photo, index) => (
+                                    <div
+                                        key={index}
+                                        className="relative overflow-hidden bg-gray-200 rounded-lg aspect-square group"
+                                    >
+                                        <img
+                                            src={`http://localhost:3001${photo?.url}`}
+                                            alt={`Photo ${index + 1}`}
+                                            className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                    </div>
+                                ))}
+                            {[
+                                ...Array(
+                                    6 -
+                                        profile.photos.filter(
+                                            (photo) => photo?.url
+                                        ).length
+                                ),
+                            ].map((_, index) => (
                                 <div
-                                    key={index}
-                                    className="relative overflow-hidden bg-gray-200 rounded-lg aspect-square group"
+                                    key={`empty-${index}`}
+                                    className="flex items-center justify-center transition-colors duration-300 bg-gray-100 rounded-lg cursor-pointer aspect-square hover:bg-gray-200"
+                                    onClick={() => setShowPhotoModal(true)}
                                 >
-                                    <img
-                                        src={photo}
-                                        alt={`Photo ${index + 1}`}
-                                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
-                                    />
+                                    <CameraIcon className="w-6 h-6 text-gray-400" />
                                 </div>
                             ))}
-                            {[...Array(6 - profile.photos.length)].map(
-                                (_, index) => (
-                                    <div
-                                        key={`empty-${index}`}
-                                        className="flex items-center justify-center transition-colors duration-300 bg-gray-100 rounded-lg cursor-pointer aspect-square hover:bg-gray-200"
-                                        onClick={() => setShowPhotoModal(true)}
-                                    >
-                                        <CameraIcon className="w-6 h-6 text-gray-400" />
-                                    </div>
-                                )
-                            )}
                         </div>
                     </div>
                 </div>

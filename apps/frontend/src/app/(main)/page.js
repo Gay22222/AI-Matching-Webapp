@@ -6,16 +6,15 @@ import { SlidersIcon } from "lucide-react";
 import FilterModal from "@/ui/FilterModal";
 import axios from "axios";
 import { useMetadata } from "@/hooks/useMetadata";
-import { useRouter, useSearchParams } from "next/navigation"; // <<< Import hooks
+import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/hooks/useAuth";
-
-import { getSocket } from "@/lib/socket";
 import { showToast } from "@/lib/toast";
-
-const socket = getSocket();
+import { useSocket } from "@/hooks/useSocket";
 
 const Home = () => {
     const { auth, currentUser } = useAuth();
+    const socket = useSocket();
+
     const router = useRouter();
     const searchParams = useSearchParams();
     const metadata = useMetadata();
@@ -58,7 +57,6 @@ const Home = () => {
         fetchProfileSetupData();
     }, [filters]);
 
-    // Update URL when filters are applied
     const handleApplyFilters = useCallback(
         (newFilters = filters) => {
             const params = new URLSearchParams();
@@ -122,6 +120,14 @@ const Home = () => {
     const handleCloseMatch = () => {
         setShowMatch(false);
     };
+
+    useEffect(() => {
+        if (!socket) return;
+        socket.on("new-match", (profile) => {
+            setMatchedProfile(profile);
+            setShowMatch(true);
+        });
+    }, [socket]);
 
     if (currentIndex >= profiles.length) {
         return (

@@ -1,13 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { io } from "socket.io-client";
+
 import { useAuth } from "@/hooks/useAuth";
 import { HeartIcon, MessageCircleIcon, StarIcon } from "lucide-react";
 import Link from "next/link";
 import { getRelativeTime } from "@/utils/Time";
-
-// const socket = io("http://localhost:5000"); // kết nối WebSocket
+import { useSocket } from "@/hooks/useSocket";
 
 const getNotificationContent = (notification) => {
     switch (notification.type) {
@@ -30,11 +29,11 @@ const getNotificationContent = (notification) => {
 };
 
 export default function NotificationsPage() {
+    const socket = useSocket();
+
     const auth = useAuth();
 
     const [notifications, setNotifications] = useState([]);
-
-    console.log("NotificationsPage rendered");
 
     const fetchNotifications = async () => {
         try {
@@ -53,6 +52,15 @@ export default function NotificationsPage() {
     useEffect(() => {
         fetchNotifications();
     }, []);
+
+    useEffect(() => {
+        if (!socket) return;
+        socket.on("new-notification", (notifications = []) => {
+            console.log("Received new notification:", notifications);
+            setNotifications(notifications);
+        });
+        socket.emit("accept-match", 1);
+    }, [socket]);
 
     const handleAccept = async (e, matchId, notificationId) => {
         e.preventDefault();
@@ -74,6 +82,8 @@ export default function NotificationsPage() {
                 }
             );
             const data = await res.json();
+
+            socket.emit("accept-match", data.match);
 
             setNotifications(data?.data || []);
         } catch (error) {}
