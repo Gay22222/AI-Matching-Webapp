@@ -3,15 +3,12 @@
 import axios from "axios";
 import { createContext, useState, useContext, useEffect, useMemo } from "react";
 import { setupAxios } from "@/app/auth/_helpers";
-import { getData } from "@/utils/LocalStorage";
 
-setupAxios(axios);
+setupAxios(axios); // Cấu hình axios để gửi cookie tự động
 const MetadataContext = createContext(null);
 
 export function MetadataProvider({ children }) {
     const [metadata, setMetadata] = useState(null);
-    console.log(metadata);
-
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -20,15 +17,10 @@ export function MetadataProvider({ children }) {
             setIsLoading(true);
             setError(null);
             try {
-                const fetchData = async () => {
-                    const token = getData("token");
-
-                    const res = await axios.get(
-                        "http://localhost:3001/api/metadata"
-                    );
-                    setMetadata(res.data.metadata);
-                };
-                fetchData();
+                const res = await axios.get("http://localhost:3001/api/metadata", {
+                    withCredentials: true, // Gửi cookie tự động
+                });
+                setMetadata(res.data.metadata);
             } catch (err) {
                 console.error("Failed to fetch metadata in Provider:", err);
                 setError(err);

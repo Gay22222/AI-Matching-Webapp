@@ -9,21 +9,26 @@ export function ProfileProvider({ children }) {
     const [profileSetupData, setProfileSetupData] = useState();
     console.log(profileSetupData);
     useEffect(() => {
-        const fetchProfileSetupData = async () => {
-            axios
-                .get("http://localhost:3001/api/profile-setup")
-                .then((response) => {
-                    console.log(response);
-
-                    setProfileSetupData(response.data.data);
-                })
-                .catch((error) => {
-                    console.error("Error fetching profile setup data:", error);
+        const fetchProfileData = async () => {
+            try {
+                const res = await axios.get("http://localhost:3001/api/me", {
+                    withCredentials: true,
                 });
+                setProfileSetupData(res.data.userWithoutPassword);
+            } catch (err) {
+                console.error("Error fetching profile:", err);
+                setProfileSetupData(null);
+            }
 
-            const res = await axios.get("/api/some-protected-route");
+            try {
+                // Optional: nếu endpoint này có sử dụng nội bộ
+                await axios.get("/api/some-protected-route");
+            } catch (err) {
+                console.warn("some-protected-route failed (optional):", err.message);
+            }
         };
-        // fetchProfileSetupData();
+
+        fetchProfileData();
     }, []);
 
     return (

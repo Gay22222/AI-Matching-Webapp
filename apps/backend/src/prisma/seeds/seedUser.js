@@ -6,7 +6,7 @@ export default async function seedUsers(prisma) {
     for (let i = 0; i < numberOfUsersToCreate; i++) {
         const firstName = faker.person.firstName();
         const lastName = faker.person.lastName();
-        const username = faker.internet.userName({ firstName, lastName });
+        const username = faker.internet.username({ firstName, lastName });
 
         await prisma.users.create({
             data: {

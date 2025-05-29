@@ -1,0 +1,51 @@
+{
+  "id": 78,
+  "username": "ophelia342",
+  "display_name": "Lindsey Bayer",
+  "email": "Karelle.Friesen@yahoo.com",
+  "birthday": "1997-05-02T05:54:14.510Z",
+  "age": 26,
+  "status": "active",
+  "about_me": "Uredo crinis nam sulum subseco abundans. Celer derelinquo acsi cura.",
+  "searching_for": "Người yêu",
+  "sexual_orientation": "Khác",
+  "language": "Tiếng Việt",
+  "education": "Trường dạy nghề",
+  "religion": "Tin lành",
+  "career": "Khác – mời bạn nhập",
+  "height": "172",
+  "location": "Caguas",
+  "zodiac": "Bọ Cạp",
+  "character": "Tinh tế",
+  "character_list": [
+    "Hài hước",
+    "Tinh tế"
+  ],
+  "communicate_style": "Nghiện nhắn tin",
+  "communicate_style_list": [
+    "Nghiện nhắn tin",
+    "Thích gặp mặt trực tiếp"
+  ],
+  "love_language": "Những món quà",
+  "love_language_list": [
+    "Những món quà",
+    "Những cử chỉ âu yếm"
+  ],
+  "future_family": "Mình không muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn thuần chay",
+  "sleep": "Cú đêm",
+  "snu": "Lướt dạo âm thầm",
+  "pet": "Rùa",
+  "pet_list": [
+    "Rùa",
+    "Thỏ"
+  ],
+  "favorite": "Xem hài",
+  "favorite_list": [
+    "Nghe nhạc",
+    "Xem hài"
+  ]
+}

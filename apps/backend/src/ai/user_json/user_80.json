@@ -1,0 +1,51 @@
+{
+  "id": 80,
+  "username": "sonia_dicki4",
+  "display_name": "Emily Hammes",
+  "email": "Kaitlin.Grimes@gmail.com",
+  "birthday": "1995-05-09T07:48:16.541Z",
+  "age": 23,
+  "status": "active",
+  "about_me": "Crapula amicitia quasi. Sponte alo viduo amplus celo rem minima paens.",
+  "searching_for": "Người yêu",
+  "sexual_orientation": "Khác",
+  "language": "Tiếng Anh",
+  "education": "Đang học sau đại học",
+  "religion": "Công giáo",
+  "career": "Full-time",
+  "height": "170",
+  "location": "North Eleonore",
+  "zodiac": "Song Ngư",
+  "character": "Biết lắng nghe",
+  "character_list": [
+    "Hướng nội",
+    "Biết lắng nghe"
+  ],
+  "communicate_style": "Ít nhắn tin",
+  "communicate_style_list": [
+    "Thích gọi video",
+    "Ít nhắn tin"
+  ],
+  "love_language": "Thời gian bên nhau",
+  "love_language_list": [
+    "Những món quà",
+    "Thời gian bên nhau"
+  ],
+  "future_family": "Vẫn chưa chắc chắn",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Chỉ ăn hải sản và rau củ",
+  "sleep": "Cú đêm",
+  "snu": "Hoạt động tích cực",
+  "pet": "Không nuôi thú cưng",
+  "pet_list": [
+    "Không nuôi thú cưng",
+    "Muốn nuôi thú cưng"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game",
+    "Lập trình"
+  ]
+}

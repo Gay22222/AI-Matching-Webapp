@@ -1,20 +1,12 @@
+// LocalStorage.js
+// 🔒 Session hiện lưu bằng Cookie HTTP-only. Truy cập localStorage không còn được sử dụng.
+
 const getData = (key) => {
-    try {
-        const data = localStorage.getItem(key);
-        if (data) {
-            return JSON.parse(data);
-        }
-    } catch (error) {
-        console.error("Read from local storage:", error);
-    }
+    throw new Error(`getData("${key}") không còn hỗ trợ. Dữ liệu session hiện được quản lý qua cookie.`);
 };
 
 const setData = (key, value) => {
-    try {
-        localStorage.setItem(key, JSON.stringify(value));
-    } catch (error) {
-        console.error("Save to local storage:", error);
-    }
+    throw new Error(`setData("${key}", ...) không còn hỗ trợ. Dữ liệu session hiện được quản lý qua cookie.`);
 };
 
 export { getData, setData };

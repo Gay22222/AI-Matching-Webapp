@@ -8,6 +8,7 @@ import axios from "axios";
 import { useMetadata } from "@/hooks/useMetadata";
 import { useRouter, useSearchParams } from "next/navigation"; // <<< Import hooks
 
+
 const Home = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
@@ -39,9 +40,11 @@ const Home = () => {
                     : `http://localhost:3001/api/user/list-match`;
 
                 console.log("Fetching profiles with URL:", url);
-                const response = await axios.get(url);
-                console.log("Response data:", response.data.users);
+                const response = await axios.get(url, {
+                    withCredentials: true, // <-- Thêm dòng này, bỏ headers
+                });
 
+                console.log("Response data:", response.data.users);
                 setProfiles(response.data.users);
             } catch (error) {
                 console.error("Error fetching profiles:", error);
@@ -50,6 +53,7 @@ const Home = () => {
 
         fetchProfileSetupData();
     }, [filters]);
+
 
     // Update URL when filters are applied
     const handleApplyFilters = useCallback(

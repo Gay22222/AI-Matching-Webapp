@@ -44,10 +44,12 @@ export default function Login() {
 
             // Store token
             const access_token = data.token;
-            setData("token", access_token);
+            localStorage.setItem("token", access_token);
+            setTimeout(() => router.push("/"), 100); 
+
 
             // Redirect to dashboard
-            router.push("/");
+            //router.push("/");
         } catch (error) {
             setError(error.message || "Login failed");
         } finally {

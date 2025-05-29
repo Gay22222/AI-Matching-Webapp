@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { CameraIcon, EditIcon, Loader2Icon, XIcon } from "lucide-react";
+
+
+
 const Profile = () => {
     const [showBioModal, setShowBioModal] = useState(false);
     const [showInterestsModal, setShowInterestsModal] = useState(false);

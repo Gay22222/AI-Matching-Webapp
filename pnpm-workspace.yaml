@@ -1,2 +1,4 @@
 packages:
-  - apps/*   # Chứa frontend và backend
+  - apps/*
+onlyBuiltDependencies:
+  - sharp

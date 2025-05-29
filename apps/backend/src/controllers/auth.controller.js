@@ -9,8 +9,16 @@ export const authController = {
                 email,
                 password
             );
+
+            // Set token vào cookie (httpOnly để bảo mật, sameSite để chống CSRF)
+            res.cookie("token", token, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === "production", // true nếu deploy HTTPS
+                sameSite: "lax", // hoặc "strict" tùy nhu cầu
+                maxAge: 24 * 60 * 60 * 1000, // 1 ngày
+            });
+
             res.status(200).json({
-                token,
                 user,
                 statusCode: 200,
             });

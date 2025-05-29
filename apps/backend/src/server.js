@@ -1,3 +1,9 @@
+import dotenv from "dotenv";
+import path from "path";
+
+// Tải biến môi trường từ file .env
+dotenv.config({ path: path.resolve("src/config/.env") });
+
 import app from "./app.js";
 import { createServer } from "http";
 import { Server } from "socket.io";
@@ -7,7 +13,10 @@ import { setIO } from "./utils/socket.js";
 import cors from "cors";
 
 const PORT = process.env.PORT || 3001;
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true
+}));
 
 // Tạo HTTP Server
 const server = createServer(app);

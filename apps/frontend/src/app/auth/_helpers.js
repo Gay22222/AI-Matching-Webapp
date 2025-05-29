@@ -1,17 +1,15 @@
 import { getData, setData } from "@/utils/LocalStorage";
 const AUTH_LOCAL_STORAGE_KEY = "token";
-const getAuth = () => {
-    try {
-        const auth = getData(AUTH_LOCAL_STORAGE_KEY);
-        if (auth) {
-            return auth;
-        } else {
-            return undefined;
-        }
-    } catch (error) {
-        console.error("AUTH LOCAL STORAGE PARSE ERROR", error);
-    }
+export const getAuth = () => {
+  try {
+    const token = localStorage.getItem("token");
+    return token ? JSON.parse(token) : null;
+  } catch (e) {
+    console.error("Invalid token format in localStorage");
+    return null;
+  }
 };
+
 
 const setAuth = (auth) => {
     setData(AUTH_LOCAL_STORAGE_KEY, auth);
@@ -28,18 +26,7 @@ const removeAuth = () => {
 
 const setupAxios = (axios) => {
     axios.defaults.headers.Accept = "application/json";
-    axios.interceptors.request.use(
-        (config) => {
-            const auth = getAuth();
-            console.log(auth, "request");
-
-            if (auth?.access_token) {
-                config.headers.Authorization = `Bearer ${auth.access_token}`;
-            }
-            return config;
-        },
-        async (err) => await Promise.reject(err)
-    );
+    axios.defaults.withCredentials = true; // Bật gửi cookie tự động
 };
 
-export { getAuth, setAuth, removeAuth, setupAxios };
+export { setupAxios };

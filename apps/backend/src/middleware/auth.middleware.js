@@ -3,7 +3,11 @@ import { extractToken, verifyToken, attachUser } from "../utils/auth.js";
 // authentication
 export const authenticationMiddleware = async (req, res, next) => {
     try {
-        const token = extractToken(req.headers.authorization);
+        // Lấy token từ cookie thay vì header
+        const token = req.cookies.token;
+        if (!token) {
+            throw new Error("Authentication required");
+        }
         const decoded = verifyToken(token);
         await attachUser(decoded, req);
         next();
@@ -31,7 +35,7 @@ export const authorizationMiddleware = (requiredRoles) => {
     return (req, res, next) => {
         if (!req.user || !req.user.role) {
             console.error(
-                `Authorization Failed: User ${req.user.id} role '${req.user.role}' required ${requiredRoles}`
+                `Authorization Failed: User ${req.user?.id} role '${req.user?.role}' required ${requiredRoles}`
             );
             return res.status(403).json({
                 statusCode: 403,
@@ -39,7 +43,7 @@ export const authorizationMiddleware = (requiredRoles) => {
             });
         } else if (!requiredRoles.includes(req.user.role)) {
             console.error(
-                `Authorization Failed: User ${req.user.id} role '${userRole}' required ${requiredRoles}`
+                `Authorization Failed: User ${req.user.id} role '${req.user.role}' required ${requiredRoles}`
             );
             return res.status(403).json({
                 statusCode: 403,
@@ -89,7 +93,7 @@ export const validateCredentialsMiddleware = (req, res, next) => {
     const validationResult = validate(email, password);
 
     if (validationResult.status !== true) {
-        console.log("asdasdavk;sạvksajfskladfjl");
+        console.log("asdasdavk;savksajfskladfjl");
 
         return res.status(400).json({
             statusCode: 400,

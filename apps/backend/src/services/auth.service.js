@@ -15,10 +15,10 @@ export const authService = {
         if (!user) throw new Error("User not found");
         console.log(user);
 
-        // const isValidPassword = await bcrypt.compare(password, user.password);
-        // console.log(isValidPassword);
+        const isValidPassword = await bcrypt.compare(password, user.password);
+        console.log(isValidPassword);
 
-        // if (!isValidPassword) throw new Error("Password is not correct");
+        //if (!isValidPassword) throw new Error("Password is not correct");
         const token = createToken(user);
         return { token, user };
     },

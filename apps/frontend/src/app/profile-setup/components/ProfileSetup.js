@@ -109,20 +109,13 @@ const ProfileSetup = () => {
         const result = transformUserData(formData);
         console.log(result);
         const token = getData("token");
-        const res = await axios.put(
-            "http://localhost:3001/api/update-profile",
-            result,
-            {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            }
-        );
-        const me = await axios.get("http://localhost:3001/api/me", {
-            headers: {
-                Authorization: `Bearer ${token}`,
-            },
+        const res = await axios.put("http://localhost:3001/api/update-profile", result, {
+            withCredentials: true,
         });
+        const me = await axios.get("http://localhost:3001/api/me", {
+            withCredentials: true,
+        });
+        setProfileSetupData(me.data.userWithoutPassword);
         router.push("/");
     };
     const CurrentStepComponent = steps[currentStep].component;

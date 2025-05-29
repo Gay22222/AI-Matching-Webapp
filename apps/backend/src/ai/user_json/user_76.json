@@ -1,0 +1,51 @@
+{
+  "id": 76,
+  "username": "rosanna.von0",
+  "display_name": "Albert Lubowitz",
+  "email": "Wellington_Beahan@yahoo.com",
+  "birthday": "2004-11-21T03:32:35.549Z",
+  "age": 34,
+  "status": "active",
+  "about_me": "Canis nihil aeternus virgo in. Amaritudo vere vulariter pecus alveus tego.",
+  "searching_for": "Người yêu",
+  "sexual_orientation": "Song tính",
+  "language": "Tiếng Đức",
+  "education": "Trường dạy nghề",
+  "religion": "Không",
+  "career": "Full-time",
+  "height": "170",
+  "location": "Lake Jorge",
+  "zodiac": "Sư Tử",
+  "character": "Thích phiêu lưu",
+  "character_list": [
+    "Lãng mạn",
+    "Thích phiêu lưu"
+  ],
+  "communicate_style": "Ít nhắn tin",
+  "communicate_style_list": [
+    "Thích gọi điện",
+    "Ít nhắn tin"
+  ],
+  "love_language": "Những lời khen",
+  "love_language_list": [
+    "Những cử chỉ âu yếm",
+    "Những lời khen"
+  ],
+  "future_family": "Mình muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Dậy sớm",
+  "snu": "Lướt dạo âm thầm",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo",
+    "Dị ứng với động vật"
+  ],
+  "favorite": "Đi cafe",
+  "favorite_list": [
+    "Đi cafe",
+    "Lập trình"
+  ]
+}

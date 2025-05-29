@@ -1,0 +1,51 @@
+{
+  "id": 77,
+  "username": "shirley121",
+  "display_name": "Rochelle DuBuque",
+  "email": "Edyth.Rodriguez@hotmail.com",
+  "birthday": "1990-04-06T01:15:34.551Z",
+  "age": 28,
+  "status": "active",
+  "about_me": "Inflammatio alius deludo deleo abutor explicabo. Sui comburo turba tamdiu.",
+  "searching_for": "Bạn hẹn hò lâu dài",
+  "sexual_orientation": "Đồng tính",
+  "language": "Tiếng Việt",
+  "education": "Đang học sau đại học",
+  "religion": "Tin lành",
+  "career": "Freelancer",
+  "height": "155",
+  "location": "East Sarai",
+  "zodiac": "Xử Nữ",
+  "character": "Ham học hỏi",
+  "character_list": [
+    "Thân thiện",
+    "Ham học hỏi"
+  ],
+  "communicate_style": "Thích gọi điện",
+  "communicate_style_list": [
+    "Nghiện nhắn tin",
+    "Thích gọi điện"
+  ],
+  "love_language": "Những cử chỉ âu yếm",
+  "love_language_list": [
+    "Những cử chỉ âu yếm",
+    "Thời gian bên nhau"
+  ],
+  "future_family": "Mình có con rồi và muốn có thêm",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Không ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Hoạt động tích cực",
+  "pet": "Rùa",
+  "pet_list": [
+    "Rùa",
+    "Muốn nuôi thú cưng"
+  ],
+  "favorite": "Hát karaoke",
+  "favorite_list": [
+    "Hát karaoke",
+    "Lập trình"
+  ]
+}
