@@ -1,15 +1,8 @@
 FROM node:18
-
 WORKDIR /app
-
-COPY package*.json ./
-RUN npm install
-
-COPY . .
-
-# Generate Prisma client
-RUN npx prisma generate
-
+COPY package.json ./
+RUN npm install -g pnpm@10.6.3
+RUN pnpm install
+COPY src ./src
 EXPOSE 3001
-
-CMD ["npm", "run", "docker:start"]
+CMD ["pnpm", "dev"]

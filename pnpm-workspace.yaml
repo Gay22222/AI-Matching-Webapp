@@ -1,2 +1,8 @@
 packages:
-  - apps/*   # Chứa frontend và backend
+  - apps/*
+onlyBuiltDependencies:
+  - '@prisma/client'
+  - '@prisma/engines'
+  - esbuild
+  - prisma
+  - sharp

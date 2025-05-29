@@ -1,52 +1,37 @@
-version: "3.8"
-
 services:
-    backend:
-        build: .
-        ports:
-            - "3001:3001"
-        depends_on:
-            db:
-                condition: service_healthy
-            redis:
-                condition: service_started
-        environment:
-            - DATABASE_URL=mysql://root:123@db:3306/matchmaking_db
-            - REDIS_URL=redis://redis:6379
-        volumes:
-            - ./src:/app/src
-            - ./uploads:/app/uploads
-
-    db:
-        image: mysql:8.0.42
-        restart: always
-        environment:
-            MYSQL_ROOT_PASSWORD: 123
-            MYSQL_DATABASE: matchmaking_db
-        ports:
-            - "3307:3306"
-        volumes:
-            - mysql-data:/var/lib/mysql
-        healthcheck:
-            test:
-                [
-                    "CMD",
-                    "mysqladmin",
-                    "ping",
-                    "-h",
-                    "localhost",
-                    "-u",
-                    "root",
-                    "-p123",
-                ]
-            interval: 10s
-            timeout: 5s
-            retries: 5
-
-    redis:
-        image: redis:alpine
-        ports:
-            - "6379:6379"
-
+       backend:
+           build: .
+           ports:
+               - "3001:3001"
+           depends_on:
+               db:
+                   condition: service_healthy
+               redis:
+                   condition: service_started
+           environment:
+               - DATABASE_URL=mysql://root:match%40123@db:3306/matchmaking_db
+               - REDIS_URL=redis://redis:6379
+           volumes:
+               - ./src:/app/src
+               - ./Uploads:/app/uploads
+       db:
+           image: mysql:8.0.42
+           restart: always
+           environment:
+               MYSQL_ROOT_PASSWORD: match@123
+               MYSQL_DATABASE: matchmaking_db
+           ports:
+               - "3307:3306"
+           volumes:
+               - mysql-data:/var/lib/mysql
+           healthcheck:
+               test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pmatch@123"]
+               interval: 10s
+               timeout: 5s
+               retries: 5
+       redis:
+           image: redis:alpine
+           ports:
+               - "6379:6379"
 volumes:
     mysql-data:
