@@ -19,9 +19,9 @@ export const authenticationMiddleware = async (req, res, next) => {
                 message: error.message,
             });
         }
-        return res.status(500).json({
-            statusCode: 500,
-            message: "Internal server error during authentication",
+        return res.status(400).json({
+            statusCode: 401,
+            message: "Bad Request: Invalid token format",
         });
     }
 };
