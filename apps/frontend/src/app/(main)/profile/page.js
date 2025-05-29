@@ -59,11 +59,19 @@ const Profile = () => {
                     <div className="h-32 bg-gradient-to-r from-[#FF5864] to-[#FF655B]"></div>
                     <div className="absolute transform -translate-x-1/2 left-1/2 -bottom-16">
                         <div className="relative group">
-                            <img
-                                src={profile?.profilePhoto || ""}
-                                alt="Profile"
-                                className="object-cover w-32 h-32 transition-transform duration-300 border-4 border-white rounded-full group-hover:scale-105"
-                            />
+                            {profile?.profilePhoto ? (
+                                <img
+                                    src={profile.profilePhoto}
+                                    alt="Profile"
+                                    className="object-cover w-32 h-32 transition-transform duration-300 border-4 border-white rounded-full group-hover:scale-105"
+                                />
+                            ) : (
+                                <div className="flex items-center justify-center w-32 h-32 bg-gray-200 border-4 border-white rounded-full">
+                                    <span className="text-4xl text-gray-400">
+                                        ?
+                                    </span>
+                                </div>
+                            )}
                             <button
                                 onClick={() => setShowProfilePhotoModal(true)}
                                 className="absolute bottom-0 right-0 bg-[#FF5864] p-2 rounded-full text-white

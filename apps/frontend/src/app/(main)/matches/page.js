@@ -29,7 +29,7 @@ const Matches = () => {
                     }
                 );
                 if (!response.ok) {
-                    throw new Error("Network response was not ok");
+                    console.log("Network response was not ok");
                 }
                 const data = await response.json();
                 setMatches(data?.data);
@@ -45,7 +45,7 @@ const Matches = () => {
         router.push(`/message/${matchId}`);
     };
     return (
-        <div className="w-full max-w-md mx-auto py-4">
+        <div className="w-full max-w-md py-4 mx-auto">
             {isLoading ? (
                 <Loading />
             ) : (
@@ -56,24 +56,24 @@ const Matches = () => {
                         </h1>
                     </div>
                     <div className="divide-y divide-gray-100">
-                        {matches.length > 0 ? (
+                        {matches?.length > 0 ? (
                             matches?.map?.((match) => (
                                 <button
                                     key={match.id}
                                     onClick={() => handleMatchClick(match.id)}
-                                    className="w-full flex items-center p-4 hover:bg-gray-50 transition-colors duration-300"
+                                    className="flex items-center w-full p-4 transition-colors duration-300 hover:bg-gray-50"
                                 >
                                     <div className="relative">
                                         <img
                                             src={match.photo}
                                             alt={match.name}
-                                            className="w-16 h-16 rounded-full object-cover transition-transform duration-300 hover:scale-105"
+                                            className="object-cover w-16 h-16 transition-transform duration-300 rounded-full hover:scale-105"
                                         />
                                         {match.unread && (
                                             <div className="absolute -top-1 -right-1 w-4 h-4 bg-[#FF5864] rounded-full border-2 border-white animate-pulse"></div>
                                         )}
                                     </div>
-                                    <div className="ml-4 flex-grow text-left">
+                                    <div className="flex-grow ml-4 text-left">
                                         <div className="flex justify-between">
                                             <h2 className="font-medium text-gray-800">
                                                 {match.name}, {match.age}

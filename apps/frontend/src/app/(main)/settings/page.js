@@ -24,7 +24,7 @@ const Settings = () => {
     const [profileData, setProfileData] = useState({
         name: currentUser?.display_name,
         username: currentUser?.username,
-        photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3",
+        photo: "",
     });
     useEffect(() => {
         if (currentUser) {
@@ -121,11 +121,19 @@ const Settings = () => {
                     <div className="relative px-6 pb-6">
                         <div className="flex items-center -mt-12">
                             <div className="relative group">
-                                <img
-                                    src={profileData.photo}
-                                    alt="Profile"
-                                    className="object-cover w-24 h-24 transition-transform duration-300 border-4 border-white shadow-lg rounded-2xl group-hover:scale-105"
-                                />
+                                {profileData.photo ? (
+                                    <img
+                                        src={profileData.photo}
+                                        alt="Profile"
+                                        className="object-cover w-24 h-24 transition-transform duration-300 border-4 border-white shadow-lg rounded-2xl group-hover:scale-105"
+                                    />
+                                ) : (
+                                    <div className="flex items-center justify-center w-32 h-32 bg-gray-200 border-4 border-white rounded-full">
+                                        <span className="text-4xl text-gray-400">
+                                            ?
+                                        </span>
+                                    </div>
+                                )}
                                 <button
                                     onClick={handlePhotoClick}
                                     className="absolute bottom-0 right-0 bg-[#FF5864] p-2 rounded-full text-white

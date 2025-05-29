@@ -16,7 +16,7 @@ const GET_USER_URL = "http://localhost:3001/api/me";
 
 export function AuthProvider({ children }) {
     const router = useRouter();
-    const [auth, setAuth] = useState(authHelper.getAuth());
+    const [auth, setAuth] = useState(authHelper?.getAuth());
     const [currentUser, setCurrentUser] = useState();
 
     const verify = async (auth, shouldRedirect = false) => {
@@ -39,19 +39,19 @@ export function AuthProvider({ children }) {
         }
     };
     useEffect(() => {
-        const auth = authHelper.getAuth();
+        const auth = authHelper?.getAuth();
         if (auth) {
             console.log("auth", auth);
 
-            verify(auth.access_token, false);
+            verify(auth?.access_token, false);
         }
     }, [auth]);
     const saveAuth = (auth) => {
         if (auth) {
-            authHelper.setAuth(auth);
+            authHelper?.setAuth(auth);
             setAuth(auth);
         } else {
-            authHelper.removeAuth();
+            authHelper?.removeAuth();
         }
     };
     const login = async (email, password) => {
