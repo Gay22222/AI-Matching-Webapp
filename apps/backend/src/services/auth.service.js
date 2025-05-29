@@ -6,7 +6,10 @@ import { userService } from "../services/user.service.js";
 import Redis from "ioredis"; // Import Redis client
 
 const SALT_ROUNDS = 10;
-const redisClient = new Redis(process.env.REDIS_URL); // Lấy URL từ .env
+const redisClient = new Redis({
+    host: process.env.REDIS_HOST || "localhost",
+    port: process.env.REDIS_PORT || 6379,
+}); // Lấy URL từ .env
 const OTP_EXPIRY_SECONDS = 5 * 60;
 
 export const authService = {

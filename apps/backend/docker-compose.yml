@@ -12,7 +12,8 @@ services:
                 condition: service_started
         environment:
             - DATABASE_URL=mysql://root:123@db:3306/matchmaking_db
-            - REDIS_URL=redis://redis:6379
+            - REDIS_HOST=redis
+            - REDIS_PORT=6379
         volumes:
             - ./src:/app/src
             - ./uploads:/app/uploads
@@ -47,6 +48,11 @@ services:
         image: redis:alpine
         ports:
             - "6379:6379"
+        healthcheck:
+            test: ["CMD", "redis-cli", "ping"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
 
 volumes:
     mysql-data:
