@@ -106,9 +106,12 @@ const MessagePage = () => {
             </div>
         );
     }
+
+    console.log(chat);
+
     return (
         <div className="flex flex-col h-[70vh] w-[50vh] bg-gray-50">
-            <header className="bg-white p-4 shadow-sm flex items-center">
+            <header className="flex items-center p-4 bg-white shadow-sm">
                 <button
                     onClick={() => router.push("/matches")}
                     className="mr-3"
@@ -116,9 +119,13 @@ const MessagePage = () => {
                     <ArrowLeftIcon size={24} className="text-gray-500" />
                 </button>
                 <img
-                    src={chat?.photo}
+                    src={
+                        chat?.photo?.url?.[0] === "/"
+                            ? `http://localhost:3001${chat?.photo?.url}`
+                            : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
+                    }
                     alt={chat?.name}
-                    className="w-10 h-10 rounded-full object-cover"
+                    className="object-cover w-10 h-10 rounded-full"
                 />
                 <div className="ml-3">
                     <h1 className="font-semibold text-gray-800">
@@ -127,7 +134,7 @@ const MessagePage = () => {
                     {/* <p className="text-xs text-gray-500">Online</p> */}
                 </div>
             </header>
-            <main className="flex-1 overflow-y-auto p-4">
+            <main className="flex-1 p-4 overflow-y-auto">
                 <div className="space-y-4">
                     {chat?.messages?.map((msg) => (
                         <div
@@ -163,16 +170,16 @@ const MessagePage = () => {
                 </div>
             </main>
             {showIcebreakers && (
-                <div className="bg-white border-t border-gray-200 p-3">
-                    <p className="text-sm text-gray-600 mb-2">
+                <div className="p-3 bg-white border-t border-gray-200">
+                    <p className="mb-2 text-sm text-gray-600">
                         AI Icebreakers:
                     </p>
-                    <div className="flex overflow-x-auto space-x-2 pb-2">
+                    <div className="flex pb-2 space-x-2 overflow-x-auto">
                         {icebreakers.map((question, index) => (
                             <button
                                 key={index}
                                 onClick={() => handleIcebreakerSelect(question)}
-                                className="bg-gray-100 text-gray-800 px-3 py-2 rounded-full text-sm whitespace-nowrap"
+                                className="px-3 py-2 text-sm text-gray-800 bg-gray-100 rounded-full whitespace-nowrap"
                             >
                                 {question}
                             </button>
@@ -180,7 +187,7 @@ const MessagePage = () => {
                     </div>
                 </div>
             )}
-            <div className="bg-white border-t border-gray-200 p-3">
+            <div className="p-3 bg-white border-t border-gray-200">
                 <div className="flex items-center">
                     <button className="p-2 text-gray-500">
                         <ImageIcon size={24} />

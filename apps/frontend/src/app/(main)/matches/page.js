@@ -65,7 +65,11 @@ const Matches = () => {
                                 >
                                     <div className="relative">
                                         <img
-                                            src={match.photo}
+                                            src={
+                                                match?.photo?.url?.[0] === "/"
+                                                    ? `http://localhost:3001${match?.photo?.url}`
+                                                    : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
+                                            }
                                             alt={match.name}
                                             className="object-cover w-16 h-16 transition-transform duration-300 rounded-full hover:scale-105"
                                         />
@@ -76,7 +80,7 @@ const Matches = () => {
                                     <div className="flex-grow ml-4 text-left">
                                         <div className="flex justify-between">
                                             <h2 className="font-medium text-gray-800">
-                                                {match.name}, {match.age}
+                                                {match.name}
                                             </h2>
                                             <span className="text-sm text-gray-500">
                                                 {match.matchTime}

@@ -18,13 +18,21 @@ export function AuthProvider({ children }) {
     const router = useRouter();
     const [auth, setAuth] = useState(authHelper?.getAuth());
     const [currentUser, setCurrentUser] = useState();
+    console.log("verify");
 
     const verify = async (auth, shouldRedirect = false) => {
+        console.log("verify", auth, shouldRedirect);
+
         if (auth) {
             try {
                 const { data: user } = await getUser(auth);
-
                 setCurrentUser(user.user);
+                if (!user?.user) {
+                    console.log("User not found, redirecting to login");
+
+                    router.push("/auth/login");
+                    return;
+                }
                 if (!user?.user?.isFullInformation) {
                     router.push("/profile-setup");
                     return;
@@ -41,9 +49,9 @@ export function AuthProvider({ children }) {
     useEffect(() => {
         const auth = authHelper?.getAuth();
         if (auth) {
-            console.log("auth", auth);
-
             verify(auth?.access_token, false);
+        } else {
+            router.push("/auth/login");
         }
     }, [auth]);
     const saveAuth = (auth) => {
