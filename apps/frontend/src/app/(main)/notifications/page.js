@@ -81,9 +81,9 @@ export default function NotificationsPage() {
                     }),
                 }
             );
-            const data = await res.json();
+            const data = await res?.json();
 
-            socket.emit("accept-match", data.match);
+            socket.emit("accept-match", data?.match);
 
             setNotifications(data?.data || []);
         } catch (error) {}
@@ -111,9 +111,9 @@ export default function NotificationsPage() {
                                     <img
                                         src={notification?.user.photo}
                                         alt={notification?.user.name}
-                                        className="w-12 h-12 rounded-full object-cover"
+                                        className="object-cover w-12 h-12 rounded-full"
                                     />
-                                    <div className="absolute -bottom-1 -right-1 p-1 bg-white rounded-full">
+                                    <div className="absolute p-1 bg-white rounded-full -bottom-1 -right-1">
                                         {content.icon}
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ export default function NotificationsPage() {
                                         {getRelativeTime(notification?.time)}
                                     </p>
                                     {notification?.type === "LIKED" && (
-                                        <div className="mt-2 flex items-center gap-2 justify-between">
+                                        <div className="flex items-center justify-between gap-2 mt-2">
                                             <button
                                                 className="w-full btn btn-primary rounded-lg transition-all duration-300
                         bg-gradient-to-r from-[#FF5864] to-[#FF655B] text-white p-2 cursor-pointer"
@@ -139,7 +139,7 @@ export default function NotificationsPage() {
                                             >
                                                 Accept
                                             </button>
-                                            <button className="p-2 w-full btn btn-primary border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100 cursor-pointer">
+                                            <button className="w-full p-2 transition-all duration-300 border border-gray-300 rounded-lg cursor-pointer btn btn-primary hover:bg-gray-100">
                                                 Remove
                                             </button>
                                         </div>

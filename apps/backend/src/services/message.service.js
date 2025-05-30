@@ -28,7 +28,7 @@ export const messageService = {
         return {
             id: receiver.id,
             name: receiver.display_name,
-            photo: receiver.Bio?.Photo[0]?.url,
+            photo: receiver.Bio?.Photo?.[0] || "",
             messages: result,
         };
     },

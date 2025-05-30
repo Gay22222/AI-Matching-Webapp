@@ -45,7 +45,11 @@ const Home = () => {
                     : `http://localhost:3001/api/user/list-match`;
 
                 console.log("Fetching profiles with URL:", url);
-                const response = await axios.get(url);
+                const response = await axios.get(url, {
+                    headers: {
+                        Authorization: `Bearer ${auth?.access_token}`,
+                    },
+                });
                 console.log("Response data:", response.data.users);
 
                 setProfiles(response.data.users);
@@ -131,12 +135,12 @@ const Home = () => {
 
     if (currentIndex >= profiles.length) {
         return (
-            <div className="w-full max-w-md mx-auto flex flex-col items-center justify-center py-4 text-center px-4">
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="flex flex-col items-center justify-center w-full max-w-md px-4 py-4 mx-auto text-center">
+                <div className="p-8 shadow-xl bg-white/90 backdrop-blur-sm rounded-2xl">
+                    <h2 className="mb-4 text-2xl font-bold text-gray-900">
                         Đã hết người dùng trong khu vực của bạn
                     </h2>
-                    <p className="text-gray-600 mb-6">
+                    <p className="mb-6 text-gray-600">
                         Hãy thử mở rộng bán kính tìm kiếm hoặc quay lại sau nhé!
                     </p>
                     <button
@@ -156,15 +160,13 @@ const Home = () => {
         );
     }
     return (
-        <div className="w-full max-w-md mx-auto flex flex-col items-center justify-center py-4">
-            <div className="w-full flex justify-end mb-4 px-4">
+        <div className="flex flex-col items-center justify-center w-full max-w-md py-4 mx-auto">
+            <div className="flex justify-end w-full px-4 mb-4">
                 <button
                     onClick={() => setShowFilters(true)}
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white hover:bg-gray-50
-                   border border-gray-200 text-gray-700 transition-all duration-300
-                   hover:shadow-md active:scale-95"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-700 transition-all duration-300 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:shadow-md active:scale-95"
                 >
-                    <SlidersIcon className="h-5 w-5" />
+                    <SlidersIcon className="w-5 h-5" />
                     <span className="text-sm font-medium">Bộ lọc</span>
                     {Object.keys(filters).length > 0 && (
                         <span className="w-5 h-5 flex items-center justify-center bg-[#FF5864] text-white text-xs rounded-full">
@@ -182,6 +184,7 @@ const Home = () => {
 
             {showMatch && matchedProfile && (
                 <MatchModal
+                    me={currentUser}
                     profile={matchedProfile}
                     onClose={handleCloseMatch}
                 />

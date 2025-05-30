@@ -16,15 +16,23 @@ const GET_USER_URL = "http://localhost:3001/api/me";
 
 export function AuthProvider({ children }) {
     const router = useRouter();
-    const [auth, setAuth] = useState(authHelper.getAuth());
+    const [auth, setAuth] = useState(authHelper?.getAuth());
     const [currentUser, setCurrentUser] = useState();
+    console.log("verify");
 
     const verify = async (auth, shouldRedirect = false) => {
+        console.log("verify", auth, shouldRedirect);
+
         if (auth) {
             try {
                 const { data: user } = await getUser(auth);
-
                 setCurrentUser(user.user);
+                if (!user?.user) {
+                    console.log("User not found, redirecting to login");
+
+                    router.push("/auth/login");
+                    return;
+                }
                 if (!user?.user?.isFullInformation) {
                     router.push("/profile-setup");
                     return;
@@ -39,19 +47,19 @@ export function AuthProvider({ children }) {
         }
     };
     useEffect(() => {
-        const auth = authHelper.getAuth();
+        const auth = authHelper?.getAuth();
         if (auth) {
-            console.log("auth", auth);
-
-            verify(auth.access_token, false);
+            verify(auth?.access_token, false);
+        } else {
+            router.push("/auth/login");
         }
     }, [auth]);
     const saveAuth = (auth) => {
         if (auth) {
-            authHelper.setAuth(auth);
+            authHelper?.setAuth(auth);
             setAuth(auth);
         } else {
-            authHelper.removeAuth();
+            authHelper?.removeAuth();
         }
     };
     const login = async (email, password) => {

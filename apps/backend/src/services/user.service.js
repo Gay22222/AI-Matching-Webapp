@@ -1,5 +1,6 @@
 import { userRepository } from "../repository/user.repository.js";
 import { formatUser } from "../utils/user.utils.js";
+import { matchService } from "./match.service.js";
 
 export const userService = {
     createUser: async (userData) => {
@@ -21,7 +22,7 @@ export const userService = {
         }
         return userFormatted;
     },
-    getAllUsersFormatted: async (filters) => {
+    getAllUsersFormatted: async (filters, userId) => {
         const filtersFormatted = {
             languageIds: filters?.["language"]?.split(",")?.map(Number),
             educationIds: filters?.["education"]?.split(",")?.map(Number),
@@ -42,7 +43,13 @@ export const userService = {
             searchingForIds: filters?.["searchingfor"]?.split(",")?.map(Number),
         };
 
-        const usersRaw = await userRepository.getUsers(filtersFormatted);
+        const usersMatched = await matchService.getAll(userId, false);
+        const usersIdMatched = usersMatched?.map((match) => match?.user_id);
+
+        const usersRaw = await userRepository.getUsers(
+            filtersFormatted,
+            usersIdMatched
+        );
 
         const usersFormatted = usersRaw.map((user) => {
             const formatted = formatUser(user);

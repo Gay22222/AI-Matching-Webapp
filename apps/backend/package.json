@@ -9,6 +9,7 @@
         "build": "tsc",
         "start": "node dist/server.js",
         "seed": "node src/prisma/seeds/index.js",
+        "docker:start": "npx prisma generate && npx prisma migrate deploy && npm run seed && npm run dev",
         "migrate": "pnpm exec cross-env DOTENV_CONFIG_PATH=./src/config/.env prisma migrate dev --schema ./src/prisma/schema.prisma"
     },
     "prisma": {

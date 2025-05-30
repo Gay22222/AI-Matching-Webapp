@@ -4,28 +4,16 @@ import { findSocketId } from "../utils/socketHelpers.js";
 
 const setupMessageSocket = (io, socket, user, getUsers) => {
     socket.on("new-message", async (data) => {
-        console.log("new-message", data);
-
         const users = getUsers();
         const senderId = user?.id;
         const { receiverId, matchId, content } = data;
         const receiverSocketId = findSocketId(users, receiverId);
         // Kiểm tra dữ liệu đầu vào
         if (!senderId || !receiverId || !matchId || !content) {
-            console.log(
-                "missing required fields",
-                "new-message",
-                senderId,
-                receiverId,
-                matchId,
-                content
-            );
-
             return socket.emit("errorMessage", {
                 error: "Missing required fields",
             });
         }
-        console.log(receiverSocketId);
 
         socket.to(receiverSocketId).emit("receive-new-message");
     });

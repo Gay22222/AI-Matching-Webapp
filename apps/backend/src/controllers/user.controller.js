@@ -25,7 +25,11 @@ export const userController = {
     getAll: async (req, res) => {
         try {
             const filters = req.query;
-            const users = await userService.getAllUsersFormatted(filters);
+            const userId = req.user?.id;
+            const users = await userService.getAllUsersFormatted(
+                filters,
+                userId
+            );
             res.status(200).json({
                 statusCode: 200,
                 users,
