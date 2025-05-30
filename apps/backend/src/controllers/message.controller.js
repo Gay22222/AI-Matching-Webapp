@@ -11,10 +11,6 @@ export const messageController = {
                 .json({ statusCode: 400, message: "Missing required fields" });
         }
 
-        console.log(
-            `Creating message from ${senderId} to ${receiverId} in match ${matchId} with content: ${content}`
-        );
-
         try {
             const message = await messageService.create(
                 matchId,

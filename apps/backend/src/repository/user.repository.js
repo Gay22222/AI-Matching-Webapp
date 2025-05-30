@@ -77,7 +77,7 @@ export const userRepository = {
             },
         });
     },
-    getUsers: (filters = {}) => {
+    getUsers: (filters = {}, usersIdMatched = []) => {
         const {
             languageIds,
             educationIds,
@@ -96,76 +96,81 @@ export const userRepository = {
 
         return prisma.users.findMany({
             where: {
-                Bio: {
-                    main_inf: {
-                        Language: {
-                            id: {
-                                in: languageIds,
-                            },
-                        },
-                        Education: {
-                            id: {
-                                in: educationIds,
-                            },
-                        },
+                AND: {
+                    id: {
+                        notIn: usersIdMatched,
                     },
-                    Base_inf: {
-                        Zodiac: {
-                            id: {
-                                in: zodiacIds,
+                    Bio: {
+                        main_inf: {
+                            Language: {
+                                id: {
+                                    in: languageIds,
+                                },
+                            },
+                            Education: {
+                                id: {
+                                    in: educationIds,
+                                },
                             },
                         },
-                        Character: {
-                            id: {
-                                in: characterIds,
+                        Base_inf: {
+                            Zodiac: {
+                                id: {
+                                    in: zodiacIds,
+                                },
+                            },
+                            Character: {
+                                id: {
+                                    in: characterIds,
+                                },
+                            },
+                            Communicate_style: {
+                                id: {
+                                    in: comunicateStyleIds,
+                                },
+                            },
+                            Love_language: {
+                                id: {
+                                    in: loveLanguageIds,
+                                },
+                            },
+                            FutureFamily: {
+                                id: {
+                                    in: futureFamilyIds,
+                                },
+                            },
+                            Sexual_orientation: {
+                                id: {
+                                    in: sexualOrientationIds,
+                                },
                             },
                         },
-                        Communicate_style: {
-                            id: {
-                                in: comunicateStyleIds,
+                        Lifestyle: {
+                            Pet: {
+                                id: {
+                                    in: petIds,
+                                },
+                            },
+                            Diet: {
+                                id: {
+                                    in: dietIds,
+                                },
+                            },
+                            Sleep: {
+                                id: {
+                                    in: sleepIds,
+                                },
+                            },
+                            SNU: {
+                                id: {
+                                    in: snuIds,
+                                },
                             },
                         },
-                        Love_language: {
+                        Searchingfor: {
                             id: {
-                                in: loveLanguageIds,
+                                in: searchingForIds,
                             },
-                        },
-                        FutureFamily: {
-                            id: {
-                                in: futureFamilyIds,
-                            },
-                        },
-                        Sexual_orientation: {
-                            id: {
-                                in: sexualOrientationIds,
-                            },
-                        },
-                    },
-                    Lifestyle: {
-                        Pet: {
-                            id: {
-                                in: petIds,
-                            },
-                        },
-                        Diet: {
-                            id: {
-                                in: dietIds,
-                            },
-                        },
-                        Sleep: {
-                            id: {
-                                in: sleepIds,
-                            },
-                        },
-                        SNU: {
-                            id: {
-                                in: snuIds,
-                            },
-                        },
-                    },
-                    Searchingfor: {
-                        id: {
-                            in: searchingForIds,
                         },
                     },
                 },

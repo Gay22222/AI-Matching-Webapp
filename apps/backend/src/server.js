@@ -24,8 +24,6 @@ setIO(io);
 let users = [];
 
 const handleUserConnection = (socket, data, users) => {
-    console.log(data, "data");
-
     const isExistUserById = users.find((u) => u.id === data?.id);
     const isExistUserBySocketId = users.find((u) => u.socket_id === socket.id);
     const user = {
@@ -34,7 +32,6 @@ const handleUserConnection = (socket, data, users) => {
         name: data?.name,
     };
     if (isExistUserById) {
-        console.log("User already connected:", data?.id);
         return user;
     }
     if (isExistUserBySocketId) {
@@ -50,7 +47,6 @@ const handleUserConnection = (socket, data, users) => {
 
 // WebSocket
 io.on("connection", (socket) => {
-    console.log("User connected:", socket.id);
     socket.on("me", (data) => {
         socket.removeAllListeners("send-message");
 

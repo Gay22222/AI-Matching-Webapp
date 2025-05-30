@@ -17,13 +17,6 @@ export const matchMiddleware = async (req, res, next) => {
         const isParticipant =
             match.user_1_id === userId || match.user_2_id === userId;
         if (!isParticipant) {
-            console.log(
-                "Participant: ",
-                match.user_1_id,
-                match.user_2_id,
-                "not:",
-                userId
-            );
             return res.status(403).json({ message: "Access denied" });
         }
         req.match = match;

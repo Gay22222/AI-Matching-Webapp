@@ -56,8 +56,6 @@ const setupNotificationSocket = (io, socket, user, getUsers) => {
 
         if (senderId) sender = await userService.getProfileById(senderId);
 
-        console.log(sender, receiver);
-
         const senderProfile = {
             id: sender?.id,
             name: sender?.displayName,

@@ -5,7 +5,6 @@ export const matchController = {
     get: async (req, res) => {
         try {
             const match = req?.match;
-            console.log(match);
 
             res.status(200).json({
                 statusCode: 200,
@@ -82,8 +81,6 @@ export const matchController = {
 
         const user = req.user;
         const receiverId = user?.id;
-
-        console.log("Update match:", matchId, isAccept);
 
         if (!matchId || isAccept === undefined || !notificationId) {
             return res.status(400).json({

@@ -5,7 +5,7 @@ import { authenticationMiddleware } from "../middleware/auth.middleware.js";
 const router = express.Router();
 
 router.get("/me", authenticationMiddleware, userController.getProfile);
-router.get("/user/list-match", userController.getAll);
+router.get("/user/list-match", authenticationMiddleware, userController.getAll);
 router.get("/user/:id", authenticationMiddleware, userController.getUserInfo);
 router.put(
     "/update-profile",

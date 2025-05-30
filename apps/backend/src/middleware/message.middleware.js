@@ -2,8 +2,6 @@ import { matchRepository } from "../repository/match.repository.js";
 
 export const messageMiddleware = async (req, res, next) => {
     try {
-        console.log(req?.user);
-
         const { roomId } = req.params;
         const userId = req.user.id;
 
@@ -16,13 +14,6 @@ export const messageMiddleware = async (req, res, next) => {
         const isParticipant =
             room.user_1_id === userId || room.user_2_id === userId;
         if (!isParticipant) {
-            console.log(
-                "Participant: ",
-                room.user_1_id,
-                room.user_2_id,
-                "not:",
-                userId
-            );
             return res.status(403).json({ message: "Access denied" });
         }
         req.room = room;

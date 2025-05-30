@@ -23,12 +23,6 @@ export const notificationController = {
         try {
             const { receiverId, entityId, type } = req.body;
             const senderId = req?.user?.id;
-            console.log("Creating notification with data:", {
-                senderId,
-                receiverId,
-                entityId,
-                type,
-            });
 
             if (!receiverId || !senderId || !entityId || !type) {
                 return res.status(400).json({

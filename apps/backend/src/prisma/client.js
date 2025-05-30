@@ -27,12 +27,10 @@ listTables()
 
 async function listUsers() {
     const users = await prisma.users.findMany();
-    // console.log("Users:", users);
 }
 
 async function listMatches() {
     const matches = await prisma.matches.findMany();
-    // console.log("Matches:", matches);
 }
 
 async function main() {

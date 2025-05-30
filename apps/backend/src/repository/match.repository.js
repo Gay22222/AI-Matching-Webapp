@@ -10,7 +10,7 @@ export const matchRepository = {
             },
         });
     },
-    getAll: (userId) => {
+    getAll: (userId, isAccept = true) => {
         return prisma.matches.findMany({
             include: {
                 user_match_1: {
@@ -41,7 +41,7 @@ export const matchRepository = {
             where: {
                 AND: [
                     { OR: [{ user_1_id: userId }, { user_2_id: userId }] },
-                    { is_accept: true },
+                    isAccept ? { is_accept: true } : {},
                 ],
             },
         });
@@ -65,7 +65,6 @@ export const matchRepository = {
                                     select: {
                                         url: true,
                                     },
-                                    take: 1,
                                 },
                             },
                         },
