@@ -57,9 +57,8 @@ export default function NotificationsPage() {
         if (!socket) return;
         socket.on("new-notification", (notifications = []) => {
             console.log("Received new notification:", notifications);
-            setNotifications(notifications);
+            fetchNotifications();
         });
-        socket.emit("accept-match", 1);
     }, [socket]);
 
     const handleAccept = async (e, matchId, notificationId) => {
@@ -85,7 +84,7 @@ export default function NotificationsPage() {
 
             socket.emit("accept-match", data?.match);
 
-            setNotifications(data?.data || []);
+            fetchNotifications();
         } catch (error) {}
     };
 
@@ -109,7 +108,13 @@ export default function NotificationsPage() {
                             >
                                 <div className="relative">
                                     <img
-                                        src={notification?.user.photo}
+                                        src={
+                                            notification?.user?.photo?.[0]
+                                                ?.url?.[0] === "/"
+                                                ? notification?.user?.photo?.[0]
+                                                      ?.url
+                                                : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
+                                        }
                                         alt={notification?.user.name}
                                         className="object-cover w-12 h-12 rounded-full"
                                     />

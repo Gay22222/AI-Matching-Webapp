@@ -101,6 +101,7 @@ const Home = () => {
 
             setTimeout(() => {
                 showToast.success("Đã thích!");
+                socket.emit("new-notification", userId);
                 callback && callback();
                 if (currentIndex < profiles.length - 1) {
                     setCurrentIndex((prev) => prev + 1);

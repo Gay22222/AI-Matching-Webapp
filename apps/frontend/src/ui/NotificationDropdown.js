@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { HeartIcon, MessageCircleIcon, StarIcon } from "lucide-react";
 import Link from "next/link";
-import { useAuth } from "@/hooks/useAuth";
 import { getRelativeTime } from "@/utils/Time";
 
 const getNotificationContent = (notification) => {
@@ -24,28 +23,9 @@ const getNotificationContent = (notification) => {
             return null;
     }
 };
-const NotificationDropdown = ({ onClose }) => {
-    const auth = useAuth();
+const NotificationDropdown = ({ notifications = [], onClose }) => {
+    console.log(notifications);
 
-    const [notifications, setNotifications] = useState([]);
-
-    const fetchNotifications = async () => {
-        try {
-            const res = await fetch("http://localhost:3001/api/notifications", {
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${auth?.auth?.access_token}`,
-                },
-            });
-            const data = await res.json();
-            console.log(data);
-
-            setNotifications(data?.data || []);
-        } catch (error) {}
-    };
-    useEffect(() => {
-        fetchNotifications();
-    }, []);
     return (
         <div className="absolute right-0 mt-2 overflow-hidden bg-white shadow-lg w-80 rounded-2xl animate-scale-up">
             <div className="p-4 border-b border-gray-100">
@@ -72,7 +52,13 @@ const NotificationDropdown = ({ onClose }) => {
                         >
                             <div className="relative">
                                 <img
-                                    src={notification?.user?.photo}
+                                    src={
+                                        notification?.user?.photo?.[0]
+                                            ?.url?.[0] === "/"
+                                            ? notification?.user?.photo?.[0]
+                                                  ?.url
+                                            : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
+                                    }
                                     alt={notification?.user?.name}
                                     className="object-cover w-10 h-10 rounded-full"
                                 />
