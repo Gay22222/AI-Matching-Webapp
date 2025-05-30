@@ -1,4 +1,6 @@
 export const formatNotification = (notification) => {
+    console.log(notification?.is_read);
+
     return {
         id: notification?.id,
         type: notification?.type,
@@ -7,7 +9,7 @@ export const formatNotification = (notification) => {
             photo: notification?.sender?.Bio?.Photo,
         },
         time: notification?.created_at,
-        read: false,
+        read: notification?.is_read,
         matchId: notification?.entity_id,
     };
 };

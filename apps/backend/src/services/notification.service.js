@@ -7,6 +7,29 @@ export const notificationService = {
         const notificationFormatted = notifications.map((notification) =>
             formatNotification(notification)
         );
+        const notificationsId = notificationFormatted.map(
+            (notification) => notification.id
+        );
+
+        if (notificationsId.length > 0) {
+            try {
+                notificationService
+                    .bulkUpdate(notificationsId)
+                    .catch((error) => {
+                        console.error(
+                            "[NotificationService] Error in bulkUpdate:",
+                            error
+                        );
+                    });
+            } catch (error) {
+                console.error(
+                    "[NotificationService] Error marking notifications as read:",
+                    error
+                );
+                // Note: We're not throwing the error here to ensure the function still returns the notifications
+            }
+        }
+
         return notificationFormatted;
     },
     create: (senderId, receiverId, entityId, type) => {
@@ -26,6 +49,15 @@ export const notificationService = {
             return notificationRepository.update(id);
         } catch (error) {
             throw new Error("Cannot update notification: " + error.message);
+        }
+    },
+    bulkUpdate: (ids) => {
+        try {
+            return notificationRepository.bulkUpdate(ids);
+        } catch (error) {
+            throw new Error(
+                "Cannot bulk update notifications: " + error.message
+            );
         }
     },
 };

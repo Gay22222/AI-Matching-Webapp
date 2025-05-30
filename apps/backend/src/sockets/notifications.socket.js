@@ -8,33 +8,14 @@ const setupNotificationSocket = (io, socket, user, getUsers) => {
         socket.join(room);
     });
 
-    socket.on("sendNotification", async (data) => {
-        const { recipient_id, sender_id, type, content } = data;
+    socket.on("new-notification", async (receiverId) => {
+        const users = getUsers();
+        const receiverSocketId = findSocketId(users, receiverId);
 
-        // Kiểm tra dữ liệu đầu vào
-        if (!recipient_id || !type || !content) {
-            return socket.emit("errorNotification", {
-                error: "Missing required fields",
-            });
+        if (!receiverSocketId) {
+            console.log("[Socket:Notification] User not connected");
         }
-
-        try {
-            // Lưu thông báo vào cơ sở dữ liệu
-            const notification = await prisma.notification.create({
-                data: { recipient_id, sender_id, type, content },
-            });
-
-            // Phát thông báo cho người nhận
-            io.to(`user:${recipient_id}`).emit(
-                "receiveNotification",
-                notification
-            );
-        } catch (error) {
-            console.error("[Socket:Notification] DB Error:", error);
-            socket.emit("errorNotification", {
-                error: "Failed to save notification",
-            });
-        }
+        socket.to(receiverSocketId).emit("new-notification");
     });
 
     socket.on("accept-match", async (match) => {

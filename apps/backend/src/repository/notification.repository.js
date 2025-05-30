@@ -46,4 +46,10 @@ export const notificationRepository = {
             data: { is_hidden: true },
         });
     },
+    bulkUpdate: (ids) => {
+        return prisma.notifications.updateMany({
+            where: { id: { in: ids.map((id) => parseInt(id)) } },
+            data: { is_read: true },
+        });
+    },
 };
