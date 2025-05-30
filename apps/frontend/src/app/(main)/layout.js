@@ -3,6 +3,7 @@
 import AppLayout from "@/components/layout/AppLayout";
 import { AuthProvider } from "@/hooks/useAuth";
 import { MetadataProvider } from "@/hooks/useMetadata";
+import { NotificationProvider } from "@/hooks/useNotification";
 import { Toaster } from "react-hot-toast";
 import { SocketProvider } from "@/hooks/useSocket";
 
@@ -14,8 +15,10 @@ export default function MainLayout({ children }) {
         <AuthProvider>
             <SocketProvider>
                 <MetadataProvider>
-                    <AppLayout>{children}</AppLayout>
-                    <Toaster position="top-right" reverseOrder={false} />
+                    <NotificationProvider>
+                        <AppLayout>{children}</AppLayout>
+                        <Toaster position="top-right" reverseOrder={false} />
+                    </NotificationProvider>
                 </MetadataProvider>
             </SocketProvider>
         </AuthProvider>

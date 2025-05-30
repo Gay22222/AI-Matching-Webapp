@@ -1,39 +1,28 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { FlameIcon, SettingsIcon, BellIcon } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
-import { useSocket } from "@/hooks/useSocket";
+import { useNotification } from "@/hooks/useNotification";
+import { BellIcon, FlameIcon, SettingsIcon } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 import NotificationDropdown from "./NotificationDropdown";
 const Header = () => {
     const [showNotifications, setShowNotifications] = useState(false);
     const notificationRef = useRef(null);
     const auth = useAuth();
-    const socket = useSocket();
 
-    const [notifications, setNotifications] = useState([]);
+    const { notifications } = useNotification();
+
     const [unreadCount, setUnreadCount] = useState(0);
 
-    const fetchNotifications = async () => {
-        try {
-            const res = await fetch("http://localhost:3001/api/notifications", {
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${auth?.auth?.access_token}`,
-                },
-            });
-            const data = await res.json();
-            const unread = data?.data?.filter(
-                (notification) => !notification.read
-            ).length;
-            setUnreadCount(unread);
-            setNotifications(data?.data || []);
-        } catch (error) {}
-    };
     useEffect(() => {
-        fetchNotifications();
-    }, []);
+        if (!notifications) return;
+        const unread = notifications.filter(
+            (notification) => !notification.read
+        ).length;
+        setUnreadCount(unread);
+    }, [notifications]);
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (
@@ -47,13 +36,7 @@ const Header = () => {
         return () =>
             document.removeEventListener("mousedown", handleClickOutside);
     }, []);
-    useEffect(() => {
-        if (!socket) return;
-        socket.on("new-notification", () => {
-            console.log("Received new notification:");
-            fetchNotifications();
-        });
-    }, [socket]);
+
     return (
         <header className="sticky top-0 z-10 shadow-sm bg-white/80 backdrop-blur-md">
             <div className="container flex items-center justify-between px-4 py-3 mx-auto">

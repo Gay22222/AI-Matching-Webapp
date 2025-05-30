@@ -7,6 +7,7 @@ import { HeartIcon, MessageCircleIcon, StarIcon } from "lucide-react";
 import Link from "next/link";
 import { getRelativeTime } from "@/utils/Time";
 import { useSocket } from "@/hooks/useSocket";
+import { useNotification } from "@/hooks/useNotification";
 
 const getNotificationContent = (notification) => {
     switch (notification.type) {
@@ -33,33 +34,7 @@ export default function NotificationsPage() {
 
     const auth = useAuth();
 
-    const [notifications, setNotifications] = useState([]);
-
-    const fetchNotifications = async () => {
-        try {
-            const res = await fetch("http://localhost:3001/api/notifications", {
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${auth?.auth?.access_token}`,
-                },
-            });
-            const data = await res.json();
-            console.log(data);
-
-            setNotifications(data?.data || []);
-        } catch (error) {}
-    };
-    useEffect(() => {
-        fetchNotifications();
-    }, []);
-
-    useEffect(() => {
-        if (!socket) return;
-        socket.on("new-notification", (notifications = []) => {
-            console.log("Received new notification:", notifications);
-            fetchNotifications();
-        });
-    }, [socket]);
+    const { notifications, fetchNotifications } = useNotification();
 
     const handleAccept = async (e, matchId, notificationId) => {
         e.preventDefault();
