@@ -16,7 +16,6 @@ services:
             - WEAVIATE_PORT=8080
             - EMBEDDING_HOST=embedding
             - EMBEDDING_PORT=8000
-            - HUGGINGFACE_API_TOKEN=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
             - JWT_SECRET=1234567890abcdefg
             - EMAIL_HOST=smtp.gmail.com
             - EMAIL_PORT=587
@@ -87,7 +86,6 @@ services:
         ports:
             - "8000:8000"
         environment:
-            - HUGGINGFACE_API_TOKEN=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
         depends_on:
             weaviate:
                 condition: service_healthy
