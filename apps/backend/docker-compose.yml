@@ -12,6 +12,16 @@ services:
             - DATABASE_URL=mysql://root:123@db:3306/matchmaking_db
             - REDIS_HOST=redis
             - REDIS_PORT=6379
+            - WEAVIATE_HOST=weaviate
+            - WEAVIATE_PORT=8080
+            - EMBEDDING_HOST=embedding
+            - EMBEDDING_PORT=8000
+            - HUGGINGFACE_API_TOKEN=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
+            - JWT_SECRET=1234567890abcdefg
+            - EMAIL_HOST=smtp.gmail.com
+            - EMAIL_PORT=587
+            - EMAIL_USER=thongditno17@gmail.com
+            - EMAIL_PASS=ifpy fypx bech dymb
         volumes:
             - ./src:/app/src
             - ./uploads:/app/uploads
@@ -51,6 +61,36 @@ services:
             interval: 10s
             timeout: 5s
             retries: 5
+
+    weaviate:
+        image: semitechnologies/weaviate:1.24.1
+        ports:
+            - "8080:8080"
+        restart: always
+        environment:
+            QUERY_DEFAULTS_LIMIT: 25
+            AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+            PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
+            DEFAULT_VECTORIZER_MODULE: 'none'
+            ENABLE_MODULES: ''
+        volumes:
+            - weaviate-data:/var/lib/weaviate
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:8080/v1/.well-known/ready"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+
+    embedding:
+        build: .
+        command: node src/ai/embedServer.js
+        ports:
+            - "8000:8000"
+        environment:
+            - HUGGINGFACE_API_TOKEN=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
+        depends_on:
+            weaviate:
+                condition: service_healthy
 
 volumes:
     mysql-data:

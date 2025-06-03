@@ -38,7 +38,7 @@ export function AuthProvider({ children }) {
                     return;
                 }
                 if (shouldRedirect) {
-                    router.push("/");
+                    router.push("/discover");
                 }
             } catch {
                 saveAuth(undefined);

@@ -1,0 +1,44 @@
+{
+  "id": 1,
+  "username": "Kamron.Brakus",
+  "display_name": "Kamron Brakus",
+  "email": "Kamron_Brakus@yahoo.com",
+  "birthday": null,
+  "age": 33,
+  "status": "active",
+  "about_me": "Alienus amitto quis conatus vulpes socius ceno ademptio acies recusandae.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "198",
+  "location": "Lake Romanfort",
+  "zodiac": "Bảo Bình",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "",
+  "favorite_list": []
+}
