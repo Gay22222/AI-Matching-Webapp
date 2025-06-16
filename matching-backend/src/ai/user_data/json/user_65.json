@@ -1,0 +1,48 @@
+{
+  "id": 65,
+  "username": "Benton_Abshire",
+  "display_name": "Benton Abshire",
+  "email": "Benton.Abshire@yahoo.com",
+  "birthday": null,
+  "age": 35,
+  "status": "active",
+  "about_me": "Theologus vester dolorem sollicito sortitus ducimus caute talis aegrus modi.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "155",
+  "location": "New Lavada",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách",
+    "Yoga",
+    "Nhiếp ảnh"
+  ]
+}

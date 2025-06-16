@@ -1,0 +1,46 @@
+{
+  "id": 83,
+  "username": "Skye.Cruickshank",
+  "display_name": "Skye Cruickshank",
+  "email": "Skye_Cruickshank@gmail.com",
+  "birthday": null,
+  "age": 54,
+  "status": "active",
+  "about_me": "Cunabula clam aperiam vel copia tonsor coniuratio demum spiritus.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "197",
+  "location": "Loweborough",
+  "zodiac": "Cự Giải",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Mua sắm",
+  "favorite_list": [
+    "Mua sắm"
+  ]
+}

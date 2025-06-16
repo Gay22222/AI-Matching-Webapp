@@ -1,0 +1,48 @@
+{
+  "id": 15,
+  "username": "Brady.Hackett29",
+  "display_name": "Brady Hackett",
+  "email": "Brady_Hackett@gmail.com",
+  "birthday": null,
+  "age": 20,
+  "status": "active",
+  "about_me": "Laudantium tribuo appono tot velit valde agnosco.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "191",
+  "location": "Mission Viejo",
+  "zodiac": "Bò Cạp",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Mua sắm",
+    "Nghệ thuật"
+  ]
+}

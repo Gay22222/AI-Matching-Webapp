@@ -1,0 +1,47 @@
+{
+  "id": 47,
+  "username": "Emma_Stracke",
+  "display_name": "Emma Stracke",
+  "email": "Emma.Stracke81@gmail.com",
+  "birthday": null,
+  "age": 21,
+  "status": "active",
+  "about_me": "Arto cohaero tendo vobis argumentum.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "178",
+  "location": "West Elzaburgh",
+  "zodiac": "Song Ngư",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách",
+    "Nghệ thuật"
+  ]
+}

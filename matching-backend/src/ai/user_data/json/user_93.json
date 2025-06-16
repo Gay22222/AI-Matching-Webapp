@@ -1,0 +1,47 @@
+{
+  "id": 93,
+  "username": "Janiya.Johns",
+  "display_name": "Janiya Johns",
+  "email": "Janiya_Johns@gmail.com",
+  "birthday": null,
+  "age": 57,
+  "status": "active",
+  "about_me": "Abundans clam ver.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "156",
+  "location": "Schummville",
+  "zodiac": "Bò Cạp",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game",
+    "Phim ảnh"
+  ]
+}

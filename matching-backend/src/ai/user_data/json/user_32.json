@@ -1,0 +1,46 @@
+{
+  "id": 32,
+  "username": "Sheila.Ratke71",
+  "display_name": "Sheila Ratke",
+  "email": "Sheila.Ratke16@yahoo.com",
+  "birthday": null,
+  "age": 20,
+  "status": "active",
+  "about_me": "Tui curo adiuvo synagoga libero vae ars cupio.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "161",
+  "location": "Gusikowskiworth",
+  "zodiac": "Bạch Dương",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga"
+  ]
+}

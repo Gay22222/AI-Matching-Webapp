@@ -1,0 +1,48 @@
+{
+  "id": 21,
+  "username": "Kathryne.Welch74",
+  "display_name": "Kathryne Welch",
+  "email": "Kathryne_Welch@gmail.com",
+  "birthday": null,
+  "age": 35,
+  "status": "active",
+  "about_me": "Demulceo assumenda taedium adficio unde abscido molestiae.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "182",
+  "location": "Lake Kitty",
+  "zodiac": "Bò Cạp",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga",
+    "Cà phê",
+    "Chơi game"
+  ]
+}

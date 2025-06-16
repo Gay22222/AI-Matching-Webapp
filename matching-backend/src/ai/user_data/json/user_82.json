@@ -1,0 +1,46 @@
+{
+  "id": 82,
+  "username": "Alycia.Stark37",
+  "display_name": "Alycia Stark",
+  "email": "Alycia_Stark10@gmail.com",
+  "birthday": null,
+  "age": 56,
+  "status": "active",
+  "about_me": "Subnecto defungo concido.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "175",
+  "location": "Pittsburgh",
+  "zodiac": "Kim Ngưu",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 73,
+  "username": "Otilia.Mann",
+  "display_name": "Otilia Mann",
+  "email": "Otilia.Mann76@hotmail.com",
+  "birthday": null,
+  "age": 30,
+  "status": "active",
+  "about_me": "Verumtamen nesciunt delego sint vix ad.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "190",
+  "location": "East Freeman",
+  "zodiac": "Xử Nữ",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Phim ảnh",
+  "favorite_list": [
+    "Phim ảnh",
+    "Nghệ thuật",
+    "Yoga"
+  ]
+}

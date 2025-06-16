@@ -1,0 +1,46 @@
+{
+  "id": 62,
+  "username": "Gardner_Goldner47",
+  "display_name": "Gardner Goldner",
+  "email": "Gardner.Goldner75@gmail.com",
+  "birthday": null,
+  "age": 43,
+  "status": "active",
+  "about_me": "Cito toties deprimo statim tondeo utpote.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "164",
+  "location": "New Brody",
+  "zodiac": "Song Tử",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Nghệ thuật",
+  "favorite_list": [
+    "Nghệ thuật"
+  ]
+}

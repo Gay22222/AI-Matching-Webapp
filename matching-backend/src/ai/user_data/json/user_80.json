@@ -1,0 +1,47 @@
+{
+  "id": 80,
+  "username": "Dejah.Towne0",
+  "display_name": "Dejah Towne",
+  "email": "Dejah_Towne@hotmail.com",
+  "birthday": null,
+  "age": 26,
+  "status": "active",
+  "about_me": "Stipes blanditiis beatus comptus desparatus.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "200",
+  "location": "Fort Felix",
+  "zodiac": "Song Tử",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga",
+    "Du lịch"
+  ]
+}

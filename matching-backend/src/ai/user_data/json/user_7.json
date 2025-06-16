@@ -1,0 +1,47 @@
+{
+  "id": 7,
+  "username": "Jackie.Koelpin",
+  "display_name": "Jackie Koelpin",
+  "email": "Jackie.Koelpin13@yahoo.com",
+  "birthday": null,
+  "age": 45,
+  "status": "active",
+  "about_me": "Vestrum aer atavus veniam ad delicate absconditus calamitas adsum.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "166",
+  "location": "Tuscaloosa",
+  "zodiac": "Nhân Mã",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Phim ảnh",
+  "favorite_list": [
+    "Phim ảnh",
+    "Nhiếp ảnh"
+  ]
+}

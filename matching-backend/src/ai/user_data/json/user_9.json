@@ -1,0 +1,47 @@
+{
+  "id": 9,
+  "username": "Pearlie.Daugherty-Kuhlman",
+  "display_name": "Pearlie Daugherty-Kuhlman",
+  "email": "Pearlie.Daugherty-Kuhlman@gmail.com",
+  "birthday": null,
+  "age": 57,
+  "status": "active",
+  "about_me": "Cimentarius ut peccatus sublime caries.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "158",
+  "location": "Port Karianneboro",
+  "zodiac": "Sư Tử",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Nấu ăn",
+  "favorite_list": [
+    "Nấu ăn",
+    "Chơi game"
+  ]
+}

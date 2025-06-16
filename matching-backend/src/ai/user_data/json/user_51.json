@@ -1,0 +1,48 @@
+{
+  "id": 51,
+  "username": "Americo.Koepp",
+  "display_name": "Americo Koepp",
+  "email": "Americo_Koepp@yahoo.com",
+  "birthday": null,
+  "age": 47,
+  "status": "active",
+  "about_me": "Colligo allatus conqueror sit aequitas cinis hic avaritia tenuis amoveo.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "197",
+  "location": "New Adelaport",
+  "zodiac": "Bảo Bình",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Nấu ăn",
+  "favorite_list": [
+    "Nấu ăn",
+    "Đọc sách",
+    "Nhiếp ảnh"
+  ]
+}

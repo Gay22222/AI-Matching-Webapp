@@ -1,0 +1,46 @@
+{
+  "id": 3,
+  "username": "Rigoberto_Russel71",
+  "display_name": "Rigoberto Russel",
+  "email": "Rigoberto_Russel91@yahoo.com",
+  "birthday": null,
+  "age": 29,
+  "status": "active",
+  "about_me": "Quia repellat thorax tabernus cunabula.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "163",
+  "location": "Fort Reynafield",
+  "zodiac": "Song Tử",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Du lịch",
+  "favorite_list": [
+    "Du lịch"
+  ]
+}

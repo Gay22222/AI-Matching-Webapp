@@ -1,0 +1,46 @@
+{
+  "id": 30,
+  "username": "Lue_Rodriguez",
+  "display_name": "Lue Rodriguez",
+  "email": "Lue_Rodriguez@hotmail.com",
+  "birthday": null,
+  "age": 33,
+  "status": "active",
+  "about_me": "Subiungo conatus aeternus allatus vix laborum confero.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "189",
+  "location": "New Vergiechester",
+  "zodiac": "Song Tử",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game"
+  ]
+}

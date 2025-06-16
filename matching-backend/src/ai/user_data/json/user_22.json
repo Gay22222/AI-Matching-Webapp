@@ -1,0 +1,48 @@
+{
+  "id": 22,
+  "username": "Juliet_Kuvalis82",
+  "display_name": "Juliet Kuvalis",
+  "email": "Juliet_Kuvalis69@hotmail.com",
+  "birthday": null,
+  "age": 48,
+  "status": "active",
+  "about_me": "Apud tyrannus vitiosus solus praesentium nisi.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "170",
+  "location": "Boganberg",
+  "zodiac": "Ma Kết",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Nhiếp ảnh",
+  "favorite_list": [
+    "Nhiếp ảnh",
+    "Cà phê",
+    "Phim ảnh"
+  ]
+}

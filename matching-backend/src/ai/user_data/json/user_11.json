@@ -1,0 +1,47 @@
+{
+  "id": 11,
+  "username": "Maurice_Fisher",
+  "display_name": "Maurice Fisher",
+  "email": "Maurice.Fisher42@hotmail.com",
+  "birthday": null,
+  "age": 19,
+  "status": "active",
+  "about_me": "Adulescens carpo deprecator.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "191",
+  "location": "Savannah",
+  "zodiac": "Thiên Bình",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Chơi game"
+  ]
+}

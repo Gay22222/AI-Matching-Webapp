@@ -1,0 +1,46 @@
+{
+  "id": 42,
+  "username": "Nedra_Carroll",
+  "display_name": "Nedra Carroll",
+  "email": "Nedra.Carroll9@yahoo.com",
+  "birthday": null,
+  "age": 29,
+  "status": "active",
+  "about_me": "Caput trans sordeo aperio repellat architecto.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "170",
+  "location": "East Cydney",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Nhiếp ảnh",
+  "favorite_list": [
+    "Nhiếp ảnh"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": 99,
+  "username": "Vivienne_Rippin4",
+  "display_name": "Vivienne Rippin",
+  "email": "Vivienne.Rippin79@yahoo.com",
+  "birthday": null,
+  "age": 40,
+  "status": "active",
+  "about_me": "Surculus somniculosus explicabo comminor vehemens.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "175",
+  "location": "South Luisside",
+  "zodiac": "Ma Kết",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách",
+    "Mua sắm"
+  ]
+}

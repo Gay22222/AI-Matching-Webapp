@@ -1,0 +1,47 @@
+{
+  "id": 37,
+  "username": "Sofia_Hahn",
+  "display_name": "Sofia Hahn",
+  "email": "Sofia.Hahn@hotmail.com",
+  "birthday": null,
+  "age": 44,
+  "status": "active",
+  "about_me": "Minus argumentum porro facilis approbo tempora ultio.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "169",
+  "location": "Port Cynthia",
+  "zodiac": "Ma Kết",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga",
+    "Phim ảnh"
+  ]
+}

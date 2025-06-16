@@ -1,0 +1,44 @@
+{
+  "id": 1,
+  "username": "Leonie_Runolfsson28",
+  "display_name": "Leonie Runolfsson",
+  "email": "Leonie_Runolfsson@yahoo.com",
+  "birthday": null,
+  "age": 45,
+  "status": "active",
+  "about_me": "Gay222",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "189",
+  "location": "Kovacekchester",
+  "zodiac": "Bảo Bình",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "",
+  "favorite_list": []
+}

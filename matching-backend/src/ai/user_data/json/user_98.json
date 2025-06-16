@@ -1,0 +1,46 @@
+{
+  "id": 98,
+  "username": "Vilma_Vandervort",
+  "display_name": "Vilma Vandervort",
+  "email": "Vilma_Vandervort18@gmail.com",
+  "birthday": null,
+  "age": 22,
+  "status": "active",
+  "about_me": "Alveus ustilo teres totam arma corroboro cuppedia.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "193",
+  "location": "Mohammedshire",
+  "zodiac": "Xử Nữ",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 52,
+  "username": "Natasha.Schamberger60",
+  "display_name": "Natasha Schamberger",
+  "email": "Natasha.Schamberger84@yahoo.com",
+  "birthday": null,
+  "age": 49,
+  "status": "active",
+  "about_me": "Tardus depopulo spiculum dicta.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "193",
+  "location": "South Whittier",
+  "zodiac": "Thiên Bình",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Nhiếp ảnh",
+    "Mua sắm"
+  ]
+}

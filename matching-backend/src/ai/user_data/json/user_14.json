@@ -1,0 +1,47 @@
+{
+  "id": 14,
+  "username": "Astrid_Rohan21",
+  "display_name": "Astrid Rohan",
+  "email": "Astrid_Rohan0@hotmail.com",
+  "birthday": null,
+  "age": 47,
+  "status": "active",
+  "about_me": "Deludo modi amor supplanto nam.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "192",
+  "location": "Fort Ladarius",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách",
+    "Mua sắm"
+  ]
+}

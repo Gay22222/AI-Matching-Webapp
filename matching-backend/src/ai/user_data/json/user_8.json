@@ -1,0 +1,46 @@
+{
+  "id": 8,
+  "username": "Travis_Murazik58",
+  "display_name": "Travis Murazik",
+  "email": "Travis.Murazik@gmail.com",
+  "birthday": null,
+  "age": 53,
+  "status": "active",
+  "about_me": "Utroque vicissitudo tenetur delinquo distinctio assumenda tego spes vicissitudo.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "171",
+  "location": "East Renee",
+  "zodiac": "Song Tử",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Nghệ thuật",
+  "favorite_list": [
+    "Nghệ thuật"
+  ]
+}

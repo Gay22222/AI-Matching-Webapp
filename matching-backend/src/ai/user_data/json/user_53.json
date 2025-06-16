@@ -1,0 +1,47 @@
+{
+  "id": 53,
+  "username": "Jamir_Bogisich7",
+  "display_name": "Jamir Bogisich",
+  "email": "Jamir_Bogisich92@yahoo.com",
+  "birthday": null,
+  "age": 51,
+  "status": "active",
+  "about_me": "Vigilo sol defero audeo.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "164",
+  "location": "Welchville",
+  "zodiac": "Bảo Bình",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Cà phê",
+  "favorite_list": [
+    "Cà phê",
+    "Nấu ăn"
+  ]
+}

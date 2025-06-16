@@ -1,0 +1,47 @@
+{
+  "id": 69,
+  "username": "Lawson.Langosh93",
+  "display_name": "Lawson Langosh",
+  "email": "Lawson.Langosh@yahoo.com",
+  "birthday": null,
+  "age": 33,
+  "status": "active",
+  "about_me": "Delectatio viriliter cunabula vix cariosus abundans debitis succedo aperio ab.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "155",
+  "location": "Port Amos",
+  "zodiac": "Cự Giải",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Phim ảnh",
+  "favorite_list": [
+    "Phim ảnh",
+    "Yoga"
+  ]
+}

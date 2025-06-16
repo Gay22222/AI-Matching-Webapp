@@ -1,0 +1,48 @@
+{
+  "id": 13,
+  "username": "Francisco.Pfeffer",
+  "display_name": "Francisco Pfeffer",
+  "email": "Francisco.Pfeffer@hotmail.com",
+  "birthday": null,
+  "age": 33,
+  "status": "active",
+  "about_me": "Deporto cursim valeo cicuta uberrime terra sequi color repellendus accendo.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "172",
+  "location": "Daughertystead",
+  "zodiac": "Nhân Mã",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga",
+    "Cà phê",
+    "Nấu ăn"
+  ]
+}

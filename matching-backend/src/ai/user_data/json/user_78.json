@@ -1,0 +1,47 @@
+{
+  "id": 78,
+  "username": "Joan.Cole-Yost",
+  "display_name": "Joan Cole-Yost",
+  "email": "Joan.Cole-Yost@hotmail.com",
+  "birthday": null,
+  "age": 51,
+  "status": "active",
+  "about_me": "Eos cursim textilis arguo summopere accusantium dens.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "169",
+  "location": "Shieldscester",
+  "zodiac": "Bảo Bình",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Nấu ăn",
+  "favorite_list": [
+    "Nấu ăn",
+    "Đọc sách"
+  ]
+}

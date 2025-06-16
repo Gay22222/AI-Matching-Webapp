@@ -1,0 +1,47 @@
+{
+  "id": 61,
+  "username": "Lavon.Schinner43",
+  "display_name": "Lavon Schinner",
+  "email": "Lavon_Schinner34@hotmail.com",
+  "birthday": null,
+  "age": 39,
+  "status": "active",
+  "about_me": "Aegrotatio aro tenax abundans canonicus succurro volaticus spargo verbera tenuis.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "196",
+  "location": "Volkmanberg",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách",
+    "Thể thao"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": 2,
+  "username": "Loraine_Roberts36",
+  "display_name": "Loraine Roberts",
+  "email": "Loraine.Roberts52@gmail.com",
+  "birthday": null,
+  "age": 36,
+  "status": "active",
+  "about_me": "Somnus aeternus subvenio calco cohaero vereor est animus vigilo.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "167",
+  "location": "Germantown",
+  "zodiac": "Xử Nữ",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Nhiếp ảnh",
+  "favorite_list": [
+    "Nhiếp ảnh",
+    "Mua sắm"
+  ]
+}

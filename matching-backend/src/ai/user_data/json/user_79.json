@@ -1,0 +1,48 @@
+{
+  "id": 79,
+  "username": "Juana_Bartoletti71",
+  "display_name": "Juana Bartoletti",
+  "email": "Juana.Bartoletti@gmail.com",
+  "birthday": null,
+  "age": 28,
+  "status": "active",
+  "about_me": "Inventore ustilo cultellus deduco accusator.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "180",
+  "location": "Lake Estrellacester",
+  "zodiac": "Bảo Bình",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Thể thao",
+  "favorite_list": [
+    "Thể thao",
+    "Cà phê",
+    "Chơi game"
+  ]
+}

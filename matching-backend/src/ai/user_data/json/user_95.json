@@ -1,0 +1,47 @@
+{
+  "id": 95,
+  "username": "Agnes_Schuster4",
+  "display_name": "Agnes Schuster",
+  "email": "Agnes_Schuster38@yahoo.com",
+  "birthday": null,
+  "age": 57,
+  "status": "active",
+  "about_me": "Laudantium conturbo ancilla.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "158",
+  "location": "Port Kennithview",
+  "zodiac": "Song Ngư",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga",
+    "Cà phê"
+  ]
+}

@@ -1,0 +1,4885 @@
+# ==================================================
+# Path: D:\Final\matching-backend
+# Detected tech: angular, docker, javascript, typescript
+# ==================================================
+
+## DIRECTORY STRUCTURE
+```
+matching-backend/
+├── node_modules/
+├── src/
+│   ├── ai/
+│   │   ├── data/
+│   │   │   ├── convertUserJsonToText.js
+│   │   │   └── generateUserProfileJson.js
+│   │   ├── embedding/
+│   │   │   └── embedUserText.js
+│   │   ├── pipeline/
+│   │   │   └── processUserEmbedding.js
+│   │   ├── user_data/
+│   │   │   ├── json/
+│   │   │   │   ├── user_1.json
+│   │   │   │   ├── user_10.json
+│   │   │   │   ├── user_100.json
+│   │   │   │   ├── user_11.json
+│   │   │   │   ├── user_12.json
+│   │   │   │   ├── user_13.json
+│   │   │   │   ├── user_14.json
+│   │   │   │   ├── user_15.json
+│   │   │   │   ├── user_16.json
+│   │   │   │   ├── user_17.json
+│   │   │   │   ├── user_18.json
+│   │   │   │   ├── user_19.json
+│   │   │   │   ├── user_2.json
+│   │   │   │   ├── user_20.json
+│   │   │   │   ├── user_21.json
+│   │   │   │   ├── user_22.json
+│   │   │   │   ├── user_23.json
+│   │   │   │   ├── user_24.json
+│   │   │   │   ├── user_25.json
+│   │   │   │   ├── user_26.json
+│   │   │   │   ├── user_27.json
+│   │   │   │   ├── user_28.json
+│   │   │   │   ├── user_29.json
+│   │   │   │   ├── user_3.json
+│   │   │   │   ├── user_30.json
+│   │   │   │   ├── user_31.json
+│   │   │   │   ├── user_32.json
+│   │   │   │   ├── user_33.json
+│   │   │   │   ├── user_34.json
+│   │   │   │   ├── user_35.json
+│   │   │   │   ├── user_36.json
+│   │   │   │   ├── user_37.json
+│   │   │   │   ├── user_38.json
+│   │   │   │   ├── user_39.json
+│   │   │   │   ├── user_4.json
+│   │   │   │   ├── user_40.json
+│   │   │   │   ├── user_41.json
+│   │   │   │   ├── user_42.json
+│   │   │   │   ├── user_43.json
+│   │   │   │   ├── user_44.json
+│   │   │   │   ├── user_45.json
+│   │   │   │   ├── user_46.json
+│   │   │   │   ├── user_47.json
+│   │   │   │   ├── user_48.json
+│   │   │   │   ├── user_49.json
+│   │   │   │   ├── user_5.json
+│   │   │   │   ├── user_50.json
+│   │   │   │   ├── user_51.json
+│   │   │   │   ├── user_52.json
+│   │   │   │   ├── user_53.json
+│   │   │   │   ├── user_54.json
+│   │   │   │   ├── user_55.json
+│   │   │   │   ├── user_56.json
+│   │   │   │   ├── user_57.json
+│   │   │   │   ├── user_58.json
+│   │   │   │   ├── user_59.json
+│   │   │   │   ├── user_6.json
+│   │   │   │   ├── user_60.json
+│   │   │   │   ├── user_61.json
+│   │   │   │   ├── user_62.json
+│   │   │   │   ├── user_63.json
+│   │   │   │   ├── user_64.json
+│   │   │   │   ├── user_65.json
+│   │   │   │   ├── user_66.json
+│   │   │   │   ├── user_67.json
+│   │   │   │   ├── user_68.json
+│   │   │   │   ├── user_69.json
+│   │   │   │   ├── user_7.json
+│   │   │   │   ├── user_70.json
+│   │   │   │   ├── user_71.json
+│   │   │   │   ├── user_72.json
+│   │   │   │   ├── user_73.json
+│   │   │   │   ├── user_74.json
+│   │   │   │   ├── user_75.json
+│   │   │   │   ├── user_76.json
+│   │   │   │   ├── user_77.json
+│   │   │   │   ├── user_78.json
+│   │   │   │   ├── user_79.json
+│   │   │   │   ├── user_8.json
+│   │   │   │   ├── user_80.json
+│   │   │   │   ├── user_81.json
+│   │   │   │   ├── user_82.json
+│   │   │   │   ├── user_83.json
+│   │   │   │   ├── user_84.json
+│   │   │   │   ├── user_85.json
+│   │   │   │   ├── user_86.json
+│   │   │   │   ├── user_87.json
+│   │   │   │   ├── user_88.json
+│   │   │   │   ├── user_89.json
+│   │   │   │   ├── user_9.json
+│   │   │   │   ├── user_90.json
+│   │   │   │   ├── user_91.json
+│   │   │   │   ├── user_92.json
+│   │   │   │   ├── user_93.json
+│   │   │   │   ├── user_94.json
+│   │   │   │   ├── user_95.json
+│   │   │   │   ├── user_96.json
+│   │   │   │   ├── user_97.json
+│   │   │   │   ├── user_98.json
+│   │   │   │   └── user_99.json
+│   │   │   └── text/
+│   │   │       ├── user_1.txt
+│   │   │       ├── user_10.txt
+│   │   │       ├── user_100.txt
+│   │   │       ├── user_11.txt
+│   │   │       ├── user_12.txt
+│   │   │       ├── user_13.txt
+│   │   │       ├── user_14.txt
+│   │   │       ├── user_15.txt
+│   │   │       ├── user_16.txt
+│   │   │       ├── user_17.txt
+│   │   │       ├── user_18.txt
+│   │   │       ├── user_19.txt
+│   │   │       ├── user_2.txt
+│   │   │       ├── user_20.txt
+│   │   │       ├── user_21.txt
+│   │   │       ├── user_22.txt
+│   │   │       ├── user_23.txt
+│   │   │       ├── user_24.txt
+│   │   │       ├── user_25.txt
+│   │   │       ├── user_26.txt
+│   │   │       ├── user_27.txt
+│   │   │       ├── user_28.txt
+│   │   │       ├── user_29.txt
+│   │   │       ├── user_3.txt
+│   │   │       ├── user_30.txt
+│   │   │       ├── user_31.txt
+│   │   │       ├── user_32.txt
+│   │   │       ├── user_33.txt
+│   │   │       ├── user_34.txt
+│   │   │       ├── user_35.txt
+│   │   │       ├── user_36.txt
+│   │   │       ├── user_37.txt
+│   │   │       ├── user_38.txt
+│   │   │       ├── user_39.txt
+│   │   │       ├── user_4.txt
+│   │   │       ├── user_40.txt
+│   │   │       ├── user_41.txt
+│   │   │       ├── user_42.txt
+│   │   │       ├── user_43.txt
+│   │   │       ├── user_44.txt
+│   │   │       ├── user_45.txt
+│   │   │       ├── user_46.txt
+│   │   │       ├── user_47.txt
+│   │   │       ├── user_48.txt
+│   │   │       ├── user_49.txt
+│   │   │       ├── user_5.txt
+│   │   │       ├── user_50.txt
+│   │   │       ├── user_51.txt
+│   │   │       ├── user_52.txt
+│   │   │       ├── user_53.txt
+│   │   │       ├── user_54.txt
+│   │   │       ├── user_55.txt
+│   │   │       ├── user_56.txt
+│   │   │       ├── user_57.txt
+│   │   │       ├── user_58.txt
+│   │   │       ├── user_59.txt
+│   │   │       ├── user_6.txt
+│   │   │       ├── user_60.txt
+│   │   │       ├── user_61.txt
+│   │   │       ├── user_62.txt
+│   │   │       ├── user_63.txt
+│   │   │       ├── user_64.txt
+│   │   │       ├── user_65.txt
+│   │   │       ├── user_66.txt
+│   │   │       ├── user_67.txt
+│   │   │       ├── user_68.txt
+│   │   │       ├── user_69.txt
+│   │   │       ├── user_7.txt
+│   │   │       ├── user_70.txt
+│   │   │       ├── user_71.txt
+│   │   │       ├── user_72.txt
+│   │   │       ├── user_73.txt
+│   │   │       ├── user_74.txt
+│   │   │       ├── user_75.txt
+│   │   │       ├── user_76.txt
+│   │   │       ├── user_77.txt
+│   │   │       ├── user_78.txt
+│   │   │       ├── user_79.txt
+│   │   │       ├── user_8.txt
+│   │   │       ├── user_80.txt
+│   │   │       ├── user_81.txt
+│   │   │       ├── user_82.txt
+│   │   │       ├── user_83.txt
+│   │   │       ├── user_84.txt
+│   │   │       ├── user_85.txt
+│   │   │       ├── user_86.txt
+│   │   │       ├── user_87.txt
+│   │   │       ├── user_88.txt
+│   │   │       ├── user_89.txt
+│   │   │       ├── user_9.txt
+│   │   │       ├── user_90.txt
+│   │   │       ├── user_91.txt
+│   │   │       ├── user_92.txt
+│   │   │       ├── user_93.txt
+│   │   │       ├── user_94.txt
+│   │   │       ├── user_95.txt
+│   │   │       ├── user_96.txt
+│   │   │       ├── user_97.txt
+│   │   │       ├── user_98.txt
+│   │   │       └── user_99.txt
+│   │   ├── weaviate/
+│   │   │   ├── searchSimilarUsers.js
+│   │   │   └── storeUserVector.js
+│   │   └── embedServer.js
+│   ├── config/
+│   ├── controllers/
+│   │   ├── ai.controller.js
+│   │   ├── auth.controller.js
+│   │   ├── match.controller.js
+│   │   ├── message.controller.js
+│   │   ├── metadata.controller.js
+│   │   ├── notification.controller.js
+│   │   ├── reports.controller.js
+│   │   ├── upload.controller.js
+│   │   └── user.controller.js
+│   ├── middleware/
+│   │   ├── auth.middleware.js
+│   │   ├── match.middleware.js
+│   │   └── message.middleware.js
+│   ├── prisma/
+│   │   ├── migrations/
+│   │   │   ├── 20250501084235_init/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250501090858_add_sexual_orientation_relation/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250523065215_add_is_full_information_to_users/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250526092807_add_is_accept_to_matches/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250527052153_add_notification_in_db/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250527061432_add_liked_in_notification_type/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250527062030_update_is_accept_into_is_accept/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250527093353_add_is_hidden_to_notification_table/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250530084654_add_recommendation/
+│   │   │   │   └── migration.sql
+│   │   │   ├── 20250603100646_dev/
+│   │   │   │   └── migration.sql
+│   │   │   └── migration_lock.toml
+│   │   ├── seeds/
+│   │   │   ├── index.js
+│   │   │   ├── seedCareer.js
+│   │   │   ├── seedCharacter.js
+│   │   │   ├── seedCommunicateStyle.js
+│   │   │   ├── seedDiet.js
+│   │   │   ├── seedEducation.js
+│   │   │   ├── seedFavorite.js
+│   │   │   ├── seedFutureFamily.js
+│   │   │   ├── seedLanguages.js
+│   │   │   ├── seedLoveLanguage.js
+│   │   │   ├── seedPet.js
+│   │   │   ├── seedReligions.js
+│   │   │   ├── seedSNU.js
+│   │   │   ├── seedSearchingFor.js
+│   │   │   ├── seedSexualOrientation.js
+│   │   │   ├── seedSleep.js
+│   │   │   ├── seedUser.js
+│   │   │   └── seedZodiacs.js
+│   │   ├── client.js
+│   │   └── schema.prisma
+│   ├── repository/
+│   │   ├── match.repository.js
+│   │   ├── message.repository.js
+│   │   ├── metadata.repository.js
+│   │   ├── notification.repository.js
+│   │   └── user.repository.js
+│   ├── routes/
+│   │   ├── ai.routes.js
+│   │   ├── auth.routes.js
+│   │   ├── index.js
+│   │   ├── match.routes.js
+│   │   ├── message.routes.js
+│   │   ├── metadata.routes.js
+│   │   ├── notifications.routes.js
+│   │   ├── reports.routes.js
+│   │   ├── upload.routes.js
+│   │   └── user.routes.js
+│   ├── services/
+│   │   ├── ai.service.js
+│   │   ├── auth.service.js
+│   │   ├── email.service.js
+│   │   ├── match.service.js
+│   │   ├── message.service.js
+│   │   ├── metadata.service.js
+│   │   ├── notification.service.js
+│   │   ├── reports.service.js
+│   │   └── user.service.js
+│   ├── sockets/
+│   │   ├── messages.socket.js
+│   │   └── notifications.socket.js
+│   ├── utils/
+│   │   ├── auth.js
+│   │   ├── logger.js
+│   │   ├── message.utils.js
+│   │   ├── notification.utils.js
+│   │   ├── otpGenerator.js
+│   │   ├── scheduler.js
+│   │   ├── socket.js
+│   │   ├── socketHelpers.js
+│   │   ├── upload.js
+│   │   └── user.utils.js
+│   ├── app.js
+│   └── server.js
+├── uploads/
+│   ├── 1/
+│   │   └── images/
+│   │       ├── image-1750058554021-642056101.png
+│   │       ├── image-1750060813872-829719265.png
+│   │       ├── image-1750060957880-340516242.png
+│   │       └── image-1750060965353-949313335.png
+│   ├── 2/
+│   │   └── images/
+│   └── 3/
+│       └── images/
+├── .dockerignore
+├── .env
+├── .nodemonrc
+├── Dockerfile
+├── Dockerfile.ai
+├── docker-compose.yml
+├── package-lock.json
+├── package.json
+├── pnpm-lock.yaml
+└── readme.md
+```
+
+## FILE CONTENTS
+
+### src\app.js
+```js
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import bodyParser from 'body-parser';
+import compression from 'compression';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import apiRoutes from './routes/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+
+// Middleware
+app.use(helmet());
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+    exposedHeaders: ['Content-Type'],
+}));
+app.use(compression());
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
+// Log tất cả request
+app.use((req, res, next) => {
+    console.log(`Incoming request: ${req.method} ${req.url}`, {
+        headers: req.headers,
+        query: req.query,
+        body: req.body,
+    });
+    next();
+});
+
+// Static files
+const uploadsPath = path.join(__dirname, "../Uploads");
+console.log(`Serving static files from: ${uploadsPath}`);
+app.use("/uploads", express.static(uploadsPath, {
+    setHeaders: (res) => {
+        res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+        res.set('Access-Control-Allow-Methods', 'GET');
+        res.set('Cache-Control', 'public, max-age=31557600'); // Cache 1 năm
+    }
+}));
+
+// Routes
+app.use('/api', apiRoutes);
+
+// Xử lý lỗi 404
+app.use((req, res, next) => {
+    console.log(`404 Not Found: ${req.method} ${req.url}`);
+    res.status(404).json({
+        statusCode: 404,
+        message: `Cannot ${req.method} ${req.url}`,
+    });
+});
+
+// Xử lý lỗi server
+app.use((err, req, res, next) => {
+    console.error("Server error:", {
+        message: err.message,
+        stack: err.stack,
+        url: req.url,
+    });
+    res.status(500).json({
+        statusCode: 500,
+        message: "Internal server error",
+    });
+});
+
+export default app;
+```
+
+### src\server.js
+```js
+import dotenv from 'dotenv';
+import path from 'path';
+import app from './app.js';
+import { createServer } from 'http';
+import { Server } from 'socket.io';
+import { createAdapter } from '@socket.io/redis-adapter';
+import Redis from 'ioredis';
+import setupMessageSocket from './sockets/messages.socket.js';
+import setupNotificationSocket from './sockets/notifications.socket.js';
+import { setIO } from './utils/socket.js';
+import { connectPrisma } from './prisma/client.js';
+import logger from './utils/logger.js';
+import { startRecommendationCron } from './utils/scheduler.js';
+
+// Load .env từ thư mục gốc
+dotenv.config({ path: path.resolve('.env') });
+
+const PORT = process.env.PORT || 3001;
+await connectPrisma();
+
+const server = createServer(app);
+
+// Khởi tạo WebSocket server
+const io = new Server(server, {
+    cors: {
+        origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+        methods: ['GET', 'POST']
+    }
+});
+const pubClient = new Redis({ host: process.env.REDIS_HOST || 'localhost', port: process.env.REDIS_PORT || 6379 });
+const subClient = pubClient.duplicate();
+io.adapter(createAdapter(pubClient, subClient));
+setIO(io);
+
+// Lưu danh sách users đang kết nối
+const connectedUsers = new Map();
+
+function getUsers() {
+    return Array.from(connectedUsers.values());
+}
+
+// WebSocket
+io.on('connection', (socket) => {
+    socket.on('me', (data) => {
+        socket.removeAllListeners('send-message');
+        const user = {
+            socket_id: socket.id,
+            id: data?.id,
+            name: data?.name
+        };
+        connectedUsers.set(socket.id, user); // Lưu user vào Map
+        logger.info({ user }, 'User connected');
+        setupMessageSocket(io, socket, user, connectedUsers); // Truyền connectedUsers
+        setupNotificationSocket(io, socket, user, getUsers); // Truyền getUsers
+    });
+
+    socket.on('disconnect', () => {
+        connectedUsers.delete(socket.id); // Xóa user khi ngắt kết nối
+        logger.info(`Socket ${socket.id} disconnected`);
+    });
+    socket.on('logout', () => {
+        connectedUsers.delete(socket.id); // Xóa user khi logout
+        logger.info(`Socket ${socket.id} logged out`);
+    });
+});
+
+startRecommendationCron();
+
+// Chạy server
+server.listen(PORT, () => {
+    logger.info(`Backend running on http://localhost:${PORT}`);
+});
+```
+
+### src\ai\embedServer.js
+```js
+import express from 'express';
+import { pipeline } from '@xenova/transformers';
+import Redis from 'ioredis';
+import logger from '../utils/logger.js';
+import dotenv from 'dotenv';
+import path from 'path';
+
+// Load .env file từ thư mục gốc
+dotenv.config({ path: path.resolve('.env') });
+
+const app = express();
+app.use(express.json());
+
+// Cấu hình Redis client với biến môi trường
+const redis = new Redis({
+  host: process.env.REDIS_HOST || 'localhost',
+  port: parseInt(process.env.REDIS_PORT) || 6379,
+  retryStrategy: times => Math.min(times * 100, 3000), // Retry kết nối
+});
+
+// Xử lý lỗi Redis
+redis.on('error', (err) => {
+  logger.error({ error: err.message, stack: err.stack }, 'Redis connection error');
+  // Không thoát ứng dụng, cho phép chạy mà không cần Redis
+});
+
+// Kiểm tra kết nối Redis
+redis.on('connect', () => {
+  logger.info('Connected to Redis');
+});
+
+let model;
+try {
+  model = await pipeline('feature-extraction', 'Xenova/paraphrase-multilingual-MiniLM-L12-v2');
+  logger.info('Model loaded successfully');
+} catch (error) {
+  logger.error({ error, stack: error.stack }, 'Failed to load transformer model');
+  process.exit(1);
+}
+
+app.post('/embed', async (req, res) => {
+  try {
+    const { texts } = req.body;
+    if (!texts || !Array.isArray(texts)) {
+      logger.warn('Invalid request: texts must be an array');
+      return res.status(400).json({ error: 'texts must be an array' });
+    }
+    const embeddings = await Promise.all(
+      texts.map(async (text, index) => {
+        const cacheKey = `embed:${text}`;
+        try {
+          const cached = await redis.get(cacheKey);
+          if (cached) {
+            logger.debug(`Cache hit for text ${index + 1}`);
+            return JSON.parse(cached);
+          }
+        } catch (err) {
+          logger.warn({ error: err.message }, `Redis cache get error for text ${index + 1}`);
+        }
+        logger.info(`Generating embedding for text ${index + 1}`);
+        const output = await model(text, { pooling: 'mean', normalize: true });
+        const vector = Array.from(output.data);
+        if (!Array.isArray(vector) || !vector.every(num => typeof num === 'number')) {
+          throw new Error(`Invalid vector format for text ${index + 1}`);
+        }
+        try {
+          await redis.setex(cacheKey, 86400, JSON.stringify(vector)); // Cache 24h
+        } catch (err) {
+          logger.warn({ error: err.message }, `Redis cache set error for text ${index + 1}`);
+        }
+        return vector;
+      })
+    );
+    res.json({ vectors: embeddings });
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, 'Error generating embeddings');
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+const PORT = process.env.EMBEDDING_PORT || 8000;
+app.listen(PORT, () => logger.info(`Embedding server running on http://localhost:${PORT}`));
+```
+
+### src\ai\data\convertUserJsonToText.js
+```js
+import fs from 'fs';
+import path from 'path';
+import url from 'url';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
+function convertUserJsonToText(json) {
+  const text = `
+Tôi là ${json.display_name}, ${json.age} tuổi.
+Tôi đang tìm kiếm ${json.searching_for}, thuộc cung hoàng đạo ${json.zodiac}.
+Tôi ${json.drink ? 'có' : 'không'} uống rượu, ${json.smoke ? 'có' : 'không'} hút thuốc, và ${json.train ? 'có' : 'không'} tập thể thao.
+Tôi thích: ${json.favorite_list.join(', ')}.
+Tính cách: ${json.character_list.join(', ')}.
+Phong cách giao tiếp: ${json.communicate_style_list.join(', ')}.
+Ngôn ngữ yêu thương: ${json.love_language_list.join(', ')}.
+Thú cưng yêu thích: ${json.pet_list.join(', ')}.
+Chế độ ăn uống: ${json.diet}, giấc ngủ: ${json.sleep}, phong cách dùng mạng xã hội: ${json.snu}.
+Kỳ vọng tương lai về gia đình: ${json.future_family}.
+Giới thiệu thêm: ${json.about_me}
+`.trim();
+
+  const dir = path.join(__dirname, '../user_data/text'); // Thay đổi đường dẫn
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); // Tạo thư mục nếu chưa tồn tại
+  const filePath = path.join(dir, `user_${json.id}.txt`);
+  fs.writeFileSync(filePath, text, 'utf-8');
+
+  return text;
+}
+
+export default convertUserJsonToText;
+```
+
+### src\ai\data\generateUserProfileJson.js
+```js
+import fs from 'fs';
+import path from 'path';
+import url from 'url';
+import prisma from '../../prisma/client.js';
+import logger from '../../utils/logger.js';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
+async function getUserWithProfile(userId) {
+  try {
+    return await prisma.users.findUnique({
+      where: { id: userId },
+      include: {
+        Bio: {
+          include: {
+            main_inf: { include: { Language: true, Education: true, Religion: true, Career: true } },
+            Base_inf: {
+              include: {
+                Zodiac: true,
+                Character: true,
+                Communicate_style: true,
+                Love_language: true,
+                FutureFamily: true,
+                Sexual_orientation: true
+              }
+            },
+            Lifestyle: {
+              include: {
+                Diet: true,
+                Sleep: true,
+                SNU: true,
+                Pet: true
+              }
+            },
+            Searchingfor: true
+          }
+        },
+        user_favorites: {
+          include: {
+            favorite: true
+          }
+        }
+      }
+    });
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, `Error fetching user profile for userId ${userId}`);
+    throw error;
+  }
+}
+
+function mapUserToJson(user) {
+  const bio = user.Bio || {};
+  const main = bio.main_inf || {};
+  const base = bio.Base_inf || {};
+  const life = bio.Lifestyle || {};
+
+  const favorites = user.user_favorites?.map(fav => fav.favorite.name) || [];
+
+  return {
+    id: user.id,
+    username: user.username,
+    display_name: user.display_name,
+    email: user.email,
+    birthday: user.birthday,
+    age: bio.age,
+    status: bio.status,
+    about_me: bio.about_me,
+    searching_for: bio.Searchingfor?.name,
+    sexual_orientation: base.Sexual_orientation?.name,
+    language: main.Language?.name,
+    education: main.Education?.name,
+    religion: main.Religion?.name,
+    career: main.Career?.name,
+    height: main.height,
+    location: main.location,
+    zodiac: base.Zodiac?.name,
+    character: base.Character?.name,
+    character_list: [base.Character?.name].filter(Boolean),
+    communicate_style: base.Communicate_style?.name,
+    communicate_style_list: [base.Communicate_style?.name].filter(Boolean),
+    love_language: base.Love_language?.name,
+    love_language_list: [base.Love_language?.name].filter(Boolean),
+    future_family: base.FutureFamily?.name,
+    drink: life.drink,
+    smoke: life.smoke,
+    train: life.train,
+    diet: life.Diet?.name,
+    sleep: life.Sleep?.name,
+    snu: life.SNU?.name,
+    pet: life.Pet?.name,
+    pet_list: [life.Pet?.name].filter(Boolean),
+    favorite: favorites[0] || '',
+    favorite_list: favorites
+  };
+}
+
+function saveUserJsonToFile(json) {
+  const dir = path.join(__dirname, '../user_data/json');
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const filePath = path.join(dir, `user_${json.id}.json`);
+  fs.writeFileSync(filePath, JSON.stringify(json, null, 2), 'utf-8');
+  logger.info(`Saved JSON: ${filePath}`);
+}
+
+async function generateUserProfileJson(userId) {
+  try {
+    const user = await getUserWithProfile(userId);
+    if (!user || !user.Bio) {
+      logger.warn(`User ID ${userId} has incomplete profile`);
+      return null;
+    }
+    const userJson = mapUserToJson(user);
+    saveUserJsonToFile(userJson);
+    return userJson;
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, `Error generating profile for userId ${userId}`);
+    return null;
+  }
+}
+
+export default generateUserProfileJson;
+```
+
+### src\ai\embedding\embedUserText.js
+```js
+import fs from 'fs';
+import path from 'path';
+import url from 'url';
+import axios from 'axios';
+import pLimit from 'p-limit';
+import logger from '../../utils/logger.js';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+const TEXT_DIR = path.join(__dirname, '../user_data/text');
+const EMBED_DIR = path.join(__dirname, '../user_data/embed');
+const limit = pLimit(5);
+
+async function embedUserText(text) {
+  try {
+    if (!text || typeof text !== 'string') {
+      logger.warn('Invalid input: text must be a non-empty string');
+      throw new Error('Invalid input: text must be a non-empty string');
+    }
+
+    const embedHost = process.env.EMBEDDING_HOST || 'embedding';
+    const embedPort = process.env.EMBEDDING_PORT || '8000';
+    const embedUrl = `http://${embedHost}:${embedPort}/embed`;
+
+    logger.info(`Calling embed server at ${embedUrl}`);
+    const response = await axios.post(embedUrl, { texts: [text.trim()] }, {
+      timeout: 30000,
+      headers: {
+        'Content-Type': 'application/json',
+        ...(process.env.HUGGINGFACE_API_TOKEN && {
+          'Authorization': `Bearer ${process.env.HUGGINGFACE_API_TOKEN}`
+        })
+      }
+    });
+
+    if (!response.data.vectors || !Array.isArray(response.data.vectors) || response.data.vectors.length === 0) {
+      logger.warn('Invalid embedding response');
+      throw new Error('Invalid embedding response');
+    }
+
+    let vector = response.data.vectors[0];
+    if (vector && typeof vector === 'object' && !Array.isArray(vector)) {
+      vector = Object.keys(vector).sort((a, b) => parseInt(a) - parseInt(b)).map(key => Number(vector[key]));
+    }
+
+    if (!Array.isArray(vector) || vector.length === 0 || !vector.every(num => typeof num === 'number' && !isNaN(num))) {
+      logger.warn('Invalid vector format');
+      throw new Error('Invalid vector format');
+    }
+
+    logger.debug(`Vector validated, length: ${vector.length}`);
+    return vector;
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, 'Error embedding text');
+    throw error;
+  }
+}
+
+async function embedUserTexts(batchSize = 10) {
+  try {
+    if (!fs.existsSync(EMBED_DIR)) fs.mkdirSync(EMBED_DIR, { recursive: true });
+    const files = fs.readdirSync(TEXT_DIR).filter(f => f.endsWith('.txt'));
+    logger.info(`Found ${files.length} text files to embed`);
+
+    for (let i = 0; i < files.length; i += batchSize) {
+      const batch = files.slice(i, i + batchSize);
+      logger.info(`Processing batch ${i / batchSize + 1} with ${batch.length} files`);
+
+      await Promise.all(
+        batch.map(file =>
+          limit(async () => {
+            const text = fs.readFileSync(path.join(TEXT_DIR, file), 'utf8');
+            const userId = file.match(/\d+/)?.[0];
+            if (!userId || !text) {
+              logger.warn(`Skipping file ${file}: invalid userId or empty text`);
+              return;
+            }
+            try {
+              const vector = await embedUserText(text);
+              const outputPath = path.join(EMBED_DIR, `user_${userId}.json`);
+              fs.writeFileSync(outputPath, JSON.stringify({ id: userId, embedding: vector }, null, 2));
+              logger.info(`Embedded and saved: user_${userId}.json`);
+            } catch (err) {
+              logger.error({ err }, `Error embedding ${file}`);
+            }
+          })
+        )
+      );
+    }
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, 'Error in embedUserTexts');
+  }
+}
+
+export default embedUserText;
+```
+
+### src\ai\pipeline\processUserEmbedding.js
+```js
+import generateUserProfileJson from '../data/generateUserProfileJson.js';
+import convertUserJsonToText from '../data/convertUserJsonToText.js'; 
+import embedUserText from '../embedding/embedUserText.js';
+import { storeUserVector } from '../weaviate/storeUserVector.js';
+import logger from '../../utils/logger.js';
+
+export default async function processUserEmbedding(userId) {
+  try {
+    logger.info(`Processing embedding for user ${userId}`);
+    
+    // Tạo JSON profile
+    const userJson = await generateUserProfileJson(userId);
+    if (!userJson) {
+      throw new Error(`Failed to generate JSON for user ${userId}`);
+    }
+    
+    // Chuyển JSON thành text
+    const text = await convertUserJsonToText(userJson);
+    
+    // Tạo embedding
+    const vector = await embedUserText(text);
+    
+    // Lưu vector vào Weaviate
+    const { userId: storedId, uuid } = await storeUserVector(userId, vector, text);
+    
+    logger.info(`Embedding processed for user ${userId}`);
+    return { userId: storedId, uuid };
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, `Error processing embedding for user ${userId}`);
+    throw error;
+  }
+}
+```
+
+### src\ai\weaviate\searchSimilarUsers.js
+```js
+import weaviate from 'weaviate-ts-client';
+import retry from 'async-retry';
+import logger from '../../utils/logger.js';
+
+const client = weaviate.client({
+    scheme: 'http',
+    host: process.env.WEAVIATE_HOST || 'localhost:8080'
+});
+
+async function checkWeaviateConnection() {
+    try {
+        await client.misc.metaGetter().do();
+        logger.info('Weaviate connection verified');
+        return true;
+    } catch (error) {
+        logger.error({ error, stack: error.stack }, 'Failed to connect to Weaviate');
+        return false;
+    }
+}
+
+async function searchTopKUsers(vector, k = 20, excludeUserId = null) {
+    try {
+        if (!vector || !Array.isArray(vector) || !vector.every(num => typeof num === 'number')) {
+            logger.warn('Invalid vector format');
+            throw new Error('Invalid vector: must be a non-empty array of numbers');
+        }
+
+        // Kiểm tra kết nối Weaviate
+        const isConnected = await checkWeaviateConnection();
+        if (!isConnected) {
+            throw new Error('Weaviate is not available');
+        }
+
+        logger.info(`Searching top ${k} similar users`);
+        const response = await retry(
+            async () => {
+                let query = client.graphql
+                    .get()
+                    .withClassName('UserProfile')
+                    .withNearVector({ vector, distance: 0.7 })
+                    .withLimit(k)
+                    .withFields('userId _additional { certainty distance }');
+
+                if (excludeUserId) {
+                    query = query.withWhere({
+                        operator: 'NotEqual',
+                        path: ['userId'],
+                        valueInt: parseInt(excludeUserId)
+                    });
+                }
+
+                return await query.do();
+            },
+            { retries: 5, factor: 2, minTimeout: 1000, maxTimeout: 5000 }
+        );
+        const results = response.data.Get.UserProfile || [];
+        logger.info(`Found ${results.length} similar users`);
+
+        const uniqueResults = [];
+        const seenUserIds = new Set();
+        for (const item of results) {
+            const userId = parseInt(item.userId);
+            if (!seenUserIds.has(userId)) {
+                uniqueResults.push({
+                    userId,
+                    _additional: item._additional
+                });
+                seenUserIds.add(userId);
+            }
+        }
+        logger.info(`Deduplicated to ${uniqueResults.length} unique users`);
+        return uniqueResults;
+    } catch (error) {
+        logger.error({ error, stack: error.stack }, 'Failed to search top-k in Weaviate');
+        return [];
+    }
+}
+
+export default searchTopKUsers;
+```
+
+### src\ai\weaviate\storeUserVector.js
+```js
+import weaviate from 'weaviate-ts-client';
+import logger from '../../utils/logger.js';
+
+const client = weaviate.client({
+  scheme: 'http',
+  host: process.env.WEAVIATE_HOST || 'localhost:8080',
+});
+
+async function ensureSchema() {
+  try {
+    const schema = await client.schema.getter().do();
+    const userProfileExists = schema.classes.some(c => c.class === 'UserProfile');
+    if (userProfileExists) {
+      logger.info('UserProfile schema already exists');
+      return;
+    }
+    logger.info('Creating UserProfile schema');
+    await client.schema.classCreator().withClass({
+      class: 'UserProfile',
+      properties: [
+        { name: 'userId', dataType: ['int'] }, // Giữ dataType là int
+        { name: 'text', dataType: ['text'] },
+      ],
+      vectorizer: 'none',
+    }).do();
+    logger.info('UserProfile schema created');
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, 'Failed to ensure schema');
+    throw error;
+  }
+}
+
+export async function storeUserVector(userId, vector, text) {
+    try {
+        await ensureSchema();
+        logger.info(`Storing vector for user ${userId}, vector length: ${vector.length}`);
+
+        // Kiểm tra và xóa bản ghi cũ nếu tồn tại
+        const existingObjects = await client.data.getter()
+            .withClassName('UserProfile')
+            .withWhere({
+                operator: 'Equal',
+                path: ['userId'],
+                valueInt: parseInt(userId)
+            })
+            .do();
+
+        if (existingObjects && existingObjects.length > 0) {
+            for (const obj of existingObjects) {
+                await client.data.deleter()
+                    .withClassName('UserProfile')
+                    .withId(obj._additional.id)
+                    .do();
+                logger.info(`Deleted existing vector for user ${userId}`);
+            }
+        }
+
+        const object = {
+            class: 'UserProfile',
+            properties: {
+                userId: parseInt(userId),
+                text: text || '',
+            },
+            vector,
+        };
+        await client.data.creator()
+            .withClassName('UserProfile')
+            .withProperties(object.properties)
+            .withVector(vector)
+            .do();
+        logger.info(`Vector stored for user ${userId}`);
+        return { userId, uuid: userId.toString() };
+    } catch (error) {
+        logger.error({ error, stack: error.stack }, `Failed to store vector for user ${userId}`);
+        throw error;
+    }
+}
+```
+
+### src\controllers\ai.controller.js
+```js
+import { aiService } from '../services/ai.service.js';
+import logger from '../utils/logger.js';
+
+export const aiController = {
+  async generateRecommendations(req, res) {
+    try {
+      logger.info('Starting recommendation generation');
+      await aiService.generateRecommendations();
+      logger.info('Recommendation generation completed');
+      res.status(200).json({
+        statusCode: 200,
+        message: 'Recommendations generated successfully'
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error generating recommendations');
+      res.status(500).json({
+        statusCode: 500,
+        message: 'Internal server error',
+        error: error.message
+      });
+    }
+  },
+  async getRecommendations(req, res) {
+    try {
+      const userId = req.user.id;
+      logger.info(`Fetching recommendations for user ${userId}`);
+      const recommendations = await prisma.recommendation.findMany({
+        where: { userId },
+        include: {
+          recommendedUser: {
+            include: {
+              Bio: {
+                include: {
+                  main_inf: true,
+                  Base_inf: true,
+                  Lifestyle: true,
+                  Photo: true,
+                  Searchingfor: true
+                }
+              },
+              user_favorites: { include: { favorite: true } }
+            }
+          }
+        }
+      });
+      res.status(200).json({ statusCode: 200, data: recommendations });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error getting recommendations');
+      res.status(500).json({ statusCode: 500, message: 'Internal server error' });
+    }
+  }
+};
+```
+
+### src\controllers\auth.controller.js
+```js
+import Joi from 'joi';
+import { authService } from '../services/auth.service.js';
+import logger from '../utils/logger.js';
+
+const loginSchema = Joi.object({
+  email: Joi.string().email().required(),
+  password: Joi.string().min(6).required()
+});
+
+const registerSchema = Joi.object({
+  email: Joi.string().email().required(),
+  password: Joi.string().min(6).required()
+});
+
+const requestVerificationCodeSchema = Joi.object({
+  email: Joi.string().email().required()
+});
+
+const verifyEmailWithOtpSchema = Joi.object({
+  email: Joi.string().email().required(),
+  otp: Joi.string().length(6).required()
+});
+
+export const authController = {
+  async login(req, res) {
+    try {
+      const { error, value } = loginSchema.validate(req.body);
+      if (error) {
+        logger.warn({ error }, 'Invalid login input');
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const { email, password } = value;
+      logger.info(`Login attempt for email ${email}`);
+      const { token, user } = await authService.loginUser(email, password);
+      res.status(200).json({ statusCode: 200, token, user });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error logging in');
+      if (error.message === 'User not found' || error.message === 'Password is not correct') {
+        return res.status(401).json({ statusCode: 401, message: error.message });
+      }
+      res.status(500).json({ statusCode: 500, message: 'Internal server error' });
+    }
+  },
+  async register(req, res) {
+    try {
+      const { error, value } = registerSchema.validate(req.body);
+      if (error) {
+        logger.warn({ error }, 'Invalid register input');
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const { email, password } = value;
+      logger.info(`Register attempt for email ${email}`);
+      const userNew = await authService.registerUserNew(email, password);
+      res.status(201).json({ statusCode: 201, user_new: userNew });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error registering');
+      if (error.message === 'Email already registered') {
+        return res.status(409).json({ statusCode: 409, message: error.message });
+      }
+      res.status(500).json({ statusCode: 500, message: 'Internal server error' });
+    }
+  },
+  async requestVerificationCode(req, res, next) {
+    try {
+      const { error, value } = requestVerificationCodeSchema.validate(req.body);
+      if (error) {
+        logger.warn({ error }, 'Invalid verification code request input');
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const { email } = value;
+      logger.info(`Requesting verification code for email ${email}`);
+      await authService.sendOtpForVerification(email);
+      res.status(200).json({ statusCode: 200, message: 'Verification code sent successfully' });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error requesting verification code');
+      next(error);
+    }
+  },
+  async verifyEmailWithOtp(req, res, next) {
+    try {
+      const { error, value } = verifyEmailWithOtpSchema.validate(req.body);
+      if (error) {
+        logger.warn({ error }, 'Invalid OTP verification input');
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const { email, otp } = value;
+      logger.info(`Verifying OTP for email ${email}`);
+      const isVerified = await authService.verifyEmailOtp(email, otp);
+      if (isVerified) {
+        res.status(200).json({ statusCode: 200, message: 'Email verified successfully' });
+      } else {
+        res.status(400).json({ statusCode: 400, message: 'OTP verification failed' });
+      }
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error verifying OTP');
+      if (error.message.includes('Mã OTP')) {
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      next(error);
+    }
+  }
+};
+```
+
+### src\controllers\match.controller.js
+```js
+import { matchService } from "../services/match.service.js";
+
+export const matchController = {
+    // [GET] /matches/:id
+    get: async (req, res) => {
+        try {
+            const match = req?.match;
+
+            res.status(200).json({
+                statusCode: 200,
+                data: match,
+            });
+        } catch (error) {
+            console.error("Error getting match:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+    // [GET] /matches
+    getAll: async (req, res) => {
+        try {
+            const userId = req.user;
+
+            const matches = await matchService.getAll(userId?.id);
+            res.status(200).json({
+                statusCode: 200,
+                data: matches,
+            });
+        } catch (error) {
+            console.error("Error getting match:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+    // [POST] /matches
+    create: async (req, res) => {
+        try {
+            const { receiverId } = req.body;
+            const user = req.user;
+
+            const senderId = user?.id;
+
+            if (!senderId || !receiverId) {
+                return res.status(400).json({
+                    message: "Missing required fields",
+                    statusCode: 400,
+                });
+            }
+
+            const match = await matchService.create(senderId, receiverId);
+            res.status(201).json({
+                statusCode: 201,
+                message: "Match created successfully",
+                match,
+            });
+        } catch (error) {
+            if (error.message === "The match has already been created") {
+                return res
+                    .status(409)
+                    .json({ statusCode: 409, message: error.message });
+            } else if (error.message === "Cannot create match") {
+                return res
+                    .status(500)
+                    .json({ statusCode: 500, message: error.message });
+            }
+            console.error("Error creating match:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+    // [PUT] /matches/:id
+    update: async (req, res) => {
+        const { matchId } = req.params;
+        const { isAccept, notificationId } = req.body;
+
+        const user = req.user;
+        const receiverId = user?.id;
+
+        if (!matchId || isAccept === undefined || !notificationId) {
+            return res.status(400).json({
+                statusCode: 400,
+                message: "Missing required fields",
+            });
+        }
+
+        const matchUpdate = await matchService.update(
+            matchId,
+            isAccept,
+            receiverId,
+            notificationId
+        );
+
+        try {
+            res.status(200).json({
+                statusCode: 200,
+                match: matchUpdate,
+            });
+        } catch (error) {
+            console.error("Error updating match:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+};
+
+```
+
+### src\controllers\message.controller.js
+```js
+import Joi from 'joi';
+import { messageService } from '../services/message.service.js';
+import logger from '../utils/logger.js';
+
+const createMessageSchema = Joi.object({
+  receiverId: Joi.number().integer().positive().required(),
+  matchId: Joi.number().integer().positive().required(),
+  content: Joi.string().min(1).required()
+}).unknown(true); // Cho phép các trường thừa
+
+export const messageController = {
+  async create(req, res) {
+    try {
+      logger.debug(`Create message input: ${JSON.stringify(req.body, null, 2)}`); // Debug
+      const { error, value } = createMessageSchema.validate(req.body);
+      if (error) {
+        logger.warn({ error }, 'Invalid message creation input');
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const { receiverId, matchId, content } = value;
+      const senderId = req.user.id;
+      logger.info(`Creating message for match ${matchId}`);
+      const message = await messageService.create(matchId, senderId, receiverId, content);
+      return res.status(201).json({ statusCode: 201, data: message });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error creating message');
+      return res.status(500).json({ statusCode: 500, message: 'Failed to send message' });
+    }
+  },
+  async getAll(req, res) {
+    try {
+      const { matchId } = req.params;
+      const userId = req.user.id;
+      logger.info(`Fetching messages for match ${matchId}, user ${userId}`);
+      const messages = await messageService.getAll(parseInt(matchId), userId);
+      logger.info(`Retrieved ${messages.messages.length} messages for match ${matchId}`);
+      return res.status(200).json({ statusCode: 200, data: messages });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, `Error fetching messages for match ${req.params.matchId}`);
+      if (error.message === 'Match not found' || error.message === 'Receiver not found') {
+        return res.status(404).json({ statusCode: 404, message: error.message });
+      }
+      return res.status(500).json({ statusCode: 500, message: 'Failed to retrieve messages' });
+    }
+  }
+};
+```
+
+### src\controllers\metadata.controller.js
+```js
+import { metadataService } from "../services/metadata.service.js";
+import logger from "../utils/logger.js";
+
+export const metadataController = {
+    get: async (req, res) => {
+        try {
+            const metadata = await metadataService.get();
+            logger.info("Metadata retrieved:", Object.keys(metadata));
+            res.status(200).json({
+                statusCode: 200,
+                message: "Metadata retrieved successfully",
+                metadata,
+            });
+        } catch (error) {
+            logger.error("Error getting metadata:", {
+                message: error.message,
+                stack: error.stack,
+            });
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+};
+```
+
+### src\controllers\notification.controller.js
+```js
+import { notificationService } from "../services/notification.service.js";
+
+export const notificationController = {
+    // [GET] /notifications
+    getAll: async (req, res) => {
+        try {
+            const userId = req?.user?.id;
+            const notifications = await notificationService.getAll(userId);
+            res.status(200).json({
+                statusCode: 200,
+                data: notifications,
+            });
+        } catch (error) {
+            console.error("Error getting user:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+    // [POST] /notifications
+    create: async (req, res) => {
+        try {
+            const { receiverId, entityId, type } = req.body;
+            const senderId = req?.user?.id;
+
+            if (!receiverId || !senderId || !entityId || !type) {
+                return res.status(400).json({
+                    statusCode: 400,
+                    message: "Missing required fields",
+                });
+            }
+            const notification = await notificationService.create(
+                senderId,
+                receiverId,
+                entityId,
+                type
+            );
+            res.status(201).json({
+                statusCode: 201,
+                data: notification,
+            });
+        } catch (error) {
+            console.error("Error creating notification:", error);
+            res.status(500).json({
+                statusCode: 500,
+                message: "Internal server error",
+            });
+        }
+    },
+};
+
+```
+
+### src\controllers\reports.controller.js
+```js
+import { reportService } from "../services/reports.service.js";
+
+export const reportController = async (req, res) => {
+    // [GET] /report/:id
+    // [GET] /reports
+    // [POST] /report
+};
+
+```
+
+### src\controllers\upload.controller.js
+```js
+import prisma from "../prisma/client.js";
+import path from "path";
+import logger from "../utils/logger.js";
+import fs from "fs";
+
+export const uploadController = {
+    uploadSingle: async (req, res) => {
+        try {
+            if (!req.file) {
+                return res.status(400).json({ message: "Không có file nào được upload" });
+            }
+            const { bioId, isProfilePic } = req.body;
+            const userId = req.user.id;
+            const fileUrl = `/Uploads/${userId}/images/${req.file.filename}`;
+
+            // Kiểm tra số lượng ảnh hiện có
+            const currentPhotos = await prisma.photo.count({
+                where: { bio_id: parseInt(bioId) },
+            });
+            if (currentPhotos >= 6) {
+                return res.status(400).json({ message: "Đã đạt tối đa 6 ảnh" });
+            }
+
+            // Nếu là ảnh đại diện, đặt is_profile_pic: true và cập nhật ảnh cũ
+            if (isProfilePic === "true") {
+                // Bỏ chọn ảnh đại diện cũ
+                await prisma.photo.updateMany({
+                    where: { bio_id: parseInt(bioId), is_profile_pic: true },
+                    data: { is_profile_pic: false },
+                });
+            }
+
+            const photo = await prisma.photo.create({
+                data: {
+                    bio_id: parseInt(bioId),
+                    url: fileUrl,
+                    is_profile_pic: isProfilePic === "true",
+                },
+            });
+
+            res.status(201).json({
+                message: "Upload thành công",
+                photo: {
+                    id: photo.id,
+                    url: photo.url,
+                    is_profile_pic: photo.is_profile_pic,
+                },
+            });
+        } catch (error) {
+            console.error("Upload error:", error);
+            res.status(500).json({
+                message: "Lỗi server khi upload ảnh",
+                error: error.message,
+            });
+        }
+    },
+
+    uploadMultiple: async (req, res) => {
+        try {
+            if (!req.files || req.files.length === 0) {
+                return res.status(400).json({ message: "Không có file nào được upload" });
+            }
+            const { bioId } = req.body;
+            const userId = req.user.id;
+
+            // Kiểm tra số lượng ảnh hiện có
+            const currentPhotos = await prisma.photo.count({
+                where: { bio_id: parseInt(bioId) },
+            });
+            const newPhotosCount = req.files.length;
+            if (currentPhotos + newPhotosCount > 6) {
+                return res.status(400).json({ message: `Chỉ được upload tối đa ${6 - currentPhotos} ảnh nữa` });
+            }
+
+            const photos = await Promise.all(
+                req.files.map(async (file) => {
+                    const fileUrl = `/Uploads/${userId}/images/${file.filename}`;
+                    const photo = await prisma.photo.create({
+                        data: {
+                            bio_id: parseInt(bioId),
+                            url: fileUrl,
+                            is_profile_pic: false,
+                        },
+                    });
+                    return {
+                        id: photo.id,
+                        url: photo.url,
+                        is_profile_pic: photo.is_profile_pic,
+                    };
+                })
+            );
+
+            res.status(201).json({
+                message: "Upload nhiều ảnh thành công",
+                count: req.files.length,
+                photos,
+            });
+        } catch (error) {
+            console.error("Upload multiple error:", error);
+            res.status(500).json({
+                message: "Lỗi server khi upload nhiều ảnh",
+                error: error.message,
+            });
+        }
+    },
+
+    deletePhoto: async (req, res) => {
+        try {
+            const { photoId } = req.params;
+            const userId = req.user.id;
+
+            // Tìm ảnh trong database
+            const photo = await prisma.photo.findUnique({
+                where: { id: parseInt(photoId) },
+                include: { Bio: { select: { user_id: true } } },
+            });
+
+            if (!photo) {
+                return res.status(404).json({ statusCode: 404, message: "Ảnh không tồn tại" });
+            }
+
+            // Kiểm tra quyền sở hữu
+            if (photo.Bio.user_id !== userId) {
+                return res.status(403).json({ statusCode: 403, message: "Không có quyền xóa ảnh này" });
+            }
+
+            // Xóa file vật lý nếu tồn tại
+            const filePath = path.join("Uploads", userId.toString(), "images", path.basename(photo.url));
+            if (fs.existsSync(filePath)) {
+                fs.unlinkSync(filePath);
+                logger.info(`Deleted file: ${filePath}`);
+            }
+
+            // Xóa bản ghi trong database
+            await prisma.photo.delete({
+                where: { id: parseInt(photoId) },
+            });
+
+            res.status(200).json({
+                statusCode: 200,
+                message: "Xóa ảnh thành công",
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, "Error deleting photo");
+            res.status(500).json({
+                statusCode: 500,
+                message: "Lỗi server khi xóa ảnh",
+                error: error.message,
+            });
+        }
+    },
+};
+```
+
+### src\controllers\user.controller.js
+```js
+import { userService } from "../services/user.service.js";
+import logger from "../utils/logger.js";
+import Joi from "joi";
+
+const idSchema = Joi.object({
+    id: Joi.number().integer().positive().required(),
+});
+
+const filterSchema = Joi.object({
+    page: Joi.number().integer().positive().default(1),
+    limit: Joi.number().integer().positive().default(10),
+    search: Joi.string().allow('').optional(),
+    gender: Joi.string().valid('male', 'female', 'other').allow('').optional(),
+    ageMin: Joi.number().integer().min(18).allow(null).optional(),
+    ageMax: Joi.number().integer().max(100).allow(null).optional(),
+    languageIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    educationIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    zodiacIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    characterIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    comunicateStyleIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    loveLanguageIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    futureFamilyIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    sexualOrientationIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    petIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    dietIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    sleepIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    snuIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    searchingForIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
+    currentUserId: Joi.number().integer().positive().optional(), // Thêm currentUserId
+});
+
+const updateUserSchema = Joi.object({
+    user: Joi.object({
+        id: Joi.number().integer().positive().required(),
+        displayName: Joi.string().allow(''),
+        gender: Joi.string().valid('male', 'female', 'other').allow(''),
+        preferredGender: Joi.string().valid('male', 'female', 'other').allow(''),
+        name: Joi.string().allow(''),
+        age: Joi.number().integer().min(18).allow(null),
+        aboutMe: Joi.string().allow(''),
+        height: Joi.number().integer().allow(null),
+        location: Joi.string().allow(''),
+        birthday: Joi.date().allow(null),
+        languageId: Joi.number().integer().positive().allow(null),
+        religionId: Joi.number().integer().positive().allow(null),
+        careerId: Joi.number().integer().positive().allow(null),
+        educationId: Joi.number().integer().positive().allow(null),
+        zodiacId: Joi.number().integer().positive().allow(null),
+        characterId: Joi.number().integer().positive().allow(null),
+        communicateStyleId: Joi.number().integer().positive().allow(null),
+        loveLanguageId: Joi.number().integer().positive().allow(null),
+        futureFamilyId: Joi.number().integer().positive().allow(null),
+        drink: Joi.boolean().allow(null),
+        smoke: Joi.boolean().allow(null),
+        train: Joi.boolean().allow(null),
+        petId: Joi.number().integer().positive().allow(null),
+        dietId: Joi.number().integer().positive().allow(null),
+        sleepId: Joi.number().integer().positive().allow(null),
+        snuId: Joi.number().integer().positive().allow(null),
+        favorites: Joi.array().items(Joi.number().integer().positive()).allow(null),
+        maxRadius: Joi.number().integer().positive().allow(null),
+        photos: Joi.array().items(
+            Joi.object({
+                id: Joi.number().integer().positive().allow(null),
+                url: Joi.string().allow(''),
+                is_profile_pic: Joi.boolean().allow(null),
+            })
+        ).allow(null),
+    }).required(),
+});
+
+export const userController = {
+    getAll: async (req, res) => {
+        try {
+            const { error, value } = filterSchema.validate(req.query);
+            if (error) {
+                logger.warn({ error }, 'Invalid filter input');
+                return res.status(400).json({ statusCode: 400, message: error.message });
+            }
+            logger.info("Fetching users with filters:", {
+                query: value,
+                userId: req.user?.id,
+            });
+            const userId = req.user?.id;
+            if (!userId) {
+                logger.error("User not authenticated");
+                return res.status(401).json({ statusCode: 401, message: "User not authenticated" });
+            }
+            const users = await userService.getAllUsersFormatted(value, userId);
+            logger.info("Users found:", { count: users.length });
+            res.status(200).json({
+                statusCode: 200,
+                users,
+                pagination: {
+                    page: value.page,
+                    limit: value.limit,
+                    total: users.length,
+                },
+            });
+        } catch (error) {
+            logger.error("Error getting users:", {
+                message: error.message,
+                stack: error.stack,
+                filters: req.query,
+            });
+            res.status(500).json({
+                statusCode: 500,
+                message: error.message || "Internal server error",
+            });
+        }
+    },
+    getProfile: async (req, res) => {
+        try {
+            logger.info("Fetching profile for user:", req.user?.id);
+            const user = await userService.getProfileById(req.user.id);
+            if (!user) {
+                logger.warn(`User not found: ${req.user.id}`);
+                return res.status(404).json({ statusCode: 404, message: "User not found" });
+            }
+            res.status(200).json({
+                statusCode: 200,
+                user,
+            });
+        } catch (error) {
+            logger.error("Error getting profile:", {
+                message: error.message,
+                stack: error.stack,
+            });
+            res.status(500).json({
+                statusCode: 500,
+                message: error.message || "Internal server error",
+            });
+        }
+    },
+    getUserInfo: async (req, res) => {
+        try {
+            const { error, value } = idSchema.validate(req.params);
+            if (error) {
+                logger.warn({ error }, 'Invalid user ID');
+                return res.status(400).json({ statusCode: 400, message: error.message });
+            }
+            const userId = value.id;
+            const currentUserId = req.user?.id;
+            if (!currentUserId) {
+                logger.error("User not authenticated");
+                return res.status(401).json({ statusCode: 401, message: "User not authenticated" });
+            }
+            logger.info(`Fetching user info for ID: ${userId} by user: ${currentUserId}`);
+            const user = await userService.getUserById(userId);
+            if (!user) {
+                logger.warn(`User not found: ${userId}`);
+                return res.status(404).json({ statusCode: 404, message: "User not found" });
+            }
+            res.status(200).json({
+                statusCode: 200,
+                user,
+            });
+        } catch (error) {
+            logger.error("Error getting user info:", {
+                message: error.message,
+                stack: error.stack,
+                userId: req.params.id,
+            });
+            res.status(500).json({
+                statusCode: 500,
+                message: error.message || "Internal server error",
+            });
+        }
+    },
+    updateUser: async (req, res) => {
+        try {
+            const { error, value } = updateUserSchema.validate(req.body);
+            if (error) {
+                logger.warn({ error }, 'Invalid update user input');
+                return res.status(400).json({ statusCode: 400, message: error.message });
+            }
+            const { id } = value.user;
+            if (id !== req.user.id) {
+                logger.warn(`Unauthorized update attempt by user ${req.user.id} for user ${id}`);
+                return res.status(403).json({ statusCode: 403, message: "Unauthorized to update this user" });
+            }
+            logger.info(`Updating user: ${id}`);
+            const userUpdated = await userService.updateUserById(id, value.user);
+            if (!userUpdated) {
+                logger.warn(`User not found: ${id}`);
+                return res.status(404).json({ statusCode: 404, message: "User not found" });
+            }
+            res.status(200).json({
+                statusCode: 200,
+                user: userUpdated,
+            });
+        } catch (error) {
+            logger.error("Error updating user:", {
+                message: error.message,
+                stack: error.stack,
+            });
+            res.status(500).json({
+                statusCode: 500,
+                message: error.message || "Internal server error",
+            });
+        }
+    },
+};
+```
+
+### src\middleware\auth.middleware.js
+```js
+import { extractToken, verifyToken, attachUser } from "../utils/auth.js";
+
+export const authenticationMiddleware = async (req, res, next) => {
+    try {
+        console.log("Authentication middleware called:", {
+            method: req.method,
+            path: req.path,
+            headers: req.headers.authorization,
+        });
+
+        if (!req.headers.authorization) {
+            throw new Error("Authentication required: No authorization header provided");
+        }
+
+        const token = extractToken(req.headers.authorization);
+        console.log("Extracted token:", token.slice(0, 20) + "..."); // Chỉ log 20 ký tự đầu
+        const decoded = verifyToken(token);
+        console.log("Decoded token:", { userId: decoded.userId, email: decoded.email });
+
+        await attachUser(decoded, req);
+        if (!req.user) {
+            throw new Error("Invalid or expired token: User not found");
+        }
+        console.log("Authenticated user:", { userId: req.user.id });
+
+        next();
+    } catch (error) {
+        console.error("Authentication middleware error:", {
+            message: error.message,
+            path: req.path,
+            stack: error.stack,
+        });
+
+        if (
+            error.message.includes("Authentication required") ||
+            error.message.includes("Invalid or expired token") ||
+            error.message.includes("Token has expired")
+        ) {
+            return res.status(401).json({
+                statusCode: 401,
+                message: error.message,
+            });
+        }
+
+        return res.status(400).json({
+            statusCode: 400,
+            message: "Bad Request: Invalid token format",
+        });
+    }
+};
+
+//authorization
+export const authorizationMiddleware = (requiredRoles) => {
+    return (req, res, next) => {
+        if (!req.user || !req.user.role) {
+            console.error(
+                `Authorization Failed: User ${req.user.id} role '${req.user.role}' required ${requiredRoles}`
+            );
+            return res.status(403).json({
+                statusCode: 403,
+                message: "Authorization Error: User's role is missing",
+            });
+        } else if (!requiredRoles.includes(req.user.role)) {
+            console.error(
+                `Authorization Failed: User ${req.user.id} role '${userRole}' required ${requiredRoles}`
+            );
+            return res.status(403).json({
+                statusCode: 403,
+                message: "Forbidden: Access denied. Insufficient permissions.",
+            });
+        }
+        next();
+    };
+};
+
+// validate credential
+export const validate = (email, password) => {
+    if (!email || !password) {
+        return {
+            status: false,
+            message: "Email and password are required",
+        };
+    }
+
+    if (password.length < 6) {
+        return {
+            status: false,
+            message: "Password must be at least 6 characters long",
+        };
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        return {
+            status: false,
+            message: "Please provide a valid email address",
+        };
+    }
+
+    return {
+        status: true,
+        message: "Validation successful",
+    };
+};
+
+export const validateCredentialsMiddleware = (req, res, next) => {
+    const { email, password } = req.body;
+
+    const validationResult = validate(email, password);
+
+    if (validationResult.status !== true) {
+        return res.status(400).json({
+            statusCode: 400,
+            message: validationResult.message,
+        });
+    }
+
+    next();
+};
+
+```
+
+### src\middleware\match.middleware.js
+```js
+import { matchRepository } from "../repository/match.repository.js";
+import { matchService } from "../services/match.service.js";
+
+export const matchMiddleware = async (req, res, next) => {
+    try {
+        const { matchId } = req.params;
+
+        const userId = req.user.id;
+
+        if (!matchId)
+            return res.status(404).json({ message: "Match not found" });
+        const match = await matchService.get(matchId);
+        if (!match) {
+            return res.status(404).json({ message: "Match not found" });
+        }
+
+        const isParticipant =
+            match.user_1_id === userId || match.user_2_id === userId;
+        if (!isParticipant) {
+            return res.status(403).json({ message: "Access denied" });
+        }
+        req.match = match;
+
+        next();
+    } catch (error) {
+        console.error("Error in match middleware:", error);
+        res.status(500).json({
+            statusCode: 500,
+            message: "Internal server error",
+        });
+    }
+};
+
+```
+
+### src\middleware\message.middleware.js
+```js
+import { matchRepository } from "../repository/match.repository.js";
+import logger from "../utils/logger.js";
+
+export const messageMiddleware = async (req, res, next) => {
+  try {
+    const { matchId } = req.params;
+    const userId = parseInt(req.user.id); // Đảm bảo userId là number
+
+    if (!matchId) {
+      logger.warn("Match ID missing in request");
+      return res.status(400).json({ statusCode: 400, message: "Match ID required" });
+    }
+
+    const match = await matchRepository.get(parseInt(matchId));
+    if (!match) {
+      logger.warn(`Match ${matchId} not found`);
+      return res.status(404).json({ statusCode: 404, message: "Match not found" });
+    }
+
+    logger.info(`Match ${matchId} found:`, {
+      user_1_id: match.user_1_id,
+      user_2_id: match.user_2_id,
+      userId,
+    });
+
+    const isParticipant = match.user_1_id === userId || match.user_2_id === userId;
+    if (!isParticipant) {
+      logger.warn(`User ${userId} is not a participant in match ${matchId}`);
+      return res.status(403).json({ statusCode: 403, message: "Access denied" });
+    }
+
+    req.match = match;
+    next();
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, "Error in message middleware");
+    return res.status(500).json({
+      statusCode: 500,
+      message: "Internal server error",
+    });
+  }
+};
+```
+
+### src\prisma\client.js
+```js
+import { PrismaClient } from '@prisma/client';
+import dotenv from 'dotenv';
+import path from 'path';
+import retry from 'async-retry';
+import logger from '../utils/logger.js';
+
+dotenv.config({ path: path.resolve('.env') });
+
+const prisma = global.prisma || new PrismaClient();
+if (process.env.NODE_ENV !== 'production') global.prisma = prisma;
+
+export async function connectPrisma() {
+  await retry(
+    async () => {
+      await prisma.$connect();
+      logger.info('Connected to database');
+    },
+    { retries: 5, factor: 2, minTimeout: 1000 }
+  );
+}
+
+export default prisma;
+```
+
+### src\prisma\seeds\index.js
+```js
+import prisma from "../client.js";
+
+import seedLanguages from "./seedLanguages.js";
+import seedReligions from "./seedReligions.js";
+import seedZodiacs from "./seedZodiacs.js";
+import seedSleep from "./seedSleep.js";
+import seedEducation from "./seedEducation.js";
+import seedCareer from "./seedCareer.js";
+import seedPet from "./seedPet.js";
+import seedUser from "./seedUser.js";
+import seedCharacter from "./seedCharacter.js";
+import seedCommunicateStyle from "./seedCommunicateStyle.js";
+import seedLoveLanguage from "./seedLoveLanguage.js";
+import seedFutureFamily from "./seedFutureFamily.js";
+import seedDiet from "./seedDiet.js";
+import seedSNU from "./seedSNU.js";
+import seedFavorite from "./seedFavorite.js";
+import seedSexualOrientation from "./seedSexualOrientation.js";
+import seedSearchingFor from "./seedSearchingFor.js";
+
+async function resetTable(tableName) {
+    await prisma.$executeRawUnsafe(`DELETE FROM \`${tableName}\``);
+    await prisma.$executeRawUnsafe(
+        `ALTER TABLE \`${tableName}\` AUTO_INCREMENT = 1`
+    );
+}
+
+async function main() {
+    console.log("🌱 Seeding database...");
+
+    try {
+        // Xoá + reset ID
+        await resetTable("users");
+        await resetTable("Pet");
+        await resetTable("Language");
+        await resetTable("Religion");
+        await resetTable("Zodiac");
+        await resetTable("Sleep");
+        await resetTable("Education");
+        await resetTable("Career");
+        await resetTable("Character");
+        await resetTable("Communicate_style");
+        await resetTable("Love_language");
+        await resetTable("FutureFamily");
+        await resetTable("Diet");
+        await resetTable("SNU");
+        await resetTable("Favorite");
+        await resetTable("sexual_orientation");
+        await resetTable("Searchingfor");
+
+        // Seed lại
+        await seedLanguages(prisma);
+        await seedReligions(prisma);
+        await seedZodiacs(prisma);
+        await seedSleep(prisma);
+        await seedEducation(prisma);
+        await seedCareer(prisma);
+        await seedPet(prisma);
+        await seedCharacter(prisma);
+        await seedCommunicateStyle(prisma);
+        await seedLoveLanguage(prisma);
+        await seedFutureFamily(prisma);
+        await seedDiet(prisma);
+        await seedSNU(prisma);
+        await seedFavorite(prisma);
+        await seedSexualOrientation(prisma);
+        await seedSearchingFor(prisma);
+        await seedUser(prisma);
+
+        console.log("✅ Done seeding!");
+    } catch (err) {
+        console.error("❌ Error seeding:", err);
+    } finally {
+        await prisma.$disconnect();
+    }
+}
+
+main()
+    .catch((e) => {
+        console.error("❌ Error seeding:", e);
+        process.exit(1);
+    })
+    .finally(async () => {
+        await prisma.$disconnect();
+    });
+
+```
+
+### src\prisma\seeds\seedCareer.js
+```js
+export default async function seedCareer(prisma) {
+    await prisma.career.createMany({
+        data: [
+            {
+                name: "Kỹ sư phần mềm",
+                description: "Thiết kế và phát triển hệ thống phần mềm.",
+            },
+            {
+                name: "Giáo viên",
+                description: "Giáo dục và giảng dạy học sinh.",
+            },
+            {
+                name: "Bác sĩ",
+                description: "Khám và điều trị bệnh.",
+            },
+            {
+                name: "Doanh nhân",
+                description: "Tự điều hành công việc kinh doanh của mình.",
+            },
+        ],
+    });
+}
+
+```
+
+### src\prisma\seeds\seedCharacter.js
+```js
+const seedCharacter = async (prisma) => {
+    await prisma.character.createMany({
+        data: [
+            { name: "Hài hước" },
+            { name: "Nghiêm túc" },
+            { name: "Tự tin" },
+            { name: "Thân thiện" },
+            { name: "Điềm đạm" },
+        ],
+    });
+};
+
+export default seedCharacter;
+
+```
+
+### src\prisma\seeds\seedCommunicateStyle.js
+```js
+const seedCommunicateStyle = async (prisma) => {
+    await prisma.communicate_style.createMany({
+        data: [
+            { name: "Thẳng thắn" },
+            { name: "Lắng nghe" },
+            { name: "Biết chia sẻ" },
+            { name: "Trầm lặng" },
+        ],
+    });
+};
+export default seedCommunicateStyle;
+
+```
+
+### src\prisma\seeds\seedDiet.js
+```js
+const seedDiet = async (prisma) => {
+    await prisma.diet.createMany({
+        data: [{ name: "Ăn chay" }, { name: "Ăn mặn" }, { name: "Ăn kiêng" }],
+    });
+};
+
+export default seedDiet;
+
+```
+
+### src\prisma\seeds\seedEducation.js
+```js
+export default async function seedEducation(prisma) {
+    await prisma.education.createMany({
+        data: [
+            {
+                name: "Trung học phổ thông",
+                description: "Hoàn thành chương trình giáo dục phổ thông.",
+            },
+            {
+                name: "Cử nhân",
+                description: "Bằng đại học hệ chính quy.",
+            },
+            {
+                name: "Thạc sĩ",
+                description: "Bằng sau đại học (cao học).",
+            },
+            {
+                name: "Tiến sĩ",
+                description: "Học vị Tiến sĩ chuyên ngành.",
+            },
+        ],
+    });
+}
+
+```
+
+### src\prisma\seeds\seedFavorite.js
+```js
+export default async function seedFavorite(prisma) {
+    await prisma.favorite.createMany({
+        data: [
+            { name: "Cà phê" },
+            { name: "Du lịch" },
+            { name: "Âm nhạc" },
+            { name: "Đọc sách" },
+            { name: "Nấu ăn" },
+            { name: "Thể thao" },
+            { name: "Nhiếp ảnh" },
+            { name: "Yoga" },
+            { name: "Phim ảnh" },
+            { name: "Mua sắm" },
+            { name: "Chơi game" },
+            { name: "Nghệ thuật" },
+        ],
+    });
+}
+
+```
+
+### src\prisma\seeds\seedFutureFamily.js
+```js
+const seedFutureFamily = async (prisma) => {
+    await prisma.futureFamily.createMany({
+        data: [
+            { name: "Muốn có con" },
+            { name: "Chưa muốn có con" },
+            { name: "Không muốn con" },
+        ],
+    });
+};
+
+export default seedFutureFamily;
+
+```
+
+### src\prisma\seeds\seedLanguages.js
+```js
+export default async function seedLanguages(prisma) {
+    await prisma.language.createMany({
+        data: [
+            { name: "Vietnamese" },
+            { name: "English" },
+            { name: "Japanese" },
+        ],
+        skipDuplicates: true,
+    });
+}
+
+```
+
+### src\prisma\seeds\seedLoveLanguage.js
+```js
+const seedLoveLanguage = async (prisma) => {
+    await prisma.love_language.createMany({
+        data: [
+            { name: "Lời nói yêu thương" },
+            { name: "Hành động quan tâm" },
+            { name: "Thời gian chất lượng" },
+            { name: "Quà tặng" },
+            { name: "Tiếp xúc cơ thể" },
+        ],
+    });
+};
+
+export default seedLoveLanguage;
+
+```
+
+### src\prisma\seeds\seedPet.js
+```js
+export default async function seedPet(prisma) {
+    await prisma.pet.createMany({
+        data: [
+            {
+                name: "Chó",
+                description: "Thân thiện và trung thành.",
+            },
+            {
+                name: "Mèo",
+                description: "Độc lập và tò mò.",
+            },
+            {
+                name: "Cá",
+                description: "Yên bình và dễ chăm sóc.",
+            },
+            {
+                name: "Chim",
+                description: "Biết hót và có thể bay.",
+            },
+        ],
+    });
+}
+
+```
+
+### src\prisma\seeds\seedReligions.js
+```js
+export default async function seedReligions(prisma) {
+    await prisma.religion.createMany({
+        data: [
+            {
+                name: "Phật giáo",
+                description:
+                    "Một truyền thống tâm linh tập trung vào sự phát triển tinh thần cá nhân.",
+            },
+            {
+                name: "Cơ đốc giáo",
+                description:
+                    "Tôn giáo độc thần dựa trên cuộc đời và lời dạy của Chúa Giê-su Ki-tô.",
+            },
+            {
+                name: "Hồi giáo",
+                description:
+                    "Tôn giáo độc thần được khải thị qua Nhà tiên tri Muhammad.",
+            },
+            {
+                name: "Ấn Độ giáo",
+                description:
+                    "Một truyền thống tôn giáo và văn hóa lớn của Nam Á.",
+            },
+        ],
+    });
+}
+
+```
+
+### src\prisma\seeds\seedSearchingFor.js
+```js
+const seedSearchingFor = async (prisma) => {
+    console.log("Seeding 'searching for' options...");
+
+    const options = [
+        {
+            name: "Mối quan hệ lâu dài",
+            description:
+                "Tìm kiếm một mối quan hệ nghiêm túc, ổn định và cam kết, có thể hướng tới tương lai xa hơn.",
+        },
+        {
+            name: "Mối quan hệ ngắn hạn",
+            description:
+                "Tìm kiếm một mối quan hệ tình cảm trong thời gian ngắn hơn, có thể không quá ràng buộc về tương lai.",
+        },
+        {
+            name: "Hẹn hò đơn giản / Tìm hiểu",
+            description:
+                "Muốn gặp gỡ, hẹn hò thông thường để tìm hiểu đối phương, xem mọi việc tiến triển tự nhiên.",
+        },
+        {
+            name: "Kết bạn mới",
+            description:
+                "Mở rộng vòng tròn bạn bè, tìm kiếm những người bạn mới để chia sẻ sở thích, trò chuyện.",
+        },
+        {
+            name: "Chưa chắc chắn / Để mở",
+            description:
+                "Chưa xác định rõ mục tiêu cụ thể, cởi mở với các khả năng khác nhau khi gặp gỡ người mới.",
+        },
+        {
+            name: "Bạn tâm giao / Trò chuyện",
+            description:
+                "Tìm kiếm một người có thể kết nối sâu sắc về mặt tinh thần, để trò chuyện và chia sẻ.",
+        },
+        {
+            name: "Bạn đồng hành (Hoạt động)",
+            description:
+                "Tìm người có cùng sở thích để cùng tham gia các hoạt động như du lịch, thể thao, sự kiện...",
+        },
+    ];
+
+    await Promise.all(
+        options.map((option) =>
+            prisma.Searchingfor.create({
+                data: {
+                    name: option.name,
+                    description: option.description,
+                },
+            })
+        )
+    );
+
+    console.log("'Searching for' options seeded successfully.");
+};
+
+export default seedSearchingFor;
+
+```
+
+### src\prisma\seeds\seedSexualOrientation.js
+```js
+const seedSexualOrientation = async (prisma) => {
+    const orientationsData = [
+        {
+            name: "Dị tính",
+            value: "straight",
+            explanation:
+                "Hấp dẫn tình cảm/tình dục chủ yếu bởi người khác giới.",
+        },
+        {
+            name: "Đồng tính",
+            value: "homosexual",
+            explanation:
+                "Hấp dẫn tình cảm/tình dục chủ yếu bởi người cùng giới tính.",
+        },
+        {
+            name: "Song tính",
+            value: "bisexual",
+            explanation:
+                "Hấp dẫn tình cảm/tình dục bởi nhiều hơn một giới tính.",
+        },
+        {
+            name: "Vô tính",
+            value: "asexual",
+            explanation:
+                "Trải qua ít hoặc không có sự hấp dẫn tình dục đối với bất kỳ giới tính nào.",
+        },
+    ];
+
+    await Promise.all(
+        orientationsData.map((orientation) => {
+            const description = `${orientation.value} - ${orientation.explanation}`;
+
+            return prisma.sexual_orientation.create({
+                data: {
+                    name: orientation.name,
+                    description: description,
+                },
+            });
+        })
+    );
+};
+
+// Export hàm seed
+export default seedSexualOrientation;
+
+```
+
+### src\prisma\seeds\seedSleep.js
+```js
+export default async function seedSleep(prisma) {
+    await prisma.sleep.createMany({
+        data: [
+            {
+                name: "Người dậy sớm",
+                description: "Thức dậy sớm và năng động vào buổi sáng.",
+            },
+            {
+                name: "Cú đêm",
+                description: "Thường thức khuya và hoạt động vào ban đêm.",
+            },
+        ],
+    });
+}
+
+```
+
+### src\prisma\seeds\seedSNU.js
+```js
+const seedSNU = async (prisma) => {
+    await prisma.sNU.createMany({
+        data: [{ name: "Có" }, { name: "Không" }, { name: "Tuỳ đối tượng" }],
+    });
+};
+
+export default seedSNU;
+
+```
+
+### src\prisma\seeds\seedUser.js
+```js
+import { faker } from "@faker-js/faker";
+
+export default async function seedUsers(prisma) {
+    const numberOfUsersToCreate = 100;
+
+    for (let i = 0; i < numberOfUsersToCreate; i++) {
+        const firstName = faker.person.firstName();
+        const lastName = faker.person.lastName();
+        const username = faker.internet.userName({ firstName, lastName });
+
+        // Tạo danh sách sở thích ngẫu nhiên (1-3 sở thích)
+        const favoriteCount = faker.number.int({ min: 1, max: 3 });
+        const favoriteIds = new Set();
+        while (favoriteIds.size < favoriteCount) {
+            favoriteIds.add(faker.number.int({ min: 1, max: 12 }));
+        }
+
+        await prisma.users.create({
+            data: {
+                display_name: `${firstName} ${lastName}`,
+                username: username,
+                password: "123123",
+                email: faker.internet.email({ firstName, lastName }),
+                gender: faker.helpers.arrayElement(["male", "female"]),
+                preferred_gender: faker.helpers.arrayElement(["male", "female", "both"]),
+                status: faker.helpers.arrayElement(["online", "offline"]),
+                Bio: {
+                    create: {
+                        name: firstName,
+                        age: faker.number.int({ min: 18, max: 60 }),
+                        status: "active",
+                        about_me: faker.lorem.sentence(),
+                        Searchingfor: {
+                            connect: {
+                                id: faker.number.int({ min: 1, max: 7 }), // Cập nhật max thành 7 để khớp với seedSearchingFor.js
+                            },
+                        },
+                        main_inf: {
+                            create: {
+                                height: faker.number.int({ min: 150, max: 200 }).toString(),
+                                location: faker.location.city(),
+                                Language: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 3 }),
+                                    },
+                                },
+                                Religion: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 4 }),
+                                    },
+                                },
+                                Career: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 4 }),
+                                    },
+                                },
+                                Education: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 4 }),
+                                    },
+                                },
+                            },
+                        },
+                        Base_inf: {
+                            create: {
+                                Zodiac: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 12 }),
+                                    },
+                                },
+                                Character: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 5 }),
+                                    },
+                                },
+                                Communicate_style: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 4 }),
+                                    },
+                                },
+                                Love_language: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 5 }),
+                                    },
+                                },
+                                FutureFamily: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 3 }),
+                                    },
+                                },
+                                Sexual_orientation: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 4 }),
+                                    },
+                                },
+                            },
+                        },
+                        Lifestyle: {
+                            create: {
+                                drink: faker.datatype.boolean(),
+                                smoke: faker.datatype.boolean(),
+                                train: faker.datatype.boolean(),
+                                Pet: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 4 }),
+                                    },
+                                },
+                                Diet: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 3 }),
+                                    },
+                                },
+                                Sleep: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 2 }),
+                                    },
+                                },
+                                SNU: {
+                                    connect: {
+                                        id: faker.number.int({ min: 1, max: 3 }),
+                                    },
+                                },
+                            },
+                        },
+                        Photo: {
+                            create: {
+                                url: faker.image.avatar(),
+                                is_profile_pic: true,
+                            },
+                        },
+                    },
+                },
+                user_favorites: {
+                    create: Array.from(favoriteIds, (favorite_id) => ({
+                        favorite_id,
+                    })),
+                },
+            },
+        });
+    }
+    console.log(`Created ${numberOfUsersToCreate} users with favorites.`);
+}
+```
+
+### src\prisma\seeds\seedZodiacs.js
+```js
+export default async function seedZodiacs(prisma) {
+    await prisma.zodiac.createMany({
+        data: [
+            {
+                name: "Bạch Dương",
+                description: "Can đảm, quyết đoán, tự tin.",
+            },
+            {
+                name: "Kim Ngưu",
+                description: "Đáng tin cậy, kiên nhẫn, thực tế.",
+            },
+            {
+                name: "Song Tử",
+                description: "Dịu dàng, tình cảm, tò mò.",
+            },
+            {
+                name: "Cự Giải",
+                description: "Kiên trì, giàu trí tưởng tượng, trung thành.",
+            },
+            {
+                name: "Sư Tử",
+                description: "Sáng tạo, đam mê, hào phóng.",
+            },
+            {
+                name: "Xử Nữ",
+                description: "Phân tích tốt, tốt bụng, chăm chỉ.",
+            },
+            {
+                name: "Thiên Bình",
+                description: "Khéo léo, công bằng, hòa đồng.",
+            },
+            {
+                name: "Bò Cạp",
+                description: "Sâu sắc, dũng cảm, đầy đam mê.",
+            },
+            {
+                name: "Nhân Mã",
+                description: "Rộng lượng, lý tưởng, hài hước.",
+            },
+            {
+                name: "Ma Kết",
+                description: "Kỷ luật, trách nhiệm, tự kiểm soát.",
+            },
+            {
+                name: "Bảo Bình",
+                description: "Tiến bộ, độc đáo, độc lập.",
+            },
+            {
+                name: "Song Ngư",
+                description: "Nhân ái, nghệ sĩ, trực giác cao.",
+            },
+        ],
+    });
+}
+
+```
+
+### src\repository\match.repository.js
+```js
+import prisma from '../prisma/client.js';
+import logger from '../utils/logger.js';
+
+export const matchRepository = {
+  async getAll(userId, isAccept) {
+    try {
+      const matches = await prisma.matches.findMany({
+        where: {
+          OR: [{ user_1_id: userId }, { user_2_id: userId }],
+          is_accept: isAccept,
+        },
+        include: {
+          user_match_1: {
+            include: {
+              Bio: {
+                include: {
+                  Photo: true,
+                },
+              },
+            },
+          },
+          user_match_2: {
+            include: {
+              Bio: {
+                include: {
+                  Photo: true,
+                },
+              },
+            },
+          },
+        },
+      });
+      logger.debug(`Raw matches from Prisma for user ${userId}: ${JSON.stringify(matches, null, 2)}`);
+      return matches;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, "Error fetching matches");
+      throw error;
+    }
+  },
+  async get(id) {
+    try {
+      logger.info(`Fetching match ${id}`);
+      const match = await prisma.matches.findFirst({
+        where: { id: parseInt(id) },
+        select: {
+          id: true,
+          user_1_id: true,
+          user_2_id: true,
+          matched_at: true,
+          is_accept: true,
+          user_match_1: {
+            select: {
+              id: true,
+              display_name: true,
+              Bio: {
+                select: {
+                  Photo: { where: { is_profile_pic: true }, select: { url: true }, take: 1 }
+                }
+              }
+            }
+          },
+          user_match_2: {
+            select: {
+              id: true,
+              display_name: true,
+              Bio: {
+                select: {
+                  Photo: { where: { is_profile_pic: true }, select: { url: true }, take: 1 }
+                }
+              }
+            }
+          },
+          messages: {
+            orderBy: { sent_at: 'desc' },
+            select: {
+              id: true,
+              content: true,
+              sent_at: true,
+              sender: { select: { id: true, display_name: true } },
+              receiver: { select: { id: true, display_name: true } }
+            },
+            take: 50
+          }
+        }
+      });
+      logger.info(`Match ${id} retrieved:`, JSON.stringify(match, null, 2));
+      return match;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, `Error fetching match ${id}`);
+      throw error;
+    }
+  },
+  async find(senderId, receiverId) {
+    try {
+      logger.info(`Checking match between sender ${senderId} and receiver ${receiverId}`);
+      return await prisma.matches.findFirst({
+        where: {
+          OR: [
+            { user_1_id: parseInt(senderId), user_2_id: parseInt(receiverId) },
+            { user_1_id: parseInt(receiverId), user_2_id: parseInt(senderId) }
+          ]
+        }
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error finding match');
+      throw error;
+    }
+  },
+  async update(id, isAccept) {
+    try {
+      logger.info(`Updating match ${id} with isAccept ${isAccept}`);
+      return await prisma.matches.update({
+        where: { id: parseInt(id) },
+        data: { is_accept: isAccept }
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error updating match');
+      throw error;
+    }
+  }
+};
+```
+
+### src\repository\message.repository.js
+```js
+import prisma from '../prisma/client.js';
+import logger from '../utils/logger.js';
+
+export const messageRepository = {
+  async getAll(matchId) {
+    try {
+      logger.info(`Fetching messages for match ${matchId}`);
+      const messages = await prisma.messages.findMany({
+        where: { match_id: parseInt(matchId) },
+        select: {
+          id: true,
+          content: true,
+          sent_at: true,
+          sender_id: true, // Lấy trực tiếp sender_id
+          receiver_id: true, // Lấy trực tiếp receiver_id
+          sender: { select: { id: true, display_name: true } },
+          receiver: { select: { id: true, display_name: true } }
+        },
+        orderBy: { sent_at: 'asc' },
+        take: 100
+      });
+      logger.debug(`Raw messages for match ${matchId}: ${JSON.stringify(messages, null, 2)}`);
+      return messages;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error fetching messages');
+      throw error;
+    }
+  },
+  async create(matchId, senderId, receiverId, content) {
+    try {
+      logger.info(`Creating message for match ${matchId}`);
+      const message = await prisma.messages.create({
+        data: {
+          sender_id: parseInt(senderId),
+          receiver_id: parseInt(receiverId),
+          match_id: parseInt(matchId),
+          content
+        },
+        select: {
+          id: true,
+          content: true,
+          sent_at: true,
+          sender_id: true, // Lấy trực tiếp sender_id
+          receiver_id: true, // Lấy trực tiếp receiver_id
+          sender: { select: { id: true, display_name: true } },
+          receiver: { select: { id: true, display_name: true } }
+        }
+      });
+      logger.debug(`Created message: ${JSON.stringify(message, null, 2)}`);
+      return message;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error creating message');
+      throw error;
+    }
+  }
+};
+```
+
+### src\repository\metadata.repository.js
+```js
+import prisma from "../prisma/client.js";
+
+export const metadataRepository = {
+    get: async () => {
+        const transformOption = (item) => ({
+            id: item.id,
+            value: item.name,
+        });
+
+        const [
+            careersData,
+            petsData,
+            languagesData,
+            religionsData,
+            zodiacsData,
+            charactersData,
+            communicateStylesData,
+            educationsData,
+            dietsData,
+            sleepsData,
+            loveLanguagesData,
+            futureFamiliesData,
+            snusData,
+            favoriteData,
+            sexualOrientationData,
+            searchingForData,
+        ] = await Promise.all([
+            prisma.career.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.pet.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.language.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.religion.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.zodiac.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.character.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.communicate_style.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.education.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.diet.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.sleep.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.love_language.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.futureFamily.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.SNU.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.favorite.findMany({
+                select: { id: true, name: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.sexual_orientation.findMany({
+                select: { id: true, name: true, description: true },
+                orderBy: { name: "asc" },
+            }),
+            prisma.searchingfor.findMany({
+                select: { id: true, name: true, description: true },
+                orderBy: { name: "asc" },
+            }),
+        ]);
+
+        // Trả về dữ liệu đã biến đổi
+        return {
+            zodiacs: zodiacsData.map(transformOption),
+            languages: languagesData.map(transformOption),
+            religions: religionsData.map(transformOption),
+            careers: careersData.map(transformOption),
+            educations: educationsData.map(transformOption),
+            characters: charactersData.map(transformOption),
+            communicateStyles: communicateStylesData.map(transformOption),
+            loveLanguages: loveLanguagesData.map(transformOption),
+            futureFamilies: futureFamiliesData.map(transformOption),
+            pets: petsData.map(transformOption),
+            diets: dietsData.map(transformOption),
+            sleeps: sleepsData.map(transformOption),
+            snus: snusData.map(transformOption),
+            favorites: favoriteData.map(transformOption),
+            sexualOrientations: sexualOrientationData.map(transformOption),
+            searchingFor: searchingForData.map(transformOption),
+        };
+    },
+};
+
+```
+
+### src\repository\notification.repository.js
+```js
+import prisma from '../prisma/client.js';
+import logger from '../utils/logger.js';
+
+export const notificationRepository = {
+  async create(senderId, receiverId, entityId, type) {
+    try {
+      logger.info(`Creating notification for receiver ${receiverId}`);
+      return await prisma.notifications.create({
+        data: {
+          sender_id: parseInt(senderId),
+          receiver_id: parseInt(receiverId),
+          entity_id: parseInt(entityId),
+          type
+        },
+        select: {
+          id: true,
+          type: true,
+          entity_id: true,
+          created_at: true,
+          is_read: true,
+          is_hidden: true,
+          sender: { select: { id: true, display_name: true } },
+          receiver: { select: { id: true } }
+        }
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error creating notification');
+      throw error;
+    }
+  },
+  async getAll(userId) {
+    try {
+      logger.info(`Fetching notifications for user ${userId}`);
+      return await prisma.notifications.findMany({
+        where: {
+          AND: [{ receiver_id: parseInt(userId) }, { is_hidden: false }]
+        },
+        select: {
+          id: true,
+          type: true,
+          entity_id: true,
+          created_at: true,
+          is_read: true,
+          is_hidden: true,
+          sender: {
+            select: {
+              id: true,
+              display_name: true,
+              Bio: {
+                select: {
+                  age: true,
+                  Photo: { where: { is_profile_pic: true }, select: { url: true }, take: 1 }
+                }
+              }
+            }
+          }
+        },
+        orderBy: { created_at: 'desc' },
+        take: 50 // Giới hạn số thông báo
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error fetching notifications');
+      throw error;
+    }
+  },
+  async update(id) {
+    try {
+      logger.info(`Updating notification ${id}`);
+      return await prisma.notifications.update({
+        where: { id: parseInt(id) },
+        data: { is_hidden: true },
+        select: { id: true, is_hidden: true }
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error updating notification');
+      throw error;
+    }
+  }
+};
+```
+
+### src\repository\user.repository.js
+```js
+import prisma from '../prisma/client.js';
+import logger from '../utils/logger.js';
+
+export const userRepository = {
+    async findUserByEmail(email) {
+        try {
+            logger.info(`Fetching user by email ${email}`);
+            return await prisma.users.findUnique({
+                where: { email },
+                select: {
+                    id: true,
+                    email: true,
+                    username: true,
+                    display_name: true,
+                    password: true,
+                    gender: true,
+                    preferred_gender: true,
+                    status: true,
+                    is_verified: true,
+                    is_full_information: true,
+                    Bio: {
+                        select: {
+                            id: true,
+                            name: true,
+                            age: true,
+                            status: true,
+                            about_me: true,
+                            main_inf: {
+                                select: {
+                                    height: true,
+                                    location: true,
+                                    Language: { select: { id: true, name: true } },
+                                    Religion: { select: { id: true, name: true } },
+                                    Career: { select: { id: true, name: true } },
+                                    Education: { select: { id: true, name: true } }
+                                }
+                            },
+                            Base_inf: {
+                                select: {
+                                    Zodiac: { select: { id: true, name: true } },
+                                    Character: { select: { id: true, name: true } },
+                                    Communicate_style: { select: { id: true, name: true } },
+                                    Love_language: { select: { id: true, name: true } },
+                                    FutureFamily: { select: { id: true, name: true } },
+                                    Sexual_orientation: { select: { id: true, name: true } }
+                                }
+                            },
+                            Lifestyle: {
+                                select: {
+                                    drink: true,
+                                    smoke: true,
+                                    train: true,
+                                    Pet: { select: { id: true, name: true } },
+                                    Diet: { select: { id: true, name: true } },
+                                    Sleep: { select: { id: true, name: true } },
+                                    SNU: { select: { id: true, name: true } }
+                                }
+                            },
+                            Photo: { select: { id: true, url: true, is_profile_pic: true } },
+                            Searchingfor: { select: { id: true, name: true } }
+                        }
+                    },
+                    user_favorites: { select: { favorite_id: true } }
+                }
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, 'Error fetching user by email');
+            throw error;
+        }
+    },
+    async findUserById(id) {
+        try {
+            logger.info(`Fetching user by id ${id}`);
+            const parsedId = parseInt(id);
+            if (isNaN(parsedId)) {
+                throw new Error(`Invalid user ID: ${id}`);
+            }
+            return await prisma.users.findUnique({
+                where: { id: parsedId },
+                select: {
+                    id: true,
+                    email: true,
+                    display_name: true,
+                    gender: true,
+                    preferred_gender: true,
+                    is_full_information: true,
+                    Bio: {
+                        select: {
+                            id: true,
+                            name: true,
+                            age: true,
+                            about_me: true,
+                            main_inf: {
+                                select: {
+                                    height: true,
+                                    location: true,
+                                    Language: { select: { id: true, name: true } },
+                                    Religion: { select: { id: true, name: true } },
+                                    Career: { select: { id: true, name: true } },
+                                    Education: { select: { id: true, name: true } }
+                                }
+                            },
+                            Base_inf: {
+                                select: {
+                                    Zodiac: { select: { id: true, name: true } },
+                                    Character: { select: { id: true, name: true } },
+                                    Communicate_style: { select: { id: true, name: true } },
+                                    Love_language: { select: { id: true, name: true } },
+                                    FutureFamily: { select: { id: true, name: true } },
+                                    Sexual_orientation: { select: { id: true, name: true } }
+                                }
+                            },
+                            Lifestyle: {
+                                select: {
+                                    drink: true,
+                                    smoke: true,
+                                    train: true,
+                                    Pet: { select: { id: true, name: true } },
+                                    Diet: { select: { id: true, name: true } },
+                                    Sleep: { select: { id: true, name: true } },
+                                    SNU: { select: { id: true, name: true } }
+                                }
+                            },
+                            Photo: { select: { id: true, url: true, is_profile_pic: true } },
+                            Searchingfor: { select: { id: true, name: true } }
+                        }
+                    },
+                    user_favorites: { select: { favorite_id: true } }
+                }
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, `Error fetching user by id ${id}`);
+            throw error;
+        }
+    },
+    async getUsers(filters = {}, usersIdMatched = []) {
+        try {
+            logger.info(`Fetching users with filters: ${JSON.stringify(filters)}`);
+            const {
+                languageIds,
+                educationIds,
+                zodiacIds,
+                characterIds,
+                comunicateStyleIds,
+                loveLanguageIds,
+                futureFamilyIds,
+                sexualOrientationIds,
+                petIds,
+                dietIds,
+                sleepIds,
+                snuIds,
+                searchingForIds,
+                search,
+                gender,
+                ageMin,
+                ageMax,
+                currentUserId
+            } = filters;
+
+            let where = {
+                id: {
+                    notIn: usersIdMatched,
+                    not: currentUserId ? parseInt(currentUserId) : undefined // Loại bỏ userId trùng
+                },
+            };
+
+            if (search) {
+                where.OR = [
+                    { display_name: { contains: search, mode: "insensitive" } },
+                    { Bio: { name: { contains: search, mode: "insensitive" } } },
+                ];
+            }
+
+            if (gender) {
+                where.gender = gender;
+            }
+
+            if (ageMin || ageMax) {
+                where.Bio = {
+                    ...where.Bio,
+                    age: {
+                        gte: parseInt(ageMin) || 18,
+                        lte: parseInt(ageMax) || 100,
+                    },
+                };
+            }
+
+            if (languageIds || educationIds || zodiacIds || characterIds || comunicateStyleIds ||
+                loveLanguageIds || futureFamilyIds || sexualOrientationIds || petIds || dietIds ||
+                sleepIds || snuIds || searchingForIds) {
+                where.Bio = {
+                    ...where.Bio,
+                    main_inf: {
+                        Language: languageIds ? { id: { in: languageIds } } : undefined,
+                        Education: educationIds ? { id: { in: educationIds } } : undefined
+                    },
+                    Base_inf: {
+                        Zodiac: zodiacIds ? { id: { in: zodiacIds } } : undefined,
+                        Character: characterIds ? { id: { in: characterIds } } : undefined,
+                        Communicate_style: comunicateStyleIds ? { id: { in: comunicateStyleIds } } : undefined,
+                        Love_language: loveLanguageIds ? { id: { in: loveLanguageIds } } : undefined,
+                        FutureFamily: futureFamilyIds ? { id: { in: futureFamilyIds } } : undefined,
+                        Sexual_orientation: sexualOrientationIds ? { id: { in: sexualOrientationIds } } : undefined
+                    },
+                    Lifestyle: {
+                        Pet: petIds ? { id: { in: petIds } } : undefined,
+                        Diet: dietIds ? { id: { in: dietIds } } : undefined,
+                        Sleep: sleepIds ? { id: { in: sleepIds } } : undefined,
+                        SNU: snuIds ? { id: { in: snuIds } } : undefined
+                    },
+                    Searchingfor: searchingForIds ? { id: { in: searchingForIds } } : undefined
+                };
+            }
+
+            return await prisma.users.findMany({
+                where,
+                take: 50,
+                select: {
+                    id: true,
+                    email: true,
+                    display_name: true,
+                    gender: true,
+                    preferred_gender: true,
+                    is_full_information: true,
+                    Bio: {
+                        select: {
+                            id: true,
+                            name: true,
+                            age: true,
+                            about_me: true,
+                            main_inf: {
+                                select: {
+                                    height: true,
+                                    location: true,
+                                    Language: { select: { id: true, name: true } },
+                                    Religion: { select: { id: true, name: true } },
+                                    Career: { select: { id: true, name: true } },
+                                    Education: { select: { id: true, name: true } }
+                                }
+                            },
+                            Base_inf: {
+                                select: {
+                                    Zodiac: { select: { id: true, name: true } },
+                                    Character: { select: { id: true, name: true } },
+                                    Communicate_style: { select: { id: true, name: true } },
+                                    Love_language: { select: { id: true, name: true } },
+                                    FutureFamily: { select: { id: true, name: true } },
+                                    Sexual_orientation: { select: { id: true, name: true } }
+                                }
+                            },
+                            Lifestyle: {
+                                select: {
+                                    drink: true,
+                                    smoke: true,
+                                    train: true,
+                                    Pet: { select: { id: true, name: true } },
+                                    Diet: { select: { id: true, name: true } },
+                                    Sleep: { select: { id: true, name: true } },
+                                    SNU: { select: { id: true, name: true } }
+                                }
+                            },
+                            Photo: { select: { id: true, url: true, is_profile_pic: true } },
+                            Searchingfor: { select: { id: true, name: true } }
+                        }
+                    },
+                    user_favorites: { select: { favorite_id: true } }
+                }
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, 'Error fetching users');
+            throw error;
+        }
+    },
+    async createUser(userData) {
+        try {
+            logger.info('Creating new user');
+            return await prisma.users.create({
+                data: {
+                    ...userData,
+                    Bio: {
+                        create: {
+                            main_inf: { create: {} },
+                            Base_inf: { create: {} },
+                            Lifestyle: { create: {} },
+                            Photo: {
+                                create: [
+                                    { url: '', is_profile_pic: true },
+                                    { url: '', is_profile_pic: false }
+                                ]
+                            }
+                        }
+                    }
+                }
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, 'Error creating user');
+            throw error;
+        }
+    },
+    async updateUserById(userId, user, favorites) {
+        try {
+            logger.info(`Updating user ${userId}`);
+            await prisma.user_favorite.deleteMany({ where: { user_id: userId } });
+            if (favorites?.length > 0) {
+                await prisma.user_favorite.createMany({
+                    data: favorites.map(favoriteId => ({
+                        user_id: parseInt(userId),
+                        favorite_id: favoriteId
+                    }))
+                });
+            }
+            return await prisma.users.update({
+                where: { id: parseInt(userId) },
+                data: user,
+                select: {
+                    id: true,
+                    email: true,
+                    display_name: true,
+                    gender: true,
+                    preferred_gender: true,
+                    is_full_information: true,
+                    Bio: {
+                        select: {
+                            id: true,
+                            name: true,
+                            age: true,
+                            about_me: true,
+                            main_inf: {
+                                select: {
+                                    height: true,
+                                    location: true,
+                                    Language: { select: { id: true, name: true } },
+                                    Religion: { select: { id: true, name: true } },
+                                    Career: { select: { id: true, name: true } },
+                                    Education: { select: { id: true, name: true } }
+                                }
+                            },
+                            Base_inf: {
+                                select: {
+                                    Zodiac: { select: { id: true, name: true } },
+                                    Character: { select: { id: true, name: true } },
+                                    Communicate_style: { select: { id: true, name: true } },
+                                    Love_language: { select: { id: true, name: true } },
+                                    FutureFamily: { select: { id: true, name: true } },
+                                    Sexual_orientation: { select: { id: true, name: true } }
+                                }
+                            },
+                            Lifestyle: {
+                                select: {
+                                    drink: true,
+                                    smoke: true,
+                                    train: true,
+                                    Pet: { select: { id: true, name: true } },
+                                    Diet: { select: { id: true, name: true } },
+                                    Sleep: { select: { id: true, name: true } },
+                                    SNU: { select: { id: true, name: true } }
+                                }
+                            },
+                            Photo: { select: { id: true, url: true, is_profile_pic: true } },
+                            Searchingfor: { select: { id: true, name: true } }
+                        }
+                    },
+                    user_favorites: { select: { favorite_id: true } }
+                }
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, 'Error updating user');
+            throw error;
+        }
+    },
+    async updateUserEmailVerifiedStatus(userId, isVerified) {
+        try {
+            logger.info(`Updating email verification status for user ${userId}`);
+            return await prisma.users.update({
+                where: { id: parseInt(userId) },
+                data: { is_verified: isVerified }
+            });
+        } catch (error) {
+            logger.error({ error, stack: error.stack }, 'Error updating email verification status');
+            throw error;
+        }
+    }
+};
+```
+
+### src\routes\ai.routes.js
+```js
+import express from 'express';
+import { aiController } from '../controllers/ai.controller.js';
+import { authenticationMiddleware } from '../middleware/auth.middleware.js';
+
+const router = express.Router();
+
+router.post('/recommendations/generate', aiController.generateRecommendations);
+router.get('/recommendations', authenticationMiddleware, aiController.getRecommendations);
+
+export default router;
+```
+
+### src\routes\auth.routes.js
+```js
+import express from "express";
+import { authController } from "../controllers/auth.controller.js";
+import { validateCredentialsMiddleware } from "../middleware/auth.middleware.js";
+
+const router = express.Router();
+
+router.post("/login", validateCredentialsMiddleware, authController.login);
+router.post(
+    "/register",
+    validateCredentialsMiddleware,
+    authController.register
+);
+router.post("/send-verification-otp", authController.requestVerificationCode);
+router.post("/verify-otp", authController.verifyEmailWithOtp);
+
+export default router;
+
+```
+
+### src\routes\index.js
+```js
+import express from 'express';
+import authRoutes from './auth.routes.js';
+import matchRoutes from './match.routes.js';
+import messageRoutes from './message.routes.js';
+import metadataRoutes from './metadata.routes.js';
+import notificationRoutes from './notifications.routes.js';
+import reportRoutes from './reports.routes.js';
+import uploadRoutes from './upload.routes.js';
+import userRoutes from './user.routes.js';
+import aiRoutes from './ai.routes.js';
+
+const router = express.Router();
+
+console.log("userRoutes exists:", !!userRoutes);
+
+router.use('/auth', authRoutes);
+router.use('/match', matchRoutes);
+router.use('/message', messageRoutes);
+router.use('/metadata', metadataRoutes);
+router.use('/notifications', notificationRoutes);
+router.use('/reports', reportRoutes);
+router.use('/upload', uploadRoutes);
+router.use('/user', userRoutes);
+router.use('/ai', aiRoutes); 
+
+function logRoutes(router, prefix = '') {
+    router.stack.forEach((layer) => {
+        if (layer.route) {
+            console.log(
+                `Route: ${Object.keys(layer.route.methods).join(', ').toUpperCase()} ${prefix}${layer.route.path}`
+            );
+        } else if (layer.handle.stack) {
+            logRoutes(layer.handle, `${prefix}${layer.regexp.toString().split('?')[0].replace(/\/\^/, '')}`);
+        }
+    });
+}
+
+console.log("Logging all registered routes:");
+logRoutes(router, '/api');
+
+export default router;
+```
+
+### src\routes\match.routes.js
+```js
+import express from "express";
+import { matchController } from "../controllers/match.controller.js";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+import { matchMiddleware } from "../middleware/match.middleware.js";
+
+const router = express.Router();
+router.get(
+    "/:matchId",
+    authenticationMiddleware,
+    matchMiddleware,
+    matchController.get
+);
+router.get("/", authenticationMiddleware, matchController.getAll);
+router.post("/", authenticationMiddleware, matchController.create);
+router.put("/:matchId", authenticationMiddleware, matchController.update);
+
+export default router;
+
+```
+
+### src\routes\message.routes.js
+```js
+import { Router } from "express";
+import { messageController } from "../controllers/message.controller.js";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+import { messageMiddleware } from "../middleware/message.middleware.js";
+
+const router = Router();
+
+router.get(
+  "/:matchId",
+  authenticationMiddleware,
+  messageMiddleware,
+  messageController.getAll
+);
+
+router.post("/", authenticationMiddleware, messageController.create);
+
+export default router;
+```
+
+### src\routes\metadata.routes.js
+```js
+import express from "express";
+import { metadataController } from "../controllers/metadata.controller.js";
+
+const router = express.Router();
+
+router.get("/", metadataController.get);
+
+export default router;
+
+```
+
+### src\routes\notifications.routes.js
+```js
+import express from "express";
+import { notificationController } from "../controllers/notification.controller.js";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+
+const router = express.Router();
+
+router.post("/", authenticationMiddleware, notificationController.create);
+router.get("/", authenticationMiddleware, notificationController.getAll);
+
+export default router;
+
+```
+
+### src\routes\reports.routes.js
+```js
+import express from "express";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+import { reportController } from "../controllers/reports.controller.js";
+
+const router = express.Router();
+
+// router.post("/", authenticationMiddleware, reportController.create);
+// router.get("/", authenticationMiddleware, reportController.getAll);
+
+export default router;
+
+```
+
+### src\routes\upload.routes.js
+```js
+import express from "express";
+import upload from "../utils/upload.js";
+import { uploadController } from "../controllers/upload.controller.js";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+
+const router = express.Router();
+
+router.post("/single", authenticationMiddleware, upload.single("image"), uploadController.uploadSingle);
+router.post("/multiple", authenticationMiddleware, upload.array("images", 6), uploadController.uploadMultiple);
+router.delete("/:photoId", authenticationMiddleware, uploadController.deletePhoto); // Thêm route DELETE
+
+export default router;
+```
+
+### src\routes\user.routes.js
+```js
+import express from "express";
+import { userController } from "../controllers/user.controller.js";
+import { authenticationMiddleware } from "../middleware/auth.middleware.js";
+
+const router = express.Router();
+
+
+router.get("/me", authenticationMiddleware, userController.getProfile);
+router.get("/list-match", authenticationMiddleware, (req, res, next) => {
+
+    userController.getAll(req, res, next);
+});
+
+
+
+router.get("/:id", authenticationMiddleware, userController.getUserInfo);
+router.put("/update-profile", authenticationMiddleware, userController.updateUser);
+
+
+export default router;
+```
+
+### src\services\ai.service.js
+```js
+import prisma from '../prisma/client.js';
+import processUserEmbedding from '../ai/pipeline/processUserEmbedding.js';
+import searchTopKUsers from '../ai/weaviate/searchSimilarUsers.js';
+import embedUserText from '../ai/embedding/embedUserText.js';
+import logger from '../utils/logger.js';
+import pLimit from 'p-limit';
+
+const limit = pLimit(2); // Giới hạn 2 tác vụ đồng thời
+
+export const aiService = {
+  async generateRecommendations() {
+    try {
+      logger.info('Starting recommendation generation');
+      
+      logger.info('Checking database connection');
+      try {
+        await prisma.$connect();
+        logger.info('Database connected');
+      } catch (dbError) {
+        logger.error({ dbError, stack: dbError.stack }, 'Database connection error');
+        throw dbError;
+      }
+
+      logger.info('Fetching all users from database');
+      let users;
+      try {
+        users = await prisma.users.findMany({
+          include: {
+            Bio: {
+              include: {
+                main_inf: true,
+                Base_inf: true,
+                Lifestyle: {
+                  include: {
+                    Diet: true,
+                    Sleep: true,
+                    SNU: true,
+                    Pet: true
+                  }
+                },
+                Searchingfor: true
+              }
+            },
+            user_favorites: {
+              include: {
+                favorite: true
+              }
+            }
+          }
+        });
+      } catch (prismaError) {
+        logger.error({ prismaError, stack: prismaError.stack }, 'Error fetching users');
+        throw prismaError;
+      }
+      logger.info(`Found ${users.length} users: ${users.map(u => u.id).join(', ')}`);
+
+      if (users.length === 0) {
+        logger.warn('No users found, skipping recommendation generation');
+        return;
+      }
+
+      logger.info('Processing user embeddings');
+      const userUuidMap = new Map();
+      await Promise.all(users.map(user => limit(async () => {
+        logger.info(`Processing user ${user.id}`);
+        try {
+          if (!user.Bio) {
+            logger.warn(`Skipping user ${user.id}: Missing Bio`);
+            return;
+          }
+          const { userId, uuid } = await processUserEmbedding(user.id);
+          userUuidMap.set(userId, uuid);
+          logger.info(`Embedding processed for user ${userId}`);
+        } catch (error) {
+          logger.error({ error, stack: error.stack }, `Error processing embedding for user ${user.id}`);
+        }
+      })));
+
+      logger.info('Deleting existing recommendations');
+      try {
+        await prisma.recommendation.deleteMany();
+        logger.info('Recommendations deleted');
+      } catch (prismaError) {
+        logger.error({ prismaError, stack: prismaError.stack }, 'Error deleting recommendations');
+        throw prismaError;
+      }
+
+      logger.info('Generating new recommendations');
+      const userIds = users.map(u => u.id);
+      for (const user of users) {
+        logger.info(`Generating recommendation for user ${user.id}`);
+        try {
+          const favorites = user.user_favorites?.map(fav => fav.favorite?.name).join(', ') || 'None';
+          const text = `
+            Name: ${user.Bio?.name || user.display_name || 'Unknown'}
+            Age: ${user.Bio?.age || 'Unknown'}
+            About: ${user.Bio?.about_me || ''}
+            Location: ${user.Bio?.main_inf?.location || ''}
+            Height: ${user.Bio?.main_inf?.height || ''}
+            Career: ${user.Bio?.main_inf?.career?.name || ''}
+            Education: ${user.Bio?.main_inf?.education?.name || ''}
+            Zodiac: ${user.Bio?.Base_inf?.Zodiac?.name || ''} 
+            Character: ${user.Bio?.Base_inf?.Character?.name || ''} 
+            Communicate Style: ${user.Bio?.Base_inf?.Communicate_style?.name || ''} 
+            Love Language: ${user.Bio?.Base_inf?.Love_language?.name || ''} 
+            Future Family: ${user.Bio?.Base_inf?.FutureFamily?.name || ''} 
+            Sexual Orientation: ${user.Bio?.Base_inf?.Sexual_orientation?.name || ''} 
+            Diet: ${user.Bio?.Lifestyle?.Diet?.name || ''}
+            Sleep: ${user.Bio?.Lifestyle?.Sleep?.name || ''}
+            SNU: ${user.Bio?.Lifestyle?.SNU?.name || ''}
+            Pet: ${user.Bio?.Lifestyle?.Pet?.name || ''}
+            Favorite: ${favorites}
+            Searching For: ${user.Bio?.Searchingfor?.name || ''}
+          `.trim();
+          logger.info(`Text generated for user ${user.id}: ${text.substring(0, 100)}...`);
+          logger.info(`Generating embedding for user ${user.id}`);
+          const vector = await embedUserText(text);
+          logger.info(`Vector length: ${vector.length}`);
+          logger.info(`Searching similar users for user ${user.id}`);
+          const similarUsers = await searchTopKUsers(vector, 20, user.id);
+          logger.info(`Found ${similarUsers.length} similar users for user ${user.id}: ${similarUsers.map(s => s.userId).join(', ')}`);
+          
+          const existingRecommendations = new Set();
+          for (const similar of similarUsers) {
+            const similarUserId = parseInt(similar.userId);
+            if (!userIds.includes(similarUserId)) {
+              logger.warn(`Skipping recommendation: user ${user.id} -> ${similarUserId} (invalid recommendedUserId)`);
+              continue;
+            }
+            const score = similar._additional?.certainty || 0.5;
+            if (isNaN(score) || score < 0 || score > 1) {
+              logger.warn(`Skipping recommendation: user ${user.id} -> ${similarUserId} (invalid score: ${score})`);
+              continue;
+            }
+            const recommendationKey = `${user.id}-${similarUserId}`;
+            if (existingRecommendations.has(recommendationKey)) {
+              logger.warn(`Skipping duplicate recommendation: user ${user.id} -> ${similarUserId}`);
+              continue;
+            }
+            logger.info(`Creating recommendation: user ${user.id} -> ${similarUserId} with score ${score}`);
+            try {
+              await prisma.recommendation.create({
+                data: {
+                  userId: user.id,
+                  recommendedUserId: similarUserId,
+                  score
+                }
+              });
+              existingRecommendations.add(recommendationKey);
+            } catch (prismaError) {
+              logger.error({ prismaError, stack: prismaError.stack }, `Failed to create recommendation: user ${user.id} -> ${similarUserId}`);
+              continue;
+            }
+          }
+        } catch (error) {
+          logger.error({ error, stack: error.stack }, `Error generating recommendation for user ${user.id}`);
+          continue;
+        }
+      }
+
+      logger.info('Recommendations generated and saved');
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error generating recommendations');
+      throw error;
+    }
+  }
+};
+```
+
+### src\services\auth.service.js
+```js
+import bcrypt from "bcryptjs";
+import { createToken } from "../utils/auth.js";
+import { generateOTP } from "../utils/otpGenerator.js";
+import { emailService } from "./email.service.js";
+import { userService } from "../services/user.service.js";
+import Redis from "ioredis";
+
+const SALT_ROUNDS = 10;
+const redisClient = new Redis({
+    host: process.env.REDIS_HOST || "localhost",
+    port: process.env.REDIS_PORT || 6379,
+});
+const OTP_EXPIRY_SECONDS = 5 * 60;
+
+export const authService = {
+    loginUser: async (email, password) => {
+        const user = await userService.getProfileByEmail(email);
+        if (!user) throw new Error("User not found");
+
+        console.log("User data before login:", { id: user.id, email: user.email }); // Debug
+
+        // const isValidPassword = await bcrypt.compare(password, user.password);
+        // if (!isValidPassword) throw new Error("Password is not correct");
+
+        const token = createToken(user);
+        return { token, user };
+    },
+    registerUserNew: async (email, password) => {
+        const existingUser = await userService.getProfileByEmail(email);
+        if (existingUser) throw new Error("Email already registered");
+        const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
+        const newUserInput = {
+            email,
+            password: hashedPassword,
+            display_name: email,
+            username: email,
+            gender: "male",
+            preferred_gender: "female",
+        };
+        const newUserRaw = await userService.createUser(newUserInput);
+        const returnedUserInfo = {
+            id: newUserRaw.id,
+            displayName: newUserRaw.display_name,
+            email: newUserRaw.email,
+            username: newUserRaw.username,
+        };
+
+        return returnedUserInfo;
+    },
+    sendOtpForVerification: async (email) => {
+        const otp = generateOTP();
+
+        try {
+            const redisKey = `otp:${email}`;
+            await redisClient.set(redisKey, otp, "EX", OTP_EXPIRY_SECONDS);
+            await emailService.sendVerificationOtp(email, otp);
+
+            console.log(`OTP for ${email} stored and sent.`);
+            return true;
+        } catch (error) {
+            console.error(`Error sending OTP for ${email}:`, error);
+            throw new Error("Không thể gửi mã xác thực.");
+        }
+    },
+    verifyEmailOtp: async (email, otp) => {
+        const redisKey = `otp:${email}`;
+        const storedOtp = await redisClient.get(redisKey);
+
+        if (!storedOtp) {
+            throw new Error("Mã OTP đã hết hạn hoặc không tồn tại.");
+        }
+
+        if (storedOtp !== otp) {
+            throw new Error("Mã OTP không chính xác.");
+        }
+
+        try {
+            const user = await userService.getProfileByEmail(email);
+            if (user) {
+                await userService.updateUserEmailVerifiedStatus(user.id, true);
+                await redisClient.del(redisKey);
+            }
+            console.log(`Email ${email} verified successfully.`);
+
+            return true;
+        } catch (error) {
+            console.error(`Error verifying OTP for ${email}:`, error);
+            throw new Error("Lỗi trong quá trình xác thực OTP.");
+        }
+    },
+};
+```
+
+### src\services\email.service.js
+```js
+import nodemailer from "nodemailer";
+
+const transporter = nodemailer.createTransport({
+    host: process.env.EMAIL_HOST,
+    port: parseInt(process.env.EMAIL_PORT || "587"),
+    secure: process.env.EMAIL_SECURE === "true",
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    },
+});
+
+export const emailService = {
+    sendVerificationOtp: async (toEmail, otp) => {
+        const mailOptions = {
+            from: `${process.env.EMAIL_FROM}`,
+            to: toEmail,
+            subject: "Mã Xác Thực Email Của Bạn",
+            text: `Mã xác thực của bạn là: ${otp}. Mã này sẽ hết hạn sau 5 phút.`,
+            html: `<p>Mã xác thực của bạn là: <strong>${otp}</strong>. Mã này sẽ hết hạn sau 5 phút.</p>`,
+        };
+
+        console.log(mailOptions);
+
+        try {
+            console.log(transporter);
+
+            let info = await transporter.sendMail(mailOptions);
+            console.log(
+                `Verification OTP sent to ${toEmail}: %s`,
+                info.messageId
+            );
+            return info;
+        } catch (error) {
+            console.error(`Error sending OTP to ${toEmail}:`, error);
+            throw new Error("Gửi email xác thực thất bại.");
+        }
+    },
+};
+
+```
+
+### src\services\match.service.js
+```js
+// src/services/match.service.js
+
+import { matchRepository } from "../repository/match.repository.js";
+import { notificationService } from "../services/notification.service.js";
+import logger from "../utils/logger.js";
+
+export const matchService = {
+  get: (id) => {
+    return matchRepository.get(parseInt(id));
+  },
+
+  getAll: async (userId, isAccept = true) => {
+    logger.info(`Fetching matches for user ${userId}`);
+    const matches = await matchRepository.getAll(userId, isAccept);
+    logger.debug(`Raw matches data for user ${userId}: ${JSON.stringify(matches, null, 2)}`);
+    return matches
+      .map((match) => {
+        const otherUser =
+          match.user_1_id === userId ? match.user_match_2 : match.user_match_1;
+
+        if (!otherUser) {
+          logger.warn(`No other user found for match ${match.id}, userId ${userId}`);
+          return null;
+        }
+
+        // Lấy ảnh đại diện từ mảng Photo
+        const photo = otherUser.Bio?.Photo?.find(p => p?.is_profile_pic)?.url || otherUser.Bio?.Photo?.[0]?.url || "";
+
+        const result = {
+          id: match.id,
+          user_id: otherUser.id,
+          name: otherUser.display_name || "Không có tên",
+          age: otherUser.Bio?.age || 0,
+          matchTime: match.matched_at
+            ? new Date(match.matched_at).toLocaleDateString()
+            : "Hôm nay",
+          photo,
+          unread: false,
+        };
+
+        logger.debug(`Formatted match for user ${userId}: ${JSON.stringify(result, null, 2)}`);
+        return result;
+      })
+      .filter((match) => match !== null);
+  },
+
+  create: async (senderId, receiverId) => {
+    if (senderId === receiverId) {
+      throw new Error("Cannot create match with the same user");
+    }
+    const isExistMatch = await matchRepository.find(senderId, receiverId);
+    if (isExistMatch) {
+      throw new Error("The match has already been created");
+    }
+    try {
+      const match = await matchRepository.create(senderId, receiverId);
+      const notification = await notificationService.create(
+        senderId,
+        receiverId,
+        match.id,
+        "LIKED"
+      );
+      if (!notification) {
+        throw new Error("Cannot create notification");
+      }
+      return match;
+    } catch (error) {
+      throw new Error("Cannot create match");
+    }
+  },
+
+  update: async (id, isAccept, receiverId, notificationId) => {
+    try {
+      const match = await matchRepository.update(parseInt(id), isAccept);
+      const senderId =
+        match.user_1_id === receiverId ? match.user_2_id : match.user_1_id;
+
+      if (isAccept) {
+        await notificationService.create(senderId, receiverId, match.id, "NEW_MATCH");
+        await notificationService.create(receiverId, senderId, match.id, "NEW_MATCH");
+        await notificationService.update(notificationId);
+        return match;
+      }
+    } catch (error) {
+      logger.error("Error updating match:", error);
+    }
+  },
+};
+```
+
+### src\services\message.service.js
+```js
+import { matchRepository } from "../repository/match.repository.js";
+import { messageRepository } from "../repository/message.repository.js";
+import { messageFormatted } from "../utils/message.utils.js";
+import logger from "../utils/logger.js";
+
+export const messageService = {
+  create: async (matchId, senderId, receiverId, content) => {
+    logger.info(`Service: Creating message for match ${matchId}, sender ${senderId}`);
+    const match = await matchRepository.get(matchId);
+    if (!match) {
+      logger.warn(`Match ${matchId} not found`);
+      throw new Error("Match not found");
+    }
+    const message = await messageRepository.create(
+      matchId,
+      senderId,
+      receiverId,
+      content
+    );
+    const result = messageFormatted(message, senderId);
+    logger.debug(`Formatted created message: ${JSON.stringify(result, null, 2)}`);
+    return result;
+  },
+  getAll: async (matchId, userId) => {
+    logger.info(`Service: Fetching messages for match ${matchId}, user ${userId}`);
+    const match = await matchRepository.get(matchId);
+    if (!match) {
+      logger.warn(`Match ${matchId} not found`);
+      throw new Error("Match not found");
+    }
+    const receiver =
+      match.user_1_id === userId
+        ? match.user_match_2
+        : match.user_match_1;
+    if (!receiver) {
+      logger.warn(`Receiver not found for match ${matchId}`);
+      throw new Error("Receiver not found");
+    }
+    const messages = await messageRepository.getAll(matchId);
+    logger.info(`Service: Retrieved ${messages.length} messages for match ${matchId}`);
+    const formattedMessages = messages.map((message) =>
+      messageFormatted(message, userId)
+    );
+    const result = {
+      id: receiver.id,
+      name: receiver.display_name,
+      photo: receiver.Bio?.Photo?.find(p => p?.is_profile_pic)?.url || "",
+      messages: formattedMessages,
+    };
+    logger.debug(`Formatted messages response: ${JSON.stringify(result, null, 2)}`);
+    return result;
+  },
+};
+```
+
+### src\services\metadata.service.js
+```js
+import { metadataRepository } from "../repository/metadata.repository.js";
+
+export const metadataService = {
+    get: () => {
+        return metadataRepository.get();
+    },
+};
+
+```
+
+### src\services\notification.service.js
+```js
+import { notificationRepository } from "../repository/notification.repository.js";
+import { formatNotification } from "../utils/notification.utils.js";
+
+export const notificationService = {
+    getAll: async (userId) => {
+        const notifications = await notificationRepository.getAll(userId);
+        const notificationFormatted = notifications.map((notification) =>
+            formatNotification(notification)
+        );
+        return notificationFormatted;
+    },
+    create: (senderId, receiverId, entityId, type) => {
+        try {
+            return notificationRepository.create(
+                senderId,
+                receiverId,
+                entityId,
+                type
+            );
+        } catch (error) {
+            throw new Error("Cannot create notification: " + error.message);
+        }
+    },
+    update: (id) => {
+        try {
+            return notificationRepository.update(id);
+        } catch (error) {
+            throw new Error("Cannot update notification: " + error.message);
+        }
+    },
+};
+
+```
+
+### src\services\reports.service.js
+```js
+export const reportService = {};
+
+```
+
+### src\services\user.service.js
+```js
+import { userRepository } from "../repository/user.repository.js";
+import { formatUser } from "../utils/user.utils.js";
+import { matchService } from "./match.service.js";
+
+export const userService = {
+    createUser: async (userData) => {
+        return await userRepository.createUser(userData);
+    },
+    getProfileByEmail: async (email) => {
+        const userRaw = await userRepository.findUserByEmail(email);
+        const userFormatted = formatUser(userRaw);
+        if (userFormatted) {
+            delete userFormatted.password;
+        }
+        return userFormatted;
+    },
+    getProfileById: async (id) => {
+        const userRaw = await userRepository.findUserById(id);
+        const userFormatted = formatUser(userRaw);
+        if (userFormatted) {
+            delete userFormatted.password;
+        }
+        return userFormatted;
+    },
+    getUserById: async (id) => {
+        const userRaw = await userRepository.findUserById(id);
+        const userFormatted = formatUser(userRaw);
+        if (userFormatted) {
+            delete userFormatted.password;
+        }
+        return userFormatted;
+    },
+    getAllUsersFormatted: async (filters, userId) => {
+        const filtersFormatted = {
+            languageIds: filters?.["language"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            educationIds: filters?.["education"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            zodiacIds: filters?.["zodiac"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            characterIds: filters?.["character"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            comunicateStyleIds: filters?.["communicate"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            loveLanguageIds: filters?.["lovelanguage"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            futureFamilyIds: filters?.["futurefamily"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            sexualOrientationIds: filters?.["sexOrientation"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            petIds: filters?.["pet"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            dietIds: filters?.["diet"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            sleepIds: filters?.["sleep"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            snuIds: filters?.["sns"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            searchingForIds: filters?.["searchingfor"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
+            search: filters?.search,
+            gender: filters?.gender,
+            ageMin: filters?.ageMin ? parseInt(filters.ageMin) : undefined,
+            ageMax: filters?.ageMax ? parseInt(filters.ageMax) : undefined,
+            currentUserId: filters?.currentUserId ? parseInt(filters.currentUserId) : undefined,
+        };
+
+        const usersMatched = await matchService.getAll(userId, false);
+        const usersIdMatched = usersMatched?.map((match) => match?.user_id) || [];
+
+        const usersRaw = await userRepository.getUsers(
+            filtersFormatted,
+            usersIdMatched
+        );
+
+        const usersFormatted = usersRaw.map((user) => {
+            const formatted = formatUser(user);
+            if (formatted) {
+                delete formatted.password;
+            }
+            return formatted;
+        });
+        return usersFormatted;
+    },
+    updateUserById: async (userId, user) => {
+        const {
+            displayName,
+            password,
+            gender,
+            preferredGender,
+            name,
+            age,
+            aboutMe,
+            height,
+            location,
+            birthday,
+            languageId,
+            religionId,
+            careerId,
+            educationId,
+            zodiacId,
+            characterId,
+            communicateStyleId,
+            loveLanguageId,
+            futureFamilyId,
+            drink,
+            smoke,
+            train,
+            petId,
+            dietId,
+            sleepId,
+            snuId,
+            photos,
+            favorites,
+            maxRadius,
+        } = user;
+
+        // Cập nhật is_profile_pic trong cơ sở dữ liệu
+        if (photos?.length > 0) {
+            await prisma.photo.updateMany({
+                where: { bio_id: user.bioId },
+                data: { is_profile_pic: false }
+            });
+            await prisma.photo.update({
+                where: { id: photos[0]?.id },
+                data: { is_profile_pic: true }
+            });
+        }
+
+        const photoUpdate =
+            photos?.length > 0
+                ? {
+                      Photo: {
+                          updateMany: photos?.map((photo, index) => ({
+                              where: { id: photo?.id || undefined },
+                              data: {
+                                  url: photo?.url,
+                                  is_profile_pic: index === 0,
+                              },
+                          })),
+                      },
+                  }
+                : {};
+        const data = {
+            display_name: displayName,
+            gender,
+            preferred_gender: preferredGender,
+            is_full_information: true,
+            birthday,
+            Bio: {
+                update: {
+                    name,
+                    age,
+                    about_me: aboutMe,
+                    address: location,
+                    min_radius: 1,
+                    max_radius: maxRadius,
+                    main_inf: {
+                        update: {
+                            height,
+                            location,
+                            Language: languageId ? { connect: { id: parseInt(languageId) } } : undefined,
+                            Religion: religionId ? { connect: { id: parseInt(religionId) } } : undefined,
+                            Career: careerId ? { connect: { id: parseInt(careerId) } } : undefined,
+                            Education: educationId ? { connect: { id: parseInt(educationId) } } : undefined,
+                        },
+                    },
+                    Base_inf: {
+                        update: {
+                            Zodiac: zodiacId ? { connect: { id: parseInt(zodiacId) } } : undefined,
+                            Character: characterId ? { connect: { id: parseInt(characterId) } } : undefined,
+                            Communicate_style: communicateStyleId ? { connect: { id: parseInt(communicateStyleId) } } : undefined,
+                            Love_language: loveLanguageId ? { connect: { id: parseInt(loveLanguageId) } } : undefined,
+                            FutureFamily: futureFamilyId ? { connect: { id: parseInt(futureFamilyId) } } : undefined,
+                        },
+                    },
+                    Lifestyle: {
+                        update: {
+                            drink,
+                            smoke,
+                            train,
+                            Pet: petId ? { connect: { id: parseInt(petId) } } : undefined,
+                            Diet: dietId ? { connect: { id: parseInt(dietId) } } : undefined,
+                            Sleep: sleepId ? { connect: { id: parseInt(sleepId) } } : undefined,
+                            SNU: snuId ? { connect: { id: parseInt(snuId) } } : undefined,
+                        },
+                    },
+                    ...photoUpdate,
+                },
+            },
+        };
+
+        return await userRepository.updateUserById(userId, data, favorites);
+    },
+    updateUserEmailVerifiedStatus: async (userId, isVerified) => {
+        return await userRepository.updateUserEmailVerifiedStatus(
+            userId,
+            isVerified
+        );
+    },
+};
+```
+
+### src\sockets\messages.socket.js
+```js
+import { matchRepository } from "../repository/match.repository.js";
+import { messageService } from "../services/message.service.js";
+import { findSocketId } from "../utils/socketHelpers.js";
+import logger from "../utils/logger.js";
+
+const setupMessageSocket = (io, socket, user, connectedUsers) => {
+  socket.on("new-message", async (data) => {
+    const senderId = user?.id;
+    const { receiverId, matchId, text, sender_id } = data;
+
+    // Sử dụng sender_id từ data nếu có, nếu không thì dùng user.id
+    const effectiveSenderId = sender_id || senderId;
+
+    // Kiểm tra các trường bắt buộc
+    if (!effectiveSenderId || !receiverId || !matchId || !text) {
+      logger.warn("Missing required fields for new-message event", { data });
+      return socket.emit("errorMessage", {
+        error: "Missing required fields",
+      });
+    }
+
+    try {
+      // Không tạo lại tin nhắn vì đã được tạo qua API POST /api/message
+      logger.info(`Emitting new message for match ${matchId}`);
+
+      // Lấy danh sách users từ connectedUsers (Map)
+      const users = Array.from(connectedUsers.values());
+      const receiverSocketId = findSocketId(users, receiverId);
+
+      // Emit sự kiện với dữ liệu tin nhắn nguyên bản
+      if (receiverSocketId) {
+        socket.to(receiverSocketId).emit("receive-new-message", data);
+      }
+      socket.emit("receive-new-message", data); // Gửi lại cho sender
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, `Error processing new-message for match ${matchId}`);
+      socket.emit("errorMessage", { error: error.message });
+    }
+  });
+
+  socket.on("request-chat", async (receiverId) => {
+    const users = Array.from(connectedUsers.values());
+    const senderId = user.id;
+    const receiverSocketId = findSocketId(users, receiverId);
+    if (!senderId || !receiverId) {
+      logger.warn("Missing required fields for request-chat event");
+      return socket.emit("errorMessage", {
+        error: "Missing required fields",
+      });
+    }
+    socket.to(receiverSocketId).emit("receive-request-chat", senderId);
+    socket.emit("request-chat", "Waiting for response...");
+  });
+
+  socket.on("accept-chat", async (senderId) => {
+    const users = Array.from(connectedUsers.values());
+    const receiverId = user.id;
+    if (!senderId || !receiverId) {
+      logger.warn("Missing required fields for accept-chat event");
+      return socket.emit("errorMessage", {
+        error: "Missing required fields",
+      });
+    }
+    const senderSocketId = findSocketId(users, senderId);
+
+    try {
+      const match = await matchRepository.create(senderId, receiverId);
+      logger.info(`Match created for users ${senderId} and ${receiverId}`);
+      socket.to(senderSocketId).emit("receive-accept-chat", { receiverId, match });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, `Error creating match for users ${senderId} and ${receiverId}`);
+      socket.emit("errorMessage", { error: error.message });
+    }
+  });
+
+  socket.on("decline-chat", async (senderId) => {
+    const users = Array.from(connectedUsers.values());
+    const receiverId = user.id;
+    if (!senderId || !receiverId) {
+      logger.warn("Missing required fields for decline-chat event");
+      return socket.emit("errorMessage", {
+        error: "Missing required fields",
+      });
+    }
+    const senderSocketId = findSocketId(users, senderId);
+    socket.to(senderSocketId).emit("decline-chat", receiverId);
+  });
+};
+
+export default setupMessageSocket;
+```
+
+### src\sockets\notifications.socket.js
+```js
+import prisma from "../prisma/client.js";
+import { userService } from "../services/user.service.js";
+import { findSocketId } from "../utils/socketHelpers.js";
+
+const setupNotificationSocket = (io, socket, user, getUsers) => {
+    socket.on("joinUser", (userId) => {
+        const room = `user:${userId}`;
+        socket.join(room);
+    });
+
+    socket.on("sendNotification", async (data) => {
+        const { recipient_id, sender_id, type, content } = data;
+
+        // Kiểm tra dữ liệu đầu vào
+        if (!recipient_id || !type || !content) {
+            return socket.emit("errorNotification", {
+                error: "Missing required fields",
+            });
+        }
+
+        try {
+            // Lưu thông báo vào cơ sở dữ liệu
+            const notification = await prisma.notification.create({
+                data: { recipient_id, sender_id, type, content },
+            });
+
+            // Phát thông báo cho người nhận
+            io.to(`user:${recipient_id}`).emit(
+                "receiveNotification",
+                notification
+            );
+        } catch (error) {
+            console.error("[Socket:Notification] DB Error:", error);
+            socket.emit("errorNotification", {
+                error: "Failed to save notification",
+            });
+        }
+    });
+
+    socket.on("accept-match", async (match) => {
+        const users = getUsers();
+
+        const receiverId = user?.id;
+        const senderId =
+            match?.user_1_id === receiverId
+                ? match?.user_2_id
+                : match?.user_1_id;
+
+        const receiverSocketId = findSocketId(users, receiverId);
+        const senderSocketId = findSocketId(users, senderId);
+
+        let sender;
+        let receiver;
+
+        if (receiverId) receiver = await userService.getProfileById(receiverId);
+
+        if (senderId) sender = await userService.getProfileById(senderId);
+
+        const senderProfile = {
+            id: sender?.id,
+            name: sender?.displayName,
+            photos: sender?.photos,
+        };
+        const receiverProfile = {
+            id: receiver?.id,
+            name: receiver?.displayName,
+            photos: receiver?.photos,
+        };
+
+        socket.to(receiverSocketId).emit("new-match", senderProfile);
+        socket.to(senderSocketId).emit("new-match", receiverProfile);
+    });
+};
+
+export default setupNotificationSocket;
+
+```
+
+### src\utils\auth.js
+```js
+import jwt from "jsonwebtoken";
+import logger  from "../utils/logger.js"; // Thêm import logger
+import { userRepository } from "../repository/user.repository.js";
+import { formatUser } from "../utils/user.utils.js";
+
+export const createToken = (user) => {
+    if (!process.env.JWT_SECRET) {
+        throw new Error("JWT_SECRET is not configured");
+    }
+    return jwt.sign(
+        {
+            userId: user.id,
+            email: user.email || "", // Gán email rỗng nếu undefined
+        },
+        process.env.JWT_SECRET,
+        { expiresIn: "24h" }
+    );
+};
+
+export const extractToken = (authHeaders) => {
+    if (!authHeaders || !authHeaders.startsWith("Bearer ")) {
+        throw new Error("Authentication required");
+    }
+    return authHeaders.split(" ")[1];
+};
+
+export const verifyToken = (token) => {
+    if (!process.env.JWT_SECRET) {
+        throw new Error("JWT_SECRET is not configured");
+    }
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        return decoded;
+    } catch (error) {
+        if (error.name === "JsonWebTokenError") {
+            throw new Error("Invalid token");
+        }
+        if (error.name === "TokenExpiredError") {
+            throw new Error("Token has expired");
+        }
+        throw new Error(`Token verification failed: ${error.message}`);
+    }
+};
+
+export const attachUser = async (decoded, req) => {
+    try {
+        let user;
+        if (!decoded.email) {
+            logger.warn(`No email in token for userId ${decoded.userId}`);
+            user = await userRepository.findUserById(decoded.userId);
+        } else {
+            user = await userRepository.findUserByEmail(decoded.email.toLowerCase());
+        }
+        if (!user) {
+            throw new Error("User not found");
+        }
+        const userFormatted = formatUser(user);
+        req.user = userFormatted;
+    } catch (error) {
+        logger.error({ error, stack: error.stack }, "Error attaching user");
+        throw error;
+    }
+};
+```
+
+### src\utils\logger.js
+```js
+import pino from 'pino';
+
+   const logger = pino({
+     level: process.env.LOG_LEVEL || 'info',
+     transport: {
+       target: 'pino-pretty',
+       options: {
+         colorize: true,
+         translateTime: 'SYS:yyyy-mm-dd HH:MM:ss.l',
+         ignore: 'pid,hostname'
+       }
+     }
+   });
+
+   export default logger;
+```
+
+### src\utils\message.utils.js
+```js
+export const messageFormatted = (message, userId) => {
+  return {
+    id: message.id,
+    text: message.content,
+    time: message.sent_at,
+    sender: parseInt(message.sender_id) === parseInt(userId) ? "me" : "other",
+    sender_id: message.sender_id,
+    receiver_id: message.receiver_id,
+  };
+};
+```
+
+### src\utils\notification.utils.js
+```js
+export const formatNotification = (notification) => {
+    return {
+        id: notification?.id,
+        type: notification?.type,
+        user: {
+            name: notification?.sender?.display_name,
+            photo: notification?.sender?.Bio?.Photo,
+        },
+        time: notification?.created_at,
+        read: false,
+        matchId: notification?.entity_id,
+    };
+};
+
+```
+
+### src\utils\otpGenerator.js
+```js
+export const generateOTP = (length = 6) => {
+    let otp = "";
+    for (let index = 0; index < length; index++) {
+        otp += Math.floor(Math.random() * 10);
+    }
+    return otp;
+};
+
+```
+
+### src\utils\scheduler.js
+```js
+import cron from 'node-cron';
+import { aiService } from '../services/ai.service.js';
+
+export function startRecommendationCron() {
+  cron.schedule('*/30 * * * *', async () => {
+    console.log('Running recommendation task...');
+    try {
+      await aiService.generateRecommendations();
+      console.log('Recommendation task completed.');
+    } catch (error) {
+      console.error('Recommendation task failed:', error);
+    }
+  });
+}
+```
+
+### src\utils\socket.js
+```js
+let ioInstance = null;
+
+export const setIO = (io) => {
+    ioInstance = io;
+};
+
+export const getIO = () => {
+    if (!ioInstance) {
+        throw new Error("Socket.IO instance chưa được khởi tạo!");
+    }
+    return ioInstance;
+};
+
+```
+
+### src\utils\socketHelpers.js
+```js
+export const findSocketId = (users = [], userId) => {
+    return users?.find((user) => user?.id === userId)?.socket_id;
+};
+
+```
+
+### src\utils\upload.js
+```js
+import multer from "multer";
+import path from "path";
+import fs from "fs";
+import logger from "../utils/logger.js"; // Giả định bạn có logger
+
+// Hàm tạo thư mục nếu chưa tồn tại
+const ensureDirSync = (dirPath) => {
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+    }
+};
+
+// Cấu hình lưu trữ
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        const userId = req.user?.id;
+        if (!userId) {
+            logger.error("User ID is missing", { user: req.user, headers: req.headers });
+            return cb(new Error("User ID is missing"), null);
+        }
+        const uploadPath = path.join("uploads", userId.toString(), "images");
+        ensureDirSync(uploadPath);
+        logger.info(`Uploading file to: ${uploadPath}`);
+        cb(null, uploadPath);
+    },
+    filename: (req, file, cb) => {
+        const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+        const ext = path.extname(file.originalname);
+        cb(null, `image-${uniqueSuffix}${ext}`);
+    },
+});
+
+// Bộ lọc file (chỉ cho phép ảnh)
+const fileFilter = (req, file, cb) => {
+    const allowedTypes = ["image/jpeg", "image/png", "image/gif"];
+    if (allowedTypes.includes(file.mimetype)) {
+        cb(null, true);
+    } else {
+        logger.warn(`Invalid file type: ${file.mimetype}`);
+        cb(new Error("Only JPEG, PNG, and GIF images are allowed"), false);
+    }
+};
+
+// Cấu hình multer
+const upload = multer({
+    storage,
+    fileFilter,
+    limits: {
+        fileSize: 5 * 1024 * 1024, // Giới hạn 5MB
+        files: 6, // Giới hạn 6 file
+    },
+});
+
+export default upload;
+```
+
+### src\utils\user.utils.js
+```js
+import logger from "./logger.js";
+
+export function formatUser(user) {
+    if (!user) {
+        logger.warn("No user provided to formatUser");
+        return null;
+    }
+    const mainInf = user?.Bio?.main_inf || {};
+    const baseInf = user?.Bio?.Base_inf || {};
+    const lifestyle = user?.Bio?.Lifestyle || {};
+    const formattedUser = {
+        id: user?.id,
+        displayName: user?.display_name,
+        email: user?.email ?? "", // Sử dụng nullish coalescing để tránh undefined
+        gender: user?.gender,
+        preferredGender: user?.preferred_gender,
+        name: user?.Bio?.name,
+        age: user?.Bio?.age,
+        aboutMe: user?.Bio?.about_me,
+        height: mainInf?.height,
+        location: mainInf?.location,
+        languageId: mainInf?.Language?.id,
+        religionId: mainInf?.Religion?.id,
+        careerId: mainInf?.Career?.id,
+        educationId: mainInf?.Education?.id,
+        zodiacId: baseInf?.Zodiac?.id,
+        characterId: baseInf?.Character?.id,
+        communicateStyleId: baseInf?.Communicate_style?.id,
+        loveLanguageId: baseInf?.Love_language?.id,
+        futureFamilyId: baseInf?.FutureFamily?.id,
+        sexualOrientationId: baseInf?.Sexual_orientation?.id,
+        drink: lifestyle?.drink,
+        smoke: lifestyle?.smoke,
+        train: lifestyle?.train,
+        petId: lifestyle?.Pet?.id,
+        dietId: lifestyle?.Diet?.id,
+        sleepId: lifestyle?.Sleep?.id,
+        snuId: lifestyle?.SNU?.id,
+        photos: user?.Bio?.Photo?.map((photo, index) => ({
+            id: photo.id,
+            url: photo.url,
+            is_profile_pic: photo.is_profile_pic // Sử dụng giá trị từ DB
+        })) || [],
+        bioId: user?.Bio?.id,
+        favorites: user?.user_favorites?.map((item) => item?.favorite_id) || [],
+        searchingFor: user?.Bio?.Searchingfor?.id,
+        isFullInformation: user?.is_full_information,
+    };
+    logger.debug("Formatted user:", {
+        id: formattedUser.id,
+        email: formattedUser.email,
+        displayName: formattedUser.displayName,
+        fields: Object.keys(formattedUser)
+    });
+    return formattedUser;
+}
+```

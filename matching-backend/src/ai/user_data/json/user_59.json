@@ -1,0 +1,46 @@
+{
+  "id": 59,
+  "username": "Brent_Hyatt27",
+  "display_name": "Brent Hyatt",
+  "email": "Brent_Hyatt46@gmail.com",
+  "birthday": null,
+  "age": 18,
+  "status": "active",
+  "about_me": "Cultellus deorsum deprimo in arto succurro contra nisi.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "180",
+  "location": "West Keaganview",
+  "zodiac": "Thiên Bình",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Mua sắm",
+  "favorite_list": [
+    "Mua sắm"
+  ]
+}

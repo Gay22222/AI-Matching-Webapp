@@ -1,0 +1,47 @@
+{
+  "id": 39,
+  "username": "Jesus.Homenick-Jenkins",
+  "display_name": "Jesus Homenick-Jenkins",
+  "email": "Jesus_Homenick-Jenkins@gmail.com",
+  "birthday": null,
+  "age": 31,
+  "status": "active",
+  "about_me": "Victus tener colo quia dolorem calco sortitus creber.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "170",
+  "location": "Overland Park",
+  "zodiac": "Ma Kết",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game",
+    "Nghệ thuật"
+  ]
+}

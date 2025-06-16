@@ -1,0 +1,48 @@
+{
+  "id": 57,
+  "username": "Walter_White",
+  "display_name": "Walter White",
+  "email": "Walter_White@gmail.com",
+  "birthday": null,
+  "age": 38,
+  "status": "active",
+  "about_me": "Cedo vehemens cruciamentum titulus sortitus vallum.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "198",
+  "location": "New Ronhaven",
+  "zodiac": "Song Ngư",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Thời gian chất lượng",
+  "love_language_list": [
+    "Thời gian chất lượng"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách",
+    "Nhiếp ảnh",
+    "Âm nhạc"
+  ]
+}

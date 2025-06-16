@@ -1,0 +1,46 @@
+{
+  "id": 25,
+  "username": "Leila.Haag",
+  "display_name": "Leila Haag",
+  "email": "Leila_Haag55@hotmail.com",
+  "birthday": null,
+  "age": 46,
+  "status": "active",
+  "about_me": "Clementia at videlicet voluptas.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "178",
+  "location": "DuBuqueton",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Thể thao",
+  "favorite_list": [
+    "Thể thao"
+  ]
+}

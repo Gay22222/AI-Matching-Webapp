@@ -1,0 +1,47 @@
+{
+  "id": 70,
+  "username": "Mina.Huel",
+  "display_name": "Mina Huel",
+  "email": "Mina_Huel@yahoo.com",
+  "birthday": null,
+  "age": 32,
+  "status": "active",
+  "about_me": "Claustrum volutabrum officia canis thorax aspernatur terror thymbra conor angulus.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "158",
+  "location": "Baileyhaven",
+  "zodiac": "Song Tử",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Phim ảnh",
+  "favorite_list": [
+    "Phim ảnh",
+    "Nghệ thuật"
+  ]
+}

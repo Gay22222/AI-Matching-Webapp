@@ -1,0 +1,46 @@
+{
+  "id": 91,
+  "username": "Owen_Shields28",
+  "display_name": "Owen Shields",
+  "email": "Owen.Shields97@yahoo.com",
+  "birthday": null,
+  "age": 38,
+  "status": "active",
+  "about_me": "Tantum tergeo eveniet calcar adnuo.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "179",
+  "location": "Lake Cristalland",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Mua sắm",
+  "favorite_list": [
+    "Mua sắm"
+  ]
+}

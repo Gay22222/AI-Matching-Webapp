@@ -1,0 +1,48 @@
+{
+  "id": 89,
+  "username": "Piper_Langworth",
+  "display_name": "Piper Langworth",
+  "email": "Piper_Langworth@gmail.com",
+  "birthday": null,
+  "age": 43,
+  "status": "active",
+  "about_me": "Auctus vulgivagus tepesco venustas volubilis talio accendo thermae.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "172",
+  "location": "Lake Merlintown",
+  "zodiac": "Cự Giải",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Phim ảnh",
+  "favorite_list": [
+    "Phim ảnh",
+    "Mua sắm",
+    "Nấu ăn"
+  ]
+}

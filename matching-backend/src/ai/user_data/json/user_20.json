@@ -1,0 +1,47 @@
+{
+  "id": 20,
+  "username": "Tiana.Bailey7",
+  "display_name": "Tiana Bailey",
+  "email": "Tiana_Bailey@gmail.com",
+  "birthday": null,
+  "age": 27,
+  "status": "active",
+  "about_me": "Urbs subiungo video.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "167",
+  "location": "Fort Harold",
+  "zodiac": "Xử Nữ",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Phim ảnh",
+  "favorite_list": [
+    "Phim ảnh",
+    "Chơi game"
+  ]
+}

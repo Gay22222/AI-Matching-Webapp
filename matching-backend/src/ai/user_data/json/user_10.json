@@ -1,0 +1,47 @@
+{
+  "id": 10,
+  "username": "Arely.Schmeler",
+  "display_name": "Arely Schmeler",
+  "email": "Arely_Schmeler50@yahoo.com",
+  "birthday": null,
+  "age": 38,
+  "status": "active",
+  "about_me": "Thorax defungo urbanus suspendo ulterius ulterius.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "154",
+  "location": "West Alfordbury",
+  "zodiac": "Xử Nữ",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Du lịch",
+  "favorite_list": [
+    "Du lịch",
+    "Nghệ thuật"
+  ]
+}

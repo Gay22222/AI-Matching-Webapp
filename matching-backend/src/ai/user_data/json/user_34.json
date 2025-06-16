@@ -1,0 +1,48 @@
+{
+  "id": 34,
+  "username": "Jammie.Smitham62",
+  "display_name": "Jammie Smitham",
+  "email": "Jammie_Smitham@gmail.com",
+  "birthday": null,
+  "age": 40,
+  "status": "active",
+  "about_me": "Certus sollicito sumptus vigilo decerno.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "179",
+  "location": "East Aminahaven",
+  "zodiac": "Ma Kết",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Du lịch",
+    "Nghệ thuật"
+  ]
+}

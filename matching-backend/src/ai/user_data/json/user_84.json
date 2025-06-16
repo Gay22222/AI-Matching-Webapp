@@ -1,0 +1,47 @@
+{
+  "id": 84,
+  "username": "Jude.Fritsch",
+  "display_name": "Jude Fritsch",
+  "email": "Jude.Fritsch@yahoo.com",
+  "birthday": null,
+  "age": 54,
+  "status": "active",
+  "about_me": "Summa cariosus acerbitas coniuratio est.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "178",
+  "location": "Port Braxton",
+  "zodiac": "Bò Cạp",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga",
+    "Đọc sách"
+  ]
+}

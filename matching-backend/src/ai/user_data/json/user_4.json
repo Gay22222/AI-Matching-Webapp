@@ -1,0 +1,46 @@
+{
+  "id": 4,
+  "username": "Dawson_Jerde-Braun92",
+  "display_name": "Dawson Jerde-Braun",
+  "email": "Dawson_Jerde-Braun25@hotmail.com",
+  "birthday": null,
+  "age": 47,
+  "status": "active",
+  "about_me": "Carpo cena decretum repellendus vulgivagus.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "198",
+  "location": "Lake Camille",
+  "zodiac": "Xử Nữ",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Cà phê",
+  "favorite_list": [
+    "Cà phê"
+  ]
+}

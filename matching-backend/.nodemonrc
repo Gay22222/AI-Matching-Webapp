@@ -1,0 +1,1 @@
+ignore=src/ai/user_data/,src/ai/user_data/**/,logs/,logs/**/,*.log

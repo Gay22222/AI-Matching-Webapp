@@ -1,0 +1,48 @@
+{
+  "id": 24,
+  "username": "Elisabeth.Herzog70",
+  "display_name": "Elisabeth Herzog",
+  "email": "Elisabeth_Herzog35@gmail.com",
+  "birthday": null,
+  "age": 24,
+  "status": "active",
+  "about_me": "Repudiandae barba cetera reiciendis pecco contigo pauper sperno vinitor doloribus.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "175",
+  "location": "Port Estrellaboro",
+  "zodiac": "Cự Giải",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Mèo",
+  "pet_list": [
+    "Mèo"
+  ],
+  "favorite": "Mua sắm",
+  "favorite_list": [
+    "Mua sắm",
+    "Du lịch",
+    "Nghệ thuật"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": 85,
+  "username": "Maurine_Padberg-Treutel",
+  "display_name": "Maurine Padberg-Treutel",
+  "email": "Maurine.Padberg-Treutel@yahoo.com",
+  "birthday": null,
+  "age": 48,
+  "status": "active",
+  "about_me": "Assumenda aqua truculenter.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "158",
+  "location": "Muellerview",
+  "zodiac": "Bò Cạp",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Thể thao",
+  "favorite_list": [
+    "Thể thao",
+    "Du lịch"
+  ]
+}

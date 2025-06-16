@@ -1,0 +1,46 @@
+{
+  "id": 94,
+  "username": "Cordelia_Blanda",
+  "display_name": "Cordelia Blanda",
+  "email": "Cordelia.Blanda84@hotmail.com",
+  "birthday": null,
+  "age": 32,
+  "status": "active",
+  "about_me": "Altus conturbo advoco vinitor.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "173",
+  "location": "Satterfieldburgh",
+  "zodiac": "Sư Tử",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Yoga",
+  "favorite_list": [
+    "Yoga"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": 86,
+  "username": "Jaden.Swift57",
+  "display_name": "Jaden Swift",
+  "email": "Jaden.Swift@hotmail.com",
+  "birthday": null,
+  "age": 38,
+  "status": "active",
+  "about_me": "Succedo communis quod laborum aequus.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "187",
+  "location": "Philadelphia",
+  "zodiac": "Ma Kết",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Đọc sách",
+  "favorite_list": [
+    "Đọc sách"
+  ]
+}

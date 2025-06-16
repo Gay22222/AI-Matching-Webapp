@@ -1,0 +1,48 @@
+{
+  "id": 44,
+  "username": "Cruz.Quigley94",
+  "display_name": "Cruz Quigley",
+  "email": "Cruz.Quigley@hotmail.com",
+  "birthday": null,
+  "age": 33,
+  "status": "active",
+  "about_me": "Vinum deorsum somnus magnam pauci caelum.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "168",
+  "location": "Savannahshire",
+  "zodiac": "Song Tử",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Nấu ăn",
+    "Thể thao"
+  ]
+}

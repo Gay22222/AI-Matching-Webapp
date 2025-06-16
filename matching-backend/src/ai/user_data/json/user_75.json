@@ -1,0 +1,48 @@
+{
+  "id": 75,
+  "username": "Laney_OKeefe",
+  "display_name": "Laney O'Keefe",
+  "email": "Laney_OKeefe@gmail.com",
+  "birthday": null,
+  "age": 18,
+  "status": "active",
+  "about_me": "Nostrum undique aegre acerbitas debeo vicissitudo spes.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "166",
+  "location": "Bartlett",
+  "zodiac": "Cự Giải",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game",
+    "Cà phê",
+    "Đọc sách"
+  ]
+}

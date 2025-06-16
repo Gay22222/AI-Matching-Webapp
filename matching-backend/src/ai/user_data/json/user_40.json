@@ -1,0 +1,48 @@
+{
+  "id": 40,
+  "username": "Herminio_Donnelly",
+  "display_name": "Herminio Donnelly",
+  "email": "Herminio.Donnelly@yahoo.com",
+  "birthday": null,
+  "age": 38,
+  "status": "active",
+  "about_me": "Ultio ambitus architecto cohibeo vir explicabo capitulus.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "170",
+  "location": "Schmidtberg",
+  "zodiac": "Bò Cạp",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Chơi game",
+  "favorite_list": [
+    "Chơi game",
+    "Cà phê",
+    "Nấu ăn"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": 50,
+  "username": "Giovanna.Rohan",
+  "display_name": "Giovanna Rohan",
+  "email": "Giovanna_Rohan57@yahoo.com",
+  "birthday": null,
+  "age": 30,
+  "status": "active",
+  "about_me": "Ait ver commemoro suggero callide.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "159",
+  "location": "East Daryl",
+  "zodiac": "Bạch Dương",
+  "character": "Thân thiện",
+  "character_list": [
+    "Thân thiện"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc"
+  ]
+}

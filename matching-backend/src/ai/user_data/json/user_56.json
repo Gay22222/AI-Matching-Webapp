@@ -1,0 +1,47 @@
+{
+  "id": 56,
+  "username": "Reese.Nikolaus",
+  "display_name": "Reese Nikolaus",
+  "email": "Reese.Nikolaus11@hotmail.com",
+  "birthday": null,
+  "age": 19,
+  "status": "active",
+  "about_me": "Pecto arbustum non.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "169",
+  "location": "Cullentown",
+  "zodiac": "Sư Tử",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Nghệ thuật",
+  "favorite_list": [
+    "Nghệ thuật",
+    "Thể thao"
+  ]
+}

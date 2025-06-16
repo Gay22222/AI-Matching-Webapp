@@ -1,0 +1,47 @@
+{
+  "id": 60,
+  "username": "Adrian_Lubowitz82",
+  "display_name": "Adrian Lubowitz",
+  "email": "Adrian.Lubowitz26@yahoo.com",
+  "birthday": null,
+  "age": 42,
+  "status": "active",
+  "about_me": "Sed utilis culpa constans abstergo desidero adipiscor.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "153",
+  "location": "North Bethesda",
+  "zodiac": "Song Tử",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Tiếp xúc cơ thể",
+  "love_language_list": [
+    "Tiếp xúc cơ thể"
+  ],
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
+  "pet_list": [
+    "Chim"
+  ],
+  "favorite": "Nghệ thuật",
+  "favorite_list": [
+    "Nghệ thuật",
+    "Chơi game"
+  ]
+}

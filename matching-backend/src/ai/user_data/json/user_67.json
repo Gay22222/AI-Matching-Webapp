@@ -1,0 +1,48 @@
+{
+  "id": 67,
+  "username": "Alphonso_Stehr",
+  "display_name": "Alphonso Stehr",
+  "email": "Alphonso.Stehr@hotmail.com",
+  "birthday": null,
+  "age": 46,
+  "status": "active",
+  "about_me": "Est comitatus deleo supellex pectus depono.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "166",
+  "location": "Kolbyside",
+  "zodiac": "Bò Cạp",
+  "character": "Tự tin",
+  "character_list": [
+    "Tự tin"
+  ],
+  "communicate_style": "Lắng nghe",
+  "communicate_style_list": [
+    "Lắng nghe"
+  ],
+  "love_language": "Hành động quan tâm",
+  "love_language_list": [
+    "Hành động quan tâm"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Nhiếp ảnh",
+  "favorite_list": [
+    "Nhiếp ảnh",
+    "Phim ảnh",
+    "Cà phê"
+  ]
+}

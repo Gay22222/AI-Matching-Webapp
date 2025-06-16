@@ -1,0 +1,46 @@
+{
+  "id": 35,
+  "username": "Hudson_Hills22",
+  "display_name": "Hudson Hills",
+  "email": "Hudson_Hills35@yahoo.com",
+  "birthday": null,
+  "age": 39,
+  "status": "active",
+  "about_me": "Curis crebro turpis.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "194",
+  "location": "New Rasheedworth",
+  "zodiac": "Cự Giải",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Trầm lặng",
+  "communicate_style_list": [
+    "Trầm lặng"
+  ],
+  "love_language": "Quà tặng",
+  "love_language_list": [
+    "Quà tặng"
+  ],
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Nhiếp ảnh",
+  "favorite_list": [
+    "Nhiếp ảnh"
+  ]
+}

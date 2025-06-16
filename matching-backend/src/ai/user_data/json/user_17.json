@@ -1,0 +1,47 @@
+{
+  "id": 17,
+  "username": "Silas_Schuppe",
+  "display_name": "Silas Schuppe",
+  "email": "Silas.Schuppe15@yahoo.com",
+  "birthday": null,
+  "age": 54,
+  "status": "active",
+  "about_me": "Ter vester venio testimonium bellicus.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "151",
+  "location": "Lake Jadehaven",
+  "zodiac": "Bò Cạp",
+  "character": "Nghiêm túc",
+  "character_list": [
+    "Nghiêm túc"
+  ],
+  "communicate_style": "Biết chia sẻ",
+  "communicate_style_list": [
+    "Biết chia sẻ"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "Nấu ăn",
+  "favorite_list": [
+    "Nấu ăn",
+    "Chơi game"
+  ]
+}
