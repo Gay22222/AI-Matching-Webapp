@@ -1,48 +1,48 @@
 {
   "id": 67,
-  "username": "Alphonso_Stehr",
-  "display_name": "Alphonso Stehr",
-  "email": "Alphonso.Stehr@hotmail.com",
+  "username": "Florence_Cartwright",
+  "display_name": "Florence Cartwright",
+  "email": "Florence.Cartwright@hotmail.com",
   "birthday": null,
-  "age": 46,
+  "age": 59,
   "status": "active",
-  "about_me": "Est comitatus deleo supellex pectus depono.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "166",
-  "location": "Kolbyside",
-  "zodiac": "Bò Cạp",
-  "character": "Tự tin",
+  "about_me": "Suffoco eaque contigo aurum.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "184",
+  "location": "South Sabrynaview",
+  "zodiac": "Song Ngư",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chó",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Phim ảnh",
+    "Nấu ăn",
+    "Nghệ thuật",
     "Cà phê"
   ]
 }

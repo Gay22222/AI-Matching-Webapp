@@ -1,46 +1,46 @@
 {
   "id": 29,
-  "username": "Brenden.Altenwerth59",
-  "display_name": "Brenden Altenwerth",
-  "email": "Brenden_Altenwerth31@hotmail.com",
+  "username": "Spencer_Smitham97",
+  "display_name": "Spencer Smitham",
+  "email": "Spencer.Smitham@gmail.com",
   "birthday": null,
-  "age": 30,
+  "age": 59,
   "status": "active",
-  "about_me": "Adipisci clementia stabilis vitiosus animi.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
+  "about_me": "Studio denuncio auxilium cura viscus.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Dị tính",
   "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
-  "career": "Giáo viên",
-  "height": "187",
-  "location": "Bednarfort",
-  "zodiac": "Bảo Bình",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "158",
+  "location": "Yakima",
+  "zodiac": "Cự Giải",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
-  "smoke": false,
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
   "train": false,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Thể thao"
+    "Phim ảnh"
   ]
 }

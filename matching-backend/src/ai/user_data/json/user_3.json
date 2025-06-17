@@ -1,46 +1,46 @@
 {
   "id": 3,
-  "username": "Rigoberto_Russel71",
-  "display_name": "Rigoberto Russel",
-  "email": "Rigoberto_Russel91@yahoo.com",
+  "username": "Hobart_Gislason58",
+  "display_name": "Hobart Gislason",
+  "email": "Hobart_Gislason@gmail.com",
   "birthday": null,
-  "age": 29,
+  "age": 50,
   "status": "active",
-  "about_me": "Quia repellat thorax tabernus cunabula.",
+  "about_me": "Cultura virtus conspergo.",
   "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Cử nhân",
   "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "163",
-  "location": "Fort Reynafield",
-  "zodiac": "Song Tử",
-  "character": "Điềm đạm",
+  "career": "Kỹ sư phần mềm",
+  "height": "188",
+  "location": "North Burleyshire",
+  "zodiac": "Bò Cạp",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Cá",
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Du lịch"
+    "Phim ảnh"
   ]
 }

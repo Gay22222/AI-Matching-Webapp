@@ -524,20 +524,16 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
         e.preventDefault();
         setLoading(true);
         try {
-            // Kiểm tra xem có ảnh đại diện nào không
-            const hasProfilePic = currentPhotos.some((photo) => photo.is_profile_pic);
-
-            // Cập nhật danh sách ảnh
             if (currentPhotos.length > 0) {
                 await axios.put(
                     "http://localhost:3001/api/user/update-profile",
                     {
                         user: {
                             id: currentUser.id,
-                            photos: currentPhotos.map((photo, index) => ({
+                            photos: currentPhotos.map((photo) => ({
                                 id: photo.id,
                                 url: photo.url,
-                                is_profile_pic: hasProfilePic ? photo.is_profile_pic : index === 0,
+                                is_profile_pic: photo.is_profile_pic,
                             })),
                         },
                     },
@@ -548,9 +544,28 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                     }
                 );
                 await refreshUser();
+                onSave(currentPhotos);
+                showToast.success("Cập nhật ảnh thành công");
+            } else {
+                // Nếu không còn ảnh, gửi danh sách rỗng
+                await axios.put(
+                    "http://localhost:3001/api/user/update-profile",
+                    {
+                        user: {
+                            id: currentUser.id,
+                            photos: [],
+                        },
+                    },
+                    {
+                        headers: {
+                            Authorization: `Bearer ${auth?.access_token}`,
+                        },
+                    }
+                );
+                await refreshUser();
+                onSave([]);
+                showToast.success("Cập nhật ảnh thành công");
             }
-            onSave(currentPhotos);
-            showToast.success("Cập nhật ảnh thành công");
         } catch (error) {
             console.error("Error saving photos:", error);
             showToast.error(`Lỗi khi lưu ảnh: ${error.response?.data?.message || error.message}`);
@@ -584,6 +599,11 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                                 >
                                     <XIcon className="w-4 h-4" />
                                 </button>
+                                {photo.is_profile_pic && (
+                                    <span className="absolute top-2 left-2 bg-[#FF5864] text-white text-xs px-2 py-1 rounded-full">
+                                        Đại diện
+                                    </span>
+                                )}
                             </div>
                         ))}
                         {currentPhotos.length < 6 && (

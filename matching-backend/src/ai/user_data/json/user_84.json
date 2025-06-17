@@ -1,47 +1,47 @@
 {
   "id": 84,
-  "username": "Jude.Fritsch",
-  "display_name": "Jude Fritsch",
-  "email": "Jude.Fritsch@yahoo.com",
+  "username": "Theron_Goyette",
+  "display_name": "Theron Goyette",
+  "email": "Theron_Goyette@hotmail.com",
   "birthday": null,
-  "age": 54,
+  "age": 39,
   "status": "active",
-  "about_me": "Summa cariosus acerbitas coniuratio est.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
+  "about_me": "Velut adsum adamo auditor advoco utor damno ceno audacia.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "178",
-  "location": "Port Braxton",
-  "zodiac": "Bò Cạp",
-  "character": "Nghiêm túc",
+  "height": "189",
+  "location": "East Shaniyaberg",
+  "zodiac": "Bạch Dương",
+  "character": "Hài hước",
   "character_list": [
-    "Nghiêm túc"
+    "Hài hước"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Không muốn con",
   "drink": true,
   "smoke": true,
-  "train": false,
+  "train": true,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chó",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Yoga",
-    "Đọc sách"
+    "Du lịch",
+    "Yoga"
   ]
 }

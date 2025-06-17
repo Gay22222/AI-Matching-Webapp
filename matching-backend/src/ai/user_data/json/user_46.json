@@ -1,47 +1,48 @@
 {
   "id": 46,
-  "username": "Caesar_Zulauf",
-  "display_name": "Caesar Zulauf",
-  "email": "Caesar_Zulauf@yahoo.com",
+  "username": "Mable.Kerluke43",
+  "display_name": "Mable Kerluke",
+  "email": "Mable_Kerluke@hotmail.com",
   "birthday": null,
-  "age": 34,
+  "age": 22,
   "status": "active",
-  "about_me": "Thymbra cognatus termes vitium aqua suppellex tardus paulatim tum adipisci.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "about_me": "Bellicus averto consequatur viridis.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "English",
   "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "176",
-  "location": "Port Rosieport",
-  "zodiac": "Song Tử",
-  "character": "Nghiêm túc",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "173",
+  "location": "Norwoodchester",
+  "zodiac": "Song Ngư",
+  "character": "Điềm đạm",
   "character_list": [
-    "Nghiêm túc"
+    "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
   "favorite": "Chơi game",
   "favorite_list": [
     "Chơi game",
-    "Phim ảnh"
+    "Phim ảnh",
+    "Nghệ thuật"
   ]
 }

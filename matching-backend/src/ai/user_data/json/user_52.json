@@ -1,48 +1,47 @@
 {
   "id": 52,
-  "username": "Natasha.Schamberger60",
-  "display_name": "Natasha Schamberger",
-  "email": "Natasha.Schamberger84@yahoo.com",
+  "username": "Jettie.Muller",
+  "display_name": "Jettie Muller",
+  "email": "Jettie_Muller35@hotmail.com",
   "birthday": null,
-  "age": 49,
+  "age": 45,
   "status": "active",
-  "about_me": "Tardus depopulo spiculum dicta.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Comptus tamquam debeo adopto.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
-  "career": "Giáo viên",
-  "height": "193",
-  "location": "South Whittier",
-  "zodiac": "Thiên Bình",
-  "character": "Điềm đạm",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "158",
+  "location": "West Brisaworth",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
   "character_list": [
-    "Điềm đạm"
+    "Tự tin"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Biết chia sẻ"
   ],
   "love_language": "Quà tặng",
   "love_language_list": [
     "Quà tặng"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": true,
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
   "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Có",
-  "pet": "Chó",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Âm nhạc",
-    "Nhiếp ảnh",
-    "Mua sắm"
+    "Du lịch",
+    "Yoga"
   ]
 }

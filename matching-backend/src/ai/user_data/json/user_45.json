@@ -1,48 +1,47 @@
 {
   "id": 45,
-  "username": "Devonte_Willms",
-  "display_name": "Devonte Willms",
-  "email": "Devonte.Willms@hotmail.com",
+  "username": "Carmen_Murphy18",
+  "display_name": "Carmen Murphy",
+  "email": "Carmen.Murphy6@yahoo.com",
   "birthday": null,
-  "age": 56,
+  "age": 25,
   "status": "active",
-  "about_me": "Termes debeo utpote.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
+  "about_me": "Arto amissio aegre officia cresco terra deorsum.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
   "career": "Doanh nhân",
-  "height": "163",
-  "location": "Coral Springs",
-  "zodiac": "Bạch Dương",
-  "character": "Điềm đạm",
+  "height": "195",
+  "location": "New Filomenafurt",
+  "zodiac": "Ma Kết",
+  "character": "Tự tin",
   "character_list": [
-    "Điềm đạm"
+    "Tự tin"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Chơi game",
-    "Thể thao",
-    "Nhiếp ảnh"
+    "Âm nhạc",
+    "Nghệ thuật"
   ]
 }

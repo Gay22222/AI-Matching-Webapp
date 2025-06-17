@@ -330,10 +330,11 @@ matching-backend/
 │   │   └── images/
 │   │       ├── image-1750058554021-642056101.png
 │   │       ├── image-1750060813872-829719265.png
-│   │       ├── image-1750060957880-340516242.png
-│   │       └── image-1750060965353-949313335.png
+│   │       └── image-1750118841576-415655935.png
 │   ├── 2/
 │   │   └── images/
+│   │       ├── image-1750112507969-231996584.png
+│   │       └── image-1750114865867-407454833.png
 │   └── 3/
 │       └── images/
 ├── .dockerignore
@@ -390,7 +391,7 @@ app.use((req, res, next) => {
 });
 
 // Static files
-const uploadsPath = path.join(__dirname, "../Uploads");
+const uploadsPath = path.join(__dirname, "../uploads");
 console.log(`Serving static files from: ${uploadsPath}`);
 app.use("/uploads", express.static(uploadsPath, {
     setHeaders: (res) => {
@@ -1488,7 +1489,7 @@ export const uploadController = {
             }
             const { bioId, isProfilePic } = req.body;
             const userId = req.user.id;
-            const fileUrl = `/Uploads/${userId}/images/${req.file.filename}`;
+            const fileUrl = `/uploads/${userId}/images/${req.file.filename}`;
 
             // Kiểm tra số lượng ảnh hiện có
             const currentPhotos = await prisma.photo.count({
@@ -1551,7 +1552,7 @@ export const uploadController = {
 
             const photos = await Promise.all(
                 req.files.map(async (file) => {
-                    const fileUrl = `/Uploads/${userId}/images/${file.filename}`;
+                    const fileUrl = `/uploads/${userId}/images/${file.filename}`;
                     const photo = await prisma.photo.create({
                         data: {
                             bio_id: parseInt(bioId),
@@ -1601,8 +1602,11 @@ export const uploadController = {
                 return res.status(403).json({ statusCode: 403, message: "Không có quyền xóa ảnh này" });
             }
 
+            // Kiểm tra xem ảnh có phải là ảnh đại diện không
+            const isProfilePic = photo.is_profile_pic;
+
             // Xóa file vật lý nếu tồn tại
-            const filePath = path.join("Uploads", userId.toString(), "images", path.basename(photo.url));
+            const filePath = path.join("uploads", userId.toString(), "images", path.basename(photo.url));
             if (fs.existsSync(filePath)) {
                 fs.unlinkSync(filePath);
                 logger.info(`Deleted file: ${filePath}`);
@@ -1612,6 +1616,23 @@ export const uploadController = {
             await prisma.photo.delete({
                 where: { id: parseInt(photoId) },
             });
+
+            // Nếu ảnh vừa xóa là ảnh đại diện, chọn ảnh khác làm ảnh đại diện
+            if (isProfilePic) {
+                const remainingPhotos = await prisma.photo.findMany({
+                    where: { bio_id: photo.bio_id },
+                    orderBy: { id: 'asc' },
+                    take: 1,
+                });
+
+                if (remainingPhotos.length > 0) {
+                    await prisma.photo.update({
+                        where: { id: remainingPhotos[0].id },
+                        data: { is_profile_pic: true },
+                    });
+                    logger.info(`Set new profile picture: ${remainingPhotos[0].id}`);
+                }
+            }
 
             res.status(200).json({
                 statusCode: 200,
@@ -1636,203 +1657,201 @@ import logger from "../utils/logger.js";
 import Joi from "joi";
 
 const idSchema = Joi.object({
-    id: Joi.number().integer().positive().required(),
+  id: Joi.number().integer().positive().required(),
 });
 
 const filterSchema = Joi.object({
-    page: Joi.number().integer().positive().default(1),
-    limit: Joi.number().integer().positive().default(10),
-    search: Joi.string().allow('').optional(),
-    gender: Joi.string().valid('male', 'female', 'other').allow('').optional(),
-    ageMin: Joi.number().integer().min(18).allow(null).optional(),
-    ageMax: Joi.number().integer().max(100).allow(null).optional(),
-    languageIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    educationIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    zodiacIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    characterIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    comunicateStyleIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    loveLanguageIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    futureFamilyIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    sexualOrientationIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    petIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    dietIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    sleepIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    snuIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    searchingForIds: Joi.array().items(Joi.number().integer().positive()).allow(null).optional(),
-    currentUserId: Joi.number().integer().positive().optional(), // Thêm currentUserId
+  page: Joi.number().integer().positive().default(1),
+  limit: Joi.number().integer().positive().default(10),
+  search: Joi.string().allow("").optional(),
+  gender: Joi.string().valid("male", "female", "other").allow("").optional(),
+  ageMin: Joi.number().integer().min(18).allow(null).optional(),
+  ageMax: Joi.number().integer().max(100).allow(null).optional(),
+  languageIds: Joi.string().allow("").optional(),
+  educationIds: Joi.string().allow("").optional(),
+  zodiacIds: Joi.string().allow("").optional(),
+  characterIds: Joi.string().allow("").optional(),
+  communicateStyleIds: Joi.string().allow("").optional(),
+  loveLanguageIds: Joi.string().allow("").optional(),
+  futureFamilyIds: Joi.string().allow("").optional(),
+  sexualOrientationIds: Joi.string().allow("").optional(),
+  petIds: Joi.string().allow("").optional(),
+  dietIds: Joi.string().allow("").optional(),
+  sleepIds: Joi.string().allow("").optional(),
+  snuIds: Joi.string().allow("").optional(),
+  searchingForIds: Joi.string().allow("").optional(),
+  currentUserId: Joi.number().integer().positive().optional(),
 });
 
 const updateUserSchema = Joi.object({
-    user: Joi.object({
-        id: Joi.number().integer().positive().required(),
-        displayName: Joi.string().allow(''),
-        gender: Joi.string().valid('male', 'female', 'other').allow(''),
-        preferredGender: Joi.string().valid('male', 'female', 'other').allow(''),
-        name: Joi.string().allow(''),
-        age: Joi.number().integer().min(18).allow(null),
-        aboutMe: Joi.string().allow(''),
-        height: Joi.number().integer().allow(null),
-        location: Joi.string().allow(''),
-        birthday: Joi.date().allow(null),
-        languageId: Joi.number().integer().positive().allow(null),
-        religionId: Joi.number().integer().positive().allow(null),
-        careerId: Joi.number().integer().positive().allow(null),
-        educationId: Joi.number().integer().positive().allow(null),
-        zodiacId: Joi.number().integer().positive().allow(null),
-        characterId: Joi.number().integer().positive().allow(null),
-        communicateStyleId: Joi.number().integer().positive().allow(null),
-        loveLanguageId: Joi.number().integer().positive().allow(null),
-        futureFamilyId: Joi.number().integer().positive().allow(null),
-        drink: Joi.boolean().allow(null),
-        smoke: Joi.boolean().allow(null),
-        train: Joi.boolean().allow(null),
-        petId: Joi.number().integer().positive().allow(null),
-        dietId: Joi.number().integer().positive().allow(null),
-        sleepId: Joi.number().integer().positive().allow(null),
-        snuId: Joi.number().integer().positive().allow(null),
-        favorites: Joi.array().items(Joi.number().integer().positive()).allow(null),
-        maxRadius: Joi.number().integer().positive().allow(null),
-        photos: Joi.array().items(
-            Joi.object({
-                id: Joi.number().integer().positive().allow(null),
-                url: Joi.string().allow(''),
-                is_profile_pic: Joi.boolean().allow(null),
-            })
-        ).allow(null),
-    }).required(),
+  user: Joi.object({
+    id: Joi.number().integer().positive().required(),
+    displayName: Joi.string().allow(""),
+    gender: Joi.string().valid("male", "female", "other").allow(""),
+    preferredGender: Joi.string().valid("male", "female", "other").allow(""),
+    name: Joi.string().allow(""),
+    age: Joi.number().integer().min(18).allow(null),
+    aboutMe: Joi.string().allow(""),
+    height: Joi.number().integer().allow(null),
+    location: Joi.string().allow(""),
+    birthday: Joi.date().allow(null),
+    languageId: Joi.number().integer().positive().allow(null),
+    religionId: Joi.number().integer().positive().allow(null),
+    careerId: Joi.number().integer().positive().allow(null),
+    educationId: Joi.number().integer().positive().allow(null),
+    zodiacId: Joi.number().integer().positive().allow(null),
+    characterId: Joi.number().integer().positive().allow(null),
+    communicateStyleId: Joi.number().integer().positive().allow(null),
+    loveLanguageId: Joi.number().integer().positive().allow(null),
+    futureFamilyId: Joi.number().integer().positive().allow(null),
+    drink: Joi.boolean().allow(null),
+    smoke: Joi.boolean().allow(null),
+    train: Joi.boolean().allow(null),
+    petId: Joi.number().integer().positive().allow(null),
+    dietId: Joi.number().integer().positive().allow(null),
+    sleepId: Joi.number().integer().positive().allow(null),
+    snuId: Joi.number().integer().positive().allow(null),
+    favorites: Joi.array().items(Joi.number().integer().positive()).allow(null),
+    maxRadius: Joi.number().integer().positive().allow(null),
+    photos: Joi.array().items(
+      Joi.object({
+        id: Joi.number().integer().positive().allow(null),
+        url: Joi.string().allow(""),
+        is_profile_pic: Joi.boolean().allow(null),
+      })
+    ).allow(null),
+  }).required(),
 });
 
 export const userController = {
-    getAll: async (req, res) => {
-        try {
-            const { error, value } = filterSchema.validate(req.query);
-            if (error) {
-                logger.warn({ error }, 'Invalid filter input');
-                return res.status(400).json({ statusCode: 400, message: error.message });
-            }
-            logger.info("Fetching users with filters:", {
-                query: value,
-                userId: req.user?.id,
-            });
-            const userId = req.user?.id;
-            if (!userId) {
-                logger.error("User not authenticated");
-                return res.status(401).json({ statusCode: 401, message: "User not authenticated" });
-            }
-            const users = await userService.getAllUsersFormatted(value, userId);
-            logger.info("Users found:", { count: users.length });
-            res.status(200).json({
-                statusCode: 200,
-                users,
-                pagination: {
-                    page: value.page,
-                    limit: value.limit,
-                    total: users.length,
-                },
-            });
-        } catch (error) {
-            logger.error("Error getting users:", {
-                message: error.message,
-                stack: error.stack,
-                filters: req.query,
-            });
-            res.status(500).json({
-                statusCode: 500,
-                message: error.message || "Internal server error",
-            });
-        }
-    },
-    getProfile: async (req, res) => {
-        try {
-            logger.info("Fetching profile for user:", req.user?.id);
-            const user = await userService.getProfileById(req.user.id);
-            if (!user) {
-                logger.warn(`User not found: ${req.user.id}`);
-                return res.status(404).json({ statusCode: 404, message: "User not found" });
-            }
-            res.status(200).json({
-                statusCode: 200,
-                user,
-            });
-        } catch (error) {
-            logger.error("Error getting profile:", {
-                message: error.message,
-                stack: error.stack,
-            });
-            res.status(500).json({
-                statusCode: 500,
-                message: error.message || "Internal server error",
-            });
-        }
-    },
-    getUserInfo: async (req, res) => {
-        try {
-            const { error, value } = idSchema.validate(req.params);
-            if (error) {
-                logger.warn({ error }, 'Invalid user ID');
-                return res.status(400).json({ statusCode: 400, message: error.message });
-            }
-            const userId = value.id;
-            const currentUserId = req.user?.id;
-            if (!currentUserId) {
-                logger.error("User not authenticated");
-                return res.status(401).json({ statusCode: 401, message: "User not authenticated" });
-            }
-            logger.info(`Fetching user info for ID: ${userId} by user: ${currentUserId}`);
-            const user = await userService.getUserById(userId);
-            if (!user) {
-                logger.warn(`User not found: ${userId}`);
-                return res.status(404).json({ statusCode: 404, message: "User not found" });
-            }
-            res.status(200).json({
-                statusCode: 200,
-                user,
-            });
-        } catch (error) {
-            logger.error("Error getting user info:", {
-                message: error.message,
-                stack: error.stack,
-                userId: req.params.id,
-            });
-            res.status(500).json({
-                statusCode: 500,
-                message: error.message || "Internal server error",
-            });
-        }
-    },
-    updateUser: async (req, res) => {
-        try {
-            const { error, value } = updateUserSchema.validate(req.body);
-            if (error) {
-                logger.warn({ error }, 'Invalid update user input');
-                return res.status(400).json({ statusCode: 400, message: error.message });
-            }
-            const { id } = value.user;
-            if (id !== req.user.id) {
-                logger.warn(`Unauthorized update attempt by user ${req.user.id} for user ${id}`);
-                return res.status(403).json({ statusCode: 403, message: "Unauthorized to update this user" });
-            }
-            logger.info(`Updating user: ${id}`);
-            const userUpdated = await userService.updateUserById(id, value.user);
-            if (!userUpdated) {
-                logger.warn(`User not found: ${id}`);
-                return res.status(404).json({ statusCode: 404, message: "User not found" });
-            }
-            res.status(200).json({
-                statusCode: 200,
-                user: userUpdated,
-            });
-        } catch (error) {
-            logger.error("Error updating user:", {
-                message: error.message,
-                stack: error.stack,
-            });
-            res.status(500).json({
-                statusCode: 500,
-                message: error.message || "Internal server error",
-            });
-        }
-    },
+  async getAll(req, res, next) {
+    try {
+      const userId = req.user?.id;
+      if (!userId) {
+        logger.warn("User ID is required but not provided");
+        return res.status(400).json({
+          statusCode: 400,
+          message: "User ID is required",
+        });
+      }
+
+      // Xác thực bộ lọc
+      const { error, value } = filterSchema.validate(req.query, { abortEarly: false });
+      if (error) {
+        logger.warn({ error: error.details }, "Invalid filter input");
+        return res.status(400).json({
+          statusCode: 400,
+          message: "Invalid filter parameters",
+          error: { details: error.details },
+        });
+      }
+
+      logger.info(`Fetching users with filters: ${JSON.stringify(value)} for userId ${userId}`);
+      const users = await userService.getAllUsersFormatted(value, userId);
+
+      res.status(200).json({
+        statusCode: 200,
+        users,
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, "Error fetching users");
+      res.status(500).json({
+        statusCode: 500,
+        message: error.message || "Internal server error",
+      });
+    }
+  },
+  getProfile: async (req, res) => {
+    try {
+      logger.info("Fetching profile for user:", req.user?.id);
+      const user = await userService.getProfileById(req.user.id);
+      if (!user) {
+        logger.warn(`User not found: ${req.user.id}`);
+        return res.status(404).json({ statusCode: 404, message: "User not found" });
+      }
+      res.status(200).json({
+        statusCode: 200,
+        user,
+      });
+    } catch (error) {
+      logger.error("Error getting profile:", {
+        message: error.message,
+        stack: error.stack,
+      });
+      res.status(500).json({
+        statusCode: 500,
+        message: error.message || "Internal server error",
+      });
+    }
+  },
+  getUserInfo: async (req, res) => {
+    try {
+      const { error, value } = idSchema.validate(req.params);
+      if (error) {
+        logger.warn({ error }, "Invalid user ID");
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const userId = value.id;
+      const currentUserId = req.user?.id;
+      if (!currentUserId) {
+        logger.error("User not authenticated");
+        return res.status(401).json({ statusCode: 401, message: "User not authenticated" });
+      }
+      logger.info(`Fetching user info for ID: ${userId} by user: ${currentUserId}`);
+      const user = await userService.getUserById(userId);
+      if (!user) {
+        logger.warn(`User not found: ${userId}`);
+        return res.status(404).json({ statusCode: 404, message: "User not found" });
+      }
+      res.status(200).json({
+        statusCode: 200,
+        user,
+      });
+    } catch (error) {
+      logger.error("Error getting user info:", {
+        message: error.message,
+        stack: error.stack,
+        userId: req.params.id,
+      });
+      res.status(500).json({
+        statusCode: 500,
+        message: error.message || "Internal server error",
+      });
+    }
+  },
+  updateUser: async (req, res) => {
+    try {
+      const { error, value } = updateUserSchema.validate(req.body);
+      if (error) {
+        logger.warn({ error }, "Invalid update user input");
+        return res.status(400).json({ statusCode: 400, message: error.message });
+      }
+      const { id } = value.user;
+      if (id !== req.user.id) {
+        logger.warn(`Unauthorized update attempt by user ${req.user.id} for user ${id}`);
+        return res.status(403).json({ statusCode: 403, message: "Unauthorized to update this user" });
+      }
+      logger.info(`Updating user: ${id}`);
+      const userUpdated = await userService.updateUserById(id, value.user);
+      if (!userUpdated) {
+        logger.warn(`User not found: ${id}`);
+        return res.status(404).json({ statusCode: 404, message: "User not found" });
+      }
+      res.status(200).json({
+        statusCode: 200,
+        user: userUpdated,
+      });
+    } catch (error) {
+      logger.error("Error updating user:", {
+        message: error.message,
+        stack: error.stack,
+      });
+      res.status(500).json({
+        statusCode: 500,
+        message: error.message || "Internal server error",
+      });
+    }
+  },
 };
 ```
 
@@ -2775,6 +2794,7 @@ export const matchRepository = {
       throw error;
     }
   },
+
   async get(id) {
     try {
       logger.info(`Fetching match ${id}`);
@@ -2828,6 +2848,7 @@ export const matchRepository = {
       throw error;
     }
   },
+
   async find(senderId, receiverId) {
     try {
       logger.info(`Checking match between sender ${senderId} and receiver ${receiverId}`);
@@ -2844,6 +2865,54 @@ export const matchRepository = {
       throw error;
     }
   },
+
+  async create(senderId, receiverId) {
+    try {
+      logger.info(`Creating match for sender ${senderId} and receiver ${receiverId}`);
+      // Kiểm tra user tồn tại
+      const senderExists = await prisma.users.findUnique({ where: { id: parseInt(senderId) } });
+      const receiverExists = await prisma.users.findUnique({ where: { id: parseInt(receiverId) } });
+      if (!senderExists || !receiverExists) {
+        logger.warn("User not found", { senderId, receiverId });
+        throw new Error(`User not found: ${!senderExists ? 'sender' : 'receiver'}`);
+      }
+
+      const match = await prisma.matches.create({
+        data: {
+          user_1_id: parseInt(senderId),
+          user_2_id: parseInt(receiverId),
+          is_accept: false,
+          matched_at: new Date(),
+        },
+        include: {
+          user_match_1: {
+            include: {
+              Bio: {
+                include: {
+                  Photo: true,
+                },
+              },
+            },
+          },
+          user_match_2: {
+            include: {
+              Bio: {
+                include: {
+                  Photo: true,
+                },
+              },
+            },
+          },
+        },
+      });
+      logger.info(`Match created with ID ${match.id}`);
+      return match;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error creating match');
+      throw error;
+    }
+  },
+
   async update(id, isAccept) {
     try {
       logger.info(`Updating match ${id} with isAccept ${isAccept}`);
@@ -3258,144 +3327,141 @@ export const userRepository = {
             throw error;
         }
     },
-    async getUsers(filters = {}, usersIdMatched = []) {
-        try {
-            logger.info(`Fetching users with filters: ${JSON.stringify(filters)}`);
-            const {
-                languageIds,
-                educationIds,
-                zodiacIds,
-                characterIds,
-                comunicateStyleIds,
-                loveLanguageIds,
-                futureFamilyIds,
-                sexualOrientationIds,
-                petIds,
-                dietIds,
-                sleepIds,
-                snuIds,
-                searchingForIds,
-                search,
-                gender,
-                ageMin,
-                ageMax,
-                currentUserId
-            } = filters;
+    async getUsers(filters, usersIdMatched = []) {
+    try {
+      const {
+        languageIds,
+        educationIds,
+        zodiacIds,
+        characterIds,
+        comunicateStyleIds,
+        loveLanguageIds,
+        futureFamilyIds,
+        sexualOrientationIds,
+        petIds,
+        dietIds,
+        sleepIds,
+        snuIds,
+        searchingForIds,
+        search,
+        gender,
+        ageMin,
+        ageMax,
+        currentUserId,
+      } = filters;
 
-            let where = {
-                id: {
-                    notIn: usersIdMatched,
-                    not: currentUserId ? parseInt(currentUserId) : undefined // Loại bỏ userId trùng
-                },
-            };
+      const where = {
+        id: { not: currentUserId }, // Loại trừ người dùng hiện tại
+        NOT: { id: { in: usersIdMatched } }, // Loại trừ các user đã được liked
+        ...(gender && { gender }),
+        ...(search && {
+          OR: [
+            { display_name: { contains: search, mode: "insensitive" } },
+            { Bio: { about_me: { contains: search, mode: "insensitive" } } },
+          ],
+        }),
+        ...(ageMin && { Bio: { age: { gte: ageMin } } }),
+        ...(ageMax && { Bio: { age: { lte: ageMax } } }),
+        ...(languageIds?.length > 0 && {
+          Bio: { main_inf: { language_id: { in: languageIds } } },
+        }),
+        ...(educationIds?.length > 0 && {
+          Bio: { main_inf: { education_id: { in: educationIds } } },
+        }),
+        ...(zodiacIds?.length > 0 && {
+          Bio: { Base_inf: { zodiac_id: { in: zodiacIds } } },
+        }),
+        ...(characterIds?.length > 0 && {
+          Bio: { Base_inf: { character_id: { in: characterIds } } },
+        }),
+        ...(comunicateStyleIds?.length > 0 && {
+          Bio: { Base_inf: { communicate_style_id: { in: comunicateStyleIds } } },
+        }),
+        ...(loveLanguageIds?.length > 0 && {
+          Bio: { Base_inf: { love_language_id: { in: loveLanguageIds } } },
+        }),
+        ...(futureFamilyIds?.length > 0 && {
+          Bio: { Base_inf: { future_family_id: { in: futureFamilyIds } } },
+        }),
+        ...(sexualOrientationIds?.length > 0 && {
+          Bio: { Base_inf: { sexual_orientation_id: { in: sexualOrientationIds } } },
+        }),
+        ...(petIds?.length > 0 && {
+          Bio: { Lifestyle: { pet_id: { in: petIds } } },
+        }),
+        ...(dietIds?.length > 0 && {
+          Bio: { Lifestyle: { diet_id: { in: dietIds } } },
+        }),
+        ...(sleepIds?.length > 0 && {
+          Bio: { Lifestyle: { sleep_id: { in: sleepIds } } },
+        }),
+        ...(snuIds?.length > 0 && {
+          Bio: { Lifestyle: { snu_id: { in: snuIds } } },
+        }),
+        ...(searchingForIds?.length > 0 && {
+          Bio: { searching_for_id: { in: searchingForIds } },
+        }),
+      };
 
-            if (search) {
-                where.OR = [
-                    { display_name: { contains: search, mode: "insensitive" } },
-                    { Bio: { name: { contains: search, mode: "insensitive" } } },
-                ];
-            }
-
-            if (gender) {
-                where.gender = gender;
-            }
-
-            if (ageMin || ageMax) {
-                where.Bio = {
-                    ...where.Bio,
-                    age: {
-                        gte: parseInt(ageMin) || 18,
-                        lte: parseInt(ageMax) || 100,
-                    },
-                };
-            }
-
-            if (languageIds || educationIds || zodiacIds || characterIds || comunicateStyleIds ||
-                loveLanguageIds || futureFamilyIds || sexualOrientationIds || petIds || dietIds ||
-                sleepIds || snuIds || searchingForIds) {
-                where.Bio = {
-                    ...where.Bio,
-                    main_inf: {
-                        Language: languageIds ? { id: { in: languageIds } } : undefined,
-                        Education: educationIds ? { id: { in: educationIds } } : undefined
-                    },
-                    Base_inf: {
-                        Zodiac: zodiacIds ? { id: { in: zodiacIds } } : undefined,
-                        Character: characterIds ? { id: { in: characterIds } } : undefined,
-                        Communicate_style: comunicateStyleIds ? { id: { in: comunicateStyleIds } } : undefined,
-                        Love_language: loveLanguageIds ? { id: { in: loveLanguageIds } } : undefined,
-                        FutureFamily: futureFamilyIds ? { id: { in: futureFamilyIds } } : undefined,
-                        Sexual_orientation: sexualOrientationIds ? { id: { in: sexualOrientationIds } } : undefined
-                    },
-                    Lifestyle: {
-                        Pet: petIds ? { id: { in: petIds } } : undefined,
-                        Diet: dietIds ? { id: { in: dietIds } } : undefined,
-                        Sleep: sleepIds ? { id: { in: sleepIds } } : undefined,
-                        SNU: snuIds ? { id: { in: snuIds } } : undefined
-                    },
-                    Searchingfor: searchingForIds ? { id: { in: searchingForIds } } : undefined
-                };
-            }
-
-            return await prisma.users.findMany({
-                where,
-                take: 50,
+      return await prisma.users.findMany({
+        where,
+        take: 50,
+        select: {
+          id: true,
+          email: true,
+          display_name: true,
+          gender: true,
+          preferred_gender: true,
+          is_full_information: true,
+          Bio: {
+            select: {
+              id: true,
+              name: true,
+              age: true,
+              about_me: true,
+              main_inf: {
                 select: {
-                    id: true,
-                    email: true,
-                    display_name: true,
-                    gender: true,
-                    preferred_gender: true,
-                    is_full_information: true,
-                    Bio: {
-                        select: {
-                            id: true,
-                            name: true,
-                            age: true,
-                            about_me: true,
-                            main_inf: {
-                                select: {
-                                    height: true,
-                                    location: true,
-                                    Language: { select: { id: true, name: true } },
-                                    Religion: { select: { id: true, name: true } },
-                                    Career: { select: { id: true, name: true } },
-                                    Education: { select: { id: true, name: true } }
-                                }
-                            },
-                            Base_inf: {
-                                select: {
-                                    Zodiac: { select: { id: true, name: true } },
-                                    Character: { select: { id: true, name: true } },
-                                    Communicate_style: { select: { id: true, name: true } },
-                                    Love_language: { select: { id: true, name: true } },
-                                    FutureFamily: { select: { id: true, name: true } },
-                                    Sexual_orientation: { select: { id: true, name: true } }
-                                }
-                            },
-                            Lifestyle: {
-                                select: {
-                                    drink: true,
-                                    smoke: true,
-                                    train: true,
-                                    Pet: { select: { id: true, name: true } },
-                                    Diet: { select: { id: true, name: true } },
-                                    Sleep: { select: { id: true, name: true } },
-                                    SNU: { select: { id: true, name: true } }
-                                }
-                            },
-                            Photo: { select: { id: true, url: true, is_profile_pic: true } },
-                            Searchingfor: { select: { id: true, name: true } }
-                        }
-                    },
-                    user_favorites: { select: { favorite_id: true } }
-                }
-            });
-        } catch (error) {
-            logger.error({ error, stack: error.stack }, 'Error fetching users');
-            throw error;
-        }
-    },
+                  height: true,
+                  location: true,
+                  Language: { select: { id: true, name: true } },
+                  Religion: { select: { id: true, name: true } },
+                  Career: { select: { id: true, name: true } },
+                  Education: { select: { id: true, name: true } },
+                },
+              },
+              Base_inf: {
+                select: {
+                  Zodiac: { select: { id: true, name: true } },
+                  Character: { select: { id: true, name: true } },
+                  Communicate_style: { select: { id: true, name: true } },
+                  Love_language: { select: { id: true, name: true } },
+                  FutureFamily: { select: { id: true, name: true } },
+                  Sexual_orientation: { select: { id: true, name: true } },
+                },
+              },
+              Lifestyle: {
+                select: {
+                  drink: true,
+                  smoke: true,
+                  train: true,
+                  Pet: { select: { id: true, name: true } },
+                  Diet: { select: { id: true, name: true } },
+                  Sleep: { select: { id: true, name: true } },
+                  SNU: { select: { id: true, name: true } },
+                },
+              },
+              Photo: { select: { id: true, url: true, is_profile_pic: true } },
+              Searchingfor: { select: { id: true, name: true } },
+            },
+          },
+          user_favorites: { select: { favorite_id: true } },
+        },
+      });
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, "Error fetching users");
+      throw error;
+    }
+  },
     async createUser(userData) {
         try {
             logger.info('Creating new user');
@@ -4026,8 +4092,6 @@ export const emailService = {
 
 ### src\services\match.service.js
 ```js
-// src/services/match.service.js
-
 import { matchRepository } from "../repository/match.repository.js";
 import { notificationService } from "../services/notification.service.js";
 import logger from "../utils/logger.js";
@@ -4051,7 +4115,6 @@ export const matchService = {
           return null;
         }
 
-        // Lấy ảnh đại diện từ mảng Photo
         const photo = otherUser.Bio?.Photo?.find(p => p?.is_profile_pic)?.url || otherUser.Bio?.Photo?.[0]?.url || "";
 
         const result = {
@@ -4231,191 +4294,193 @@ export const reportService = {};
 ```js
 import { userRepository } from "../repository/user.repository.js";
 import { formatUser } from "../utils/user.utils.js";
-import { matchService } from "./match.service.js";
+import { matchService } from "./match.service.js"; 
+import logger from "../utils/logger.js";
 
 export const userService = {
-    createUser: async (userData) => {
-        return await userRepository.createUser(userData);
-    },
-    getProfileByEmail: async (email) => {
-        const userRaw = await userRepository.findUserByEmail(email);
-        const userFormatted = formatUser(userRaw);
-        if (userFormatted) {
-            delete userFormatted.password;
+  createUser: async (userData) => {
+    return await userRepository.createUser(userData);
+  },
+  getProfileByEmail: async (email) => {
+    const userRaw = await userRepository.findUserByEmail(email);
+    const userFormatted = formatUser(userRaw);
+    if (userFormatted) {
+      delete userFormatted.password;
+    }
+    return userFormatted;
+  },
+  getProfileById: async (id) => {
+    const userRaw = await userRepository.findUserById(id);
+    const userFormatted = formatUser(userRaw);
+    if (userFormatted) {
+      delete userFormatted.password;
+    }
+    return userFormatted;
+  },
+  getUserById: async (id) => {
+    const userRaw = await userRepository.findUserById(id);
+    const userFormatted = formatUser(userRaw);
+    if (userFormatted) {
+      delete userFormatted.password;
+    }
+    return userFormatted;
+  },
+  getAllUsersFormatted: async (filters, userId) => {
+    try {
+      const filtersFormatted = {
+        languageIds: filters?.languageIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        educationIds: filters?.educationIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        zodiacIds: filters?.zodiacIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        characterIds: filters?.characterIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        comunicateStyleIds: filters?.communicateStyleIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        loveLanguageIds: filters?.loveLanguageIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        futureFamilyIds: filters?.futureFamilyIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        sexualOrientationIds: filters?.sexualOrientationIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        petIds: filters?.petIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        dietIds: filters?.dietIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        sleepIds: filters?.sleepIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        snuIds: filters?.snuIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        searchingForIds: filters?.searchingForIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+        search: filters?.search,
+        gender: filters?.gender,
+        ageMin: filters?.ageMin ? parseInt(filters.ageMin) : undefined,
+        ageMax: filters?.ageMax ? parseInt(filters.ageMax) : undefined,
+        currentUserId: parseInt(userId), // Đảm bảo userId là số
+      };
+
+      logger.info(`Fetching matched users for userId ${userId}`);
+      // Lấy danh sách user đã được liked (bao gồm cả accepted và không accepted)
+      const usersMatched = await matchService.getAll(userId, false); // false để lấy tất cả match
+      const usersIdMatched = usersMatched?.map((match) => match?.user_id) || [];
+
+      logger.info(`Fetching users with filters: ${JSON.stringify(filtersFormatted)}`);
+      // Gọi repository với các bộ lọc và danh sách user đã matched
+      const usersRaw = await userRepository.getUsers(filtersFormatted, usersIdMatched);
+
+      // Format dữ liệu trả về
+      const usersFormatted = usersRaw.map((user) => {
+        const formatted = formatUser(user);
+        if (formatted) {
+          delete formatted.password;
         }
-        return userFormatted;
-    },
-    getProfileById: async (id) => {
-        const userRaw = await userRepository.findUserById(id);
-        const userFormatted = formatUser(userRaw);
-        if (userFormatted) {
-            delete userFormatted.password;
+        return formatted;
+      });
+
+      logger.info(`Found ${usersFormatted.length} users after filtering`);
+      return usersFormatted;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, "Error in getAllUsersFormatted");
+      throw error;
+    }
+  },
+  updateUserById: async (userId, user) => {
+    const {
+      displayName,
+      password,
+      gender,
+      preferredGender,
+      name,
+      age,
+      aboutMe,
+      height,
+      location,
+      birthday,
+      languageId,
+      religionId,
+      careerId,
+      educationId,
+      zodiacId,
+      characterId,
+      communicateStyleId,
+      loveLanguageId,
+      futureFamilyId,
+      drink,
+      smoke,
+      train,
+      petId,
+      dietId,
+      sleepId,
+      snuId,
+      photos,
+      favorites,
+      maxRadius,
+    } = user;
+
+    if (photos?.length > 0) {
+      const profilePicCount = photos.filter(p => p.is_profile_pic).length;
+      if (profilePicCount > 1) {
+        throw new Error("Chỉ được phép có tối đa một ảnh đại diện");
+      }
+    }
+
+    const photoUpdate = photos?.length > 0
+      ? {
+          Photo: {
+            updateMany: photos.map((photo) => ({
+              where: { id: photo.id },
+              data: {
+                url: photo.url,
+                is_profile_pic: photo.is_profile_pic,
+              },
+            })),
+          },
         }
-        return userFormatted;
-    },
-    getUserById: async (id) => {
-        const userRaw = await userRepository.findUserById(id);
-        const userFormatted = formatUser(userRaw);
-        if (userFormatted) {
-            delete userFormatted.password;
-        }
-        return userFormatted;
-    },
-    getAllUsersFormatted: async (filters, userId) => {
-        const filtersFormatted = {
-            languageIds: filters?.["language"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            educationIds: filters?.["education"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            zodiacIds: filters?.["zodiac"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            characterIds: filters?.["character"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            comunicateStyleIds: filters?.["communicate"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            loveLanguageIds: filters?.["lovelanguage"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            futureFamilyIds: filters?.["futurefamily"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            sexualOrientationIds: filters?.["sexOrientation"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            petIds: filters?.["pet"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            dietIds: filters?.["diet"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            sleepIds: filters?.["sleep"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            snuIds: filters?.["sns"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            searchingForIds: filters?.["searchingfor"]?.split(",")?.map(Number).filter(n => !isNaN(n)),
-            search: filters?.search,
-            gender: filters?.gender,
-            ageMin: filters?.ageMin ? parseInt(filters.ageMin) : undefined,
-            ageMax: filters?.ageMax ? parseInt(filters.ageMax) : undefined,
-            currentUserId: filters?.currentUserId ? parseInt(filters.currentUserId) : undefined,
-        };
+      : {};
 
-        const usersMatched = await matchService.getAll(userId, false);
-        const usersIdMatched = usersMatched?.map((match) => match?.user_id) || [];
-
-        const usersRaw = await userRepository.getUsers(
-            filtersFormatted,
-            usersIdMatched
-        );
-
-        const usersFormatted = usersRaw.map((user) => {
-            const formatted = formatUser(user);
-            if (formatted) {
-                delete formatted.password;
-            }
-            return formatted;
-        });
-        return usersFormatted;
-    },
-    updateUserById: async (userId, user) => {
-        const {
-            displayName,
-            password,
-            gender,
-            preferredGender,
-            name,
-            age,
-            aboutMe,
-            height,
-            location,
-            birthday,
-            languageId,
-            religionId,
-            careerId,
-            educationId,
-            zodiacId,
-            characterId,
-            communicateStyleId,
-            loveLanguageId,
-            futureFamilyId,
-            drink,
-            smoke,
-            train,
-            petId,
-            dietId,
-            sleepId,
-            snuId,
-            photos,
-            favorites,
-            maxRadius,
-        } = user;
-
-        // Cập nhật is_profile_pic trong cơ sở dữ liệu
-        if (photos?.length > 0) {
-            await prisma.photo.updateMany({
-                where: { bio_id: user.bioId },
-                data: { is_profile_pic: false }
-            });
-            await prisma.photo.update({
-                where: { id: photos[0]?.id },
-                data: { is_profile_pic: true }
-            });
-        }
-
-        const photoUpdate =
-            photos?.length > 0
-                ? {
-                      Photo: {
-                          updateMany: photos?.map((photo, index) => ({
-                              where: { id: photo?.id || undefined },
-                              data: {
-                                  url: photo?.url,
-                                  is_profile_pic: index === 0,
-                              },
-                          })),
-                      },
-                  }
-                : {};
-        const data = {
-            display_name: displayName,
-            gender,
-            preferred_gender: preferredGender,
-            is_full_information: true,
-            birthday,
-            Bio: {
-                update: {
-                    name,
-                    age,
-                    about_me: aboutMe,
-                    address: location,
-                    min_radius: 1,
-                    max_radius: maxRadius,
-                    main_inf: {
-                        update: {
-                            height,
-                            location,
-                            Language: languageId ? { connect: { id: parseInt(languageId) } } : undefined,
-                            Religion: religionId ? { connect: { id: parseInt(religionId) } } : undefined,
-                            Career: careerId ? { connect: { id: parseInt(careerId) } } : undefined,
-                            Education: educationId ? { connect: { id: parseInt(educationId) } } : undefined,
-                        },
-                    },
-                    Base_inf: {
-                        update: {
-                            Zodiac: zodiacId ? { connect: { id: parseInt(zodiacId) } } : undefined,
-                            Character: characterId ? { connect: { id: parseInt(characterId) } } : undefined,
-                            Communicate_style: communicateStyleId ? { connect: { id: parseInt(communicateStyleId) } } : undefined,
-                            Love_language: loveLanguageId ? { connect: { id: parseInt(loveLanguageId) } } : undefined,
-                            FutureFamily: futureFamilyId ? { connect: { id: parseInt(futureFamilyId) } } : undefined,
-                        },
-                    },
-                    Lifestyle: {
-                        update: {
-                            drink,
-                            smoke,
-                            train,
-                            Pet: petId ? { connect: { id: parseInt(petId) } } : undefined,
-                            Diet: dietId ? { connect: { id: parseInt(dietId) } } : undefined,
-                            Sleep: sleepId ? { connect: { id: parseInt(sleepId) } } : undefined,
-                            SNU: snuId ? { connect: { id: parseInt(snuId) } } : undefined,
-                        },
-                    },
-                    ...photoUpdate,
-                },
+    const data = {
+      display_name: displayName,
+      gender,
+      preferred_gender: preferredGender,
+      is_full_information: true,
+      birthday,
+      Bio: {
+        update: {
+          name,
+          age,
+          about_me: aboutMe,
+          address: location,
+          min_radius: 1,
+          max_radius: maxRadius,
+          main_inf: {
+            update: {
+              height,
+              location,
+              Language: languageId ? { connect: { id: parseInt(languageId) } } : undefined,
+              Religion: religionId ? { connect: { id: parseInt(religionId) } } : undefined,
+              Career: careerId ? { connect: { id: parseInt(careerId) } } : undefined,
+              Education: educationId ? { connect: { id: parseInt(educationId) } } : undefined,
             },
-        };
+          },
+          Base_inf: {
+            update: {
+              Zodiac: zodiacId ? { connect: { id: parseInt(zodiacId) } } : undefined,
+              Character: characterId ? { connect: { id: parseInt(characterId) } } : undefined,
+              Communicate_style: communicateStyleId ? { connect: { id: parseInt(communicateStyleId) } } : undefined,
+              Love_language: loveLanguageId ? { connect: { id: parseInt(loveLanguageId) } } : undefined,
+              FutureFamily: futureFamilyId ? { connect: { id: parseInt(futureFamilyId) } } : undefined,
+            },
+          },
+          Lifestyle: {
+            update: {
+              drink,
+              smoke,
+              train,
+              Pet: petId ? { connect: { id: parseInt(petId) } } : undefined,
+              Diet: dietId ? { connect: { id: parseInt(dietId) } } : undefined,
+              Sleep: sleepId ? { connect: { id: parseInt(sleepId) } } : undefined,
+              SNU: snuId ? { connect: { id: parseInt(snuId) } } : undefined,
+            },
+          },
+          ...photoUpdate,
+        },
+      },
+    };
 
-        return await userRepository.updateUserById(userId, data, favorites);
-    },
-    updateUserEmailVerifiedStatus: async (userId, isVerified) => {
-        return await userRepository.updateUserEmailVerifiedStatus(
-            userId,
-            isVerified
-        );
-    },
+    return await userRepository.updateUserById(userId, data, favorites);
+  },
+  updateUserEmailVerifiedStatus: async (userId, isVerified) => {
+    return await userRepository.updateUserEmailVerifiedStatus(userId, isVerified);
+  },
 };
 ```
 

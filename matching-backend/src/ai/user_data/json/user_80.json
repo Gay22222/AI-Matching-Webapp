@@ -1,47 +1,47 @@
 {
   "id": 80,
-  "username": "Dejah.Towne0",
-  "display_name": "Dejah Towne",
-  "email": "Dejah_Towne@hotmail.com",
+  "username": "Noemy_Herzog",
+  "display_name": "Noemy Herzog",
+  "email": "Noemy_Herzog81@hotmail.com",
   "birthday": null,
-  "age": 26,
+  "age": 49,
   "status": "active",
-  "about_me": "Stipes blanditiis beatus comptus desparatus.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
+  "about_me": "Vulariter usque balbus libero terreo decumbo blandior beneficium architecto.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
   "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "200",
-  "location": "Fort Felix",
-  "zodiac": "Song Tử",
-  "character": "Hài hước",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "193",
+  "location": "Schmittfield",
+  "zodiac": "Kim Ngưu",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
   "love_language": "Lời nói yêu thương",
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Yoga",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Yoga",
-    "Du lịch"
+    "Du lịch",
+    "Chơi game"
   ]
 }

@@ -1,48 +1,46 @@
 {
   "id": 6,
-  "username": "Lora.Hodkiewicz",
-  "display_name": "Lora Hodkiewicz",
-  "email": "Lora.Hodkiewicz@yahoo.com",
+  "username": "Joel.Crona95",
+  "display_name": "Joel Crona",
+  "email": "Joel.Crona12@yahoo.com",
   "birthday": null,
-  "age": 38,
+  "age": 44,
   "status": "active",
-  "about_me": "Contra alter blanditiis.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
+  "about_me": "Substantia quos cicuta tersus tardus statua deleo nihil abeo decretum.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
   "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
+  "religion": "Phật giáo",
   "career": "Bác sĩ",
-  "height": "164",
-  "location": "North Danikafort",
-  "zodiac": "Kim Ngưu",
-  "character": "Nghiêm túc",
+  "height": "180",
+  "location": "East Vaughn",
+  "zodiac": "Bạch Dương",
+  "character": "Điềm đạm",
   "character_list": [
-    "Nghiêm túc"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
   "snu": "Không",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Mua sắm",
-    "Nấu ăn",
-    "Đọc sách"
+    "Nhiếp ảnh"
   ]
 }

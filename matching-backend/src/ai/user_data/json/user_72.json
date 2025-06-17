@@ -1,46 +1,47 @@
 {
   "id": 72,
-  "username": "Phyllis.Streich",
-  "display_name": "Phyllis Streich",
-  "email": "Phyllis.Streich0@hotmail.com",
+  "username": "Ryder_Gorczany16",
+  "display_name": "Ryder Gorczany",
+  "email": "Ryder_Gorczany0@hotmail.com",
   "birthday": null,
-  "age": 39,
+  "age": 50,
   "status": "active",
-  "about_me": "Calamitas cunabula barba dicta theatrum verbum asporto.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Alioqui clarus id fuga depulso sum administratio stips comprehendo.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
   "language": "English",
   "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Doanh nhân",
-  "height": "163",
-  "location": "Beavercreek",
-  "zodiac": "Bò Cạp",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "197",
+  "location": "Jarodburgh",
+  "zodiac": "Bạch Dương",
   "character": "Nghiêm túc",
   "character_list": [
     "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
   "future_family": "Muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": true,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Không",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Phim ảnh"
+    "Mua sắm",
+    "Yoga"
   ]
 }

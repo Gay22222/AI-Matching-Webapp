@@ -1,46 +1,47 @@
 {
   "id": 100,
-  "username": "Lane.Tromp",
-  "display_name": "Lane Tromp",
-  "email": "Lane_Tromp76@yahoo.com",
+  "username": "Christ.Koch62",
+  "display_name": "Christ Koch",
+  "email": "Christ_Koch35@gmail.com",
   "birthday": null,
-  "age": 29,
+  "age": 43,
   "status": "active",
-  "about_me": "Uberrime appello cauda vesper virga suppono.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Aequitas vester aestus vestrum aliqua delectus vulnus adipiscor.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "179",
-  "location": "New Haven",
-  "zodiac": "Ma Kết",
-  "character": "Nghiêm túc",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "166",
+  "location": "North Bessiefield",
+  "zodiac": "Nhân Mã",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": false,
+  "drink": false,
+  "smoke": true,
   "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
   "favorite": "Đọc sách",
   "favorite_list": [
-    "Đọc sách"
+    "Đọc sách",
+    "Nghệ thuật"
   ]
 }

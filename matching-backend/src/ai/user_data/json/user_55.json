@@ -1,47 +1,47 @@
 {
   "id": 55,
-  "username": "Granville.Batz",
-  "display_name": "Granville Batz",
-  "email": "Granville_Batz16@gmail.com",
+  "username": "Orie.Fisher",
+  "display_name": "Orie Fisher",
+  "email": "Orie.Fisher@gmail.com",
   "birthday": null,
-  "age": 21,
+  "age": 60,
   "status": "active",
-  "about_me": "Velum angelus adduco thesaurus patria approbo.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "161",
-  "location": "Martinstead",
-  "zodiac": "Xử Nữ",
-  "character": "Thân thiện",
+  "about_me": "Nemo ter caste.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "199",
+  "location": "East Sashachester",
+  "zodiac": "Bảo Bình",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": true,
-  "diet": "Ăn chay",
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Cá",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Đọc sách",
-    "Yoga"
+    "Âm nhạc",
+    "Nhiếp ảnh"
   ]
 }

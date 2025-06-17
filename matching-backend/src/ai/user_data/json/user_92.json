@@ -1,47 +1,48 @@
 {
   "id": 92,
-  "username": "Osvaldo.Lowe48",
-  "display_name": "Osvaldo Lowe",
-  "email": "Osvaldo.Lowe@yahoo.com",
+  "username": "Mitchel.Collier",
+  "display_name": "Mitchel Collier",
+  "email": "Mitchel_Collier78@yahoo.com",
   "birthday": null,
-  "age": 52,
+  "age": 21,
   "status": "active",
-  "about_me": "Ara tumultus suasoria defero summisse demulceo vacuus cultellus absum illo.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "163",
-  "location": "Euclid",
-  "zodiac": "Ma Kết",
-  "character": "Điềm đạm",
+  "about_me": "Copiose acer defluo possimus similique stips tandem tertius voluptates.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "198",
+  "location": "West Houston",
+  "zodiac": "Kim Ngưu",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
   "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
+  "drink": false,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Nấu ăn",
-    "Du lịch"
+    "Nhiếp ảnh",
+    "Thể thao",
+    "Phim ảnh"
   ]
 }

@@ -1,24 +1,24 @@
 {
   "id": 41,
-  "username": "Kirk_Runte",
-  "display_name": "Kirk Runte",
-  "email": "Kirk.Runte@hotmail.com",
+  "username": "Sylvia.VonRueden-Renner",
+  "display_name": "Sylvia VonRueden-Renner",
+  "email": "Sylvia_VonRueden-Renner@yahoo.com",
   "birthday": null,
-  "age": 49,
+  "age": 56,
   "status": "active",
-  "about_me": "Texo aveho delectus solutio impedit amaritudo volubilis.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "198",
-  "location": "Conway",
-  "zodiac": "Nhân Mã",
-  "character": "Điềm đạm",
+  "about_me": "Quae deficio qui suffragium caste stipes ea utroque suadeo derideo.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "162",
+  "location": "Port Jeremieworth",
+  "zodiac": "Bò Cạp",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
@@ -28,21 +28,19 @@
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
+  "smoke": false,
   "train": false,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "snu": "Không",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Cà phê",
-    "Yoga",
-    "Thể thao"
+    "Du lịch"
   ]
 }

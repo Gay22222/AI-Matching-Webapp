@@ -1,48 +1,46 @@
 {
   "id": 13,
-  "username": "Francisco.Pfeffer",
-  "display_name": "Francisco Pfeffer",
-  "email": "Francisco.Pfeffer@hotmail.com",
+  "username": "Elisa.Kunze74",
+  "display_name": "Elisa Kunze",
+  "email": "Elisa_Kunze@yahoo.com",
   "birthday": null,
-  "age": 33,
+  "age": 46,
   "status": "active",
-  "about_me": "Deporto cursim valeo cicuta uberrime terra sequi color repellendus accendo.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
+  "about_me": "Cedo triduana coniecto veritas.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
   "education": "Tiến sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Giáo viên",
-  "height": "172",
-  "location": "Daughertystead",
-  "zodiac": "Nhân Mã",
+  "career": "Kỹ sư phần mềm",
+  "height": "160",
+  "location": "West Ryleighport",
+  "zodiac": "Cự Giải",
   "character": "Nghiêm túc",
   "character_list": [
     "Nghiêm túc"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn chay",
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Yoga",
-    "Cà phê",
-    "Nấu ăn"
+    "Cà phê"
   ]
 }

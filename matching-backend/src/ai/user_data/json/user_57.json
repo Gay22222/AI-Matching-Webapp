@@ -1,48 +1,47 @@
 {
   "id": 57,
-  "username": "Walter_White",
-  "display_name": "Walter White",
-  "email": "Walter_White@gmail.com",
+  "username": "Madge_DuBuque",
+  "display_name": "Madge DuBuque",
+  "email": "Madge_DuBuque56@gmail.com",
   "birthday": null,
-  "age": 38,
+  "age": 20,
   "status": "active",
-  "about_me": "Cedo vehemens cruciamentum titulus sortitus vallum.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Arto demo vesco creta similique substantia solitudo cunae.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "198",
-  "location": "New Ronhaven",
-  "zodiac": "Song Ngư",
-  "character": "Điềm đạm",
+  "height": "188",
+  "location": "Laylamouth",
+  "zodiac": "Sư Tử",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
   "future_family": "Không muốn con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn chay",
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
+  "snu": "Tuỳ đối tượng",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Đọc sách",
-    "Nhiếp ảnh",
-    "Âm nhạc"
+    "Mua sắm",
+    "Phim ảnh"
   ]
 }

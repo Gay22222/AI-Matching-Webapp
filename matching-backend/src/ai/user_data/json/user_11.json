@@ -1,47 +1,47 @@
 {
   "id": 11,
-  "username": "Maurice_Fisher",
-  "display_name": "Maurice Fisher",
-  "email": "Maurice.Fisher42@hotmail.com",
+  "username": "Flavio.Parker3",
+  "display_name": "Flavio Parker",
+  "email": "Flavio.Parker@hotmail.com",
   "birthday": null,
-  "age": 19,
+  "age": 38,
   "status": "active",
-  "about_me": "Adulescens carpo deprecator.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Reiciendis campana acer textilis natus abduco.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
   "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "191",
-  "location": "Savannah",
-  "zodiac": "Thiên Bình",
-  "character": "Nghiêm túc",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "158",
+  "location": "Framifield",
+  "zodiac": "Kim Ngưu",
+  "character": "Điềm đạm",
   "character_list": [
-    "Nghiêm túc"
+    "Điềm đạm"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chó",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Âm nhạc",
+    "Nhiếp ảnh",
     "Chơi game"
   ]
 }

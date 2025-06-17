@@ -37,6 +37,7 @@ export const matchRepository = {
       throw error;
     }
   },
+
   async get(id) {
     try {
       logger.info(`Fetching match ${id}`);
@@ -90,6 +91,7 @@ export const matchRepository = {
       throw error;
     }
   },
+
   async find(senderId, receiverId) {
     try {
       logger.info(`Checking match between sender ${senderId} and receiver ${receiverId}`);
@@ -106,6 +108,54 @@ export const matchRepository = {
       throw error;
     }
   },
+
+  async create(senderId, receiverId) {
+    try {
+      logger.info(`Creating match for sender ${senderId} and receiver ${receiverId}`);
+      // Kiểm tra user tồn tại
+      const senderExists = await prisma.users.findUnique({ where: { id: parseInt(senderId) } });
+      const receiverExists = await prisma.users.findUnique({ where: { id: parseInt(receiverId) } });
+      if (!senderExists || !receiverExists) {
+        logger.warn("User not found", { senderId, receiverId });
+        throw new Error(`User not found: ${!senderExists ? 'sender' : 'receiver'}`);
+      }
+
+      const match = await prisma.matches.create({
+        data: {
+          user_1_id: parseInt(senderId),
+          user_2_id: parseInt(receiverId),
+          is_accept: false,
+          matched_at: new Date(),
+        },
+        include: {
+          user_match_1: {
+            include: {
+              Bio: {
+                include: {
+                  Photo: true,
+                },
+              },
+            },
+          },
+          user_match_2: {
+            include: {
+              Bio: {
+                include: {
+                  Photo: true,
+                },
+              },
+            },
+          },
+        },
+      });
+      logger.info(`Match created with ID ${match.id}`);
+      return match;
+    } catch (error) {
+      logger.error({ error, stack: error.stack }, 'Error creating match');
+      throw error;
+    }
+  },
+
   async update(id, isAccept) {
     try {
       logger.info(`Updating match ${id} with isAccept ${isAccept}`);

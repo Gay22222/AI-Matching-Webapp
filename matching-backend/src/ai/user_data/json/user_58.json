@@ -1,24 +1,24 @@
 {
   "id": 58,
-  "username": "Laurel.Bernier9",
-  "display_name": "Laurel Bernier",
-  "email": "Laurel_Bernier41@hotmail.com",
+  "username": "Estrella_Runte23",
+  "display_name": "Estrella Runte",
+  "email": "Estrella.Runte@hotmail.com",
   "birthday": null,
-  "age": 21,
+  "age": 33,
   "status": "active",
-  "about_me": "Complectus voluptatum acsi stella crapula suadeo crudelis.",
-  "searching_for": "Kết bạn mới",
+  "about_me": "Numquam cernuus quaerat tabesco et xiphias coniecto ventito voluptates.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "187",
-  "location": "New Dolly",
-  "zodiac": "Cự Giải",
-  "character": "Hài hước",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "170",
+  "location": "South Calebboro",
+  "zodiac": "Bạch Dương",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
@@ -30,17 +30,17 @@
   ],
   "future_family": "Muốn có con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Yoga",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Yoga"
+    "Đọc sách"
   ]
 }

@@ -1,47 +1,47 @@
 {
   "id": 23,
-  "username": "Arno.Crona",
-  "display_name": "Arno Crona",
-  "email": "Arno_Crona89@hotmail.com",
+  "username": "Milo.Bogisich",
+  "display_name": "Milo Bogisich",
+  "email": "Milo_Bogisich47@hotmail.com",
   "birthday": null,
-  "age": 43,
+  "age": 27,
   "status": "active",
-  "about_me": "Decerno campana comprehendo stabilis.",
+  "about_me": "Curatio valde advenio condico arma tui curto.",
   "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "190",
-  "location": "Powlowskiview",
-  "zodiac": "Xử Nữ",
-  "character": "Thân thiện",
+  "career": "Doanh nhân",
+  "height": "160",
+  "location": "Rolfsonfurt",
+  "zodiac": "Bò Cạp",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Lời nói yêu thương"
   ],
   "future_family": "Không muốn con",
   "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Chó",
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Âm nhạc",
-    "Phim ảnh"
+    "Thể thao",
+    "Nghệ thuật"
   ]
 }

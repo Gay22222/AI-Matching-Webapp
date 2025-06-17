@@ -1,48 +1,46 @@
 {
   "id": 26,
-  "username": "Melisa_Rogahn66",
-  "display_name": "Melisa Rogahn",
-  "email": "Melisa.Rogahn@gmail.com",
+  "username": "Trystan_Pfeffer28",
+  "display_name": "Trystan Pfeffer",
+  "email": "Trystan.Pfeffer2@yahoo.com",
   "birthday": null,
-  "age": 42,
+  "age": 35,
   "status": "active",
-  "about_me": "Alias suffragium capto quaerat.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
+  "about_me": "Surculus ubi conventus viriliter adeptio virtus.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Trung học phổ thông",
-  "religion": "Cơ đốc giáo",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
   "career": "Giáo viên",
-  "height": "161",
-  "location": "East Riverview",
-  "zodiac": "Bò Cạp",
-  "character": "Nghiêm túc",
+  "height": "193",
+  "location": "Madelynberg",
+  "zodiac": "Song Ngư",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
   "future_family": "Không muốn con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chim",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nấu ăn",
-    "Mua sắm",
-    "Phim ảnh"
+    "Thể thao"
   ]
 }

@@ -1,38 +1,38 @@
 {
   "id": 5,
-  "username": "Napoleon_Nader57",
-  "display_name": "Napoleon Nader",
-  "email": "Napoleon.Nader66@yahoo.com",
+  "username": "Allan_Funk24",
+  "display_name": "Allan Funk",
+  "email": "Allan.Funk56@yahoo.com",
   "birthday": null,
-  "age": 18,
+  "age": 43,
   "status": "active",
-  "about_me": "Sint decerno bene adimpleo adeptio.",
+  "about_me": "Alter denique ultra thesaurus triumphus crustulum.",
   "searching_for": "Chưa chắc chắn / Để mở",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Tiến sĩ",
+  "education": "Thạc sĩ",
   "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "185",
-  "location": "Fort Kailynboro",
-  "zodiac": "Xử Nữ",
-  "character": "Nghiêm túc",
+  "career": "Giáo viên",
+  "height": "191",
+  "location": "Hansenchester",
+  "zodiac": "Nhân Mã",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
+  "train": true,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
   "snu": "Có",
   "pet": "Chó",
@@ -42,6 +42,6 @@
   "favorite": "Nhiếp ảnh",
   "favorite_list": [
     "Nhiếp ảnh",
-    "Yoga"
+    "Thể thao"
   ]
 }

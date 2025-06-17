@@ -1,48 +1,46 @@
 {
   "id": 48,
-  "username": "Emilio.Larkin",
-  "display_name": "Emilio Larkin",
-  "email": "Emilio_Larkin@yahoo.com",
+  "username": "Leatha.Collins",
+  "display_name": "Leatha Collins",
+  "email": "Leatha.Collins@gmail.com",
   "birthday": null,
-  "age": 52,
+  "age": 25,
   "status": "active",
-  "about_me": "Adstringo conor casus.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
+  "about_me": "Vulariter solvo thermae deduco antiquus coruscus.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Tiến sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "179",
-  "location": "New Josiah",
-  "zodiac": "Thiên Bình",
-  "character": "Tự tin",
+  "career": "Bác sĩ",
+  "height": "171",
+  "location": "Fort Sharon",
+  "zodiac": "Cự Giải",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Mua sắm",
-    "Đọc sách",
-    "Thể thao"
+    "Nấu ăn"
   ]
 }

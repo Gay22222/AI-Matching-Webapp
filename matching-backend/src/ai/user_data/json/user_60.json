@@ -1,47 +1,48 @@
 {
   "id": 60,
-  "username": "Adrian_Lubowitz82",
-  "display_name": "Adrian Lubowitz",
-  "email": "Adrian.Lubowitz26@yahoo.com",
+  "username": "Dewitt_Brakus",
+  "display_name": "Dewitt Brakus",
+  "email": "Dewitt.Brakus2@yahoo.com",
   "birthday": null,
-  "age": 42,
+  "age": 24,
   "status": "active",
-  "about_me": "Sed utilis culpa constans abstergo desidero adipiscor.",
+  "about_me": "Baiulus clamo taceo volubilis succedo stella vulnus corrigo benigne.",
   "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "153",
-  "location": "North Bethesda",
-  "zodiac": "Song Tử",
-  "character": "Nghiêm túc",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "163",
+  "location": "Lake Beautown",
+  "zodiac": "Xử Nữ",
+  "character": "Hài hước",
   "character_list": [
-    "Nghiêm túc"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nghệ thuật",
-    "Chơi game"
+    "Thể thao",
+    "Chơi game",
+    "Nghệ thuật"
   ]
 }

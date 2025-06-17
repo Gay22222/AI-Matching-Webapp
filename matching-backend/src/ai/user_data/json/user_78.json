@@ -1,47 +1,47 @@
 {
   "id": 78,
-  "username": "Joan.Cole-Yost",
-  "display_name": "Joan Cole-Yost",
-  "email": "Joan.Cole-Yost@hotmail.com",
+  "username": "Ilene_OConnell",
+  "display_name": "Ilene O'Connell",
+  "email": "Ilene.OConnell31@yahoo.com",
   "birthday": null,
-  "age": 51,
+  "age": 27,
   "status": "active",
-  "about_me": "Eos cursim textilis arguo summopere accusantium dens.",
+  "about_me": "Volup crustulum spoliatio carbo suspendo trans villa est villa alii.",
   "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
   "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "169",
-  "location": "Shieldscester",
-  "zodiac": "Bảo Bình",
-  "character": "Điềm đạm",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "195",
+  "location": "Georgetown",
+  "zodiac": "Bò Cạp",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nấu ăn",
-    "Đọc sách"
+    "Yoga",
+    "Phim ảnh"
   ]
 }

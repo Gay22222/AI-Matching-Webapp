@@ -1,48 +1,46 @@
 {
   "id": 89,
-  "username": "Piper_Langworth",
-  "display_name": "Piper Langworth",
-  "email": "Piper_Langworth@gmail.com",
+  "username": "Vernon.Green",
+  "display_name": "Vernon Green",
+  "email": "Vernon_Green56@hotmail.com",
   "birthday": null,
-  "age": 43,
+  "age": 28,
   "status": "active",
-  "about_me": "Auctus vulgivagus tepesco venustas volubilis talio accendo thermae.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
+  "about_me": "Casus studio clarus cometes vilitas.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
   "education": "Thạc sĩ",
   "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "172",
-  "location": "Lake Merlintown",
-  "zodiac": "Cự Giải",
+  "career": "Bác sĩ",
+  "height": "156",
+  "location": "South Vallietown",
+  "zodiac": "Nhân Mã",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Quà tặng"
+    "Hành động quan tâm"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chim",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Phim ảnh",
-    "Mua sắm",
     "Nấu ăn"
   ]
 }

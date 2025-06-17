@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 });
 
 // Static files
-const uploadsPath = path.join(__dirname, "../Uploads");
+const uploadsPath = path.join(__dirname, "../uploads");
 console.log(`Serving static files from: ${uploadsPath}`);
 app.use("/uploads", express.static(uploadsPath, {
     setHeaders: (res) => {

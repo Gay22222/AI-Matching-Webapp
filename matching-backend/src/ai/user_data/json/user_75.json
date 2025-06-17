@@ -1,48 +1,47 @@
 {
   "id": 75,
-  "username": "Laney_OKeefe",
-  "display_name": "Laney O'Keefe",
-  "email": "Laney_OKeefe@gmail.com",
+  "username": "Keith_Heaney91",
+  "display_name": "Keith Heaney",
+  "email": "Keith.Heaney@yahoo.com",
   "birthday": null,
-  "age": 18,
+  "age": 30,
   "status": "active",
-  "about_me": "Nostrum undique aegre acerbitas debeo vicissitudo spes.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Cursus subvenio vinum amplus paens territo tristis dedico.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "166",
-  "location": "Bartlett",
-  "zodiac": "Cự Giải",
-  "character": "Điềm đạm",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "191",
+  "location": "Ferminfield",
+  "zodiac": "Song Tử",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": false,
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
   "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Không",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Chơi game",
-    "Cà phê",
+    "Mua sắm",
     "Đọc sách"
   ]
 }

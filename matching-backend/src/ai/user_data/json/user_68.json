@@ -1,48 +1,47 @@
 {
   "id": 68,
-  "username": "Hyman.Casper38",
-  "display_name": "Hyman Casper",
-  "email": "Hyman.Casper@gmail.com",
+  "username": "Christian.Bogisich",
+  "display_name": "Christian Bogisich",
+  "email": "Christian.Bogisich10@hotmail.com",
   "birthday": null,
-  "age": 39,
+  "age": 59,
   "status": "active",
-  "about_me": "Ago adhaero voluntarius textor.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
+  "about_me": "Caste amplus tres vito taceo corona balbus fuga.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Thạc sĩ",
   "religion": "Hồi giáo",
-  "career": "Doanh nhân",
-  "height": "162",
-  "location": "Daughertyville",
-  "zodiac": "Nhân Mã",
-  "character": "Điềm đạm",
+  "career": "Kỹ sư phần mềm",
+  "height": "150",
+  "location": "Rodrigoburgh",
+  "zodiac": "Bạch Dương",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Cà phê",
-    "Nấu ăn"
+    "Phim ảnh",
+    "Nghệ thuật"
   ]
 }

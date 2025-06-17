@@ -1,48 +1,47 @@
 {
   "id": 27,
-  "username": "Brook_Schmeler",
-  "display_name": "Brook Schmeler",
-  "email": "Brook_Schmeler49@gmail.com",
+  "username": "Addie.Pfeffer-Rohan60",
+  "display_name": "Addie Pfeffer-Rohan",
+  "email": "Addie.Pfeffer-Rohan@hotmail.com",
   "birthday": null,
-  "age": 41,
+  "age": 52,
   "status": "active",
-  "about_me": "Calcar spectaculum cupressus dolores alter subiungo.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Song tính",
+  "about_me": "Confero conduco cruentus tero colligo adduco admitto depopulo.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
   "language": "English",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "166",
-  "location": "Fort Summerberg",
-  "zodiac": "Song Tử",
-  "character": "Tự tin",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "160",
+  "location": "West Dusty",
+  "zodiac": "Bạch Dương",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
+  "future_family": "Không muốn con",
+  "drink": true,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Cà phê",
-    "Thể thao",
+    "Đọc sách",
     "Mua sắm"
   ]
 }

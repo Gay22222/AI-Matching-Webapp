@@ -12,6 +12,15 @@ const Matches = () => {
   const { auth, currentUser } = useAuth();
   const [isLoading, setIsLoading] = useState(true);
 
+  // Hàm chuẩn hóa URL ảnh
+  const normalizePhotoUrl = (photo) => {
+    if (!photo) {
+      console.warn("Photo URL is missing", { photo });
+      return "/default-avatar.jpg";
+    }
+    return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+  };
+
   useEffect(() => {
     const fetchMatches = async () => {
       setIsLoading(true);
@@ -89,17 +98,13 @@ const Matches = () => {
                 >
                   <div className="relative">
                     <img
-                      src={
-                        match?.photo && match?.photo.startsWith("/")
-                          ? `http://localhost:3001${match.photo}`
-                          : match?.photo ||
-                            "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
-                      }
+                      src={normalizePhotoUrl(match?.photo)}
                       alt={match.name || "User"}
                       className="object-cover w-16 h-16 transition-transform duration-300 rounded-full hover:scale-105"
+                      crossOrigin="anonymous"
                       onError={(e) => {
-                        e.target.src =
-                          "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg";
+                        console.error(`Failed to load image: ${e.target.src}, error: ${e.type}, status: ${e.target.status || 'unknown'}`);
+                        e.target.src = "/default-avatar.jpg";
                       }}
                     />
                     {match.unread && (

@@ -11,7 +11,7 @@ export const uploadController = {
             }
             const { bioId, isProfilePic } = req.body;
             const userId = req.user.id;
-            const fileUrl = `/Uploads/${userId}/images/${req.file.filename}`;
+            const fileUrl = `/uploads/${userId}/images/${req.file.filename}`;
 
             // Kiểm tra số lượng ảnh hiện có
             const currentPhotos = await prisma.photo.count({
@@ -74,7 +74,7 @@ export const uploadController = {
 
             const photos = await Promise.all(
                 req.files.map(async (file) => {
-                    const fileUrl = `/Uploads/${userId}/images/${file.filename}`;
+                    const fileUrl = `/uploads/${userId}/images/${file.filename}`;
                     const photo = await prisma.photo.create({
                         data: {
                             bio_id: parseInt(bioId),
@@ -124,8 +124,11 @@ export const uploadController = {
                 return res.status(403).json({ statusCode: 403, message: "Không có quyền xóa ảnh này" });
             }
 
+            // Kiểm tra xem ảnh có phải là ảnh đại diện không
+            const isProfilePic = photo.is_profile_pic;
+
             // Xóa file vật lý nếu tồn tại
-            const filePath = path.join("Uploads", userId.toString(), "images", path.basename(photo.url));
+            const filePath = path.join("uploads", userId.toString(), "images", path.basename(photo.url));
             if (fs.existsSync(filePath)) {
                 fs.unlinkSync(filePath);
                 logger.info(`Deleted file: ${filePath}`);
@@ -135,6 +138,23 @@ export const uploadController = {
             await prisma.photo.delete({
                 where: { id: parseInt(photoId) },
             });
+
+            // Nếu ảnh vừa xóa là ảnh đại diện, chọn ảnh khác làm ảnh đại diện
+            if (isProfilePic) {
+                const remainingPhotos = await prisma.photo.findMany({
+                    where: { bio_id: photo.bio_id },
+                    orderBy: { id: 'asc' },
+                    take: 1,
+                });
+
+                if (remainingPhotos.length > 0) {
+                    await prisma.photo.update({
+                        where: { id: remainingPhotos[0].id },
+                        data: { is_profile_pic: true },
+                    });
+                    logger.info(`Set new profile picture: ${remainingPhotos[0].id}`);
+                }
+            }
 
             res.status(200).json({
                 statusCode: 200,

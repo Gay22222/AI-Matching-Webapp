@@ -1,24 +1,24 @@
 {
   "id": 49,
-  "username": "Khalid_Kovacek88",
-  "display_name": "Khalid Kovacek",
-  "email": "Khalid.Kovacek82@yahoo.com",
+  "username": "Tyreek_Casper",
+  "display_name": "Tyreek Casper",
+  "email": "Tyreek.Casper64@gmail.com",
   "birthday": null,
-  "age": 60,
+  "age": 36,
   "status": "active",
-  "about_me": "Uter tibi cerno vociferor pecus compello.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Urbanus nemo totus stips conitor cunae.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
   "career": "Doanh nhân",
-  "height": "199",
-  "location": "Danielhaven",
+  "height": "192",
+  "location": "Lake Gilbertfield",
   "zodiac": "Thiên Bình",
-  "character": "Thân thiện",
+  "character": "Tự tin",
   "character_list": [
-    "Thân thiện"
+    "Tự tin"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
@@ -28,21 +28,21 @@
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "train": false,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Phim ảnh",
     "Chơi game",
-    "Nghệ thuật"
+    "Nhiếp ảnh",
+    "Nấu ăn"
   ]
 }

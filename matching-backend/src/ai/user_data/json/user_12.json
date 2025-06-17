@@ -1,46 +1,47 @@
 {
   "id": 12,
-  "username": "Zita_Erdman",
-  "display_name": "Zita Erdman",
-  "email": "Zita.Erdman@yahoo.com",
+  "username": "Tiara_Crist",
+  "display_name": "Tiara Crist",
+  "email": "Tiara_Crist@gmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 56,
   "status": "active",
-  "about_me": "Vinculum eaque synagoga deinde alias templum inventore.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "174",
-  "location": "Geovannyboro",
-  "zodiac": "Song Tử",
-  "character": "Tự tin",
+  "about_me": "Subnecto beatus autem advenio tabernus vicinus.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "184",
+  "location": "Johnson City",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Nhiếp ảnh"
+    "Đọc sách",
+    "Thể thao"
   ]
 }

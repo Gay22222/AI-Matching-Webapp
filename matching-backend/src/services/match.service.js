@@ -1,5 +1,3 @@
-// src/services/match.service.js
-
 import { matchRepository } from "../repository/match.repository.js";
 import { notificationService } from "../services/notification.service.js";
 import logger from "../utils/logger.js";
@@ -23,7 +21,6 @@ export const matchService = {
           return null;
         }
 
-        // Lấy ảnh đại diện từ mảng Photo
         const photo = otherUser.Bio?.Photo?.find(p => p?.is_profile_pic)?.url || otherUser.Bio?.Photo?.[0]?.url || "";
 
         const result = {

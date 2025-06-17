@@ -1,48 +1,46 @@
 {
   "id": 15,
-  "username": "Brady.Hackett29",
-  "display_name": "Brady Hackett",
-  "email": "Brady_Hackett@gmail.com",
+  "username": "Margarette_Wehner27",
+  "display_name": "Margarette Wehner",
+  "email": "Margarette_Wehner57@hotmail.com",
   "birthday": null,
-  "age": 20,
+  "age": 39,
   "status": "active",
-  "about_me": "Laudantium tribuo appono tot velit valde agnosco.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
+  "about_me": "Numquam cetera admoveo amicitia.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "191",
-  "location": "Mission Viejo",
-  "zodiac": "Bò Cạp",
+  "religion": "Hồi giáo",
+  "career": "Doanh nhân",
+  "height": "200",
+  "location": "Drakemouth",
+  "zodiac": "Kim Ngưu",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": false,
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn chay",
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Âm nhạc",
-    "Mua sắm",
-    "Nghệ thuật"
+    "Chơi game"
   ]
 }

@@ -1,48 +1,48 @@
 {
   "id": 51,
-  "username": "Americo.Koepp",
-  "display_name": "Americo Koepp",
-  "email": "Americo_Koepp@yahoo.com",
+  "username": "Matilda.Osinski31",
+  "display_name": "Matilda Osinski",
+  "email": "Matilda_Osinski99@gmail.com",
   "birthday": null,
-  "age": 47,
+  "age": 55,
   "status": "active",
-  "about_me": "Colligo allatus conqueror sit aequitas cinis hic avaritia tenuis amoveo.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Vulticulus varietas certe.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "197",
-  "location": "New Adelaport",
-  "zodiac": "Bảo Bình",
-  "character": "Tự tin",
+  "height": "158",
+  "location": "Hartford",
+  "zodiac": "Ma Kết",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
+  "smoke": false,
   "train": false,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Cá",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Nấu ăn",
-    "Đọc sách",
+    "Du lịch",
+    "Âm nhạc",
     "Nhiếp ảnh"
   ]
 }

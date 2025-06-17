@@ -1,46 +1,48 @@
 {
   "id": 8,
-  "username": "Travis_Murazik58",
-  "display_name": "Travis Murazik",
-  "email": "Travis.Murazik@gmail.com",
+  "username": "Mckenzie.Jerde30",
+  "display_name": "Mckenzie Jerde",
+  "email": "Mckenzie.Jerde33@yahoo.com",
   "birthday": null,
-  "age": 53,
+  "age": 54,
   "status": "active",
-  "about_me": "Utroque vicissitudo tenetur delinquo distinctio assumenda tego spes vicissitudo.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
+  "about_me": "Demum ventito annus ventito dolor complectus uredo dolorem aliquid defleo.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
   "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "171",
-  "location": "East Renee",
-  "zodiac": "Song Tử",
-  "character": "Điềm đạm",
+  "career": "Doanh nhân",
+  "height": "198",
+  "location": "Ambroseworth",
+  "zodiac": "Cự Giải",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
   "train": true,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Cá",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Nghệ thuật"
+    "Âm nhạc",
+    "Phim ảnh",
+    "Yoga"
   ]
 }

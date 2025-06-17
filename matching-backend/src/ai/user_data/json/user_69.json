@@ -1,28 +1,28 @@
 {
   "id": 69,
-  "username": "Lawson.Langosh93",
-  "display_name": "Lawson Langosh",
-  "email": "Lawson.Langosh@yahoo.com",
+  "username": "Bernie_Weimann46",
+  "display_name": "Bernie Weimann",
+  "email": "Bernie.Weimann@gmail.com",
   "birthday": null,
-  "age": 33,
+  "age": 34,
   "status": "active",
-  "about_me": "Delectatio viriliter cunabula vix cariosus abundans debitis succedo aperio ab.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Nostrum quis id amo.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Vô tính",
   "language": "Japanese",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "155",
-  "location": "Port Amos",
-  "zodiac": "Cự Giải",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "189",
+  "location": "West Merlin",
+  "zodiac": "Thiên Bình",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
   "love_language": "Quà tặng",
   "love_language_list": [
@@ -30,18 +30,18 @@
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": true,
+  "smoke": false,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Phim ảnh",
+    "Nấu ăn",
     "Yoga"
   ]
 }

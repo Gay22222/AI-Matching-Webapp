@@ -1,46 +1,46 @@
 {
   "id": 25,
-  "username": "Leila.Haag",
-  "display_name": "Leila Haag",
-  "email": "Leila_Haag55@hotmail.com",
+  "username": "Cyril_Halvorson",
+  "display_name": "Cyril Halvorson",
+  "email": "Cyril_Halvorson17@hotmail.com",
   "birthday": null,
-  "age": 46,
+  "age": 40,
   "status": "active",
-  "about_me": "Clementia at videlicet voluptas.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Commodi compono aureus.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Song tính",
   "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Giáo viên",
-  "height": "178",
-  "location": "DuBuqueton",
-  "zodiac": "Sư Tử",
-  "character": "Tự tin",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "189",
+  "location": "Ayanaview",
+  "zodiac": "Cự Giải",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Thể thao"
+    "Nghệ thuật"
   ]
 }

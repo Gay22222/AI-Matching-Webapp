@@ -1,48 +1,48 @@
 {
   "id": 18,
-  "username": "Sven_Schmitt28",
-  "display_name": "Sven Schmitt",
-  "email": "Sven.Schmitt27@gmail.com",
+  "username": "Yesenia_Schuppe38",
+  "display_name": "Yesenia Schuppe",
+  "email": "Yesenia.Schuppe71@yahoo.com",
   "birthday": null,
-  "age": 55,
+  "age": 41,
   "status": "active",
-  "about_me": "Ascit dedico abeo torrens.",
+  "about_me": "Crur brevis tertius terminatio eos.",
   "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
   "career": "Doanh nhân",
-  "height": "158",
-  "location": "Woodrowstad",
-  "zodiac": "Bò Cạp",
-  "character": "Hài hước",
+  "height": "170",
+  "location": "Gresham",
+  "zodiac": "Bảo Bình",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Quà tặng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chó",
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Phim ảnh",
-    "Nghệ thuật",
-    "Nhiếp ảnh"
+    "Đọc sách",
+    "Âm nhạc",
+    "Nấu ăn"
   ]
 }

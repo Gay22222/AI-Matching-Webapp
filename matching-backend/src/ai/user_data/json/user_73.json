@@ -1,48 +1,47 @@
 {
   "id": 73,
-  "username": "Otilia.Mann",
-  "display_name": "Otilia Mann",
-  "email": "Otilia.Mann76@hotmail.com",
+  "username": "Marlene_Schmidt",
+  "display_name": "Marlene Schmidt",
+  "email": "Marlene.Schmidt87@gmail.com",
   "birthday": null,
-  "age": 30,
+  "age": 50,
   "status": "active",
-  "about_me": "Verumtamen nesciunt delego sint vix ad.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Dị tính",
-  "language": "English",
+  "about_me": "Tabernus callide quae vacuus assentator.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
   "education": "Tiến sĩ",
   "religion": "Phật giáo",
-  "career": "Giáo viên",
-  "height": "190",
-  "location": "East Freeman",
-  "zodiac": "Xử Nữ",
-  "character": "Tự tin",
+  "career": "Doanh nhân",
+  "height": "189",
+  "location": "Hoegerfurt",
+  "zodiac": "Cự Giải",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Muốn có con",
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Mèo",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Phim ảnh",
-    "Nghệ thuật",
-    "Yoga"
+    "Cà phê",
+    "Nấu ăn"
   ]
 }

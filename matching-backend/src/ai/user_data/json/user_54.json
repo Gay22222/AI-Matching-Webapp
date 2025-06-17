@@ -1,47 +1,48 @@
 {
   "id": 54,
-  "username": "Kyla_Mohr",
-  "display_name": "Kyla Mohr",
-  "email": "Kyla_Mohr@yahoo.com",
+  "username": "Frankie_Kulas",
+  "display_name": "Frankie Kulas",
+  "email": "Frankie_Kulas@hotmail.com",
   "birthday": null,
-  "age": 44,
+  "age": 31,
   "status": "active",
-  "about_me": "Casus dolorum advenio aeneus cogo arcus acies coma casus.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Conventus odit et alo.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Song tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
+  "education": "Tiến sĩ",
+  "religion": "Hồi giáo",
   "career": "Giáo viên",
-  "height": "179",
-  "location": "Odaworth",
-  "zodiac": "Thiên Bình",
-  "character": "Thân thiện",
+  "height": "154",
+  "location": "Lake Misaelhaven",
+  "zodiac": "Song Ngư",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn chay",
+  "train": true,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "snu": "Không",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Nghệ thuật",
+    "Chơi game",
+    "Nhiếp ảnh",
     "Đọc sách"
   ]
 }

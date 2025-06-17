@@ -1,24 +1,24 @@
 {
   "id": 93,
-  "username": "Janiya.Johns",
-  "display_name": "Janiya Johns",
-  "email": "Janiya_Johns@gmail.com",
+  "username": "Adrien.Erdman",
+  "display_name": "Adrien Erdman",
+  "email": "Adrien.Erdman63@yahoo.com",
   "birthday": null,
-  "age": 57,
+  "age": 45,
   "status": "active",
-  "about_me": "Abundans clam ver.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Circumvenio validus accendo candidus amitto ars ambitus nobis communis.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "156",
-  "location": "Schummville",
+  "height": "168",
+  "location": "Lake Holly",
   "zodiac": "Bò Cạp",
-  "character": "Hài hước",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
@@ -30,18 +30,17 @@
   ],
   "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": true,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Chơi game",
-    "Phim ảnh"
+    "Nấu ăn"
   ]
 }

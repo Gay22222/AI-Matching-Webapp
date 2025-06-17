@@ -1,46 +1,46 @@
 {
   "id": 33,
-  "username": "Mason_MacGyver9",
-  "display_name": "Mason MacGyver",
-  "email": "Mason.MacGyver29@hotmail.com",
+  "username": "Reese_Stracke",
+  "display_name": "Reese Stracke",
+  "email": "Reese.Stracke@hotmail.com",
   "birthday": null,
-  "age": 45,
+  "age": 44,
   "status": "active",
-  "about_me": "Tabesco tabella quos.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Pauper tracto bis patria surgo stipes reprehenderit tredecim.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
   "career": "Doanh nhân",
-  "height": "163",
-  "location": "Port Tamia",
-  "zodiac": "Xử Nữ",
+  "height": "177",
+  "location": "Lake Jaleel",
+  "zodiac": "Song Ngư",
   "character": "Nghiêm túc",
   "character_list": [
     "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": false,
   "train": true,
-  "diet": "Ăn mặn",
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nghệ thuật"
+    "Yoga"
   ]
 }

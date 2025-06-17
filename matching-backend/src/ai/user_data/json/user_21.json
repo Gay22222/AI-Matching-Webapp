@@ -1,48 +1,46 @@
 {
   "id": 21,
-  "username": "Kathryne.Welch74",
-  "display_name": "Kathryne Welch",
-  "email": "Kathryne_Welch@gmail.com",
+  "username": "Tobin_Abbott",
+  "display_name": "Tobin Abbott",
+  "email": "Tobin_Abbott10@gmail.com",
   "birthday": null,
-  "age": 35,
+  "age": 40,
   "status": "active",
-  "about_me": "Demulceo assumenda taedium adficio unde abscido molestiae.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
+  "about_me": "Conspergo aufero cognatus vulticulus delectatio abundans ultio asperiores.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "182",
-  "location": "Lake Kitty",
-  "zodiac": "Bò Cạp",
-  "character": "Thân thiện",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "168",
+  "location": "Denver",
+  "zodiac": "Thiên Bình",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
-  "smoke": true,
+  "smoke": false,
   "train": true,
   "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Chó",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
   "favorite": "Yoga",
   "favorite_list": [
-    "Yoga",
-    "Cà phê",
-    "Chơi game"
+    "Yoga"
   ]
 }

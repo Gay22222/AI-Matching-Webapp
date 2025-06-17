@@ -1,46 +1,48 @@
 {
   "id": 31,
-  "username": "Laurel_Runolfsson79",
-  "display_name": "Laurel Runolfsson",
-  "email": "Laurel.Runolfsson33@yahoo.com",
+  "username": "Adrain.Hamill-Becker",
+  "display_name": "Adrain Hamill-Becker",
+  "email": "Adrain.Hamill-Becker89@yahoo.com",
   "birthday": null,
-  "age": 34,
+  "age": 28,
   "status": "active",
-  "about_me": "Sequi soluta terga adsuesco correptius caries vallum eaque comes.",
+  "about_me": "Dolor nihil commodi agnosco angelus.",
   "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
+  "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Phật giáo",
-  "career": "Giáo viên",
-  "height": "181",
-  "location": "Lawrence",
-  "zodiac": "Bảo Bình",
-  "character": "Nghiêm túc",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "156",
+  "location": "North Eunicefield",
+  "zodiac": "Song Ngư",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": false,
+  "smoke": false,
+  "train": true,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chó",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Cà phê"
+    "Nhiếp ảnh",
+    "Nấu ăn",
+    "Chơi game"
   ]
 }

@@ -1,46 +1,48 @@
 {
   "id": 91,
-  "username": "Owen_Shields28",
-  "display_name": "Owen Shields",
-  "email": "Owen.Shields97@yahoo.com",
+  "username": "Boyd.Reichel12",
+  "display_name": "Boyd Reichel",
+  "email": "Boyd.Reichel89@yahoo.com",
   "birthday": null,
-  "age": 38,
+  "age": 23,
   "status": "active",
-  "about_me": "Tantum tergeo eveniet calcar adnuo.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "179",
-  "location": "Lake Cristalland",
-  "zodiac": "Sư Tử",
-  "character": "Tự tin",
+  "about_me": "Absorbeo deputo aro.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "153",
+  "location": "Collierbury",
+  "zodiac": "Bò Cạp",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
+  "future_family": "Chưa muốn có con",
+  "drink": true,
   "smoke": false,
   "train": true,
   "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Mua sắm"
+    "Phim ảnh",
+    "Du lịch",
+    "Yoga"
   ]
 }

@@ -1,47 +1,47 @@
 {
   "id": 96,
-  "username": "Frank_Stiedemann31",
-  "display_name": "Frank Stiedemann",
-  "email": "Frank.Stiedemann52@hotmail.com",
+  "username": "Scot.Schulist54",
+  "display_name": "Scot Schulist",
+  "email": "Scot_Schulist47@yahoo.com",
   "birthday": null,
-  "age": 37,
+  "age": 40,
   "status": "active",
-  "about_me": "Thorax civis agnitio volup commodi benevolentia ullam assentator sollicito.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Totam creptio totidem quasi abundans appositus tergiversatio.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
   "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Giáo viên",
-  "height": "168",
-  "location": "Stromanstad",
-  "zodiac": "Song Ngư",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "165",
+  "location": "Iowa City",
+  "zodiac": "Kim Ngưu",
   "character": "Tự tin",
   "character_list": [
     "Tự tin"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
-  "train": false,
+  "drink": true,
+  "smoke": true,
+  "train": true,
   "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chim",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Thể thao",
-    "Du lịch"
+    "Du lịch",
+    "Cà phê"
   ]
 }

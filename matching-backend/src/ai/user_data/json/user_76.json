@@ -1,46 +1,47 @@
 {
   "id": 76,
-  "username": "Augusta.Cruickshank30",
-  "display_name": "Augusta Cruickshank",
-  "email": "Augusta.Cruickshank77@yahoo.com",
+  "username": "Robbie_White6",
+  "display_name": "Robbie White",
+  "email": "Robbie.White@yahoo.com",
   "birthday": null,
-  "age": 27,
+  "age": 38,
   "status": "active",
-  "about_me": "Turbo animi tandem ter vaco tactus surculus optio.",
-  "searching_for": "Chưa chắc chắn / Để mở",
+  "about_me": "Cursus totidem cribro delinquo verto.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "171",
-  "location": "Sawaynport",
-  "zodiac": "Bảo Bình",
-  "character": "Thân thiện",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "161",
+  "location": "New Alison",
+  "zodiac": "Ma Kết",
+  "character": "Điềm đạm",
   "character_list": [
-    "Thân thiện"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": true,
   "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Cá",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Nghệ thuật"
+    "Đọc sách",
+    "Chơi game"
   ]
 }

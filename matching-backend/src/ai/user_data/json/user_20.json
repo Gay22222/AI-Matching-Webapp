@@ -1,28 +1,28 @@
 {
   "id": 20,
-  "username": "Tiana.Bailey7",
-  "display_name": "Tiana Bailey",
-  "email": "Tiana_Bailey@gmail.com",
+  "username": "Colin_Kunde",
+  "display_name": "Colin Kunde",
+  "email": "Colin_Kunde8@hotmail.com",
   "birthday": null,
-  "age": 27,
+  "age": 39,
   "status": "active",
-  "about_me": "Urbs subiungo video.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "167",
-  "location": "Fort Harold",
+  "about_me": "Decretum trans aequitas subvenio convoco adficio theatrum adficio ocer.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "170",
+  "location": "Nikobury",
   "zodiac": "Xử Nữ",
-  "character": "Điềm đạm",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Biết chia sẻ"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
@@ -30,18 +30,17 @@
   ],
   "future_family": "Không muốn con",
   "drink": false,
-  "smoke": true,
+  "smoke": false,
   "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Phim ảnh",
-    "Chơi game"
+    "Nghệ thuật"
   ]
 }

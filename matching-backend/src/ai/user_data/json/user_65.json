@@ -1,37 +1,37 @@
 {
   "id": 65,
-  "username": "Benton_Abshire",
-  "display_name": "Benton Abshire",
-  "email": "Benton.Abshire@yahoo.com",
+  "username": "Nikko.Gerhold",
+  "display_name": "Nikko Gerhold",
+  "email": "Nikko.Gerhold55@yahoo.com",
   "birthday": null,
-  "age": 35,
+  "age": 36,
   "status": "active",
-  "about_me": "Theologus vester dolorem sollicito sortitus ducimus caute talis aegrus modi.",
+  "about_me": "Ventito certus soleo.",
   "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
-  "language": "Japanese",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Cử nhân",
-  "religion": "Phật giáo",
+  "religion": "Cơ đốc giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "155",
-  "location": "New Lavada",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "height": "193",
+  "location": "Lake Krystal",
+  "zodiac": "Nhân Mã",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": false,
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Có",
@@ -39,10 +39,9 @@
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Đọc sách",
-    "Yoga",
-    "Nhiếp ảnh"
+    "Mua sắm",
+    "Âm nhạc"
   ]
 }

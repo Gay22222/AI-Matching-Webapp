@@ -1,48 +1,46 @@
 {
   "id": 22,
-  "username": "Juliet_Kuvalis82",
-  "display_name": "Juliet Kuvalis",
-  "email": "Juliet_Kuvalis69@hotmail.com",
+  "username": "Leola_Wilkinson26",
+  "display_name": "Leola Wilkinson",
+  "email": "Leola_Wilkinson49@hotmail.com",
   "birthday": null,
-  "age": 48,
+  "age": 53,
   "status": "active",
-  "about_me": "Apud tyrannus vitiosus solus praesentium nisi.",
+  "about_me": "Inventore depraedor illum cometes turbo verecundia carus adversus.",
   "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "170",
-  "location": "Boganberg",
-  "zodiac": "Ma Kết",
-  "character": "Điềm đạm",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "153",
+  "location": "Lombard",
+  "zodiac": "Cự Giải",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Cà phê",
-    "Phim ảnh"
+    "Yoga"
   ]
 }

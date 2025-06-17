@@ -1,28 +1,28 @@
 {
   "id": 56,
-  "username": "Reese.Nikolaus",
-  "display_name": "Reese Nikolaus",
-  "email": "Reese.Nikolaus11@hotmail.com",
+  "username": "Dakota.Mann25",
+  "display_name": "Dakota Mann",
+  "email": "Dakota_Mann@gmail.com",
   "birthday": null,
-  "age": 19,
+  "age": 37,
   "status": "active",
-  "about_me": "Pecto arbustum non.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
-  "language": "Japanese",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Calamitas odio viriliter.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "169",
-  "location": "Cullentown",
-  "zodiac": "Sư Tử",
-  "character": "Hài hước",
+  "height": "155",
+  "location": "Lake Myriamchester",
+  "zodiac": "Ma Kết",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
@@ -31,17 +31,17 @@
   "future_family": "Không muốn con",
   "drink": true,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Chim",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Nghệ thuật",
-    "Thể thao"
+    "Cà phê",
+    "Âm nhạc"
   ]
 }

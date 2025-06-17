@@ -1,47 +1,47 @@
 {
   "id": 10,
-  "username": "Arely.Schmeler",
-  "display_name": "Arely Schmeler",
-  "email": "Arely_Schmeler50@yahoo.com",
+  "username": "Jody.Kautzer15",
+  "display_name": "Jody Kautzer",
+  "email": "Jody.Kautzer@hotmail.com",
   "birthday": null,
-  "age": 38,
+  "age": 36,
   "status": "active",
-  "about_me": "Thorax defungo urbanus suspendo ulterius ulterius.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Consequuntur coadunatio adhuc.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "language": "English",
   "education": "Tiến sĩ",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "154",
-  "location": "West Alfordbury",
-  "zodiac": "Xử Nữ",
-  "character": "Thân thiện",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "161",
+  "location": "Nikkoshire",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn mặn",
+  "train": false,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Không",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Du lịch",
-    "Nghệ thuật"
+    "Nấu ăn",
+    "Đọc sách"
   ]
 }

@@ -1,47 +1,46 @@
 {
   "id": 95,
-  "username": "Agnes_Schuster4",
-  "display_name": "Agnes Schuster",
-  "email": "Agnes_Schuster38@yahoo.com",
+  "username": "Floyd.Crona23",
+  "display_name": "Floyd Crona",
+  "email": "Floyd_Crona24@yahoo.com",
   "birthday": null,
-  "age": 57,
+  "age": 36,
   "status": "active",
-  "about_me": "Laudantium conturbo ancilla.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Song tính",
+  "about_me": "Cum varietas apud tempus apto illum.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "158",
-  "location": "Port Kennithview",
-  "zodiac": "Song Ngư",
-  "character": "Thân thiện",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "199",
+  "location": "South Deondrecester",
+  "zodiac": "Bảo Bình",
+  "character": "Điềm đạm",
   "character_list": [
-    "Thân thiện"
+    "Điềm đạm"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Yoga",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Yoga",
-    "Cà phê"
+    "Nghệ thuật"
   ]
 }

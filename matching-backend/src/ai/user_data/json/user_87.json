@@ -1,46 +1,46 @@
 {
   "id": 87,
-  "username": "Georgette.Russel53",
-  "display_name": "Georgette Russel",
-  "email": "Georgette_Russel4@hotmail.com",
+  "username": "Hayley_Vandervort32",
+  "display_name": "Hayley Vandervort",
+  "email": "Hayley.Vandervort@hotmail.com",
   "birthday": null,
-  "age": 41,
+  "age": 29,
   "status": "active",
-  "about_me": "Clamo tredecim utroque apparatus turba.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Coepi amplitudo agnitio.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
+  "language": "Japanese",
   "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "197",
-  "location": "Sydnieland",
-  "zodiac": "Kim Ngưu",
-  "character": "Tự tin",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "181",
+  "location": "Lake Candidoport",
+  "zodiac": "Sư Tử",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
-  "smoke": false,
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Thể thao"
+    "Phim ảnh"
   ]
 }

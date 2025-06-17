@@ -1,28 +1,28 @@
 {
   "id": 79,
-  "username": "Juana_Bartoletti71",
-  "display_name": "Juana Bartoletti",
-  "email": "Juana.Bartoletti@gmail.com",
+  "username": "Norma.Skiles89",
+  "display_name": "Norma Skiles",
+  "email": "Norma_Skiles@yahoo.com",
   "birthday": null,
-  "age": 28,
+  "age": 59,
   "status": "active",
-  "about_me": "Inventore ustilo cultellus deduco accusator.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Song tính",
-  "language": "English",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "180",
-  "location": "Lake Estrellacester",
-  "zodiac": "Bảo Bình",
-  "character": "Hài hước",
+  "about_me": "Caelum defero capillus ubi tollo termes verus delibero uredo barba.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "156",
+  "location": "Floridafort",
+  "zodiac": "Xử Nữ",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
@@ -30,19 +30,18 @@
   ],
   "future_family": "Muốn có con",
   "drink": false,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "snu": "Có",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Thể thao",
-    "Cà phê",
-    "Chơi game"
+    "Phim ảnh",
+    "Mua sắm"
   ]
 }

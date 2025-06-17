@@ -1,47 +1,47 @@
 {
   "id": 53,
-  "username": "Jamir_Bogisich7",
-  "display_name": "Jamir Bogisich",
-  "email": "Jamir_Bogisich92@yahoo.com",
+  "username": "Jasmin.Welch",
+  "display_name": "Jasmin Welch",
+  "email": "Jasmin.Welch@hotmail.com",
   "birthday": null,
-  "age": 51,
+  "age": 59,
   "status": "active",
-  "about_me": "Vigilo sol defero audeo.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
+  "about_me": "Coma desidero aduro testimonium spoliatio perferendis facilis super.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
   "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "164",
-  "location": "Welchville",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "186",
+  "location": "Cincinnati",
   "zodiac": "Bảo Bình",
-  "character": "Tự tin",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
   "future_family": "Không muốn con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Chó",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Cà phê",
-    "Nấu ăn"
+    "Yoga",
+    "Nghệ thuật"
   ]
 }

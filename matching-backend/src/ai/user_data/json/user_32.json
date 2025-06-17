@@ -1,46 +1,47 @@
 {
   "id": 32,
-  "username": "Sheila.Ratke71",
-  "display_name": "Sheila Ratke",
-  "email": "Sheila.Ratke16@yahoo.com",
+  "username": "Florida_Koch87",
+  "display_name": "Florida Koch",
+  "email": "Florida_Koch@yahoo.com",
   "birthday": null,
-  "age": 20,
+  "age": 34,
   "status": "active",
-  "about_me": "Tui curo adiuvo synagoga libero vae ars cupio.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Cử nhân",
+  "about_me": "Vulgivagus censura vestigium tricesimus aduro nulla reprehenderit.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
   "religion": "Ấn Độ giáo",
   "career": "Giáo viên",
-  "height": "161",
-  "location": "Gusikowskiworth",
-  "zodiac": "Bạch Dương",
-  "character": "Nghiêm túc",
+  "height": "178",
+  "location": "Fort Florencio",
+  "zodiac": "Xử Nữ",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "snu": "Không",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Đọc sách",
   "favorite_list": [
+    "Đọc sách",
     "Yoga"
   ]
 }

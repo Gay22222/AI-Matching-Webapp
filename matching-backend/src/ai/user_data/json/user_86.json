@@ -1,46 +1,47 @@
 {
   "id": 86,
-  "username": "Jaden.Swift57",
-  "display_name": "Jaden Swift",
-  "email": "Jaden.Swift@hotmail.com",
+  "username": "Rebeca.Hahn",
+  "display_name": "Rebeca Hahn",
+  "email": "Rebeca.Hahn@hotmail.com",
   "birthday": null,
-  "age": 38,
+  "age": 19,
   "status": "active",
-  "about_me": "Succedo communis quod laborum aequus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Facere corpus tantum fugiat suadeo praesentium curis.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
   "career": "Bác sĩ",
-  "height": "187",
-  "location": "Philadelphia",
+  "height": "155",
+  "location": "Geovannyfort",
   "zodiac": "Ma Kết",
-  "character": "Tự tin",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": false,
+  "smoke": true,
   "train": false,
   "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Chim",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Đọc sách"
+    "Âm nhạc",
+    "Chơi game"
   ]
 }

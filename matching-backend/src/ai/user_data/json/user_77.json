@@ -1,47 +1,47 @@
 {
   "id": 77,
-  "username": "Loyal.Heidenreich45",
-  "display_name": "Loyal Heidenreich",
-  "email": "Loyal_Heidenreich@yahoo.com",
+  "username": "Derek_MacGyver62",
+  "display_name": "Derek MacGyver",
+  "email": "Derek_MacGyver76@gmail.com",
   "birthday": null,
-  "age": 26,
+  "age": 19,
   "status": "active",
-  "about_me": "Adhuc damno tametsi.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Vix amissio curso vigor aeneus aeternus hic cursim somnus commodo.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
   "language": "Japanese",
   "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
+  "religion": "Cơ đốc giáo",
   "career": "Bác sĩ",
-  "height": "178",
-  "location": "West Brendencester",
-  "zodiac": "Kim Ngưu",
-  "character": "Tự tin",
+  "height": "187",
+  "location": "Lake Tina",
+  "zodiac": "Nhân Mã",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Phim ảnh",
-    "Nghệ thuật"
+    "Thể thao",
+    "Nấu ăn"
   ]
 }

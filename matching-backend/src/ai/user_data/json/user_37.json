@@ -1,47 +1,47 @@
 {
   "id": 37,
-  "username": "Sofia_Hahn",
-  "display_name": "Sofia Hahn",
-  "email": "Sofia.Hahn@hotmail.com",
+  "username": "Angelica_Altenwerth17",
+  "display_name": "Angelica Altenwerth",
+  "email": "Angelica.Altenwerth@yahoo.com",
   "birthday": null,
-  "age": 44,
+  "age": 31,
   "status": "active",
-  "about_me": "Minus argumentum porro facilis approbo tempora ultio.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Antea cursus amoveo tergum vulnero agnitio spargo.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
   "language": "Japanese",
   "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "169",
-  "location": "Port Cynthia",
-  "zodiac": "Ma Kết",
-  "character": "Điềm đạm",
+  "religion": "Hồi giáo",
+  "career": "Doanh nhân",
+  "height": "181",
+  "location": "Nicoleboro",
+  "zodiac": "Thiên Bình",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": true,
-  "diet": "Ăn mặn",
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Yoga",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Yoga",
-    "Phim ảnh"
+    "Du lịch",
+    "Nấu ăn"
   ]
 }

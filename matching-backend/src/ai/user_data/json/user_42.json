@@ -1,46 +1,48 @@
 {
   "id": 42,
-  "username": "Nedra_Carroll",
-  "display_name": "Nedra Carroll",
-  "email": "Nedra.Carroll9@yahoo.com",
+  "username": "Connie.Murazik71",
+  "display_name": "Connie Murazik",
+  "email": "Connie_Murazik58@yahoo.com",
   "birthday": null,
-  "age": 29,
+  "age": 59,
   "status": "active",
-  "about_me": "Caput trans sordeo aperio repellat architecto.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Song tính",
+  "about_me": "Peior copiose teres possimus.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "170",
-  "location": "East Cydney",
-  "zodiac": "Sư Tử",
-  "character": "Tự tin",
+  "height": "174",
+  "location": "Samanthafort",
+  "zodiac": "Ma Kết",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
-  "train": true,
+  "drink": true,
+  "smoke": true,
+  "train": false,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nhiếp ảnh"
+    "Thể thao",
+    "Yoga",
+    "Chơi game"
   ]
 }

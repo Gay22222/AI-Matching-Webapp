@@ -1,47 +1,47 @@
 {
   "id": 9,
-  "username": "Pearlie.Daugherty-Kuhlman",
-  "display_name": "Pearlie Daugherty-Kuhlman",
-  "email": "Pearlie.Daugherty-Kuhlman@gmail.com",
+  "username": "Davonte.Gutmann65",
+  "display_name": "Davonte Gutmann",
+  "email": "Davonte_Gutmann@hotmail.com",
   "birthday": null,
-  "age": 57,
+  "age": 38,
   "status": "active",
-  "about_me": "Cimentarius ut peccatus sublime caries.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
+  "about_me": "Tredecim demoror calamitas officia annus aestivus tandem collum tergo.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Tiến sĩ",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "158",
-  "location": "Port Karianneboro",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "183",
+  "location": "Fort Sashaville",
   "zodiac": "Sư Tử",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Nấu ăn",
-    "Chơi game"
+    "Nhiếp ảnh",
+    "Yoga"
   ]
 }

@@ -1,47 +1,47 @@
 {
   "id": 74,
-  "username": "Cortez_West",
-  "display_name": "Cortez West",
-  "email": "Cortez_West9@gmail.com",
+  "username": "Buddy_Bergstrom79",
+  "display_name": "Buddy Bergstrom",
+  "email": "Buddy_Bergstrom40@yahoo.com",
   "birthday": null,
-  "age": 36,
+  "age": 52,
   "status": "active",
-  "about_me": "Nihil facilis dedico virgo carmen amplus victus tribuo amo aliqua.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
+  "about_me": "Avarus atrocitas adipisci ea balbus vir adamo arbor unus.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
   "language": "English",
   "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "169",
-  "location": "Kalamazoo",
-  "zodiac": "Ma Kết",
+  "height": "172",
+  "location": "Shawnee",
+  "zodiac": "Xử Nữ",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Muốn có con",
   "drink": false,
-  "smoke": true,
+  "smoke": false,
   "train": false,
   "diet": "Ăn chay",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chim",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Mua sắm",
-    "Nghệ thuật"
+    "Nghệ thuật",
+    "Cà phê"
   ]
 }

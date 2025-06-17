@@ -1,48 +1,48 @@
 {
   "id": 24,
-  "username": "Elisabeth.Herzog70",
-  "display_name": "Elisabeth Herzog",
-  "email": "Elisabeth_Herzog35@gmail.com",
+  "username": "Laurianne.Weissnat44",
+  "display_name": "Laurianne Weissnat",
+  "email": "Laurianne_Weissnat5@hotmail.com",
   "birthday": null,
-  "age": 24,
+  "age": 55,
   "status": "active",
-  "about_me": "Repudiandae barba cetera reiciendis pecco contigo pauper sperno vinitor doloribus.",
+  "about_me": "Antea tabella assentator.",
   "searching_for": "Kết bạn mới",
   "sexual_orientation": "Song tính",
-  "language": "English",
+  "language": "Vietnamese",
   "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "175",
-  "location": "Port Estrellaboro",
-  "zodiac": "Cự Giải",
-  "character": "Tự tin",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "158",
+  "location": "Fort Adeline",
+  "zodiac": "Xử Nữ",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
-  "smoke": false,
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Mèo",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Mua sắm",
-    "Du lịch",
-    "Nghệ thuật"
+    "Yoga",
+    "Âm nhạc",
+    "Mua sắm"
   ]
 }

@@ -1,48 +1,48 @@
 {
   "id": 90,
-  "username": "Daniella_Ondricka",
-  "display_name": "Daniella Ondricka",
-  "email": "Daniella.Ondricka51@hotmail.com",
+  "username": "Lucienne_Satterfield",
+  "display_name": "Lucienne Satterfield",
+  "email": "Lucienne.Satterfield98@gmail.com",
   "birthday": null,
-  "age": 40,
+  "age": 21,
   "status": "active",
-  "about_me": "Tergum antepono cohibeo accusantium neque natus comes.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Tempore aqua corona nostrum voluptates suppellex.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
   "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "194",
-  "location": "Mullercester",
-  "zodiac": "Bảo Bình",
-  "character": "Thân thiện",
+  "height": "150",
+  "location": "New Lexus",
+  "zodiac": "Song Tử",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn chay",
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Nghệ thuật",
-    "Âm nhạc",
-    "Nấu ăn"
+    "Du lịch",
+    "Thể thao",
+    "Mua sắm"
   ]
 }

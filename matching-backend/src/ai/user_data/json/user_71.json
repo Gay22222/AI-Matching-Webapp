@@ -1,48 +1,48 @@
 {
   "id": 71,
-  "username": "Joy_Shields87",
-  "display_name": "Joy Shields",
-  "email": "Joy_Shields@gmail.com",
+  "username": "Ettie_Dickens2",
+  "display_name": "Ettie Dickens",
+  "email": "Ettie_Dickens@yahoo.com",
   "birthday": null,
-  "age": 42,
+  "age": 23,
   "status": "active",
-  "about_me": "Curiositas deficio terror tollo campana stabilis defungo vestrum angustus spes.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "178",
-  "location": "Sigmundbury",
-  "zodiac": "Cự Giải",
-  "character": "Tự tin",
+  "about_me": "Adinventitias ipsa crapula bibo.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "176",
+  "location": "Port Ressiemouth",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
   "future_family": "Không muốn con",
   "drink": false,
   "smoke": true,
   "train": false,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Có",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Du lịch",
-    "Nhiếp ảnh",
-    "Nghệ thuật"
+    "Âm nhạc",
+    "Mua sắm",
+    "Nấu ăn"
   ]
 }
