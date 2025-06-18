@@ -357,8 +357,7 @@ const Home = () => {
       const params = new URLSearchParams();
       Object.entries(filters).forEach(([key, value]) => {
         if (arrayFields.includes(key) && Array.isArray(value) && value.length > 0) {
-          // Gửi mảng dưới dạng chuỗi phân tách bằng dấu phẩy
-          params.append(key, value.map(Number).join(","));
+          params.append(key, value.join(","));
         } else if (value !== null && value !== undefined && value !== "") {
           params.append(key, value.toString().trim());
         }
@@ -373,13 +372,12 @@ const Home = () => {
 
       console.log("Fetching profiles with URL:", url);
       console.log("Auth token:", auth.access_token);
-      console.log("Filters:", JSON.stringify(filters, null, 2));
+      console.log("Filters:", filters);
 
       const response = await axios.get(url, {
         headers: {
           Authorization: `Bearer ${auth.access_token}`,
         },
-        timeout: 10000, // Thêm timeout để tránh lỗi mạng không xác định
       });
 
       console.log("Response data:", JSON.stringify(response.data, null, 2));
@@ -408,25 +406,17 @@ const Home = () => {
     } catch (error) {
       console.error("Error fetching profiles:", {
         message: error.message,
-        code: error.code,
-        response: error.response
-          ? {
-              data: error.response.data,
-              status: error.response.status,
-              headers: error.response.headers,
-            }
-          : null,
-        request: error.request ? JSON.stringify(error.request, null, 2) : null,
+        response: error.response ? {
+          data: error.response.data,
+          status: error.response.status,
+          headers: error.response.headers,
+        } : null,
+        status: error.response?.status,
         stack: error.stack,
       });
       let errorMessage = error.response?.data?.message || "Không thể tải danh sách người dùng";
       if (error.response?.status === 400) {
         errorMessage = error.response.data.message || "Dữ liệu bộ lọc không hợp lệ. Vui lòng kiểm tra lại bộ lọc.";
-        if (error.response.data.error?.details) {
-          errorMessage += ` Chi tiết: ${error.response.data.error.details
-            .map((d) => d.message)
-            .join(", ")}`;
-        }
       } else if (error.response?.status === 404) {
         errorMessage = "API không tồn tại. Vui lòng kiểm tra backend hoặc liên hệ hỗ trợ.";
       } else if (error.response?.status === 401) {
@@ -435,8 +425,6 @@ const Home = () => {
         return;
       } else if (error.response?.status === 500) {
         errorMessage = "Lỗi server. Vui lòng thử lại sau hoặc liên hệ hỗ trợ.";
-      } else if (error.code === "ECONNABORTED") {
-        errorMessage = "Yêu cầu hết thời gian. Vui lòng kiểm tra kết nối mạng.";
       } else if (!error.response) {
         errorMessage = "Không thể kết nối đến server. Vui lòng kiểm tra kết nối mạng.";
       }
@@ -464,9 +452,7 @@ const Home = () => {
       const validatedFilters = {};
       Object.entries(newFilters).forEach(([key, value]) => {
         if (arrayFields.includes(key)) {
-          validatedFilters[key] = Array.isArray(value)
-            ? value.map(Number).filter((v) => !isNaN(v))
-            : [Number(value)].filter((v) => !isNaN(v));
+          validatedFilters[key] = Array.isArray(value) ? value : [value].filter((v) => v !== "");
         } else {
           validatedFilters[key] = value;
         }
@@ -483,7 +469,7 @@ const Home = () => {
       const newUrl = queryString ? `/?${queryString}` : "/";
 
       console.log("Updating URL to:", newUrl);
-      console.log("Validated filters:", JSON.stringify(validatedFilters, null, 2));
+      console.log("Validated filters:", validatedFilters);
       router.push(newUrl, { scroll: false });
       setFilters(validatedFilters);
       setShowFilters(false);
@@ -513,6 +499,7 @@ const Home = () => {
       setTimeout(() => {
         showToast.success("Đã thích!");
         callback && callback();
+        // Làm mới danh sách profile để loại bỏ user vừa like
         fetchProfileSetupData();
       }, 1000);
     } catch (error) {

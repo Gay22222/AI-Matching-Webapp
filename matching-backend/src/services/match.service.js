@@ -40,7 +40,39 @@ export const matchService = {
       })
       .filter((match) => match !== null);
   },
+  getLikedUsers: async (userId, isAccept = undefined) => {
+    logger.info(`Fetching matches for user ${userId}`);
+    const matches = await matchRepository.getAll(userId, isAccept);
+    logger.debug(`Raw matches data for user ${userId}: ${JSON.stringify(matches, null, 2)}`);
+    return matches
+      .map((match) => {
+        const otherUser =
+          match.user_1_id === userId ? match.user_match_2 : match.user_match_1;
 
+        if (!otherUser) {
+          logger.warn(`No other user found for match ${match.id}, userId ${userId}`);
+          return null;
+        }
+
+        const photo = otherUser.Bio?.Photo?.find(p => p?.is_profile_pic)?.url || otherUser.Bio?.Photo?.[0]?.url || "";
+
+        const result = {
+          id: match.id,
+          user_id: otherUser.id,
+          name: otherUser.display_name || "Không có tên",
+          age: otherUser.Bio?.age || 0,
+          matchTime: match.matched_at
+            ? new Date(match.matched_at).toLocaleDateString()
+            : "Hôm nay",
+          photo,
+          unread: false,
+        };
+
+        logger.debug(`Formatted match for user ${userId}: ${JSON.stringify(result, null, 2)}`);
+        return result;
+      })
+      .filter((match) => match !== null);
+  },
   create: async (senderId, receiverId) => {
     if (senderId === receiverId) {
       throw new Error("Cannot create match with the same user");

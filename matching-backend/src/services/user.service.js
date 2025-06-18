@@ -47,7 +47,7 @@ export const userService = {
       sleepIds: filters?.sleepIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
       snuIds: filters?.snuIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
       searchingForIds: filters?.searchingForIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-      favoriteIds: filters?.favoriteIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [], // Thêm favoriteIds
+      favoriteIds: filters?.favoriteIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [], 
       search: filters?.search,
       gender: filters?.gender,
       ageMin: filters?.ageMin ? parseInt(filters.ageMin) : undefined,
@@ -56,9 +56,9 @@ export const userService = {
       page: filters?.page ? parseInt(filters.page) : 1,
       limit: filters?.limit ? parseInt(filters.limit) : 10,
     };
-
+    logger.info(`Filters formatted: ${JSON.stringify(filtersFormatted, null, 2)}`)
     logger.info(`Fetching matched users for userId ${userId}`);
-    const usersMatched = await matchService.getAll(userId, false);
+    const usersMatched = await matchService.getLikedUsers(userId, undefined);
     const usersIdMatched = usersMatched?.map((match) => match?.user_id) || [];
 
     logger.info(`Fetching users with filters: ${JSON.stringify(filtersFormatted)}`);

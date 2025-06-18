@@ -3328,140 +3328,147 @@ export const userRepository = {
         }
     },
     async getUsers(filters, usersIdMatched = []) {
-    try {
-      const {
-        languageIds,
-        educationIds,
-        zodiacIds,
-        characterIds,
-        comunicateStyleIds,
-        loveLanguageIds,
-        futureFamilyIds,
-        sexualOrientationIds,
-        petIds,
-        dietIds,
-        sleepIds,
-        snuIds,
-        searchingForIds,
-        search,
-        gender,
-        ageMin,
-        ageMax,
-        currentUserId,
-      } = filters;
+  try {
+    const {
+      languageIds,
+      educationIds,
+      zodiacIds,
+      characterIds,
+      comunicateStyleIds, // Lưu ý: sửa thành communicateStyleIds nếu cần
+      loveLanguageIds,
+      futureFamilyIds,
+      sexualOrientationIds,
+      petIds,
+      dietIds,
+      sleepIds,
+      snuIds,
+      searchingForIds,
+      favoriteIds, // Thêm favoriteIds
+      search,
+      gender,
+      ageMin,
+      ageMax,
+      currentUserId,
+      page = 1,
+      limit = 10,
+    } = filters;
 
-      const where = {
-        id: { not: currentUserId }, // Loại trừ người dùng hiện tại
-        NOT: { id: { in: usersIdMatched } }, // Loại trừ các user đã được liked
-        ...(gender && { gender }),
-        ...(search && {
-          OR: [
-            { display_name: { contains: search, mode: "insensitive" } },
-            { Bio: { about_me: { contains: search, mode: "insensitive" } } },
-          ],
-        }),
-        ...(ageMin && { Bio: { age: { gte: ageMin } } }),
-        ...(ageMax && { Bio: { age: { lte: ageMax } } }),
-        ...(languageIds?.length > 0 && {
-          Bio: { main_inf: { language_id: { in: languageIds } } },
-        }),
-        ...(educationIds?.length > 0 && {
-          Bio: { main_inf: { education_id: { in: educationIds } } },
-        }),
-        ...(zodiacIds?.length > 0 && {
-          Bio: { Base_inf: { zodiac_id: { in: zodiacIds } } },
-        }),
-        ...(characterIds?.length > 0 && {
-          Bio: { Base_inf: { character_id: { in: characterIds } } },
-        }),
-        ...(comunicateStyleIds?.length > 0 && {
-          Bio: { Base_inf: { communicate_style_id: { in: comunicateStyleIds } } },
-        }),
-        ...(loveLanguageIds?.length > 0 && {
-          Bio: { Base_inf: { love_language_id: { in: loveLanguageIds } } },
-        }),
-        ...(futureFamilyIds?.length > 0 && {
-          Bio: { Base_inf: { future_family_id: { in: futureFamilyIds } } },
-        }),
-        ...(sexualOrientationIds?.length > 0 && {
-          Bio: { Base_inf: { sexual_orientation_id: { in: sexualOrientationIds } } },
-        }),
-        ...(petIds?.length > 0 && {
-          Bio: { Lifestyle: { pet_id: { in: petIds } } },
-        }),
-        ...(dietIds?.length > 0 && {
-          Bio: { Lifestyle: { diet_id: { in: dietIds } } },
-        }),
-        ...(sleepIds?.length > 0 && {
-          Bio: { Lifestyle: { sleep_id: { in: sleepIds } } },
-        }),
-        ...(snuIds?.length > 0 && {
-          Bio: { Lifestyle: { snu_id: { in: snuIds } } },
-        }),
-        ...(searchingForIds?.length > 0 && {
-          Bio: { searching_for_id: { in: searchingForIds } },
-        }),
-      };
+    const where = {
+      id: { not: currentUserId }, // Loại trừ người dùng hiện tại
+      NOT: { id: { in: usersIdMatched } }, // Loại trừ các user đã được liked
+      ...(gender && { gender }),
+      ...(search && {
+        OR: [
+          { display_name: { contains: search, mode: 'insensitive' } },
+          { Bio: { about_me: { contains: search, mode: 'insensitive' } } },
+        ],
+      }),
+      ...(ageMin && { Bio: { age: { gte: ageMin } } }),
+      ...(ageMax && { Bio: { age: { lte: ageMax } } }),
+      ...(languageIds?.length > 0 && {
+        Bio: { main_inf: { language_id: { in: languageIds } } },
+      }),
+      ...(educationIds?.length > 0 && {
+        Bio: { main_inf: { education_id: { in: educationIds } } },
+      }),
+      ...(zodiacIds?.length > 0 && {
+        Bio: { Base_inf: { zodiac_id: { in: zodiacIds } } },
+      }),
+      ...(characterIds?.length > 0 && {
+        Bio: { Base_inf: { character_id: { in: characterIds } } },
+      }),
+      ...(comunicateStyleIds?.length > 0 && {
+        Bio: { Base_inf: { communicate_style_id: { in: comunicateStyleIds } } },
+      }),
+      ...(loveLanguageIds?.length > 0 && {
+        Bio: { Base_inf: { love_language_id: { in: loveLanguageIds } } },
+      }),
+      ...(futureFamilyIds?.length > 0 && {
+        Bio: { Base_inf: { future_family_id: { in: futureFamilyIds } } },
+      }),
+      ...(sexualOrientationIds?.length > 0 && {
+        Bio: { Base_inf: { sexual_orientation_id: { in: sexualOrientationIds } } },
+      }),
+      ...(petIds?.length > 0 && {
+        Bio: { Lifestyle: { pet_id: { in: petIds } } },
+      }),
+      ...(dietIds?.length > 0 && {
+        Bio: { Lifestyle: { diet_id: { in: dietIds } } },
+      }),
+      ...(sleepIds?.length > 0 && {
+        Bio: { Lifestyle: { sleep_id: { in: sleepIds } } },
+      }),
+      ...(snuIds?.length > 0 && {
+        Bio: { Lifestyle: { snu_id: { in: snuIds } } },
+      }),
+      ...(searchingForIds?.length > 0 && {
+        Bio: { searching_for_id: { in: searchingForIds } },
+      }),
+      ...(favoriteIds?.length > 0 && {
+        user_favorites: { some: { favorite_id: { in: favoriteIds } } }, // Lọc theo sở thích
+      }),
+    };
 
-      return await prisma.users.findMany({
-        where,
-        take: 50,
-        select: {
-          id: true,
-          email: true,
-          display_name: true,
-          gender: true,
-          preferred_gender: true,
-          is_full_information: true,
-          Bio: {
-            select: {
-              id: true,
-              name: true,
-              age: true,
-              about_me: true,
-              main_inf: {
-                select: {
-                  height: true,
-                  location: true,
-                  Language: { select: { id: true, name: true } },
-                  Religion: { select: { id: true, name: true } },
-                  Career: { select: { id: true, name: true } },
-                  Education: { select: { id: true, name: true } },
-                },
+    return await prisma.users.findMany({
+      where,
+      skip: (page - 1) * limit,
+      take: limit,
+      select: {
+        id: true,
+        email: true,
+        display_name: true,
+        gender: true,
+        preferred_gender: true,
+        is_full_information: true,
+        Bio: {
+          select: {
+            id: true,
+            name: true,
+            age: true,
+            about_me: true,
+            main_inf: {
+              select: {
+                height: true,
+                location: true,
+                Language: { select: { id: true, name: true } },
+                Religion: { select: { id: true, name: true } },
+                Career: { select: { id: true, name: true } },
+                Education: { select: { id: true, name: true } },
               },
-              Base_inf: {
-                select: {
-                  Zodiac: { select: { id: true, name: true } },
-                  Character: { select: { id: true, name: true } },
-                  Communicate_style: { select: { id: true, name: true } },
-                  Love_language: { select: { id: true, name: true } },
-                  FutureFamily: { select: { id: true, name: true } },
-                  Sexual_orientation: { select: { id: true, name: true } },
-                },
-              },
-              Lifestyle: {
-                select: {
-                  drink: true,
-                  smoke: true,
-                  train: true,
-                  Pet: { select: { id: true, name: true } },
-                  Diet: { select: { id: true, name: true } },
-                  Sleep: { select: { id: true, name: true } },
-                  SNU: { select: { id: true, name: true } },
-                },
-              },
-              Photo: { select: { id: true, url: true, is_profile_pic: true } },
-              Searchingfor: { select: { id: true, name: true } },
             },
+            Base_inf: {
+              select: {
+                Zodiac: { select: { id: true, name: true } },
+                Character: { select: { id: true, name: true } },
+                Communicate_style: { select: { id: true, name: true } },
+                Love_language: { select: { id: true, name: true } },
+                FutureFamily: { select: { id: true, name: true } },
+                Sexual_orientation: { select: { id: true, name: true } },
+              },
+            },
+            Lifestyle: {
+              select: {
+                drink: true,
+                smoke: true,
+                train: true,
+                Pet: { select: { id: true, name: true } },
+                Diet: { select: { id: true, name: true } },
+                Sleep: { select: { id: true, name: true } },
+                SNU: { select: { id: true, name: true } },
+              },
+            },
+            Photo: { select: { id: true, url: true, is_profile_pic: true } },
+            Searchingfor: { select: { id: true, name: true } },
           },
-          user_favorites: { select: { favorite_id: true } },
         },
-      });
-    } catch (error) {
-      logger.error({ error, stack: error.stack }, "Error fetching users");
-      throw error;
-    }
-  },
+        user_favorites: { select: { favorite_id: true } },
+      },
+    });
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, 'Error fetching users');
+    throw error;
+  }
+},
     async createUser(userData) {
         try {
             logger.info('Creating new user');
@@ -4325,54 +4332,54 @@ export const userService = {
     }
     return userFormatted;
   },
-  getAllUsersFormatted: async (filters, userId) => {
-    try {
-      const filtersFormatted = {
-        languageIds: filters?.languageIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        educationIds: filters?.educationIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        zodiacIds: filters?.zodiacIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        characterIds: filters?.characterIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        comunicateStyleIds: filters?.communicateStyleIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        loveLanguageIds: filters?.loveLanguageIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        futureFamilyIds: filters?.futureFamilyIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        sexualOrientationIds: filters?.sexualOrientationIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        petIds: filters?.petIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        dietIds: filters?.dietIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        sleepIds: filters?.sleepIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        snuIds: filters?.snuIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        searchingForIds: filters?.searchingForIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
-        search: filters?.search,
-        gender: filters?.gender,
-        ageMin: filters?.ageMin ? parseInt(filters.ageMin) : undefined,
-        ageMax: filters?.ageMax ? parseInt(filters.ageMax) : undefined,
-        currentUserId: parseInt(userId), // Đảm bảo userId là số
-      };
+  async getAllUsersFormatted(filters, userId) {
+  try {
+    const filtersFormatted = {
+      languageIds: filters?.languageIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      educationIds: filters?.educationIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      zodiacIds: filters?.zodiacIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      characterIds: filters?.characterIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      comunicateStyleIds: filters?.communicateStyleIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      loveLanguageIds: filters?.loveLanguageIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      futureFamilyIds: filters?.futureFamilyIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      sexualOrientationIds: filters?.sexualOrientationIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      petIds: filters?.petIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      dietIds: filters?.dietIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      sleepIds: filters?.sleepIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      snuIds: filters?.snuIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      searchingForIds: filters?.searchingForIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [],
+      favoriteIds: filters?.favoriteIds?.split(",")?.map(Number).filter(n => !isNaN(n)) || [], // Thêm favoriteIds
+      search: filters?.search,
+      gender: filters?.gender,
+      ageMin: filters?.ageMin ? parseInt(filters.ageMin) : undefined,
+      ageMax: filters?.ageMax ? parseInt(filters.ageMax) : undefined,
+      currentUserId: parseInt(userId),
+      page: filters?.page ? parseInt(filters.page) : 1,
+      limit: filters?.limit ? parseInt(filters.limit) : 10,
+    };
 
-      logger.info(`Fetching matched users for userId ${userId}`);
-      // Lấy danh sách user đã được liked (bao gồm cả accepted và không accepted)
-      const usersMatched = await matchService.getAll(userId, false); // false để lấy tất cả match
-      const usersIdMatched = usersMatched?.map((match) => match?.user_id) || [];
+    logger.info(`Fetching matched users for userId ${userId}`);
+    const usersMatched = await matchService.getAll(userId, false);
+    const usersIdMatched = usersMatched?.map((match) => match?.user_id) || [];
 
-      logger.info(`Fetching users with filters: ${JSON.stringify(filtersFormatted)}`);
-      // Gọi repository với các bộ lọc và danh sách user đã matched
-      const usersRaw = await userRepository.getUsers(filtersFormatted, usersIdMatched);
+    logger.info(`Fetching users with filters: ${JSON.stringify(filtersFormatted)}`);
+    const usersRaw = await userRepository.getUsers(filtersFormatted, usersIdMatched);
 
-      // Format dữ liệu trả về
-      const usersFormatted = usersRaw.map((user) => {
-        const formatted = formatUser(user);
-        if (formatted) {
-          delete formatted.password;
-        }
-        return formatted;
-      });
+    const usersFormatted = usersRaw.map((user) => {
+      const formatted = formatUser(user);
+      if (formatted) {
+        delete formatted.password;
+      }
+      return formatted;
+    });
 
-      logger.info(`Found ${usersFormatted.length} users after filtering`);
-      return usersFormatted;
-    } catch (error) {
-      logger.error({ error, stack: error.stack }, "Error in getAllUsersFormatted");
-      throw error;
-    }
-  },
+    logger.info(`Found ${usersFormatted.length} users after filtering`);
+    return usersFormatted;
+  } catch (error) {
+    logger.error({ error, stack: error.stack }, 'Error in getAllUsersFormatted');
+    throw error;
+  }
+},
   updateUserById: async (userId, user) => {
     const {
       displayName,

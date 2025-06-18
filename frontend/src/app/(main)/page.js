@@ -95,6 +95,7 @@ const Home = () => {
       if (currentUser?.id) {
         params.append("currentUserId", currentUser.id);
       }
+      params.append("limit", "100");
       const queryString = params.toString();
       const url = queryString
         ? `http://localhost:3001/api/user/list-match?${queryString}`
