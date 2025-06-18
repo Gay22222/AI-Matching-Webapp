@@ -1,46 +1,48 @@
 {
   "id": 26,
-  "username": "Trystan_Pfeffer28",
-  "display_name": "Trystan Pfeffer",
-  "email": "Trystan.Pfeffer2@yahoo.com",
+  "username": "Jerrod.Kemmer",
+  "display_name": "Jerrod Kemmer",
+  "email": "Jerrod.Kemmer@yahoo.com",
   "birthday": null,
-  "age": 35,
+  "age": 39,
   "status": "active",
-  "about_me": "Surculus ubi conventus viriliter adeptio virtus.",
-  "searching_for": "Chưa chắc chắn / Để mở",
+  "about_me": "Surculus aggredior dolorem crinis.",
+  "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
   "career": "Giáo viên",
-  "height": "193",
-  "location": "Madelynberg",
-  "zodiac": "Song Ngư",
+  "height": "172",
+  "location": "East Eldridgeburgh",
+  "zodiac": "Bò Cạp",
   "character": "Tự tin",
   "character_list": [
     "Tự tin"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn chay",
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chó",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Thể thao"
+    "Du lịch",
+    "Nấu ăn",
+    "Âm nhạc"
   ]
 }

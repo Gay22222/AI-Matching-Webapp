@@ -1,47 +1,48 @@
 {
   "id": 37,
-  "username": "Angelica_Altenwerth17",
-  "display_name": "Angelica Altenwerth",
-  "email": "Angelica.Altenwerth@yahoo.com",
+  "username": "Shany.Bashirian",
+  "display_name": "Shany Bashirian",
+  "email": "Shany_Bashirian40@gmail.com",
   "birthday": null,
-  "age": 31,
+  "age": 23,
   "status": "active",
-  "about_me": "Antea cursus amoveo tergum vulnero agnitio spargo.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Speciosus supellex absens caute pecco vitiosus talus tego amor.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
   "sexual_orientation": "Dị tính",
   "language": "Japanese",
   "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
+  "religion": "Ấn Độ giáo",
   "career": "Doanh nhân",
-  "height": "181",
-  "location": "Nicoleboro",
-  "zodiac": "Thiên Bình",
-  "character": "Thân thiện",
+  "height": "193",
+  "location": "Providenciville",
+  "zodiac": "Bò Cạp",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chó",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
   "favorite": "Du lịch",
   "favorite_list": [
     "Du lịch",
-    "Nấu ăn"
+    "Âm nhạc",
+    "Phim ảnh"
   ]
 }

@@ -2,34 +2,19 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { Loader2Icon } from "lucide-react";
+import { showToast } from "@/lib/toast";
+import { setData } from "@/utils/LocalStorage";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
     const [otp, setOtp] = useState(["", "", "", "", "", ""]);
-    console.log(otp);
-
     const [loading, setLoading] = useState(false);
     const [resendTimer, setResendTimer] = useState(60);
     const [error, setError] = useState("");
     const inputRefs = useRef([]);
-    console.log("hihi - outside");
-    useEffect(() => {
-        const getOTP = async () => {
-            const res = await fetch(
-                "http://localhost:3001/api/auth/send-verification-otp",
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        email,
-                    }),
-                }
-            );
-        };
-        getOTP();
-    }, []);
+    const router = useRouter();
+
     useEffect(() => {
         if (resendTimer > 0) {
             const timer = setTimeout(
@@ -39,6 +24,7 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
             return () => clearTimeout(timer);
         }
     }, [resendTimer]);
+
     const handleChange = (index, value) => {
         const newOtp = [...otp];
         newOtp[index] = value;
@@ -50,12 +36,13 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
             }
         }, 1);
     };
+
     const handleKeyDown = (index, e) => {
         if (e.key === "Backspace" && !otp[index] && index > 0) {
-            // Focus previous input on backspace
             inputRefs.current[index - 1]?.focus();
         }
     };
+
     const handlePaste = (e) => {
         e.preventDefault();
         const pastedData = e.clipboardData.getData("text").slice(0, 6);
@@ -66,30 +53,51 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
         });
         setOtp(newOtp);
     };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const otpString = otp.join("");
         if (otpString.length !== 6) {
             setError("Vui lòng nhập đủ 6 số");
+            showToast.error("Vui lòng nhập đủ 6 số");
             return;
         }
         setLoading(true);
         setError("");
         try {
-            await onVerify(otpString);
+            const response = await axios.post("http://localhost:3001/api/auth/verify-otp", {
+                email,
+                otp: otpString,
+            });
+            if (response.data.statusCode === 200 && response.data.registrationSuccess) {
+                showToast.success("Xác thực email thành công!");
+                setData("registrationSuccess", true); // Lưu trạng thái vào localStorage
+                router.push("/auth/login");
+            } else {
+                throw new Error(response.data.message || "Xác thực OTP thất bại");
+            }
         } catch (err) {
-            console.log(err);
-
-            setError(err?.message);
+            const message = err.response?.data?.message || "Xác thực OTP thất bại";
+            setError(message);
+            showToast.error(message);
         } finally {
             setLoading(false);
         }
     };
+
     const handleResend = async () => {
         if (resendTimer > 0) return;
-        setResendTimer(30);
-        await onResend();
+        setResendTimer(60);
+        try {
+            await onResend();
+            showToast.success("Đã gửi lại mã OTP!");
+        } catch (err) {
+            const message = err.message || "Gửi lại OTP thất bại";
+            setError(message);
+            showToast.error(message);
+        }
     };
+
     return (
         <div className="flex flex-col min-h-screen bg-gradient-to-br from-white via-pink-50 to-rose-50 relative overflow-hidden">
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
@@ -199,4 +207,5 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
         </div>
     );
 };
+
 export default OTPVerification;

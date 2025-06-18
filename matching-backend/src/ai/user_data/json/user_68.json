@@ -1,47 +1,46 @@
 {
   "id": 68,
-  "username": "Christian.Bogisich",
-  "display_name": "Christian Bogisich",
-  "email": "Christian.Bogisich10@hotmail.com",
+  "username": "Trevor.Zemlak",
+  "display_name": "Trevor Zemlak",
+  "email": "Trevor_Zemlak77@hotmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 25,
   "status": "active",
-  "about_me": "Caste amplus tres vito taceo corona balbus fuga.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Tripudio casso damnatio delectatio comis crepusculum aeger.",
+  "searching_for": "Chưa chắc chắn / Để mở",
   "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Thạc sĩ",
+  "language": "Japanese",
+  "education": "Cử nhân",
   "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "150",
-  "location": "Rodrigoburgh",
-  "zodiac": "Bạch Dương",
-  "character": "Hài hước",
+  "career": "Bác sĩ",
+  "height": "178",
+  "location": "Tillmanview",
+  "zodiac": "Xử Nữ",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Phim ảnh",
-    "Nghệ thuật"
+    "Nấu ăn"
   ]
 }

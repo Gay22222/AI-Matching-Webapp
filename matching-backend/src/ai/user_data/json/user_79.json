@@ -1,37 +1,37 @@
 {
   "id": 79,
-  "username": "Norma.Skiles89",
-  "display_name": "Norma Skiles",
-  "email": "Norma_Skiles@yahoo.com",
+  "username": "Belle_Bechtelar",
+  "display_name": "Belle Bechtelar",
+  "email": "Belle_Bechtelar@gmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 58,
   "status": "active",
-  "about_me": "Caelum defero capillus ubi tollo termes verus delibero uredo barba.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "about_me": "Agnitio corroboro autus ait aetas solus pauper.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Song tính",
+  "language": "English",
   "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
+  "religion": "Cơ đốc giáo",
   "career": "Giáo viên",
-  "height": "156",
-  "location": "Floridafort",
-  "zodiac": "Xử Nữ",
-  "character": "Tự tin",
+  "height": "152",
+  "location": "West Juvenal",
+  "zodiac": "Song Tử",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": true,
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Có",
@@ -39,9 +39,10 @@
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Phim ảnh",
-    "Mua sắm"
+    "Nấu ăn",
+    "Nhiếp ảnh",
+    "Thể thao"
   ]
 }

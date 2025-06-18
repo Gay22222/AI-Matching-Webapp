@@ -1,46 +1,46 @@
 {
   "id": 3,
-  "username": "Hobart_Gislason58",
-  "display_name": "Hobart Gislason",
-  "email": "Hobart_Gislason@gmail.com",
+  "username": "Joaquin_Kautzer71",
+  "display_name": "Joaquin Kautzer",
+  "email": "Joaquin.Kautzer72@gmail.com",
   "birthday": null,
-  "age": 50,
+  "age": 18,
   "status": "active",
-  "about_me": "Cultura virtus conspergo.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
+  "about_me": "Addo asporto accommodo peior.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Hồi giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "188",
-  "location": "North Burleyshire",
-  "zodiac": "Bò Cạp",
-  "character": "Thân thiện",
+  "height": "200",
+  "location": "Feilberg",
+  "zodiac": "Bạch Dương",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn chay",
+  "train": true,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Không",
+  "snu": "Tuỳ đối tượng",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Phim ảnh"
+    "Chơi game"
   ]
 }

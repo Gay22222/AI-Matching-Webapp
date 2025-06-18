@@ -1,47 +1,46 @@
 {
   "id": 32,
-  "username": "Florida_Koch87",
-  "display_name": "Florida Koch",
-  "email": "Florida_Koch@yahoo.com",
+  "username": "Isaiah_Emard",
+  "display_name": "Isaiah Emard",
+  "email": "Isaiah.Emard@yahoo.com",
   "birthday": null,
-  "age": 34,
+  "age": 39,
   "status": "active",
-  "about_me": "Vulgivagus censura vestigium tricesimus aduro nulla reprehenderit.",
-  "searching_for": "Mối quan hệ lâu dài",
+  "about_me": "Comprehendo denuo aurum allatus sit cursim versus celer dens.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Trung học phổ thông",
+  "education": "Tiến sĩ",
   "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "178",
-  "location": "Fort Florencio",
-  "zodiac": "Xử Nữ",
-  "character": "Tự tin",
+  "career": "Kỹ sư phần mềm",
+  "height": "150",
+  "location": "East Desireefort",
+  "zodiac": "Song Tử",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
+  "drink": false,
+  "smoke": false,
   "train": true,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Chim",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Đọc sách",
-    "Yoga"
+    "Phim ảnh"
   ]
 }

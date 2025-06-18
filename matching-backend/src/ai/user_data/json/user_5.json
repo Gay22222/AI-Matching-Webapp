@@ -1,47 +1,47 @@
 {
   "id": 5,
-  "username": "Allan_Funk24",
-  "display_name": "Allan Funk",
-  "email": "Allan.Funk56@yahoo.com",
+  "username": "Freida_Konopelski",
+  "display_name": "Freida Konopelski",
+  "email": "Freida_Konopelski@yahoo.com",
   "birthday": null,
-  "age": 43,
+  "age": 20,
   "status": "active",
-  "about_me": "Alter denique ultra thesaurus triumphus crustulum.",
-  "searching_for": "Chưa chắc chắn / Để mở",
+  "about_me": "Aedificium vesica collum contego a certus adimpleo et.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "191",
-  "location": "Hansenchester",
-  "zodiac": "Nhân Mã",
-  "character": "Thân thiện",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "164",
+  "location": "Elmofort",
+  "zodiac": "Bò Cạp",
+  "character": "Điềm đạm",
   "character_list": [
-    "Thân thiện"
+    "Điềm đạm"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": true,
   "train": true,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Có",
+  "snu": "Không",
   "pet": "Chó",
   "pet_list": [
     "Chó"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Thể thao"
+    "Thể thao",
+    "Yoga"
   ]
 }

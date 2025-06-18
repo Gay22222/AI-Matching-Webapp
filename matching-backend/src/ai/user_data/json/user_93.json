@@ -1,21 +1,21 @@
 {
   "id": 93,
-  "username": "Adrien.Erdman",
-  "display_name": "Adrien Erdman",
-  "email": "Adrien.Erdman63@yahoo.com",
+  "username": "Elta_Hagenes",
+  "display_name": "Elta Hagenes",
+  "email": "Elta.Hagenes@gmail.com",
   "birthday": null,
-  "age": 45,
+  "age": 29,
   "status": "active",
-  "about_me": "Circumvenio validus accendo candidus amitto ars ambitus nobis communis.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Vulariter demoror reprehenderit deduco tempora vere brevis spero curis.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Phật giáo",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "168",
-  "location": "Lake Holly",
-  "zodiac": "Bò Cạp",
+  "height": "190",
+  "location": "Emeryview",
+  "zodiac": "Bảo Bình",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
@@ -24,23 +24,23 @@
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Có",
-  "pet": "Cá",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Nấu ăn"
+    "Nhiếp ảnh"
   ]
 }

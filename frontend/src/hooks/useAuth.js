@@ -10,7 +10,6 @@ setupAxios(axios);
 const AuthContext = createContext(null);
 
 const LOGIN_URL = "http://localhost:3001/api/auth/login";
-const REGISTER_URL = "/auth/register";
 const GET_USER_URL = "http://localhost:3001/api/user/me";
 
 export function AuthProvider({ children }) {
@@ -56,7 +55,6 @@ export function AuthProvider({ children }) {
       console.error("Error verifying user:", {
         message: error.message,
         response: error.response?.data,
-        status: error.response?.status,
       });
       saveAuth(undefined);
       setCurrentUser(null);
@@ -94,50 +92,25 @@ export function AuthProvider({ children }) {
 
   const login = async (email, password) => {
     try {
-      const { data: auth } = await axios.post(LOGIN_URL, {
-        email,
-        password,
-      });
-      const authData = {
-        access_token: auth.token,
-        token_type: "Token",
-      };
-      saveAuth(authData);
-      await verify(auth.token, true);
-      return true;
+        const { data: auth } = await axios.post(LOGIN_URL, {
+            email,
+            password,
+        });
+        const authData = {
+            access_token: auth.token,
+            token_type: "Token",
+        };
+        saveAuth(authData);
+        await verify(auth.token, true);
+        return true;
     } catch (error) {
-      console.error("Login error:", {
-        message: error.message,
-        response: error.response?.data,
-      });
-      saveAuth(undefined);
-      throw new Error(`Login error: ${error.response?.data?.message || error.message}`);
+        console.error("Login error:", {
+            message: error.message,
+            response: error.response?.data,
+        });
+        throw new Error(error.response?.data?.message || "Đăng nhập thất bại");
     }
-  };
-
-  const register = async (email, password, password_confirmation) => {
-    try {
-      const { data: auth } = await axios.post(REGISTER_URL, {
-        email,
-        password,
-        password_confirmation,
-      });
-      const authData = {
-        access_token: auth.token,
-        token_type: "Token",
-      };
-      saveAuth(authData);
-      const { data: user } = await getUser(auth.token);
-      setCurrentUser(user.user);
-    } catch (error) {
-      console.error("Registration error:", {
-        message: error.message,
-        response: error.response?.data,
-      });
-      saveAuth(undefined);
-      throw new Error(`Registration error: ${error.response?.data?.message || error.message}`);
-    }
-  };
+};
 
   const getUser = async (accessToken) => {
     try {
@@ -182,7 +155,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ auth, currentUser, loading, login, register, refreshUser, logout }}>
+    <AuthContext.Provider value={{ auth, currentUser, loading, login, refreshUser, logout }}>
       {children}
     </AuthContext.Provider>
   );

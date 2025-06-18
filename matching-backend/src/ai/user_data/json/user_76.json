@@ -1,47 +1,48 @@
 {
   "id": 76,
-  "username": "Robbie_White6",
-  "display_name": "Robbie White",
-  "email": "Robbie.White@yahoo.com",
+  "username": "Asia.Gerhold",
+  "display_name": "Asia Gerhold",
+  "email": "Asia_Gerhold36@gmail.com",
   "birthday": null,
-  "age": 38,
+  "age": 37,
   "status": "active",
-  "about_me": "Cursus totidem cribro delinquo verto.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Giáo viên",
-  "height": "161",
-  "location": "New Alison",
-  "zodiac": "Ma Kết",
-  "character": "Điềm đạm",
+  "about_me": "Cerno demo timidus degero ante charisma ultio.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "152",
+  "location": "East Abelboro",
+  "zodiac": "Song Tử",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": false,
+  "smoke": false,
+  "train": true,
   "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Yoga",
   "favorite_list": [
+    "Yoga",
     "Đọc sách",
-    "Chơi game"
+    "Phim ảnh"
   ]
 }

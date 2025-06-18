@@ -1,48 +1,46 @@
 {
   "id": 35,
-  "username": "Abelardo.Rodriguez",
-  "display_name": "Abelardo Rodriguez",
-  "email": "Abelardo.Rodriguez@yahoo.com",
+  "username": "Abbie_Dickinson14",
+  "display_name": "Abbie Dickinson",
+  "email": "Abbie_Dickinson@gmail.com",
   "birthday": null,
-  "age": 49,
+  "age": 45,
   "status": "active",
-  "about_me": "Curvo error cometes corroboro delectus canonicus fugit.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Degenero ventosus averto cogito amaritudo celo derideo angelus usitas decerno.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Giáo viên",
-  "height": "197",
-  "location": "South Shakirashire",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "198",
+  "location": "Clydeland",
   "zodiac": "Bò Cạp",
-  "character": "Tự tin",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Chơi game",
-    "Du lịch",
-    "Phim ảnh"
+    "Nghệ thuật"
   ]
 }

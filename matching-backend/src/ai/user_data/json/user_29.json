@@ -1,46 +1,46 @@
 {
   "id": 29,
-  "username": "Spencer_Smitham97",
-  "display_name": "Spencer Smitham",
-  "email": "Spencer.Smitham@gmail.com",
+  "username": "Jordi_Homenick",
+  "display_name": "Jordi Homenick",
+  "email": "Jordi_Homenick@hotmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 27,
   "status": "active",
-  "about_me": "Studio denuncio auxilium cura viscus.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
+  "about_me": "Rem unde talus vomica vel doloremque accusator tergum.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
+  "religion": "Phật giáo",
   "career": "Bác sĩ",
-  "height": "158",
-  "location": "Yakima",
-  "zodiac": "Cự Giải",
-  "character": "Điềm đạm",
+  "height": "179",
+  "location": "Mayerfield",
+  "zodiac": "Bảo Bình",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": true,
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": false,
   "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Cá",
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Phim ảnh"
+    "Đọc sách"
   ]
 }

@@ -1,48 +1,48 @@
 {
   "id": 40,
-  "username": "Lupe.Schroeder39",
-  "display_name": "Lupe Schroeder",
-  "email": "Lupe_Schroeder@gmail.com",
+  "username": "Mallie_Trantow",
+  "display_name": "Mallie Trantow",
+  "email": "Mallie_Trantow@hotmail.com",
   "birthday": null,
-  "age": 48,
+  "age": 50,
   "status": "active",
-  "about_me": "Autus theatrum sed cunctatio.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
+  "about_me": "Sollers sed vilis comburo aeternus aspernatur confugo antea.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Thạc sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Giáo viên",
-  "height": "167",
-  "location": "South Gladys",
-  "zodiac": "Xử Nữ",
-  "character": "Hài hước",
+  "career": "Kỹ sư phần mềm",
+  "height": "173",
+  "location": "Kristinastad",
+  "zodiac": "Cự Giải",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Có",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Âm nhạc",
-    "Nấu ăn",
-    "Chơi game"
+    "Thể thao",
+    "Mua sắm",
+    "Nấu ăn"
   ]
 }

@@ -1,48 +1,47 @@
 {
   "id": 70,
-  "username": "Lauryn.Ruecker",
-  "display_name": "Lauryn Ruecker",
-  "email": "Lauryn_Ruecker@hotmail.com",
+  "username": "Zetta.Daugherty53",
+  "display_name": "Zetta Daugherty",
+  "email": "Zetta.Daugherty@gmail.com",
   "birthday": null,
-  "age": 28,
+  "age": 59,
   "status": "active",
-  "about_me": "Validus cupressus valeo decens censura undique.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
-  "education": "Trung học phổ thông",
+  "about_me": "Sumo vapulus tredecim adipisci vulnero adiuvo terreo.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
   "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "180",
-  "location": "South Garettstead",
-  "zodiac": "Sư Tử",
-  "character": "Hài hước",
+  "height": "153",
+  "location": "North Deronhaven",
+  "zodiac": "Kim Ngưu",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
   "favorite": "Nấu ăn",
   "favorite_list": [
     "Nấu ăn",
-    "Đọc sách",
-    "Phim ảnh"
+    "Du lịch"
   ]
 }

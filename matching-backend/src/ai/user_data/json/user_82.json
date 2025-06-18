@@ -1,46 +1,47 @@
 {
   "id": 82,
-  "username": "Jeffery.Parisian65",
-  "display_name": "Jeffery Parisian",
-  "email": "Jeffery_Parisian50@yahoo.com",
+  "username": "Frida.Schuster92",
+  "display_name": "Frida Schuster",
+  "email": "Frida.Schuster@hotmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 32,
   "status": "active",
-  "about_me": "Ipsam calamitas tutamen ancilla aliquam contigo rerum nobis.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
+  "about_me": "Patrocinor arceo acceptus.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
   "education": "Trung học phổ thông",
   "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "162",
-  "location": "Fort Dell",
+  "career": "Giáo viên",
+  "height": "192",
+  "location": "Catherinechester",
   "zodiac": "Song Ngư",
-  "character": "Tự tin",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Biết chia sẻ"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Chó",
+  "train": false,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Mua sắm"
+    "Phim ảnh",
+    "Nghệ thuật"
   ]
 }

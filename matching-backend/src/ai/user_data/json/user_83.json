@@ -1,46 +1,47 @@
 {
   "id": 83,
-  "username": "Kristopher_Treutel",
-  "display_name": "Kristopher Treutel",
-  "email": "Kristopher_Treutel@yahoo.com",
+  "username": "Luciano_Prosacco",
+  "display_name": "Luciano Prosacco",
+  "email": "Luciano.Prosacco@yahoo.com",
   "birthday": null,
-  "age": 29,
+  "age": 19,
   "status": "active",
-  "about_me": "Atrocitas demitto ea theatrum deprimo tenax alius fuga.",
+  "about_me": "Creber occaecati trepide conduco delibero valde vehemens.",
   "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Dị tính",
+  "sexual_orientation": "Vô tính",
   "language": "Japanese",
-  "education": "Tiến sĩ",
+  "education": "Thạc sĩ",
   "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "183",
-  "location": "West Domenickstad",
-  "zodiac": "Song Ngư",
+  "career": "Kỹ sư phần mềm",
+  "height": "162",
+  "location": "South Hiram",
+  "zodiac": "Bạch Dương",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Không muốn con",
   "drink": true,
   "smoke": true,
-  "train": false,
+  "train": true,
   "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Nghệ thuật"
+    "Chơi game",
+    "Mua sắm"
   ]
 }

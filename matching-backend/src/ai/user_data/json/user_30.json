@@ -1,48 +1,47 @@
 {
   "id": 30,
-  "username": "Antoinette_Wilkinson89",
-  "display_name": "Antoinette Wilkinson",
-  "email": "Antoinette.Wilkinson@gmail.com",
+  "username": "Giuseppe.Bednar37",
+  "display_name": "Giuseppe Bednar",
+  "email": "Giuseppe_Bednar@gmail.com",
   "birthday": null,
-  "age": 30,
+  "age": 50,
   "status": "active",
-  "about_me": "Socius valde degero sursum baiulus decretum talio.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Eaque conqueror articulus verumtamen.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Vô tính",
   "language": "Japanese",
   "education": "Cử nhân",
-  "religion": "Phật giáo",
+  "religion": "Hồi giáo",
   "career": "Giáo viên",
-  "height": "194",
-  "location": "Vineland",
-  "zodiac": "Cự Giải",
-  "character": "Tự tin",
+  "height": "188",
+  "location": "Eugene",
+  "zodiac": "Bạch Dương",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn mặn",
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Chơi game",
-    "Cà phê",
-    "Nhiếp ảnh"
+    "Yoga",
+    "Nấu ăn"
   ]
 }

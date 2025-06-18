@@ -11,7 +11,8 @@ export function formatUser(user) {
     const formattedUser = {
         id: user?.id,
         displayName: user?.display_name,
-        email: user?.email ?? "", // Sử dụng nullish coalescing để tránh undefined
+        email: user?.email ?? "", // Sử dụng nullish coalescing để tránh 
+        password: user?.password,
         gender: user?.gender,
         preferredGender: user?.preferred_gender,
         name: user?.Bio?.name,

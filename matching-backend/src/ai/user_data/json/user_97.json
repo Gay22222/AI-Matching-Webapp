@@ -1,47 +1,46 @@
 {
   "id": 97,
-  "username": "Lauren.Considine",
-  "display_name": "Lauren Considine",
-  "email": "Lauren.Considine24@hotmail.com",
+  "username": "Percival_Batz35",
+  "display_name": "Percival Batz",
+  "email": "Percival.Batz88@yahoo.com",
   "birthday": null,
-  "age": 46,
+  "age": 35,
   "status": "active",
-  "about_me": "Admiratio aliquam cumque aperte succurro bellicus mollitia.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "196",
-  "location": "East Nicolaside",
-  "zodiac": "Song Tử",
-  "character": "Điềm đạm",
+  "about_me": "Aggredior aggero ex arca adopto dolorem cuppedia dolor.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "164",
+  "location": "North Santos",
+  "zodiac": "Nhân Mã",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Có",
+  "snu": "Tuỳ đối tượng",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Âm nhạc",
-    "Nhiếp ảnh"
+    "Cà phê"
   ]
 }

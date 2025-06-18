@@ -9,16 +9,19 @@ const loginSchema = Joi.object({
 
 const registerSchema = Joi.object({
   email: Joi.string().email().required(),
-  password: Joi.string().min(6).required()
+  password: Joi.string().min(6).required(),
+  confirmPassword: Joi.string().valid(Joi.ref('password')).required().messages({
+    'any.only': 'Confirm password must match password',
+  }),
 });
 
 const requestVerificationCodeSchema = Joi.object({
-  email: Joi.string().email().required()
+  email: Joi.string().email().required(),
 });
 
 const verifyEmailWithOtpSchema = Joi.object({
   email: Joi.string().email().required(),
-  otp: Joi.string().length(6).required()
+  otp: Joi.string().length(6).required(),
 });
 
 export const authController = {
@@ -50,8 +53,10 @@ export const authController = {
       }
       const { email, password } = value;
       logger.info(`Register attempt for email ${email}`);
-      const userNew = await authService.registerUserNew(email, password);
-      res.status(201).json({ statusCode: 201, user_new: userNew });
+      // Lưu thông tin đăng ký tạm thời và gửi OTP
+      await authService.storeTempRegistration(email, password);
+      await authService.sendOtpForVerification(email);
+      res.status(200).json({ statusCode: 200, message: 'Verification code sent successfully' });
     } catch (error) {
       logger.error({ error, stack: error.stack }, 'Error registering');
       if (error.message === 'Email already registered') {
@@ -85,9 +90,14 @@ export const authController = {
       }
       const { email, otp } = value;
       logger.info(`Verifying OTP for email ${email}`);
-      const isVerified = await authService.verifyEmailOtp(email, otp);
-      if (isVerified) {
-        res.status(200).json({ statusCode: 200, message: 'Email verified successfully' });
+      const result = await authService.verifyEmailOtp(email, otp);
+      if (result.success) {
+        res.status(200).json({ 
+          statusCode: 200, 
+          message: 'Email verified and user created successfully',
+          user: result.user,
+          registrationSuccess: true
+        });
       } else {
         res.status(400).json({ statusCode: 400, message: 'OTP verification failed' });
       }

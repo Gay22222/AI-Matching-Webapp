@@ -1,48 +1,48 @@
 {
   "id": 59,
-  "username": "Anabelle_Schroeder3",
-  "display_name": "Anabelle Schroeder",
-  "email": "Anabelle.Schroeder@hotmail.com",
+  "username": "Kimberly.Cronin73",
+  "display_name": "Kimberly Cronin",
+  "email": "Kimberly_Cronin1@gmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 57,
   "status": "active",
-  "about_me": "Decor comes timor dapifer.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "171",
-  "location": "Rickiefield",
-  "zodiac": "Kim Ngưu",
-  "character": "Điềm đạm",
+  "about_me": "Conventus tempore casus vis damno admoveo repudiandae admitto.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "152",
+  "location": "Taylorsville",
+  "zodiac": "Xử Nữ",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": true,
-  "smoke": true,
-  "train": true,
-  "diet": "Ăn mặn",
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Nghệ thuật",
-    "Phim ảnh",
-    "Âm nhạc"
+    "Nấu ăn",
+    "Du lịch",
+    "Cà phê"
   ]
 }

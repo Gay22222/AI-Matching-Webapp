@@ -1,48 +1,46 @@
 {
   "id": 47,
-  "username": "Genoveva_Ritchie",
-  "display_name": "Genoveva Ritchie",
-  "email": "Genoveva_Ritchie@hotmail.com",
+  "username": "Alexandra_Bergnaum",
+  "display_name": "Alexandra Bergnaum",
+  "email": "Alexandra.Bergnaum@yahoo.com",
   "birthday": null,
-  "age": 56,
+  "age": 22,
   "status": "active",
-  "about_me": "Sordeo atqui paens acidus cerno collum avaritia cura video.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "178",
-  "location": "South Constance",
-  "zodiac": "Song Ngư",
-  "character": "Nghiêm túc",
+  "about_me": "Bos statua cogo ter.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "168",
+  "location": "Fort Brandofurt",
+  "zodiac": "Ma Kết",
+  "character": "Điềm đạm",
   "character_list": [
-    "Nghiêm túc"
+    "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
   "love_language": "Hành động quan tâm",
   "love_language_list": [
     "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Chơi game",
-    "Âm nhạc"
+    "Thể thao"
   ]
 }

@@ -1,24 +1,24 @@
 {
   "id": 50,
-  "username": "Shyann.Hirthe-OKon",
-  "display_name": "Shyann Hirthe-O'Kon",
-  "email": "Shyann_Hirthe-OKon@hotmail.com",
+  "username": "Felix_Paucek",
+  "display_name": "Felix Paucek",
+  "email": "Felix.Paucek@gmail.com",
   "birthday": null,
-  "age": 18,
+  "age": 42,
   "status": "active",
-  "about_me": "Quasi quibusdam labore barba claudeo animi ipsa.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
+  "about_me": "Velit alveus ustilo vir aetas absque.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
   "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Doanh nhân",
-  "height": "164",
-  "location": "Thornton",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "150",
+  "location": "Wisokyland",
   "zodiac": "Ma Kết",
-  "character": "Nghiêm túc",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
@@ -28,20 +28,21 @@
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn chay",
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Có",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
   "favorite": "Nấu ăn",
   "favorite_list": [
     "Nấu ăn",
-    "Du lịch"
+    "Nghệ thuật",
+    "Đọc sách"
   ]
 }

@@ -1,48 +1,48 @@
 {
   "id": 71,
-  "username": "Ettie_Dickens2",
-  "display_name": "Ettie Dickens",
-  "email": "Ettie_Dickens@yahoo.com",
+  "username": "Lew_Prohaska15",
+  "display_name": "Lew Prohaska",
+  "email": "Lew_Prohaska93@yahoo.com",
   "birthday": null,
-  "age": 23,
+  "age": 21,
   "status": "active",
-  "about_me": "Adinventitias ipsa crapula bibo.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "about_me": "Ancilla baiulus curso pectus.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
   "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "176",
-  "location": "Port Ressiemouth",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "177",
+  "location": "Great Falls",
+  "zodiac": "Nhân Mã",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
   "train": false,
-  "diet": "Ăn mặn",
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Có",
+  "snu": "Không",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Âm nhạc",
-    "Mua sắm",
-    "Nấu ăn"
+    "Nhiếp ảnh",
+    "Thể thao",
+    "Chơi game"
   ]
 }

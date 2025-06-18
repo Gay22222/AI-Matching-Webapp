@@ -1,47 +1,46 @@
 {
   "id": 11,
-  "username": "Flavio.Parker3",
-  "display_name": "Flavio Parker",
-  "email": "Flavio.Parker@hotmail.com",
+  "username": "Ciara.Wintheiser",
+  "display_name": "Ciara Wintheiser",
+  "email": "Ciara_Wintheiser@yahoo.com",
   "birthday": null,
-  "age": 38,
+  "age": 29,
   "status": "active",
-  "about_me": "Reiciendis campana acer textilis natus abduco.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Demulceo contabesco voluptate urbs depraedor somnus.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
   "career": "Bác sĩ",
-  "height": "158",
-  "location": "Framifield",
-  "zodiac": "Kim Ngưu",
-  "character": "Điềm đạm",
+  "height": "190",
+  "location": "South Zane",
+  "zodiac": "Song Tử",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Muốn có con",
+  "drink": false,
   "smoke": false,
   "train": true,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Không",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Chơi game"
+    "Đọc sách"
   ]
 }

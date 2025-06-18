@@ -1,48 +1,46 @@
 {
   "id": 46,
-  "username": "Mable.Kerluke43",
-  "display_name": "Mable Kerluke",
-  "email": "Mable_Kerluke@hotmail.com",
+  "username": "Amir.Mante-Koelpin",
+  "display_name": "Amir Mante-Koelpin",
+  "email": "Amir_Mante-Koelpin@hotmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 41,
   "status": "active",
-  "about_me": "Bellicus averto consequatur viridis.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Aufero attollo aperio animi calculus vos defero aestivus.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Song tính",
-  "language": "English",
+  "language": "Japanese",
   "education": "Cử nhân",
-  "religion": "Phật giáo",
+  "religion": "Ấn Độ giáo",
   "career": "Bác sĩ",
-  "height": "173",
-  "location": "Norwoodchester",
-  "zodiac": "Song Ngư",
-  "character": "Điềm đạm",
+  "height": "160",
+  "location": "Collinshire",
+  "zodiac": "Ma Kết",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn chay",
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
   "snu": "Có",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Chơi game",
-    "Phim ảnh",
-    "Nghệ thuật"
+    "Mua sắm"
   ]
 }

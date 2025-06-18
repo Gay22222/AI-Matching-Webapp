@@ -1,24 +1,24 @@
 {
   "id": 4,
-  "username": "Sammie.Lebsack24",
-  "display_name": "Sammie Lebsack",
-  "email": "Sammie_Lebsack34@hotmail.com",
+  "username": "Aliyah_Pouros55",
+  "display_name": "Aliyah Pouros",
+  "email": "Aliyah_Pouros@yahoo.com",
   "birthday": null,
-  "age": 36,
+  "age": 41,
   "status": "active",
-  "about_me": "Acerbitas turba caecus adaugeo verbera adamo temporibus.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "185",
-  "location": "Bayercester",
-  "zodiac": "Ma Kết",
-  "character": "Thân thiện",
+  "about_me": "Pecus cohaero tactus circumvenio tamdiu spiritus.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "196",
+  "location": "Balistrericester",
+  "zodiac": "Sư Tử",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
@@ -28,21 +28,20 @@
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
+  "smoke": false,
   "train": true,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chó",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Phim ảnh",
-    "Nhiếp ảnh",
-    "Âm nhạc"
+    "Nấu ăn",
+    "Cà phê"
   ]
 }

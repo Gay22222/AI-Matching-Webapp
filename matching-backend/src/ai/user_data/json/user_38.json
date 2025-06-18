@@ -1,46 +1,48 @@
 {
   "id": 38,
-  "username": "Lenna_Cremin81",
-  "display_name": "Lenna Cremin",
-  "email": "Lenna.Cremin84@hotmail.com",
+  "username": "Jeanie.Wolff",
+  "display_name": "Jeanie Wolff",
+  "email": "Jeanie_Wolff13@hotmail.com",
   "birthday": null,
-  "age": 24,
+  "age": 51,
   "status": "active",
-  "about_me": "Ventito cubitum vergo corrumpo cibus theca impedit templum desino.",
-  "searching_for": "Chưa chắc chắn / Để mở",
+  "about_me": "Eveniet subseco damnatio crudelis.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "156",
-  "location": "Nolanstad",
-  "zodiac": "Bảo Bình",
-  "character": "Thân thiện",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "192",
+  "location": "O'Fallon",
+  "zodiac": "Bò Cạp",
+  "character": "Điềm đạm",
   "character_list": [
-    "Thân thiện"
+    "Điềm đạm"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Yoga",
   "favorite_list": [
+    "Yoga",
+    "Âm nhạc",
     "Thể thao"
   ]
 }

@@ -1,47 +1,47 @@
 {
   "id": 84,
-  "username": "Theron_Goyette",
-  "display_name": "Theron Goyette",
-  "email": "Theron_Goyette@hotmail.com",
+  "username": "Erick.Franey68",
+  "display_name": "Erick Franey",
+  "email": "Erick.Franey88@gmail.com",
   "birthday": null,
-  "age": 39,
+  "age": 32,
   "status": "active",
-  "about_me": "Velut adsum adamo auditor advoco utor damno ceno audacia.",
-  "searching_for": "Mối quan hệ lâu dài",
+  "about_me": "Deduco cura cernuus studio labore.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "189",
-  "location": "East Shaniyaberg",
-  "zodiac": "Bạch Dương",
-  "character": "Hài hước",
+  "height": "197",
+  "location": "Dinafort",
+  "zodiac": "Bò Cạp",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
   "future_family": "Không muốn con",
   "drink": true,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "train": false,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Có",
+  "snu": "Không",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Du lịch",
-    "Yoga"
+    "Cà phê",
+    "Nấu ăn"
   ]
 }

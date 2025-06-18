@@ -1,21 +1,21 @@
 {
   "id": 31,
-  "username": "Adrain.Hamill-Becker",
-  "display_name": "Adrain Hamill-Becker",
-  "email": "Adrain.Hamill-Becker89@yahoo.com",
+  "username": "Alek.Erdman",
+  "display_name": "Alek Erdman",
+  "email": "Alek_Erdman99@hotmail.com",
   "birthday": null,
-  "age": 28,
+  "age": 44,
   "status": "active",
-  "about_me": "Dolor nihil commodi agnosco angelus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Theologus defleo arbustum defleo nostrum.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "156",
-  "location": "North Eunicefield",
-  "zodiac": "Song Ngư",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "175",
+  "location": "Brownsville",
+  "zodiac": "Cự Giải",
   "character": "Tự tin",
   "character_list": [
     "Tự tin"
@@ -24,25 +24,24 @@
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn chay",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Nấu ăn",
-    "Chơi game"
+    "Mua sắm",
+    "Đọc sách"
   ]
 }

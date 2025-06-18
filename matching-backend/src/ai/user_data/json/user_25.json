@@ -1,43 +1,43 @@
 {
   "id": 25,
-  "username": "Cyril_Halvorson",
-  "display_name": "Cyril Halvorson",
-  "email": "Cyril_Halvorson17@hotmail.com",
+  "username": "Alvis_Stamm",
+  "display_name": "Alvis Stamm",
+  "email": "Alvis_Stamm@hotmail.com",
   "birthday": null,
-  "age": 40,
+  "age": 35,
   "status": "active",
-  "about_me": "Commodi compono aureus.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
+  "about_me": "Sumo cohaero colo accedo talis callide correptius aranea triduana una.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
   "language": "English",
-  "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "189",
-  "location": "Ayanaview",
+  "height": "168",
+  "location": "North Elissaton",
   "zodiac": "Cự Giải",
-  "character": "Điềm đạm",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
   "favorite": "Nghệ thuật",
   "favorite_list": [

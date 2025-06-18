@@ -1,46 +1,48 @@
 {
   "id": 85,
-  "username": "Stan_Effertz15",
-  "display_name": "Stan Effertz",
-  "email": "Stan_Effertz@yahoo.com",
+  "username": "Zander.Grady87",
+  "display_name": "Zander Grady",
+  "email": "Zander.Grady70@yahoo.com",
   "birthday": null,
-  "age": 48,
+  "age": 52,
   "status": "active",
-  "about_me": "Alioqui cuppedia tondeo carus.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
+  "about_me": "Tyrannus crux acidus cattus vulgo quod.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
   "education": "Trung học phổ thông",
   "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "197",
-  "location": "Anaisfurt",
-  "zodiac": "Bạch Dương",
-  "character": "Điềm đạm",
+  "career": "Bác sĩ",
+  "height": "195",
+  "location": "East Zane",
+  "zodiac": "Song Ngư",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Du lịch"
+    "Nhiếp ảnh",
+    "Cà phê",
+    "Phim ảnh"
   ]
 }

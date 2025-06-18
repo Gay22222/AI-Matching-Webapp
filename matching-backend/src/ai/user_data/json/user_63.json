@@ -1,47 +1,46 @@
 {
   "id": 63,
-  "username": "Emelie_Batz",
-  "display_name": "Emelie Batz",
-  "email": "Emelie.Batz91@hotmail.com",
+  "username": "Jada.Pfeffer",
+  "display_name": "Jada Pfeffer",
+  "email": "Jada_Pfeffer41@hotmail.com",
   "birthday": null,
   "age": 36,
   "status": "active",
-  "about_me": "Brevis summopere vapulus.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "English",
+  "about_me": "Debilito defleo coniecto acerbitas.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
   "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "154",
-  "location": "Moline",
-  "zodiac": "Cự Giải",
-  "character": "Tự tin",
+  "religion": "Hồi giáo",
+  "career": "Doanh nhân",
+  "height": "168",
+  "location": "Ondrickacester",
+  "zodiac": "Bạch Dương",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
+  "smoke": false,
   "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chó",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Âm nhạc",
-    "Phim ảnh"
+    "Cà phê"
   ]
 }

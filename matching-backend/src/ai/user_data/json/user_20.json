@@ -1,46 +1,47 @@
 {
   "id": 20,
-  "username": "Colin_Kunde",
-  "display_name": "Colin Kunde",
-  "email": "Colin_Kunde8@hotmail.com",
+  "username": "Donald.Bogisich",
+  "display_name": "Donald Bogisich",
+  "email": "Donald.Bogisich2@yahoo.com",
   "birthday": null,
-  "age": 39,
+  "age": 52,
   "status": "active",
-  "about_me": "Decretum trans aequitas subvenio convoco adficio theatrum adficio ocer.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
+  "about_me": "Ut assentator terminatio adsum cognatus arx angelus contabesco.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
   "career": "Doanh nhân",
-  "height": "170",
-  "location": "Nikobury",
-  "zodiac": "Xử Nữ",
-  "character": "Nghiêm túc",
+  "height": "200",
+  "location": "Port Axelboro",
+  "zodiac": "Kim Ngưu",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": false,
-  "train": true,
+  "smoke": true,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nghệ thuật"
+    "Yoga",
+    "Đọc sách"
   ]
 }

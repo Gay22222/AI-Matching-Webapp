@@ -1,47 +1,47 @@
 {
   "id": 43,
-  "username": "Nichole.Bayer",
-  "display_name": "Nichole Bayer",
-  "email": "Nichole_Bayer@gmail.com",
+  "username": "Lavern_Swift",
+  "display_name": "Lavern Swift",
+  "email": "Lavern.Swift99@gmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 25,
   "status": "active",
-  "about_me": "Ullam defleo sapiente deripio tot alo umbra.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
+  "about_me": "Adduco audax curiositas suasoria torrens cauda.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "173",
-  "location": "Virgilton",
-  "zodiac": "Bạch Dương",
-  "character": "Điềm đạm",
+  "height": "177",
+  "location": "Toyworth",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
   "character_list": [
-    "Điềm đạm"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Chim",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Cà phê",
-    "Đọc sách"
+    "Đọc sách",
+    "Thể thao"
   ]
 }

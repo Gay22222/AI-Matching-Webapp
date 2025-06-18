@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-
 import {
     UserIcon,
     LockIcon,
@@ -13,17 +12,18 @@ import {
 import Link from "next/link";
 import { FlameIcon, ArrowLeftIcon } from "lucide-react";
 import OTPVerification from "../otp/OTPVerification.jsx";
+import { showToast } from "@/lib/toast";
 
 export default function Register() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [showOTP, setShowOTP] = useState(false);
     const [formData, setFormData] = useState({
-        name: "ken",
         email: "khanhace6222@gmail.com",
         password: "123123123",
         confirmPassword: "123123123",
     });
+    const [error, setError] = useState("");
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -32,16 +32,18 @@ export default function Register() {
             [name]: value,
         }));
     };
-    const [error, setError] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError("");
+        setLoading(true);
 
         if (formData.password !== formData.confirmPassword) {
-            setError("Passwords do not match");
+            setError("Mật khẩu xác nhận không khớp");
+            showToast.error("Mật khẩu xác nhận không khớp");
+            setLoading(false);
             return;
         }
-        setLoading(true);
 
         try {
             const res = await fetch("http://localhost:3001/api/auth/register", {
@@ -50,51 +52,71 @@ export default function Register() {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name: formData.name,
                     email: formData.email,
                     password: formData.password,
+                    confirmPassword: formData.confirmPassword,
                 }),
             });
-
             const data = await res.json();
-
-            if (data?.statusCode === 409) {
-                console.log(data?.message);
-                return;
+            if (!res.ok) {
+                throw new Error(data.message || "Đăng ký thất bại");
             }
-
+            showToast.success("Mã OTP đã được gửi đến email của bạn");
             setShowOTP(true);
         } catch (err) {
             setError(err.message);
+            showToast.error(err.message);
         } finally {
             setLoading(false);
         }
     };
 
     const handleVerifyOTP = async (otp) => {
-        console.log(otp);
-
-        const res = await fetch("http://localhost:3001/api/auth/verify-otp", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                email: formData.email,
-                otp,
-            }),
-        });
-
-        const data = await res.json();
-        if (data.statusCode === 400) {
-            throw new Error(data.message);
+        try {
+            const res = await fetch("http://localhost:3001/api/auth/verify-otp", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: formData.email,
+                    otp,
+                }),
+            });
+            const data = await res.json();
+            if (!res.ok) {
+                throw new Error(data.message || "Xác thực OTP thất bại");
+            }
+            // Không hiển thị toast ở đây, sẽ hiển thị ở login page
+            router.push("/auth/login?registered=true"); // Thêm query parameter
+        } catch (err) {
+            showToast.error(err.message);
+            throw new Error(err.message);
         }
-        router.push("/auth/login");
     };
+
     const handleResendOTP = async () => {
-        // Simulate API call to resend OTP
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        try {
+            const res = await fetch("http://localhost:3001/api/auth/send-verification-otp", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: formData.email,
+                }),
+            });
+            const data = await res.json();
+            if (!res.ok) {
+                throw new Error(data.message || "Gửi lại OTP thất bại");
+            }
+            showToast.success("Mã OTP mới đã được gửi");
+        } catch (err) {
+            showToast.error(err.message);
+            throw new Error(err.message);
+        }
     };
+
     if (showOTP) {
         return (
             <OTPVerification
@@ -129,6 +151,7 @@ export default function Register() {
                 </div>
                 <div className="space-y-6">
                     <form onSubmit={handleSubmit} className="space-y-4">
+                        {error && <p className="text-red-500 text-center">{error}</p>}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 Email
@@ -236,9 +259,9 @@ export default function Register() {
                 <div className="mt-8 text-center">
                     <p className="text-gray-600">
                         Đã có tài khoản?
-                        <button className="ml-2 text-[#FF5864] font-medium hover:text-[#FF655B] transition-colors duration-300">
+                        <Link href="/auth/login" className="ml-2 text-[#FF5864] font-medium hover:text-[#FF655B] transition-colors duration-300">
                             Đăng nhập
-                        </button>
+                        </Link>
                     </p>
                 </div>
                 <div className="mt-10 text-center">

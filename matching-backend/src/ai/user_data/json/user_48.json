@@ -1,28 +1,28 @@
 {
   "id": 48,
-  "username": "Leatha.Collins",
-  "display_name": "Leatha Collins",
-  "email": "Leatha.Collins@gmail.com",
+  "username": "Ashlynn.Murphy",
+  "display_name": "Ashlynn Murphy",
+  "email": "Ashlynn.Murphy@hotmail.com",
   "birthday": null,
-  "age": 25,
+  "age": 45,
   "status": "active",
-  "about_me": "Vulariter solvo thermae deduco antiquus coruscus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
-  "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
+  "about_me": "Deripio tenetur similique arca attollo abeo.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
   "height": "171",
-  "location": "Fort Sharon",
-  "zodiac": "Cự Giải",
-  "character": "Nghiêm túc",
+  "location": "Port Afton",
+  "zodiac": "Kim Ngưu",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
@@ -30,17 +30,19 @@
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": true,
+  "smoke": false,
   "train": true,
-  "diet": "Ăn chay",
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "snu": "Không",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
   "favorite": "Nấu ăn",
   "favorite_list": [
-    "Nấu ăn"
+    "Nấu ăn",
+    "Đọc sách",
+    "Thể thao"
   ]
 }

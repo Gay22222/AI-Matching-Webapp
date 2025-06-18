@@ -1,47 +1,47 @@
 {
   "id": 100,
-  "username": "Christ.Koch62",
-  "display_name": "Christ Koch",
-  "email": "Christ_Koch35@gmail.com",
+  "username": "Everette.Hahn",
+  "display_name": "Everette Hahn",
+  "email": "Everette_Hahn78@yahoo.com",
   "birthday": null,
-  "age": 43,
+  "age": 36,
   "status": "active",
-  "about_me": "Aequitas vester aestus vestrum aliqua delectus vulnus adipiscor.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Pauci textilis cursus delectatio stultus.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
   "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "language": "English",
   "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "166",
-  "location": "North Bessiefield",
-  "zodiac": "Nhân Mã",
-  "character": "Thân thiện",
+  "height": "185",
+  "location": "West Myah",
+  "zodiac": "Bò Cạp",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
+  "smoke": false,
   "train": true,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Đọc sách",
-    "Nghệ thuật"
+    "Nhiếp ảnh",
+    "Nấu ăn"
   ]
 }

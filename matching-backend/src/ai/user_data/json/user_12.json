@@ -1,47 +1,48 @@
 {
   "id": 12,
-  "username": "Tiara_Crist",
-  "display_name": "Tiara Crist",
-  "email": "Tiara_Crist@gmail.com",
+  "username": "Marielle_Hessel73",
+  "display_name": "Marielle Hessel",
+  "email": "Marielle_Hessel@hotmail.com",
   "birthday": null,
-  "age": 56,
+  "age": 37,
   "status": "active",
-  "about_me": "Subnecto beatus autem advenio tabernus vicinus.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "184",
-  "location": "Johnson City",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "about_me": "Ut vesper bellicus abutor compono argumentum synagoga comes amo denego.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "162",
+  "location": "Pfannerstillfort",
+  "zodiac": "Bò Cạp",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Lời nói yêu thương",
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
   "train": false,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Đọc sách",
-    "Thể thao"
+    "Mua sắm",
+    "Nhiếp ảnh",
+    "Du lịch"
   ]
 }

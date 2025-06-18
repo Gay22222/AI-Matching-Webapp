@@ -1,0 +1,42 @@
+{
+  "id": 101,
+  "username": "vietkuaq@gmail.com",
+  "display_name": "Quang ngáo",
+  "email": "vietkuaq@gmail.com",
+  "birthday": "2005-12-02T00:00:00.000Z",
+  "age": 22,
+  "status": "active",
+  "about_me": "",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": null,
+  "location": "",
+  "zodiac": "Bạch Dương",
+  "character": "Hài hước",
+  "character_list": [
+    "Hài hước"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
+  "pet_list": [
+    "Chó"
+  ],
+  "favorite": "",
+  "favorite_list": []
+}

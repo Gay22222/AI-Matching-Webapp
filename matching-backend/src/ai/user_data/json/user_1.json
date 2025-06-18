@@ -1,44 +1,47 @@
 {
   "id": 1,
-  "username": "Otto.Schinner72",
-  "display_name": "Otto Schinner",
-  "email": "Otto.Schinner@gmail.com",
+  "username": "Maureen.Champlin",
+  "display_name": "Maureen Champlin",
+  "email": "Maureen.Champlin64@hotmail.com",
   "birthday": null,
-  "age": 46,
+  "age": 42,
   "status": "active",
-  "about_me": "superidol .",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
+  "about_me": "Hic repellat tertius civis agnitio caecus.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "165",
-  "location": "Brianaboro",
-  "zodiac": "Xử Nữ",
-  "character": "Điềm đạm",
+  "height": "153",
+  "location": "Gilbert",
+  "zodiac": "Bảo Bình",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn chay",
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "",
-  "favorite_list": []
+  "favorite": "Nấu ăn",
+  "favorite_list": [
+    "Nấu ăn",
+    "Thể thao"
+  ]
 }

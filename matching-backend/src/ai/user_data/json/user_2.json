@@ -1,47 +1,48 @@
 {
   "id": 2,
-  "username": "Heidi_Rodriguez29",
-  "display_name": "Heidi Rodriguez",
-  "email": "Heidi.Rodriguez@hotmail.com",
+  "username": "Cale_Kilback22",
+  "display_name": "Cale Kilback",
+  "email": "Cale.Kilback@hotmail.com",
   "birthday": null,
-  "age": 33,
+  "age": 37,
   "status": "active",
-  "about_me": "Vestigium condico ustilo abscido approbo vesper accusamus cinis.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
+  "about_me": "Coniuratio theatrum eius molestias voro.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "171",
-  "location": "Fort Waldoboro",
-  "zodiac": "Xử Nữ",
-  "character": "Nghiêm túc",
+  "career": "Giáo viên",
+  "height": "176",
+  "location": "Kuhnborough",
+  "zodiac": "Song Ngư",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
   "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chim",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Thể thao",
-    "Nấu ăn"
+    "Nghệ thuật",
+    "Du lịch",
+    "Cà phê"
   ]
 }

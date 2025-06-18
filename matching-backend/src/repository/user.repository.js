@@ -10,9 +10,9 @@ export const userRepository = {
         select: {
           id: true,
           email: true,
+          password: true,
           username: true,
           display_name: true,
-          password: true,
           gender: true,
           preferred_gender: true,
           status: true,
@@ -281,17 +281,18 @@ export const userRepository = {
       return await prisma.users.create({
         data: {
           ...userData,
+          display_name: userData.email,
           Bio: {
             create: {
               main_inf: { create: {} },
               Base_inf: { create: {} },
               Lifestyle: { create: {} },
-              Photo: {
-                create: [
-                  { url: '', is_profile_pic: true },
-                  { url: '', is_profile_pic: false }
-                ]
-              }
+              // Photo: {
+              //   create: [
+              //     { url: '', is_profile_pic: true },
+              //     { url: '', is_profile_pic: false }
+              //   ]
+              // }
             }
           }
         }

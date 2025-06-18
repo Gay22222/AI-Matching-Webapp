@@ -4,15 +4,25 @@ import { matchService } from "./match.service.js";
 import logger from "../utils/logger.js";
 
 export const userService = {
-  createUser: async (userData) => {
-    return await userRepository.createUser(userData);
+  async createUser(userData) {
+    // Gán username bằng email nếu không có display_name
+    const newUserData = {
+      ...userData,
+      username: userData.email,
+    };
+    const user = await userRepository.createUser(newUserData);
+    return formatUser(user);
   },
   getProfileByEmail: async (email) => {
     const userRaw = await userRepository.findUserByEmail(email);
+    if (!userRaw) {
+        logger.info(`No user found for email ${email}`);
+        return null;
+      }
     const userFormatted = formatUser(userRaw);
-    if (userFormatted) {
-      delete userFormatted.password;
-    }
+    // if (userFormatted) {
+    //   delete userFormatted.password;
+    // }
     return userFormatted;
   },
   getProfileById: async (id) => {

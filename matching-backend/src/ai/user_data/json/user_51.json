@@ -1,48 +1,48 @@
 {
   "id": 51,
-  "username": "Matilda.Osinski31",
-  "display_name": "Matilda Osinski",
-  "email": "Matilda_Osinski99@gmail.com",
+  "username": "Alivia.Treutel",
+  "display_name": "Alivia Treutel",
+  "email": "Alivia.Treutel@yahoo.com",
   "birthday": null,
-  "age": 55,
+  "age": 32,
   "status": "active",
-  "about_me": "Vulticulus varietas certe.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Utrimque antepono numquam angelus cupiditas strues beneficium succurro talis.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
   "language": "Japanese",
   "education": "Tiến sĩ",
-  "religion": "Phật giáo",
+  "religion": "Cơ đốc giáo",
   "career": "Doanh nhân",
-  "height": "158",
-  "location": "Hartford",
-  "zodiac": "Ma Kết",
+  "height": "185",
+  "location": "Maymiestad",
+  "zodiac": "Sư Tử",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": true,
   "smoke": false,
   "train": false,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Du lịch",
-    "Âm nhạc",
-    "Nhiếp ảnh"
+    "Thể thao",
+    "Đọc sách",
+    "Chơi game"
   ]
 }

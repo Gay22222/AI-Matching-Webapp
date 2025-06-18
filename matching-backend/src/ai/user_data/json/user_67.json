@@ -1,48 +1,46 @@
 {
   "id": 67,
-  "username": "Florence_Cartwright",
-  "display_name": "Florence Cartwright",
-  "email": "Florence.Cartwright@hotmail.com",
+  "username": "Cristopher_Dickinson",
+  "display_name": "Cristopher Dickinson",
+  "email": "Cristopher_Dickinson@yahoo.com",
   "birthday": null,
-  "age": 59,
+  "age": 56,
   "status": "active",
-  "about_me": "Suffoco eaque contigo aurum.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "184",
-  "location": "South Sabrynaview",
-  "zodiac": "Song Ngư",
+  "about_me": "Ascit baiulus numquam eius cras varietas spectaculum corrigo demo dedecor.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "163",
+  "location": "Lefflertown",
+  "zodiac": "Xử Nữ",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
+  "future_family": "Không muốn con",
+  "drink": true,
   "smoke": false,
   "train": true,
-  "diet": "Ăn chay",
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nấu ăn",
-    "Nghệ thuật",
-    "Cà phê"
+    "Thể thao"
   ]
 }

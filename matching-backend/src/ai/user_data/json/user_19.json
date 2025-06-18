@@ -1,47 +1,46 @@
 {
   "id": 19,
-  "username": "Stacy_Roob",
-  "display_name": "Stacy Roob",
-  "email": "Stacy.Roob39@yahoo.com",
+  "username": "Melyssa_Moen2",
+  "display_name": "Melyssa Moen",
+  "email": "Melyssa_Moen42@gmail.com",
   "birthday": null,
-  "age": 57,
+  "age": 37,
   "status": "active",
-  "about_me": "Quaerat alo volaticus ventito conspergo convoco desipio aveho.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "183",
-  "location": "Fort Tiffanyside",
-  "zodiac": "Kim Ngưu",
-  "character": "Điềm đạm",
+  "about_me": "Dapifer consequuntur thymum atqui repellat amoveo altus surgo audax conor.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "157",
+  "location": "Lake Joseph",
+  "zodiac": "Song Ngư",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
   "smoke": true,
-  "train": false,
+  "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Có",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Phim ảnh",
-    "Cà phê"
+    "Nghệ thuật"
   ]
 }

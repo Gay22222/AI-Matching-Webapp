@@ -1,21 +1,21 @@
 {
   "id": 69,
-  "username": "Bernie_Weimann46",
-  "display_name": "Bernie Weimann",
-  "email": "Bernie.Weimann@gmail.com",
+  "username": "Autumn.Kris97",
+  "display_name": "Autumn Kris",
+  "email": "Autumn.Kris@yahoo.com",
   "birthday": null,
-  "age": 34,
+  "age": 51,
   "status": "active",
-  "about_me": "Nostrum quis id amo.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
+  "about_me": "Deduco reiciendis capitulus molestias sint tutis volva defessus ante.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Song tính",
+  "language": "English",
   "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "189",
-  "location": "West Merlin",
-  "zodiac": "Thiên Bình",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "150",
+  "location": "South Nolan",
+  "zodiac": "Bò Cạp",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
@@ -24,24 +24,25 @@
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Muốn có con",
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Đọc sách",
   "favorite_list": [
+    "Đọc sách",
     "Nấu ăn",
-    "Yoga"
+    "Âm nhạc"
   ]
 }

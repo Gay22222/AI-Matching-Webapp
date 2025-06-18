@@ -1,46 +1,46 @@
 {
   "id": 34,
-  "username": "Roselyn_Schoen49",
-  "display_name": "Roselyn Schoen",
-  "email": "Roselyn_Schoen94@gmail.com",
+  "username": "Elwin.Harber",
+  "display_name": "Elwin Harber",
+  "email": "Elwin_Harber72@hotmail.com",
   "birthday": null,
-  "age": 35,
+  "age": 32,
   "status": "active",
-  "about_me": "Adfectus ipsum verecundia thalassinus conscendo canonicus deputo amplitudo ascit cura.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Vix venio addo illum.",
+  "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
   "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "179",
-  "location": "Baton Rouge",
-  "zodiac": "Cự Giải",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "188",
+  "location": "Fort Fletaville",
+  "zodiac": "Bò Cạp",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Quà tặng",
   "love_language_list": [
     "Quà tặng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
   "pet": "Chó",
   "pet_list": [
     "Chó"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Thể thao"
+    "Phim ảnh"
   ]
 }

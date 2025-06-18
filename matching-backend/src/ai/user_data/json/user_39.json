@@ -1,46 +1,47 @@
 {
   "id": 39,
-  "username": "Nora.Bogisich36",
-  "display_name": "Nora Bogisich",
-  "email": "Nora_Bogisich43@yahoo.com",
+  "username": "Reynold.Hartmann",
+  "display_name": "Reynold Hartmann",
+  "email": "Reynold_Hartmann80@yahoo.com",
   "birthday": null,
-  "age": 47,
+  "age": 30,
   "status": "active",
-  "about_me": "Deleniti patior averto creptio calco.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Depromo aggero spiculum tutamen currus summopere.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "164",
-  "location": "Kihnland",
-  "zodiac": "Song Tử",
-  "character": "Điềm đạm",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "157",
+  "location": "Hesselborough",
+  "zodiac": "Thiên Bình",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Điềm đạm"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
+  "future_family": "Chưa muốn có con",
+  "drink": true,
   "smoke": true,
-  "train": true,
+  "train": false,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Chơi game"
+    "Yoga",
+    "Nhiếp ảnh"
   ]
 }

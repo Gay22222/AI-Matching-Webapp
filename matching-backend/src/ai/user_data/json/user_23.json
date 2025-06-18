@@ -1,47 +1,47 @@
 {
   "id": 23,
-  "username": "Milo.Bogisich",
-  "display_name": "Milo Bogisich",
-  "email": "Milo_Bogisich47@hotmail.com",
+  "username": "Okey_Davis",
+  "display_name": "Okey Davis",
+  "email": "Okey_Davis@yahoo.com",
   "birthday": null,
-  "age": 27,
+  "age": 53,
   "status": "active",
-  "about_me": "Curatio valde advenio condico arma tui curto.",
+  "about_me": "Talio atrox cohibeo statua.",
   "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
+  "sexual_orientation": "Đồng tính",
   "language": "Japanese",
   "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "160",
-  "location": "Rolfsonfurt",
-  "zodiac": "Bò Cạp",
-  "character": "Nghiêm túc",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "172",
+  "location": "Port Fernando",
+  "zodiac": "Nhân Mã",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": false,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
   "train": false,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "snu": "Không",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Thể thao",
-    "Nghệ thuật"
+    "Mua sắm",
+    "Cà phê"
   ]
 }

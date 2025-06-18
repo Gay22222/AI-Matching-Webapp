@@ -1,24 +1,24 @@
 {
   "id": 90,
-  "username": "Lucienne_Satterfield",
-  "display_name": "Lucienne Satterfield",
-  "email": "Lucienne.Satterfield98@gmail.com",
+  "username": "Josh.Feest28",
+  "display_name": "Josh Feest",
+  "email": "Josh.Feest@hotmail.com",
   "birthday": null,
-  "age": 21,
+  "age": 46,
   "status": "active",
-  "about_me": "Tempore aqua corona nostrum voluptates suppellex.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
+  "about_me": "Solitudo iusto tres crur subiungo beatus cognomen.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
   "education": "Cử nhân",
   "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "150",
-  "location": "New Lexus",
-  "zodiac": "Song Tử",
-  "character": "Hài hước",
+  "career": "Kỹ sư phần mềm",
+  "height": "173",
+  "location": "Grand Prairie",
+  "zodiac": "Bò Cạp",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
@@ -28,21 +28,19 @@
   "love_language_list": [
     "Quà tặng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Cá",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Du lịch",
-    "Thể thao",
-    "Mua sắm"
+    "Nấu ăn"
   ]
 }

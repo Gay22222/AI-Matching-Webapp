@@ -1,24 +1,24 @@
 {
   "id": 14,
-  "username": "Gloria_Mayert-VonRueden",
-  "display_name": "Gloria Mayert-VonRueden",
-  "email": "Gloria.Mayert-VonRueden86@gmail.com",
+  "username": "Emile.Haley60",
+  "display_name": "Emile Haley",
+  "email": "Emile_Haley53@hotmail.com",
   "birthday": null,
-  "age": 21,
+  "age": 24,
   "status": "active",
-  "about_me": "Attero pel tabella vomer anser damnatio.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
+  "about_me": "Custodia brevis absorbeo arguo ciminatio claudeo communis.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "160",
-  "location": "Myrlview",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "height": "194",
+  "location": "Marjorieberg",
+  "zodiac": "Cự Giải",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
@@ -28,19 +28,21 @@
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Yoga"
+    "Thể thao",
+    "Nhiếp ảnh",
+    "Nghệ thuật"
   ]
 }

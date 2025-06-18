@@ -1,43 +1,43 @@
 {
   "id": 15,
-  "username": "Margarette_Wehner27",
-  "display_name": "Margarette Wehner",
-  "email": "Margarette_Wehner57@hotmail.com",
+  "username": "Rosalee_Stehr8",
+  "display_name": "Rosalee Stehr",
+  "email": "Rosalee.Stehr33@yahoo.com",
   "birthday": null,
-  "age": 39,
+  "age": 27,
   "status": "active",
-  "about_me": "Numquam cetera admoveo amicitia.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
+  "about_me": "Possimus possimus ut subseco aperte.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
   "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Doanh nhân",
-  "height": "200",
-  "location": "Drakemouth",
-  "zodiac": "Kim Ngưu",
-  "character": "Thân thiện",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "151",
+  "location": "New Jammiemouth",
+  "zodiac": "Nhân Mã",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
   "future_family": "Muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
   "favorite": "Chơi game",
   "favorite_list": [

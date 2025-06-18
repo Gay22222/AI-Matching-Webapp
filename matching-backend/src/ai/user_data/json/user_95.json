@@ -1,46 +1,48 @@
 {
   "id": 95,
-  "username": "Floyd.Crona23",
-  "display_name": "Floyd Crona",
-  "email": "Floyd_Crona24@yahoo.com",
+  "username": "Kaycee_Green",
+  "display_name": "Kaycee Green",
+  "email": "Kaycee_Green@yahoo.com",
   "birthday": null,
-  "age": 36,
+  "age": 27,
   "status": "active",
-  "about_me": "Cum varietas apud tempus apto illum.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "about_me": "Socius pecto apparatus volaticus spectaculum.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Giáo viên",
-  "height": "199",
-  "location": "South Deondrecester",
-  "zodiac": "Bảo Bình",
-  "character": "Điềm đạm",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "164",
+  "location": "Chico",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Nghệ thuật"
+    "Chơi game",
+    "Nhiếp ảnh",
+    "Nấu ăn"
   ]
 }

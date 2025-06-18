@@ -1,46 +1,46 @@
 {
   "id": 36,
-  "username": "Kiley.White",
-  "display_name": "Kiley White",
-  "email": "Kiley.White78@hotmail.com",
+  "username": "Rick.Windler",
+  "display_name": "Rick Windler",
+  "email": "Rick.Windler@hotmail.com",
   "birthday": null,
-  "age": 44,
+  "age": 55,
   "status": "active",
-  "about_me": "Dolores vulgaris deficio amplitudo.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
+  "about_me": "Agnitio compello pecto civis voluptatum.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "English",
   "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "178",
-  "location": "West Sallie",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "191",
+  "location": "Stephaniemouth",
   "zodiac": "Song Ngư",
-  "character": "Hài hước",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Hành động quan tâm"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": true,
-  "smoke": false,
+  "smoke": true,
   "train": true,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Cà phê"
+    "Âm nhạc"
   ]
 }

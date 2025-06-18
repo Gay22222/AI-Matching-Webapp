@@ -1,48 +1,48 @@
 {
   "id": 99,
-  "username": "Gwendolyn.Stiedemann91",
-  "display_name": "Gwendolyn Stiedemann",
-  "email": "Gwendolyn.Stiedemann@yahoo.com",
+  "username": "Mervin.Dickinson82",
+  "display_name": "Mervin Dickinson",
+  "email": "Mervin.Dickinson@hotmail.com",
   "birthday": null,
-  "age": 51,
+  "age": 31,
   "status": "active",
-  "about_me": "Cresco minima tertius clamo adstringo caecus toties.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "156",
-  "location": "Kennethfurt",
-  "zodiac": "Song Tử",
-  "character": "Hài hước",
+  "about_me": "Nulla cattus varius deleo.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "190",
+  "location": "Port Jazmin",
+  "zodiac": "Thiên Bình",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
   "train": true,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Yoga",
-    "Đọc sách",
-    "Mua sắm"
+    "Thể thao",
+    "Mua sắm",
+    "Chơi game"
   ]
 }

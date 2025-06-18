@@ -1,47 +1,48 @@
 {
   "id": 74,
-  "username": "Buddy_Bergstrom79",
-  "display_name": "Buddy Bergstrom",
-  "email": "Buddy_Bergstrom40@yahoo.com",
+  "username": "Modesto.Cormier89",
+  "display_name": "Modesto Cormier",
+  "email": "Modesto.Cormier91@gmail.com",
   "birthday": null,
-  "age": 52,
+  "age": 53,
   "status": "active",
-  "about_me": "Avarus atrocitas adipisci ea balbus vir adamo arbor unus.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "about_me": "Consequatur decimus benigne surculus torrens acquiro contigo.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
   "career": "Doanh nhân",
-  "height": "172",
-  "location": "Shawnee",
-  "zodiac": "Xử Nữ",
-  "character": "Hài hước",
+  "height": "184",
+  "location": "Fort Eino",
+  "zodiac": "Sư Tử",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Cá",
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Yoga",
   "favorite_list": [
+    "Yoga",
     "Nghệ thuật",
-    "Cà phê"
+    "Chơi game"
   ]
 }

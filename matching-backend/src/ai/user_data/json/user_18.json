@@ -1,48 +1,47 @@
 {
   "id": 18,
-  "username": "Yesenia_Schuppe38",
-  "display_name": "Yesenia Schuppe",
-  "email": "Yesenia.Schuppe71@yahoo.com",
+  "username": "Kelton_Conroy",
+  "display_name": "Kelton Conroy",
+  "email": "Kelton_Conroy@hotmail.com",
   "birthday": null,
-  "age": 41,
+  "age": 51,
   "status": "active",
-  "about_me": "Crur brevis tertius terminatio eos.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
+  "about_me": "Apto occaecati avaritia.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Tiến sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "170",
-  "location": "Gresham",
-  "zodiac": "Bảo Bình",
+  "career": "Kỹ sư phần mềm",
+  "height": "181",
+  "location": "Elizabethworth",
+  "zodiac": "Thiên Bình",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Quà tặng",
   "love_language_list": [
     "Quà tặng"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Đọc sách",
-    "Âm nhạc",
-    "Nấu ăn"
+    "Thể thao",
+    "Yoga"
   ]
 }

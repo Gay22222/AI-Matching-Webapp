@@ -1,47 +1,47 @@
 {
   "id": 96,
-  "username": "Scot.Schulist54",
-  "display_name": "Scot Schulist",
-  "email": "Scot_Schulist47@yahoo.com",
+  "username": "Anabel_Steuber81",
+  "display_name": "Anabel Steuber",
+  "email": "Anabel.Steuber@hotmail.com",
   "birthday": null,
-  "age": 40,
+  "age": 50,
   "status": "active",
-  "about_me": "Totam creptio totidem quasi abundans appositus tergiversatio.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "about_me": "Crux suffoco appositus desparatus apto.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "165",
-  "location": "Iowa City",
-  "zodiac": "Kim Ngưu",
-  "character": "Tự tin",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "193",
+  "location": "Orem",
+  "zodiac": "Thiên Bình",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": true,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Du lịch",
-    "Cà phê"
+    "Chơi game",
+    "Yoga"
   ]
 }

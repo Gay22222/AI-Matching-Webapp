@@ -1,48 +1,47 @@
 {
   "id": 81,
-  "username": "Duncan_Gorczany80",
-  "display_name": "Duncan Gorczany",
-  "email": "Duncan_Gorczany@hotmail.com",
+  "username": "Aida_Bayer",
+  "display_name": "Aida Bayer",
+  "email": "Aida_Bayer@gmail.com",
   "birthday": null,
-  "age": 50,
+  "age": 41,
   "status": "active",
-  "about_me": "Vir aperio volup verus advenio.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "172",
-  "location": "Nedramouth",
-  "zodiac": "Nhân Mã",
+  "about_me": "Coma decretum carmen speculum venustas considero subvenio demergo.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "183",
+  "location": "Fort Billy",
+  "zodiac": "Thiên Bình",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chim",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Thể thao",
-    "Yoga",
-    "Nhiếp ảnh"
+    "Nấu ăn",
+    "Mua sắm"
   ]
 }

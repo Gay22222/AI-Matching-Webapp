@@ -1,24 +1,34 @@
 "use client";
-import { useState } from "react";
-import { FlameIcon, ArrowLeftIcon } from "lucide-react";
 
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/hooks/useAuth";
-
+import { showToast } from "@/lib/toast";
 import { FacebookIcon, PhoneIcon, Loader2Icon } from "lucide-react";
 import Link from "next/link";
-import { setData } from "@/utils/LocalStorage";
+import { FlameIcon, ArrowLeftIcon } from "lucide-react";
+import { getData, setData } from "@/utils/LocalStorage";
 
 export default function Login() {
     const { login } = useAuth();
-
     const router = useRouter();
+    const searchParams = useSearchParams();
     const [formData, setFormData] = useState({
-        email: "khanhace6222@gmail.com",
-        password: "123123123",
+        email: "",
+        password: "",
     });
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
+
+    // Kiểm tra trạng thái đăng ký thành công từ localStorage
+    useEffect(() => {
+        const registrationSuccess = getData("registrationSuccess");
+        console.log("Registration success:", registrationSuccess); // Debug
+        if (registrationSuccess === true) {
+            showToast.success("Đăng ký thành công! Vui lòng đăng nhập.");
+            setData("registrationSuccess", null); // Xóa trạng thái sau khi hiển thị
+        }
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -28,14 +38,31 @@ export default function Login() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
         setError("");
+
         try {
-            login(formData.email, formData.password);
+            await login(formData.email, formData.password);
+            showToast.success("Đăng nhập thành công!");
         } catch (error) {
-            setError(error.message || "Login failed");
+            console.error("Login error:", {
+                message: error.message,
+                response: error.response?.data,
+            }); // Debug
+            let message;
+            if (error.message.includes("Password is not correct")) {
+                message = "Mật khẩu không đúng";
+            } else if (error.message.includes("User not found")) {
+                message = "Email không tồn tại";
+            } else if (error.response?.status === 401) {
+                message = "Thông tin đăng nhập không hợp lệ";
+            } else {
+                message = error.message || "Đăng nhập thất bại";
+            }
+            setError(message);
+            showToast.error(message);
         } finally {
             setLoading(false);
         }
@@ -64,6 +91,7 @@ export default function Login() {
                 </div>
                 <div className="space-y-6">
                     <form onSubmit={handleSubmit} className="space-y-4">
+                        {error && <p className="text-red-500 text-center">{error}</p>}
                         <div>
                             <label className="block mb-1 text-sm font-medium text-gray-700">
                                 Email

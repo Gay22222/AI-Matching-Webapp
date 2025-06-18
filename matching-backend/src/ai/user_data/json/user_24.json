@@ -1,48 +1,47 @@
 {
   "id": 24,
-  "username": "Laurianne.Weissnat44",
-  "display_name": "Laurianne Weissnat",
-  "email": "Laurianne_Weissnat5@hotmail.com",
+  "username": "Alda_Quitzon75",
+  "display_name": "Alda Quitzon",
+  "email": "Alda_Quitzon73@hotmail.com",
   "birthday": null,
-  "age": 55,
+  "age": 20,
   "status": "active",
-  "about_me": "Antea tabella assentator.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
+  "about_me": "Admoveo a curis.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
   "education": "Trung học phổ thông",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "158",
-  "location": "Fort Adeline",
-  "zodiac": "Xử Nữ",
-  "character": "Nghiêm túc",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "173",
+  "location": "Fresno",
+  "zodiac": "Thiên Bình",
+  "character": "Điềm đạm",
   "character_list": [
-    "Nghiêm túc"
+    "Điềm đạm"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
   "future_family": "Không muốn con",
-  "drink": true,
-  "smoke": true,
+  "drink": false,
+  "smoke": false,
   "train": false,
   "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Không",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
   "pet": "Chó",
   "pet_list": [
     "Chó"
   ],
-  "favorite": "Yoga",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Yoga",
-    "Âm nhạc",
-    "Mua sắm"
+    "Thể thao",
+    "Chơi game"
   ]
 }

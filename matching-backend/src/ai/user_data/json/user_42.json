@@ -1,48 +1,46 @@
 {
   "id": 42,
-  "username": "Connie.Murazik71",
-  "display_name": "Connie Murazik",
-  "email": "Connie_Murazik58@yahoo.com",
+  "username": "Marty_Pollich31",
+  "display_name": "Marty Pollich",
+  "email": "Marty.Pollich@gmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 32,
   "status": "active",
-  "about_me": "Peior copiose teres possimus.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Cử nhân",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "174",
-  "location": "Samanthafort",
+  "about_me": "Architecto demens ab conqueror templum.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "171",
+  "location": "Robelbury",
   "zodiac": "Ma Kết",
-  "character": "Nghiêm túc",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": true,
   "train": false,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Cá",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Thể thao",
-    "Yoga",
-    "Chơi game"
+    "Du lịch"
   ]
 }

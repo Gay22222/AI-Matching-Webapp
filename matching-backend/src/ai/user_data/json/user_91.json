@@ -1,48 +1,47 @@
 {
   "id": 91,
-  "username": "Boyd.Reichel12",
-  "display_name": "Boyd Reichel",
-  "email": "Boyd.Reichel89@yahoo.com",
+  "username": "Yadira_Rosenbaum",
+  "display_name": "Yadira Rosenbaum",
+  "email": "Yadira.Rosenbaum@hotmail.com",
   "birthday": null,
-  "age": 23,
+  "age": 58,
   "status": "active",
-  "about_me": "Absorbeo deputo aro.",
-  "searching_for": "Kết bạn mới",
+  "about_me": "Corpus exercitationem administratio fugiat amicitia deleo.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
+  "language": "Japanese",
+  "education": "Tiến sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "153",
-  "location": "Collierbury",
-  "zodiac": "Bò Cạp",
-  "character": "Nghiêm túc",
+  "career": "Kỹ sư phần mềm",
+  "height": "183",
+  "location": "South Abby",
+  "zodiac": "Sư Tử",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
+  "train": false,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Phim ảnh",
     "Du lịch",
-    "Yoga"
+    "Cà phê"
   ]
 }

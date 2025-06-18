@@ -1,47 +1,47 @@
 {
   "id": 52,
-  "username": "Jettie.Muller",
-  "display_name": "Jettie Muller",
-  "email": "Jettie_Muller35@hotmail.com",
+  "username": "Juana.Bergstrom",
+  "display_name": "Juana Bergstrom",
+  "email": "Juana_Bergstrom77@yahoo.com",
   "birthday": null,
-  "age": 45,
+  "age": 39,
   "status": "active",
-  "about_me": "Comptus tamquam debeo adopto.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Aspernatur candidus admoneo studio voco.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Song tính",
   "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "158",
-  "location": "West Brisaworth",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "150",
+  "location": "New Sydneeborough",
   "zodiac": "Sư Tử",
-  "character": "Tự tin",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
   "train": true,
-  "diet": "Ăn chay",
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Có",
+  "snu": "Không",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Du lịch",
-    "Yoga"
+    "Yoga",
+    "Âm nhạc"
   ]
 }

@@ -1,46 +1,46 @@
 {
   "id": 6,
-  "username": "Joel.Crona95",
-  "display_name": "Joel Crona",
-  "email": "Joel.Crona12@yahoo.com",
+  "username": "Vern_Thompson4",
+  "display_name": "Vern Thompson",
+  "email": "Vern_Thompson@yahoo.com",
   "birthday": null,
-  "age": 44,
+  "age": 50,
   "status": "active",
-  "about_me": "Substantia quos cicuta tersus tardus statua deleo nihil abeo decretum.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Turpis cena umerus.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
   "language": "Japanese",
-  "education": "Tiến sĩ",
+  "education": "Thạc sĩ",
   "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "180",
-  "location": "East Vaughn",
-  "zodiac": "Bạch Dương",
+  "career": "Kỹ sư phần mềm",
+  "height": "173",
+  "location": "South Mavis",
+  "zodiac": "Xử Nữ",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Nhiếp ảnh"
+    "Âm nhạc"
   ]
 }

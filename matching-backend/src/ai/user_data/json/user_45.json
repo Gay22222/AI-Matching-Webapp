@@ -1,40 +1,40 @@
 {
   "id": 45,
-  "username": "Carmen_Murphy18",
-  "display_name": "Carmen Murphy",
-  "email": "Carmen.Murphy6@yahoo.com",
+  "username": "Stephany_Watsica11",
+  "display_name": "Stephany Watsica",
+  "email": "Stephany_Watsica41@gmail.com",
   "birthday": null,
-  "age": 25,
+  "age": 21,
   "status": "active",
-  "about_me": "Arto amissio aegre officia cresco terra deorsum.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "195",
-  "location": "New Filomenafurt",
-  "zodiac": "Ma Kết",
-  "character": "Tự tin",
+  "about_me": "Ciminatio alter ver statim.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Song tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "178",
+  "location": "Lillatown",
+  "zodiac": "Cự Giải",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": false,
   "smoke": true,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
+  "snu": "Có",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
@@ -42,6 +42,7 @@
   "favorite": "Âm nhạc",
   "favorite_list": [
     "Âm nhạc",
-    "Nghệ thuật"
+    "Chơi game",
+    "Mua sắm"
   ]
 }

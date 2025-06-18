@@ -1,47 +1,47 @@
 {
   "id": 86,
-  "username": "Rebeca.Hahn",
-  "display_name": "Rebeca Hahn",
-  "email": "Rebeca.Hahn@hotmail.com",
+  "username": "Golda.Waters5",
+  "display_name": "Golda Waters",
+  "email": "Golda_Waters@gmail.com",
   "birthday": null,
-  "age": 19,
+  "age": 21,
   "status": "active",
-  "about_me": "Facere corpus tantum fugiat suadeo praesentium curis.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "155",
-  "location": "Geovannyfort",
-  "zodiac": "Ma Kết",
-  "character": "Điềm đạm",
+  "about_me": "Avaritia absum amiculum.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "175",
+  "location": "Irvine",
+  "zodiac": "Nhân Mã",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Hành động quan tâm"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
+  "train": true,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Chó",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Âm nhạc",
-    "Chơi game"
+    "Nấu ăn",
+    "Du lịch"
   ]
 }

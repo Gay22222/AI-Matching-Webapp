@@ -1,21 +1,21 @@
 {
   "id": 7,
-  "username": "Micaela.Heidenreich88",
-  "display_name": "Micaela Heidenreich",
-  "email": "Micaela.Heidenreich@gmail.com",
+  "username": "Melisa_Price22",
+  "display_name": "Melisa Price",
+  "email": "Melisa_Price50@gmail.com",
   "birthday": null,
-  "age": 53,
+  "age": 43,
   "status": "active",
-  "about_me": "Vesper cavus modi usque tendo adficio fugit iure soleo trucido.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
+  "about_me": "Voro veritas patior vestrum.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Thạc sĩ",
   "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "150",
-  "location": "Port Paristown",
-  "zodiac": "Bò Cạp",
+  "career": "Doanh nhân",
+  "height": "163",
+  "location": "El Cajon",
+  "zodiac": "Ma Kết",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
@@ -24,23 +24,25 @@
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": false,
   "train": true,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Thể thao"
+    "Đọc sách",
+    "Cà phê",
+    "Nhiếp ảnh"
   ]
 }

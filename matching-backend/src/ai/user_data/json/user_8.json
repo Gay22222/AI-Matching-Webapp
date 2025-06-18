@@ -1,48 +1,46 @@
 {
   "id": 8,
-  "username": "Mckenzie.Jerde30",
-  "display_name": "Mckenzie Jerde",
-  "email": "Mckenzie.Jerde33@yahoo.com",
+  "username": "Damaris_Greenfelder-Goldner",
+  "display_name": "Damaris Greenfelder-Goldner",
+  "email": "Damaris.Greenfelder-Goldner81@gmail.com",
   "birthday": null,
-  "age": 54,
+  "age": 48,
   "status": "active",
-  "about_me": "Demum ventito annus ventito dolor complectus uredo dolorem aliquid defleo.",
+  "about_me": "Tricesimus succurro demum baiulus claro conitor ipsam cenaculum assentator.",
   "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Song tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
   "religion": "Cơ đốc giáo",
   "career": "Doanh nhân",
-  "height": "198",
-  "location": "Ambroseworth",
-  "zodiac": "Cự Giải",
+  "height": "195",
+  "location": "New Zella",
+  "zodiac": "Song Ngư",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
   "future_family": "Muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "train": false,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
   "favorite": "Âm nhạc",
   "favorite_list": [
-    "Âm nhạc",
-    "Phim ảnh",
-    "Yoga"
+    "Âm nhạc"
   ]
 }

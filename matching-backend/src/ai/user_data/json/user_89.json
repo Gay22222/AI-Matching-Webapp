@@ -1,46 +1,48 @@
 {
   "id": 89,
-  "username": "Vernon.Green",
-  "display_name": "Vernon Green",
-  "email": "Vernon_Green56@hotmail.com",
+  "username": "Larry_Mertz48",
+  "display_name": "Larry Mertz",
+  "email": "Larry.Mertz26@yahoo.com",
   "birthday": null,
-  "age": 28,
+  "age": 26,
   "status": "active",
-  "about_me": "Casus studio clarus cometes vilitas.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Quia solitudo advenio culpo tametsi.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
   "sexual_orientation": "Dị tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "156",
-  "location": "South Vallietown",
-  "zodiac": "Nhân Mã",
-  "character": "Hài hước",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "189",
+  "location": "Marquardtfurt",
+  "zodiac": "Bò Cạp",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": false,
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Nấu ăn"
+    "Mua sắm",
+    "Nghệ thuật",
+    "Nhiếp ảnh"
   ]
 }

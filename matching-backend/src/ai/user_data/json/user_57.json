@@ -1,47 +1,47 @@
 {
   "id": 57,
-  "username": "Madge_DuBuque",
-  "display_name": "Madge DuBuque",
-  "email": "Madge_DuBuque56@gmail.com",
+  "username": "Leola.Wyman-Sawayn",
+  "display_name": "Leola Wyman-Sawayn",
+  "email": "Leola_Wyman-Sawayn@gmail.com",
   "birthday": null,
-  "age": 20,
+  "age": 23,
   "status": "active",
-  "about_me": "Arto demo vesco creta similique substantia solitudo cunae.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Valde conduco mollitia celo aer.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Vô tính",
   "language": "Japanese",
-  "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "188",
-  "location": "Laylamouth",
-  "zodiac": "Sư Tử",
-  "character": "Thân thiện",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "169",
+  "location": "West Addisonberg",
+  "zodiac": "Xử Nữ",
+  "character": "Điềm đạm",
   "character_list": [
-    "Thân thiện"
+    "Điềm đạm"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
   "future_family": "Không muốn con",
   "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Mua sắm",
-    "Phim ảnh"
+    "Nấu ăn",
+    "Thể thao"
   ]
 }

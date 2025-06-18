@@ -1,48 +1,46 @@
 {
   "id": 54,
-  "username": "Frankie_Kulas",
-  "display_name": "Frankie Kulas",
-  "email": "Frankie_Kulas@hotmail.com",
+  "username": "Larry.Halvorson24",
+  "display_name": "Larry Halvorson",
+  "email": "Larry.Halvorson@hotmail.com",
   "birthday": null,
-  "age": 31,
+  "age": 51,
   "status": "active",
-  "about_me": "Conventus odit et alo.",
+  "about_me": "Constans umquam sono eos aptus ulciscor subito.",
   "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
-  "language": "English",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
   "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "154",
-  "location": "Lake Misaelhaven",
-  "zodiac": "Song Ngư",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "156",
+  "location": "Garretttown",
+  "zodiac": "Xử Nữ",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
+  "smoke": false,
   "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Không",
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Chơi game",
-    "Nhiếp ảnh",
-    "Đọc sách"
+    "Nhiếp ảnh"
   ]
 }

@@ -1,21 +1,21 @@
 {
   "id": 98,
-  "username": "Susan.McCullough99",
-  "display_name": "Susan McCullough",
-  "email": "Susan.McCullough51@hotmail.com",
+  "username": "Isabelle.Prohaska88",
+  "display_name": "Isabelle Prohaska",
+  "email": "Isabelle_Prohaska@yahoo.com",
   "birthday": null,
-  "age": 45,
+  "age": 33,
   "status": "active",
-  "about_me": "Candidus amplus thymum summopere amo cervus centum tandem considero.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Ab crebro thesaurus.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
   "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "177",
-  "location": "Kertzmannworth",
-  "zodiac": "Ma Kết",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "183",
+  "location": "Fullerton",
+  "zodiac": "Bò Cạp",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
@@ -24,14 +24,14 @@
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Muốn có con",
   "drink": true,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
   "snu": "Có",
@@ -39,8 +39,9 @@
   "pet_list": [
     "Chó"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nhiếp ảnh"
+    "Yoga",
+    "Nấu ăn"
   ]
 }

@@ -1,46 +1,46 @@
 {
   "id": 58,
-  "username": "Estrella_Runte23",
-  "display_name": "Estrella Runte",
-  "email": "Estrella.Runte@hotmail.com",
+  "username": "Juvenal_Gusikowski98",
+  "display_name": "Juvenal Gusikowski",
+  "email": "Juvenal.Gusikowski@yahoo.com",
   "birthday": null,
-  "age": 33,
+  "age": 22,
   "status": "active",
-  "about_me": "Numquam cernuus quaerat tabesco et xiphias coniecto ventito voluptates.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "about_me": "Dapifer saepe combibo quaerat ustilo.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
   "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "170",
-  "location": "South Calebboro",
-  "zodiac": "Bạch Dương",
-  "character": "Nghiêm túc",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "180",
+  "location": "Beattyfurt",
+  "zodiac": "Ma Kết",
+  "character": "Hài hước",
   "character_list": [
-    "Nghiêm túc"
+    "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Hành động quan tâm"
   ],
   "future_family": "Muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": true,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Đọc sách"
+    "Phim ảnh"
   ]
 }

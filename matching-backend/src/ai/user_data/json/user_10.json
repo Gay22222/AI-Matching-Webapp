@@ -1,47 +1,47 @@
 {
   "id": 10,
-  "username": "Jody.Kautzer15",
-  "display_name": "Jody Kautzer",
-  "email": "Jody.Kautzer@hotmail.com",
+  "username": "Bernardo.Raynor",
+  "display_name": "Bernardo Raynor",
+  "email": "Bernardo_Raynor@yahoo.com",
   "birthday": null,
-  "age": 36,
+  "age": 27,
   "status": "active",
-  "about_me": "Consequuntur coadunatio adhuc.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Utrimque utrum decerno asperiores aduro.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
   "language": "English",
-  "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "161",
-  "location": "Nikkoshire",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "178",
+  "location": "West Emilianoland",
+  "zodiac": "Ma Kết",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chim",
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Nấu ăn",
-    "Đọc sách"
+    "Nghệ thuật",
+    "Mua sắm"
   ]
 }

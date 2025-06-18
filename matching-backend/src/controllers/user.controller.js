@@ -26,6 +26,7 @@ const filterSchema = Joi.object({
   sleepIds: Joi.string().allow("").optional(),
   snuIds: Joi.string().allow("").optional(),
   searchingForIds: Joi.string().allow("").optional(),
+  favoriteIds: Joi.string().allow("").optional(),
   currentUserId: Joi.number().integer().positive().optional(),
 });
 
