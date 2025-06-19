@@ -21,7 +21,7 @@ export default function ReportPage() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/reports", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_REPORT_API_URL}/api/reports`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -96,3 +96,4 @@ export default function ReportPage() {
     </main>
   );
 }
+

@@ -18,7 +18,7 @@ const Matches = () => {
       console.warn("Photo URL is missing", { photo });
       return "/default-avatar.jpg";
     }
-    return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+    return photo.startsWith("http") ? photo : `${process.env.NEXT_PUBLIC_API_URL}${photo.toLowerCase()}`;
   };
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Matches = () => {
         if (!auth?.access_token) {
           throw new Error("No access token available");
         }
-        const response = await fetch("http://localhost:3001/api/match", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/match`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${auth.access_token}`,

@@ -9,8 +9,8 @@ import * as authHelper from "./_helper";
 setupAxios(axios);
 const AuthContext = createContext(null);
 
-const LOGIN_URL = "http://localhost:3001/api/auth/login";
-const GET_USER_URL = "http://localhost:3001/api/user/me";
+const LOGIN_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`;
+const GET_USER_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/user/me`;
 
 export function AuthProvider({ children }) {
   const router = useRouter();

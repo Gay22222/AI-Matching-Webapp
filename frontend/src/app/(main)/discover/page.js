@@ -56,8 +56,8 @@ const DiscoverPage = () => {
                 });
                 const queryString = params.toString();
                 const url = queryString
-                    ? `http://localhost:3001/api/ai/recommendations?${queryString}`
-                    : `http://localhost:3001/api/ai/recommendations`;
+                    ? `${process.env.NEXT_PUBLIC_API_URL}/api/ai/recommendations?${queryString}`
+                    : `${process.env.NEXT_PUBLIC_API_URL}/api/ai/recommendations`;
 
                 console.log("Fetching recommendations with URL:", url);
                 console.log("Auth token:", auth.access_token);
@@ -149,7 +149,7 @@ const DiscoverPage = () => {
     const handleMatch = async (userId, callback) => {
         try {
             const response = await axios.post(
-                "http://localhost:3001/api/match",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/match`,
                 {
                     receiverId: userId,
                 },
@@ -196,7 +196,7 @@ const DiscoverPage = () => {
     const handleSelectProfile = async (profile) => {
         console.log("Selected profile:", profile.id);
         try {
-            const response = await axios.get(`http://localhost:3001/api/user/${profile.id}`, {
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/user/${profile.id}`, {
                 headers: {
                     Authorization: `Bearer ${auth?.access_token}`,
                 },

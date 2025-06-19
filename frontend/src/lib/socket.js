@@ -4,7 +4,7 @@ let socket;
 
 export const getSocket = () => {
     if (!socket) {
-        socket = io("http://localhost:3001", {
+        socket = io(process.env.NEXT_PUBLIC_SOCKET_URL, {
             autoConnect: true,
             reconnection: true,
         });
@@ -18,3 +18,4 @@ export const disconnectSocket = () => {
         socket = null;
     }
 };
+

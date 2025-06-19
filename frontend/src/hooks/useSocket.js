@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         if (!currentUser) return;
-        const newSocket = io("http://localhost:3001", {
+        const newSocket = io(process.env.NEXT_PUBLIC_SOCKET_URL, {
             autoConnect: false,
             reconnection: true,
         });
@@ -40,3 +40,4 @@ export const useSocket = () => {
     // }
     return context;
 };
+

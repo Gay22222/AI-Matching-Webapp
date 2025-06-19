@@ -53,7 +53,7 @@ const MessagePage = () => {
       setIsLoading(true);
       setError(null);
       const response = await fetch(
-        `http://localhost:3001/api/message/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/message/${id}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -119,7 +119,7 @@ const MessagePage = () => {
     };
     console.log("Sending message:", JSON.stringify(newMessage, null, 2)); // Debug
     try {
-      const response = await fetch(`http://localhost:3001/api/message`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/message`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

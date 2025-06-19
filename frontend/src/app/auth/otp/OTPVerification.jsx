@@ -65,7 +65,7 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
         setLoading(true);
         setError("");
         try {
-            const response = await axios.post("http://localhost:3001/api/auth/verify-otp", {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/verify-otp`, {
                 email,
                 otp: otpString,
             });

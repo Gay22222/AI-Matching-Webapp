@@ -46,7 +46,7 @@ export default function ChatWindow({ matchId, user }) {
             }
             try {
                 const res = await axios.get(
-                    `http://localhost:3001/api/rooms/${matchId}`,
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/rooms/${matchId}`,
                     {
                         headers: {
                             "Content-Type": "application/json",
@@ -74,7 +74,7 @@ export default function ChatWindow({ matchId, user }) {
                     return;
                 }
                 const res = await axios(
-                    `http://localhost:3001/api/messages?match_id=${matchId}`
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/messages?match_id=${matchId}`
                 );
                 setMessages(res.data);
             } catch (err) {
@@ -213,3 +213,4 @@ export default function ChatWindow({ matchId, user }) {
         </div>
     );
 }
+
