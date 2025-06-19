@@ -1,100 +1,87 @@
+# Docker Compose file for the matchmaking backend and its dependencies
 services:
   backend:
     build:
-      context: ../..  # Thư mục gốc
-      dockerfile: apps/backend/Dockerfile
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3001:3001"
-    depends_on:
-      db:
-        condition: service_healthy
-      redis:
-        condition: service_started
-      weaviate:
-        condition: service_healthy
-    environment:
-      - DATABASE_URL=mysql://root:123@db:3306/matchmaking_db
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-      - WEAVIATE_HOST=weaviate
-      - WEAVIATE_PORT=8080
-      - EMBEDDING_HOST=ai-server
-      - EMBEDDING_PORT=8000
-      - JWT_SECRET=your_secret
-      - EMAIL_HOST=smtp.gmail.com
-      - EMAIL_PORT=587
-      - EMAIL_USER=your_email
-      - EMAIL_PASS=your_email_pass
-      - LOG_LEVEL=info
     volumes:
-      - uploads:/app/uploads
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - mysql
+      - redis
+      - weaviate
+      - embedding
+    networks:
+      - matchmaking-network
 
-  ai-server:
+  embedding:
     build:
-      context: ../..  # Thư mục gốc
-      dockerfile: apps/backend/Dockerfile.ai
+      context: .
+      dockerfile: Dockerfile.embedding
+    platform: linux/amd64
     ports:
       - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
     depends_on:
-      redis:
-        condition: service_started
-    environment:
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-      - LOG_LEVEL=info
+      - redis
+      - weaviate
+    networks:
+      - matchmaking-network
 
-  db:
-    image: mysql:8.0.42
-    restart: always
+  mysql:
+    image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD: match@123
       MYSQL_DATABASE: matchmaking_db
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p123"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+    networks:
+      - matchmaking-network
 
   redis:
-    image: redis:alpine
-    command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
+    image: redis:7.0
     ports:
       - "6379:6379"
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+    volumes:
+      - redis-data:/data
+    networks:
+      - matchmaking-network
 
   weaviate:
-    image: semitechnologies/weaviate:1.24.1
+    image: semitechnologies/weaviate:latest
     ports:
       - "8080:8080"
-    restart: always
     environment:
-      QUERY_DEFAULTS_LIMIT: 25
-      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
-      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
-      DEFAULT_VECTORIZER_MODULE: 'none'
-      ENABLE_MODULES: ''
+      - AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true
+      - PERSISTENCE_DATA_PATH=/var/lib/weaviate
     volumes:
       - weaviate-data:/var/lib/weaviate
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/v1/.well-known/ready"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --scheme
+      - http
+    networks:
+      - matchmaking-network
 
 volumes:
   mysql-data:
+  redis-data:
   weaviate-data:
-  uploads:
-    driver: local
-    driver_opts:
-      type: none
-      device: ./Uploads
-      o: bind
+
+networks:
+  matchmaking-network:
+    driver: bridge

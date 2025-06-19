@@ -1,48 +1,46 @@
 {
   "id": 12,
-  "username": "Marielle_Hessel73",
-  "display_name": "Marielle Hessel",
-  "email": "Marielle_Hessel@hotmail.com",
+  "username": "Fay_Hudson-Dibbert",
+  "display_name": "Fay Hudson-Dibbert",
+  "email": "Fay_Hudson-Dibbert@yahoo.com",
   "birthday": null,
-  "age": 37,
+  "age": 59,
   "status": "active",
-  "about_me": "Ut vesper bellicus abutor compono argumentum synagoga comes amo denego.",
-  "searching_for": "Kết bạn mới",
+  "about_me": "Tertius aperio surgo uxor aestas claudeo armarium.",
+  "searching_for": "Mối quan hệ ngắn hạn",
   "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "162",
-  "location": "Pfannerstillfort",
-  "zodiac": "Bò Cạp",
-  "character": "Điềm đạm",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "155",
+  "location": "Port Josefina",
+  "zodiac": "Cự Giải",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Mua sắm",
-    "Nhiếp ảnh",
-    "Du lịch"
+    "Cà phê"
   ]
 }

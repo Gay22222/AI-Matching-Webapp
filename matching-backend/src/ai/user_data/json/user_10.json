@@ -1,47 +1,46 @@
 {
   "id": 10,
-  "username": "Bernardo.Raynor",
-  "display_name": "Bernardo Raynor",
-  "email": "Bernardo_Raynor@yahoo.com",
+  "username": "Stacy_Pacocha65",
+  "display_name": "Stacy Pacocha",
+  "email": "Stacy.Pacocha@yahoo.com",
   "birthday": null,
-  "age": 27,
+  "age": 28,
   "status": "active",
-  "about_me": "Utrimque utrum decerno asperiores aduro.",
+  "about_me": "Viridis magni caput ars.",
   "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Vô tính",
+  "sexual_orientation": "Dị tính",
   "language": "English",
-  "education": "Trung học phổ thông",
+  "education": "Cử nhân",
   "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "178",
-  "location": "West Emilianoland",
-  "zodiac": "Ma Kết",
-  "character": "Tự tin",
+  "career": "Bác sĩ",
+  "height": "173",
+  "location": "Lake Jazlyn",
+  "zodiac": "Bảo Bình",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": true,
-  "train": true,
+  "train": false,
   "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Cá",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Nghệ thuật",
-    "Mua sắm"
+    "Du lịch"
   ]
 }

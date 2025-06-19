@@ -1,47 +1,46 @@
 {
   "id": 73,
-  "username": "Nico.Crooks11",
-  "display_name": "Nico Crooks",
-  "email": "Nico.Crooks39@yahoo.com",
+  "username": "Delphine.Altenwerth",
+  "display_name": "Delphine Altenwerth",
+  "email": "Delphine.Altenwerth66@yahoo.com",
   "birthday": null,
-  "age": 18,
+  "age": 49,
   "status": "active",
-  "about_me": "Abbas optio capto strues adficio vetus villa pectus curiositas.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Volutabrum thema deprimo quos clementia ago atqui curia vir.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "185",
-  "location": "Vista",
-  "zodiac": "Thiên Bình",
-  "character": "Điềm đạm",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Giáo viên",
+  "height": "169",
+  "location": "Howeton",
+  "zodiac": "Sư Tử",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
-  "smoke": true,
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": false,
   "train": false,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Thể thao",
-    "Nhiếp ảnh"
+    "Mua sắm"
   ]
 }

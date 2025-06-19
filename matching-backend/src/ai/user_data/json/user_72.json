@@ -1,46 +1,47 @@
 {
   "id": 72,
-  "username": "Dasia.Conroy19",
-  "display_name": "Dasia Conroy",
-  "email": "Dasia.Conroy24@hotmail.com",
+  "username": "Yolanda_Weimann43",
+  "display_name": "Yolanda Weimann",
+  "email": "Yolanda_Weimann41@yahoo.com",
   "birthday": null,
-  "age": 27,
+  "age": 32,
   "status": "active",
-  "about_me": "Spiculum acceptus cometes aegre colligo claudeo barba demum tactus.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Super cursus accommodo spectaculum.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "166",
-  "location": "Port Babystead",
-  "zodiac": "Song Tử",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Giáo viên",
+  "height": "155",
+  "location": "South Maximus",
+  "zodiac": "Song Ngư",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
   "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nghệ thuật"
+    "Yoga",
+    "Âm nhạc"
   ]
 }

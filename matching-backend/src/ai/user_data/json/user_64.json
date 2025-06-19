@@ -1,21 +1,21 @@
 {
   "id": 64,
-  "username": "Gia_Gleichner-Hilll4",
-  "display_name": "Gia Gleichner-Hilll",
-  "email": "Gia_Gleichner-Hilll45@gmail.com",
+  "username": "Tremayne.Kling23",
+  "display_name": "Tremayne Kling",
+  "email": "Tremayne.Kling@yahoo.com",
   "birthday": null,
-  "age": 50,
+  "age": 35,
   "status": "active",
-  "about_me": "Cernuus minima voco solio supellex sopor laudantium carmen.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
-  "language": "English",
-  "education": "Thạc sĩ",
+  "about_me": "Tener tam deleo tantillus deorsum cruentus.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
+  "education": "Cử nhân",
   "religion": "Hồi giáo",
   "career": "Giáo viên",
-  "height": "162",
-  "location": "Irvingview",
-  "zodiac": "Xử Nữ",
+  "height": "179",
+  "location": "Jacksonville",
+  "zodiac": "Kim Ngưu",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
@@ -24,24 +24,23 @@
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Nhiếp ảnh",
     "Phim ảnh"
   ]
 }

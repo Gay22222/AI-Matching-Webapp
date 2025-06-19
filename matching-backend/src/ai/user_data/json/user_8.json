@@ -1,46 +1,47 @@
 {
   "id": 8,
-  "username": "Damaris_Greenfelder-Goldner",
-  "display_name": "Damaris Greenfelder-Goldner",
-  "email": "Damaris.Greenfelder-Goldner81@gmail.com",
+  "username": "Ayana_Stehr52",
+  "display_name": "Ayana Stehr",
+  "email": "Ayana.Stehr@hotmail.com",
   "birthday": null,
-  "age": 48,
+  "age": 31,
   "status": "active",
-  "about_me": "Tricesimus succurro demum baiulus claro conitor ipsam cenaculum assentator.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "about_me": "Sonitus defessus absconditus.",
+  "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Trung học phổ thông",
+  "education": "Tiến sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "195",
-  "location": "New Zella",
-  "zodiac": "Song Ngư",
-  "character": "Thân thiện",
+  "career": "Kỹ sư phần mềm",
+  "height": "174",
+  "location": "Joanyview",
+  "zodiac": "Nhân Mã",
+  "character": "Hài hước",
   "character_list": [
-    "Thân thiện"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
   "love_language": "Thời gian chất lượng",
   "love_language_list": [
     "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Chim",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Âm nhạc"
+    "Nấu ăn",
+    "Phim ảnh"
   ]
 }

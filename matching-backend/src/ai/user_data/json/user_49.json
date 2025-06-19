@@ -1,24 +1,24 @@
 {
   "id": 49,
-  "username": "Karlie_Barton",
-  "display_name": "Karlie Barton",
-  "email": "Karlie.Barton@hotmail.com",
+  "username": "Amely_Jacobson-Lebsack17",
+  "display_name": "Amely Jacobson-Lebsack",
+  "email": "Amely_Jacobson-Lebsack47@gmail.com",
   "birthday": null,
-  "age": 34,
+  "age": 18,
   "status": "active",
-  "about_me": "Odit contigo depraedor despecto sequi tricesimus.",
+  "about_me": "Sol suus unde trado cicuta colligo defetiscor dignissimos voluptatibus.",
   "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "193",
-  "location": "Zemlakville",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "150",
+  "location": "Kingview",
+  "zodiac": "Xử Nữ",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
@@ -32,17 +32,16 @@
   "drink": true,
   "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Có",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Mua sắm",
-    "Nghệ thuật",
-    "Du lịch"
+    "Du lịch",
+    "Chơi game"
   ]
 }

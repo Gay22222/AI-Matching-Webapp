@@ -1,46 +1,46 @@
 {
   "id": 41,
-  "username": "Sammy.Boyer",
-  "display_name": "Sammy Boyer",
-  "email": "Sammy_Boyer@yahoo.com",
+  "username": "Ellie.Weissnat",
+  "display_name": "Ellie Weissnat",
+  "email": "Ellie.Weissnat75@yahoo.com",
   "birthday": null,
-  "age": 18,
+  "age": 54,
   "status": "active",
-  "about_me": "Argentum peccatus architecto demo arguo adversus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
+  "about_me": "Spoliatio ustulo nam vicissitudo sonitus.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
   "education": "Tiến sĩ",
   "religion": "Phật giáo",
   "career": "Giáo viên",
-  "height": "171",
-  "location": "Palo Alto",
-  "zodiac": "Kim Ngưu",
+  "height": "158",
+  "location": "East Kaycee",
+  "zodiac": "Sư Tử",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Yoga",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Yoga"
+    "Cà phê"
   ]
 }

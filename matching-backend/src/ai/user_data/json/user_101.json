@@ -1,22 +1,22 @@
 {
   "id": 101,
   "username": "vietkuaq@gmail.com",
-  "display_name": "Quang ngáo",
+  "display_name": "vietkuaq@gmail.com",
   "email": "vietkuaq@gmail.com",
-  "birthday": "2005-12-02T00:00:00.000Z",
-  "age": 22,
+  "birthday": "2003-12-02T00:00:00.000Z",
+  "age": 20,
   "status": "active",
-  "about_me": "",
+  "about_me": "Tôi là gay",
   "language": "Vietnamese",
-  "education": "Trung học phổ thông",
+  "education": "Cử nhân",
   "religion": "Cơ đốc giáo",
   "career": "Kỹ sư phần mềm",
   "height": null,
-  "location": "",
+  "location": "Trung Quốc",
   "zodiac": "Bạch Dương",
-  "character": "Hài hước",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
@@ -26,17 +26,20 @@
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": false,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chó",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "",
-  "favorite_list": []
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Nhiếp ảnh"
+  ]
 }

@@ -1,48 +1,46 @@
 {
   "id": 7,
-  "username": "Melisa_Price22",
-  "display_name": "Melisa Price",
-  "email": "Melisa_Price50@gmail.com",
+  "username": "Tressa_Fritsch",
+  "display_name": "Tressa Fritsch",
+  "email": "Tressa.Fritsch13@yahoo.com",
   "birthday": null,
-  "age": 43,
+  "age": 49,
   "status": "active",
-  "about_me": "Voro veritas patior vestrum.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
+  "about_me": "Talio degero laudantium celebrer uxor sollicito subvenio ait umquam aduro.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
   "language": "English",
-  "education": "Thạc sĩ",
+  "education": "Cử nhân",
   "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "163",
-  "location": "El Cajon",
-  "zodiac": "Ma Kết",
-  "character": "Thân thiện",
+  "career": "Bác sĩ",
+  "height": "155",
+  "location": "Shanaberg",
+  "zodiac": "Bạch Dương",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Đọc sách",
-    "Cà phê",
-    "Nhiếp ảnh"
+    "Nấu ăn"
   ]
 }

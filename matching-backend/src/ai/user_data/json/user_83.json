@@ -1,47 +1,47 @@
 {
   "id": 83,
-  "username": "Luciano_Prosacco",
-  "display_name": "Luciano Prosacco",
-  "email": "Luciano.Prosacco@yahoo.com",
+  "username": "Dagmar.Leuschke75",
+  "display_name": "Dagmar Leuschke",
+  "email": "Dagmar_Leuschke84@gmail.com",
   "birthday": null,
-  "age": 19,
+  "age": 40,
   "status": "active",
-  "about_me": "Creber occaecati trepide conduco delibero valde vehemens.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Subseco absque nostrum conitor.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "162",
-  "location": "South Hiram",
-  "zodiac": "Bạch Dương",
-  "character": "Thân thiện",
+  "height": "166",
+  "location": "Haleyfort",
+  "zodiac": "Nhân Mã",
+  "character": "Tự tin",
   "character_list": [
-    "Thân thiện"
+    "Tự tin"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Muốn có con",
   "drink": true,
   "smoke": true,
   "train": true,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chó",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Chơi game",
-    "Mua sắm"
+    "Cà phê",
+    "Nghệ thuật"
   ]
 }

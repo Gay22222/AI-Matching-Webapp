@@ -1,48 +1,46 @@
 {
   "id": 26,
-  "username": "Jerrod.Kemmer",
-  "display_name": "Jerrod Kemmer",
-  "email": "Jerrod.Kemmer@yahoo.com",
+  "username": "Jillian.Ward50",
+  "display_name": "Jillian Ward",
+  "email": "Jillian.Ward37@hotmail.com",
   "birthday": null,
-  "age": 39,
+  "age": 56,
   "status": "active",
-  "about_me": "Surculus aggredior dolorem crinis.",
-  "searching_for": "Mối quan hệ lâu dài",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
-  "education": "Trung học phổ thông",
+  "about_me": "Abscido ulterius turbo verumtamen aqua corroboro defessus.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
   "religion": "Cơ đốc giáo",
   "career": "Giáo viên",
-  "height": "172",
-  "location": "East Eldridgeburgh",
+  "height": "162",
+  "location": "Lake Arnotown",
   "zodiac": "Bò Cạp",
-  "character": "Tự tin",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Thẳng thắn"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": true,
   "train": true,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Cá",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Du lịch",
-    "Nấu ăn",
-    "Âm nhạc"
+    "Phim ảnh"
   ]
 }

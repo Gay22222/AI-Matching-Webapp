@@ -1,48 +1,46 @@
 {
   "id": 48,
-  "username": "Ashlynn.Murphy",
-  "display_name": "Ashlynn Murphy",
-  "email": "Ashlynn.Murphy@hotmail.com",
+  "username": "Everette.Feeney",
+  "display_name": "Everette Feeney",
+  "email": "Everette_Feeney@gmail.com",
   "birthday": null,
-  "age": 45,
+  "age": 60,
   "status": "active",
-  "about_me": "Deripio tenetur similique arca attollo abeo.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
+  "about_me": "Allatus utroque exercitationem amplus similique convoco adinventitias ambulo.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
   "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "171",
-  "location": "Port Afton",
-  "zodiac": "Kim Ngưu",
-  "character": "Tự tin",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "198",
+  "location": "East Ardithfort",
+  "zodiac": "Bạch Dương",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn mặn",
+  "drink": false,
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Mèo",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Nấu ăn",
-    "Đọc sách",
-    "Thể thao"
+    "Đọc sách"
   ]
 }

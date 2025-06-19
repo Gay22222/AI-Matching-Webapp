@@ -1,46 +1,48 @@
 {
   "id": 29,
-  "username": "Jordi_Homenick",
-  "display_name": "Jordi Homenick",
-  "email": "Jordi_Homenick@hotmail.com",
+  "username": "Lottie.Zemlak",
+  "display_name": "Lottie Zemlak",
+  "email": "Lottie_Zemlak@hotmail.com",
   "birthday": null,
   "age": 27,
   "status": "active",
-  "about_me": "Rem unde talus vomica vel doloremque accusator tergum.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Thạc sĩ",
+  "about_me": "Statim vitae cotidie vulgivagus damnatio tabula comparo.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
   "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "179",
-  "location": "Mayerfield",
-  "zodiac": "Bảo Bình",
-  "character": "Hài hước",
+  "career": "Doanh nhân",
+  "height": "163",
+  "location": "New Antoninamouth",
+  "zodiac": "Bò Cạp",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
   "future_family": "Không muốn con",
   "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chó",
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Không",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
   "favorite": "Đọc sách",
   "favorite_list": [
-    "Đọc sách"
+    "Đọc sách",
+    "Phim ảnh",
+    "Mua sắm"
   ]
 }

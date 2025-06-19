@@ -1,5 +1,4 @@
 node_modules
 uploads
 .git
-.env
 dist

@@ -1,47 +1,48 @@
 {
   "id": 57,
-  "username": "Leola.Wyman-Sawayn",
-  "display_name": "Leola Wyman-Sawayn",
-  "email": "Leola_Wyman-Sawayn@gmail.com",
+  "username": "Estefania.Okuneva57",
+  "display_name": "Estefania Okuneva",
+  "email": "Estefania_Okuneva84@gmail.com",
   "birthday": null,
-  "age": 23,
+  "age": 36,
   "status": "active",
-  "about_me": "Valde conduco mollitia celo aer.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Cura velut assumenda acceptus benigne.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
   "career": "Doanh nhân",
-  "height": "169",
-  "location": "West Addisonberg",
-  "zodiac": "Xử Nữ",
+  "height": "160",
+  "location": "East Omerburgh",
+  "zodiac": "Bò Cạp",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
-  "drink": false,
+  "future_family": "Muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn chay",
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chim",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
   "favorite": "Nấu ăn",
   "favorite_list": [
     "Nấu ăn",
-    "Thể thao"
+    "Phim ảnh",
+    "Chơi game"
   ]
 }

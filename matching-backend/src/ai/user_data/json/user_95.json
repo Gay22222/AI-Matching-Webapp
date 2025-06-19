@@ -1,24 +1,24 @@
 {
   "id": 95,
-  "username": "Kaycee_Green",
-  "display_name": "Kaycee Green",
-  "email": "Kaycee_Green@yahoo.com",
+  "username": "Audrey.Tillman",
+  "display_name": "Audrey Tillman",
+  "email": "Audrey.Tillman72@gmail.com",
   "birthday": null,
-  "age": 27,
+  "age": 39,
   "status": "active",
-  "about_me": "Socius pecto apparatus volaticus spectaculum.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Comprehendo baiulus subiungo vinco altus arbor ancilla.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
   "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "164",
-  "location": "Chico",
-  "zodiac": "Kim Ngưu",
-  "character": "Hài hước",
+  "career": "Doanh nhân",
+  "height": "199",
+  "location": "West Khalid",
+  "zodiac": "Song Ngư",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
@@ -29,20 +29,20 @@
     "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
+  "sleep": "Cú đêm",
+  "snu": "Có",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Chơi game",
-    "Nhiếp ảnh",
+    "Đọc sách",
+    "Nghệ thuật",
     "Nấu ăn"
   ]
 }

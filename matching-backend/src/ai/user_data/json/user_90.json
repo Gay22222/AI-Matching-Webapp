@@ -1,46 +1,48 @@
 {
   "id": 90,
-  "username": "Josh.Feest28",
-  "display_name": "Josh Feest",
-  "email": "Josh.Feest@hotmail.com",
+  "username": "Alexandra_Rempel",
+  "display_name": "Alexandra Rempel",
+  "email": "Alexandra.Rempel@hotmail.com",
   "birthday": null,
-  "age": 46,
+  "age": 60,
   "status": "active",
-  "about_me": "Solitudo iusto tres crur subiungo beatus cognomen.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
+  "about_me": "Corporis vos tergum turpis creptio defero officia sumptus caries.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "173",
-  "location": "Grand Prairie",
-  "zodiac": "Bò Cạp",
-  "character": "Tự tin",
+  "height": "181",
+  "location": "San Bruno",
+  "zodiac": "Xử Nữ",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
   "train": true,
-  "diet": "Ăn mặn",
+  "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
   "snu": "Không",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Nấu ăn"
+    "Chơi game",
+    "Mua sắm",
+    "Du lịch"
   ]
 }

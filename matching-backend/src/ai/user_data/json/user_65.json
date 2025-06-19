@@ -1,47 +1,46 @@
 {
   "id": 65,
-  "username": "Freddie_Ratke",
-  "display_name": "Freddie Ratke",
-  "email": "Freddie_Ratke@hotmail.com",
+  "username": "Constantin.Paucek90",
+  "display_name": "Constantin Paucek",
+  "email": "Constantin.Paucek86@hotmail.com",
   "birthday": null,
-  "age": 27,
+  "age": 55,
   "status": "active",
-  "about_me": "Cresco substantia contabesco stabilis arguo reiciendis velum patruus.",
+  "about_me": "Nulla caecus trucido cubo caelestis appositus.",
   "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Dị tính",
   "language": "English",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
   "career": "Doanh nhân",
-  "height": "155",
-  "location": "Velvaton",
-  "zodiac": "Xử Nữ",
-  "character": "Hài hước",
+  "height": "184",
+  "location": "New Dashawn",
+  "zodiac": "Cự Giải",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Quà tặng"
+    "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
+  "drink": false,
+  "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Chim",
+  "snu": "Có",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
   "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Nghệ thuật",
-    "Phim ảnh"
+    "Nghệ thuật"
   ]
 }

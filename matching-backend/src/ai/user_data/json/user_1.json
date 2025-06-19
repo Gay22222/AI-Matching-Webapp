@@ -1,40 +1,40 @@
 {
   "id": 1,
-  "username": "Maureen.Champlin",
-  "display_name": "Maureen Champlin",
-  "email": "Maureen.Champlin64@hotmail.com",
+  "username": "Kenyon.Frami75",
+  "display_name": "Kenyon Frami",
+  "email": "Kenyon_Frami@yahoo.com",
   "birthday": null,
-  "age": 42,
+  "age": 56,
   "status": "active",
-  "about_me": "Hic repellat tertius civis agnitio caecus.",
+  "about_me": "Odio nostrum absconditus reprehenderit teneo cimentarius vilis tripudio.",
   "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Dị tính",
+  "sexual_orientation": "Đồng tính",
   "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "153",
-  "location": "Gilbert",
-  "zodiac": "Bảo Bình",
-  "character": "Nghiêm túc",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Doanh nhân",
+  "height": "162",
+  "location": "Glen Burnie",
+  "zodiac": "Bò Cạp",
+  "character": "Hài hước",
   "character_list": [
-    "Nghiêm túc"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Quà tặng"
+    "Hành động quan tâm"
   ],
   "future_family": "Muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
   "pet": "Chó",
   "pet_list": [
     "Chó"
@@ -42,6 +42,6 @@
   "favorite": "Nấu ăn",
   "favorite_list": [
     "Nấu ăn",
-    "Thể thao"
+    "Mua sắm"
   ]
 }

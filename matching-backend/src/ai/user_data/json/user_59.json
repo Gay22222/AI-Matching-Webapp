@@ -1,48 +1,48 @@
 {
   "id": 59,
-  "username": "Kimberly.Cronin73",
-  "display_name": "Kimberly Cronin",
-  "email": "Kimberly_Cronin1@gmail.com",
+  "username": "Malinda.Marvin",
+  "display_name": "Malinda Marvin",
+  "email": "Malinda.Marvin24@hotmail.com",
   "birthday": null,
-  "age": 57,
+  "age": 60,
   "status": "active",
-  "about_me": "Conventus tempore casus vis damno admoveo repudiandae admitto.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Ter cultura cado absens perspiciatis.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Đồng tính",
   "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "152",
-  "location": "Taylorsville",
-  "zodiac": "Xử Nữ",
-  "character": "Hài hước",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "190",
+  "location": "Nikolausshire",
+  "zodiac": "Thiên Bình",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
+  "future_family": "Muốn có con",
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn kiêng",
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chim",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nấu ăn",
-    "Du lịch",
-    "Cà phê"
+    "Thể thao",
+    "Phim ảnh",
+    "Mua sắm"
   ]
 }

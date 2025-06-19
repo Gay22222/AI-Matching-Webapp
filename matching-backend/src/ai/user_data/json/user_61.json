@@ -1,24 +1,24 @@
 {
   "id": 61,
-  "username": "Kenton_Johnson-Block83",
-  "display_name": "Kenton Johnson-Block",
-  "email": "Kenton_Johnson-Block18@hotmail.com",
+  "username": "Rodrigo_Schaefer",
+  "display_name": "Rodrigo Schaefer",
+  "email": "Rodrigo.Schaefer@gmail.com",
   "birthday": null,
-  "age": 45,
+  "age": 18,
   "status": "active",
-  "about_me": "Illo callide cinis.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
+  "about_me": "Eligendi comburo corrigo.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
   "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
+  "religion": "Ấn Độ giáo",
   "career": "Bác sĩ",
-  "height": "178",
-  "location": "Maritzaton",
-  "zodiac": "Bảo Bình",
-  "character": "Hài hước",
+  "height": "175",
+  "location": "Lake German",
+  "zodiac": "Nhân Mã",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
@@ -28,19 +28,21 @@
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
   "smoke": true,
   "train": true,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Cá",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Nghệ thuật"
+    "Nấu ăn",
+    "Cà phê",
+    "Phim ảnh"
   ]
 }

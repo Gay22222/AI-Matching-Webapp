@@ -1,46 +1,48 @@
 {
   "id": 77,
-  "username": "Francesco_Gutmann95",
-  "display_name": "Francesco Gutmann",
-  "email": "Francesco_Gutmann58@gmail.com",
+  "username": "Tate_Osinski14",
+  "display_name": "Tate Osinski",
+  "email": "Tate_Osinski@hotmail.com",
   "birthday": null,
-  "age": 42,
+  "age": 59,
   "status": "active",
-  "about_me": "Cicuta clarus venustas bellicus.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "about_me": "Carus vito sed eius coma.",
+  "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
-  "career": "Bác sĩ",
-  "height": "191",
-  "location": "Mayertfield",
-  "zodiac": "Xử Nữ",
-  "character": "Điềm đạm",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "156",
+  "location": "Huelview",
+  "zodiac": "Bảo Bình",
+  "character": "Tự tin",
   "character_list": [
-    "Điềm đạm"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Lời nói yêu thương",
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Mèo",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Âm nhạc"
+    "Cà phê",
+    "Yoga",
+    "Phim ảnh"
   ]
 }

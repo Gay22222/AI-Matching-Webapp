@@ -1,46 +1,47 @@
 {
   "id": 68,
-  "username": "Trevor.Zemlak",
-  "display_name": "Trevor Zemlak",
-  "email": "Trevor_Zemlak77@hotmail.com",
+  "username": "Ethel_Brekke",
+  "display_name": "Ethel Brekke",
+  "email": "Ethel.Brekke@yahoo.com",
   "birthday": null,
-  "age": 25,
+  "age": 49,
   "status": "active",
-  "about_me": "Tripudio casso damnatio delectatio comis crepusculum aeger.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Vô tính",
+  "about_me": "Vinum odit ocer cernuus.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Cử nhân",
+  "education": "Tiến sĩ",
   "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "178",
-  "location": "Tillmanview",
-  "zodiac": "Xử Nữ",
+  "career": "Kỹ sư phần mềm",
+  "height": "177",
+  "location": "Fort Erichton",
+  "zodiac": "Kim Ngưu",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Không muốn con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": true,
-  "diet": "Ăn mặn",
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Nấu ăn"
+    "Cà phê",
+    "Nhiếp ảnh"
   ]
 }

@@ -1,46 +1,48 @@
 {
   "id": 6,
-  "username": "Vern_Thompson4",
-  "display_name": "Vern Thompson",
-  "email": "Vern_Thompson@yahoo.com",
+  "username": "Eino_Nienow",
+  "display_name": "Eino Nienow",
+  "email": "Eino.Nienow@yahoo.com",
   "birthday": null,
-  "age": 50,
+  "age": 23,
   "status": "active",
-  "about_me": "Turpis cena umerus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Song tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Phật giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "173",
-  "location": "South Mavis",
-  "zodiac": "Xử Nữ",
-  "character": "Điềm đạm",
+  "about_me": "Aut cura decretum iure.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "188",
+  "location": "St. Louis",
+  "zodiac": "Kim Ngưu",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
-  "train": true,
+  "drink": true,
+  "smoke": true,
+  "train": false,
   "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chó",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Âm nhạc"
+    "Nghệ thuật",
+    "Chơi game",
+    "Đọc sách"
   ]
 }

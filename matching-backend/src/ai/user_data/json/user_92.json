@@ -1,46 +1,47 @@
 {
   "id": 92,
-  "username": "Vladimir_Mayert18",
-  "display_name": "Vladimir Mayert",
-  "email": "Vladimir.Mayert69@hotmail.com",
+  "username": "Hector.Corwin39",
+  "display_name": "Hector Corwin",
+  "email": "Hector.Corwin1@yahoo.com",
   "birthday": null,
-  "age": 35,
+  "age": 51,
   "status": "active",
-  "about_me": "Attollo uredo patrocinor tergum chirographum tondeo appono voluptatum in.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "194",
-  "location": "Grantcester",
+  "about_me": "Cometes stultus aeternus.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Dị tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "187",
+  "location": "South Rickieport",
   "zodiac": "Bảo Bình",
-  "character": "Thân thiện",
+  "character": "Tự tin",
   "character_list": [
-    "Thân thiện"
+    "Tự tin"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": false,
+  "future_family": "Không muốn con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
   "diet": "Ăn kiêng",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Chim",
+  "pet": "Mèo",
   "pet_list": [
-    "Chim"
+    "Mèo"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Mua sắm"
+    "Nghệ thuật",
+    "Thể thao"
   ]
 }

@@ -1,46 +1,47 @@
 {
   "id": 34,
-  "username": "Elwin.Harber",
-  "display_name": "Elwin Harber",
-  "email": "Elwin_Harber72@hotmail.com",
+  "username": "Dorothea.Leannon",
+  "display_name": "Dorothea Leannon",
+  "email": "Dorothea_Leannon56@hotmail.com",
   "birthday": null,
-  "age": 32,
+  "age": 20,
   "status": "active",
-  "about_me": "Vix venio addo illum.",
+  "about_me": "Cetera cornu absum harum addo atqui tepesco pectus tabesco taedium.",
   "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Tiến sĩ",
+  "education": "Thạc sĩ",
   "religion": "Hồi giáo",
-  "career": "Giáo viên",
+  "career": "Doanh nhân",
   "height": "188",
-  "location": "Fort Fletaville",
-  "zodiac": "Bò Cạp",
-  "character": "Điềm đạm",
+  "location": "Carlsbad",
+  "zodiac": "Xử Nữ",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
-  "drink": false,
+  "future_family": "Chưa muốn có con",
+  "drink": true,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Chó",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Phim ảnh"
+    "Mua sắm",
+    "Nấu ăn"
   ]
 }

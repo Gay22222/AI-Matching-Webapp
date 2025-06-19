@@ -1,48 +1,46 @@
 {
   "id": 79,
-  "username": "Belle_Bechtelar",
-  "display_name": "Belle Bechtelar",
-  "email": "Belle_Bechtelar@gmail.com",
+  "username": "Bernard.Cormier52",
+  "display_name": "Bernard Cormier",
+  "email": "Bernard_Cormier@yahoo.com",
   "birthday": null,
-  "age": 58,
+  "age": 41,
   "status": "active",
-  "about_me": "Agnitio corroboro autus ait aetas solus pauper.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Song tính",
+  "about_me": "Cogo supra facere volutabrum voco colligo deficio.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Đồng tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
   "career": "Giáo viên",
-  "height": "152",
-  "location": "West Juvenal",
-  "zodiac": "Song Tử",
-  "character": "Hài hước",
+  "height": "157",
+  "location": "New Blanchetown",
+  "zodiac": "Xử Nữ",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Không muốn con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nấu ăn",
-    "Nhiếp ảnh",
     "Thể thao"
   ]
 }

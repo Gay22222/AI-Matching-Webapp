@@ -1,47 +1,48 @@
 {
   "id": 100,
-  "username": "Everette.Hahn",
-  "display_name": "Everette Hahn",
-  "email": "Everette_Hahn78@yahoo.com",
+  "username": "Assunta.DAmore20",
+  "display_name": "Assunta D'Amore",
+  "email": "Assunta.DAmore35@yahoo.com",
   "birthday": null,
-  "age": 36,
+  "age": 44,
   "status": "active",
-  "about_me": "Pauci textilis cursus delectatio stultus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Blanditiis vociferor tantillus vulgo.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Vô tính",
   "language": "English",
   "education": "Trung học phổ thông",
   "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "185",
-  "location": "West Myah",
-  "zodiac": "Bò Cạp",
-  "character": "Hài hước",
+  "career": "Bác sĩ",
+  "height": "199",
+  "location": "New Marc",
+  "zodiac": "Thiên Bình",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Biết chia sẻ"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
-  "train": true,
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
+  "train": false,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chó",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Nấu ăn"
+    "Yoga",
+    "Nghệ thuật",
+    "Thể thao"
   ]
 }

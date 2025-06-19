@@ -1,46 +1,48 @@
 {
   "id": 66,
-  "username": "Trycia_Volkman",
-  "display_name": "Trycia Volkman",
-  "email": "Trycia_Volkman@gmail.com",
+  "username": "Golden_Reynolds35",
+  "display_name": "Golden Reynolds",
+  "email": "Golden_Reynolds@yahoo.com",
   "birthday": null,
-  "age": 40,
+  "age": 23,
   "status": "active",
-  "about_me": "Audeo clibanus apparatus delego.",
-  "searching_for": "Mối quan hệ lâu dài",
+  "about_me": "Fuga cito delibero speciosus urbs votum carus nemo.",
+  "searching_for": "Kết bạn mới",
   "sexual_orientation": "Vô tính",
-  "language": "English",
+  "language": "Japanese",
   "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "154",
-  "location": "Effertzview",
-  "zodiac": "Bò Cạp",
-  "character": "Nghiêm túc",
+  "religion": "Hồi giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "184",
+  "location": "Aliciaboro",
+  "zodiac": "Song Ngư",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": false,
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": true,
   "train": true,
   "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Đọc sách"
+    "Cà phê",
+    "Âm nhạc",
+    "Du lịch"
   ]
 }

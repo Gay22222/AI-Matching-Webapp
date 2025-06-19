@@ -1,21 +1,21 @@
 {
   "id": 13,
-  "username": "Edythe_Lueilwitz",
-  "display_name": "Edythe Lueilwitz",
-  "email": "Edythe.Lueilwitz@gmail.com",
+  "username": "Leland.Aufderhar",
+  "display_name": "Leland Aufderhar",
+  "email": "Leland.Aufderhar84@yahoo.com",
   "birthday": null,
-  "age": 21,
+  "age": 35,
   "status": "active",
-  "about_me": "Tener ara audentia in caecus templum solutio vox surculus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
+  "about_me": "Derelinquo statim defessus provident sui coruscus communis voro.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
   "education": "Trung học phổ thông",
-  "religion": "Hồi giáo",
+  "religion": "Ấn Độ giáo",
   "career": "Giáo viên",
-  "height": "186",
-  "location": "Wellington",
-  "zodiac": "Bảo Bình",
+  "height": "185",
+  "location": "East Shawna",
+  "zodiac": "Song Tử",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
@@ -24,25 +24,25 @@
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
-  "future_family": "Không muốn con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Du lịch",
-    "Thể thao"
+    "Cà phê",
+    "Phim ảnh",
+    "Yoga"
   ]
 }

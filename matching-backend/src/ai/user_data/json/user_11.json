@@ -1,46 +1,48 @@
 {
   "id": 11,
-  "username": "Ciara.Wintheiser",
-  "display_name": "Ciara Wintheiser",
-  "email": "Ciara_Wintheiser@yahoo.com",
+  "username": "Barbara_Flatley",
+  "display_name": "Barbara Flatley",
+  "email": "Barbara_Flatley38@yahoo.com",
   "birthday": null,
-  "age": 29,
+  "age": 19,
   "status": "active",
-  "about_me": "Demulceo contabesco voluptate urbs depraedor somnus.",
+  "about_me": "Eaque bestia demulceo vivo colo cogito demum basium vilitas.",
   "searching_for": "Kết bạn mới",
   "sexual_orientation": "Vô tính",
   "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "190",
-  "location": "South Zane",
-  "zodiac": "Song Tử",
+  "education": "Tiến sĩ",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "178",
+  "location": "New Rodrick",
+  "zodiac": "Xử Nữ",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
   "future_family": "Muốn có con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": true,
   "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Không",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Đọc sách"
+    "Nấu ăn",
+    "Yoga",
+    "Nhiếp ảnh"
   ]
 }

@@ -1,47 +1,48 @@
 {
   "id": 87,
-  "username": "Francis_Kling31",
-  "display_name": "Francis Kling",
-  "email": "Francis.Kling85@hotmail.com",
+  "username": "Darien_Rempel",
+  "display_name": "Darien Rempel",
+  "email": "Darien.Rempel@yahoo.com",
   "birthday": null,
-  "age": 60,
+  "age": 21,
   "status": "active",
-  "about_me": "Constans vulgivagus curis adhuc vere eveniet.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Tertius sonitus vomer vulnero temeritas virtus arguo tollo corpus atqui.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Song tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "187",
-  "location": "Leopoldton",
-  "zodiac": "Song Tử",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "193",
+  "location": "Greenfelderville",
+  "zodiac": "Thiên Bình",
   "character": "Nghiêm túc",
   "character_list": [
     "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": false,
+  "smoke": true,
   "train": true,
   "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chim",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Yoga",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Yoga",
-    "Phim ảnh"
+    "Thể thao",
+    "Phim ảnh",
+    "Du lịch"
   ]
 }

@@ -1,47 +1,47 @@
 {
   "id": 43,
-  "username": "Lavern_Swift",
-  "display_name": "Lavern Swift",
-  "email": "Lavern.Swift99@gmail.com",
+  "username": "Melyssa.Deckow",
+  "display_name": "Melyssa Deckow",
+  "email": "Melyssa.Deckow5@yahoo.com",
   "birthday": null,
-  "age": 25,
+  "age": 60,
   "status": "active",
-  "about_me": "Adduco audax curiositas suasoria torrens cauda.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Phật giáo",
-  "career": "Doanh nhân",
-  "height": "177",
-  "location": "Toyworth",
-  "zodiac": "Sư Tử",
-  "character": "Tự tin",
+  "about_me": "Voluptates derelinquo tabernus quos vereor.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Tiến sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "165",
+  "location": "Faheyberg",
+  "zodiac": "Thiên Bình",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Hành động quan tâm"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": true,
   "train": true,
-  "diet": "Ăn chay",
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Chó",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Đọc sách",
-    "Thể thao"
+    "Âm nhạc",
+    "Đọc sách"
   ]
 }

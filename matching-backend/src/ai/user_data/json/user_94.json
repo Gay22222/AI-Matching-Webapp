@@ -1,47 +1,47 @@
 {
   "id": 94,
-  "username": "Marjolaine_Ziemann",
-  "display_name": "Marjolaine Ziemann",
-  "email": "Marjolaine.Ziemann93@yahoo.com",
+  "username": "Cecilia.Hyatt",
+  "display_name": "Cecilia Hyatt",
+  "email": "Cecilia_Hyatt64@hotmail.com",
   "birthday": null,
-  "age": 59,
+  "age": 54,
   "status": "active",
-  "about_me": "Conservo unde decimus cunctatio utrum turbo debitis vita.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Song tính",
-  "language": "English",
+  "about_me": "Arguo adicio cunabula curia aranea antepono cilicium solitudo vobis distinctio.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
   "education": "Trung học phổ thông",
   "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "158",
-  "location": "New Christopmouth",
-  "zodiac": "Thiên Bình",
-  "character": "Điềm đạm",
+  "career": "Doanh nhân",
+  "height": "163",
+  "location": "Botsfordworth",
+  "zodiac": "Ma Kết",
+  "character": "Hài hước",
   "character_list": [
-    "Điềm đạm"
+    "Hài hước"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
   "love_language": "Lời nói yêu thương",
   "love_language_list": [
     "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": false,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "future_family": "Không muốn con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
   "snu": "Không",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Nghệ thuật",
-    "Thể thao"
+    "Nấu ăn",
+    "Phim ảnh"
   ]
 }

@@ -1,46 +1,46 @@
 {
   "id": 3,
-  "username": "Joaquin_Kautzer71",
-  "display_name": "Joaquin Kautzer",
-  "email": "Joaquin.Kautzer72@gmail.com",
+  "username": "Keith_Orn",
+  "display_name": "Keith Orn",
+  "email": "Keith_Orn@hotmail.com",
   "birthday": null,
-  "age": 18,
+  "age": 28,
   "status": "active",
-  "about_me": "Addo asporto accommodo peior.",
+  "about_me": "Crebro abundans civitas conculco explicabo adinventitias animus.",
   "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "200",
-  "location": "Feilberg",
-  "zodiac": "Bạch Dương",
-  "character": "Nghiêm túc",
+  "language": "English",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "165",
+  "location": "East Josianneport",
+  "zodiac": "Nhân Mã",
+  "character": "Tự tin",
   "character_list": [
-    "Nghiêm túc"
+    "Tự tin"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Mèo"
+    "Chó"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Chơi game"
+    "Âm nhạc"
   ]
 }

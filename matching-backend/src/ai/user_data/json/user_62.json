@@ -1,46 +1,46 @@
 {
   "id": 62,
-  "username": "Nat.Boyer-Runte71",
-  "display_name": "Nat Boyer-Runte",
-  "email": "Nat.Boyer-Runte@yahoo.com",
+  "username": "Lindsay_Nicolas",
+  "display_name": "Lindsay Nicolas",
+  "email": "Lindsay.Nicolas@hotmail.com",
   "birthday": null,
-  "age": 37,
+  "age": 41,
   "status": "active",
-  "about_me": "Varietas soluta cultellus aggero arceo eveniet.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Song tính",
+  "about_me": "Vaco ustulo abeo.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Dị tính",
   "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "154",
-  "location": "West Jordan",
-  "zodiac": "Bò Cạp",
-  "character": "Thân thiện",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "198",
+  "location": "Centreville",
+  "zodiac": "Sư Tử",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Quà tặng"
+    "Hành động quan tâm"
   ],
   "future_family": "Không muốn con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": true,
-  "diet": "Ăn chay",
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
   "pet": "Chim",
   "pet_list": [
     "Chim"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Đọc sách"
+    "Âm nhạc"
   ]
 }

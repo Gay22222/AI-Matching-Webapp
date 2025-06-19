@@ -1,47 +1,47 @@
 {
   "id": 39,
-  "username": "Reynold.Hartmann",
-  "display_name": "Reynold Hartmann",
-  "email": "Reynold_Hartmann80@yahoo.com",
+  "username": "Ransom.Botsford41",
+  "display_name": "Ransom Botsford",
+  "email": "Ransom.Botsford65@yahoo.com",
   "birthday": null,
-  "age": 30,
+  "age": 24,
   "status": "active",
-  "about_me": "Depromo aggero spiculum tutamen currus summopere.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "157",
-  "location": "Hesselborough",
-  "zodiac": "Thiên Bình",
-  "character": "Nghiêm túc",
+  "about_me": "Agnitio adfectus tergo caste exercitationem timidus aptus voluptatum cupiditas sunt.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Cơ đốc giáo",
+  "career": "Bác sĩ",
+  "height": "158",
+  "location": "Attleboro",
+  "zodiac": "Sư Tử",
+  "character": "Hài hước",
   "character_list": [
-    "Nghiêm túc"
+    "Hài hước"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
   "drink": true,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Chó",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Yoga",
-    "Nhiếp ảnh"
+    "Mua sắm",
+    "Chơi game"
   ]
 }

@@ -1,47 +1,48 @@
 {
   "id": 30,
-  "username": "Giuseppe.Bednar37",
-  "display_name": "Giuseppe Bednar",
-  "email": "Giuseppe_Bednar@gmail.com",
+  "username": "Hunter_Wolff",
+  "display_name": "Hunter Wolff",
+  "email": "Hunter_Wolff12@yahoo.com",
   "birthday": null,
-  "age": 50,
+  "age": 52,
   "status": "active",
-  "about_me": "Eaque conqueror articulus verumtamen.",
+  "about_me": "Voco canonicus celer spargo canonicus surculus placeat somniculosus conturbo.",
   "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Vô tính",
   "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "188",
-  "location": "Eugene",
-  "zodiac": "Bạch Dương",
-  "character": "Điềm đạm",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "191",
+  "location": "New Jaydenbury",
+  "zodiac": "Cự Giải",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": false,
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
   "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Chó",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Phim ảnh",
   "favorite_list": [
-    "Yoga",
-    "Nấu ăn"
+    "Phim ảnh",
+    "Chơi game",
+    "Yoga"
   ]
 }

@@ -1,48 +1,46 @@
 {
   "id": 76,
-  "username": "Asia.Gerhold",
-  "display_name": "Asia Gerhold",
-  "email": "Asia_Gerhold36@gmail.com",
+  "username": "Lacey_Hudson",
+  "display_name": "Lacey Hudson",
+  "email": "Lacey.Hudson86@gmail.com",
   "birthday": null,
   "age": 37,
   "status": "active",
-  "about_me": "Cerno demo timidus degero ante charisma ultio.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "about_me": "Artificiose antea exercitationem catena condico soleo articulus placeat.",
+  "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Đồng tính",
   "language": "English",
-  "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "152",
-  "location": "East Abelboro",
-  "zodiac": "Song Tử",
-  "character": "Nghiêm túc",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "150",
+  "location": "Yadirabury",
+  "zodiac": "Nhân Mã",
+  "character": "Điềm đạm",
   "character_list": [
-    "Nghiêm túc"
+    "Điềm đạm"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": false,
   "train": true,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
   "pet": "Chó",
   "pet_list": [
     "Chó"
   ],
-  "favorite": "Yoga",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Yoga",
-    "Đọc sách",
-    "Phim ảnh"
+    "Du lịch"
   ]
 }

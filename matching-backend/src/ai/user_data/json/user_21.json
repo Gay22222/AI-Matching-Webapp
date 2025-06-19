@@ -1,48 +1,47 @@
 {
   "id": 21,
-  "username": "Jennyfer.Ullrich",
-  "display_name": "Jennyfer Ullrich",
-  "email": "Jennyfer_Ullrich@hotmail.com",
+  "username": "Sibyl_Hills",
+  "display_name": "Sibyl Hills",
+  "email": "Sibyl.Hills@hotmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 20,
   "status": "active",
-  "about_me": "Valetudo tardus velut odio tredecim.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
+  "about_me": "Quos suffoco volva laboriosam textilis verumtamen acer aestas.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "164",
-  "location": "Barrowsborough",
-  "zodiac": "Bạch Dương",
-  "character": "Tự tin",
+  "height": "171",
+  "location": "Nelliefurt",
+  "zodiac": "Ma Kết",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Không muốn con",
+  "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Âm nhạc",
-    "Nhiếp ảnh",
-    "Phim ảnh"
+    "Chơi game",
+    "Cà phê"
   ]
 }

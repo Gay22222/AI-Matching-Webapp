@@ -1,46 +1,48 @@
 {
   "id": 58,
-  "username": "Juvenal_Gusikowski98",
-  "display_name": "Juvenal Gusikowski",
-  "email": "Juvenal.Gusikowski@yahoo.com",
+  "username": "Braxton.Hessel72",
+  "display_name": "Braxton Hessel",
+  "email": "Braxton_Hessel@gmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 27,
   "status": "active",
-  "about_me": "Dapifer saepe combibo quaerat ustilo.",
-  "searching_for": "Kết bạn mới",
+  "about_me": "Pectus coadunatio amitto conturbo ancilla depulso articulus allatus aut varius.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "180",
-  "location": "Beattyfurt",
-  "zodiac": "Ma Kết",
-  "character": "Hài hước",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "186",
+  "location": "Port Addieside",
+  "zodiac": "Sư Tử",
+  "character": "Thân thiện",
   "character_list": [
-    "Hài hước"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn chay",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Có",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Phim ảnh"
+    "Nhiếp ảnh",
+    "Âm nhạc",
+    "Nghệ thuật"
   ]
 }

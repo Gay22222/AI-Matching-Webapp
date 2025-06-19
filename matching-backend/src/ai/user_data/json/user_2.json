@@ -1,21 +1,21 @@
 {
   "id": 2,
-  "username": "Cale_Kilback22",
-  "display_name": "Cale Kilback",
-  "email": "Cale.Kilback@hotmail.com",
+  "username": "Asia.Prosacco",
+  "display_name": "Asia Prosacco",
+  "email": "Asia.Prosacco@yahoo.com",
   "birthday": null,
-  "age": 37,
+  "age": 26,
   "status": "active",
-  "about_me": "Coniuratio theatrum eius molestias voro.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Song tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
+  "about_me": "Carcer creo socius vulnus tempore pecco adduco desino coniuratio.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Vô tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
   "religion": "Cơ đốc giáo",
-  "career": "Giáo viên",
-  "height": "176",
-  "location": "Kuhnborough",
-  "zodiac": "Song Ngư",
+  "career": "Kỹ sư phần mềm",
+  "height": "165",
+  "location": "Orland Park",
+  "zodiac": "Bạch Dương",
   "character": "Thân thiện",
   "character_list": [
     "Thân thiện"
@@ -24,25 +24,25 @@
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
-    "Quà tặng"
+    "Tiếp xúc cơ thể"
   ],
   "future_family": "Muốn có con",
   "drink": false,
   "smoke": false,
-  "train": false,
+  "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Âm nhạc",
   "favorite_list": [
+    "Âm nhạc",
     "Nghệ thuật",
-    "Du lịch",
-    "Cà phê"
+    "Chơi game"
   ]
 }

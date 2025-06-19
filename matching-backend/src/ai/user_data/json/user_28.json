@@ -1,46 +1,48 @@
 {
   "id": 28,
-  "username": "Porter.Prosacco",
-  "display_name": "Porter Prosacco",
-  "email": "Porter.Prosacco@gmail.com",
+  "username": "Karolann_Walker79",
+  "display_name": "Karolann Walker",
+  "email": "Karolann.Walker@yahoo.com",
   "birthday": null,
-  "age": 48,
+  "age": 46,
   "status": "active",
-  "about_me": "Aspernatur aestus aspicio utilis dolorem timor audio voluptatem demo.",
-  "searching_for": "Mối quan hệ lâu dài",
+  "about_me": "Vorax conitor vulnero catena accendo decipio comburo sollicito antea.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
   "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "169",
-  "location": "Union City",
-  "zodiac": "Bảo Bình",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "159",
+  "location": "Heathfield",
+  "zodiac": "Song Ngư",
   "character": "Hài hước",
   "character_list": [
     "Hài hước"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Không muốn con",
   "drink": true,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
   "snu": "Không",
-  "pet": "Cá",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Chơi game"
+    "Cà phê",
+    "Du lịch",
+    "Nấu ăn"
   ]
 }

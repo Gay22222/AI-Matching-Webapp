@@ -1,46 +1,47 @@
 {
   "id": 63,
-  "username": "Jada.Pfeffer",
-  "display_name": "Jada Pfeffer",
-  "email": "Jada_Pfeffer41@hotmail.com",
+  "username": "Emie.Spencer54",
+  "display_name": "Emie Spencer",
+  "email": "Emie.Spencer@hotmail.com",
   "birthday": null,
-  "age": 36,
+  "age": 37,
   "status": "active",
-  "about_me": "Debilito defleo coniecto acerbitas.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
+  "about_me": "Atrocitas corona vilis suppono teres capillus stultus acies vel.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
   "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Doanh nhân",
-  "height": "168",
-  "location": "Ondrickacester",
-  "zodiac": "Bạch Dương",
-  "character": "Hài hước",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "169",
+  "location": "Bernardfort",
+  "zodiac": "Sư Tử",
+  "character": "Điềm đạm",
   "character_list": [
-    "Hài hước"
+    "Điềm đạm"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Trầm lặng"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": false,
-  "train": true,
+  "drink": false,
+  "smoke": true,
+  "train": false,
   "diet": "Ăn chay",
   "sleep": "Người dậy sớm",
-  "snu": "Có",
+  "snu": "Không",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Cà phê",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Cà phê"
+    "Nhiếp ảnh",
+    "Phim ảnh"
   ]
 }

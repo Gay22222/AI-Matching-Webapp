@@ -1,47 +1,48 @@
 {
   "id": 53,
-  "username": "Gage.Nicolas63",
-  "display_name": "Gage Nicolas",
-  "email": "Gage_Nicolas95@gmail.com",
+  "username": "Amanda.Pfannerstill2",
+  "display_name": "Amanda Pfannerstill",
+  "email": "Amanda_Pfannerstill88@gmail.com",
   "birthday": null,
-  "age": 44,
+  "age": 59,
   "status": "active",
-  "about_me": "Abundans amoveo terror pectus textilis caries cupressus bellum aliquam.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "199",
-  "location": "Idellberg",
-  "zodiac": "Nhân Mã",
-  "character": "Thân thiện",
+  "about_me": "Arto pax cultellus adstringo.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": "154",
+  "location": "Millerstad",
+  "zodiac": "Kim Ngưu",
+  "character": "Tự tin",
   "character_list": [
-    "Thân thiện"
+    "Tự tin"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": false,
-  "train": true,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Mèo",
+  "train": false,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Mua sắm",
   "favorite_list": [
-    "Đọc sách",
-    "Yoga"
+    "Mua sắm",
+    "Nghệ thuật",
+    "Du lịch"
   ]
 }

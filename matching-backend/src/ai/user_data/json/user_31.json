@@ -1,47 +1,48 @@
 {
   "id": 31,
-  "username": "Alek.Erdman",
-  "display_name": "Alek Erdman",
-  "email": "Alek_Erdman99@hotmail.com",
+  "username": "Barton.Maggio66",
+  "display_name": "Barton Maggio",
+  "email": "Barton.Maggio56@hotmail.com",
   "birthday": null,
-  "age": 44,
+  "age": 21,
   "status": "active",
-  "about_me": "Theologus defleo arbustum defleo nostrum.",
+  "about_me": "Aeger casus tepidus adulatio.",
   "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
+  "sexual_orientation": "Song tính",
+  "language": "Japanese",
+  "education": "Thạc sĩ",
   "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "175",
-  "location": "Brownsville",
-  "zodiac": "Cự Giải",
-  "character": "Tự tin",
+  "career": "Giáo viên",
+  "height": "180",
+  "location": "Sunnyworth",
+  "zodiac": "Thiên Bình",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
+  "pet": "Chim",
   "pet_list": [
-    "Mèo"
+    "Chim"
   ],
   "favorite": "Mua sắm",
   "favorite_list": [
     "Mua sắm",
-    "Đọc sách"
+    "Phim ảnh",
+    "Nấu ăn"
   ]
 }

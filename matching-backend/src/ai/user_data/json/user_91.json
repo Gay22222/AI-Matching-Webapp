@@ -1,47 +1,48 @@
 {
   "id": 91,
-  "username": "Yadira_Rosenbaum",
-  "display_name": "Yadira Rosenbaum",
-  "email": "Yadira.Rosenbaum@hotmail.com",
+  "username": "Yasmeen_Trantow",
+  "display_name": "Yasmeen Trantow",
+  "email": "Yasmeen_Trantow74@gmail.com",
   "birthday": null,
-  "age": 58,
+  "age": 22,
   "status": "active",
-  "about_me": "Corpus exercitationem administratio fugiat amicitia deleo.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
-  "language": "Japanese",
+  "about_me": "Ara alter paulatim thymum tertius conforto suscipit denique vicinus adimpleo.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Vô tính",
+  "language": "English",
   "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "183",
-  "location": "South Abby",
+  "religion": "Phật giáo",
+  "career": "Bác sĩ",
+  "height": "160",
+  "location": "Port Orange",
   "zodiac": "Sư Tử",
-  "character": "Thân thiện",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Thân thiện"
+    "Nghiêm túc"
   ],
   "communicate_style": "Lắng nghe",
   "communicate_style_list": [
     "Lắng nghe"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": false,
-  "train": false,
+  "smoke": true,
+  "train": true,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Chim",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Nhiếp ảnh",
   "favorite_list": [
-    "Du lịch",
-    "Cà phê"
+    "Nhiếp ảnh",
+    "Nghệ thuật",
+    "Phim ảnh"
   ]
 }

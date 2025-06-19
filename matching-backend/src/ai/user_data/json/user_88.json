@@ -1,46 +1,47 @@
 {
   "id": 88,
-  "username": "Lavina.Pfeffer",
-  "display_name": "Lavina Pfeffer",
-  "email": "Lavina_Pfeffer14@gmail.com",
+  "username": "Candace.Jast48",
+  "display_name": "Candace Jast",
+  "email": "Candace.Jast@gmail.com",
   "birthday": null,
-  "age": 38,
+  "age": 26,
   "status": "active",
-  "about_me": "Verbum maxime arcus.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Đồng tính",
-  "language": "English",
+  "about_me": "Thema acies amplexus articulus vomer conitor talus corroboro aro aegrus.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Vô tính",
+  "language": "Japanese",
   "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "150",
-  "location": "North Elisaside",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "170",
+  "location": "East Eldredton",
   "zodiac": "Nhân Mã",
-  "character": "Tự tin",
+  "character": "Thân thiện",
   "character_list": [
-    "Tự tin"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Quà tặng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
+  "future_family": "Không muốn con",
+  "drink": false,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn kiêng",
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Người dậy sớm",
-  "snu": "Không",
-  "pet": "Cá",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Mèo",
   "pet_list": [
-    "Cá"
+    "Mèo"
   ],
-  "favorite": "Du lịch",
+  "favorite": "Cà phê",
   "favorite_list": [
-    "Du lịch"
+    "Cà phê",
+    "Phim ảnh"
   ]
 }

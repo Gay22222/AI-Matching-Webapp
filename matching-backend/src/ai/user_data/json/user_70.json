@@ -1,47 +1,47 @@
 {
   "id": 70,
-  "username": "Zetta.Daugherty53",
-  "display_name": "Zetta Daugherty",
-  "email": "Zetta.Daugherty@gmail.com",
+  "username": "Augusta_Kris96",
+  "display_name": "Augusta Kris",
+  "email": "Augusta.Kris14@yahoo.com",
   "birthday": null,
-  "age": 59,
+  "age": 38,
   "status": "active",
-  "about_me": "Sumo vapulus tredecim adipisci vulnero adiuvo terreo.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Officia curtus decretum tui comis.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Song tính",
   "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Phật giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "153",
-  "location": "North Deronhaven",
-  "zodiac": "Kim Ngưu",
-  "character": "Nghiêm túc",
+  "education": "Thạc sĩ",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "193",
+  "location": "New Moriah",
+  "zodiac": "Song Ngư",
+  "character": "Hài hước",
   "character_list": [
-    "Nghiêm túc"
+    "Hài hước"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Hành động quan tâm"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": false,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn mặn",
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Nấu ăn",
-    "Du lịch"
+    "Yoga",
+    "Nấu ăn"
   ]
 }

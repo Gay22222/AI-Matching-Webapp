@@ -1,46 +1,46 @@
 {
   "id": 32,
-  "username": "Isaiah_Emard",
-  "display_name": "Isaiah Emard",
-  "email": "Isaiah.Emard@yahoo.com",
+  "username": "Mason.Balistreri47",
+  "display_name": "Mason Balistreri",
+  "email": "Mason.Balistreri82@gmail.com",
   "birthday": null,
-  "age": 39,
+  "age": 18,
   "status": "active",
-  "about_me": "Comprehendo denuo aurum allatus sit cursim versus celer dens.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Dị tính",
-  "language": "Japanese",
-  "education": "Tiến sĩ",
-  "religion": "Ấn Độ giáo",
+  "about_me": "Sonitus ipsam color adipisci quod.",
+  "searching_for": "Bạn đồng hành (Hoạt động)",
+  "sexual_orientation": "Đồng tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
   "career": "Kỹ sư phần mềm",
-  "height": "150",
-  "location": "East Desireefort",
-  "zodiac": "Song Tử",
-  "character": "Điềm đạm",
+  "height": "179",
+  "location": "Port Sonia",
+  "zodiac": "Xử Nữ",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Trầm lặng"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Hành động quan tâm",
   "love_language_list": [
-    "Quà tặng"
+    "Hành động quan tâm"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": false,
-  "train": true,
-  "diet": "Ăn chay",
+  "smoke": true,
+  "train": false,
+  "diet": "Ăn mặn",
   "sleep": "Cú đêm",
   "snu": "Không",
-  "pet": "Chó",
+  "pet": "Mèo",
   "pet_list": [
-    "Chó"
+    "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Phim ảnh"
+    "Du lịch"
   ]
 }

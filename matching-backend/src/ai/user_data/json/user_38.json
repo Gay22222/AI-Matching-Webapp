@@ -1,48 +1,47 @@
 {
   "id": 38,
-  "username": "Jeanie.Wolff",
-  "display_name": "Jeanie Wolff",
-  "email": "Jeanie_Wolff13@hotmail.com",
+  "username": "Jovan_Walsh",
+  "display_name": "Jovan Walsh",
+  "email": "Jovan.Walsh7@yahoo.com",
   "birthday": null,
-  "age": 51,
+  "age": 23,
   "status": "active",
-  "about_me": "Eveniet subseco damnatio crudelis.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Vô tính",
-  "language": "Vietnamese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "192",
-  "location": "O'Fallon",
-  "zodiac": "Bò Cạp",
-  "character": "Điềm đạm",
+  "about_me": "Similique delego clarus suppellex aegrotatio acerbitas dolores recusandae dignissimos.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
+  "religion": "Ấn Độ giáo",
+  "career": "Bác sĩ",
+  "height": "166",
+  "location": "Gusikowskiville",
+  "zodiac": "Bảo Bình",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Lắng nghe"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
-  "smoke": true,
+  "smoke": false,
   "train": false,
-  "diet": "Ăn mặn",
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Có",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Yoga",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Yoga",
-    "Âm nhạc",
-    "Thể thao"
+    "Đọc sách",
+    "Nghệ thuật"
   ]
 }

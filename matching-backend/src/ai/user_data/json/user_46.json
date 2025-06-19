@@ -1,46 +1,46 @@
 {
   "id": 46,
-  "username": "Amir.Mante-Koelpin",
-  "display_name": "Amir Mante-Koelpin",
-  "email": "Amir_Mante-Koelpin@hotmail.com",
+  "username": "Derick.Effertz9",
+  "display_name": "Derick Effertz",
+  "email": "Derick_Effertz@hotmail.com",
   "birthday": null,
-  "age": 41,
+  "age": 59,
   "status": "active",
-  "about_me": "Aufero attollo aperio animi calculus vos defero aestivus.",
-  "searching_for": "Mối quan hệ ngắn hạn",
+  "about_me": "Adsuesco tersus amissio brevis sit paulatim corrupti vitium.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
   "sexual_orientation": "Song tính",
-  "language": "Japanese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Bác sĩ",
-  "height": "160",
-  "location": "Collinshire",
+  "language": "Vietnamese",
+  "education": "Thạc sĩ",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "174",
+  "location": "Mathildeton",
   "zodiac": "Ma Kết",
-  "character": "Nghiêm túc",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": false,
-  "train": false,
-  "diet": "Ăn mặn",
-  "sleep": "Người dậy sớm",
-  "snu": "Có",
-  "pet": "Cá",
+  "train": true,
+  "diet": "Ăn kiêng",
+  "sleep": "Cú đêm",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Cá"
+    "Chim"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Mua sắm"
+    "Chơi game"
   ]
 }

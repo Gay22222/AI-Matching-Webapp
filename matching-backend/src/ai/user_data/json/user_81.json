@@ -1,47 +1,47 @@
 {
   "id": 81,
-  "username": "Aida_Bayer",
-  "display_name": "Aida Bayer",
-  "email": "Aida_Bayer@gmail.com",
+  "username": "Gayle_Schmeler",
+  "display_name": "Gayle Schmeler",
+  "email": "Gayle.Schmeler@hotmail.com",
   "birthday": null,
-  "age": 41,
+  "age": 48,
   "status": "active",
-  "about_me": "Coma decretum carmen speculum venustas considero subvenio demergo.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Dị tính",
-  "language": "English",
-  "education": "Thạc sĩ",
+  "about_me": "Contego ad valde aegrotatio.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Tiến sĩ",
   "religion": "Hồi giáo",
-  "career": "Giáo viên",
-  "height": "183",
-  "location": "Fort Billy",
-  "zodiac": "Thiên Bình",
-  "character": "Hài hước",
+  "career": "Bác sĩ",
+  "height": "192",
+  "location": "West Jameson",
+  "zodiac": "Xử Nữ",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
   "smoke": false,
   "train": false,
-  "diet": "Ăn chay",
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Thể thao",
   "favorite_list": [
-    "Nấu ăn",
-    "Mua sắm"
+    "Thể thao",
+    "Cà phê"
   ]
 }

@@ -1,48 +1,46 @@
 {
   "id": 74,
-  "username": "Modesto.Cormier89",
-  "display_name": "Modesto Cormier",
-  "email": "Modesto.Cormier91@gmail.com",
+  "username": "Sally.Mann94",
+  "display_name": "Sally Mann",
+  "email": "Sally.Mann@gmail.com",
   "birthday": null,
-  "age": 53,
+  "age": 25,
   "status": "active",
-  "about_me": "Consequatur decimus benigne surculus torrens acquiro contigo.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Dị tính",
-  "language": "Vietnamese",
+  "about_me": "Tondeo amo auctor sublime audio odit summa accedo.",
+  "searching_for": "Bạn tâm giao / Trò chuyện",
+  "sexual_orientation": "Song tính",
+  "language": "English",
   "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Doanh nhân",
-  "height": "184",
-  "location": "Fort Eino",
-  "zodiac": "Sư Tử",
-  "character": "Tự tin",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "186",
+  "location": "Kozeyfield",
+  "zodiac": "Cự Giải",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Tự tin"
+    "Nghiêm túc"
   ],
   "communicate_style": "Trầm lặng",
   "communicate_style_list": [
     "Trầm lặng"
   ],
-  "love_language": "Tiếp xúc cơ thể",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Tiếp xúc cơ thể"
+    "Quà tặng"
   ],
   "future_family": "Không muốn con",
-  "drink": false,
+  "drink": true,
   "smoke": true,
-  "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Yoga",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Yoga",
-    "Nghệ thuật",
-    "Chơi game"
+    "Đọc sách"
   ]
 }

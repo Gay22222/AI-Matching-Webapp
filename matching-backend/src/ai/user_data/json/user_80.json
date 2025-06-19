@@ -1,46 +1,46 @@
 {
   "id": 80,
-  "username": "Crawford_Hilll",
-  "display_name": "Crawford Hilll",
-  "email": "Crawford_Hilll@hotmail.com",
+  "username": "Rocio_Schumm",
+  "display_name": "Rocio Schumm",
+  "email": "Rocio_Schumm84@hotmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 27,
   "status": "active",
-  "about_me": "Arceo absum creator tardus defetiscor pectus surgo.",
-  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
-  "sexual_orientation": "Đồng tính",
-  "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Doanh nhân",
-  "height": "192",
-  "location": "Mavistown",
-  "zodiac": "Song Tử",
-  "character": "Tự tin",
+  "about_me": "Spiritus amor stultus.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Dị tính",
+  "language": "Vietnamese",
+  "education": "Trung học phổ thông",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "172",
+  "location": "East Naomistad",
+  "zodiac": "Xử Nữ",
+  "character": "Điềm đạm",
   "character_list": [
-    "Tự tin"
+    "Điềm đạm"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Biết chia sẻ"
   ],
-  "love_language": "Lời nói yêu thương",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Lời nói yêu thương"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": false,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chim",
+  "future_family": "Muốn có con",
+  "drink": true,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Chó",
   "pet_list": [
-    "Chim"
+    "Chó"
   ],
-  "favorite": "Mua sắm",
+  "favorite": "Nấu ăn",
   "favorite_list": [
-    "Mua sắm"
+    "Nấu ăn"
   ]
 }

@@ -1,46 +1,47 @@
 {
   "id": 47,
-  "username": "Alexandra_Bergnaum",
-  "display_name": "Alexandra Bergnaum",
-  "email": "Alexandra.Bergnaum@yahoo.com",
+  "username": "Alia_Parker-Rohan69",
+  "display_name": "Alia Parker-Rohan",
+  "email": "Alia_Parker-Rohan25@hotmail.com",
   "birthday": null,
-  "age": 22,
+  "age": 25,
   "status": "active",
-  "about_me": "Bos statua cogo ter.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Ago sum claro accusantium.",
+  "searching_for": "Mối quan hệ ngắn hạn",
+  "sexual_orientation": "Dị tính",
   "language": "Japanese",
-  "education": "Thạc sĩ",
-  "religion": "Hồi giáo",
-  "career": "Bác sĩ",
-  "height": "168",
-  "location": "Fort Brandofurt",
-  "zodiac": "Ma Kết",
-  "character": "Điềm đạm",
+  "education": "Tiến sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Giáo viên",
+  "height": "192",
+  "location": "North Javierchester",
+  "zodiac": "Cự Giải",
+  "character": "Thân thiện",
   "character_list": [
-    "Điềm đạm"
+    "Thân thiện"
   ],
   "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
     "Thẳng thắn"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
   "drink": false,
   "smoke": true,
-  "train": true,
-  "diet": "Ăn mặn",
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
   "snu": "Có",
-  "pet": "Chó",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Đọc sách",
   "favorite_list": [
-    "Thể thao"
+    "Đọc sách",
+    "Âm nhạc"
   ]
 }

@@ -1,32 +1,32 @@
 {
   "id": 50,
-  "username": "Felix_Paucek",
-  "display_name": "Felix Paucek",
-  "email": "Felix.Paucek@gmail.com",
+  "username": "Estell.Kessler",
+  "display_name": "Estell Kessler",
+  "email": "Estell_Kessler@yahoo.com",
   "birthday": null,
-  "age": 42,
+  "age": 46,
   "status": "active",
-  "about_me": "Velit alveus ustilo vir aetas absque.",
+  "about_me": "Tener agnosco patria fugiat vito adamo dedico complectus sto carmen.",
   "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
-  "language": "Vietnamese",
-  "education": "Cử nhân",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "150",
-  "location": "Wisokyland",
-  "zodiac": "Ma Kết",
-  "character": "Tự tin",
+  "sexual_orientation": "Dị tính",
+  "language": "English",
+  "education": "Thạc sĩ",
+  "religion": "Hồi giáo",
+  "career": "Bác sĩ",
+  "height": "198",
+  "location": "Fort Jaquan",
+  "zodiac": "Bò Cạp",
+  "character": "Hài hước",
   "character_list": [
-    "Tự tin"
+    "Hài hước"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
     "Biết chia sẻ"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Quà tặng",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Quà tặng"
   ],
   "future_family": "Muốn có con",
   "drink": true,
@@ -34,15 +34,13 @@
   "train": true,
   "diet": "Ăn mặn",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chim",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Chim"
+    "Cá"
   ],
-  "favorite": "Nấu ăn",
+  "favorite": "Âm nhạc",
   "favorite_list": [
-    "Nấu ăn",
-    "Nghệ thuật",
-    "Đọc sách"
+    "Âm nhạc"
   ]
 }

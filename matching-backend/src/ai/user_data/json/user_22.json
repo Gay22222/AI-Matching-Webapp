@@ -1,21 +1,21 @@
 {
   "id": 22,
-  "username": "Jimmie_Jacobs81",
-  "display_name": "Jimmie Jacobs",
-  "email": "Jimmie_Jacobs@gmail.com",
+  "username": "Frances.Bernhard",
+  "display_name": "Frances Bernhard",
+  "email": "Frances_Bernhard81@hotmail.com",
   "birthday": null,
-  "age": 42,
+  "age": 53,
   "status": "active",
-  "about_me": "Veritatis tumultus crudelis tredecim conicio colo votum consuasor.",
-  "searching_for": "Mối quan hệ ngắn hạn",
-  "sexual_orientation": "Song tính",
-  "language": "English",
+  "about_me": "Autem adsum corroboro absconditus adimpleo demergo cibus valeo conturbo.",
+  "searching_for": "Mối quan hệ lâu dài",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
   "education": "Tiến sĩ",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "173",
-  "location": "New Loganhaven",
-  "zodiac": "Cự Giải",
+  "religion": "Phật giáo",
+  "career": "Giáo viên",
+  "height": "189",
+  "location": "Charleyhaven",
+  "zodiac": "Bạch Dương",
   "character": "Nghiêm túc",
   "character_list": [
     "Nghiêm túc"
@@ -29,18 +29,19 @@
     "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": false,
+  "drink": true,
   "smoke": true,
   "train": true,
-  "diet": "Ăn mặn",
+  "diet": "Ăn chay",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Chó",
+  "snu": "Tuỳ đối tượng",
+  "pet": "Chim",
   "pet_list": [
-    "Chó"
+    "Chim"
   ],
-  "favorite": "Âm nhạc",
+  "favorite": "Nghệ thuật",
   "favorite_list": [
-    "Âm nhạc"
+    "Nghệ thuật",
+    "Đọc sách"
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "id": 102,
+  "username": "21522516@gm.uit.edu.vn",
+  "display_name": "21522516@gm.uit.edu.vn",
+  "email": "21522516@gm.uit.edu.vn",
+  "birthday": "2002-12-02T00:00:00.000Z",
+  "age": 21,
+  "status": "active",
+  "about_me": "Tôi là Gay",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Cơ đốc giáo",
+  "career": "Kỹ sư phần mềm",
+  "height": null,
+  "location": "Trung Quốc",
+  "zodiac": "Bạch Dương",
+  "character": "Điềm đạm",
+  "character_list": [
+    "Điềm đạm"
+  ],
+  "communicate_style": "Thẳng thắn",
+  "communicate_style_list": [
+    "Thẳng thắn"
+  ],
+  "love_language": "Lời nói yêu thương",
+  "love_language_list": [
+    "Lời nói yêu thương"
+  ],
+  "future_family": "Chưa muốn có con",
+  "drink": true,
+  "smoke": true,
+  "train": true,
+  "diet": "Ăn chay",
+  "sleep": "Cú đêm",
+  "snu": "Có",
+  "pet": "Cá",
+  "pet_list": [
+    "Cá"
+  ],
+  "favorite": "Âm nhạc",
+  "favorite_list": [
+    "Âm nhạc",
+    "Nhiếp ảnh"
+  ]
+}

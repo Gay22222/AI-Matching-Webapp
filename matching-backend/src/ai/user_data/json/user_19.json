@@ -1,24 +1,24 @@
 {
   "id": 19,
-  "username": "Melyssa_Moen2",
-  "display_name": "Melyssa Moen",
-  "email": "Melyssa_Moen42@gmail.com",
+  "username": "Crawford_OConner58",
+  "display_name": "Crawford O'Conner",
+  "email": "Crawford_OConner2@gmail.com",
   "birthday": null,
-  "age": 37,
+  "age": 54,
   "status": "active",
-  "about_me": "Dapifer consequuntur thymum atqui repellat amoveo altus surgo audax conor.",
-  "searching_for": "Kết bạn mới",
+  "about_me": "Comedo infit a conculco neque tener voluptates.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
   "sexual_orientation": "Vô tính",
-  "language": "English",
-  "education": "Trung học phổ thông",
-  "religion": "Cơ đốc giáo",
-  "career": "Bác sĩ",
-  "height": "157",
-  "location": "Lake Joseph",
-  "zodiac": "Song Ngư",
-  "character": "Hài hước",
+  "language": "Japanese",
+  "education": "Cử nhân",
+  "religion": "Ấn Độ giáo",
+  "career": "Doanh nhân",
+  "height": "165",
+  "location": "Langworthport",
+  "zodiac": "Cự Giải",
+  "character": "Nghiêm túc",
   "character_list": [
-    "Hài hước"
+    "Nghiêm túc"
   ],
   "communicate_style": "Biết chia sẻ",
   "communicate_style_list": [
@@ -29,18 +29,18 @@
     "Lời nói yêu thương"
   ],
   "future_family": "Muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": true,
-  "diet": "Ăn chay",
+  "drink": false,
+  "smoke": false,
+  "train": false,
+  "diet": "Ăn kiêng",
   "sleep": "Cú đêm",
-  "snu": "Có",
-  "pet": "Mèo",
+  "snu": "Không",
+  "pet": "Cá",
   "pet_list": [
-    "Mèo"
+    "Cá"
   ],
-  "favorite": "Nghệ thuật",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Nghệ thuật"
+    "Chơi game"
   ]
 }

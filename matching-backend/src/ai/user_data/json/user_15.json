@@ -1,46 +1,46 @@
 {
   "id": 15,
-  "username": "Rosalee_Stehr8",
-  "display_name": "Rosalee Stehr",
-  "email": "Rosalee.Stehr33@yahoo.com",
+  "username": "Kara.Wunsch",
+  "display_name": "Kara Wunsch",
+  "email": "Kara_Wunsch@yahoo.com",
   "birthday": null,
-  "age": 27,
+  "age": 36,
   "status": "active",
-  "about_me": "Possimus possimus ut subseco aperte.",
-  "searching_for": "Kết bạn mới",
-  "sexual_orientation": "Song tính",
-  "language": "Vietnamese",
-  "education": "Tiến sĩ",
+  "about_me": "Sperno creptio compono reiciendis facilis dedecor tener stipes.",
+  "searching_for": "Chưa chắc chắn / Để mở",
+  "sexual_orientation": "Đồng tính",
+  "language": "Japanese",
+  "education": "Trung học phổ thông",
   "religion": "Ấn Độ giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "151",
-  "location": "New Jammiemouth",
-  "zodiac": "Nhân Mã",
-  "character": "Nghiêm túc",
+  "career": "Giáo viên",
+  "height": "182",
+  "location": "La Habra",
+  "zodiac": "Sư Tử",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Trầm lặng",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Trầm lặng"
   ],
   "love_language": "Tiếp xúc cơ thể",
   "love_language_list": [
     "Tiếp xúc cơ thể"
   ],
-  "future_family": "Muốn có con",
-  "drink": true,
+  "future_family": "Chưa muốn có con",
+  "drink": false,
   "smoke": false,
-  "train": true,
+  "train": false,
   "diet": "Ăn chay",
-  "sleep": "Người dậy sớm",
+  "sleep": "Cú đêm",
   "snu": "Tuỳ đối tượng",
-  "pet": "Chó",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Chơi game",
+  "favorite": "Yoga",
   "favorite_list": [
-    "Chơi game"
+    "Yoga"
   ]
 }

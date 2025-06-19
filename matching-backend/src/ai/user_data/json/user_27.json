@@ -1,47 +1,46 @@
 {
   "id": 27,
-  "username": "Quinn.Veum36",
-  "display_name": "Quinn Veum",
-  "email": "Quinn_Veum@gmail.com",
+  "username": "Brain_Batz",
+  "display_name": "Brain Batz",
+  "email": "Brain_Batz24@gmail.com",
   "birthday": null,
-  "age": 20,
+  "age": 53,
   "status": "active",
-  "about_me": "Apostolus tertius carpo calamitas possimus argentum acceptus arca averto cohibeo.",
-  "searching_for": "Kết bạn mới",
+  "about_me": "Adipisci ocer agnosco titulus subvenio.",
+  "searching_for": "Mối quan hệ lâu dài",
   "sexual_orientation": "Dị tính",
   "language": "Vietnamese",
-  "education": "Tiến sĩ",
-  "religion": "Hồi giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "150",
-  "location": "East Amanicester",
-  "zodiac": "Bảo Bình",
-  "character": "Hài hước",
+  "education": "Thạc sĩ",
+  "religion": "Cơ đốc giáo",
+  "career": "Doanh nhân",
+  "height": "157",
+  "location": "Lake Adonis",
+  "zodiac": "Song Ngư",
+  "character": "Tự tin",
   "character_list": [
-    "Hài hước"
+    "Tự tin"
   ],
-  "communicate_style": "Trầm lặng",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Trầm lặng"
+    "Thẳng thắn"
   ],
   "love_language": "Lời nói yêu thương",
   "love_language_list": [
     "Lời nói yêu thương"
   ],
   "future_family": "Chưa muốn có con",
-  "drink": true,
+  "drink": false,
   "smoke": true,
   "train": true,
-  "diet": "Ăn chay",
-  "sleep": "Cú đêm",
-  "snu": "Không",
-  "pet": "Chó",
+  "diet": "Ăn kiêng",
+  "sleep": "Người dậy sớm",
+  "snu": "Có",
+  "pet": "Cá",
   "pet_list": [
-    "Chó"
+    "Cá"
   ],
-  "favorite": "Nhiếp ảnh",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Nhiếp ảnh",
-    "Đọc sách"
+    "Chơi game"
   ]
 }

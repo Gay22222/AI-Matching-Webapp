@@ -1,5 +1,5 @@
 import express from 'express';
-import { pipeline } from '@xenova/transformers';
+import { pipeline } from '@huggingface/transformers';
 import Redis from 'ioredis';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';

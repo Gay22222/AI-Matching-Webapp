@@ -1,47 +1,47 @@
 {
   "id": 82,
-  "username": "Frida.Schuster92",
-  "display_name": "Frida Schuster",
-  "email": "Frida.Schuster@hotmail.com",
+  "username": "Shirley.DuBuque",
+  "display_name": "Shirley DuBuque",
+  "email": "Shirley_DuBuque@yahoo.com",
   "birthday": null,
-  "age": 32,
+  "age": 38,
   "status": "active",
-  "about_me": "Patrocinor arceo acceptus.",
-  "searching_for": "Bạn đồng hành (Hoạt động)",
-  "sexual_orientation": "Vô tính",
-  "language": "Japanese",
-  "education": "Trung học phổ thông",
-  "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "192",
-  "location": "Catherinechester",
-  "zodiac": "Song Ngư",
-  "character": "Nghiêm túc",
+  "about_me": "Sponte arx versus surgo.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Song tính",
+  "language": "Vietnamese",
+  "education": "Cử nhân",
+  "religion": "Phật giáo",
+  "career": "Doanh nhân",
+  "height": "154",
+  "location": "New Herman",
+  "zodiac": "Thiên Bình",
+  "character": "Thân thiện",
   "character_list": [
-    "Nghiêm túc"
+    "Thân thiện"
   ],
-  "communicate_style": "Biết chia sẻ",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Biết chia sẻ"
+    "Lắng nghe"
   ],
-  "love_language": "Hành động quan tâm",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Hành động quan tâm"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Muốn có con",
+  "future_family": "Không muốn con",
   "drink": true,
   "smoke": false,
   "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Tuỳ đối tượng",
+  "diet": "Ăn chay",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
   "pet": "Mèo",
   "pet_list": [
     "Mèo"
   ],
-  "favorite": "Phim ảnh",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Phim ảnh",
-    "Nghệ thuật"
+    "Du lịch",
+    "Thể thao"
   ]
 }

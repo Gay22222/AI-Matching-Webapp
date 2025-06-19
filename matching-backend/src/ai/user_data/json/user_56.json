@@ -1,48 +1,48 @@
 {
   "id": 56,
-  "username": "Odie.Hudson",
-  "display_name": "Odie Hudson",
-  "email": "Odie_Hudson@hotmail.com",
+  "username": "Izaiah_DAmore39",
+  "display_name": "Izaiah D'Amore",
+  "email": "Izaiah.DAmore@yahoo.com",
   "birthday": null,
-  "age": 28,
+  "age": 35,
   "status": "active",
-  "about_me": "Tempore quia conitor sapiente cogo.",
-  "searching_for": "Chưa chắc chắn / Để mở",
-  "sexual_orientation": "Đồng tính",
+  "about_me": "Comminor ambulo solitudo temporibus attollo adicio solitudo trepide.",
+  "searching_for": "Hẹn hò đơn giản / Tìm hiểu",
+  "sexual_orientation": "Song tính",
   "language": "English",
-  "education": "Tiến sĩ",
+  "education": "Trung học phổ thông",
   "religion": "Ấn Độ giáo",
-  "career": "Giáo viên",
-  "height": "185",
-  "location": "East Elwin",
-  "zodiac": "Ma Kết",
+  "career": "Kỹ sư phần mềm",
+  "height": "190",
+  "location": "North Gertrude",
+  "zodiac": "Xử Nữ",
   "character": "Nghiêm túc",
   "character_list": [
     "Nghiêm túc"
   ],
-  "communicate_style": "Thẳng thắn",
+  "communicate_style": "Lắng nghe",
   "communicate_style_list": [
-    "Thẳng thắn"
+    "Lắng nghe"
   ],
-  "love_language": "Thời gian chất lượng",
+  "love_language": "Lời nói yêu thương",
   "love_language_list": [
-    "Thời gian chất lượng"
+    "Lời nói yêu thương"
   ],
-  "future_family": "Chưa muốn có con",
-  "drink": true,
-  "smoke": true,
-  "train": false,
-  "diet": "Ăn chay",
+  "future_family": "Muốn có con",
+  "drink": false,
+  "smoke": false,
+  "train": true,
+  "diet": "Ăn kiêng",
   "sleep": "Người dậy sớm",
-  "snu": "Tuỳ đối tượng",
-  "pet": "Cá",
+  "snu": "Không",
+  "pet": "Chó",
   "pet_list": [
-    "Cá"
+    "Chó"
   ],
-  "favorite": "Đọc sách",
+  "favorite": "Chơi game",
   "favorite_list": [
-    "Đọc sách",
-    "Thể thao",
-    "Nghệ thuật"
+    "Chơi game",
+    "Yoga",
+    "Âm nhạc"
   ]
 }

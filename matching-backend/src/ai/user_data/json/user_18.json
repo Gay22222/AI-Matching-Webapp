@@ -1,47 +1,46 @@
 {
   "id": 18,
-  "username": "Kelton_Conroy",
-  "display_name": "Kelton Conroy",
-  "email": "Kelton_Conroy@hotmail.com",
+  "username": "Zoila_Jast",
+  "display_name": "Zoila Jast",
+  "email": "Zoila_Jast@gmail.com",
   "birthday": null,
-  "age": 51,
+  "age": 48,
   "status": "active",
-  "about_me": "Apto occaecati avaritia.",
-  "searching_for": "Bạn tâm giao / Trò chuyện",
-  "sexual_orientation": "Dị tính",
+  "about_me": "Arto ara cubicularis curriculum.",
+  "searching_for": "Kết bạn mới",
+  "sexual_orientation": "Đồng tính",
   "language": "English",
-  "education": "Tiến sĩ",
+  "education": "Trung học phổ thông",
   "religion": "Cơ đốc giáo",
-  "career": "Kỹ sư phần mềm",
-  "height": "181",
-  "location": "Elizabethworth",
-  "zodiac": "Thiên Bình",
+  "career": "Bác sĩ",
+  "height": "171",
+  "location": "Daveside",
+  "zodiac": "Kim Ngưu",
   "character": "Điềm đạm",
   "character_list": [
     "Điềm đạm"
   ],
-  "communicate_style": "Lắng nghe",
+  "communicate_style": "Thẳng thắn",
   "communicate_style_list": [
-    "Lắng nghe"
+    "Thẳng thắn"
   ],
-  "love_language": "Quà tặng",
+  "love_language": "Thời gian chất lượng",
   "love_language_list": [
-    "Quà tặng"
+    "Thời gian chất lượng"
   ],
-  "future_family": "Chưa muốn có con",
+  "future_family": "Không muốn con",
   "drink": false,
-  "smoke": false,
+  "smoke": true,
   "train": false,
-  "diet": "Ăn kiêng",
-  "sleep": "Cú đêm",
-  "snu": "Có",
+  "diet": "Ăn mặn",
+  "sleep": "Người dậy sớm",
+  "snu": "Không",
   "pet": "Cá",
   "pet_list": [
     "Cá"
   ],
-  "favorite": "Thể thao",
+  "favorite": "Du lịch",
   "favorite_list": [
-    "Thể thao",
-    "Yoga"
+    "Du lịch"
   ]
 }
