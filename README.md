@@ -40,3 +40,17 @@ AI-Matching-Webapp/
 ```
 
 Để biết thêm chi tiết cấu hình, chạy production hay Docker, vui lòng xem các README ở từng thư mục trên.
+
+
+
+# Phân Chia Công Việc Dự Án DateViet
+
+Dưới đây là phân chia công việc ngắn gọn cho 4 thành viên dự án DateViet:
+
+| **Mã SV**   | **Tên**                    | **Nhiệm vụ**                                                                 | **Tỷ lệ** |
+|-------------|----------------------------|------------------------------------------------------------------------------|-----------|
+| 21522516    | Nguyễn Việt Quang         | AI (embedding, Weaviate, cron job), merge code, fix bug, thiết lập Docker     | 38%       |
+| 22520637    | Lê Mai Quốc Khánh         | Thông báo (API, Socket.IO), trò chuyện (API, Icebreakers), logic ghép đôi     | 25%       |
+| 22520928    | Nguyễn Thị Kiều Nga       | Viết tài liệu, làm slide, hỗ trợ thiết kế giao diện, logic giao diện          | 17%       |
+| 23520850    | Phùng Việt Linh           | Đăng ký/đăng nhập, thiết lập hồ sơ, quản lý ảnh, thiết kế giao diện          | 20%       |
+
