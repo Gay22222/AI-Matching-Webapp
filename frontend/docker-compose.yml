@@ -1,7 +1,8 @@
-version: '3'
 services:
   frontend:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
@@ -9,4 +10,15 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-      - NEXT_TELEMETRY_DISABLED=1 
+    extra_hosts:
+      - "localhost:172.19.0.6" # Thay bằng IP thực tế của container matching-backend-backend-1
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    networks:
+      - matching-backend_matchmaking-network
+    command: pnpm run dev
+
+networks:
+  matching-backend_matchmaking-network:
+    external: true

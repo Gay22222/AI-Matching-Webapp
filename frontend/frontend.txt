@@ -109,6 +109,7 @@ frontend/
 ├── package.json
 ├── pnpm-lock.yaml
 ├── postcss.config.mjs
+├── requirements.txt
 └── tailwind.config.js
 ```
 

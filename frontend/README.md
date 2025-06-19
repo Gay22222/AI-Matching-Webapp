@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hướng Dẫn Thiết Lập Frontend DateViet
+Hướng dẫn này cung cấp các lệnh để thiết lập và chạy frontend DateViet (dùng Next.js, React, TypeScript, Tailwind CSS) theo hai cách: Local và Docker. Frontend gọi API backend tại http://localhost:3001.
+Yêu cầu
 
-## Getting Started
+Node.js: Phiên bản 20.19.0 trở lên (cho local).
+pnpm: Phiên bản 10.6.3.
+Docker: Phiên bản mới nhất với Docker Compose (cho Docker).
+Backend: Các dịch vụ backend (backend, embedding, mysql, redis, weaviate) phải chạy trong mạng matching-backend_matchmaking-network.
 
-First, run the development server:
+Thiết Lập
+Cách 1: Chạy Local
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Clone dự án:
+git clone <repository-url>
+cd frontend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Cài đặt Node.js:
+node -v
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Đảm bảo phiên bản là 20.19.0 hoặc cao hơn.
 
-## Learn More
+Cài đặt pnpm:
+npm install -g pnpm@10.6.3
+pnpm -v
 
-To learn more about Next.js, take a look at the following resources:
+Kết quả: 10.6.3.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Cài đặt dependencies:
+pnpm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Xóa cache nếu cần:
+pnpm cache clear
+pnpm install
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Khởi động backend:
+cd ../backend
+docker-compose up -d
+docker ps
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Chạy ứng dụng:
+cd ../frontend
+pnpm run dev
+
+Truy cập: http://localhost:3000.
+
+Build cho production (tùy chọn):
+pnpm run build
+pnpm run start
+
+
+
+Cách 2: Chạy Docker
+
+Clone dự án:
+git clone <repository-url>
+cd frontend
+
+
+Khởi động backend:
+cd ../backend
+docker-compose up -d
+docker ps
+
+
+Kiểm tra IP container backend:
+docker inspect matching-backend-backend-1 | findstr IPAddress
+
+Cập nhật IP (ví dụ: 172.18.0.2) vào docker-compose.yml (dòng extra_hosts: localhost:<IP>).
+
+Xóa image cũ (nếu cần):
+cd ../frontend
+docker rmi $(docker images -q frontend)
+
+
+Build và chạy lần đầu:
+docker-compose up --build
+
+Truy cập: http://localhost:3000.
+
+Rebuild (nếu cần):
+docker-compose down
+docker rmi $(docker images -q frontend)
+docker-compose up --build
+
+
+Dừng ứng dụng:
+docker-compose down
+
+
+
+Khắc phục sự cố
+
+Backend không kết nối trong Docker:
+docker inspect matching-backend-backend-1 | findstr IPAddress
+docker exec <frontend-container-id> curl http://localhost:3001
+
+
+Xung đột cổng:Sửa cổng trong docker-compose.yml hoặc chạy:
+pnpm run dev -- -p <cổng-mới>
+
+
+Lỗi dependencies:
+pnpm cache clear
+pnpm install
+
+
+
