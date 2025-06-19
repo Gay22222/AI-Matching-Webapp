@@ -86,7 +86,7 @@ docker run -d --name weaviate -p 8080:8080 semitechnologies/weaviate:latest --ho
 7. Chạy backend
 
 Development (sử dụng nodemon):pnpm run dev
-
+chạy node .\src\ai\embedServer.js trên 1 terminal riêng để nhúng data
 
 Production:pnpm start
 

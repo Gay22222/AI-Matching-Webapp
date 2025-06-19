@@ -1,5 +1,5 @@
 # ==================================================
-# Path: D:\Final\frontend
+# Path: D:\Javascript\ai-matchmaking\AI-Matching-Webapp\frontend
 # Detected tech: docker, javascript, python, react, typescript
 # ==================================================
 
@@ -99,11 +99,13 @@ frontend/
 │       ├── LocalStorage.js
 │       └── Time.js
 ├── .dockerignore
+├── .env
 ├── .gitignore
 ├── Dockerfile
 ├── README.md
 ├── docker-compose.yml
 ├── eslint.config.mjs
+├── frontend.txt
 ├── jsconfig.json
 ├── next.config.mjs
 ├── package.json
@@ -311,7 +313,7 @@ const Home = () => {
     }
     let cleanUrl = url.replace(/^\/*uploads\/*/i, "");
     cleanUrl = cleanUrl.startsWith("/") ? cleanUrl : `/${cleanUrl}`;
-    const finalUrl = `http://localhost:3001/uploads${cleanUrl.toLowerCase()}`;
+    const finalUrl = `${process.env.NEXT_PUBLIC_UPLOADS_URL}${cleanUrl.toLowerCase()}`;
     console.debug(`Normalized photo URL: ${finalUrl}`);
     return finalUrl;
   };
@@ -370,8 +372,8 @@ const Home = () => {
       params.append("limit", "100");
       const queryString = params.toString();
       const url = queryString
-        ? `http://localhost:3001/api/user/list-match?${queryString}`
-        : `http://localhost:3001/api/user/list-match`;
+        ? `${process.env.NEXT_PUBLIC_API_URL}/api/user/list-match?${queryString}`
+        : `${process.env.NEXT_PUBLIC_API_URL}/api/user/list-match`;
 
       console.log("Fetching profiles with URL:", url);
       console.log("Auth token:", auth.access_token);
@@ -488,7 +490,7 @@ const Home = () => {
   const handleMatch = async (userId, callback) => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/match",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/match`,
         {
           receiverId: userId,
         },
@@ -671,6 +673,7 @@ const Home = () => {
 };
 
 export default Home;
+
 ```
 
 ### src\app\(main)\discover\page.js
@@ -733,8 +736,8 @@ const DiscoverPage = () => {
                 });
                 const queryString = params.toString();
                 const url = queryString
-                    ? `http://localhost:3001/api/ai/recommendations?${queryString}`
-                    : `http://localhost:3001/api/ai/recommendations`;
+                    ? `${process.env.NEXT_PUBLIC_API_URL}/api/ai/recommendations?${queryString}`
+                    : `${process.env.NEXT_PUBLIC_API_URL}/api/ai/recommendations`;
 
                 console.log("Fetching recommendations with URL:", url);
                 console.log("Auth token:", auth.access_token);
@@ -826,7 +829,7 @@ const DiscoverPage = () => {
     const handleMatch = async (userId, callback) => {
         try {
             const response = await axios.post(
-                "http://localhost:3001/api/match",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/match`,
                 {
                     receiverId: userId,
                 },
@@ -873,7 +876,7 @@ const DiscoverPage = () => {
     const handleSelectProfile = async (profile) => {
         console.log("Selected profile:", profile.id);
         try {
-            const response = await axios.get(`http://localhost:3001/api/user/${profile.id}`, {
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/user/${profile.id}`, {
                 headers: {
                     Authorization: `Bearer ${auth?.access_token}`,
                 },
@@ -1026,6 +1029,7 @@ const DiscoverPage = () => {
 };
 
 export default DiscoverPage;
+
 ```
 
 ### src\app\(main)\matches\page.js
@@ -1050,7 +1054,7 @@ const Matches = () => {
       console.warn("Photo URL is missing", { photo });
       return "/default-avatar.jpg";
     }
-    return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+    return photo.startsWith("http") ? photo : `${process.env.NEXT_PUBLIC_API_URL}${photo.toLowerCase()}`;
   };
 
   useEffect(() => {
@@ -1063,7 +1067,7 @@ const Matches = () => {
         if (!auth?.access_token) {
           throw new Error("No access token available");
         }
-        const response = await fetch("http://localhost:3001/api/match", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/match`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${auth.access_token}`,
@@ -1167,6 +1171,7 @@ const Matches = () => {
 };
 
 export default Matches;
+
 ```
 
 ### src\app\(main)\message\[matchId]\page.js
@@ -1226,7 +1231,7 @@ const MessagePage = () => {
       setIsLoading(true);
       setError(null);
       const response = await fetch(
-        `http://localhost:3001/api/message/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/message/${id}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -1292,7 +1297,7 @@ const MessagePage = () => {
     };
     console.log("Sending message:", JSON.stringify(newMessage, null, 2)); // Debug
     try {
-      const response = await fetch(`http://localhost:3001/api/message`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/message`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1469,6 +1474,7 @@ const MessagePage = () => {
 };
 
 export default MessagePage;
+
 ```
 
 ### src\app\(main)\notifications\page.js
@@ -1508,7 +1514,7 @@ const getNotificationContent = (notification) => {
     }
 
     // Chuẩn hóa URL
-    return url.startsWith("http") ? url : `http://localhost:3001${url.toLowerCase()}`;
+    return url.startsWith("http") ? url : `${process.env.NEXT_PUBLIC_API_URL}${url.toLowerCase()}`;
   };
 
   const photoUrl = normalizePhotoUrl(notification?.user?.photo);
@@ -1541,7 +1547,7 @@ export default function NotificationsPage() {
 
   const fetchNotifications = async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/notifications", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notifications`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${auth?.auth?.access_token}`,
@@ -1573,7 +1579,7 @@ export default function NotificationsPage() {
     console.log("Accepted notification:");
     try {
       const res = await fetch(
-        `http://localhost:3001/api/match/${matchId}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/match/${matchId}`,
         {
           method: "PUT",
           headers: {
@@ -1665,6 +1671,7 @@ export default function NotificationsPage() {
     </div>
   );
 }
+
 ```
 
 ### src\app\(main)\profile\page.js
@@ -1720,13 +1727,13 @@ const Profile = () => {
                 ?.filter((photo) => !photo.url.startsWith("https://avatars.githubusercontent.com"))
                 .map((photo) => ({
                     id: photo.id,
-                    url: photo.url.startsWith("http") ? photo.url : `http://localhost:3001${photo.url.toLowerCase()}`,
+                    url: photo.url.startsWith("http") ? photo.url : `${process.env.NEXT_PUBLIC_API_URL}${photo.url.toLowerCase()}`,
                     is_profile_pic: photo.is_profile_pic,
                 })) || [],
             profilePhoto: currentUser?.photos?.find((photo) => photo.is_profile_pic)?.url
                 ? currentUser.photos.find((photo) => photo.is_profile_pic).url.startsWith("http")
                     ? currentUser.photos.find((photo) => photo.is_profile_pic).url
-                    : `http://localhost:3001${currentUser.photos.find((photo) => photo.is_profile_pic).url.toLowerCase()}`
+                    : `${process.env.NEXT_PUBLIC_API_URL}${currentUser.photos.find((photo) => photo.is_profile_pic).url.toLowerCase()}`
                 : "/default-avatar.jpg",
         };
     }, [currentUser, metadata]);
@@ -1959,7 +1966,7 @@ const EditBioModal = ({ bio, onSave, onClose }) => {
         setLoading(true);
         try {
             await axios.put(
-                "http://localhost:3001/api/user/update-profile",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                 {
                     user: {
                         id: currentUser.id,
@@ -2040,7 +2047,7 @@ const EditInterestsModal = ({ interests, onSave, onClose }) => {
                 .filter((id) => id !== undefined);
 
             await axios.put(
-                "http://localhost:3001/api/user/update-profile",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                 {
                     user: {
                         id: currentUser.id,
@@ -2130,7 +2137,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                 formData.append("bioId", currentUser?.bioId);
 
                 const response = await axios.post(
-                    "http://localhost:3001/api/upload/single",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/upload/single`,
                     formData,
                     {
                         headers: {
@@ -2147,7 +2154,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                         id: newPhoto.id,
                         url: newPhoto.url.startsWith("http")
                             ? newPhoto.url
-                            : `http://localhost:3001${newPhoto.url.toLowerCase()}`,
+                            : `${process.env.NEXT_PUBLIC_API_URL}${newPhoto.url.toLowerCase()}`,
                         is_profile_pic: newPhoto.is_profile_pic,
                     },
                 ]);
@@ -2171,7 +2178,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
 
         setLoading(true);
         try {
-            await axios.delete(`http://localhost:3001/api/upload/${photoToRemove.id}`, {
+            await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/upload/${photoToRemove.id}`, {
                 headers: {
                     Authorization: `Bearer ${auth?.access_token}`,
                 },
@@ -2197,7 +2204,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
         try {
             if (currentPhotos.length > 0) {
                 await axios.put(
-                    "http://localhost:3001/api/user/update-profile",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                     {
                         user: {
                             id: currentUser.id,
@@ -2220,7 +2227,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
             } else {
                 // Nếu không còn ảnh, gửi danh sách rỗng
                 await axios.put(
-                    "http://localhost:3001/api/user/update-profile",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                     {
                         user: {
                             id: currentUser.id,
@@ -2337,7 +2344,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                 formData.append("isProfilePic", "true");
 
                 const response = await axios.post(
-                    "http://localhost:3001/api/upload/single",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/upload/single`,
                     formData,
                     {
                         headers: {
@@ -2350,7 +2357,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                 const newPhoto = response.data.photo;
                 const newPhotoUrl = newPhoto.url.startsWith("http")
                     ? newPhoto.url
-                    : `http://localhost:3001${newPhoto.url.toLowerCase()}`;
+                    : `${process.env.NEXT_PUBLIC_API_URL}${newPhoto.url.toLowerCase()}`;
 
                 // Cập nhật state với ảnh đại diện mới và danh sách ảnh
                 onSave({
@@ -2360,7 +2367,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                             .filter((photo) => photo.id !== newPhoto.id)
                             .map((photo) => ({
                                 id: photo.id,
-                                url: photo.url.startsWith("http") ? photo.url : `http://localhost:3001${photo.url.toLowerCase()}`,
+                                url: photo.url.startsWith("http") ? photo.url : `${process.env.NEXT_PUBLIC_API_URL}${photo.url.toLowerCase()}`,
                                 is_profile_pic: false,
                             })),
                         {
@@ -2491,7 +2498,7 @@ const Settings = () => {
     }
 
     // Chuẩn hóa URL
-    return url.startsWith("http") ? url : `http://localhost:3001${url.toLowerCase()}`;
+    return url.startsWith("http") ? url : `${process.env.NEXT_PUBLIC_API_URL}${url.toLowerCase()}`;
   };
 
   useEffect(() => {
@@ -2706,7 +2713,7 @@ const PhotoUploadModal = ({ currentPhoto, onSave, onClose }) => {
       console.warn("Invalid or missing photo URL", { photo });
       return "/default-avatar.jpg";
     }
-    return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+    return photo.startsWith("http") ? photo : `${process.env.NEXT_PUBLIC_API_URL}${photo.toLowerCase()}`;
   };
 
   const handlePhotoUpload = async (file) => {
@@ -2844,6 +2851,7 @@ const PhotoUploadModal = ({ currentPhoto, onSave, onClose }) => {
 };
 
 export default Settings;
+
 ```
 
 ### src\app\auth\layout.js
@@ -3194,7 +3202,7 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
         setLoading(true);
         setError("");
         try {
-            const response = await axios.post("http://localhost:3001/api/auth/verify-otp", {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/verify-otp`, {
                 email,
                 otp: otpString,
             });
@@ -3338,6 +3346,7 @@ const OTPVerification = ({ email, onVerify, onResend, onBack }) => {
 };
 
 export default OTPVerification;
+
 ```
 
 ### src\app\auth\register\page.js
@@ -3390,7 +3399,7 @@ export default function Register() {
         }
 
         try {
-            const res = await fetch("http://localhost:3001/api/auth/register", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -3417,7 +3426,7 @@ export default function Register() {
 
     const handleVerifyOTP = async (otp) => {
         try {
-            const res = await fetch("http://localhost:3001/api/auth/verify-otp", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/verify-otp`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -3441,7 +3450,7 @@ export default function Register() {
 
     const handleResendOTP = async () => {
         try {
-            const res = await fetch("http://localhost:3001/api/auth/send-verification-otp", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/send-verification-otp`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -3621,6 +3630,7 @@ export default function Register() {
         </div>
     );
 }
+
 ```
 
 ### src\app\components\BottomNavigation.jsx
@@ -4124,7 +4134,7 @@ export default function Dashboard() {
                 return;
             }
             try {
-                const res = await axios.get("http://localhost:3001/api/me", {
+                const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/me`, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${token}`,
@@ -4137,7 +4147,7 @@ export default function Dashboard() {
                 }
                 const getUsersOnline = async () => {
                     const res = await axios.get(
-                        "http://localhost:3001/api/users/online",
+                        `${process.env.NEXT_PUBLIC_API_URL}/api/users/online`,
                         {
                             headers: {
                                 "Content-Type": "application/json",
@@ -4352,6 +4362,7 @@ export default function Dashboard() {
         </main>
     );
 }
+
 
 ```
 
@@ -4691,7 +4702,7 @@ const PhotoUpload = ({ formData, setFormData }) => {
       return URL.createObjectURL(photo);
     }
     if (typeof photo === "string") {
-      return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+      return photo.startsWith("http") ? photo : `${process.env.NEXT_PUBLIC_API_URL}${photo.toLowerCase()}`;
     }
     return photoBase64 || "/default-avatar.jpg";
   };
@@ -4755,6 +4766,7 @@ const PhotoUpload = ({ formData, setFormData }) => {
 };
 
 export default PhotoUpload;
+
 ```
 
 ### src\app\profile-setup\components\Preferences.js
@@ -5257,7 +5269,7 @@ const ProfileSetup = () => {
                     try {
                         const postPhotos = await retryRequest(() =>
                             axios.post(
-                                "http://localhost:3001/api/upload/multiple",
+                                `${process.env.NEXT_PUBLIC_API_URL}/api/upload/multiple`,
                                 formDataUpload,
                                 {
                                     headers: {
@@ -5294,7 +5306,7 @@ const ProfileSetup = () => {
             try {
                 const res = await retryRequest(() =>
                     axios.put(
-                        "http://localhost:3001/api/user/update-profile",
+                        `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                         result,
                         {
                             headers: {
@@ -5456,7 +5468,7 @@ export default function ReportPage() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/reports", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_REPORT_API_URL}/api/reports`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -5532,6 +5544,7 @@ export default function ReportPage() {
   );
 }
 
+
 ```
 
 ### src\components\ChatWindow.jsx
@@ -5584,7 +5597,7 @@ export default function ChatWindow({ matchId, user }) {
             }
             try {
                 const res = await axios.get(
-                    `http://localhost:3001/api/rooms/${matchId}`,
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/rooms/${matchId}`,
                     {
                         headers: {
                             "Content-Type": "application/json",
@@ -5612,7 +5625,7 @@ export default function ChatWindow({ matchId, user }) {
                     return;
                 }
                 const res = await axios(
-                    `http://localhost:3001/api/messages?match_id=${matchId}`
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/messages?match_id=${matchId}`
                 );
                 setMessages(res.data);
             } catch (err) {
@@ -5751,6 +5764,7 @@ export default function ChatWindow({ matchId, user }) {
         </div>
     );
 }
+
 
 ```
 
@@ -5978,14 +5992,14 @@ const ProfileDetail = ({ profile: initialProfile, onBack }) => {
         // Loại bỏ /uploads lặp lại và chuẩn hóa đường dẫn
         let cleanUrl = url.replace(/^\/*uploads\/*/i, "");
         cleanUrl = cleanUrl.startsWith("/") ? cleanUrl : `/${cleanUrl}`;
-        const finalUrl = `http://localhost:3001/uploads${cleanUrl.toLowerCase()}`;
+        const finalUrl = `${process.env.NEXT_PUBLIC_UPLOADS_URL}${cleanUrl.toLowerCase()}`;
         console.debug(`Normalized photo URL: ${finalUrl}`);
         return finalUrl;
     };
 
     // Kiểm tra xem URL có phải từ localhost:3001 không
     const isLocalImage = (url) => {
-        return url && url.startsWith("http://localhost:3001");
+        return url && url.startsWith(process.env.NEXT_PUBLIC_API_URL);
     };
 
     // Chuẩn hóa profile để đảm bảo URL ảnh đúng
@@ -6251,6 +6265,7 @@ const ProfileDetail = ({ profile: initialProfile, onBack }) => {
 };
 
 export default ProfileDetail;
+
 ```
 
 ### src\components\layout\AppLayout.js
@@ -6314,7 +6329,7 @@ export function ProfileProvider({ children }) {
         // const fetchProfileSetupData = async () => {
         //     try {
         //         console.log("Calling /api/profile-setup...");
-        //         const response = await axios.get("http://localhost:3001/api/profile-setup");
+        //         const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/profile-setup`);
         //         console.log("Profile setup response:", JSON.stringify(response.data, null, 2));
         //         setProfileSetupData(response.data.data);
         //     } catch (error) {
@@ -6341,6 +6356,7 @@ export function ProfileProvider({ children }) {
 export function useProfile() {
     return useContext(ProfileContext);
 }
+
 ```
 
 ### src\hooks\useAuth.js
@@ -6356,8 +6372,8 @@ import * as authHelper from "./_helper";
 setupAxios(axios);
 const AuthContext = createContext(null);
 
-const LOGIN_URL = "http://localhost:3001/api/auth/login";
-const GET_USER_URL = "http://localhost:3001/api/user/me";
+const LOGIN_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`;
+const GET_USER_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/user/me`;
 
 export function AuthProvider({ children }) {
   const router = useRouter();
@@ -6515,6 +6531,7 @@ export function useAuth() {
   }
   return context;
 }
+
 ```
 
 ### src\hooks\useMetadata.js
@@ -6541,7 +6558,7 @@ export function MetadataProvider({ children }) {
         try {
             const token = auth?.access_token;
             console.log("Fetching metadata with token:", token ? token.slice(0, 20) + "..." : "No token");
-            const res = await axios.get("http://localhost:3001/api/metadata", {
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/metadata`, {
                 headers: token ? { Authorization: `Bearer ${token}` } : {},
             });
             console.log("Metadata response:", JSON.stringify(res.data, null, 2));
@@ -6594,6 +6611,7 @@ export function useMetadata() {
     }
     return context;
 }
+
 ```
 
 ### src\hooks\useRecommendations.js
@@ -6614,7 +6632,7 @@ export function useRecommendations() {
     const fetchRecommendations = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('http://localhost:3001/api/recommendations', {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/recommendations`, {
           headers: {
             Authorization: `Bearer ${auth?.access_token}`,
           },
@@ -6633,6 +6651,7 @@ export function useRecommendations() {
 
   return { recommendations, isLoading, error };
 }
+
 ```
 
 ### src\hooks\useSocket.js
@@ -6651,7 +6670,7 @@ export const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         if (!currentUser) return;
-        const newSocket = io("http://localhost:3001", {
+        const newSocket = io(process.env.NEXT_PUBLIC_SOCKET_URL, {
             autoConnect: false,
             reconnection: true,
         });
@@ -6679,6 +6698,7 @@ export const useSocket = () => {
     // }
     return context;
 };
+
 
 ```
 
@@ -6740,7 +6760,7 @@ export const loginUser = createAsyncThunk(
     async (credentials, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                "http://localhost:3001/api/auth/login",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`,
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -6763,7 +6783,7 @@ export const registerUser = createAsyncThunk(
     async (userData, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                "http://localhost:3001/api/auth/register",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`,
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -6831,6 +6851,7 @@ const authSlice = createSlice({
 
 export const { logout, setCredentials } = authSlice.actions;
 export default authSlice.reducer;
+
 
 ```
 
@@ -7260,7 +7281,7 @@ const MatchModal = ({ me, profile, onClose }) => {
                                     <img
                                         src={
                                             meAvatar?.url?.[0] === "/"
-                                                ? `http://localhost:3001${meAvatar?.url}`
+                                                ? `${process.env.NEXT_PUBLIC_API_URL}${meAvatar?.url}`
                                                 : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
                                         }
                                         alt="Your profile"
@@ -7277,7 +7298,7 @@ const MatchModal = ({ me, profile, onClose }) => {
                                     <img
                                         src={
                                             youAvatar?.url?.[0] === "/"
-                                                ? `http://localhost:3001${youAvatar?.url}`
+                                                ? `${process.env.NEXT_PUBLIC_API_URL}${youAvatar?.url}`
                                                 : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
                                         }
                                         alt={profile?.name}
@@ -7311,6 +7332,7 @@ const MatchModal = ({ me, profile, onClose }) => {
     );
 };
 export default MatchModal;
+
 
 ```
 
@@ -7349,7 +7371,7 @@ const getNotificationContent = (notification) => {
     }
 
     // Chuẩn hóa URL
-    return url.startsWith("http") ? url : `http://localhost:3001${url.toLowerCase()}`;
+    return url.startsWith("http") ? url : `${process.env.NEXT_PUBLIC_API_URL}${url.toLowerCase()}`;
   };
 
   const photoUrl = normalizePhotoUrl(notification?.user?.photo);
@@ -7381,7 +7403,7 @@ const NotificationDropdown = ({ onClose }) => {
 
   const fetchNotifications = async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/notifications", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notifications`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${auth?.auth?.access_token}`,
@@ -7459,6 +7481,7 @@ const NotificationDropdown = ({ onClose }) => {
 };
 
 export default NotificationDropdown;
+
 ```
 
 ### src\utils\ImageUtils.js
@@ -7473,7 +7496,7 @@ export const normalizePhotoUrl = (url) => {
   }
   let cleanUrl = url.replace(/^\/*uploads\/*/i, "");
   cleanUrl = cleanUrl.startsWith("/") ? cleanUrl : `/${cleanUrl}`;
-  const finalUrl = `http://localhost:3001/uploads${cleanUrl.toLowerCase()}`;
+  const finalUrl = `${process.env.NEXT_PUBLIC_UPLOADS_URL}${cleanUrl.toLowerCase()}`;
   console.debug(`Normalized photo URL: ${finalUrl}`);
   return finalUrl;
 };
@@ -7482,6 +7505,7 @@ export const handleImageError = (e, defaultSrc = "/default-avatar.jpg") => {
   console.error(`Failed to load image: ${e.target.src}, error: ${e.type}, status: ${e.target.status || "unknown"}`);
   e.target.src = defaultSrc;
 };
+
 ```
 
 ### src\utils\LocalStorage.js
