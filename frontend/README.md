@@ -11,7 +11,7 @@ Thiết Lập
 Cách 1: Chạy Local
 
 Clone dự án:
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/Gay22222/AI-Matching-Webapp.git)
 cd frontend
 
 
