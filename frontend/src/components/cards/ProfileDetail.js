@@ -20,14 +20,14 @@ const ProfileDetail = ({ profile: initialProfile, onBack }) => {
         // Loại bỏ /uploads lặp lại và chuẩn hóa đường dẫn
         let cleanUrl = url.replace(/^\/*uploads\/*/i, "");
         cleanUrl = cleanUrl.startsWith("/") ? cleanUrl : `/${cleanUrl}`;
-        const finalUrl = `http://localhost:3001/uploads${cleanUrl.toLowerCase()}`;
+        const finalUrl = `${process.env.NEXT_PUBLIC_UPLOADS_URL}${cleanUrl.toLowerCase()}`;
         console.debug(`Normalized photo URL: ${finalUrl}`);
         return finalUrl;
     };
 
     // Kiểm tra xem URL có phải từ localhost:3001 không
     const isLocalImage = (url) => {
-        return url && url.startsWith("http://localhost:3001");
+        return url && url.startsWith(process.env.NEXT_PUBLIC_API_URL);
     };
 
     // Chuẩn hóa profile để đảm bảo URL ảnh đúng

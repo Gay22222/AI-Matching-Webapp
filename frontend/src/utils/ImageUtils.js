@@ -8,7 +8,7 @@ export const normalizePhotoUrl = (url) => {
   }
   let cleanUrl = url.replace(/^\/*uploads\/*/i, "");
   cleanUrl = cleanUrl.startsWith("/") ? cleanUrl : `/${cleanUrl}`;
-  const finalUrl = `http://localhost:3001/uploads${cleanUrl.toLowerCase()}`;
+  const finalUrl = `${process.env.NEXT_PUBLIC_UPLOADS_URL}${cleanUrl.toLowerCase()}`;
   console.debug(`Normalized photo URL: ${finalUrl}`);
   return finalUrl;
 };

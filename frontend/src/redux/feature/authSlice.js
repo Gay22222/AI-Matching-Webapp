@@ -12,7 +12,7 @@ export const loginUser = createAsyncThunk(
     async (credentials, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                "http://localhost:3001/api/auth/login",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`,
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -35,7 +35,7 @@ export const registerUser = createAsyncThunk(
     async (userData, { rejectWithValue }) => {
         try {
             const response = await fetch(
-                "http://localhost:3001/api/auth/register",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`,
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -103,3 +103,4 @@ const authSlice = createSlice({
 
 export const { logout, setCredentials } = authSlice.actions;
 export default authSlice.reducer;
+

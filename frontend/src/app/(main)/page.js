@@ -39,7 +39,7 @@ const Home = () => {
     }
     let cleanUrl = url.replace(/^\/*uploads\/*/i, "");
     cleanUrl = cleanUrl.startsWith("/") ? cleanUrl : `/${cleanUrl}`;
-    const finalUrl = `http://localhost:3001/uploads${cleanUrl.toLowerCase()}`;
+    const finalUrl = `${process.env.NEXT_PUBLIC_UPLOADS_URL}${cleanUrl.toLowerCase()}`;
     console.debug(`Normalized photo URL: ${finalUrl}`);
     return finalUrl;
   };
@@ -98,8 +98,8 @@ const Home = () => {
       params.append("limit", "100");
       const queryString = params.toString();
       const url = queryString
-        ? `http://localhost:3001/api/user/list-match?${queryString}`
-        : `http://localhost:3001/api/user/list-match`;
+        ? `${process.env.NEXT_PUBLIC_API_URL}/api/user/list-match?${queryString}`
+        : `${process.env.NEXT_PUBLIC_API_URL}/api/user/list-match`;
 
       console.log("Fetching profiles with URL:", url);
       console.log("Auth token:", auth.access_token);
@@ -216,7 +216,7 @@ const Home = () => {
   const handleMatch = async (userId, callback) => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/match",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/match`,
         {
           receiverId: userId,
         },

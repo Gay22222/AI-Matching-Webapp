@@ -46,7 +46,7 @@ export default function Register() {
         }
 
         try {
-            const res = await fetch("http://localhost:3001/api/auth/register", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -73,7 +73,7 @@ export default function Register() {
 
     const handleVerifyOTP = async (otp) => {
         try {
-            const res = await fetch("http://localhost:3001/api/auth/verify-otp", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/verify-otp`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -97,7 +97,7 @@ export default function Register() {
 
     const handleResendOTP = async () => {
         try {
-            const res = await fetch("http://localhost:3001/api/auth/send-verification-otp", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/send-verification-otp`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

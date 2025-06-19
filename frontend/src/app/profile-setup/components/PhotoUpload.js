@@ -46,7 +46,7 @@ const PhotoUpload = ({ formData, setFormData }) => {
       return URL.createObjectURL(photo);
     }
     if (typeof photo === "string") {
-      return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+      return photo.startsWith("http") ? photo : `${process.env.NEXT_PUBLIC_API_URL}${photo.toLowerCase()}`;
     }
     return photoBase64 || "/default-avatar.jpg";
   };

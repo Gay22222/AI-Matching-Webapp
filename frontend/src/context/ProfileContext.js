@@ -14,7 +14,7 @@ export function ProfileProvider({ children }) {
         // const fetchProfileSetupData = async () => {
         //     try {
         //         console.log("Calling /api/profile-setup...");
-        //         const response = await axios.get("http://localhost:3001/api/profile-setup");
+        //         const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/profile-setup`);
         //         console.log("Profile setup response:", JSON.stringify(response.data, null, 2));
         //         setProfileSetupData(response.data.data);
         //     } catch (error) {

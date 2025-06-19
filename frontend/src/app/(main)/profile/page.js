@@ -49,13 +49,13 @@ const Profile = () => {
                 ?.filter((photo) => !photo.url.startsWith("https://avatars.githubusercontent.com"))
                 .map((photo) => ({
                     id: photo.id,
-                    url: photo.url.startsWith("http") ? photo.url : `http://localhost:3001${photo.url.toLowerCase()}`,
+                    url: photo.url.startsWith("http") ? photo.url : `${process.env.NEXT_PUBLIC_API_URL}${photo.url.toLowerCase()}`,
                     is_profile_pic: photo.is_profile_pic,
                 })) || [],
             profilePhoto: currentUser?.photos?.find((photo) => photo.is_profile_pic)?.url
                 ? currentUser.photos.find((photo) => photo.is_profile_pic).url.startsWith("http")
                     ? currentUser.photos.find((photo) => photo.is_profile_pic).url
-                    : `http://localhost:3001${currentUser.photos.find((photo) => photo.is_profile_pic).url.toLowerCase()}`
+                    : `${process.env.NEXT_PUBLIC_API_URL}${currentUser.photos.find((photo) => photo.is_profile_pic).url.toLowerCase()}`
                 : "/default-avatar.jpg",
         };
     }, [currentUser, metadata]);
@@ -288,7 +288,7 @@ const EditBioModal = ({ bio, onSave, onClose }) => {
         setLoading(true);
         try {
             await axios.put(
-                "http://localhost:3001/api/user/update-profile",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                 {
                     user: {
                         id: currentUser.id,
@@ -369,7 +369,7 @@ const EditInterestsModal = ({ interests, onSave, onClose }) => {
                 .filter((id) => id !== undefined);
 
             await axios.put(
-                "http://localhost:3001/api/user/update-profile",
+                `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                 {
                     user: {
                         id: currentUser.id,
@@ -459,7 +459,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                 formData.append("bioId", currentUser?.bioId);
 
                 const response = await axios.post(
-                    "http://localhost:3001/api/upload/single",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/upload/single`,
                     formData,
                     {
                         headers: {
@@ -476,7 +476,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
                         id: newPhoto.id,
                         url: newPhoto.url.startsWith("http")
                             ? newPhoto.url
-                            : `http://localhost:3001${newPhoto.url.toLowerCase()}`,
+                            : `${process.env.NEXT_PUBLIC_API_URL}${newPhoto.url.toLowerCase()}`,
                         is_profile_pic: newPhoto.is_profile_pic,
                     },
                 ]);
@@ -500,7 +500,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
 
         setLoading(true);
         try {
-            await axios.delete(`http://localhost:3001/api/upload/${photoToRemove.id}`, {
+            await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/upload/${photoToRemove.id}`, {
                 headers: {
                     Authorization: `Bearer ${auth?.access_token}`,
                 },
@@ -526,7 +526,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
         try {
             if (currentPhotos.length > 0) {
                 await axios.put(
-                    "http://localhost:3001/api/user/update-profile",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                     {
                         user: {
                             id: currentUser.id,
@@ -549,7 +549,7 @@ const EditPhotosModal = ({ photos, onSave, onClose }) => {
             } else {
                 // Nếu không còn ảnh, gửi danh sách rỗng
                 await axios.put(
-                    "http://localhost:3001/api/user/update-profile",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                     {
                         user: {
                             id: currentUser.id,
@@ -666,7 +666,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                 formData.append("isProfilePic", "true");
 
                 const response = await axios.post(
-                    "http://localhost:3001/api/upload/single",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/upload/single`,
                     formData,
                     {
                         headers: {
@@ -679,7 +679,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                 const newPhoto = response.data.photo;
                 const newPhotoUrl = newPhoto.url.startsWith("http")
                     ? newPhoto.url
-                    : `http://localhost:3001${newPhoto.url.toLowerCase()}`;
+                    : `${process.env.NEXT_PUBLIC_API_URL}${newPhoto.url.toLowerCase()}`;
 
                 // Cập nhật state với ảnh đại diện mới và danh sách ảnh
                 onSave({
@@ -689,7 +689,7 @@ const EditProfilePhotoModal = ({ currentPhoto, onSave, onClose }) => {
                             .filter((photo) => photo.id !== newPhoto.id)
                             .map((photo) => ({
                                 id: photo.id,
-                                url: photo.url.startsWith("http") ? photo.url : `http://localhost:3001${photo.url.toLowerCase()}`,
+                                url: photo.url.startsWith("http") ? photo.url : `${process.env.NEXT_PUBLIC_API_URL}${photo.url.toLowerCase()}`,
                                 is_profile_pic: false,
                             })),
                         {

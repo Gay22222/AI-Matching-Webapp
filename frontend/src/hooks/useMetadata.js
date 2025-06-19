@@ -20,7 +20,7 @@ export function MetadataProvider({ children }) {
         try {
             const token = auth?.access_token;
             console.log("Fetching metadata with token:", token ? token.slice(0, 20) + "..." : "No token");
-            const res = await axios.get("http://localhost:3001/api/metadata", {
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/metadata`, {
                 headers: token ? { Authorization: `Bearer ${token}` } : {},
             });
             console.log("Metadata response:", JSON.stringify(res.data, null, 2));

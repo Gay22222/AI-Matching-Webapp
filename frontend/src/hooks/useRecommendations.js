@@ -14,7 +14,7 @@ export function useRecommendations() {
     const fetchRecommendations = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get('http://localhost:3001/api/recommendations', {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/recommendations`, {
           headers: {
             Authorization: `Bearer ${auth?.access_token}`,
           },

@@ -74,7 +74,7 @@ export default function Dashboard() {
                 return;
             }
             try {
-                const res = await axios.get("http://localhost:3001/api/me", {
+                const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/me`, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${token}`,
@@ -87,7 +87,7 @@ export default function Dashboard() {
                 }
                 const getUsersOnline = async () => {
                     const res = await axios.get(
-                        "http://localhost:3001/api/users/online",
+                        `${process.env.NEXT_PUBLIC_API_URL}/api/users/online`,
                         {
                             headers: {
                                 "Content-Type": "application/json",
@@ -302,3 +302,4 @@ export default function Dashboard() {
         </main>
     );
 }
+

@@ -54,7 +54,7 @@ const Settings = () => {
     }
 
     // Chuẩn hóa URL
-    return url.startsWith("http") ? url : `http://localhost:3001${url.toLowerCase()}`;
+    return url.startsWith("http") ? url : `${process.env.NEXT_PUBLIC_API_URL}${url.toLowerCase()}`;
   };
 
   useEffect(() => {
@@ -269,7 +269,7 @@ const PhotoUploadModal = ({ currentPhoto, onSave, onClose }) => {
       console.warn("Invalid or missing photo URL", { photo });
       return "/default-avatar.jpg";
     }
-    return photo.startsWith("http") ? photo : `http://localhost:3001${photo.toLowerCase()}`;
+    return photo.startsWith("http") ? photo : `${process.env.NEXT_PUBLIC_API_URL}${photo.toLowerCase()}`;
   };
 
   const handlePhotoUpload = async (file) => {

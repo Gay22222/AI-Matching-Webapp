@@ -265,7 +265,7 @@ const ProfileSetup = () => {
                     try {
                         const postPhotos = await retryRequest(() =>
                             axios.post(
-                                "http://localhost:3001/api/upload/multiple",
+                                `${process.env.NEXT_PUBLIC_API_URL}/api/upload/multiple`,
                                 formDataUpload,
                                 {
                                     headers: {
@@ -302,7 +302,7 @@ const ProfileSetup = () => {
             try {
                 const res = await retryRequest(() =>
                     axios.put(
-                        "http://localhost:3001/api/user/update-profile",
+                        `${process.env.NEXT_PUBLIC_API_URL}/api/user/update-profile`,
                         result,
                         {
                             headers: {

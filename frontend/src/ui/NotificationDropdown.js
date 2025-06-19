@@ -31,7 +31,7 @@ const getNotificationContent = (notification) => {
     }
 
     // Chuẩn hóa URL
-    return url.startsWith("http") ? url : `http://localhost:3001${url.toLowerCase()}`;
+    return url.startsWith("http") ? url : `${process.env.NEXT_PUBLIC_API_URL}${url.toLowerCase()}`;
   };
 
   const photoUrl = normalizePhotoUrl(notification?.user?.photo);
@@ -63,7 +63,7 @@ const NotificationDropdown = ({ onClose }) => {
 
   const fetchNotifications = async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/notifications", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notifications`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${auth?.auth?.access_token}`,

@@ -54,7 +54,7 @@ const MatchModal = ({ me, profile, onClose }) => {
                                     <img
                                         src={
                                             meAvatar?.url?.[0] === "/"
-                                                ? `http://localhost:3001${meAvatar?.url}`
+                                                ? `${process.env.NEXT_PUBLIC_API_URL}${meAvatar?.url}`
                                                 : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
                                         }
                                         alt="Your profile"
@@ -71,7 +71,7 @@ const MatchModal = ({ me, profile, onClose }) => {
                                     <img
                                         src={
                                             youAvatar?.url?.[0] === "/"
-                                                ? `http://localhost:3001${youAvatar?.url}`
+                                                ? `${process.env.NEXT_PUBLIC_API_URL}${youAvatar?.url}`
                                                 : "https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/19/465/avatar-trang-1.jpg"
                                         }
                                         alt={profile?.name}
@@ -105,3 +105,4 @@ const MatchModal = ({ me, profile, onClose }) => {
     );
 };
 export default MatchModal;
+
